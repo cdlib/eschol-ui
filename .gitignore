@@ -1,0 +1,7 @@
+node_modules
+dist
+app/bower_components
+.DS_Store
+app/css/main.css
+*.css.map
+gulp-sftp-key.json

@@ -1,0 +1,37 @@
+{
+  "name": "eschol-ui-toolkit",
+  "version": "1.0.0",
+  "description": "A Gulp toolkit for developing the eScholarship UI library.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Hagedorn",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browsersync-ssi": "^0.2.4",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-lb-include": "",
+    "gulp-modernizr": "0.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "gulp-w3cjs": "^1.2.0",
+    "jshint": "^2.9.2",
+    "path": "^0.12.7",
+    "postcss-assets": "^4.1.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {}
+}
