@@ -1,7 +1,5 @@
 // ##### Gulp Toolkit for the eScholarship UI Library #####
 
-// ***** Inspired by https://css-tricks.com/gulp-for-beginners/ ***** //
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -17,40 +15,50 @@ var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
 var validateHTML = require('gulp-w3cjs');
 var scsslint = require('gulp-scss-lint');
-var jshint = require('gulp-jshint');
+var eslint = require('gulp-eslint');
 var lbInclude = require('gulp-lb-include');
 var ssi = require('browsersync-ssi');
-var sftp = require('gulp-sftp');
 var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
+var source = require('vinyl-source-stream');
+var browserify = require('browserify');
+var watchify = require('watchify');
+var reactify = require('reactify');
+var streamify = require('gulp-streamify');
+var eslintify = require('eslintify');
 
-
-// ***** Plugins That Run a Single Process ***** //
-
-// Run these processes from the command line using the task name. Example: $ gulp hello 
-
-
-// Check that gulp is working:
-gulp.task('hello', function() {
-  console.log('Gulp is installed and running correctly.');
+gulp.task('browserify', function() {
+  var watcher  = watchify(browserify({
+      entries: ['app/jsx/app.jsx'],
+      transform: [reactify],
+      debug: true,
+      cache: {}, packageCache: {}, fullPaths: true
+    }));
+  return watcher.on('update', function () {
+      watcher.bundle()
+        .pipe(source('app/js/bundle.js'))
+        .pipe(gulp.dest('.'))
+        console.log('Bundle.js updated');
+    })
+      .bundle()
+      .pipe(source('app/js/bundle.js'))
+      .pipe(gulp.dest('.'));
 });
-
 
 // Run the dev process 'gulp':
 gulp.task('default', function (callback) {
-  runSequence(['sass', 'browserSync', 'watch'],
+  runSequence(['browserify', 'browserSync', 'sass', 'watch'],
     callback
   )
 })
 
-
-// Run the build process 'build':
-gulp.task('build', function (callback) {
-  runSequence('clean', 
-    ['scss-lint', 'js-lint', 'sass', 'useref', 'copy-images'],
-    callback
-  )
-})
+// ***** Build process not working yet ***** //
+// gulp.task('build', function (callback) {
+//   runSequence('clean', 
+//     ['scss-lint', 'sass', 'useref', 'copy-images'],
+//     callback
+//   )
+// })
 
 
 // Minify all images during development:
@@ -71,30 +79,6 @@ gulp.task('modernizr', function() {
 });
 
 
-// Validate build HTML:
-gulp.task('validateHTML', function () {
-  gulp.src('dist/**/*.html')
-    .pipe(validateHTML())
-});
-
-
-// Deploy a build via SFTP to a web server by running 'deploy':
-gulp.task('deploy', function () {
-  return gulp.src('dist/**')
-    .pipe(sftp({
-      host: 'webprod.cdlib.org',
-      remotePath: '/apps/webprod/apache/htdocs/escholarship/', // customize this path to match your web server
-      authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc. See: https://www.npmjs.com/package/gulp-sftp/#authentication
-      auth: 'keyMain'
-    }));
-});
-
-
-// ***** Plugins That Automatically Run As Part of a Single Process ***** //
-
-// These processes are not typically run from the command line but from the processes above.
-
-
 // Process Sass to CSS, add sourcemaps, autoprefix CSS selectors, optionally Base64 font and image files into CSS, and reload browser:
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
@@ -113,16 +97,16 @@ gulp.task('sass', function() {
 
 
 // Watch sass, html, and js and reload browser if any changes:
-gulp.task('watch', ['browserSync', 'sass', 'scss-lint', 'js-lint'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'scss-lint'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/scss/**/*.scss', ['scss-lint']);
-  gulp.watch('app/js/**/*.js', ['js-lint']);
+  // gulp.watch('app/js/**/*.js', ['js-lint']);
   gulp.watch('app/**/*.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload); 
+  gulp.watch('app/js/bundle.js', browserSync.reload);
 });
 
 
-// Spin up a local browser with the index.html page at http://localhost:3000/
 gulp.task('browserSync', function() {
   browserSync({
     server: {
@@ -142,7 +126,7 @@ gulp.task('useref', function(){
   return gulp.src(['app/**/*.html', '!app/includes/*'])
     .pipe(useref())
     .pipe(gulpIf('*.css', minifyCSS()))
-    .pipe(gulpIf('*.js', uglify()))
+    // .pipe(gulpIf('*.js', uglify()))
     .pipe(lbInclude()) // Process <!--#include file="" --> statements
     .pipe(gulp.dest('dist'))
 });
@@ -170,9 +154,8 @@ gulp.task('scss-lint', function() {
 });
 
 
-// Lint JavaScript:
-gulp.task('js-lint', function() {
-  return gulp.src(['app/js/**/*.js', '!app/js/modernizr-custombuild.js'])
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+gulp.task('js-lint', function() { 
+  return gulp.src(['app/jsx/*'])
+    .pipe(eslint())
+    .pipe(eslint.format());
 });

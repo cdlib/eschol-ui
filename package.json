@@ -10,11 +10,19 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "browserify": "^13.1.0",
     "browsersync-ssi": "^0.2.4",
     "del": "^2.2.1",
+    "eslint": "^3.2.2",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "eslintify": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.2",
     "gulp-jshint": "^2.0.1",
@@ -23,15 +31,21 @@
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-sftp": "^0.1.5",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.0",
     "gulp-w3cjs": "^1.2.0",
-    "jshint": "^2.9.2",
     "path": "^0.12.7",
     "postcss-assets": "^4.1.0",
-    "run-sequence": "^1.2.2"
+    "reactify": "^1.1.1",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1"
+  }
 }
