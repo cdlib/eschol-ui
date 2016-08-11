@@ -1,11 +1,11 @@
 // ##### Component 1 ##### //
 
-var Component1 = React.createClass({
-	render: function() {
+class Component1 extends React.Component {
+  render() {
 		return (
 			<p>Component 1</p>
 		)
 	}
-});
+}
 
 module.exports = Component1;
