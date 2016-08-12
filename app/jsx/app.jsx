@@ -9,33 +9,18 @@
 // var Route = require('react-router').Route
 // var Link = require('react-router').Link
 
-var Home = require('./pages/home.jsx');
-var Apples = require('./pages/apples.jsx');
-var Oranges = require('./pages/oranges.jsx');
-var Pears = require('./pages/pears.jsx');
-
-// var App = React.createClass({
-// render: function() {
+var Home = require('./pages/Home.jsx');
+var PageFooter = require('./pages/PageFooter.jsx');
+var PageHeader = require('./pages/PageHeader.jsx');
 
 class App extends React.Component {
   render() {
     return (
       <div>
-      <p>
-        <strong>Header</strong>
-      </p>
-      <div>
-        <Link to="/">Home</Link>&nbsp;|&nbsp;
-        <Link to="/apples">Page 1</Link>&nbsp;|&nbsp;
-        <Link to="/oranges">Page 2</Link>&nbsp;|&nbsp;
-        <Link to="/pears">Page 3</Link>
+        <div className="ui-library-header">
+          <h1><Link to="/">eScholarship UI Library</Link></h1>
         </div>
-        <hr />
         {this.props.children}
-        <hr />
-        <p>
-          <strong>Footer</strong>
-        </p>
       </div>
     )
   }
@@ -53,10 +38,9 @@ const { // set React Router prefixes:
 ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="/apples" component={Apples} />
-      <Route path="/oranges" component={Oranges} />
-      <Route path="/pears" component={Pears} />
+      <IndexRoute component={Home} />
+      <Route path="/footer" component={PageFooter} />
+      <Route path="/header" component={PageHeader} />
     </Route>
   </Router>
 ), document.getElementById('main'))

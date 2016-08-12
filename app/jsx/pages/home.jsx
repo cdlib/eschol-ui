@@ -1,12 +1,15 @@
-// ##### Home ##### //
+// ##### Home Page ##### //
 
 class Home extends React.Component {
   render() {
 		return (
-  		<div>
-    		<h2>Home</h2>
-    		<p>[home content]</p>
-  		</div>
+			<div>
+	   		<h2>Components</h2>
+        <ul>
+          <li><a href="#footer">Footer</a></li>
+          <li><a href="#header">Header</a></li>
+        </ul>
+	    </div>
   	)
 	}
 }
