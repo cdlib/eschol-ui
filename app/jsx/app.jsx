@@ -20,7 +20,7 @@ render: function() {
        <strong>Header</strong>
      </p>
      <div>
-      <Link to="/">Home</Link>&nbsp;|&nbsp;
+      <Link to="/demo.html">Home</Link>&nbsp;|&nbsp;
       <Link to="/apples">Page 1</Link>&nbsp;|&nbsp;
       <Link to="/oranges">Page 2</Link>&nbsp;|&nbsp;
       <Link to="/pears">Page 3</Link>
@@ -42,12 +42,13 @@ const { // set React Router prefixes:
   IndexRoute,
   Redirect,
   Link,
-  IndexLink
+  IndexLink,
+  browserHistory
 } = ReactRouter
 
 ReactDOM.render((
-  <Router>
-    <Route path="/" component={App}>
+  <Router history={browserHistory}>
+    <Route path="/demo.html" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/apples" component={Apples} />
       <Route path="/oranges" component={Oranges} />

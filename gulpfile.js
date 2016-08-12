@@ -26,6 +26,7 @@ var watchify = require('watchify');
 var reactify = require('reactify');
 var streamify = require('gulp-streamify');
 var eslintify = require('eslintify');
+var historyApiFallback = require('connect-history-api-fallback')
 
 gulp.task('browserify', function() {
   var watcher  = watchify(browserify({
@@ -111,12 +112,17 @@ gulp.task('browserSync', function() {
   browserSync({
     server: {
       baseDir: 'app',
-      middleware: ssi({
-        baseDir: __dirname + '/app',
-        ext: '.html',
-        version: '1.4.0'
-      })
-    },
+      middleware: [
+        historyApiFallback({
+          index: '/demo.html' 
+        }),
+        ssi({
+          baseDir: __dirname + '/app',
+          ext: '.html',
+          version: '2.14.0'
+        })
+      ]
+    }
   })
 })
 
