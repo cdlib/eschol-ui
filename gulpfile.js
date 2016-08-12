@@ -23,15 +23,14 @@ var assets = require('postcss-assets');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
-var reactify = require('reactify');
 var streamify = require('gulp-streamify');
 var eslintify = require('eslintify');
+var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback')
 
 gulp.task('browserify', function() {
   var watcher  = watchify(browserify({
       entries: ['app/jsx/app.jsx'],
-      transform: [reactify],
       debug: true,
       cache: {}, packageCache: {}, fullPaths: true
     }));
@@ -41,6 +40,7 @@ gulp.task('browserify', function() {
         .pipe(gulp.dest('.'))
         console.log('Bundle.js updated');
     })
+      .transform('babelify', {presets: ['es2015', 'react']})
       .bundle()
       .pipe(source('app/js/bundle.js'))
       .pipe(gulp.dest('.'));
