@@ -26,6 +26,7 @@ var watchify = require('watchify');
 var streamify = require('gulp-streamify');
 var eslintify = require('eslintify');
 var babelify = require('babelify');
+var historyApiFallback = require('connect-history-api-fallback');
 
 gulp.task('browserify', function() {
   var watcher  = watchify(browserify({

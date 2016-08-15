@@ -32,7 +32,8 @@ const { // set React Router prefixes:
   IndexRoute,
   Redirect,
   Link,
-  IndexLink
+  IndexLink,
+  browserHistory
 } = ReactRouter
 
 ReactDOM.render((
