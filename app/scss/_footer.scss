@@ -1,0 +1,61 @@
+// ##### Footer Component ##### //
+
+.c-footer {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: $spacing-md;
+	background-color: $color-light-black;
+}
+
+.c-footer__logologin {
+	display: flex;
+	align-self: stretch;
+	margin: 0 0 $spacing-md;
+}
+
+.c-footer__logo {
+	flex: 1 0 auto;
+	color: $color-white;
+}
+
+.c-footer__login {
+	color: $color-white;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.c-footer__nav {
+	margin: 0 0 15px;
+	columns: 2;
+
+	a {
+		display: block;
+		margin: 0 0 15px;
+		color: $color-white;
+		text-decoration: none;
+	}
+
+}
+
+.c-footer__social-icons {
+	margin: 0 0 $spacing-md;
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+	}
+
+}
+
+.c-footer__copyright {
+	color: $color-light-gray;
+
+	text-align: center;
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+	}
+
+}

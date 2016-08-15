@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin: (-$spacing-body) (-$spacing-body) $spacing-body;
   padding: $spacing-body;
-  background-color: lighten($design-light-gray-color, 20%);
+  background-color: lighten($color-light-gray, 20%);
   overflow: hidden;
 
   h1,
@@ -19,7 +19,7 @@
 
   h1 {
   	margin: 0 1em 0 0;
-    color: $design-dark-blue-color;
+    color: $color-dark-blue;
 
   	a {
   		color: inherit;
