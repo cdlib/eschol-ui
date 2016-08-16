@@ -3,7 +3,9 @@
 class CompHeader extends React.Component {
   render() {
 		return (
-			<p>[header component will go here]</p>
+			<a href="">
+				<img src="/images/logo_escholarship.svg" alt="escholarship"/>
+			</a>
 		)
 	}
 }
