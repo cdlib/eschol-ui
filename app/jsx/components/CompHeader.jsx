@@ -1,11 +1,16 @@
 // ##### Header Component ##### //
 
+var ObjSearch = require('../objects/ObjSearch.jsx');
+
 class CompHeader extends React.Component {
   render() {
 		return (
-			<a href="">
-				<img src="/images/logo_escholarship.svg" alt="escholarship"/>
-			</a>
+			<div>
+				<a href="">
+					<img src="/images/logo_escholarship.svg" alt="escholarship"/>
+				</a>
+				<ObjSearch />
+			</div>
 		)
 	}
 }
