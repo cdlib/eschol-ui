@@ -6,7 +6,9 @@ class CompFooter extends React.Component {
 			<div className="c-footer">
 				<div className="c-footer__logologin">
 					<div className="c-footer__logo">
-						[logo goes here]
+						<a href="">
+							<img src="/images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
+						</a>
 					</div>
 					<div className="c-footer__login">Account login
 					</div>
@@ -24,9 +26,18 @@ class CompFooter extends React.Component {
 					<a href="">Terms & Conditions</a>
 				</nav>
 				<div className="c-footer__social-icons">
-					<a href="" className="c-footer__social-icon-link">[facebook]</a>
-					<a href="" className="c-footer__social-icon-link">[twitter]</a>
-					<a href="" className="c-footer__social-icon-link">[google]</a>
+					<a href="">
+						<img src="/images/logo_temp-facebook.png" alt="Facebook"/>
+					</a>
+					<a href="">
+						<img src="/images/logo_temp-twitter.png" alt="Twitter"/>
+					</a>
+					<a href="">
+						<img src="/images/logo_temp-google.png" alt="Google"/>
+					</a>
+					<a href="">
+						<img src="/images/logo_temp-m.png" alt="M"/>
+					</a>
 				</div>
 				<div className="c-footer__copyright">
 					Powered by <a href="">The California Digital Library</a>.<br/>Copyright &copy; 2016 The Regents of the University of California.

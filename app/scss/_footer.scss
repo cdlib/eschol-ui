@@ -17,6 +17,11 @@
 .c-footer__logo {
 	flex: 1 0 auto;
 	color: $color-white;
+
+	img {
+		width: 150px;
+	}
+
 }
 
 .c-footer__login {
@@ -42,8 +47,11 @@
 	margin: 0 0 $spacing-md;
 
 	a {
-		color: $color-white;
-		text-decoration: none;
+		margin: 0 10px;
+	}
+
+	img {
+		width: 40px;
 	}
 
 }
