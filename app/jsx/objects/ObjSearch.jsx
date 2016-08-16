@@ -4,7 +4,10 @@ class ObjSearch extends React.Component {
   render() {
 		return (
 			<div className="o-search">
-				[search object will go here]
+				<form action="">
+					<label htmlFor="global-search">Search eScholarship</label>
+					<input type="search" id="global-search" className="o-search__label" />
+				</form>
 			</div>
 		)
 	}
