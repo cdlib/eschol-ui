@@ -10,8 +10,11 @@ class CompFooter extends React.Component {
 							<img src="/images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
 						</a>
 					</div>
-					<div className="c-footer__login">Account login
-					</div>
+						<a href="">
+							<div className="c-footer__login">
+								Account login
+							</div>
+						</a>
 				</div>
 				<nav className="c-footer__nav">
 					<a href="">Home</a>
@@ -40,7 +43,7 @@ class CompFooter extends React.Component {
 					</a>
 				</div>
 				<div className="c-footer__copyright">
-					Powered by <a href="">The California Digital Library</a>.<br/>Copyright &copy; 2016 The Regents of the University of California.
+					Powered by the <a href="">California Digital Library</a>.<br/>Copyright &copy; 2016 The Regents of the University of California.
 				</div>
 			</div>
 		)
