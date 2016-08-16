@@ -3,7 +3,7 @@
 class ObjSearch extends React.Component {
   render() {
 		return (
-			<div>
+			<div className="o-search">
 				[search object will go here]
 			</div>
 		)
