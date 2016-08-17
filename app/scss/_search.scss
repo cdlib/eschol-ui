@@ -15,6 +15,7 @@
 .o-search__form {
 	display: flex;
 	height: 34px;
+	margin: 0 0 $spacing-sm;
 }
 
 .o-search__label {
@@ -22,6 +23,7 @@
 }
 
 .o-search__field {
+	width: 300px;
 	padding: 0 0 0 40px;
 	border: 1px solid $color-light-gray;
 	border-radius: 3px;
@@ -61,3 +63,12 @@
 	}
 
 }
+
+.o-search__refine {
+
+	label:first-of-type {
+		margin: 0 20px 0 0;
+	}
+
+}
+
