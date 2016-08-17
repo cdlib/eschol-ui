@@ -6,10 +6,17 @@ class CompHeader extends React.Component {
   render() {
 		return (
 			<div className="c-header">
-				<a href="">
-					<img src="/images/logo_escholarship.svg" alt="escholarship"/>
-				</a>
-				<ObjSearch />
+				<div className="c-header__logosearch">
+					<a href="">
+						<img src="/images/logo_escholarship.svg" alt="escholarship"/>
+					</a>
+					<div className="c-header__search">
+						<ObjSearch />
+					</div>
+				</div>
+				<div className="c-header__deposit">
+					<button className="c-header__deposit-button">Deposit/Publish</button>
+				</div>
 			</div>
 		)
 	}

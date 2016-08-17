@@ -1,6 +1,40 @@
 // ##### Header Component ##### //
 
 .c-header {
+
+	@include bp(screen3) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+.c-header__logosearch {
 	display: flex;
-	justify-content: space-between;
+	flex: 1 0 auto;
+	margin: 0 0 $spacing-sm;
+}
+
+.c-header__search {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: flex-end;
+
+	@include bp(screen3) {
+		justify-content: center;
+	}
+
+}
+
+.c-header__deposit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.c-header__deposit-button {
+	height: $input-height;
+	padding: 0 20px;
+	border: none;
+	background-color: $color-orange;
+	color: $color-white;
 }

@@ -1,8 +1,8 @@
 // ##### Search Object ##### //
 
 .o-search {
-	position: absolute;
-	right: $spacing-body;
+	// position: absolute;
+	// right: $spacing-body;
 	background: $color-white;
 	z-index: 2;
 
@@ -14,7 +14,7 @@
 
 .o-search__form {
 	display: flex;
-	height: 34px;
+	height: $input-height;
 	margin: 0 0 $spacing-sm;
 }
 
