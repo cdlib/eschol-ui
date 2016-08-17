@@ -3,3 +3,17 @@
 .o-search {
 	// empty
 }
+
+.o-search__label,
+.o-search__submit-button {
+	@extend %hide;
+}
+
+.o-search__field {
+	height: 34px;
+	padding: 0 0 0 40px;
+	border: 1px solid $color-light-gray;
+	border-radius: 3px;
+	background: url('/images/icon_magnify.svg') no-repeat left 8px center / 16px;
+	font-size: 0.8em;
+}
