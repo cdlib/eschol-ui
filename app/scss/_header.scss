@@ -13,17 +13,25 @@
 	display: flex;
 	flex: 1 0 auto;
 	margin: 0 0 $spacing-sm;
+
+	border: $bred;
 }
 
 .c-header__search {
 	display: flex;
+	// position: absolute;
+	// left: 0;
+	// right: 0;
 	flex: 1 0 auto;
 	justify-content: flex-end;
+	background: $color-white;
+	z-index: 2;
 
 	@include bp(screen3) {
+		position: relative;
 		justify-content: center;
 	}
-
+border: $bblue;
 }
 
 .c-header__deposit {
