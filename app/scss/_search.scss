@@ -1,6 +1,18 @@
 // ##### Search Object ##### //
 
 .o-search {
+	position: absolute;
+	right: $spacing-body;
+	background: $color-white;
+	z-index: 2;
+
+	@include bp(screen3) {
+		position: relative;
+	}
+
+}
+
+.o-search__form {
 	display: flex;
 	height: 34px;
 }
@@ -27,12 +39,25 @@
 	@extend %hide;
 
 	@include bp(screen3) {
-		position: static; // show
-  	left: auto; // show
+		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
+		position: static;
+  	left: auto;
   	padding: 0 16px;
 		border: none;
 		background-color: $color-teal;
 		color: $color-white;
+	}
+
+}
+
+.o-search__close-button {
+	margin: 0 0 0 $spacing-body;
+	padding: 0 13px;
+	border: none;
+	background: url('/images/icon_close.svg') no-repeat center center / 14px;
+
+	@include bp(screen3) {
+		display: none;
 	}
 
 }
