@@ -1,19 +1,33 @@
 // ##### Search Object ##### //
 
 .o-search {
-	// empty
+	display: flex;
+	height: 34px;
 }
 
-.o-search__label,
-.o-search__submit-button {
+.o-search__label {
 	@extend %hide;
 }
 
 .o-search__field {
-	height: 34px;
 	padding: 0 0 0 40px;
-	border: 1px solid $color-light-gray;
-	border-radius: 3px;
+	border-top: 1px solid;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-color: $color-light-gray;
+	border-radius: 3px 0 0 3px;
 	background: url('/images/icon_magnify.svg') no-repeat left 8px center / 16px;
 	font-size: 0.8em;
+}
+
+.o-search__submit-button {
+	padding: 0 16px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-left: none;
+	border-color: $color-teal;
+	color: $color-white;
+	background-color: $color-teal;
 }

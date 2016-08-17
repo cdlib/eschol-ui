@@ -6,7 +6,7 @@ class ObjSearch extends React.Component {
 			<form action="" className="o-search">
 				<label className="o-search__label" htmlFor="global-search">Search eScholarship</label>
 				<input type="search" id="global-search" className="o-search__field" placeholder="Search eScholarship" />
-				<button className="o-search__submit-button">Search</button>
+				<button type="submit" className="o-search__submit-button">Search</button>
 			</form>
 		)
 	}
