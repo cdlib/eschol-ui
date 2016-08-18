@@ -27,6 +27,7 @@ var streamify = require('gulp-streamify');
 var eslintify = require('eslintify');
 var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback');
+var gutil = require('gulp-util');
 
 gulp.task('browserify', function() {
   var watcher  = watchify(browserify({
@@ -36,6 +37,7 @@ gulp.task('browserify', function() {
     }));
   return watcher.on('update', function () {
       watcher.bundle()
+        .on('error', gutil.log.bind(gutil, 'Browserify Error'))
         .pipe(source('app/js/bundle.js'))
         .pipe(gulp.dest('.'))
         console.log('Bundle.js updated');
