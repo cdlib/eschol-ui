@@ -12,26 +12,45 @@
 .c-header__logosearch {
 	display: flex;
 	flex: 1 0 auto;
+	justify-content: space-between;
 	margin: 0 0 $spacing-sm;
-
-	border: $bred;
 }
 
-.c-header__search {
-	display: flex;
-	// position: absolute;
-	// left: 0;
-	// right: 0;
-	flex: 1 0 auto;
-	justify-content: flex-end;
+// test trigger animation button:
+.c-header__search-button {
+	align-self: flex-start;
+
+	@include bp(screen3) {
+		display: none;
+	}
+
+}
+
+%c-header__search {
+	position: absolute;
+	right: $spacing-sm;
+	left: $spacing-sm;
+	transform: translateX(110%);
 	background: $color-white;
 	z-index: 2;
 
 	@include bp(screen3) {
+		display: flex;
 		position: relative;
+		flex: 1 0 auto;
 		justify-content: center;
+		transform: translateX(0%);
 	}
-border: $bblue;
+
+}
+
+.c-header__search {
+	@extend %c-header__search;
+}
+
+.c-header__search--active {
+	@extend %c-header__search;
+	transform: translateX(0%);
 }
 
 .c-header__deposit {
