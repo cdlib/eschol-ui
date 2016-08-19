@@ -1,6 +1,6 @@
 // ##### Footer Page ##### //
 
-var CompFooter = require('../components/CompFooter.jsx');
+import CompFooter from '../components/CompFooter.jsx'
 
 class PageFooter extends React.Component {
   render() {

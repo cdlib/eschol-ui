@@ -1,6 +1,6 @@
 // ##### Header Page ##### //
 
-var CompHeader = require('../components/CompHeader.jsx');
+import CompHeader from '../components/CompHeader.jsx'
 
 class PageHeader extends React.Component {
   render() {

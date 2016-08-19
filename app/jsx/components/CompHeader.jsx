@@ -1,6 +1,8 @@
 // ##### Header Component ##### //
 
-var ObjSearch = require('../objects/ObjSearch.jsx');
+// import React from 'react'
+
+import ObjSearch from '../objects/ObjSearch.jsx'
 
 class CompHeader extends React.Component {
   constructor(props){

@@ -3,15 +3,18 @@
 
 // ***** The vars below (when uncommented) are pulling in the NPM packages into bundle.js via Browserify, but they're not loading in the app, for some reason. ***** //
 
-// var React = require('react');
-// var ReactDOM = require('react-dom');
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+
 // var Router = require('react-router').Router
 // var Route = require('react-router').Route
 // var Link = require('react-router').Link
+// window.ReactRouter = Router;
 
-var Home = require('./pages/Home.jsx');
-var PageFooter = require('./pages/PageFooter.jsx');
-var PageHeader = require('./pages/PageHeader.jsx');
+import Home from './pages/Home.jsx'
+import PageFooter from './pages/PageFooter.jsx'
+import PageHeader from './pages/PageHeader.jsx'
 
 class App extends React.Component {
   render() {

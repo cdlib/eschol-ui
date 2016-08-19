@@ -43,6 +43,8 @@
     "gulp-w3cjs": "^1.2.0",
     "path": "^0.12.7",
     "postcss-assets": "^4.1.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
     "run-sequence": "^1.2.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
