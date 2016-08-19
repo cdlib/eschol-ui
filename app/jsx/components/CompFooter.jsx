@@ -1,5 +1,7 @@
 // ##### Footer Component ##### //
 
+import React from 'react'
+
 class CompFooter extends React.Component {
   render() {
 		return (

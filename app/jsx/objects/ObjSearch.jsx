@@ -1,6 +1,6 @@
 // ##### Search Object ##### //
 
-// import React from 'react'
+import React from 'react'
 
 class ObjSearch extends React.Component {
   render() {

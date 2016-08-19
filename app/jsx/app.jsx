@@ -1,16 +1,9 @@
 
 // ##### Top-level React App ##### //
 
-// ***** The vars below (when uncommented) are pulling in the NPM packages into bundle.js via Browserify, but they're not loading in the app, for some reason. ***** //
-
-// import React from 'react'
-// import ReactDOM from 'react-dom'
-// import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
-
-// var Router = require('react-router').Router
-// var Route = require('react-router').Route
-// var Link = require('react-router').Link
-// window.ReactRouter = Router;
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 import Home from './pages/Home.jsx'
 import PageFooter from './pages/PageFooter.jsx'
@@ -28,16 +21,6 @@ class App extends React.Component {
     )
   }
 }
-
-const { // set React Router prefixes:
-  Router,
-  Route,
-  IndexRoute,
-  Redirect,
-  Link,
-  IndexLink,
-  browserHistory
-} = ReactRouter
 
 ReactDOM.render((
   <Router>
