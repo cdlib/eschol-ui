@@ -10,7 +10,7 @@ class ObjSearch extends React.Component {
 					<label className="o-search__label" htmlFor="global-search">Search eScholarship</label>
 					<input type="search" id="global-search" className="o-search__field" placeholder="Search eScholarship"/>
 					<button type="submit" className="o-search__submit-button">Search</button>
-					<button className="o-search__close-button" aria-label="close"></button>
+					<button className="o-search__close-button" aria-label="close" onClick={()=>this.props.onClose()}></button>
 				</div>
 				<div className="o-search__refine">
 					<input type="radio" name="search-refine" id="o-search__refine-campus"/>
