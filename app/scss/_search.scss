@@ -45,11 +45,11 @@
 
 }
 
-.o-search__close-button {
+.o-search__search-close-button {
 	margin: 0 0 0 $spacing-body;
 	padding: 0 13px;
 	border: none;
-	background: url('/images/icon_close.svg') no-repeat center center / 14px;
+	background: url('/images/icon_close.svg') no-repeat center / 20px;
 
 	@include bp(screen3) {
 		display: none;

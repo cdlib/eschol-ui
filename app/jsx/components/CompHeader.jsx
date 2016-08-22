@@ -19,7 +19,7 @@ class CompHeader extends React.Component {
 					<div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>
 						<ObjSearch onClose = {()=>this.setState({searchActive: false})} />
 					</div>
-					<button className="c-header__search-button" onClick={()=> this.setState({searchActive: true})}>X</button>
+					<button className="c-header__search-open-button" aria-label="open search navigation" onClick = {()=> this.setState({searchActive: true})}></button>
 				</div>
 				<div className="c-header__deposit">
 					<button className="c-header__deposit-button">Deposit/Publish</button>
