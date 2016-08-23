@@ -19,8 +19,12 @@ input[type='search'] {
   appearance: none !important;
 }
 
-// Remove details arrow icon from Chrome & Safari:
+summary {
+	cursor: pointer;
 
-summary::-webkit-details-marker {
-  display: none;
+	// Remove details arrow icon from webkit browsers:
+	&::-webkit-details-marker {
+	  display: none;
+	}
+
 }
