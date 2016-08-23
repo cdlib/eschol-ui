@@ -6,5 +6,26 @@
 
 .c-globalnav__button {
 	display: inline-block;
+	margin: 0 0 10px;
+	padding: 10px;
 	border: 1px solid $color-dark-gray;
+	cursor: pointer;
+}
+
+.c-globalnav__items {
+
+	a {
+		display: flex;
+		flex-flow: column nowrap;
+		padding: 10px;
+		border: 1px solid $color-dark-gray;
+		color: $color-black;
+		text-decoration: none;
+
+		&:not(:first-child) {
+			border-top: none;
+		}
+
+	}
+
 }
