@@ -8,6 +8,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import Home from './pages/Home.jsx'
 import PageFooter from './pages/PageFooter.jsx'
 import PageHeader from './pages/PageHeader.jsx'
+import PageSearch from './pages/PageSearch.jsx'
 
 class App extends React.Component {
   render() {
@@ -28,6 +29,7 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path="/footer" component={PageFooter} />
       <Route path="/header" component={PageHeader} />
+      <Route path="/search" component={PageSearch} />
     </Route>
   </Router>
 ), document.getElementById('main'))

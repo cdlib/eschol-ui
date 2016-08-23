@@ -11,6 +11,10 @@ class Home extends React.Component {
           <li><a href="#footer">Footer</a></li>
           <li><a href="#header">Header</a></li>
         </ul>
+        <h2>Objects</h2>
+        <ul>
+          <li><a href="#search">Search</a></li>
+        </ul>
 	    </div>
   	)
 	}
