@@ -3,3 +3,8 @@
 .c-globalnav {
 	// empty
 }
+
+.c-globalnav__button {
+	display: inline-block;
+	border: 1px solid $color-dark-gray;
+}

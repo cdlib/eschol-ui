@@ -26,8 +26,9 @@
 
 // ***** Global Styles ***** //
 
-@import 'ui-library';
 @import 'fonts';
+@import 'resets';
+@import 'ui-library';
 
 body {
 	margin: 0 auto;
