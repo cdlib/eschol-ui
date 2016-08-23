@@ -4,28 +4,44 @@
 	// empty
 }
 
-.c-globalnav__button {
+.c-globalnav__main-button {
 	display: inline-block;
 	margin: 0 0 10px;
 	padding: 10px;
 	border: 1px solid $color-dark-gray;
-	cursor: pointer;
 }
 
-.c-globalnav__items {
+%c-globalnav__item {
+	display: block;
+	padding: 10px;
+	border: 1px solid $color-dark-gray;
+	color: $color-black;
+	text-decoration: none;
+}
+
+.c-globalnav__sub-button {
+	@extend %c-globalnav__item;
+	border-top: none;
+}
+
+.c-globalnav__main-items {
 
 	a {
-		display: flex;
-		flex-flow: column nowrap;
-		padding: 10px;
-		border: 1px solid $color-dark-gray;
-		color: $color-black;
-		text-decoration: none;
+		@extend %c-globalnav__item;
 
-		&:not(:first-child) {
+		&:not(:first-of-type) {
 			border-top: none;
 		}
 
+	}
+
+}
+
+.c-globalnav__sub-items {
+
+	a {
+		border-top: none;
+		background: lighten($color-light-gray, 15%);
 	}
 
 }
