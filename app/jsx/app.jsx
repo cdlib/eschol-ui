@@ -7,6 +7,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 import Home from './pages/Home.jsx'
 import PageFooter from './pages/PageFooter.jsx'
+import PageGlobalNav from './pages/PageGlobalNav.jsx'
 import PageHeader from './pages/PageHeader.jsx'
 import PageSearch from './pages/PageSearch.jsx'
 
@@ -28,6 +29,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/footer" component={PageFooter} />
+      <Route path="/globalnav" component={PageGlobalNav} />
       <Route path="/header" component={PageHeader} />
       <Route path="/search" component={PageSearch} />
     </Route>
