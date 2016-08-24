@@ -4,12 +4,34 @@
 	// empty
 }
 
+%c-globalnav__button-icon {
+	position: absolute;
+	padding: 7px;
+	background: url('/images/icon_arrow-down.svg') no-repeat center / 13px;
+	content: '';
+}
+
 .c-globalnav__main-button {
 	display: inline-block;
 	margin: 0 0 10px;
-	padding: 10px;
+	padding: 10px 35px 10px 10px;
 	border: 1px solid $color-dark-gray;
 	user-select: none;
+
+	&::after {
+		@extend %c-globalnav__button-icon;
+		margin: 0 0 0 10px;
+	}
+
+}
+
+.c-globalnav__main[open] .c-globalnav__main-button,
+.c-globalnav__sub[open] .c-globalnav__sub-button {
+
+	&::after {
+		transform: rotate(180deg);
+	}
+
 }
 
 %c-globalnav__item {
@@ -22,7 +44,15 @@
 
 .c-globalnav__sub-button {
 	@extend %c-globalnav__item;
+	position: relative;
 	border-top: none;
+	user-select: none;
+
+	&::after {
+		@extend %c-globalnav__button-icon;
+		right: 10px;
+	}
+
 }
 
 .c-globalnav__main-items {
@@ -59,9 +89,9 @@
 
 }
 
-details[open] .c-globalnav__main-items {
+.c-globalnav__main .c-globalnav__main-items {
   overflow: hidden;
-  animation: openMainItems 0.2s linear;
+  animation: openMainItems 0.3s linear;
 }
 
 @keyframes openSubItems {
@@ -76,7 +106,7 @@ details[open] .c-globalnav__main-items {
 
 }
 
-details[open] .c-globalnav__sub-items {
+.c-globalnav__sub .c-globalnav__sub-items {
   overflow: hidden;
   animation: openSubItems 0.3s linear;
 }
