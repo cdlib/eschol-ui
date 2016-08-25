@@ -56,6 +56,8 @@
 }
 
 .c-globalnav__main-items {
+	overflow: hidden;
+  animation: openMainItems 0.3s linear;
 
 	a {
 		@extend %c-globalnav__item;
@@ -69,6 +71,8 @@
 }
 
 .c-globalnav__sub-items {
+	overflow: hidden;
+  animation: openSubItems 0.3s linear;
 
 	a {
 		border-top: none;
@@ -89,11 +93,6 @@
 
 }
 
-.c-globalnav__main .c-globalnav__main-items {
-  overflow: hidden;
-  animation: openMainItems 0.3s linear;
-}
-
 @keyframes openSubItems {
 
 	0% {
@@ -104,9 +103,4 @@
 		height: 37px * 12; // 12 = number of initial items
 	}
 
-}
-
-.c-globalnav__sub .c-globalnav__sub-items {
-  overflow: hidden;
-  animation: openSubItems 0.3s linear;
 }
