@@ -1,6 +1,7 @@
 // ##### Global Navigation Component ##### //
 
 import React from 'react'
+import { polyfillDetails } from 'lavu-details-polyfill';
 
 class CompGlobalNav extends React.Component {
   render() {

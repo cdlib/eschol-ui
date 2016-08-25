@@ -50,6 +50,8 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "details-polyfill-es6": "^1.0.9",
+    "lavu-details-polyfill": "^0.1.0",
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.3.1",
     "react-addons-transition-group": "^15.3.1",
