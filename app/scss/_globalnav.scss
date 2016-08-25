@@ -21,6 +21,7 @@
 	margin: 0 0 10px;
 	padding: 10px 35px 10px 10px;
 	border: 1px solid $color-dark-gray;
+	color: $color-dark-gray;
 	user-select: none;
 
 	@include bp(screen2) {
@@ -47,7 +48,8 @@
 	display: block;
 	padding: 10px;
 	border: 1px solid $color-dark-gray;
-	color: $color-black;
+	color: $color-dark-gray;
+	font-size: 1.1em;
 	text-decoration: none;
 }
 
@@ -58,7 +60,7 @@
 	user-select: none;
 
 	@include bp(screen2) {
-		padding: 10px 35px 10px 10px;
+		padding: 10px 35px 10px 0;
 		border: none;
 	}
 
@@ -78,6 +80,11 @@
 		display: flex !important; // reset details polyfill
 		justify-content: space-around;
 		animation: 0s;
+
+		> a {
+			padding: 10px 0 7px;
+		}
+
 	}
 
 	> a {
@@ -89,6 +96,16 @@
 
 		&:not(:first-of-type) {
 			border-top: none;
+		}
+
+		&.c-globalnav__item--active {
+			color: $color-orange;
+
+			@include bp(screen2) {
+				border-bottom: 3px solid $color-orange;
+				font-weight: bold;
+			}
+
 		}
 
 	}

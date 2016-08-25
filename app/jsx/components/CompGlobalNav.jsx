@@ -11,7 +11,7 @@ class CompGlobalNav extends React.Component {
 					<summary className="c-globalnav__main-button" role="button">Menu
 					</summary>
 					<div className="c-globalnav__main-items">
-						<a href="">About</a>
+						<a className="c-globalnav__item--active" href="">About</a>
 						<details className="c-globalnav__sub">
 							<summary className="c-globalnav__sub-button">
 								Campuses
