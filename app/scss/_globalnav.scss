@@ -1,7 +1,12 @@
 // ##### Global Navigation Component Styles ##### //
 
 .c-globalnav {
-	// empty
+
+	@include bp(screen2) {
+		border-top: 2px solid $color-light-gray;
+		border-bottom: 1px solid $color-light-gray;
+	}
+
 }
 
 %c-globalnav__button-icon {
@@ -17,6 +22,10 @@
 	padding: 10px 35px 10px 10px;
 	border: 1px solid $color-dark-gray;
 	user-select: none;
+
+	@include bp(screen2) {
+		display: none;
+	}
 
 	&::after {
 		@extend %c-globalnav__button-icon;
@@ -48,6 +57,11 @@
 	border-top: none;
 	user-select: none;
 
+	@include bp(screen2) {
+		padding: 10px 35px 10px 10px;
+		border: none;
+	}
+
 	&::after {
 		@extend %c-globalnav__button-icon;
 		right: 10px;
@@ -59,8 +73,19 @@
 	overflow: hidden;
   animation: openMainItems 0.3s linear;
 
-	a {
+	@include bp(screen2) {
+		// scss-lint:disable ImportantRule
+		display: flex !important; // reset details polyfill
+		justify-content: space-around;
+		animation: 0s;
+	}
+
+	> a {
 		@extend %c-globalnav__item;
+
+		@include bp(screen2) {
+			border: none;
+		}
 
 		&:not(:first-of-type) {
 			border-top: none;
@@ -74,9 +99,23 @@
 	overflow: hidden;
   animation: openSubItems 0.3s linear;
 
+	@include bp(screen2) {
+		position: absolute;
+	}
+
 	a {
+		@extend %c-globalnav__item;
 		border-top: none;
 		background: lighten($color-light-gray, 15%);
+
+		@include bp(screen2) {
+
+			&:first-child {
+				border-top: 1px solid $color-dark-gray;
+			}
+
+		}
+
 	}
 
 }

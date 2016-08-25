@@ -7,7 +7,7 @@ class CompGlobalNav extends React.Component {
   render() {
 		return (
 			<nav className="c-globalnav">
-				<details className="c-globalnav__main">
+				<details open className="c-globalnav__main">
 					<summary className="c-globalnav__main-button" role="button">Menu
 					</summary>
 					<div className="c-globalnav__main-items">
