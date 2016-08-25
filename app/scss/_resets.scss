@@ -20,11 +20,16 @@ input[type='search'] {
 }
 
 summary {
-	cursor: pointer;
+  min-height: auto !important; // reset details polyfill
+  cursor: pointer;
 
 	// Remove details arrow icon from webkit browsers:
 	&::-webkit-details-marker {
 	  display: none;
 	}
+
+  &::before {
+    display: none !important; // reset details polyfill
+  }
 
 }
