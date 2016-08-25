@@ -8,7 +8,7 @@ class CompGlobalNav extends React.Component {
 		return (
 			<nav className="c-globalnav">
 				<details className="c-globalnav__main">
-					<summary className="c-globalnav__main-button">Menu
+					<summary className="c-globalnav__main-button" role="button">Menu
 					</summary>
 					<div className="c-globalnav__main-items">
 						<a href="">About</a>
