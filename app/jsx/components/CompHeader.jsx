@@ -1,7 +1,6 @@
 // ##### Header Component ##### //
 
 import React from 'react'
-import ReactTransitionGroup from 'react-addons-transition-group'
 import ObjSearch from '../objects/ObjSearch.jsx'
 
 class CompHeader extends React.Component {
