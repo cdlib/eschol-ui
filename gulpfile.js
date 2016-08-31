@@ -145,3 +145,16 @@ gulp.task('scss-lint', function() {
       'config': 'scss-lint-config.yml' // Settings for linters. See: https://github.com/brigade/scss-lint/tree/master/lib/scss_lint/linter
     }));
 });
+
+// Convert media query breakpoints from JSON to Sass variables:
+
+var jsonSass = require('gulp-json-sass')
+ 
+gulp.task('parse', function() {
+  return gulp
+    .src('app/js/breakpoints.json')
+    .pipe(jsonSass({
+      sass: false
+    }))
+    .pipe(gulp.dest('app/scss/'));
+});

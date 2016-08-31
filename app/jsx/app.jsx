@@ -10,6 +10,7 @@ import PageFooter from './pages/PageFooter.jsx'
 import PageGlobalNav from './pages/PageGlobalNav.jsx'
 import PageHeader from './pages/PageHeader.jsx'
 import PageSearch from './pages/PageSearch.jsx'
+import Test from './pages/Test.jsx'
 
 class App extends React.Component {
   render() {
@@ -32,6 +33,7 @@ ReactDOM.render((
       <Route path="/globalnav" component={PageGlobalNav} />
       <Route path="/header" component={PageHeader} />
       <Route path="/search" component={PageSearch} />
+      <Route path="/test" component={Test} />
     </Route>
   </Router>
 ), document.getElementById('main'))

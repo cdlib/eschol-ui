@@ -28,6 +28,7 @@
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.2",
     "gulp-jshint": "^2.0.1",
+    "gulp-json-sass": "0.0.2",
     "gulp-modernizr": "0.0.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
@@ -49,6 +50,7 @@
     "lavu-details-polyfill": "^0.1.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-responsive": "^1.1.4",
     "react-router": "^2.7.0"
   }
 }
