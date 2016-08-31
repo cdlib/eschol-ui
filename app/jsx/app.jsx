@@ -5,6 +5,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
+import PageBox from './pages/PageBox.jsx'
 import Home from './pages/Home.jsx'
 import PageFooter from './pages/PageFooter.jsx'
 import PageGlobalNav from './pages/PageGlobalNav.jsx'
@@ -29,6 +30,7 @@ ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
+      <Route path="/box" component={PageBox} />
       <Route path="/footer" component={PageFooter} />
       <Route path="/globalnav" component={PageGlobalNav} />
       <Route path="/header" component={PageHeader} />
