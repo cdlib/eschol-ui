@@ -1,9 +1,6 @@
 // ##### Test Page ##### //
 
 import React from 'react'
-import joelMQ from '../../js/mediaqueries.js'
-
-joelMQ();
 
 class Test extends React.Component {
   render() {
