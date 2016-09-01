@@ -14,7 +14,7 @@ class Home extends React.Component {
         </ul>
         <h2>Objects</h2>
         <ul>
-          <li><a href="#box">Box</a></li>
+          <li><a href="#columnbox">Column Box</a></li>
           <li><a href="#search">Search</a></li>
         </ul>
 	    </div>
