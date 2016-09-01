@@ -13,11 +13,7 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
-var validateHTML = require('gulp-w3cjs');
 var scsslint = require('gulp-scss-lint');
-var eslint = require('gulp-eslint');
-var lbInclude = require('gulp-lb-include');
-var ssi = require('browsersync-ssi');
 var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
 var source = require('vinyl-source-stream');
@@ -26,24 +22,26 @@ var watchify = require('watchify');
 var streamify = require('gulp-streamify');
 var eslintify = require('eslintify');
 var babelify = require('babelify');
-var historyApiFallback = require('connect-history-api-fallback')
+var historyApiFallback = require('connect-history-api-fallback');
+var gutil = require('gulp-util');
 
 gulp.task('browserify', function() {
-  var watcher  = watchify(browserify({
-      entries: ['app/jsx/app.jsx'],
-      debug: true,
-      cache: {}, packageCache: {}, fullPaths: true
-    }));
+  var watcher = watchify(browserify({
+    entries: ['app/jsx/app.jsx'],
+    debug: true,
+    cache: {}, packageCache: {}, fullPaths: true
+  }));
   return watcher.on('update', function () {
-      watcher.bundle()
-        .pipe(source('app/js/bundle.js'))
-        .pipe(gulp.dest('.'))
-        console.log('Bundle.js updated');
-    })
-      .transform('babelify', {presets: ['es2015', 'react']})
-      .bundle()
+    watcher.bundle()
+      .on('error', gutil.log.bind(gutil, 'Browserify Error'))
       .pipe(source('app/js/bundle.js'))
-      .pipe(gulp.dest('.'));
+      .pipe(gulp.dest('.'))
+      console.log('Bundle.js updated');
+    })
+  .transform('babelify', {presets: ['es2015', 'react']})
+  .bundle()
+  .pipe(source('app/js/bundle.js'))
+  .pipe(gulp.dest('.'));
 });
 
 // Run the dev process 'gulp':
@@ -112,17 +110,7 @@ gulp.task('browserSync', function() {
   browserSync({
     server: {
       baseDir: 'app',
-      middleware: [
-        historyApiFallback({
-          index: '/demo.html' 
-        }),
-        ssi({
-          baseDir: __dirname + '/app',
-          ext: '.html',
-          version: '2.14.0'
-        })
-      ]
-    }
+    },
   })
 })
 
@@ -132,8 +120,7 @@ gulp.task('useref', function(){
   return gulp.src(['app/**/*.html', '!app/includes/*'])
     .pipe(useref())
     .pipe(gulpIf('*.css', minifyCSS()))
-    // .pipe(gulpIf('*.js', uglify()))
-    .pipe(lbInclude()) // Process <!--#include file="" --> statements
+    // .pipe(gulpIf('*.js', uglify())) // disabled for now
     .pipe(gulp.dest('dist'))
 });
 
@@ -159,9 +146,15 @@ gulp.task('scss-lint', function() {
     }));
 });
 
+// Convert media query breakpoints from JSON to Sass variables:
 
-gulp.task('js-lint', function() { 
-  return gulp.src(['app/jsx/*'])
-    .pipe(eslint())
-    .pipe(eslint.format());
+var jsonSass = require('gulp-json-sass')
+ 
+gulp.task('parse', function() {
+  return gulp
+    .src('app/js/breakpoints.json')
+    .pipe(jsonSass({
+      sass: false
+    }))
+    .pipe(gulp.dest('app/scss/'));
 });

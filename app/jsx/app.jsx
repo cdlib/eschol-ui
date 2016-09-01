@@ -1,63 +1,41 @@
 
 // ##### Top-level React App ##### //
 
-// ***** The vars below (when uncommented) are pulling in the NPM packages into bundle.js via Browserify, but they're not loading in the app, for some reason. ***** //
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
-// var React = require('react');
-// var ReactDOM = require('react-dom');
-// var Router = require('react-router').Router
-// var Route = require('react-router').Route
-// var Link = require('react-router').Link
-
-var Home = require('./pages/home.jsx');
-var Apples = require('./pages/apples.jsx');
-var Oranges = require('./pages/oranges.jsx');
-var Pears = require('./pages/pears.jsx');
-
-// var App = React.createClass({
-// render: function() {
+import PageColumnBox from './pages/PageColumnBox.jsx'
+import Home from './pages/Home.jsx'
+import PageFooter from './pages/PageFooter.jsx'
+import PageGlobalNav from './pages/PageGlobalNav.jsx'
+import PageHeader from './pages/PageHeader.jsx'
+import PageSearch from './pages/PageSearch.jsx'
+import Test from './pages/Test.jsx'
 
 class App extends React.Component {
   render() {
     return (
       <div>
-      <p>
-        <strong>Header</strong>
-      </p>
-      <div>
-        <Link to="/demo.html">Home</Link>&nbsp;|&nbsp;
-        <Link to="/apples">Page 1</Link>&nbsp;|&nbsp;
-        <Link to="/oranges">Page 2</Link>&nbsp;|&nbsp;
-        <Link to="/pears">Page 3</Link>
+        <div className="ui-library-header">
+          <h1><Link to="/">eScholarship UI Library</Link></h1>
         </div>
-        <hr />
         {this.props.children}
-        <hr />
-        <p>
-          <strong>Footer</strong>
-        </p>
       </div>
     )
   }
 }
 
-const { // set React Router prefixes:
-  Router,
-  Route,
-  IndexRoute,
-  Redirect,
-  Link,
-  IndexLink,
-  browserHistory
-} = ReactRouter
-
 ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/demo.html" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="/apples" component={Apples} />
-      <Route path="/oranges" component={Oranges} />
-      <Route path="/pears" component={Pears} />
+  <Router>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="/columnbox" component={PageColumnBox} />
+      <Route path="/footer" component={PageFooter} />
+      <Route path="/globalnav" component={PageGlobalNav} />
+      <Route path="/header" component={PageHeader} />
+      <Route path="/search" component={PageSearch} />
+      <Route path="/test" component={Test} />
     </Route>
   </Router>
 ), document.getElementById('main'))
