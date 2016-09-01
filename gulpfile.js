@@ -38,7 +38,7 @@ gulp.task('browserify', function() {
       .pipe(gulp.dest('.'))
       console.log('Bundle.js updated');
     })
-  .transform('babelify', {presets: ['es2015', 'react']})
+  .transform('babelify', {presets: ['es2015', 'react', 'stage-2']})
   .bundle()
   .pipe(source('app/js/bundle.js'))
   .pipe(gulp.dest('.'));
