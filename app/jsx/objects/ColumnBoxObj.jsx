@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class ObjBox extends React.Component {
+class BoxObj extends React.Component {
   render() {
 		return (
 			<div>
@@ -24,4 +24,4 @@ class ObjBox extends React.Component {
 	}
 }
 
-module.exports = ObjBox;
+module.exports = BoxObj;

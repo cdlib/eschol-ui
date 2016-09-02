@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class CompColumns extends React.Component {
+class ColumnsComp extends React.Component {
   render() {
 		return (
 			<div>
@@ -43,4 +43,4 @@ class CompColumns extends React.Component {
 	}
 }
 
-module.exports = CompColumns;
+module.exports = ColumnsComp;

@@ -4,7 +4,7 @@ import React from 'react'
 import { polyfillDetails } from 'lavu-details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
-class CompGlobalNav extends React.Component {
+class GlobalNavComp extends React.Component {
   componentWillMount() {
   	if (matchMedia) {
   		this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
@@ -52,4 +52,4 @@ class CompGlobalNav extends React.Component {
 	}
 }
 
-module.exports = CompGlobalNav;
+module.exports = GlobalNavComp;

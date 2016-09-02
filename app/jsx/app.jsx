@@ -6,13 +6,13 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 import AboutLayout from './layouts/AboutLayout.jsx'
-import PageColumnBox from './pages/PageColumnBox.jsx'
-import PageColumns from './pages/PageColumns.jsx'
+import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
+import ColumnsPage from './pages/ColumnsPage.jsx'
 import Home from './pages/Home.jsx'
-import PageFooter from './pages/PageFooter.jsx'
-import PageGlobalNav from './pages/PageGlobalNav.jsx'
-import PageHeader from './pages/PageHeader.jsx'
-import PageSearch from './pages/PageSearch.jsx'
+import FooterPage from './pages/FooterPage.jsx'
+import GlobalNavPage from './pages/GlobalNavPage.jsx'
+import HeaderPage from './pages/HeaderPage.jsx'
+import SearchPage from './pages/SearchPage.jsx'
 import Test from './pages/Test.jsx'
 
 class App extends React.Component {
@@ -33,12 +33,12 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/about" component={AboutLayout} />
-      <Route path="/columnbox" component={PageColumnBox} />
-      <Route path="/columns" component={PageColumns} />
-      <Route path="/footer" component={PageFooter} />
-      <Route path="/globalnav" component={PageGlobalNav} />
-      <Route path="/header" component={PageHeader} />
-      <Route path="/search" component={PageSearch} />
+      <Route path="/columnbox" component={ColumnBoxPage} />
+      <Route path="/columns" component={ColumnsPage} />
+      <Route path="/footer" component={FooterPage} />
+      <Route path="/globalnav" component={GlobalNavPage} />
+      <Route path="/header" component={HeaderPage} />
+      <Route path="/search" component={SearchPage} />
       <Route path="/test" component={Test} />
     </Route>
   </Router>
