@@ -8,6 +8,7 @@ class Home extends React.Component {
 			<div>
 	   		<h2>Components</h2>
         <ul>
+          <li><a href="#columns">Columns</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>
           <li><a href="#header">Header</a></li>
