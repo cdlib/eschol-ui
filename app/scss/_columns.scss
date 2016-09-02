@@ -7,29 +7,29 @@
     align-items: flex-start;
   }
 
-}
-
-.c-columns__content {
-  flex: 1;
-}
-
-.c-columns__sidebar1,
-.c-columns__sidebar2 {
-  flex: 0 0 28%; // column width
-}
-
-.c-columns__sidebar1 {
-
-  @include bp(screen2) {
-    padding: 0 20px 0 0;
+  main {
+    flex: 1;
   }
 
-}
+  aside {
+    flex: 0 0 28%; // column widths
 
-.c-columns__sidebar2 {
+    &:first-child {
 
-	@include bp(screen2) {
-    padding: 0 0 0 20px;
+      @include bp(screen2) {
+        padding: 0 $spacing-md 0 0;
+      }
+
+    }
+
+    &:last-child {
+
+      @include bp(screen2) {
+        padding: 0 0 0 $spacing-md;
+      }
+
+    }
+
   }
 
 }
