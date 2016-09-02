@@ -14,7 +14,7 @@
   aside {
     flex: 0 0 28%; // column widths
 
-    &:first-child {
+    &:first-child { // left sidebar
 
       @include bp(screen2) {
         padding: 0 $spacing-md 0 0;
@@ -22,7 +22,7 @@
 
     }
 
-    &:last-child {
+    &:last-child { // right sidebar
 
       @include bp(screen2) {
         padding: 0 0 0 $spacing-md;
