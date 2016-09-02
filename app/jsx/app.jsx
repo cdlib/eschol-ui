@@ -5,6 +5,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
+import AboutLayout from './layouts/AboutLayout.jsx'
 import PageColumnBox from './pages/PageColumnBox.jsx'
 import PageColumns from './pages/PageColumns.jsx'
 import Home from './pages/Home.jsx'
@@ -31,6 +32,7 @@ ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
+      <Route path="/about" component={AboutLayout} />
       <Route path="/columnbox" component={PageColumnBox} />
       <Route path="/columns" component={PageColumns} />
       <Route path="/footer" component={PageFooter} />
