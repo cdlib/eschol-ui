@@ -12,6 +12,7 @@ class Home extends React.Component {
         </ul>
         <h2>Components</h2>
         <ul>
+          <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#columns">Columns</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>

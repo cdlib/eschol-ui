@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 import AboutLayout from './layouts/AboutLayout.jsx'
+import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import Home from './pages/Home.jsx'
@@ -33,6 +34,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/about" component={AboutLayout} />
+      <Route path="/breadcrumb" component={BreadcrumbPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
       <Route path="/columns" component={ColumnsPage} />
       <Route path="/footer" component={FooterPage} />
