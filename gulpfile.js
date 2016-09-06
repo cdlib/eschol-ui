@@ -146,15 +146,13 @@ gulp.task('scss-lint', function() {
     }));
 });
 
-// Convert media query breakpoints from JSON to Sass variables:
+// Convert media query breakpoints from SCSS variables to JSON key/value pairs:
 
-var jsonSass = require('gulp-json-sass')
+var sassJson = require('gulp-sass-json');
  
-gulp.task('parse', function() {
+gulp.task('sass-to-json', function () {
   return gulp
-    .src('app/js/breakpoints.json')
-    .pipe(jsonSass({
-      sass: false
-    }))
-    .pipe(gulp.dest('app/scss/'));
+    .src('app/scss/_breakpoints.scss')
+    .pipe(sassJson())
+    .pipe(gulp.dest('app/js')); // breakpoints.json
 });
