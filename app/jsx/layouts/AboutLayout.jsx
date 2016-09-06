@@ -4,6 +4,7 @@ import React from 'react'
 import HeaderComp from '../components/HeaderComp.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
+import SidebarNavObj from '../objects/SidebarNavObj.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class AboutLayout extends React.Component {
@@ -15,24 +16,9 @@ class AboutLayout extends React.Component {
 				<BreadcrumbComp />
 				<div className="c-columns">
 					<aside>
-						<div className="o-columnbox-sidebar">
+						<div className="o-columnbox-sidebar o-sidebarnav">
 							<h1 className="o-columnbox-sidebar__heading">About eScholarship</h1>
-							<ul>
-								<li><a href="">About eScholarship</a></li>
-								<li><a href="">About California Digital Library</a></li>
-								<li><a href="">eScholarship Staff</a></li>
-								<li><a href="">Campus Contacts</a></li>
-								<li><a href="">eScholarship Technology</a></li>
-								<li><a href="">Featured Announcements </a></li>
-								<li><a href="">In the Press</a></li>
-								<li><a href="">Press Releases</a></li>
-								<li><a href="">Testimonials</a></li>
-								<li><a href="">OA Policy Information</a></li>
-								<li><a href="">Privacy Policy</a></li>
-								<hr/>
-								<li><a href="">Recently Added Publications</a></li>
-								<li><a href="">Trending Publications</a></li>
-							</ul>
+							<SidebarNavObj />
 						</div>
 					</aside>
 					<main>
