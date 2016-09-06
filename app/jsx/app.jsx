@@ -14,6 +14,7 @@ import FooterPage from './pages/FooterPage.jsx'
 import GlobalNavPage from './pages/GlobalNavPage.jsx'
 import HeaderPage from './pages/HeaderPage.jsx'
 import SearchPage from './pages/SearchPage.jsx'
+import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import Test from './pages/Test.jsx'
 
 class App extends React.Component {
@@ -41,6 +42,7 @@ ReactDOM.render((
       <Route path="/globalnav" component={GlobalNavPage} />
       <Route path="/header" component={HeaderPage} />
       <Route path="/search" component={SearchPage} />
+      <Route path="/sidebarnav" component={SidebarNavPage} />
       <Route path="/test" component={Test} />
     </Route>
   </Router>

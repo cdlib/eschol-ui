@@ -22,6 +22,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#columnbox">Column Box</a></li>
           <li><a href="#search">Search</a></li>
+          <li><a href="#sidebarnav">Sidebar Navigation</a></li>
         </ul>
 	    </div>
   	)
