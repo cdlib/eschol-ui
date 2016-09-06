@@ -1,6 +1,7 @@
 // ##### Column Layout Component ##### //
 
 .c-columns {
+  margin: 0 0 $spacing-md;
 
   @include bp(screen2) {
     display: flex;
