@@ -7,16 +7,16 @@
 
 .o-columnbox-main {
 	@extend %o-columnbox;
-	padding: 0 20px 10px;
+	padding: 0 $spacing-lg $spacing-sm;
 }
 
 .o-columnbox-sidebar {
 	@extend %o-columnbox;
-	padding: 0 10px 10px;
+	padding: 0 $spacing-sm $spacing-sm;
 }
 
 %o-columnbox__heading {
-	padding: 5px 10px;
+	padding: 5px $spacing-sm;
 	background: $color-teal;
 	color: $color-white;
 	font-size: 1.3em;
@@ -25,10 +25,10 @@
 
 .o-columnbox-main__heading {
 	@extend %o-columnbox__heading;
-	margin: 0 -20px 20px;
+	margin: 0 (-$spacing-lg) $spacing-md;
 }
 
 .o-columnbox-sidebar__heading {
 	@extend %o-columnbox__heading;
-	margin: 0 -10px 20px;
+	margin: 0 (-$spacing-sm) $spacing-md;
 }
