@@ -1,13 +1,24 @@
 // ##### Global Navigation Component ##### //
 
 import React from 'react'
-import { polyfillDetails } from 'lavu-details-polyfill';
+import { polyfillDetails } from 'lavu-details-polyfill'
+import Breakpoints from '../../js/breakpoints.json'
 
-class CompGlobalNav extends React.Component {
+class GlobalNavComp extends React.Component {
+  componentWillMount() {
+  	if (matchMedia) {
+  		this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
+  		this.mq.addListener(this.widthChange)
+  		this.widthChange()
+  	}
+  }
+  widthChange = ()=> {
+  	this.setState({isOpen: this.mq.matches})
+  }
   render() {
 		return (
 			<nav className="c-globalnav">
-				<details open className="c-globalnav__main">
+				<details open={this.state.isOpen ? "open" : ""} className="c-globalnav__main">
 					<summary className="c-globalnav__main-button" role="button">Menu
 					</summary>
 					<div className="c-globalnav__main-items">
@@ -41,4 +52,4 @@ class CompGlobalNav extends React.Component {
 	}
 }
 
-module.exports = CompGlobalNav;
+module.exports = GlobalNavComp;

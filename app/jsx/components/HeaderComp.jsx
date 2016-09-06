@@ -1,9 +1,9 @@
 // ##### Header Component ##### //
 
 import React from 'react'
-import ObjSearch from '../objects/ObjSearch.jsx'
+import SearchObj from '../objects/SearchObj.jsx'
 
-class CompHeader extends React.Component {
+class HeaderComp extends React.Component {
   constructor(props){
   	super(props)
   	this.state = {searchActive: false}
@@ -16,7 +16,7 @@ class CompHeader extends React.Component {
 						<img src="/images/logo_escholarship.svg" alt="escholarship"/>
 					</a>	
 					<div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>
-						<ObjSearch onClose = {()=>this.setState({searchActive: false})} />
+						<SearchObj onClose = {()=>this.setState({searchActive: false})} />
 					</div>
 					<button className="c-header__search-open-button" aria-label="open search navigation" onClick = {()=> this.setState({searchActive: true})}></button>
 				</div>
@@ -28,4 +28,4 @@ class CompHeader extends React.Component {
 	}
 }
 
-module.exports = CompHeader;
+module.exports = HeaderComp;

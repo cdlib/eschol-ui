@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class CompFooter extends React.Component {
+class FooterComp extends React.Component {
   render() {
 		return (
 			<div className="c-footer">
@@ -52,4 +52,4 @@ class CompFooter extends React.Component {
 	}
 }
 
-module.exports = CompFooter;
+module.exports = FooterComp;
