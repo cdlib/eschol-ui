@@ -1,6 +1,7 @@
 // ##### Global Navigation Component Styles ##### //
 
 .c-globalnav {
+	margin: 0 0 $spacing-md;
 
 	@include bp(screen2) {
 		border-top: 2px solid $color-light-gray;
