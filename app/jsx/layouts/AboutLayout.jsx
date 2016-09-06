@@ -28,17 +28,17 @@ class AboutLayout extends React.Component {
 							<p>With eScholarship, you can publish the following original scholarly works on a dynamic research platform available to scholars worldwide:</p>
 							</p>
 							<ul>
-								<li><a href="">Books</a></li>
-								<li><a href="">Journals</a></li>
-								<li><a href="">Working Papers</a></li>
-								<li><a href="">Previously Published Works</a></li>
-								<li><a href="">Conferences</a></li>
+								<li><a className="o-textlink__primary" href="">Books</a></li>
+								<li><a className="o-textlink__primary" href="">Journals</a></li>
+								<li><a className="o-textlink__primary" href="">Working Papers</a></li>
+								<li><a className="o-textlink__primary" href="">Previously Published Works</a></li>
+								<li><a className="o-textlink__primary" href="">Conferences</a></li>
 							</ul>
 							<p>eScholarship also provides deposit and dissemination services for postprints, or previously published articles.</p>
 							<p>Publications benefit from manuscript and peer-review management systems, as well as a full range of persistent access and preservation services.</p>
 							<p>Learn more about what to expect from publishing with eScholarship.</p>
 							<p>eScholarship is a service of the Publishing Group of the California Digital Library.</p>
-							<p>Questions? <a href="">Contact us</a>.</p>
+							<p>Questions? <a className="o-textlink__primary" href="">Contact us</a>.</p>
 						</div>
 					</main>
 				</div>
