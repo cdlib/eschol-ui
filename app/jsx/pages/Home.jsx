@@ -18,6 +18,8 @@ class Home extends React.Component {
           <li><a href="#footer">Footer</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>
           <li><a href="#header">Header</a></li>
+          <li><a href="#infosresult">Informational Pages Search Result</a></li>
+          <li><a href="#scholsresult">Scholarly Works Search Result</a></li>
           <li><a href="#search">Search</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
           <li><a href="#textlink">Text Links</a></li>
