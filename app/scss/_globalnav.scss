@@ -1,6 +1,7 @@
 // ##### Global Navigation Component Styles ##### //
 
 .c-globalnav {
+	position: relative;
 	margin: 0 0 $spacing-md;
 
 	@include bp(screen2) {
@@ -8,6 +9,10 @@
 		border-bottom: 1px solid $color-light-gray;
 	}
 
+}
+
+.c-globalnav__main {
+	// not used
 }
 
 %c-globalnav__button-icon {
@@ -73,12 +78,17 @@
 }
 
 .c-globalnav__main-items {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background-color: $color-white;
 	overflow: hidden;
   animation: openMainItems 0.3s linear;
 
 	@include bp(screen2) {
 		// scss-lint:disable ImportantRule
-		display: flex !important; // reset details polyfill
+		display: flex !important; // override details polyfill
+		position: static;
 		justify-content: space-around;
 		animation: 0s;
 
@@ -111,6 +121,10 @@
 
 	}
 
+}
+
+.c-globalnav__sub {
+	// not used
 }
 
 .c-globalnav__sub-items {
