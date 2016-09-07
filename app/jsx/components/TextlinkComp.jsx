@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class TextlinkObj extends React.Component {
+class TextlinkComp extends React.Component {
   render() {
 		return (
 			<div>
@@ -17,4 +17,4 @@ class TextlinkObj extends React.Component {
 	}
 }
 
-module.exports = TextlinkObj;
+module.exports = TextlinkComp;

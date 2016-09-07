@@ -13,14 +13,11 @@ class Home extends React.Component {
         <h2>Components</h2>
         <ul>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
+          <li><a href="#columnbox">Column Box</a></li>
           <li><a href="#columns">Columns</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>
           <li><a href="#header">Header</a></li>
-        </ul>
-        <h2>Objects</h2>
-        <ul>
-          <li><a href="#columnbox">Column Box</a></li>
           <li><a href="#search">Search</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
           <li><a href="#textlink">Text Links</a></li>

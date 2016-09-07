@@ -4,7 +4,7 @@ import React from 'react'
 import HeaderComp from '../components/HeaderComp.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
-import SidebarNavObj from '../objects/SidebarNavObj.jsx'
+import SidebarNavComp from '../components/SidebarNavComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class AboutLayout extends React.Component {
@@ -18,7 +18,7 @@ class AboutLayout extends React.Component {
 					<aside>
 						<div className="o-columnbox-sidebar o-sidebarnav">
 							<h1 className="o-columnbox-sidebar__heading">About eScholarship</h1>
-							<SidebarNavObj />
+							<SidebarNavComp />
 						</div>
 					</aside>
 					<main>

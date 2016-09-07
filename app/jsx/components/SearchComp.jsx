@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class SearchObj extends React.Component {
+class SearchComp extends React.Component {
   render() {
 		return (
 			<form action="" className="o-search">
@@ -23,4 +23,4 @@ class SearchObj extends React.Component {
 	}
 }
 
-module.exports = SearchObj;
+module.exports = SearchComp;

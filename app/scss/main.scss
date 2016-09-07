@@ -12,20 +12,17 @@
 
 @import '../bower_components/normalize-scss/_normalize.scss';
 
-// ***** Objects ***** //
-
-@import 'columnbox';
-@import 'textlink';
-@import 'search';
-@import 'sidebarnav';
-
 // ***** Components ***** //
 
 @import 'breadcrumb';
+@import 'columnbox';
 @import 'columns';
 @import 'footer';
 @import 'globalnav';
 @import 'header';
+@import 'search';
+@import 'sidebarnav';
+@import 'textlink';
 
 // ***** Layouts ***** //
 

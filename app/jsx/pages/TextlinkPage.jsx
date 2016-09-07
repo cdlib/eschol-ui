@@ -1,16 +1,16 @@
 // ##### Footer Page ##### //
 
 import React from 'react'
-import TextlinkObj from '../objects/TextlinkObj.jsx'
+import TextlinkComp from '../components/TextlinkComp.jsx'
 
-class SidebarNavPage extends React.Component {
+class TextlinkPage extends React.Component {
   render() {
 		return (
 			<div>
-	   		<TextlinkObj />
+	   		<TextlinkComp />
 	    </div>
   	)
 	}
 }
 
-module.exports = SidebarNavPage;
+module.exports = TextlinkPage;

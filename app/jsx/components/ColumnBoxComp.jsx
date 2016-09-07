@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class BoxObj extends React.Component {
+class ColumnBoxComp extends React.Component {
   render() {
 		return (
 			<div>
@@ -24,4 +24,4 @@ class BoxObj extends React.Component {
 	}
 }
 
-module.exports = BoxObj;
+module.exports = ColumnBoxComp;

@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class SidebarNavObj extends React.Component {
+class SidebarNavComp extends React.Component {
   render() {
 		return (
 			<nav className="o-sidebarnav">
@@ -26,4 +26,4 @@ class SidebarNavObj extends React.Component {
 	}
 }
 
-module.exports = SidebarNavObj;
+module.exports = SidebarNavComp;

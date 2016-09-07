@@ -1,13 +1,13 @@
 // ##### Footer Page ##### //
 
 import React from 'react'
-import SidebarNavObj from '../objects/SidebarNavObj.jsx'
+import SidebarNavComp from '../components/SidebarNavComp.jsx'
 
 class SidebarNavPage extends React.Component {
   render() {
 		return (
 			<div>
-	   		<SidebarNavObj />
+	   		<SidebarNavComp />
 	    </div>
   	)
 	}
