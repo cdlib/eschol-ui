@@ -3,3 +3,19 @@
 .c-infopages {
 	// empty
 }
+
+.c-infopages__item {
+	padding: $spacing-sm;
+	border: 1px solid $color-dark-gray;
+}
+
+.c-infopages__heading {
+	color: $color-teal;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.c-infopages__heading-title {
+	display: block;
+	font-weight: bold;
+}
