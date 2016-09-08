@@ -1,7 +1,7 @@
 // ##### Informational Pages Component ##### //
 
 .c-infopages {
-	
+
 	@include bp(screen2) {
 		display: flex;
 	}
@@ -10,10 +10,6 @@
 
 .c-infopages__item {
 	padding: $spacing-md;
-	
-	&:not(:first-child) {
-		border-top: 1px solid $color-dark-gray;
-	}
 
 	@include bp(screen2) {
 		flex: 0 1 33%; // 3 columns
@@ -23,6 +19,10 @@
 			border-left: none;
 		}
 
+	}
+
+	&:not(:first-child) {
+		border-top: 1px solid $color-dark-gray;
 	}
 
 }
