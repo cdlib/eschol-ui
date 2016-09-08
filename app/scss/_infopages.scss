@@ -5,8 +5,12 @@
 }
 
 .c-infopages__item {
-	padding: $spacing-sm;
-	border: 1px solid $color-dark-gray;
+	padding: $spacing-md;
+	
+	&:not(:first-child) {
+		border-top: 1px solid $color-dark-gray;
+	}
+
 }
 
 .c-infopages__heading {
