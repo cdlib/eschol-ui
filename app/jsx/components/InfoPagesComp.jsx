@@ -11,6 +11,16 @@ class InfoPagesComp extends React.Component {
 					<p>The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
 					</p>
 				</div>
+				<div className="c-infopages__item">
+					<div className="c-infopages__heading">eScholarship <span className="c-infopages__heading-title">Content on this Site: Frequently Asked Questions</span></div>
+					<p>eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide. Learn more about the digital publishing services provided by&hellip;
+					</p>
+				</div>
+				<div className="c-infopages__item">
+					<div className="c-infopages__heading">UC Berkeley <span className="c-infopages__heading-title">Content on this Site: Frequently Asked Questions</span></div>
+					<p>eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide. Learn more about the digital publishing services provided by eScholarship&hellip;
+					</p>
+				</div>
 			</div>
 		)
 	}
