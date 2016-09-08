@@ -14,9 +14,14 @@
 }
 
 .c-infopages__heading {
-	color: $color-teal;
+	margin: 0;
 	font-size: 1.2em;
 	font-weight: normal;
+
+	a {
+		@extend %o-textlink__secondary;
+	}
+
 }
 
 .c-infopages__heading-title {
