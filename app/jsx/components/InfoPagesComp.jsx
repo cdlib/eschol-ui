@@ -8,7 +8,7 @@ class InfoPagesComp extends React.Component {
 			<div className="c-infopages">
 				<div className="c-infopages__item">
 					<div className="c-infopages__heading">The Center for Environmental Design Research <span className="c-infopages__heading-title">In the Press</span></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iste officiis sequi maiores, numquam praesentium qui molestias perspiciatis accusamus. Commodi minima quaerat deleniti voluptate fugiat necessitatibus tenetur eum enim inventore.
+					<p>The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
 					</p>
 				</div>
 			</div>
