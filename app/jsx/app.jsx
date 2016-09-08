@@ -14,9 +14,11 @@ import FooterPage from './pages/FooterPage.jsx'
 import GlobalNavPage from './pages/GlobalNavPage.jsx'
 import HeaderPage from './pages/HeaderPage.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
+import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
 import SearchPage from './pages/SearchPage.jsx'
 import SidebarNavPage from './pages/SidebarNavPage.jsx'
+import SortPage from './pages/SortPage.jsx'
 import TextlinkPage from './pages/TextlinkPage.jsx'
 import Test from './pages/Test.jsx'
 
@@ -45,9 +47,11 @@ ReactDOM.render((
       <Route path="/globalnav" component={GlobalNavPage} />
       <Route path="/header" component={HeaderPage} />
       <Route path="/infopages" component={InfoPagesPage} />
+      <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />
       <Route path="/search" component={SearchPage} />
       <Route path="/sidebarnav" component={SidebarNavPage} />
+      <Route path="/sort" component={SortPage} />
       <Route path="/test" component={Test} />
       <Route path="/textlink" component={TextlinkPage} />
     </Route>
