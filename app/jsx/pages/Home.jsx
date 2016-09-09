@@ -16,6 +16,7 @@ class Home extends React.Component {
           <li><a href="#columnbox">Column Box</a></li>
           <li><a href="#columns">Columns</a></li>
           <li><a href="#footer">Footer</a></li>
+          <li><a href="#fcontrol">Form Controls</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>
           <li><a href="#header">Header</a></li>
           <li><a href="#infopages">Informational Pages Search Result</a></li>
