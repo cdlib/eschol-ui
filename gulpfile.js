@@ -24,6 +24,7 @@ var eslintify = require('eslintify');
 var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback');
 var gutil = require('gulp-util');
+var sftp = require('gulp-sftp');
 
 gulp.task('browserify', function() {
   var watcher = watchify(browserify({
@@ -155,4 +156,15 @@ gulp.task('sass-to-json', function () {
     .src('app/scss/_breakpoints.scss')
     .pipe(sassJson())
     .pipe(gulp.dest('app/js')); // breakpoints.json
+});
+
+// Deploy a build via SFTP to a web server by running 'deploy':
+gulp.task('deploy', function () {
+  return gulp.src('dist/**')
+    .pipe(sftp({
+      host: 'webprod.cdlib.org',
+      remotePath: '/apps/webprod/apache/htdocs/escholarship/',
+      authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc. See: https://www.npmjs.com/package/gulp-sftp/#authentication
+      auth: 'keyMain'
+    }));
 });
