@@ -9,7 +9,7 @@ class FooterComp extends React.Component {
 				<div className="c-footer__logologin">
 					<div className="c-footer__logo">
 						<a href="">
-							<img src="/images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
+							<img src="images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
 						</a>
 					</div>
 						<a href="">
@@ -32,16 +32,16 @@ class FooterComp extends React.Component {
 				</nav>
 				<div className="c-footer__social-icons">
 					<a href="">
-						<img src="/images/logo_temp-facebook.png" alt="Facebook"/>
+						<img src="images/logo_temp-facebook.png" alt="Facebook"/>
 					</a>
 					<a href="">
-						<img src="/images/logo_temp-twitter.png" alt="Twitter"/>
+						<img src="images/logo_temp-twitter.png" alt="Twitter"/>
 					</a>
 					<a href="">
-						<img src="/images/logo_temp-google.png" alt="Google"/>
+						<img src="images/logo_temp-google.png" alt="Google"/>
 					</a>
 					<a href="">
-						<img src="/images/logo_temp-m.png" alt="M"/>
+						<img src="images/logo_temp-m.png" alt="M"/>
 					</a>
 				</div>
 				<div className="c-footer__copyright">

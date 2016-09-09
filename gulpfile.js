@@ -51,13 +51,13 @@ gulp.task('default', function (callback) {
   )
 })
 
-// ***** Build process not working yet ***** //
-// gulp.task('build', function (callback) {
-//   runSequence('clean', 
-//     ['scss-lint', 'sass', 'useref', 'copy-images'],
-//     callback
-//   )
-// })
+// Run the build process 'build':
+gulp.task('build', function (callback) {
+  runSequence('clean', 
+    ['scss-lint', 'sass', 'useref', 'copy-images'],
+    callback
+  )
+})
 
 
 // Minify all images during development:
