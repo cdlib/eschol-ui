@@ -1,8 +1,7 @@
 // ##### Global Navigation Component ##### //
 
 import React from 'react'
-// import { polyfillDetails } from 'lavu-details-polyfill'
-require('details-polyfill')
+import 'details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
 class GlobalNavComp extends React.Component {
