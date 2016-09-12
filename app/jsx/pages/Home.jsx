@@ -12,6 +12,7 @@ class Home extends React.Component {
         </ul>
         <h2>Objects</h2>
         <ul>
+          <li><a href="#button">Buttons</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#textlink">Text Links</a></li>
         </ul>
