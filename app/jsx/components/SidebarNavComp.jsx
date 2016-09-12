@@ -5,7 +5,7 @@ import React from 'react'
 class SidebarNavComp extends React.Component {
   render() {
 		return (
-			<nav className="o-sidebarnav">
+			<nav className="c-sidebarnav">
 				<ul>
 					<li><a href="">About eScholarship</a></li>
 					<li><a href="">About California Digital Library</a></li>
