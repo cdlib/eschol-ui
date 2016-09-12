@@ -13,8 +13,8 @@ $input-height: 32px;
   }
 
   select {
-  	height: $input-height;
-  	padding: 0 0 0 10px;
+    height: $input-height;
+  	padding: 0 30px 0 10px;
   	border: 1px solid $color-dark-gray;
   	border-radius: 0;
   	background: inline('../images/icon_arrow-down.svg') right 12px center / 12px no-repeat;
