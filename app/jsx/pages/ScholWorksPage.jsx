@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Scholarly Works Search Result Page ##### //
 
 import React from 'react'
 import ScholWorksComp from '../components/ScholWorksComp.jsx'

@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Input Page ##### //
 
 import React from 'react'
 import InputObj from '../objects/InputObj.jsx'

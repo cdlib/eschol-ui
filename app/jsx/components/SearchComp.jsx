@@ -1,4 +1,4 @@
-// ##### Search Object ##### //
+// ##### Search Component ##### //
 
 import React from 'react'
 

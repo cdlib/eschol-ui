@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Sort By Page ##### //
 
 import React from 'react'
 import SortComp from '../components/SortComp.jsx'

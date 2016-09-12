@@ -1,4 +1,4 @@
-// ##### Footer Component ##### //
+// ##### Breadcrumb Component ##### //
 
 import React from 'react'
 

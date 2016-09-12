@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Global Navigation Page ##### //
 
 import React from 'react'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'

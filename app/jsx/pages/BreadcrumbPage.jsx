@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Breadcrumb Page ##### //
 
 import React from 'react'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'

@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Information Pages Search Result Page ##### //
 
 import React from 'react'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'

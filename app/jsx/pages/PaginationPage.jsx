@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Pagination Page ##### //
 
 import React from 'react'
 import PaginationComp from '../components/PaginationComp.jsx'

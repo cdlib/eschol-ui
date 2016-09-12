@@ -1,4 +1,4 @@
-// ##### Search Object ##### //
+// ##### Column Box Objects ##### //
 
 import React from 'react'
 

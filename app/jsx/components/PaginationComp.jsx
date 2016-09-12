@@ -1,4 +1,4 @@
-// ##### Footer Component ##### //
+// ##### Pagination Component ##### //
 
 import React from 'react'
 

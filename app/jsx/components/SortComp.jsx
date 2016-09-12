@@ -1,4 +1,4 @@
-// ##### Footer Component ##### //
+// ##### Sort By Component ##### //
 
 import React from 'react'
 

@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Sidebar Navigation Page ##### //
 
 import React from 'react'
 import SidebarNavComp from '../components/SidebarNavComp.jsx'
