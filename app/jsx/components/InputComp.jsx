@@ -2,14 +2,14 @@
 
 import React from 'react'
 
-class FcontrolComp extends React.Component {
+class InputComp extends React.Component {
   render() {
 		return (
-			<div className="c-fcontrol">
+			<div>
 				<h2>Droplists</h2>
-				<div className="c-fcontrol__droplist">
-					<label htmlFor="c-fcontrol__droplist-label">Fruit:</label>
-					<select name="" id="c-fcontrol__droplist-label">
+				<div className="c-input__droplist">
+					<label htmlFor="c-input__droplist-label">Fruit:</label>
+					<select name="" id="c-input__droplist-label">
 						<option value="">Apples</option>
 						<option value="">Oranges</option>
 						<option value="">Pears</option>
@@ -22,4 +22,4 @@ class FcontrolComp extends React.Component {
 	}
 }
 
-module.exports = FcontrolComp;
+module.exports = InputComp;

@@ -10,11 +10,11 @@ import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import Home from './pages/Home.jsx'
-import FcontrolPage from './pages/FcontrolPage.jsx'
 import FooterPage from './pages/FooterPage.jsx'
 import GlobalNavPage from './pages/GlobalNavPage.jsx'
 import HeaderPage from './pages/HeaderPage.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
+import InputPage from './pages/InputPage.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
 import SearchPage from './pages/SearchPage.jsx'
@@ -44,7 +44,7 @@ ReactDOM.render((
       <Route path="/breadcrumb" component={BreadcrumbPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
       <Route path="/columns" component={ColumnsPage} />
-      <Route path="/fcontrol" component={FcontrolPage} />
+      <Route path="/input" component={InputPage} />
       <Route path="/footer" component={FooterPage} />
       <Route path="/globalnav" component={GlobalNavPage} />
       <Route path="/header" component={HeaderPage} />
