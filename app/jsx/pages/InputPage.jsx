@@ -1,13 +1,13 @@
 // ##### Footer Page ##### //
 
 import React from 'react'
-import InputComp from '../components/InputComp.jsx'
+import InputObj from '../objects/InputObj.jsx'
 
 class InputPage extends React.Component {
   render() {
 		return (
 			<div>
-	   		<InputComp />
+	   		<InputObj />
 	    </div>
   	)
 	}

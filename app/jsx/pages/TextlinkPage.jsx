@@ -1,13 +1,13 @@
-// ##### Footer Page ##### //
+// ##### Text Link Page ##### //
 
 import React from 'react'
-import TextlinkComp from '../components/TextlinkComp.jsx'
+import TextlinkObj from '../objects/TextlinkObj.jsx'
 
 class TextlinkPage extends React.Component {
   render() {
 		return (
 			<div>
-	   		<TextlinkComp />
+	   		<TextlinkObj />
 	    </div>
   	)
 	}

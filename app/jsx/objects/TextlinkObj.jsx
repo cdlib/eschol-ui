@@ -1,8 +1,8 @@
-// ##### Search Object ##### //
+// ##### Text Link Objects ##### //
 
 import React from 'react'
 
-class TextlinkComp extends React.Component {
+class TextlinkObj extends React.Component {
   render() {
 		return (
 			<div>
@@ -17,4 +17,4 @@ class TextlinkComp extends React.Component {
 	}
 }
 
-module.exports = TextlinkComp;
+module.exports = TextlinkObj;
