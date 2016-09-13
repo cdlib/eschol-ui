@@ -16,14 +16,18 @@ class AboutLayout extends React.Component {
 				<BreadcrumbComp />
 				<div className="c-columns">
 					<aside>
-						<div className="o-columnbox-sidebar o-sidebarnav">
-							<h1 className="o-columnbox-sidebar__heading">About eScholarship</h1>
+						<section className="o-columnbox-sidebar o-sidebarnav">
+							<header>
+								<h1 className="o-columnbox-sidebar__heading">About eScholarship</h1>
+							</header>
 							<SidebarNavComp />
-						</div>
+						</section>
 					</aside>
 					<main>
-						<div className="o-columnbox-main">
-							<h1 className="o-columnbox-main__heading">About eScholarship</h1>
+						<section className="o-columnbox-main">
+							<header>
+								<h1 className="o-columnbox-main__heading">About eScholarship</h1>
+							</header>
 							<p>eScholarship provides a suite of open access, scholarly publishing services and research tools that enable departments, research units, publishing programs, and individual scholars associated with the University of California to have direct control over the creation and dissemination of the full range of their scholarship.
 							<p>With eScholarship, you can publish the following original scholarly works on a dynamic research platform available to scholars worldwide:</p>
 							</p>
@@ -39,7 +43,7 @@ class AboutLayout extends React.Component {
 							<p>Learn more about what to expect from publishing with eScholarship.</p>
 							<p>eScholarship is a service of the Publishing Group of the California Digital Library.</p>
 							<p>Questions? <a className="o-textlink__primary" href="">Contact us</a>.</p>
-						</div>
+						</section>
 					</main>
 				</div>
 				<FooterComp />
