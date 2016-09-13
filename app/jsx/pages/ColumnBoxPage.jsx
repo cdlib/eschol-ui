@@ -1,13 +1,13 @@
 // ##### Column Box Page ##### //
 
 import React from 'react'
-import ColumnBoxComp from '../components/ColumnBoxComp.jsx'
+import ColumnBoxObj from '../objects/ColumnBoxObj.jsx'
 
 class ColumnBoxPage extends React.Component {
   render() {
 		return (
 			<div>
-	   		<ColumnBoxComp />
+	   		<ColumnBoxObj />
 	    </div>
   	)
 	}
