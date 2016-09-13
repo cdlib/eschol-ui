@@ -1,5 +1,57 @@
 // ##### Scholarly Works Component ##### //
 
+$scholworks-tab-height: $element-height;
+
 .c-scholworks {
+	margin: 0 0 $spacing-md;
+}
+
+.c-scholworks__item {
+	display: flex;
+	align-items: flex-start;
+	padding: $spacing-lg;
+	border-bottom: 1px solid $color-dark-gray;
+
+	header {
+
+		a {
+			@extend %o-textlink__secondary;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+
+	}
+
+}
+
+%c-scholworks__tab {
+	display: inline-flex;
+	align-items: center;
+	height: $element-height;
+	margin: 0 $spacing-sm $spacing-md 0;
+	padding: 0 $spacing-sm;
+	background: $color-dark-gray;
+	color: $color-white;
+	box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
+}
+
+.c-scholworks__tab-article {
+	@extend %c-scholworks__tab;
+}
+
+.c-scholworks__tab-peer {
+	@extend %c-scholworks__tab;
+}
+
+.c-scholworks__main-column {
 	// empty
+}
+
+.c-scholworks__institution-link {
+	@extend %o-textlink__secondary;
+}
+
+.c-scholworks__article-preview {
+	flex: 0 0 auto;
+	margin: ($scholworks-tab-height + $spacing-md) 0 0 $spacing-md;
 }
