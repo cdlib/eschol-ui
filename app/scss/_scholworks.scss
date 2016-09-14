@@ -24,6 +24,11 @@ $scholworks-tag-height: $element-height;
 
 }
 
+.c-scholworks__tag-list {
+	margin: 0;
+	padding: 0;
+}
+
 %c-scholworks__tag {
 	display: inline-flex;
 	align-items: center;
