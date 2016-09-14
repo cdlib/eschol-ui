@@ -8,8 +8,8 @@ class ScholWorksComp extends React.Component {
 			<div className="c-scholworks">
 				<section className="c-scholworks__item">
 					<div className="c-scholworks__main-column">
-						<span className="c-scholworks__tab-article">Article</span>
-						<span className="c-scholworks__tab-peer">Peer Reviewed</span>
+						<span className="c-scholworks__tag-article">Article</span>
+						<span className="c-scholworks__tag-peer">Peer Reviewed</span>
 						<header>
 							<a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
 						</header>

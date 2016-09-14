@@ -1,6 +1,6 @@
 // ##### Scholarly Works Component ##### //
 
-$scholworks-tab-height: $element-height;
+$scholworks-tag-height: $element-height;
 
 .c-scholworks {
 	margin: 0 0 $spacing-md;
@@ -24,7 +24,7 @@ $scholworks-tab-height: $element-height;
 
 }
 
-%c-scholworks__tab {
+%c-scholworks__tag {
 	display: inline-flex;
 	align-items: center;
 	height: $element-height;
@@ -35,12 +35,12 @@ $scholworks-tab-height: $element-height;
 	box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
 }
 
-.c-scholworks__tab-article {
-	@extend %c-scholworks__tab;
+.c-scholworks__tag-article {
+	@extend %c-scholworks__tag;
 }
 
-.c-scholworks__tab-peer {
-	@extend %c-scholworks__tab;
+.c-scholworks__tag-peer {
+	@extend %c-scholworks__tag;
 }
 
 .c-scholworks__main-column {
@@ -53,5 +53,5 @@ $scholworks-tab-height: $element-height;
 
 .c-scholworks__article-preview {
 	flex: 0 0 auto;
-	margin: ($scholworks-tab-height + $spacing-md) 0 0 $spacing-md;
+	margin: ($scholworks-tag-height + $spacing-md) 0 0 $spacing-md;
 }
