@@ -21,10 +21,10 @@ class ScholWorksComp extends React.Component {
 						</p>
 						<div className="c-scholworks__media">
 							<ul className="c-scholworks__media-list">
-								<li className="c-scholworks__media-item-video">Contains 5 videos</li>
-								<li className="c-scholworks__media-item-image">Contains 2 images</li>
-								<li className="c-scholworks__media-item-pdf">Contains 2 additional PDFs</li>
-								<li className="c-scholworks__media-item-audio">Contains 5 audio files</li>
+								<li className="c-scholworks__media-video">Contains 5 videos</li>
+								<li className="c-scholworks__media-image">Contains 2 images</li>
+								<li className="c-scholworks__media-pdf">Contains 2 additional PDFs</li>
+								<li className="c-scholworks__media-audio">Contains 5 audio files</li>
 							</ul>
 							<img className="c-scholworks__cc" src="images/icon_cc-by.svg" alt="cc"/>
 						</div>

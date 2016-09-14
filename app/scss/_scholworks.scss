@@ -85,22 +85,22 @@ $scholworks-tag-height: $element-height;
 	color: $color-teal;
 }
 
-.c-scholworks__media-item-audio {
+.c-scholworks__media-audio {
 	@extend %c-scholworks__media-item;
 	background-image: url('../images/icon_volume-up.svg');
 }
 
-.c-scholworks__media-item-image {
+.c-scholworks__media-image {
 	@extend %c-scholworks__media-item;
 	background-image: url('../images/icon_picture.svg');
 }
 
-.c-scholworks__media-item-pdf {
+.c-scholworks__media-pdf {
 	@extend %c-scholworks__media-item;
 	background-image: url('../images/icon_pdf-teal.svg');
 }
 
-.c-scholworks__media-item-video {
+.c-scholworks__media-video {
 	@extend %c-scholworks__media-item;
 	background-image: url('../images/icon_play-circle-o.svg');
 }
