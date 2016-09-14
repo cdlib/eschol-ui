@@ -29,18 +29,20 @@ $scholworks-tag-height: $element-height;
 	align-items: center;
 	height: $element-height;
 	margin: 0 $spacing-sm $spacing-md 0;
-	padding: 0 $spacing-sm;
-	background: $color-dark-gray;
+	padding: 0 $spacing-sm 0 35px;
+	background: $color-dark-gray no-repeat left 10px center / 15px;
 	color: $color-white;
 	box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
 }
 
 .c-scholworks__tag-article {
 	@extend %c-scholworks__tag;
+	background-image: url('../images/icon_pdf.svg');
 }
 
 .c-scholworks__tag-peer {
 	@extend %c-scholworks__tag;
+	padding: 0 $spacing-sm;
 }
 
 .c-scholworks__main-column {
