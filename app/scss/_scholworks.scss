@@ -8,9 +8,15 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__item {
 	display: flex;
-	align-items: flex-start;
+	flex-flow: column nowrap;
+	align-items: flex-end;
 	padding: $spacing-lg;
 	border-bottom: 1px solid $color-dark-gray;
+
+	@include bp(screen1) {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+	}
 
 	header {
 
@@ -60,13 +66,24 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__article-preview {
 	flex: 0 0 auto;
-	margin: ($scholworks-tag-height + $spacing-md) 0 0 $spacing-md;
+
+	@include bp(screen1) {
+		margin: ($scholworks-tag-height + $spacing-md) 0 0 $spacing-md;
+	}
+
 }
 
 .c-scholworks__media {
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+
+	@include bp(screen2) {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
 }
 
 .c-scholworks__media-list {
@@ -107,5 +124,10 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__cc {
 	flex: 0 0 auto;
-	margin: ($spacing-sm * 2) 0 0;
+	margin: 0 0 $spacing-sm;
+
+	@include bp(screen2) {
+		margin: ($spacing-sm * 2) 0 0;
+	}
+
 }
