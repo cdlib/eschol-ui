@@ -1,4 +1,4 @@
-// ##### Breadcrumb Component ##### //
+// ##### Filter Component ##### //
 
 import React from 'react'
 
