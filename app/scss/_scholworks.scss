@@ -61,11 +61,11 @@ $scholworks-tag-height: $element-height;
 .c-scholworks__media {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 }
 
 .c-scholworks__media-list {
 	display: flex;
-	flex: 1 0 auto;
 	flex-flow: row wrap;
 	margin-right: $spacing-sm;
 	padding: 0;
@@ -73,8 +73,8 @@ $scholworks-tag-height: $element-height;
 }
 
 %c-scholworks__media-item {
-	flex: 0 1 40%;
-	margin: 0 $spacing-sm $spacing-sm 0;
+	flex: 1 0 40%;
+	margin: $spacing-sm $spacing-sm 0 0;
 	padding: 0 0 0 25px;
 	background: no-repeat left top 1px / 15px;
 	color: $color-teal;
@@ -102,5 +102,5 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__cc {
 	flex: 0 0 auto;
-	margin: 1em 0 0;
+	margin: ($spacing-sm * 2) 0 0;
 }
