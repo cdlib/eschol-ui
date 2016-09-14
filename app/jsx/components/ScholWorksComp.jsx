@@ -17,6 +17,15 @@ class ScholWorksComp extends React.Component {
 						<a className="c-scholworks__institution-link" href="">Mester Journal, Volume 42, Issue 1</a> (2012)</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse ea laboriosam modi! Distinctio itaque rerum totam, architecto ad dolor et, repudiandae ipsum tempora voluptatem praesentium quaerat quod, nihil consectetur.
 						</p>
+						<div className="c-scholworks__media">
+							<ul className="c-scholworks__media-list">
+								<li className="c-scholworks__media-item-video">Contains 5 videos</li>
+								<li className="c-scholworks__media-item-image">Contains 2 images</li>
+								<li className="c-scholworks__media-item-pdf">Contains 2 additional PDFs</li>
+								<li className="c-scholworks__media-item-audio">Contains 5 audio files</li>
+							</ul>
+							<img className="c-scholworks__cc" src="images/icon_cc-by.svg" alt="cc"/>
+						</div>
 					</div>
 					<img className="c-scholworks__article-preview" src="images/temp_article.png" alt="article"/>
 				</section>
