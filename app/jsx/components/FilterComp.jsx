@@ -5,7 +5,7 @@ import React from 'react'
 class FilterComp extends React.Component {
   render() {
 		return (
-			<div className="c-filter">
+			<form action="" className="c-filter">
 				<h2 className="c-filter__heading">Your Search: “Open Access”</h2>
 				<div>Results: 12 pages, 12,023 works</div>
 				<div className="c-filter__active-header">
@@ -18,7 +18,7 @@ class FilterComp extends React.Component {
 					<button>Campus (UC Berkeley)</button>
 				</div>
 				<a href="" className="c-filter__tips">search tips</a>
-			</div>
+			</form>
 		)
 	}
 }
