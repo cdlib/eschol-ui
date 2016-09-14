@@ -48,7 +48,7 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__tag-article {
 	@extend %c-scholworks__tag;
-	background-image: url('../images/icon_pdf-white.svg');
+	background-image: inline('../images/icon_pdf-white.svg');
 }
 
 .c-scholworks__tag-peer {
@@ -104,22 +104,22 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__media-audio {
 	@extend %c-scholworks__media-item;
-	background-image: url('../images/icon_volume-up.svg');
+	background-image: inline('../images/icon_volume-up.svg');
 }
 
 .c-scholworks__media-image {
 	@extend %c-scholworks__media-item;
-	background-image: url('../images/icon_picture.svg');
+	background-image: inline('../images/icon_picture.svg');
 }
 
 .c-scholworks__media-pdf {
 	@extend %c-scholworks__media-item;
-	background-image: url('../images/icon_pdf-teal.svg');
+	background-image: inline('../images/icon_pdf-teal.svg');
 }
 
 .c-scholworks__media-video {
 	@extend %c-scholworks__media-item;
-	background-image: url('../images/icon_play-circle-o.svg');
+	background-image: inline('../images/icon_play-circle-o.svg');
 }
 
 .c-scholworks__cc {
