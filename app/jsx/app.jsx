@@ -10,6 +10,7 @@ import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ButtonPage from './pages/ButtonPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
+import FilterPage from './pages/FilterPage.jsx'
 import Home from './pages/Home.jsx'
 import FooterPage from './pages/FooterPage.jsx'
 import GlobalNavPage from './pages/GlobalNavPage.jsx'
@@ -47,6 +48,7 @@ ReactDOM.render((
       <Route path="/columnbox" component={ColumnBoxPage} />
       <Route path="/columns" component={ColumnsPage} />
       <Route path="/input" component={InputPage} />
+      <Route path="/filter" component={FilterPage} />
       <Route path="/footer" component={FooterPage} />
       <Route path="/globalnav" component={GlobalNavPage} />
       <Route path="/header" component={HeaderPage} />
