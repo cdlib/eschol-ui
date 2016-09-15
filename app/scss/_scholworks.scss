@@ -43,7 +43,7 @@ $scholworks-tag-height: $element-height;
 	padding: 0 $spacing-sm 0 35px;
 	background: $color-dark-gray no-repeat left 10px center / 16px;
 	color: $color-white;
-	box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
+	box-shadow: $box-shadow;
 }
 
 .c-scholworks__tag-article {

@@ -11,7 +11,7 @@
 	padding: $spacing-base $spacing-sm;
 	background: $color-light-gray;
 	font-size: 1.2em;
-	box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
+	box-shadow: $box-shadow;
 	user-select: none;
 
 	&::after {

@@ -1,9 +1,5 @@
 // ##### Global Variables ##### //
 
-// ***** General ***** //
-
-$element-height: 32px;
-
 // ***** Colors ***** //
 
 $color-orange: rgb(230, 87, 34);
@@ -22,3 +18,8 @@ $spacing-sm: 10px;
 $spacing-md: 20px;
 $spacing-lg: 30px;
 $spacing-body: $spacing-sm;
+
+// ***** General ***** //
+
+$box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
+$element-height: 32px;

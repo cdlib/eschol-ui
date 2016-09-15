@@ -3,7 +3,7 @@
 .c-filter {
   padding: $spacing-sm;
   background: $color-white;
-  box-shadow: 5px 5px 15px lighten($color-dark-gray, 30%);
+  box-shadow: $box-shadow;
 }
 
 .c-filter__heading {

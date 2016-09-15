@@ -2,7 +2,7 @@
 
 %o-columnbox {
 	background: $color-white;
-	box-shadow: 0 50px 15px -15px lighten($color-dark-gray, 30%) inset, 5px 5px 15px lighten($color-dark-gray, 30%);
+	box-shadow: 0 50px 15px -15px lighten($color-dark-gray, 30%) inset, $box-shadow;
 }
 
 .o-columnbox-main {
