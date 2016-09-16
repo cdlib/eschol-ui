@@ -8,6 +8,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ButtonPage from './pages/ButtonPage.jsx'
+import CheckboxPage from './pages/CheckboxPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import FacetBoxPage from './pages/FacetBoxPage.jsx'
@@ -47,6 +48,7 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbPage} />
       <Route path="/button" component={ButtonPage} />
+      <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
       <Route path="/columns" component={ColumnsPage} />
       <Route path="/input" component={InputPage} />
