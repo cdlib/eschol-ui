@@ -3,6 +3,7 @@
 import React from 'react'
 import HeaderComp from '../components/HeaderComp.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
+import ExportComp from '../components/ExportComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class SearchLayout extends React.Component {
@@ -11,9 +12,7 @@ class SearchLayout extends React.Component {
 			<div className="l_search">
 				<HeaderComp />
 				<GlobalNavComp />
-				<div>
-					[Search layout to go here]
-				</div>
+				<ExportComp />
 				<FooterComp />
 			</div>
 		)
