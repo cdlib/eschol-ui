@@ -9,6 +9,7 @@ class Home extends React.Component {
 	   		<h2>Layouts</h2>
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#searchlayout">Search</a></li>
         </ul>
         <h2>Objects</h2>
         <ul>

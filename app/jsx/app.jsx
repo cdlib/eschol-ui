@@ -21,6 +21,7 @@ import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
+import SearchLayout from './layouts/SearchLayout.jsx'
 import SearchPage from './pages/SearchPage.jsx'
 import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import SortPage from './pages/SortPage.jsx'
@@ -61,6 +62,7 @@ ReactDOM.render((
       <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />
       <Route path="/search" component={SearchPage} />
+      <Route path="/searchlayout" component={SearchLayout} />
       <Route path="/sidebarnav" component={SidebarNavPage} />
       <Route path="/sort" component={SortPage} />
       <Route path="/test" component={Test} />
