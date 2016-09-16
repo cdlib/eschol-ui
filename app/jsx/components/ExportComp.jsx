@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-class BreadcrumbComp extends React.Component {
+class ExportComp extends React.Component {
   render() {
 		return (
 			<div className="c-export">
@@ -13,4 +13,4 @@ class BreadcrumbComp extends React.Component {
 	}
 }
 
-module.exports = BreadcrumbComp;
+module.exports = ExportComp;
