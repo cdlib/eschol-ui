@@ -2,5 +2,9 @@
 
 .c-sort {
   display: flex;
-  justify-content: space-between;
+  margin: 0 0 $spacing-md;
+}
+
+.c-sort__page-input {
+	margin: 0 0 0 $spacing-md;
 }
