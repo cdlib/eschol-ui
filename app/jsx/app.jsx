@@ -11,6 +11,7 @@ import ButtonPage from './pages/ButtonPage.jsx'
 import CheckboxPage from './pages/CheckboxPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
+import ExportPage from './pages/ExportPage.jsx'
 import FacetBoxPage from './pages/FacetBoxPage.jsx'
 import FilterPage from './pages/FilterPage.jsx'
 import Home from './pages/Home.jsx'
@@ -52,6 +53,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
       <Route path="/columns" component={ColumnsPage} />
+      <Route path="/export" component={ExportPage} />
       <Route path="/input" component={InputPage} />
       <Route path="/facetbox" component={FacetBoxPage} />
       <Route path="/filter" component={FilterPage} />
