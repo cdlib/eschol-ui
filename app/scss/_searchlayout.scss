@@ -3,3 +3,8 @@
 .l-search {
   // empty
 }
+
+.l-search__sort-pagination {
+	display: flex;
+	flex-flow: row wrap;
+}

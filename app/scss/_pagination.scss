@@ -3,6 +3,10 @@
 $pagination-button-height: $element-height;
 
 .c-pagination {
+	display: flex;
+	flex: 1 0 auto;
+	flex-flow: row wrap;
+	justify-content: flex-end;
 	margin: 0 0 $spacing-md;
 }
 

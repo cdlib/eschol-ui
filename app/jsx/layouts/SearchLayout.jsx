@@ -5,6 +5,8 @@ import HeaderComp from '../components/HeaderComp.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
+import SortComp from '../components/SortComp.jsx'
+import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
 import ScholWorksComp from '../components/ScholWorksComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -21,6 +23,10 @@ class SearchLayout extends React.Component {
 					 	<FilterComp />
 					</aside>
 				  <main>
+				  	<div className="l-search__sort-pagination">
+				  		<SortComp />
+				  		<PaginationComp />
+				  	</div>
 				  	<section className="o-columnbox-main">
 							<header>
 								<h2 className="o-columnbox-main__heading">Informational Pages (12 results)</h2>
@@ -31,7 +37,7 @@ class SearchLayout extends React.Component {
 							<header>
 								<h2 className="o-columnbox-main__heading">Scholarly Works (12,023 results)</h2>
 							</header>
-							[ScholWorksComp to go here]
+							<ScholWorksComp />
 						</section>
 				  </main>
 				</div>

@@ -3,6 +3,11 @@
 .c-sort {
   display: flex;
   margin: 0 0 $spacing-md;
+
+  @include bp(screen2) {
+		margin: 0 $spacing-md $spacing-md 0;
+  }
+
 }
 
 .c-sort__page-input {
