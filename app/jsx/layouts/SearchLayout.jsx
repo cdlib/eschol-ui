@@ -5,6 +5,7 @@ import HeaderComp from '../components/HeaderComp.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
+import CheckboxComp from '../components/CheckboxComp.jsx'
 import SortComp from '../components/SortComp.jsx'
 import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
@@ -21,6 +22,28 @@ class SearchLayout extends React.Component {
 				<div className="c-columns">
 					<aside>
 					 	<FilterComp />
+					 	<details className="c-facetbox">
+							<summary className="c-facetbox__summary">Refine By</summary>
+							<div className="c-checkbox">
+								<input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
+								<label htmlFor="c-checkbox__number6" className="c-checkbox__label">Peer-Reviewed only (##)</label>
+							</div>
+						</details>
+						<details className="c-facetbox">
+							<summary className="c-facetbox__summary">Research</summary>
+							<div className="c-checkbox">
+								<input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
+								<label htmlFor="c-checkbox__number7" className="c-checkbox__label">Articles (##)</label>
+								<input id="c-checkbox__number8" type="checkbox" className="c-checkbox__input"/>
+								<label htmlFor="c-checkbox__number8" className="c-checkbox__label">Books (##)</label>
+								<input id="c-checkbox__number9" type="checkbox" className="c-checkbox__input"/>
+								<label htmlFor="c-checkbox__number9" className="c-checkbox__label">Journals (##)</label>
+							</div>
+						</details>
+						<details className="c-facetbox">
+							<summary className="c-facetbox__summary">Content Type</summary>
+								<CheckboxComp />
+						</details>
 					</aside>
 				  <main>
 				  	<div className="l-search__sort-pagination">
