@@ -34,7 +34,7 @@
 .o-button__4 {
 	@extend %o-button;
 	padding-left: 30px;
-	background: url('../images/icon_share-square.svg') no-repeat left 8px center / 15px;
+	background: url('../images/icon_share-square.svg') no-repeat left 8px center / 16px; // use background-image for component with alternative icons
 	color: $color-teal;
 	font-weight: bold;
 }

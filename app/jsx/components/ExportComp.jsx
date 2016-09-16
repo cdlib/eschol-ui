@@ -6,7 +6,8 @@ class BreadcrumbComp extends React.Component {
   render() {
 		return (
 			<div className="c-export">
-			[Export/RSS component to go here]
+				<a href="" className="o-button__4 c-export__export-button">Export</a>
+				<a href="" className="o-button__4 c-export__rss-button">RSS</a>
 			</div>
 		)
 	}
