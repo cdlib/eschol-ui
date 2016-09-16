@@ -1,12 +1,11 @@
 // ##### Checkbox Component ##### //
 
 .c-checkbox {
-	display: flex;
-	flex-flow: column nowrap;
+	// empty
 }
 
 %c-checkbox__icon {
-	background: no-repeat left center / 18px;
+	background: no-repeat left top / 18px;
 }
 
 .c-checkbox__input {
@@ -21,8 +20,11 @@
 
 .c-checkbox__label {
 	@extend %c-checkbox__icon;
+	display: inline-block;
+	min-width: 30%;
 	margin: 0 0 $spacing-sm;
 	padding: 0 0 0 30px;
 	background-image: inline('../images/icon_checkbox-unchecked.svg');
 	cursor: pointer;
+	user-select: none;
 }

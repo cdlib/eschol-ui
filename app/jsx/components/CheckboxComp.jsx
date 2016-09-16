@@ -6,7 +6,6 @@ class CheckboxComp extends React.Component {
   render() {
 		return (
 			<div className="c-checkbox">
-
 				<input id="c-checkbox__number1" type="checkbox" className="c-checkbox__input"/>
 				<label htmlFor="c-checkbox__number1" className="c-checkbox__label">Video</label>
 
@@ -21,7 +20,6 @@ class CheckboxComp extends React.Component {
 				
 				<input id="c-checkbox__number5" type="checkbox" className="c-checkbox__input"/>
 				<label htmlFor="c-checkbox__number5" className="c-checkbox__label">ZIP</label>
-
 			</div>
 		)
 	}
