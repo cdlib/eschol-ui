@@ -83,6 +83,7 @@
 	left: 0;
 	background-color: $color-white;
 	overflow: hidden;
+	z-index: 2;
   animation: openMainItems 0.3s linear;
 
 	@include bp(screen2) {
@@ -129,10 +130,12 @@
 
 .c-globalnav__sub-items {
 	overflow: hidden;
+	z-index: 2;
   animation: openSubItems 0.3s linear;
 
 	@include bp(screen2) {
 		position: absolute;
+
 	}
 
 	a {
