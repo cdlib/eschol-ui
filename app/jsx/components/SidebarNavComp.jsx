@@ -1,11 +1,11 @@
-// ##### Search Object ##### //
+// ##### Sidebar Navigation Component ##### //
 
 import React from 'react'
 
-class SidebarNavObj extends React.Component {
+class SidebarNavComp extends React.Component {
   render() {
 		return (
-			<nav className="o-sidebarnav">
+			<nav className="c-sidebarnav">
 				<ul>
 					<li><a href="">About eScholarship</a></li>
 					<li><a href="">About California Digital Library</a></li>
@@ -26,4 +26,4 @@ class SidebarNavObj extends React.Component {
 	}
 }
 
-module.exports = SidebarNavObj;
+module.exports = SidebarNavComp;

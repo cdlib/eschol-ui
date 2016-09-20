@@ -5,3 +5,4 @@ app/bower_components
 app/css/main.css
 *.css.map
 app/js/bundle.js
+gulp-sftp-key.json

@@ -24,6 +24,7 @@ var eslintify = require('eslintify');
 var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback');
 var gutil = require('gulp-util');
+var sftp = require('gulp-sftp');
 
 gulp.task('browserify', function() {
   var watcher = watchify(browserify({
@@ -51,13 +52,13 @@ gulp.task('default', function (callback) {
   )
 })
 
-// ***** Build process not working yet ***** //
-// gulp.task('build', function (callback) {
-//   runSequence('clean', 
-//     ['scss-lint', 'sass', 'useref', 'copy-images'],
-//     callback
-//   )
-// })
+// Run the build process 'build':
+gulp.task('build', function (callback) {
+  runSequence('clean', 
+    ['scss-lint', 'sass', 'useref', 'copy-images'],
+    callback
+  )
+})
 
 
 // Minify all images during development:
@@ -146,15 +147,24 @@ gulp.task('scss-lint', function() {
     }));
 });
 
-// Convert media query breakpoints from JSON to Sass variables:
+// Convert media query breakpoints from SCSS variables to JSON key/value pairs:
 
-var jsonSass = require('gulp-json-sass')
+var sassJson = require('gulp-sass-json');
  
-gulp.task('parse', function() {
+gulp.task('sass-to-json', function () {
   return gulp
-    .src('app/js/breakpoints.json')
-    .pipe(jsonSass({
-      sass: false
-    }))
-    .pipe(gulp.dest('app/scss/'));
+    .src('app/scss/_breakpoints.scss')
+    .pipe(sassJson())
+    .pipe(gulp.dest('app/js')); // breakpoints.json
+});
+
+// Deploy a build via SFTP to a web server by running 'deploy':
+gulp.task('deploy', function () {
+  return gulp.src('dist/**')
+    .pipe(sftp({
+      host: 'webprod.cdlib.org',
+      remotePath: '/apps/webprod/apache/htdocs/escholarship/',
+      authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc. See: https://www.npmjs.com/package/gulp-sftp/#authentication
+      auth: 'keyMain'
+    }));
 });

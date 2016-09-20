@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Column Box Page ##### //
 
 import React from 'react'
 import ColumnBoxObj from '../objects/ColumnBoxObj.jsx'

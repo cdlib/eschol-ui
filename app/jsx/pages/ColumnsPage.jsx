@@ -1,4 +1,4 @@
-// ##### Footer Page ##### //
+// ##### Column Page ##### //
 
 import React from 'react'
 import ColumnsComp from '../components/ColumnsComp.jsx'
