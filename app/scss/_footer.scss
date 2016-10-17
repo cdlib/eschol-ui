@@ -63,6 +63,12 @@
 		margin: 0 0 15px;
 		color: $color-white;
 		text-decoration: none;
+
+		&:nth-child(9),
+		&:nth-child(10) {
+			font-weight: bold;
+		}
+
 	}
 
 }

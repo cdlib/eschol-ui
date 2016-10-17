@@ -20,15 +20,15 @@ class FooterComp extends React.Component {
 				</div>
 				<nav className="c-footer__nav">
 					<a href="">Home</a>
+					<a href="">About eScholarship</a>
 					<a href="">Campuses</a>
 					<a href="">OA Policies</a>
 					<a href="">Journals</a>
-					<a href="">About eScholarship</a>
 					<a href="">Deposit</a>
-					<a href="">Help</a>
-					<a href="">Contact Us</a>
 					<a href="">Privacy Policy</a>
 					<a href="">Terms & Conditions</a>
+					<a href="">Help</a>
+					<a href="">Admin Login</a>
 				</nav>
 				<div className="c-footer__social-icons">
 					<a href="">
