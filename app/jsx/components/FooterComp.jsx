@@ -6,17 +6,10 @@ class FooterComp extends React.Component {
   render() {
 		return (
 			<div className="c-footer">
-				<div className="c-footer__logologin">
-					<div className="c-footer__logo">
-						<a href="">
-							<img src="images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
-						</a>
-					</div>
-						<a href="">
-							<div className="c-footer__login">
-								Account login
-							</div>
-						</a>
+				<div className="c-footer__logo">
+					<a href="">
+						<img src="images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
+					</a>
 				</div>
 				<nav className="c-footer__nav">
 					<a href="">Home</a>
@@ -36,12 +29,6 @@ class FooterComp extends React.Component {
 					</a>
 					<a href="">
 						<img src="images/logo_temp-twitter.png" alt="Twitter"/>
-					</a>
-					<a href="">
-						<img src="images/logo_temp-google.png" alt="Google"/>
-					</a>
-					<a href="">
-						<img src="images/logo_temp-m.png" alt="M"/>
 					</a>
 				</div>
 				<div className="c-footer__copyright">
