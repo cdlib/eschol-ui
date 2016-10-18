@@ -23,16 +23,19 @@ class FooterComp extends React.Component {
 					<a href="">Help</a>
 					<a href="">Admin Login</a>
 				</nav>
-				<div className="c-footer__social-icons">
+				<div className="c-footer__icons">
 					<a href="">
-						<img src="images/logo_temp-facebook.png" alt="Facebook"/>
+						<img src="images/logo_facebook.svg" alt="Facebook"/>
 					</a>
 					<a href="">
-						<img src="images/logo_temp-twitter.png" alt="Twitter"/>
+						<img src="images/logo_twitter.svg" alt="Twitter"/>
 					</a>
 				</div>
 				<div className="c-footer__copyright">
-					Powered by the <a href="">California Digital Library</a>.<br/>Copyright &copy; 2016 The Regents of the University of California.
+					Powered by the<br/>
+					<a href="">California Digital Library</a>.<br/>
+					Copyright &copy; 2016<br/>
+					The Regents of the University of California.
 				</div>
 			</div>
 		)
