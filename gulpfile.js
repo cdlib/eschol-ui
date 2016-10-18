@@ -1,5 +1,6 @@
 // ##### Gulp Toolkit for the eScholarship UI Library #####
 
+var _ = require('lodash');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -26,28 +27,77 @@ var historyApiFallback = require('connect-history-api-fallback');
 var gutil = require('gulp-util');
 var sftp = require('gulp-sftp');
 
-gulp.task('browserify', function() {
-  var watcher = watchify(browserify({
-    entries: ['app/jsx/app.jsx'],
-    debug: true,
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Transformations to build lib-bundle.js
+gulp.task('bundle-libs', function() {
+  var b = watchify(browserify({
+    entries: ['package.json'],
+    debug: true,  // generate source maps
     cache: {}, packageCache: {}, fullPaths: true
-  }));
-  return watcher.on('update', function () {
-    watcher.bundle()
-      .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-      .pipe(source('app/js/bundle.js'))
+  }))
+
+  function bundle() {
+    gutil.log("Bundling libs.")
+    libsBuilt = false
+    del("app/js/lib-bundle.js")
+    // This bundle will encompass everything in package.json that's not a "dev" dependency
+    getNPMPackageIds().forEach(function (id) { b.require(id) });
+    return b.bundle()
+      .on('error', gutil.log.bind(gutil, 'Bundling error'))
+      .pipe(source('app/js/lib-bundle.js'))
       .pipe(gulp.dest('.'))
-      console.log('Bundle.js updated');
-    })
-  .transform('babelify', {presets: ['es2015', 'react', 'stage-2']})
-  .bundle()
-  .pipe(source('app/js/bundle.js'))
-  .pipe(gulp.dest('.'));
+      .on('end', function() { gutil.log("Built lib-bundle.js") })
+  }
+
+  bundle()
+  return b.on('update', bundle).on('log', gutil.log)
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Transformations to build app-bundle.js
+gulp.task('bundle-app', function() {
+  // NOTE: transforms must go on this first part, not in the bundle() function. Otherwise they
+  // get applied multiple times in a row, and the build takes longer and longer.
+  var b = watchify(browserify({
+    entries: ['app/jsx/app.jsx'],
+    debug: true,  // generate source maps
+    cache: {}, packageCache: {}
+  }))
+  .transform('babelify', {presets: ['es2015', 'react', 'stage-2']})
+
+  function bundle() {
+    gutil.log("Bundling app.")
+    appBuilt = false
+    del("app/js/app-bundle.js")
+    // This bundle is for the app, and excludes all package.json dependencies
+    getNPMPackageIds().forEach(function (id) { b.external(id) });
+    return b
+      .bundle()
+      .on('error', gutil.log.bind(gutil, 'Bundling error'))
+      .pipe(source('app/js/app-bundle.js'))
+      .pipe(gulp.dest('.'))
+      .on('end', function() { gutil.log("Built app-bundle.js") })
+  }
+
+  bundle()
+  return b.on('update', bundle).on('log', gutil.log)
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// read package.json and get dependencies' package ids
+function getNPMPackageIds() {
+  var packageManifest = {};
+  try {
+    packageManifest = require('./package.json');
+  } catch (e) {
+    // does not have a package.json manifest
+  }
+  return _.keys(packageManifest.dependencies) || [];
+}
 
 // Run the dev process 'gulp':
 gulp.task('default', function (callback) {
-  runSequence(['browserify', 'browserSync', 'sass', 'watch'],
+  runSequence(['bundle-libs', 'bundle-app', 'browserSync', 'sass', 'watch'],
     callback
   )
 })
@@ -103,7 +153,6 @@ gulp.task('watch', ['browserSync', 'sass', 'scss-lint'], function (){
   // gulp.watch('app/js/**/*.js', ['js-lint']);
   gulp.watch('app/**/*.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload); 
-  gulp.watch('app/js/bundle.js', browserSync.reload);
 });
 
 
