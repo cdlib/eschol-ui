@@ -1,0 +1,70 @@
+// ##### Header2 Component ##### //
+
+.c-header2 {
+
+	@include bp(screen3) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+.c-header2__logosearch {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-between;
+	margin: 0 0 $spacing-sm;
+}
+
+%c-header2__search {
+	position: absolute;
+	right: $spacing-sm;
+	left: $spacing-sm;
+	transform: translateX(110%);
+	transition: transform 0.5s;
+	background: $color-white;
+	z-index: 2;
+
+	@include bp(screen3) {
+		display: flex;
+		position: relative;
+		flex: 1 0 auto;
+		justify-content: center;
+		transform: translateX(0%);
+	}
+
+}
+
+.c-header2__search {
+	@extend %c-header2__search;
+}
+
+.c-header2__search--active {
+	@extend %c-header2__search;
+	transform: translateX(0%);
+}
+
+.c-header2__search-open-button {
+	align-self: flex-start;
+	padding: 15px;
+	border: none;
+	background: url('../images/icon_magnify.svg') no-repeat center right / 25px;
+
+	@include bp(screen3) {
+		display: none;
+	}
+
+}
+
+.c-header2__deposit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.c-header2__deposit-button {
+	height: $input-height;
+	padding: 0 20px;
+	border: none;
+	background-color: $color-orange;
+	color: $color-white;
+}
