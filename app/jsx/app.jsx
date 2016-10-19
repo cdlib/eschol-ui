@@ -17,7 +17,10 @@ import FilterPage from './pages/FilterPage.jsx'
 import Home from './pages/Home.jsx'
 import FooterPage from './pages/FooterPage.jsx'
 import GlobalNavPage from './pages/GlobalNavPage.jsx'
-import HeaderPage from './pages/HeaderPage.jsx'
+import HeaderPage1 from './pages/HeaderPage1.jsx'
+import HeaderPage2 from './pages/HeaderPage2.jsx'
+import HeaderPage3 from './pages/HeaderPage3.jsx'
+import HeaderPage4 from './pages/HeaderPage4.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
@@ -60,7 +63,10 @@ ReactDOM.render((
       <Route path="/filter" component={FilterPage} />
       <Route path="/footer" component={FooterPage} />
       <Route path="/globalnav" component={GlobalNavPage} />
-      <Route path="/header" component={HeaderPage} />
+      <Route path="/header1" component={HeaderPage1} />
+      <Route path="/header2" component={HeaderPage2} />
+      <Route path="/header3" component={HeaderPage3} />
+      <Route path="/header4" component={HeaderPage4} />
       <Route path="/infopages" component={InfoPagesPage} />
       <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />

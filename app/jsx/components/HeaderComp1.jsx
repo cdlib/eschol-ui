@@ -3,7 +3,7 @@
 import React from 'react'
 import SearchComp1 from '../components/SearchComp1.jsx'
 
-class HeaderComp extends React.Component {
+class HeaderComp1 extends React.Component {
   constructor(props){
   	super(props)
   	this.state = {searchActive: false}
@@ -28,4 +28,4 @@ class HeaderComp extends React.Component {
 	}
 }
 
-module.exports = HeaderComp;
+module.exports = HeaderComp1;

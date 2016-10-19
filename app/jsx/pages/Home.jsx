@@ -28,13 +28,16 @@ class Home extends React.Component {
           <li><a href="#filter">Filter</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#globalnav">Global Navigation</a></li>
-          <li><a href="#header">Header</a></li>
+          <li><a href="#header1">Header1 - Home</a></li>
+          <li><a href="#header2">Header2 - Campus</a></li>
+          <li><a href="#header3">Header3 - Journal</a></li>
+          <li><a href="#header4">Header4 - Unit</a></li>
           <li><a href="#infopages">Informational Pages Search Result</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#sort">Sort By</a></li>
-          <li><a href="#search1">Search 1 - Home</a></li>
-          <li><a href="#search2">Search 2 - Other Than Home</a></li>
+          <li><a href="#search1">Search 1 - With Tagline</a></li>
+          <li><a href="#search2">Search 2 - With Search Controls</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
         </ul>
 	    </div>
