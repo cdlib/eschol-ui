@@ -1,17 +1,7 @@
 // ##### Header2 Component ##### //
 
 .c-header2 {
-
-	@include bp(screen3) {
-		display: flex;
-		justify-content: space-between;
-	}
-
-}
-
-.c-header2__logosearch {
 	display: flex;
-	flex: 1 0 auto;
 	justify-content: space-between;
 	margin: 0 0 $spacing-sm;
 }
@@ -26,10 +16,7 @@
 	z-index: 2;
 
 	@include bp(screen3) {
-		display: flex;
 		position: relative;
-		flex: 1 0 auto;
-		justify-content: center;
 		transform: translateX(0%);
 	}
 
@@ -54,17 +41,4 @@
 		display: none;
 	}
 
-}
-
-.c-header2__deposit {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.c-header2__deposit-button {
-	height: $input-height;
-	padding: 0 20px;
-	border: none;
-	background-color: $color-orange;
-	color: $color-white;
 }
