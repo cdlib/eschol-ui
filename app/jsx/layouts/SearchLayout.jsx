@@ -1,7 +1,7 @@
 // ##### Search Layout ##### //
 
 import React from 'react'
-import HeaderComp from '../components/HeaderComp.jsx'
+import HeaderComp1 from '../components/HeaderComp1.jsx'
 import GlobalNavComp from '../components/GlobalNavComp.jsx'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
@@ -16,7 +16,7 @@ class SearchLayout extends React.Component {
   render() {
 		return (
 			<div className="l_search">
-				<HeaderComp />
+				<HeaderComp1 />
 				<GlobalNavComp />
 				<ExportComp />
 				<div className="c-columns">
