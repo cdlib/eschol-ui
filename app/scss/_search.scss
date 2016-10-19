@@ -1,13 +1,19 @@
 // ##### Search1 and Search2 Components ##### //
 
 .c-search {
-	// empty
+	display: flex;
+}
+
+.c-search__thesearch {
+	display: flex;
+	flex: 1 0 auto;
+	flex-flow: column nowrap;
+	// align-items: stretch;
+	width: 23.5em;
 }
 
 .c-search__form {
 	display: flex;
-	height: $input-height;
-	margin: 0 0 $spacing-sm;
 }
 
 .c-search__label {
@@ -16,8 +22,7 @@
 
 .c-search__field {
 	flex: 1 0 auto;
-	width: 23.5em;
-	margin: 0 5px 0 0;
+	height: $input-height;
 	padding: 0 0 0 30px;
 	border: 1px solid $color-light-gray;
 	border-radius: 3px;
@@ -31,6 +36,10 @@
 
 }
 
+.c-search__buttons {
+	// empty
+}
+
 .c-search__submit-button {
 	@extend %hide;
 
@@ -38,7 +47,7 @@
 		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
 		position: static;
   	left: auto;
-  	padding: 0 16px;
+  	padding: 16px;
 		border: none;
 		background: url('../images/icon_magnify.svg') no-repeat center / 20px;
 	}
@@ -47,7 +56,7 @@
 
 .c-search__search-close-button {
 	margin: 0 0 0 $spacing-body;
-	padding: 0 13px;
+	padding: 13px;
 	border: none;
 	background: url('../images/icon_close.svg') no-repeat center / 20px;
 
@@ -67,9 +76,12 @@
 // ***** Search 2 Component ***** //
 
 .c-search__refine {
+	padding: 5px;
+	border: 1px solid $color-light-gray;
+	background: lighten($color-light-gray, 10%);
 
-	label:first-of-type {
-		margin: 0 20px 0 0;
+	label {
+		margin: 0 20px 0 5px;
 	}
 
 }
