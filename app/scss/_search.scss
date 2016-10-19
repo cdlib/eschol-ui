@@ -1,4 +1,4 @@
-// ##### Search Component ##### //
+// ##### Search1 and Search2 Components ##### //
 
 .c-search {
 	// empty
@@ -16,7 +16,7 @@
 
 .c-search__field {
 	flex: 1 0 auto;
-	width: 300px;
+	width: 23.5em;
 	margin: 0 5px 0 0;
 	padding: 0 0 0 30px;
 	border: 1px solid $color-light-gray;
@@ -57,6 +57,15 @@
 
 }
 
+// ***** Search 1 Component ***** //
+
+.c-search__tagline {
+	color: $color-dark-gray;
+	font-size: 0.8em;
+}
+
+// ***** Search 2 Component ***** //
+
 .c-search__refine {
 
 	label:first-of-type {
@@ -64,4 +73,3 @@
 	}
 
 }
-

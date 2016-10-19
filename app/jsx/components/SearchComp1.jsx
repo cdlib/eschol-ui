@@ -12,11 +12,8 @@ class SearchComp1 extends React.Component {
 					<button type="submit" className="c-search__submit-button" aria-label="search"></button>
 					<button className="c-search__search-close-button" aria-label="close search field" onClick = {()=>this.props.onClose()}></button>
 				</div>
-				<div className="c-search__refine">
-					<input type="radio" name="search-refine" id="c-search__refine-campus"/>
-					<label htmlFor="c-search__refine-campus">This campus</label>
-					<input type="radio" name="search-refine" id="c-search__refine-eschol"/>
-					<label htmlFor="c-search__refine-eschol">eScholarship</label>
+				<div className="c-search__tagline">
+					Open Access publications from the University of California
 				</div>
 			</form>
 		)
