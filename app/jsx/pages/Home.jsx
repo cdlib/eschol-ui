@@ -33,7 +33,8 @@ class Home extends React.Component {
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#sort">Sort By</a></li>
-          <li><a href="#search">Search</a></li>
+          <li><a href="#search1">Search 1 - Home</a></li>
+          <li><a href="#search2">Search 2 - Other Than Home</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
         </ul>
 	    </div>
