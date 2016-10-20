@@ -33,7 +33,8 @@
 
 .c-header2__search-open-button {
 	align-self: flex-start;
-	padding: 15px;
+	height: $input-height;
+	padding: 0 13px;
 	border: none;
 	background: url('../images/icon_magnify.svg') no-repeat center right / 25px;
 

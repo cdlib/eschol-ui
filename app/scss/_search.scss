@@ -1,15 +1,17 @@
-// ##### Search1 and Search2 Components ##### //
+// ##### Search2 Component ##### //
 
 .c-search {
 	display: flex;
+	align-items: flex-start;
 }
 
-.c-search__thesearch {
+.c-search__inputs {
 	display: flex;
 	flex: 1 0 auto;
 	flex-flow: column nowrap;
-	// align-items: stretch;
 	width: 23.5em;
+	margin: 0 $spacing-body 0 0;
+	border: 1px solid $color-light-gray;
 }
 
 .c-search__form {
@@ -24,8 +26,7 @@
 	flex: 1 0 auto;
 	height: $input-height;
 	padding: 0 0 0 30px;
-	border: 1px solid $color-light-gray;
-	border-radius: 3px;
+	border: none;
 	background: url('../images/icon_magnify.svg') no-repeat left 8px center / 16px;
 	font-size: 0.8em;
 
@@ -36,10 +37,6 @@
 
 }
 
-.c-search__buttons {
-	// empty
-}
-
 .c-search__submit-button {
 	@extend %hide;
 
@@ -47,18 +44,20 @@
 		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
 		position: static;
   	left: auto;
-  	padding: 16px;
+  	height: $input-height;
+  	margin: 0 $spacing-body 0 0;
+  	padding: 0 13px;
 		border: none;
-		background: url('../images/icon_magnify.svg') no-repeat center / 20px;
+		background: url('../images/icon_magnify.svg') no-repeat center / 25px;
 	}
 
 }
 
 .c-search__search-close-button {
-	margin: 0 0 0 $spacing-body;
-	padding: 13px;
+	height: $input-height;
+	padding: 0 13px;
 	border: none;
-	background: url('../images/icon_close.svg') no-repeat center / 20px;
+	background: url('../images/icon_close.svg') no-repeat center right / 20px;
 
 	@include bp(screen3) {
 		display: none;
@@ -76,8 +75,7 @@
 // ***** Search 2 Component ***** //
 
 .c-search__refine {
-	padding: 5px;
-	border: 1px solid $color-light-gray;
+	padding: 8px;
 	background: lighten($color-light-gray, 10%);
 
 	label {
