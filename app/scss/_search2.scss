@@ -1,11 +1,11 @@
 // ##### Search2 Component ##### //
 
-.c-search {
+.c-search2 {
 	display: flex;
 	align-items: flex-start;
 }
 
-.c-search__inputs {
+.c-search2__inputs {
 	display: flex;
 	flex: 1 0 auto;
 	flex-flow: column nowrap;
@@ -14,15 +14,15 @@
 	border: 1px solid $color-light-gray;
 }
 
-.c-search__form {
+.c-search2__form {
 	display: flex;
 }
 
-.c-search__label {
+.c-search2__label {
 	@extend %hide;
 }
 
-.c-search__field {
+.c-search2__field {
 	flex: 1 0 auto;
 	height: $input-height;
 	padding: 0 0 0 30px;
@@ -37,7 +37,7 @@
 
 }
 
-.c-search__submit-button {
+.c-search2__submit-button {
 	@extend %hide;
 
 	@include bp(screen3) {
@@ -53,7 +53,7 @@
 
 }
 
-.c-search__search-close-button {
+.c-search2__search-close-button {
 	height: $input-height;
 	padding: 0 13px;
 	border: none;
@@ -65,16 +65,7 @@
 
 }
 
-// ***** Search 1 Component ***** //
-
-.c-search__tagline {
-	color: $color-dark-gray;
-	font-size: 0.8em;
-}
-
-// ***** Search 2 Component ***** //
-
-.c-search__refine {
+.c-search2__refine {
 	padding: 8px;
 	background: lighten($color-light-gray, 10%);
 

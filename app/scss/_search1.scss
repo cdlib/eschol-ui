@@ -1,0 +1,71 @@
+// ##### Search1 Component ##### //
+
+.c-search1 {
+	display: flex;
+	align-items: flex-start;
+}
+
+.c-search1__inputs {
+	display: flex;
+	flex: 1 0 auto;
+	flex-flow: column nowrap;
+	width: 23.5em;
+	margin: 0 $spacing-body 0 0;
+	border: 1px solid $color-light-gray;
+}
+
+.c-search1__form {
+	display: flex;
+}
+
+.c-search1__label {
+	@extend %hide;
+}
+
+.c-search1__field {
+	flex: 1 0 auto;
+	height: $input-height;
+	padding: 0 0 0 30px;
+	border: none;
+	background: url('../images/icon_magnify.svg') no-repeat left 8px center / 16px;
+	font-size: 0.8em;
+
+	@include bp(screen3) {
+		padding: 0 0 0 $spacing-sm;
+		background: none;
+	}
+
+}
+
+.c-search1__submit-button {
+	@extend %hide;
+
+	@include bp(screen3) {
+		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
+		position: static;
+  	left: auto;
+  	height: $input-height;
+  	margin: 0 $spacing-body 0 0;
+  	padding: 0 13px;
+		border: none;
+		background: url('../images/icon_magnify.svg') no-repeat center / 25px;
+	}
+
+}
+
+.c-search1__search-close-button {
+	height: $input-height;
+	padding: 0 13px;
+	border: none;
+	background: url('../images/icon_close.svg') no-repeat center right / 20px;
+
+	@include bp(screen3) {
+		display: none;
+	}
+
+}
+
+.c-search1__tagline {
+	color: $color-dark-gray;
+	font-size: 0.8em;
+}
