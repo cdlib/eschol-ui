@@ -38,15 +38,15 @@
 		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
 		position: static;
   	left: auto;
-  	padding: 0 16px;
+  	padding: 0 13px;
 		border: none;
-		background: url('../images/icon_magnify.svg') no-repeat center / 20px;
+		background: url('../images/icon_magnify.svg') no-repeat center / 25px;
 	}
 
 }
 
 .c-search1__search-close-button {
-	margin: 0 0 0 $spacing-body;
+	height: $input-height;
 	padding: 0 13px;
 	border: none;
 	background: url('../images/icon_close.svg') no-repeat center / 20px;
