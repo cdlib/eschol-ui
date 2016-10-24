@@ -17,6 +17,7 @@
 .c-search2__form {
 	display: flex;
 	background-color: $color-white;
+	z-index: 1;
 }
 
 .c-search2__label {
@@ -70,9 +71,8 @@
 	align-items: center;
 	height: $input-height;
 	padding: 0 8px;
-	transition: margin 0.5s;
+	transition: margin 0.5s 0.1s;
 	background: lighten($color-light-gray, 10%);
-	z-index: -1;
 
 	label {
 		margin: 0 20px 0 5px;
