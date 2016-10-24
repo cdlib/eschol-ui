@@ -10,18 +10,18 @@ class HeaderComp1 extends React.Component {
   }
   render() {
 		return (
-			<div className="c-header">
-				<div className="c-header__logosearch">
+			<div className="c-header1">
+				<div className="c-header1__logosearch">
 					<a href="">
-						<img className="c-header__logo" src="images/logo_escholarship.svg" alt="escholarship"/>
+						<img className="c-header1__logo" src="images/logo_escholarship.svg" alt="escholarship"/>
 					</a>	
-					<div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>
+					<div className={this.state.searchActive ? "c-header1__search--active" : "c-header1__search"}>
 						<SearchComp1 onClose = {()=>this.setState({searchActive: false})} />
 					</div>
-					<button className="c-header__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
+					<button className="c-header1__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
 				</div>
-				<div className="c-header__deposit">
-					<button className="c-header__deposit-button">Deposit/Publish</button>
+				<div className="c-header1__deposit">
+					<button className="c-header1__deposit-button">Deposit/Publish</button>
 				</div>
 			</div>
 		)

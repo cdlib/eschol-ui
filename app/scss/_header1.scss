@@ -1,6 +1,6 @@
-// ##### Header Component ##### //
+// ##### Header1 Component ##### //
 
-.c-header {
+.c-header1 {
 
 	@include bp(screen3) {
 		display: flex;
@@ -9,18 +9,18 @@
 
 }
 
-.c-header__logo {
+.c-header1__logo {
 	// size to go here
 }
 
-.c-header__logosearch {
+.c-header1__logosearch {
 	display: flex;
 	flex: 1 0 auto;
 	justify-content: space-between;
 	margin: 0 0 $spacing-sm;
 }
 
-%c-header__search {
+%c-header1__search {
 	position: absolute;
 	right: $spacing-sm;
 	left: $spacing-sm;
@@ -39,16 +39,16 @@
 
 }
 
-.c-header__search {
-	@extend %c-header__search;
+.c-header1__search {
+	@extend %c-header1__search;
 }
 
-.c-header__search--active {
-	@extend %c-header__search;
+.c-header1__search--active {
+	@extend %c-header1__search;
 	transform: translateX(0%);
 }
 
-.c-header__search-open-button {
+.c-header1__search-open-button {
 	align-self: flex-start;
 	padding: 15px;
 	border: none;
@@ -60,12 +60,12 @@
 
 }
 
-.c-header__deposit {
+.c-header1__deposit {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.c-header__deposit-button {
+.c-header1__deposit-button {
 	height: $input-height;
 	padding: 0 20px;
 	border: none;
