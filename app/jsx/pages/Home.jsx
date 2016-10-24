@@ -4,9 +4,9 @@ import React from 'react'
 
 class Home extends React.Component {
   render() {
-		return (
-			<div>
-	   		<h2>Layouts</h2>
+    return (
+      <div>
+        <h2>Layouts</h2>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#searchlayout">Search</a></li>
@@ -38,9 +38,9 @@ class Home extends React.Component {
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
         </ul>
-	    </div>
-  	)
-	}
+      </div>
+    )
+  }
 }
 
 module.exports = Home;
