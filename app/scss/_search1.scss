@@ -22,7 +22,6 @@
 	border: 1px solid $color-light-gray;
 	border-radius: 3px;
 	background: inline('../images/icon_magnify.svg') no-repeat left 8px center / 16px;
-	font-size: 0.8em;
 
 	@include bp(screen3) {
 		padding: 0 0 0 $spacing-sm;
