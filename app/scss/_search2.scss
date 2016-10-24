@@ -16,6 +16,7 @@
 
 .c-search2__form {
 	display: flex;
+	background-color: $color-white;
 }
 
 .c-search2__label {
@@ -64,12 +65,27 @@
 
 }
 
-.c-search2__refine {
-	padding: 8px;
+%c-search2__refine {
+	display: flex;
+	align-items: center;
+	height: $input-height;
+	padding: 0 8px;
+	transition: margin 0.5s;
 	background: lighten($color-light-gray, 10%);
+	z-index: -1;
 
 	label {
 		margin: 0 20px 0 5px;
 	}
 
+}
+
+.c-search2__refine {
+	@extend %c-search2__refine;
+	margin: (-$input-height) 0 0 0;
+}
+
+.c-search2__refine--active {
+	@extend %c-search2__refine;
+	margin: 0;
 }
