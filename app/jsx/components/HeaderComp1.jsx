@@ -13,7 +13,7 @@ class HeaderComp1 extends React.Component {
 			<div className="c-header">
 				<div className="c-header__logosearch">
 					<a href="">
-						<img src="images/logo_escholarship.svg" alt="escholarship"/>
+						<img className="c-header__logo" src="images/logo_escholarship.svg" alt="escholarship"/>
 					</a>	
 					<div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>
 						<SearchComp1 onClose = {()=>this.setState({searchActive: false})} />

@@ -6,6 +6,15 @@
 	margin: 0 0 $spacing-sm;
 }
 
+.c-header2__logo {
+	height: $input-height;
+
+	@include bp(screen3) {
+		height: auto; // set to default img height
+	}
+
+}
+
 %c-header2__search {
 	position: absolute;
 	right: $spacing-sm;
