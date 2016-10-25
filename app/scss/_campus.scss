@@ -1,5 +1,47 @@
 // ##### Campus Heading and Menu Component ##### //
 
 .c-campus {
-  // empty
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  border: $bred;
+}
+
+.c-campus__heading {
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+.c-campus__menu {
+	height: 40px;
+
+	border: $bblue;
+}
+
+.c-campus__menu-items {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	div {
+		padding: 10px;
+		background-color: $color-light-gray;
+		font-size: 1.1em;
+	}
+
+	a {
+		display: block;
+		padding: 10px;
+		border: 1px solid $color-dark-gray;
+		color: $color-dark-gray;
+		font-size: 1.1em;
+		text-decoration: none;
+
+		&:not(:first-of-type) {
+			border-top: none;
+		}
+
+	}
+
 }
