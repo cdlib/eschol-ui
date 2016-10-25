@@ -3,7 +3,7 @@
 // Exclusion rule for scss-lint:
 // scss-lint:disable all
 
-// Highlight an element with a border:
+// ***** Highlight Elements ***** //
 
 $bred: 1px solid #f00;
 $bblue: 1px solid #00f;
@@ -13,7 +13,48 @@ $bgreen: 1px solid #0c0;
 
 .c-subhead {
 	display: flex;
+	flex-flow: row wrap;
+}
 
+.c-subhead__campus {
+
+	@include bp(screen3) {
+    order: 1;
+  }
+
+}
+
+.c-subhead__menu {
+	
+	@include bp(screen3) {
+    order: 4;
+		flex: 1 1 100%;
+  }
+
+}
+
+.c-subhead__deposit {
+	
+	@include bp(screen3) {
+    order: 3;
+  }
+
+}
+
+.c-subhead__banner {
+	display: none;
+
+	@include bp(screen3) {
+    display: block;
+    order: 2;
+    flex: 1 0 auto;
+  }
+
+}
+
+// Borders:
+
+.c-subhead {
 	border: 2px solid gray;
 }
 
@@ -30,10 +71,5 @@ $bgreen: 1px solid #0c0;
 }
 
 .c-subhead__banner {
-	
-	@include bp(screen3) {
-    display: none;
-  }
-
 	border: 2px solid orange;
 }
