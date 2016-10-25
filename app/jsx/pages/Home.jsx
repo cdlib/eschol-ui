@@ -21,6 +21,7 @@ class Home extends React.Component {
         <h2>Components</h2>
         <ul>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
+          <li><a href="#campus">Campus Heading and Menu</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#export">Export/RSS</a></li>

@@ -9,6 +9,7 @@ import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ButtonPage from './pages/ButtonPage.jsx'
 import CheckboxPage from './pages/CheckboxPage.jsx'
+import CampusPage from './pages/CampusPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import ExportPage from './pages/ExportPage.jsx'
@@ -53,6 +54,7 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbPage} />
+      <Route path="/campus" component={CampusPage} />
       <Route path="/button" component={ButtonPage} />
       <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
