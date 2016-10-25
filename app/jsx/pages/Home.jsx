@@ -22,7 +22,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
-          <li><a href="#columns">Columns</a></li>
+          <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>
@@ -37,6 +37,7 @@ class Home extends React.Component {
           <li><a href="#search1">Search 1 - With Tagline</a></li>
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
+          <li><a href="#subhead">Subhead Layout</a></li>
         </ul>
       </div>
     )

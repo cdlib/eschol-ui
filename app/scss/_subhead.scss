@@ -1,0 +1,42 @@
+// ##### Subhead Component ##### //
+
+.c-subhead {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.c-subhead__campus {
+
+	@include bp(screen3) {
+    order: 1;
+  }
+
+}
+
+.c-subhead__nav {
+
+	@include bp(screen3) {
+		flex: 1 1 100%;
+		order: 4;
+  }
+
+}
+
+.c-subhead__deposit {
+
+	@include bp(screen3) {
+    order: 3;
+  }
+
+}
+
+.c-subhead__banner {
+	display: none;
+
+	@include bp(screen3) {
+    display: block;
+    flex: 1 0 auto;
+    order: 2;
+  }
+
+}

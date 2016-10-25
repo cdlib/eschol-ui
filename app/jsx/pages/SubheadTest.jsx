@@ -1,8 +1,8 @@
-// ##### Test Page ##### //
+// ##### Subhead Test Page ##### //
 
 import React from 'react'
 
-class Subhead extends React.Component {
+class SubheadTest extends React.Component {
   render() {
     return (
       <div className="test-subhead">
@@ -23,4 +23,4 @@ class Subhead extends React.Component {
   }
 }
 
-module.exports = Subhead;
+module.exports = SubheadTest;
