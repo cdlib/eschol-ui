@@ -28,6 +28,7 @@ import SearchPage1 from './pages/SearchPage1.jsx'
 import SearchPage2 from './pages/SearchPage2.jsx'
 import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import SortPage from './pages/SortPage.jsx'
+import Subhead from './pages/Subhead.jsx'
 import TextlinkPage from './pages/TextlinkPage.jsx'
 import Test from './pages/Test.jsx'
 
@@ -72,6 +73,7 @@ ReactDOM.render((
       <Route path="/sidebarnav" component={SidebarNavPage} />
       <Route path="/sort" component={SortPage} />
       <Route path="/test" component={Test} />
+      <Route path="/subhead" component={Subhead} />
       <Route path="/textlink" component={TextlinkPage} />
     </Route>
   </Router>
