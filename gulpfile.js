@@ -32,7 +32,7 @@ var sftp = require('gulp-sftp');
 gulp.task('bundle-libs', function() {
   var b = watchify(browserify({
     entries: ['package.json'],
-    debug: true,  // generate source maps
+    debug: false,  // generate source maps
     cache: {}, packageCache: {}, fullPaths: true
   }))
 
