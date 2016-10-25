@@ -9,14 +9,14 @@ $bred: 1px solid #f00;
 $bblue: 1px solid #00f;
 $bgreen: 1px solid #0c0;
 
-// ***** Subhead Layout ***** //
+// ***** Subhead Layout Test***** //
 
-.c-subhead {
+.test-subhead {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.c-subhead__campus {
+.test-subhead__campus {
 
 	@include bp(screen3) {
     order: 1;
@@ -24,7 +24,7 @@ $bgreen: 1px solid #0c0;
 
 }
 
-.c-subhead__menu {
+.test-subhead__menu {
 	
 	@include bp(screen3) {
     order: 4;
@@ -33,7 +33,7 @@ $bgreen: 1px solid #0c0;
 
 }
 
-.c-subhead__deposit {
+.test-subhead__deposit {
 	
 	@include bp(screen3) {
     order: 3;
@@ -41,7 +41,7 @@ $bgreen: 1px solid #0c0;
 
 }
 
-.c-subhead__banner {
+.test-subhead__banner {
 	display: none;
 
 	@include bp(screen3) {
@@ -54,22 +54,22 @@ $bgreen: 1px solid #0c0;
 
 // Borders:
 
-.c-subhead {
+.test-subhead {
 	border: 2px solid gray;
 }
 
-.c-subhead__campus {
+.test-subhead__campus {
 	border: 2px solid red;
 }
 
-.c-subhead__menu {
+.test-subhead__menu {
 	border: 2px solid blue;
 }
 
-.c-subhead__deposit {
+.test-subhead__deposit {
 	border: 2px solid green;
 }
 
-.c-subhead__banner {
+.test-subhead__banner {
 	border: 2px solid orange;
 }

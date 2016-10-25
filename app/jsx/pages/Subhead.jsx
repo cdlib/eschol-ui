@@ -5,17 +5,17 @@ import React from 'react'
 class Subhead extends React.Component {
   render() {
     return (
-      <div className="c-subhead">
-        <div className="c-subhead__campus">
+      <div className="test-subhead">
+        <div className="test-subhead__campus">
           [campus]
         </div>
-        <div className="c-subhead__menu">
+        <div className="test-subhead__menu">
           [menu]
         </div>
-        <div className="c-subhead__deposit">
+        <div className="test-subhead__deposit">
           [deposit]
         </div>
-        <div className="c-subhead__banner">
+        <div className="test-subhead__banner">
           [banner]
         </div>
       </div>
