@@ -9,8 +9,31 @@ $bred: 1px solid #f00;
 $bblue: 1px solid #00f;
 $bgreen: 1px solid #0c0;
 
-// Highlight Bootstrap columns:
+// ***** Subhead Layout ***** //
 
-// [class^="col-"] {
-// 	border: $bblue;
-// }
+.c-subhead {
+	display: flex;
+
+	border: 2px solid gray;
+}
+
+.c-subhead__campus {
+	border: 2px solid red;
+}
+
+.c-subhead__menu {
+	border: 2px solid blue;
+}
+
+.c-subhead__deposit {
+	border: 2px solid green;
+}
+
+.c-subhead__banner {
+	
+	@include bp(screen3) {
+    display: none;
+  }
+
+	border: 2px solid orange;
+}
