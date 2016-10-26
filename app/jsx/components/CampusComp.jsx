@@ -8,7 +8,7 @@ class CampusComp extends React.Component {
     return (
       <div className="c-campus">
         <h2 className="c-campus__heading">
-          UC Berekey
+          <a href="">UC Berekey</a>
         </h2>
         <details className="c-campus__menu">
           <summary></summary>

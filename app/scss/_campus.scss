@@ -11,6 +11,11 @@
 	flex: 1 1 auto;
 	margin: 0 $spacing-sm 0 0;
 	text-align: right;
+
+	a {
+		@extend %o-textlink__colorless;
+	}
+
 }
 
 .c-campus__menu {
