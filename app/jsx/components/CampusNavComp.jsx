@@ -6,7 +6,15 @@ class BreadcrumbComp extends React.Component {
   render() {
     return (
       <nav className="c-campusnav">
-        [campus navigation will go here]
+        <details open className="c-campusnav__main">
+          <summary className="c-campusnav__main-button" role="button">Menu
+          </summary>
+          <div className="c-campusnav__main-items">
+            <a href="">Open Access Policies</a>
+            <a href="">Browse Journals</a>
+            <a href="">Browse Departments</a>
+          </div>
+        </details>
       </nav>
     )
   }

@@ -1,5 +1,75 @@
 // ##### Campus Navigation Component ##### //
 
 .c-campusnav {
-  // empty
+  position: relative;
+  margin: 0 0 $spacing-md;
+
+  @include bp(screen2) {
+    border-top: 2px solid $color-light-gray;
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+}
+
+.c-campusnav__main {
+
+  &[open] {
+
+    .c-campusnav__main-button::after {
+      transform: rotate(180deg);
+    }
+
+  }
+
+}
+
+.c-campusnav__main-button {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 10px 35px 10px 10px;
+  border: 1px solid $color-dark-gray;
+  color: $color-dark-gray;
+  user-select: none;
+
+  @include bp(screen2) {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    margin: 0 0 0 10px;
+    padding: 7px;
+    background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
+    content: '';
+  }
+
+}
+
+.c-campusnav__main-items {
+
+  @include bp(screen2) {
+    // scss-lint:disable ImportantRule
+    display: flex !important; // override details polyfill
+    justify-content: space-around;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    border: 1px solid $color-dark-gray;
+    color: $color-dark-gray;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    @include bp(screen2) {
+      padding: 10px 0 7px;
+      border: none;
+    }
+
+    &:not(:first-of-type) {
+      border-top: none;
+    }
+
+  }
+
 }
