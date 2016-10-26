@@ -1,6 +1,6 @@
-// ##### Campus Navigation Component ##### //
+// ##### Navigation - Campus Component ##### //
 
-.c-campusnav {
+.c-nav2 {
   position: relative;
   margin: 0 0 $spacing-md;
 
@@ -11,11 +11,11 @@
 
 }
 
-.c-campusnav__main {
+.c-nav2__main {
 
   &[open] {
 
-    .c-campusnav__main-button::after {
+    .c-nav2__main-button::after {
       transform: rotate(180deg);
     }
 
@@ -23,7 +23,7 @@
 
 }
 
-.c-campusnav__main-button {
+.c-nav2__main-button {
   display: inline-block;
   margin: 0 0 10px;
   padding: 10px 35px 10px 10px;
@@ -45,7 +45,7 @@
 
 }
 
-.c-campusnav__main-items {
+.c-nav2__main-items {
 
   @include bp(screen2) {
     // scss-lint:disable ImportantRule

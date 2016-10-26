@@ -1,6 +1,6 @@
-// ##### Global Navigation Component ##### //
+// ##### Navigation - Home Component ##### //
 
-.c-globalnav {
+.c-nav1 {
 	position: relative;
 	margin: 0 0 $spacing-md;
 
@@ -11,18 +11,18 @@
 
 }
 
-.c-globalnav__main {
+.c-nav1__main {
 	// not used
 }
 
-%c-globalnav__button-icon {
+%c-nav1__button-icon {
 	position: absolute;
 	padding: 7px;
 	background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
 	content: '';
 }
 
-.c-globalnav__main-button {
+.c-nav1__main-button {
 	display: inline-block;
 	margin: 0 0 10px;
 	padding: 10px 35px 10px 10px;
@@ -35,14 +35,14 @@
 	}
 
 	&::after {
-		@extend %c-globalnav__button-icon;
+		@extend %c-nav1__button-icon;
 		margin: 0 0 0 10px;
 	}
 
 }
 
-.c-globalnav__main[open] .c-globalnav__main-button,
-.c-globalnav__sub[open] .c-globalnav__sub-button {
+.c-nav1__main[open] .c-nav1__main-button,
+.c-nav1__sub[open] .c-nav1__sub-button {
 
 	&::after {
 		transform: rotate(180deg);
@@ -50,7 +50,7 @@
 
 }
 
-%c-globalnav__item {
+%c-nav1__item {
 	display: block;
 	padding: 10px;
 	border: 1px solid $color-dark-gray;
@@ -59,8 +59,8 @@
 	text-decoration: none;
 }
 
-.c-globalnav__sub-button {
-	@extend %c-globalnav__item;
+.c-nav1__sub-button {
+	@extend %c-nav1__item;
 	position: relative;
 	border-top: none;
 	user-select: none;
@@ -71,13 +71,13 @@
 	}
 
 	&::after {
-		@extend %c-globalnav__button-icon;
+		@extend %c-nav1__button-icon;
 		right: 10px;
 	}
 
 }
 
-.c-globalnav__main-items {
+.c-nav1__main-items {
 	position: absolute;
 	right: 0;
 	left: 0;
@@ -100,7 +100,7 @@
 	}
 
 	> a {
-		@extend %c-globalnav__item;
+		@extend %c-nav1__item;
 
 		@include bp(screen2) {
 			border: none;
@@ -110,7 +110,7 @@
 			border-top: none;
 		}
 
-		&.c-globalnav__item--active {
+		&.c-nav1__item--active {
 			color: $color-orange;
 
 			@include bp(screen2) {
@@ -124,11 +124,11 @@
 
 }
 
-.c-globalnav__sub {
+.c-nav1__sub {
 	// not used
 }
 
-.c-globalnav__sub-items {
+.c-nav1__sub-items {
 	overflow: hidden;
 	z-index: 2;
   animation: openSubItems 0.3s linear;
@@ -139,7 +139,7 @@
 	}
 
 	a {
-		@extend %c-globalnav__item;
+		@extend %c-nav1__item;
 		border-top: none;
 		background: lighten($color-light-gray, 15%);
 

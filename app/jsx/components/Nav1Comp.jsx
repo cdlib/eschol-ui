@@ -1,10 +1,10 @@
-// ##### Global Navigation Component ##### //
+// ##### Navigation - Home Component ##### //
 
 import React from 'react'
 import 'details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
-class GlobalNavComp extends React.Component {
+class Nav1Comp extends React.Component {
   componentWillMount() {
     if (matchMedia) {
       this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
@@ -17,17 +17,17 @@ class GlobalNavComp extends React.Component {
   }
   render() {
     return (
-      <nav className="c-globalnav">
-        <details open={this.state.isOpen ? "open" : ""} className="c-globalnav__main">
-          <summary className="c-globalnav__main-button" role="button">Menu
+      <nav className="c-nav1">
+        <details open={this.state.isOpen ? "open" : ""} className="c-nav1__main">
+          <summary className="c-nav1__main-button" role="button">Menu
           </summary>
-          <div className="c-globalnav__main-items">
-            <a className="c-globalnav__item--active" href="">About</a>
-            <details className="c-globalnav__sub">
-              <summary className="c-globalnav__sub-button">
+          <div className="c-nav1__main-items">
+            <a className="c-nav1__item--active" href="">About</a>
+            <details className="c-nav1__sub">
+              <summary className="c-nav1__sub-button">
                 Campuses
               </summary>
-              <div className="c-globalnav__sub-items">
+              <div className="c-nav1__sub-items">
                 <a href="">UC Berkeley</a>
                 <a href="">UC Davis</a>
                 <a href="">UC Irvine</a>
@@ -52,4 +52,4 @@ class GlobalNavComp extends React.Component {
   }
 }
 
-module.exports = GlobalNavComp;
+module.exports = Nav1Comp;

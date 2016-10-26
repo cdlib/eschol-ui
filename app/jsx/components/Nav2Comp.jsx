@@ -1,10 +1,10 @@
-// ##### Campus Navigation Component ##### //
+// ##### Navigation - Campus Component ##### //
 
 import React from 'react'
 import 'details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
-class CampusNavComp extends React.Component {
+class Nav2Comp extends React.Component {
   componentWillMount() {
     if (matchMedia) {
       this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
@@ -17,11 +17,11 @@ class CampusNavComp extends React.Component {
   }
   render() {
     return (
-      <nav className="c-campusnav">
-        <details open={this.state.isOpen ? "open" : ""} className="c-campusnav__main">
-          <summary className="c-campusnav__main-button" role="button">Menu
+      <nav className="c-nav2">
+        <details open={this.state.isOpen ? "open" : ""} className="c-nav2__main">
+          <summary className="c-nav2__main-button" role="button">Menu
           </summary>
-          <div className="c-campusnav__main-items">
+          <div className="c-nav2__main-items">
             <a href="">Open Access Policies</a>
             <a href="">Browse Journals</a>
             <a href="">Browse Departments</a>
@@ -32,4 +32,4 @@ class CampusNavComp extends React.Component {
   }
 }
 
-module.exports = CampusNavComp;
+module.exports = Nav2Comp;

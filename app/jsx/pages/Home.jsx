@@ -22,17 +22,17 @@ class Home extends React.Component {
         <ul>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#campus">Campus Heading and Menu</a></li>
-          <li><a href="#campusnav">Campus Navigation</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>
           <li><a href="#footer">Footer</a></li>
-          <li><a href="#globalnav">Global Navigation</a></li>
-          <li><a href="#header1">Header1 - Home</a></li>
-          <li><a href="#header2">Header2 - Other Than Home</a></li>
+          <li><a href="#header1">Header 1 - Home</a></li>
+          <li><a href="#header2">Header 2 - Other Than Home</a></li>
           <li><a href="#infopages">Informational Pages Search Result</a></li>
+          <li><a href="#nav1">Navigation 1 - Home</a></li>
+          <li><a href="#nav2">Navigation 2 - Campus</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#sort">Sort By</a></li>

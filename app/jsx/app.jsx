@@ -10,7 +10,6 @@ import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ButtonPage from './pages/ButtonPage.jsx'
 import CheckboxPage from './pages/CheckboxPage.jsx'
 import CampusPage from './pages/CampusPage.jsx'
-import CampusNavPage from './pages/CampusNavPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import ExportPage from './pages/ExportPage.jsx'
@@ -18,11 +17,12 @@ import FacetBoxPage from './pages/FacetBoxPage.jsx'
 import FilterPage from './pages/FilterPage.jsx'
 import Home from './pages/Home.jsx'
 import FooterPage from './pages/FooterPage.jsx'
-import GlobalNavPage from './pages/GlobalNavPage.jsx'
 import HeaderPage1 from './pages/HeaderPage1.jsx'
 import HeaderPage2 from './pages/HeaderPage2.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
+import Nav1Page from './pages/Nav1Page.jsx'
+import Nav2Page from './pages/Nav2Page.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
@@ -56,7 +56,6 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbPage} />
       <Route path="/campus" component={CampusPage} />
-      <Route path="/campusnav" component={CampusNavPage} />
       <Route path="/button" component={ButtonPage} />
       <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
@@ -66,10 +65,11 @@ ReactDOM.render((
       <Route path="/facetbox" component={FacetBoxPage} />
       <Route path="/filter" component={FilterPage} />
       <Route path="/footer" component={FooterPage} />
-      <Route path="/globalnav" component={GlobalNavPage} />
       <Route path="/header1" component={HeaderPage1} />
       <Route path="/header2" component={HeaderPage2} />
       <Route path="/infopages" component={InfoPagesPage} />
+      <Route path="/nav1" component={Nav1Page} />
+      <Route path="/nav2" component={Nav2Page} />
       <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />
       <Route path="/search1" component={SearchPage1} />
