@@ -8,10 +8,10 @@ class CampusComp extends React.Component {
     return (
       <div className="c-campus">
         <h2 className="c-campus__heading">
-          UC Berkeley
+          UC Berekey
         </h2>
-        <details open className="c-campus__menu">
-          <summary>[arrow]</summary>
+        <details className="c-campus__menu">
+          <summary></summary>
           <div className="c-campus__menu-items">
             <div>eScholarship at &hellip;</div>
             <a href="">UC Berkeley</a>

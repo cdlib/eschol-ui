@@ -1,38 +1,61 @@
 // ##### Campus Heading and Menu Component ##### //
 
 .c-campus {
-  display: flex;
+  display: inline-flex;
   position: relative;
   align-items: center;
-
-  border: $bred;
+	min-width: 14em; // longest menu item
 }
 
 .c-campus__heading {
-	margin: 0;
-	padding: 0 0 0 10px;
+	flex: 1 1 auto;
+	margin: 0 $spacing-sm 0 0;
+	text-align: right;
 }
 
 .c-campus__menu {
-	height: 40px;
 
-	border: $bblue;
+	summary {
+		position: relative;
+		padding: 20px 15px;
+		border: 1px solid $color-dark-gray;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
+			content: '';
+		}
+
+	}
+
+	&[open] {
+
+		summary::after {
+			transform: rotate(180deg);
+		}
+
+	}
+
 }
 
 .c-campus__menu-items {
 	position: absolute;
-	top: 40px;
+	right: 0;
 	left: 0;
 
 	div {
-		padding: 10px;
+		padding: $spacing-sm;
 		background-color: $color-light-gray;
 		font-size: 1.1em;
 	}
 
 	a {
 		display: block;
-		padding: 10px;
+		padding: $spacing-sm;
 		border: 1px solid $color-dark-gray;
 		color: $color-dark-gray;
 		font-size: 1.1em;
