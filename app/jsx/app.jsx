@@ -17,8 +17,8 @@ import FacetBoxPage from './pages/FacetBoxPage.jsx'
 import FilterPage from './pages/FilterPage.jsx'
 import Home from './pages/Home.jsx'
 import FooterPage from './pages/FooterPage.jsx'
-import HeaderPage1 from './pages/HeaderPage1.jsx'
-import HeaderPage2 from './pages/HeaderPage2.jsx'
+import Header1Page from './pages/Header1Page.jsx'
+import Header2Page from './pages/Header2Page.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
 import Nav1Page from './pages/Nav1Page.jsx'
@@ -26,8 +26,8 @@ import Nav2Page from './pages/Nav2Page.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
-import SearchPage1 from './pages/SearchPage1.jsx'
-import SearchPage2 from './pages/SearchPage2.jsx'
+import Search1Page from './pages/Search1Page.jsx'
+import Search2Page from './pages/Search2Page.jsx'
 import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import SortPage from './pages/SortPage.jsx'
 import SubheadPage from './pages/SubheadPage.jsx'
@@ -65,15 +65,15 @@ ReactDOM.render((
       <Route path="/facetbox" component={FacetBoxPage} />
       <Route path="/filter" component={FilterPage} />
       <Route path="/footer" component={FooterPage} />
-      <Route path="/header1" component={HeaderPage1} />
-      <Route path="/header2" component={HeaderPage2} />
+      <Route path="/header1" component={Header1Page} />
+      <Route path="/header2" component={Header2Page} />
       <Route path="/infopages" component={InfoPagesPage} />
       <Route path="/nav1" component={Nav1Page} />
       <Route path="/nav2" component={Nav2Page} />
       <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />
-      <Route path="/search1" component={SearchPage1} />
-      <Route path="/search2" component={SearchPage2} />
+      <Route path="/search1" component={Search1Page} />
+      <Route path="/search2" component={Search2Page} />
       <Route path="/searchlayout" component={SearchLayout} />
       <Route path="/sidebarnav" component={SidebarNavPage} />
       <Route path="/sort" component={SortPage} />

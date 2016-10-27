@@ -1,7 +1,7 @@
 // ##### Header Component ##### //
 
 import React from 'react'
-import SearchComp1 from '../components/SearchComp1.jsx'
+import Search1Comp from '../components/Search1Comp.jsx'
 
 class HeaderComp1 extends React.Component {
   constructor(props){
@@ -16,7 +16,7 @@ class HeaderComp1 extends React.Component {
             <img className="c-header1__logo" src="images/logo_escholarship.svg" alt="escholarship"/>
           </a>  
           <div className={this.state.searchActive ? "c-header1__search--active" : "c-header1__search"}>
-            <SearchComp1 onClose = {()=>this.setState({searchActive: false})} />
+            <Search1Comp onClose = {()=>this.setState({searchActive: false})} />
           </div>
           <button className="c-header1__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
         </div>

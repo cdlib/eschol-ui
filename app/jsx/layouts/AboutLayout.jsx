@@ -1,7 +1,7 @@
 // ##### About Layout ##### //
 
 import React from 'react'
-import HeaderComp1 from '../components/HeaderComp1.jsx'
+import Header1Comp from '../components/Header1Comp.jsx'
 import Nav1Comp from '../components/Nav1Comp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import SidebarNavComp from '../components/SidebarNavComp.jsx'
@@ -11,7 +11,7 @@ class AboutLayout extends React.Component {
   render() {
     return (
       <div className="l_about">
-        <HeaderComp1 />
+        <Header1Comp />
         <Nav1Comp />
         <BreadcrumbComp />
         <div className="c-columns">
