@@ -2,7 +2,7 @@
 
 import React from 'react'
 import HeaderComp1 from '../components/HeaderComp1.jsx'
-import GlobalNavComp from '../components/GlobalNavComp.jsx'
+import Nav1Comp from '../components/Nav1Comp.jsx'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
 import CheckboxComp from '../components/CheckboxComp.jsx'
@@ -17,7 +17,7 @@ class SearchLayout extends React.Component {
     return (
       <div className="l_search">
         <HeaderComp1 />
-        <GlobalNavComp />
+        <Nav1Comp />
         <ExportComp />
         <div className="c-columns">
           <aside>

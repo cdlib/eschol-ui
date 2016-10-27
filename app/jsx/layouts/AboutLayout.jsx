@@ -2,7 +2,7 @@
 
 import React from 'react'
 import HeaderComp1 from '../components/HeaderComp1.jsx'
-import GlobalNavComp from '../components/GlobalNavComp.jsx'
+import Nav1Comp from '../components/Nav1Comp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import SidebarNavComp from '../components/SidebarNavComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -12,7 +12,7 @@ class AboutLayout extends React.Component {
     return (
       <div className="l_about">
         <HeaderComp1 />
-        <GlobalNavComp />
+        <Nav1Comp />
         <BreadcrumbComp />
         <div className="c-columns">
           <aside>
