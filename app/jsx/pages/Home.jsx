@@ -39,7 +39,7 @@ class Home extends React.Component {
           <li><a href="#search1">Search 1 - With Tagline</a></li>
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
-          <li><a href="#subhead">Subhead Layout</a></li>
+          <li><a href="#subheader">Subheader</a></li>
         </ul>
       </div>
     )

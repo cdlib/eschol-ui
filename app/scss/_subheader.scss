@@ -1,11 +1,11 @@
-// ##### Subhead Component ##### //
+// ##### Subheaderer Component ##### //
 
-.c-subhead {
+.c-subheader {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.c-subhead__campus {
+.c-subheader__campus {
 
 	@include bp(screen3) {
     order: 1;
@@ -13,7 +13,7 @@
 
 }
 
-.c-subhead__nav {
+.c-subheader__nav {
 
 	@include bp(screen3) {
 		flex: 1 1 100%;
@@ -22,7 +22,7 @@
 
 }
 
-.c-subhead__deposit {
+.c-subheader__deposit {
 
 	@include bp(screen3) {
     order: 3;
@@ -30,7 +30,7 @@
 
 }
 
-.c-subhead__banner {
+.c-subheader__banner {
 	display: none;
 
 	@include bp(screen3) {
