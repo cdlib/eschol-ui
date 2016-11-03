@@ -2,8 +2,8 @@
 
 // base styles for <a> and <button> consistency:
 %o-button {
-  display: inline-block;
-  padding: 8px 16px;
+  height: $element-height;
+  padding: 0 16px;
   border: none;
   background: none;
   color: inherit;

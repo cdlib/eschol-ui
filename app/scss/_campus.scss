@@ -22,7 +22,8 @@
 
 	summary {
 		position: relative;
-		padding: 20px 15px;
+		height: $element-height;
+		padding: 0 15px;
 		border: 1px solid $color-dark-gray;
 
 		&::after {
