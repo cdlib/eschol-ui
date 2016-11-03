@@ -2,6 +2,7 @@
 
 import React from 'react'
 import CampusComp from '../components/CampusComp.jsx'
+import Nav2Comp from '../components/Nav2Comp.jsx'
 
 class SubheaderComp extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class SubheaderComp extends React.Component {
           <CampusComp />
         </div>
         <div className="c-subheader__nav">
-          [global nav here]
+          <Nav2Comp />
         </div>
         <div className="c-subheader__buttons">
           [deposit buttons here]
