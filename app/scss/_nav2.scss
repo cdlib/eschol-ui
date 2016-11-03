@@ -48,6 +48,8 @@
 }
 
 .c-nav2__main-items {
+  background-color: $color-white;
+  z-index: 1;
 
   @include bp(screen3) {
     // scss-lint:disable ImportantRule

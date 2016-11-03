@@ -52,6 +52,8 @@
 	position: absolute;
 	right: 0;
 	left: 0;
+	background-color: $color-white;
+	z-index: 2;
 
 	div {
 		padding: $spacing-sm;

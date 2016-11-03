@@ -83,7 +83,7 @@
 	left: 0;
 	background-color: $color-white;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 1;
   animation: openMainItems 0.3s linear;
 
 	@include bp(screen2) {
