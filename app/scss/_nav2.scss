@@ -4,7 +4,7 @@
   position: relative;
   margin: 0 0 $spacing-md;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     border-top: 2px solid $color-light-gray;
     border-bottom: 1px solid $color-light-gray;
   }
@@ -31,7 +31,7 @@
   color: $color-dark-gray;
   user-select: none;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     display: none;
   }
 
@@ -47,7 +47,7 @@
 
 .c-nav2__main-items {
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     // scss-lint:disable ImportantRule
     display: flex !important; // override details polyfill
     justify-content: space-around;
@@ -61,7 +61,7 @@
     font-size: 1.1em;
     text-decoration: none;
 
-    @include bp(screen2) {
+    @include bp(screen3) {
       padding: 10px 0 7px;
       border: none;
     }

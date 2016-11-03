@@ -7,7 +7,7 @@ import Breakpoints from '../../js/breakpoints.json'
 class Nav2Comp extends React.Component {
   componentWillMount() {
     if (matchMedia) {
-      this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
+      this.mq = matchMedia("(min-width:"+Breakpoints.screen3+")")
       this.mq.addListener(this.widthChange)
       this.widthChange()
     }
