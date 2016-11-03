@@ -12,7 +12,7 @@ class SubheaderComp extends React.Component {
         <div className="c-subheader__nav">
           [global nav here]
         </div>
-        <div className="c-subheader__deposit">
+        <div className="c-subheader__buttons">
           [deposit buttons here]
         </div>
         <div className="c-subheader__banner">

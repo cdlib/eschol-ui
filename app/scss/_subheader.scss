@@ -1,4 +1,4 @@
-// ##### Subheaderer Component ##### //
+// ##### Subheader Component ##### //
 
 .c-subheader {
 	display: flex;
@@ -22,7 +22,7 @@
 
 }
 
-.c-subheader__deposit {
+.c-subheader__buttons {
 
 	@include bp(screen3) {
     order: 3;
