@@ -16,7 +16,7 @@ class SubheaderComp extends React.Component {
           [deposit buttons here]
         </div>
         <div className="c-subheader__banner">
-          [banner here]
+          <img className="c-subheader__banner-image" src="http://placehold.it/500x100?text=Campus Logo Here" alt=""/>
         </div>
       </div>
     )

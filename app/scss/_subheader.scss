@@ -1,6 +1,8 @@
 // ##### Subheader Component ##### //
 
-// Would be better using CSS Grid Layout here, but spec not yet ratified, so here's some Flexbox hacking:
+// ***** Layout ***** //
+
+// Would rather try CSS Grid Layout here, but spec not yet ratified, so here's some Flexbox hacking:
 
 .c-subheader {
 	display: flex;
@@ -41,4 +43,11 @@
     order: 2;
   }
 
+}
+
+// ***** Nested Properties ***** //
+
+.c-subheader__banner-image {
+  display: block;
+  margin: 0 auto;
 }
