@@ -10,7 +10,12 @@
 .c-campus__heading {
 	flex: 1 1 auto;
 	margin: 0 $spacing-sm 0 0;
+	font-size: 1.2em;
 	text-align: right;
+
+	@include bp(screen3) {
+		font-size: 1.5em;
+	}
 
 	a {
 		@extend %o-textlink__colorless;
