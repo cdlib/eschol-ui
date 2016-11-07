@@ -6,6 +6,7 @@
 
 .c-subheader {
 	display: flex;
+  position: relative; // to abspos campus and nav components
 	flex-flow: row wrap;
 }
 

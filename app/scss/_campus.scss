@@ -2,19 +2,22 @@
 
 .c-campus {
   display: inline-flex;
-  position: relative;
   align-items: center;
-	min-width: 14em; // longest menu item
+
+  @include bp(screen3) {
+		min-width: 13.3em; // longest menu item
+  }
+
 }
 
 .c-campus__heading {
-	flex: 1 1 auto;
 	margin: 0 $spacing-sm 0 0;
-	font-size: 1.2em;
-	text-align: right;
+	font-size: 1.1em;
 
 	@include bp(screen3) {
+		flex: 1 1 auto;
 		font-size: 1.5em;
+		text-align: right;
 	}
 
 	a {
@@ -60,6 +63,10 @@
 	margin: $spacing-sm 0 0;
 	background-color: $color-white;
 	z-index: 2;
+
+	@include bp(screen3) {
+		right: auto;
+	}
 
 	div {
 		padding: $spacing-sm;
