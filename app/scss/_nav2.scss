@@ -1,7 +1,6 @@
 // ##### Navigation - Campus Component ##### //
 
 .c-nav2 {
-  position: relative;
   margin: 0 0 $spacing-md;
 
   @include bp(screen3) {
@@ -49,6 +48,8 @@
 
 .c-nav2__main-items {
   position: absolute;
+  right: 0;
+  left: 0;
   background-color: $color-white;
   z-index: 1;
 
