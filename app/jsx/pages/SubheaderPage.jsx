@@ -8,6 +8,7 @@ class SubheaderPage extends React.Component {
 		return (
 			<div>
 	   		<SubheaderComp />
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, provident, autem, reprehenderit ipsa odit soluta voluptatem aspernatur esse ullam vel doloribus. Asperiores nisi, ex libero dicta deserunt suscipit iste eaque.</div>
 	    </div>
   	)
 	}
