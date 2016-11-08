@@ -1,9 +1,9 @@
 // ##### Navigation - Campus Component ##### //
 
 .c-nav2 {
-  margin: 0 0 $spacing-md;
 
   @include bp(screen3) {
+    margin: 0 0 $spacing-md;
     border-top: 2px solid $color-light-gray;
     border-bottom: 1px solid $color-light-gray;
   }
