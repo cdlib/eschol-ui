@@ -1,6 +1,6 @@
 // ##### Campus Heading and Menu Component ##### //
 
-$campus-menu-width: 30px;
+$campus-menu-button-width: 30px;
 
 .c-campus {
   display: inline-flex;
@@ -8,7 +8,6 @@ $campus-menu-width: 30px;
   @include bp(screen3) {
 		position: relative;
 		align-items: flex-end;
-		width: 12em;
 		min-height: 30px;
   }
 
@@ -20,6 +19,7 @@ $campus-menu-width: 30px;
 	text-align: right;
 
 	@include bp(screen3) {
+		width: 7.5em; // component width
 		font-size: 1.5em;
 	}
 
@@ -33,7 +33,7 @@ $campus-menu-width: 30px;
 
 	summary {
 		position: relative;
-		width: $campus-menu-width;
+		width: $campus-menu-button-width;
 		height: $element-height;
 		border: 1px solid $color-dark-gray;
 
@@ -75,7 +75,7 @@ $campus-menu-width: 30px;
 	z-index: 2;
 
 	@include bp(screen3) {
-		right: (-$campus-menu-width) - 1;
+		margin-right: (-$campus-menu-button-width) - 1;
 	}
 
 	div {
