@@ -36,12 +36,14 @@ $campus-menu-button-width: 30px;
 		width: $campus-menu-button-width;
 		height: $element-height - 2px;
 		border: 1px solid $color-dark-gray;
+		border-right: none;
 
 		@include bp(screen3) {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			height: auto;
+			border: 1px solid $color-dark-gray;
 		}
 
 		&::after {
