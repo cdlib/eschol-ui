@@ -34,7 +34,7 @@ $campus-menu-button-width: 30px;
 	summary {
 		position: relative;
 		width: $campus-menu-button-width;
-		height: $element-height;
+		height: $element-height - 2px;
 		border: 1px solid $color-dark-gray;
 
 		@include bp(screen3) {
@@ -75,7 +75,7 @@ $campus-menu-button-width: 30px;
 	z-index: 2;
 
 	@include bp(screen3) {
-		margin-right: (-$campus-menu-button-width) - 1;
+		margin-right: (-$campus-menu-button-width) - 1px;
 	}
 
 	div {
