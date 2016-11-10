@@ -1,21 +1,25 @@
 // ##### Campus Heading and Menu Component ##### //
 
+$campus-menu-width: 30px;
+
 .c-campus {
   display: inline-flex;
 
   @include bp(screen3) {
+		position: relative;
 		align-items: flex-end;
+		width: 12em;
+		min-height: 30px;
   }
 
 }
 
 .c-campus__heading {
 	margin: 0 $spacing-sm 0 0;
-	font-size: 1.1em;
+	font-size: 1em;
 	text-align: right;
 
 	@include bp(screen3) {
-		max-width: 7.1em; // move to c-subheader__campus instead?
 		font-size: 1.5em;
 	}
 
@@ -29,9 +33,16 @@
 
 	summary {
 		position: relative;
+		width: $campus-menu-width;
 		height: $element-height;
-		padding: 0 15px;
 		border: 1px solid $color-dark-gray;
+
+		@include bp(screen3) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: auto;
+		}
 
 		&::after {
 			position: absolute;
@@ -64,7 +75,7 @@
 	z-index: 2;
 
 	@include bp(screen3) {
-		right: auto;
+		right: (-$campus-menu-width) - 1;
 	}
 
 	div {
