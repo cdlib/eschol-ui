@@ -23,6 +23,7 @@ import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
 import Nav1Page from './pages/Nav1Page.jsx'
 import Nav2Page from './pages/Nav2Page.jsx'
+import Nav3Page from './pages/Nav3Page.jsx'
 import PaginationPage from './pages/PaginationPage.jsx'
 import ScholWorksPage from './pages/ScholWorksPage.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
@@ -69,6 +70,7 @@ ReactDOM.render((
       <Route path="/infopages" component={InfoPagesPage} />
       <Route path="/nav1" component={Nav1Page} />
       <Route path="/nav2" component={Nav2Page} />
+      <Route path="/nav3" component={Nav3Page} />
       <Route path="/pagination" component={PaginationPage} />
       <Route path="/scholworks" component={ScholWorksPage} />
       <Route path="/search1" component={Search1Page} />
