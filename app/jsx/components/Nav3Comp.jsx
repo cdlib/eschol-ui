@@ -7,12 +7,12 @@ class Nav3Comp extends React.Component {
   render() {
     return (
       <nav className="c-nav3">
-        <details className="c-nav3__main">
+        <details open className="c-nav3__main">
           <summary className="c-nav3__main-button" role="button">Menu
           </summary>
           <div className="c-nav3__main-items">
             <a href="">Journal Home</a>
-            <details className="c-nav3__sub">
+            <details open className="c-nav3__sub">
               <summary className="c-nav3__sub-button">
                 Issues
               </summary>

@@ -34,20 +34,28 @@
 
 }
 
-.c-nav3__main-items {
-  position: absolute;
-  right: 0;
-  left: 0;
+%c-nav3__item {
+  display: block;
+  padding: 10px;
+  border: 1px solid $color-dark-gray;
   background-color: $color-white;
+  color: $color-dark-gray;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.c-nav3__main-items {
+  // ***** try removing these unneeded styles from nav1.scss *****
+  // position: absolute;
+  // right: 0;
+  // left: 0;
+
+  position: relative;
+  transform: translateX(-102%); // toggle this to show/hide c-nav3__sub-items
   z-index: 1;
 
   a {
-    display: block;
-    padding: 10px;
-    border: 1px solid $color-dark-gray;
-    color: $color-dark-gray;
-    font-size: 1.1em;
-    text-decoration: none;
+    @extend %c-nav3__item;
 
     &:not(:first-of-type) {
       border-top: none;
@@ -55,4 +63,21 @@
 
   }
 
+}
+
+.c-nav3__sub {
+  // not used
+}
+
+.c-nav3__sub-button {
+  @extend %c-nav3__item;
+  border-top: none;
+}
+
+.c-nav3__sub-items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(102%); // moves sub-items to right side of main-items
 }
