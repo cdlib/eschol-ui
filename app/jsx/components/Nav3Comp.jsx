@@ -2,7 +2,6 @@
 
 import React from 'react'
 import 'details-polyfill'
-import Breakpoints from '../../js/breakpoints.json'
 
 class Nav3Comp extends React.Component {
   render() {
