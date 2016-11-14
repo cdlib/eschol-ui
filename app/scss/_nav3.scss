@@ -44,14 +44,12 @@
   text-decoration: none;
 }
 
-.c-nav3__main-items {
+%c-nav3__main-items {
   // ***** try removing these unneeded styles from nav1.scss *****
   // position: absolute;
   // right: 0;
   // left: 0;
-
   position: relative;
-  transform: translateX(-102%); // toggle this to show/hide c-nav3__sub-items
   z-index: 1;
 
   a {
@@ -63,6 +61,16 @@
 
   }
 
+}
+
+.c-nav3__main-items {
+  @extend %c-nav3__main-items;
+}
+
+// toggle this on presence of 'open' attr on c-nav3__sub to show/hide c-nav3__sub-items
+.c-nav3__main-items--submenu-active {
+  @extend %c-nav3__main-items;
+  transform: translateX(-102%);
 }
 
 .c-nav3__sub {
