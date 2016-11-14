@@ -4,16 +4,20 @@ import React from 'react'
 import 'details-polyfill'
 
 class Nav3Comp extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {submenuActive: false}
+  }
   render() {
     return (
       <nav className="c-nav3">
         <details open className="c-nav3__main">
           <summary className="c-nav3__main-button" role="button">Menu
           </summary>
-          <div className="c-nav3__main-items">
+          <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>
             <a href="">Journal Home</a>
-            <details open className="c-nav3__sub">
-              <summary className="c-nav3__sub-button">
+            <details className="c-nav3__sub">
+              <summary className="c-nav3__sub-button" onClick = {()=> this.setState({submenuActive: true})}>
                 Issues
               </summary>
               <div className="c-nav3__sub-items">
