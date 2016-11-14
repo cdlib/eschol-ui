@@ -12,7 +12,25 @@ class Nav3Comp extends React.Component {
           </summary>
           <div className="c-nav3__main-items">
             <a href="">Journal Home</a>
-            <a href="">Issues >></a>
+            <details className="c-nav3__sub">
+              <summary className="c-nav3__sub-button">
+                Issues
+              </summary>
+              <div className="c-nav3__sub-items">
+                <a href="">Volume 41, Issue 1</a>
+                <a href="">Volume 40, Issue 1</a>
+                <a href="">Volume 39, Issue 1</a>
+                <a href="">Volume 38, Issue 1</a>
+                <a href="">Volume 37, Issue 1</a>
+                <a href="">Volume 36, Issue 1</a>
+                <a href="">Volume 35, Issue 1</a>
+                <a href="">Volume 34, Issue 1</a>
+                <a href="">Volume 33, Issue 1</a>
+                <a href="">Volume 32, Issue 1</a>
+                <a href="">Volume 31, Issue 1</a>
+                <a href="">Volume 30, Issue 1</a>
+              </div>
+            </details>
             <a href="">About Us</a>
             <a href="">Aims &amp; Scope</a>
             <a href="">Editorial Board</a>
