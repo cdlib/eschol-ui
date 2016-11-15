@@ -50,6 +50,7 @@
   // right: 0;
   // left: 0;
   position: relative;
+  transition: transform 0.5s;
   z-index: 1;
 
   a {
@@ -71,7 +72,6 @@
 .c-nav3__main-items--submenu-active {
   @extend %c-nav3__main-items;
   transform: translateX(-102%);
-  transition: transform 0.5s;
 }
 
 .c-nav3__sub {
