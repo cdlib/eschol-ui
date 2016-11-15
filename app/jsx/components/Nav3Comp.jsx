@@ -19,10 +19,10 @@ class Nav3Comp extends React.Component {
             { /* the 'open' attribute below should toggle onClick but isn't working */ }
             <details open={this.state.submenuActive ? "" : "open"} className="c-nav3__sub">
               <summary className="c-nav3__sub-button" onClick = {()=> this.setState({submenuActive: true})}>
-                Issues &#62;&#62;
+                Issues
               </summary>
               <div className="c-nav3__sub-items">
-                <button className="c-nav3__sub-items-button" aria-label="return to menu" onClick = {()=> this.setState({submenuActive: false})}>&#60;&#60; Main Menu</button>
+                <button className="c-nav3__sub-items-button" aria-label="return to menu" onClick = {()=> this.setState({submenuActive: false})}>Main Menu</button>
                 <a href="">Volume 41, Issue 1</a>
                 <a href="">Volume 40, Issue 1</a>
                 <a href="">Volume 39, Issue 1</a>

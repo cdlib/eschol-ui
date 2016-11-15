@@ -80,7 +80,15 @@
 
 .c-nav3__sub-button {
   @extend %c-nav3__item;
+  position: relative;
   border-top: none;
+
+  &::after {
+    margin: 0 0 0 10px;
+    font-size: 1.2em;
+    content: '\00bb'; // double-right arrow
+  }
+
 }
 
 .c-nav3__sub-items {
@@ -96,4 +104,11 @@
   width: 100%;
   border-bottom: none;
   text-align: left;
+
+  &::before {
+    margin: 0 10px 0 0;
+    font-size: 1.2em;
+    content: '\00ab'; // double-left arrow
+  }
+
 }
