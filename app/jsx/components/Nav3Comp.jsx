@@ -22,7 +22,7 @@ class Nav3Comp extends React.Component {
                 Issues &#62;&#62;
               </summary>
               <div className="c-nav3__sub-items">
-                <button className="c-nav3__sub-button-main-menu" onClick = {()=> this.setState({submenuActive: false})}>&#60;&#60; Main Menu</button>
+                <button className="c-nav3__sub-items-button" onClick = {()=> this.setState({submenuActive: false})}>&#60;&#60; Main Menu</button>
                 <a href="">Volume 41, Issue 1</a>
                 <a href="">Volume 40, Issue 1</a>
                 <a href="">Volume 39, Issue 1</a>

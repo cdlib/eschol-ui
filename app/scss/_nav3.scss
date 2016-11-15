@@ -91,7 +91,7 @@
   transform: translateX(102%); // moves sub-items to right side of main-items
 }
 
-.c-nav3__sub-button-main-menu {
+.c-nav3__sub-items-button {
   @extend %c-nav3__item;
   width: 100%;
   border-bottom: none;
