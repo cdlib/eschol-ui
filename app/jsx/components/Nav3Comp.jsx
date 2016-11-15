@@ -16,7 +16,7 @@ class Nav3Comp extends React.Component {
           </summary>
           <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>
             <a href="">Journal Home</a>
-            <details className="c-nav3__sub">
+            <details open={this.state.submenuActive ? "" : "open"} className="c-nav3__sub">
               <summary className="c-nav3__sub-button" onClick = {()=> this.setState({submenuActive: true})}>
                 Issues &#62;&#62;
               </summary>
