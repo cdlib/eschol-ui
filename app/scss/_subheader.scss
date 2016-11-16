@@ -34,6 +34,9 @@
 .c-subheader__buttons {
 
 	@include bp(screen3) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
     order: 3;
   }
 

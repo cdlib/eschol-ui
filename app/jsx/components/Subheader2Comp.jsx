@@ -1,10 +1,10 @@
-// ##### Subheader Component ##### //
+// ##### Subheader 2 Component ##### //
 
 import React from 'react'
 import CampusComp from '../components/CampusComp.jsx'
-import Nav2Comp from '../components/Nav2Comp.jsx'
+import Nav3Comp from '../components/Nav3Comp.jsx'
 
-class SubheaderComp extends React.Component {
+class Subheader2Comp extends React.Component {
   render() {
     return (
       <div className="c-subheader">
@@ -12,10 +12,11 @@ class SubheaderComp extends React.Component {
           <CampusComp />
         </div>
         <div className="c-subheader__nav">
-          <Nav2Comp />
+          <Nav3Comp />
         </div>
         <div className="c-subheader__buttons">
-          <a href="" className="o-button__3">Deposit</a>
+          <a href="" className="">Submit</a>
+          <a href="" className="">Manage Submissions</a>
         </div>
         <div className="c-subheader__banner">
           <img className="c-subheader__banner-image" src="http://placehold.it/400x100?text=Campus Logo Here" alt=""/>
@@ -25,4 +26,4 @@ class SubheaderComp extends React.Component {
   }
 }
 
-module.exports = SubheaderComp;
+module.exports = Subheader2Comp;
