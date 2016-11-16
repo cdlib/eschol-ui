@@ -4,7 +4,7 @@ $campus-menu-button-width: 30px;
 
 .c-campus {
   display: inline-flex;
-
+ 
   @include bp(screen3) {
 		position: relative;
 		align-items: flex-end;
@@ -69,7 +69,7 @@ $campus-menu-button-width: 30px;
 }
 
 .c-campus__menu-items {
-	position: absolute;
+	position: absolute; // to .c-subheader
 	right: 0;
 	left: 0;
 	margin: $spacing-sm 0 0;
