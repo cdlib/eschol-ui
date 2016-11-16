@@ -45,11 +45,9 @@
 }
 
 %c-nav3__main-items {
-  // ***** try removing these unneeded styles from nav1.scss *****
-  // position: absolute;
-  // right: 0;
-  // left: 0;
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
   transition: transform 0.5s;
   z-index: 1;
 
