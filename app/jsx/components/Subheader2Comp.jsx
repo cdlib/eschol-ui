@@ -15,8 +15,8 @@ class Subheader2Comp extends React.Component {
           <Nav3Comp />
         </div>
         <div className="c-subheader__buttons">
-          <a href="" className="">Submit</a>
-          <a href="" className="">Manage Submissions</a>
+          <a href="" className="c-subheader__button-submit">Submit</a>
+          <a href="" className="c-subheader__button-manage">Manage <span className="c-subheader__button-fragment">Submissions</span></a>
         </div>
         <div className="c-subheader__banner">
           <img className="c-subheader__banner-image" src="http://placehold.it/400x100?text=Campus Logo Here" alt=""/>
