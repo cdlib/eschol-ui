@@ -15,7 +15,7 @@ class SubheaderComp extends React.Component {
           <Nav2Comp />
         </div>
         <div className="c-subheader__buttons">
-          <button className="o-button__3">Deposit</button>
+          <a href="" className="o-button__3">Deposit</a>
         </div>
         <div className="c-subheader__banner">
           <img className="c-subheader__banner-image" src="http://placehold.it/400x100?text=Campus Logo Here" alt=""/>

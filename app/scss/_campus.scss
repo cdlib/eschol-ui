@@ -4,7 +4,7 @@ $campus-menu-button-width: 30px;
 
 .c-campus {
   display: inline-flex;
- 
+
   @include bp(screen3) {
 		position: relative;
 		align-items: flex-end;

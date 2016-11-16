@@ -2,8 +2,8 @@
 
 // base styles for <a> and <button> consistency:
 %o-button {
-  height: $element-height;
-  padding: 0 16px;
+  display: inline-block;
+  padding: 8px 16px;
   border: none;
   background: none;
   color: inherit;
@@ -13,7 +13,7 @@
 // no border, background:
 .o-button__1 {
 	@extend %o-button;
-	color: $color-teal;
+  color: $color-teal;
 }
 
 // thin border, no background:
@@ -30,8 +30,14 @@
 	color: $color-white;
 }
 
-// no border & background, bold teal text and left icon:
+// orange text
 .o-button__4 {
+  @extend %o-button;
+  color: $color-orange;
+}
+
+// no border & background, bold teal text and left icon:
+.o-button__5 {
 	@extend %o-button;
 	padding-left: 30px;
 	background: url('../images/icon_share-square.svg') no-repeat left 8px center / 16px; // use background-image for component with alternative icons
