@@ -42,14 +42,23 @@
   color: $color-dark-gray;
   font-size: 1.1em;
   text-decoration: none;
+
+  @include bp(screen3) {
+    width: 200px;
+  }
+
 }
 
 %c-nav3__main-items {
-  position: absolute;
-  right: 0;
-  left: 0;
+  // position: absolute;
+  // right: 0;
+  // left: 0;
   transition: transform 0.5s;
   z-index: 1;
+
+  @include bp(screen3) {
+    // not implemented yet
+  }
 
   a {
     @extend %c-nav3__item;
@@ -70,6 +79,11 @@
 .c-nav3__main-items--submenu-active {
   @extend %c-nav3__main-items;
   transform: translateX(-102%);
+
+  @include bp(screen3) {
+    transform: translateX(0);
+  }
+
 }
 
 .c-nav3__sub {
@@ -95,6 +109,12 @@
   right: 0;
   left: 0;
   transform: translateX(102%); // moves sub-items to right side of main-items
+
+  @include bp(screen3) {
+    position: static;
+    transform: translateX(0);
+  }
+
 }
 
 .c-nav3__sub-items-button {
