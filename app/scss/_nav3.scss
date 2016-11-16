@@ -1,7 +1,7 @@
 // ##### Navigation - Journal Component ##### //
 
 .c-nav3 {
-  position: relative;
+  // not used
 }
 
 .c-nav3__main {
@@ -50,7 +50,7 @@
 }
 
 %c-nav3__main-items {
-  position: absolute;
+  position: absolute; // to .c-subheader
   right: 0;
   left: 0;
   transition: transform 0.5s;
