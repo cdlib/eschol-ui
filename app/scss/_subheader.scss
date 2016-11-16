@@ -7,6 +7,7 @@
 .c-subheader {
 	display: flex;
   position: relative; // to absolute positioned campus, nav2, and nav3 components
+  margin: 0 0 $spacing-md;
 
   @include bp(screen3) {
   	flex-wrap: wrap;

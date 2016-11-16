@@ -24,7 +24,6 @@
 
 .c-nav2__main-button {
   display: inline-block;
-  margin: 0 0 $spacing-sm;
   padding: 7px 35px 6px 10px;
   border: 1px solid $color-dark-gray;
   color: $color-dark-gray;
@@ -48,6 +47,7 @@
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
+  margin: $spacing-sm 0 0;
   background-color: $color-white;
   z-index: 1;
 
