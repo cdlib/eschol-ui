@@ -11,7 +11,7 @@ class Nav3Comp extends React.Component {
   render() {
     return (
       <nav className="c-nav3">
-        <details open className="c-nav3__main">
+        <details className="c-nav3__main">
           <summary className="c-nav3__main-button" role="button">Menu
           </summary>
           <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>

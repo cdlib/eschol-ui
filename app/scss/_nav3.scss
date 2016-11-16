@@ -50,15 +50,11 @@
 }
 
 %c-nav3__main-items {
-  // position: absolute;
-  // right: 0;
-  // left: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
   transition: transform 0.5s;
   z-index: 1;
-
-  @include bp(screen3) {
-    // not implemented yet
-  }
 
   a {
     @extend %c-nav3__item;
@@ -78,7 +74,7 @@
 // toggle this on presence of 'open' attr on c-nav3__sub to show/hide c-nav3__sub-items
 .c-nav3__main-items--submenu-active {
   @extend %c-nav3__main-items;
-  transform: translateX(-102%);
+  transform: translateX(-103%);
 
   @include bp(screen3) {
     transform: translateX(0);
@@ -97,7 +93,6 @@
 
   &::after {
     margin: 0 0 0 10px;
-    font-size: 1.2em;
     content: '\00bb'; // double-right arrow
   }
 
@@ -108,11 +103,15 @@
   top: 0;
   right: 0;
   left: 0;
-  transform: translateX(102%); // moves sub-items to right side of main-items
+  transform: translateX(103%); // moves sub-items to right side of main-items
 
   @include bp(screen3) {
-    position: static;
+    top: 40px;
+    right: auto;
+    left: 222px;
+    max-height: 340px;
     transform: translateX(0);
+    overflow: scroll;
   }
 
 }
@@ -123,9 +122,12 @@
   border-bottom: none;
   text-align: left;
 
+  @include bp(screen3) {
+    display: none;
+  }
+
   &::before {
     margin: 0 10px 0 0;
-    font-size: 1.2em;
     content: '\00ab'; // double-left arrow
   }
 
