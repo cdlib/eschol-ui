@@ -61,8 +61,14 @@
   margin: 0 auto;
 }
 
+.c-subheader__button-deposit {
+  padding: 8px 16px;
+  background-color: $color-orange;
+  color: $color-white;
+  text-decoration: none;
+}
+
 .c-subheader__button-submit {
-  @extend %o-textlink__primary;
   margin: 0 $spacing-sm;
   padding: 0 $spacing-sm 0 0;
   border-right: 1px solid $color-dark-gray;
@@ -72,6 +78,7 @@
     padding: 8px 16px;
     background-color: $color-orange;
     color: $color-white;
+    text-decoration: none;
   }
 
 }
