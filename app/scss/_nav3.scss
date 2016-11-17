@@ -1,7 +1,12 @@
 // ##### Navigation - Journal Component ##### //
 
 .c-nav3 {
-  // not used
+
+  @include bp(screen3) {
+    padding: $spacing-sm 0 0;
+    border-top: 2px solid $color-light-gray;
+  }
+
 }
 
 .c-nav3__main {
