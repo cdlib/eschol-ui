@@ -16,13 +16,12 @@ class Nav3Comp extends React.Component {
           </summary>
           <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>
             <a href="">Journal Home</a>
-            { /* need to add jsx to the 'open' attribute below to set 'open' to null onClick of c-nav3__sub-items-button */ }
-            <details className="c-nav3__sub">
-              <summary className="c-nav3__sub-button" onClick = {()=> this.setState({submenuActive: true})}>
+            <details className="c-nav3__sub" ref={(domNode)=> this.nav3__sub = domNode}>
+              <summary className="c-nav3__sub-button" onClick = {(event)=> this.setState({submenuActive: !this.nav3__sub.open})}>
                 Issues
               </summary>
               <div className="c-nav3__sub-items">
-                <button className="c-nav3__sub-items-button" aria-label="return to menu" onClick = {()=> this.setState({submenuActive: false})}>Main Menu</button>
+                <button className="c-nav3__sub-items-button" aria-label="return to menu" onClick = {()=> { this.setState({submenuActive: false}); this.nav3__sub.open = false; }}>Main Menu</button>
                 <a href="">Volume 41, Issue 1</a>
                 <a href="">Volume 40, Issue 1</a>
                 <a href="">Volume 39, Issue 1</a>
