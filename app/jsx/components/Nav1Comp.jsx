@@ -22,10 +22,9 @@ class Nav1Comp extends React.Component {
           <summary className="c-nav1__main-button" role="button">Menu
           </summary>
           <div className="c-nav1__main-items">
-            <a className="c-nav1__item--active" href="">About</a>
             <details className="c-nav1__sub">
               <summary className="c-nav1__sub-button">
-                Campuses
+                Campus Sites
               </summary>
               <div className="c-nav1__sub-items">
                 <a href="">UC Berkeley</a>
@@ -42,9 +41,8 @@ class Nav1Comp extends React.Component {
                 <a href="">UC Press</a>
               </div>
             </details>
-            <a href="">Open Access Policies</a>
-            <a href="">Journals</a>
-            <a href="">Get Started</a>
+            <a className="c-nav1__item--active" href="">UC Open Access Policies</a>
+            <a href="">eScholarship Publishing</a>
           </div>
         </details>
       </nav>
