@@ -23,13 +23,18 @@
 
 .c-nav3__main-button {
   display: inline-block;
-  padding: 7px 35px 6px 10px;
+  position: relative;
+  height: $element-height;
+  padding: 0 35px 0 10px;
   border: 1px solid $color-dark-gray;
   color: $color-dark-gray;
+  line-height: $element-height;
   user-select: none;
 
   &::after {
     position: absolute;
+    top: 0;
+    bottom: 0;
     margin: 0 0 0 10px;
     padding: 7px;
     background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;

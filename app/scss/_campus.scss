@@ -4,11 +4,12 @@ $campus-menu-button-width: 30px;
 
 .c-campus {
   display: inline-flex;
+  align-items: center;
 
   @include bp(screen3) {
 		position: relative;
 		align-items: flex-end;
-		min-height: 30px;
+		min-height: $element-height;
   }
 
 }
@@ -34,7 +35,7 @@ $campus-menu-button-width: 30px;
 	summary {
 		position: relative;
 		width: $campus-menu-button-width;
-		height: $element-height - 2px;
+		height: $element-height;
 		border: 1px solid $color-dark-gray;
 		border-right: none;
 
