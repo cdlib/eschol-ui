@@ -21,7 +21,7 @@ class HeaderComp1 extends React.Component {
           <button className="c-header1__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
         </div>
         <div className="c-header1__deposit">
-          <button className="c-header1__deposit-button">Deposit/Publish</button>
+          <button className="c-header1__deposit-button">Get Started</button>
         </div>
       </div>
     )
