@@ -53,18 +53,8 @@
 
 }
 
-%c-nav1__item {
-	display: block;
-	padding: 10px;
-	border: 1px solid $color-dark-gray;
-	background: $color-white;
-	color: $color-dark-gray;
-	font-size: 1.1em;
-	text-decoration: none;
-}
-
 .c-nav1__sub-button {
-	@extend %c-nav1__item;
+	@extend %nav-item;
 	position: relative;
 	border-bottom: none;
 	user-select: none;
@@ -103,7 +93,7 @@
 	}
 
 	> a {
-		@extend %c-nav1__item;
+		@extend %nav-item;
 
 		@include bp(screen2) {
 			border: none;
@@ -141,7 +131,7 @@
 	}
 
 	a {
-		@extend %c-nav1__item;
+		@extend %nav-item;
 		border-bottom: none;
 		background: lighten($color-light-gray, 15%);
 

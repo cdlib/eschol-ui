@@ -44,13 +44,7 @@
 }
 
 %c-nav3__item {
-  display: block;
-  padding: 10px;
-  border: 1px solid $color-dark-gray;
-  background: $color-white;
-  color: $color-dark-gray;
-  font-size: 1.1em;
-  text-decoration: none;
+  @extend %nav-item; // from _mixins.scss
 
   @include bp(screen3) {
     width: 200px;
