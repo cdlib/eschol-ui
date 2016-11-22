@@ -6,11 +6,6 @@ class FooterComp extends React.Component {
   render() {
     return (
       <div className="c-footer">
-        <div className="c-footer__logo">
-          <a href="">
-            <img src="images/logo_temp-footer-cdl.png" alt="California Digital Library logo"/>
-          </a>
-        </div>
         <nav className="c-footer__nav">
           <a href="">Home</a>
           <a href="">About eScholarship</a>
@@ -23,6 +18,11 @@ class FooterComp extends React.Component {
           <a href="">Help</a>
           <a href="">Admin Login</a>
         </nav>
+        <div className="c-footer__logo">
+          <a href="">
+            <img src="images/logo_temp-footer-eschol.png" alt="eScholarship logo"/>
+          </a>
+        </div>
         <div className="c-footer__icons">
           <a href="">
             <img src="images/logo_facebook.svg" alt="Facebook"/>
@@ -33,8 +33,8 @@ class FooterComp extends React.Component {
         </div>
         <div className="c-footer__copyright">
           Powered by the<br/>
-          <a href="">California Digital Library</a>.<br/>
-          Copyright &copy; 2016<br/>
+          <a href="http://www.cdlib.org">California Digital Library</a>.<br/>
+          Copyright &copy; 2017<br/>
           The Regents of the University of California.
         </div>
       </div>
