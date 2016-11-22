@@ -61,7 +61,7 @@ body {
 	overflow-x: hidden;
 
   @include bp(screen2) {
-    background: lighten($color-light-gray, 15%);
+    background: lighten($color-light-gray, 10%);
   }
 
 }
