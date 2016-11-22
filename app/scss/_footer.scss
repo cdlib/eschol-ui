@@ -24,8 +24,9 @@
   @include bp(screen3) {
     position: absolute;
     top: 0;
-    right: 0;
-    margin: $spacing-md $spacing-md 0 0;
+    right: 10%;
+    left: 50%;
+    margin: $spacing-md 0 0;
   }
 
   a {
