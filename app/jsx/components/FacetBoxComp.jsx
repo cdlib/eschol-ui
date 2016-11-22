@@ -1,7 +1,6 @@
 // ##### Facet Box Component ##### //
 
 import React from 'react'
-import 'details-polyfill'
 
 class FacetBoxComp extends React.Component {
   render() {

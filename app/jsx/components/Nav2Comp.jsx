@@ -1,7 +1,6 @@
 // ##### Navigation - Campus Component ##### //
 
 import React from 'react'
-import 'details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
 class Nav2Comp extends React.Component {

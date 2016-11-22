@@ -1,7 +1,6 @@
 // ##### Campus Heading and Menu Component ##### //
 
 import React from 'react'
-import 'details-polyfill'
 
 class CampusComp extends React.Component {
   render() {

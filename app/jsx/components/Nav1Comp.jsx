@@ -1,7 +1,6 @@
 // ##### Navigation - Home Component ##### //
 
 import React from 'react'
-import 'details-polyfill'
 import Breakpoints from '../../js/breakpoints.json'
 
 class Nav1Comp extends React.Component {

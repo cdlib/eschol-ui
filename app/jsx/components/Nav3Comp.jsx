@@ -1,7 +1,6 @@
 // ##### Navigation - Journal Component ##### //
 
 import React from 'react'
-import 'details-polyfill'
 
 class Nav3Comp extends React.Component {
   constructor(props){
