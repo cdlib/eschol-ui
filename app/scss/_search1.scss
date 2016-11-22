@@ -16,14 +16,14 @@
 
 .c-search1__field {
 	flex: 1 0 auto;
-	width: 23.5em;
+	width: 17.4em;
 	margin: 0 5px 0 0;
 	padding: 0 0 0 30px;
 	border: 1px solid $color-light-gray;
 	border-radius: 3px;
 	background: inline('../images/icon_magnify.svg') no-repeat left 8px center / 16px;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		padding: 0 0 0 $spacing-sm;
 		background: none;
 	}
@@ -33,7 +33,7 @@
 .c-search1__submit-button {
 	@extend %hide;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		// first 2 properties make up %show, because Sass @extends are not allowed within media queries:
 		position: static;
   	left: auto;
@@ -50,7 +50,7 @@
 	border: none;
 	background: inline('../images/icon_close.svg') no-repeat center / 20px;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		display: none;
 	}
 
@@ -58,5 +58,5 @@
 
 .c-search1__tagline {
 	color: $color-dark-gray;
-	font-size: 0.8em;
+	font-size: 0.75em;
 }

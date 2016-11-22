@@ -2,7 +2,7 @@
 
 .c-header1 {
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		display: flex;
 		justify-content: space-between;
 		margin: (-$spacing-sm) (-$spacing-sm) 0;
@@ -32,7 +32,7 @@
 	background: $color-white;
 	z-index: 2;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		display: flex;
 		position: relative;
 		flex: 1 0 auto;
@@ -57,7 +57,7 @@
 	border: none;
 	background: inline('../images/icon_magnify.svg') no-repeat center right / 25px;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
 		display: none;
 	}
 
