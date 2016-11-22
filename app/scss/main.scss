@@ -60,7 +60,7 @@ body {
 	font-family: 'KievitWeb';
 	overflow-x: hidden;
 
-  @include bp(screen3) {
+  @include bp(screen2) {
     background: lighten($color-light-gray, 15%);
   }
 

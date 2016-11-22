@@ -1,6 +1,6 @@
 // ##### Footer Component ##### //
 
-// Would prefer to use CSS Grid Layout for screen3 but spec not yet ratified, so using absolute positioning on .c-footer__nav
+// Would prefer to use CSS Grid Layout for screen2 but spec not yet ratified, so using absolute positioning on .c-footer__nav
 
 .c-footer {
 	display: flex;
@@ -9,7 +9,7 @@
 	padding: $spacing-md;
 	background-color: $color-light-black;
 
-	@include bp(screen3) {
+	@include bp(screen2) {
     position: relative;
     align-items: flex-start;
     margin: 0 (-$spacing-sm) $spacing-md;
@@ -23,7 +23,7 @@
   columns: 2;
   column-gap: $spacing-lg;
 
-  @include bp(screen3) {
+  @include bp(screen2) {
     position: absolute;
     top: 0;
     right: 10%;
