@@ -6,14 +6,13 @@
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	padding: $spacing-md;
+	margin: 0 (-$spacing-sm) $spacing-md;
+  padding: $spacing-md;
 	background-color: $color-light-black;
 
 	@include bp(screen2) {
     position: relative;
     align-items: flex-start;
-    margin: 0 (-$spacing-sm) $spacing-md;
-    padding: $spacing-md;
   }
 
 }
