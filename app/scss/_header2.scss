@@ -3,7 +3,9 @@
 .c-header2 {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 $spacing-sm;
+	margin: (-$spacing-sm) (-$spacing-sm) 0;
+	padding: $spacing-sm $spacing-sm 0;
+	background: $color-white;
 }
 
 .c-header2__logo {

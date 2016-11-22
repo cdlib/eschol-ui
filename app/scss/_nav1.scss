@@ -5,8 +5,11 @@
 	margin: 0 0 $spacing-md;
 
 	@include bp(screen2) {
+		margin: 0 (-$spacing-sm) $spacing-md;
+		padding: 0 $spacing-sm;
 		border-top: 2px solid $color-light-gray;
 		border-bottom: 1px solid $color-light-gray;
+		background: $color-white;
 	}
 
 }
@@ -81,7 +84,6 @@
 	position: absolute;
 	right: 0;
 	left: 0;
-	background-color: $color-white;
 	overflow: hidden;
 	z-index: 1;
   animation: openMainItems 0.3s linear;
