@@ -1,4 +1,4 @@
-// ##### Header Component ##### //
+// ##### Header1 Component ##### //
 
 import React from 'react'
 import Search1Comp from '../components/Search1Comp.jsx'
@@ -15,7 +15,7 @@ class HeaderComp1 extends React.Component {
         <div className="c-header1__logosearch">
           <a href="">
             <picture>
-              <source srcSet="images/logo_escholarship.svg" media="(min-width: 760px)"/>
+              <source srcSet="images/logo_escholarship.svg" media={"(min-width: "+Breakpoints.screen2+")"}/>
               <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
             </picture>
           </a>  
