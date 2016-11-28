@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Search1Comp from '../components/Search1Comp.jsx'
+import Breakpoints from '../../js/breakpoints.json'
 
 class HeaderComp1 extends React.Component {
   constructor(props){
