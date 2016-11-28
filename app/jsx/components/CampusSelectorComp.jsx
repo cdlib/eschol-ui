@@ -2,16 +2,16 @@
 
 import React from 'react'
 
-class CampusComp extends React.Component {
+class CampusSelectorComp extends React.Component {
   render() {
     return (
-      <div className="c-campus">
-        <h2 className="c-campus__heading">
+      <div className="c-campusselector">
+        <h2 className="c-campusselector__heading">
           <a href="">UC Office of the President</a>
         </h2>
-        <details className="c-campus__menu">
+        <details className="c-campusselector__selector">
           <summary></summary>
-          <div className="c-campus__menu-items">
+          <div className="c-campusselector__selector-items">
             <div>eScholarship at &hellip;</div>
             <a href="">UC Berkeley</a>
             <a href="">UC Davis</a>
@@ -32,4 +32,4 @@ class CampusComp extends React.Component {
   }
 }
 
-module.exports = CampusComp;
+module.exports = CampusSelectorComp;

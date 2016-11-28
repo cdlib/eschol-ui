@@ -1,8 +1,8 @@
-// ##### Campus Heading and Menu Component ##### //
+// ##### Campus Heading and Selector Component ##### //
 
-$campus-menu-button-width: 30px;
+$campus-selector-button-width: 30px;
 
-.c-campus {
+.c-campusselector {
   display: inline-flex;
   align-items: center;
 
@@ -14,7 +14,7 @@ $campus-menu-button-width: 30px;
 
 }
 
-.c-campus__heading {
+.c-campusselector__heading {
 	margin: 0 $spacing-sm 0 0;
 	font-size: 1em;
 	text-align: right;
@@ -30,11 +30,11 @@ $campus-menu-button-width: 30px;
 
 }
 
-.c-campus__menu {
+.c-campusselector__selector {
 
 	summary {
 		position: relative;
-		width: $campus-menu-button-width;
+		width: $campus-selector-button-width;
 		height: $element-height;
 		border: 1px solid $color-dark-gray;
 		border-right: none;
@@ -69,7 +69,7 @@ $campus-menu-button-width: 30px;
 
 }
 
-.c-campus__menu-items {
+.c-campusselector__selector-items {
 	position: absolute; // to .c-subheader
 	right: 0;
 	left: 0;
@@ -78,7 +78,7 @@ $campus-menu-button-width: 30px;
 	z-index: 2;
 
 	@include bp(screen3) {
-		margin-right: (-$campus-menu-button-width) - 1px;
+		margin-right: (-$campus-selector-button-width) - 1px;
 	}
 
 	div {
