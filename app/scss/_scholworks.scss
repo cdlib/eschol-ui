@@ -48,6 +48,21 @@ $scholworks-tag-height: $element-height;
 	background-image: inline('../images/icon_pdf-black.svg');
 }
 
+.c-scholworks__tag-book {
+	@extend %c-scholworks__tag;
+	// book icon
+}
+
+.c-scholworks__tag-thesis {
+	@extend %c-scholworks__tag;
+	// thesis icon
+}
+
+.c-scholworks__tag-multimedia {
+	@extend %c-scholworks__tag;
+	// multimedia icon
+}
+
 .c-scholworks__tag-peer {
 	@extend %c-scholworks__tag;
 	padding: 0 $spacing-sm;
