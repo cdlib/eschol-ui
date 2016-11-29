@@ -1,9 +1,14 @@
 
-// ##### Top-level React App ##### //
+// ##### eScholarship UI Library ##### //
+
+// ***** Libraries ***** //
+
 import 'details-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+
+// ***** Components ***** //
 
 import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
@@ -15,6 +20,7 @@ import ColumnsPage from './pages/ColumnsPage.jsx'
 import ExportPage from './pages/ExportPage.jsx'
 import FacetBoxPage from './pages/FacetBoxPage.jsx'
 import FilterPage from './pages/FilterPage.jsx'
+import FrontmatterPage from './pages/FrontmatterPage.jsx'
 import Home from './pages/Home.jsx'
 import FooterPage from './pages/FooterPage.jsx'
 import Header1Page from './pages/Header1Page.jsx'
@@ -36,6 +42,8 @@ import Subheader2Page from './pages/Subheader2Page.jsx'
 import TextlinkPage from './pages/TextlinkPage.jsx'
 import Test from './pages/Test.jsx'
 
+// ***** UI Library Home Page ***** //
+
 class App extends React.Component {
   render() {
     return (
@@ -49,6 +57,8 @@ class App extends React.Component {
     )
   }
 }
+
+// ***** React Router ***** //
 
 ReactDOM.render((
   <Router>
@@ -64,6 +74,7 @@ ReactDOM.render((
       <Route path="/export" component={ExportPage} />
       <Route path="/input" component={InputPage} />
       <Route path="/facetbox" component={FacetBoxPage} />
+      <Route path="/frontmatter" component={FrontmatterPage} />
       <Route path="/filter" component={FilterPage} />
       <Route path="/footer" component={FooterPage} />
       <Route path="/header1" component={Header1Page} />
