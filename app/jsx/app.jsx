@@ -16,6 +16,7 @@ import ButtonPage from './pages/ButtonPage.jsx'
 import CheckboxPage from './pages/CheckboxPage.jsx'
 import CampusSelectorPage from './pages/CampusSelectorPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
+import ColumnDividePage from './pages/ColumnDividePage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
 import ExportPage from './pages/ExportPage.jsx'
 import FacetBoxPage from './pages/FacetBoxPage.jsx'
@@ -70,6 +71,7 @@ ReactDOM.render((
       <Route path="/button" component={ButtonPage} />
       <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
+      <Route path="/columndivide" component={ColumnDividePage} />
       <Route path="/columns" component={ColumnsPage} />
       <Route path="/export" component={ExportPage} />
       <Route path="/input" component={InputPage} />
