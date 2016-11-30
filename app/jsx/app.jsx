@@ -28,6 +28,7 @@ import Header1Page from './pages/Header1Page.jsx'
 import Header2Page from './pages/Header2Page.jsx'
 import InfoPagesPage from './pages/InfoPagesPage.jsx'
 import InputPage from './pages/InputPage.jsx'
+import JournalLayout from './layouts/JournalLayout.jsx'
 import Nav1Page from './pages/Nav1Page.jsx'
 import Nav2Page from './pages/Nav2Page.jsx'
 import Nav3Page from './pages/Nav3Page.jsx'
@@ -82,6 +83,7 @@ ReactDOM.render((
       <Route path="/header1" component={Header1Page} />
       <Route path="/header2" component={Header2Page} />
       <Route path="/infopages" component={InfoPagesPage} />
+      <Route path="/journal" component={JournalLayout} />
       <Route path="/nav1" component={Nav1Page} />
       <Route path="/nav2" component={Nav2Page} />
       <Route path="/nav3" component={Nav3Page} />
