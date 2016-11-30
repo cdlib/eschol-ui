@@ -1,5 +1,20 @@
 // ##### Column Divide Component ##### //
 
 .c-columndivide {
-	// empty
+
+  @include bp(screen1) {
+    columns: 2;
+    column-gap: $spacing-lg;
+    column-rule: 1px solid $color-light-gray;
+  }
+
+}
+
+.c-columndivide__img {
+  width: 100%;
+
+  @include bp(screen1) {
+    width: auto;
+  }
+
 }
