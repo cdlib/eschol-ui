@@ -1,21 +1,43 @@
 // ##### Column Box Objects ##### //
 
 %o-columnbox {
+	position: relative;
+	padding-top: $spacing-md;
+	padding-bottom: $spacing-md;
 	background: $color-white;
-	box-shadow: 0 50px 15px -15px lighten($color-dark-gray, 30%) inset, $box-shadow;
+	box-shadow: $box-shadow;
+
+	header {
+		margin-top: (-$spacing-md);
+
+		&::before {
+			position: absolute;
+			top: 30px;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			box-shadow: 0 15px 10px -5px lighten($color-light-gray, 5%) inset;
+			content: '';
+		}
+
+	}
+
 }
 
 .o-columnbox-main {
 	@extend %o-columnbox;
-	padding: 0 $spacing-lg $spacing-md;
+	padding-right: $spacing-lg;
+	padding-left: $spacing-lg;
 }
 
 .o-columnbox-sidebar {
 	@extend %o-columnbox;
-	padding: 0 $spacing-md $spacing-md;
+	padding-right: $spacing-md;
+	padding-left: $spacing-md;
 }
 
 %o-columnbox__heading {
+	position: relative;
 	padding: 7px $spacing-md;
 	background: $color-teal;
 	color: $color-white;
