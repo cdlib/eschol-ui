@@ -8,9 +8,12 @@
 	display: flex;
   position: relative; // to absolute positioned campus, nav2, and nav3 components
   margin: 0 0 $spacing-md;
+  background: $color-white;
 
-  @include bp(screen3) {
+  @include bp(screen2) {
   	flex-wrap: wrap;
+    margin: 0 (-$spacing-sm) $spacing-md;
+    padding: 0 $spacing-sm $spacing-sm;
   }
 
 }
