@@ -25,7 +25,6 @@ class Home extends React.Component {
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
-          <li><a href="#columndivide">Column Divide</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>
