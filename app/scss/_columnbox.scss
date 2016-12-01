@@ -25,13 +25,13 @@
 
 }
 
-.o-columnbox-main {
+.o-columnbox__main {
 	@extend %o-columnbox;
 	padding-right: $spacing-lg;
 	padding-left: $spacing-lg;
 }
 
-.o-columnbox-sidebar {
+.o-columnbox__sidebar {
 	@extend %o-columnbox;
 	padding-right: $spacing-md;
 	padding-left: $spacing-md;
@@ -47,12 +47,12 @@
 	font-weight: normal;
 }
 
-.o-columnbox-main__heading {
+.o-columnbox__main-heading {
 	@extend %o-columnbox__heading;
 	margin: 0 (-$spacing-lg) $spacing-md;
 }
 
-.o-columnbox-sidebar__heading {
+.o-columnbox__sidebar-heading {
 	@extend %o-columnbox__heading;
 	margin: 0 (-$spacing-md) $spacing-md;
 }
