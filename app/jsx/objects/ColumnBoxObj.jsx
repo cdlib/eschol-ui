@@ -32,6 +32,28 @@ class ColumnBoxObj extends React.Component {
           <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quasi molestiae praesentium at dignissimos inventore in, error! Temporibus, facere sed fuga sapiente expedita ab, quos ipsam obcaecati in cupiditate maxime?
           </div>
         </section>
+        <h2>Stacked Sidebar Column Boxes</h2>
+        <section className="o-columnbox-sidebar">
+          <header>
+            <h2 className="o-columnbox-sidebar__heading">Placeholder Title</h2>
+          </header>
+          <div>Eaque odit consequuntur voluptas quod quos voluptatum cupiditate! Veritatis fugit necessitatibus, deleniti, fuga sit earum consequuntur repellat, molestias facere illum illo laborum!
+          </div>
+        </section>
+        <section className="o-columnbox-sidebar">
+          <header>
+            <h2 className="o-columnbox-sidebar__heading">Placeholder Title</h2>
+          </header>
+          <div>Quaerat aspernatur, commodi magni nisi, nulla aliquam iste quia, dolore consequatur nihil similique neque maxime, iure eligendi dolores repellendus numquam officiis fugit!
+          </div>
+        </section>
+        <section className="o-columnbox-sidebar">
+          <header>
+            <h2 className="o-columnbox-sidebar__heading">Placeholder Title</h2>
+          </header>
+          <div>Obcaecati ab alias culpa mollitia porro eos itaque ipsa necessitatibus earum libero recusandae, consequuntur quos molestias, dolorum cupiditate doloremque atque possimus esse.
+          </div>
+        </section>
       </div>
     )
   }
