@@ -15,13 +15,28 @@ class JournalLayout extends React.Component {
         <BreadcrumbComp />
         <div className="c-columns">
           <main>
-            <section className="o-columnbox-main">
+            <section className="o-columnbox__main">
               [main content to go here]
             </section>
           </main>
           <aside>
-            <section className="o-columnbox-sidebar">
-              [sidebar content to go here]        
+            <section className="o-columnbox__sidebar">
+              <header>
+                <h2 className="o-columnbox__sidebar-heading">Journal Information</h2>
+              </header>
+              [content to go here]
+            </section>
+            <section className="o-columnbox__sidebar">
+              <header>
+                <h2 className="o-columnbox__sidebar-heading">Featured Articles</h2>
+              </header>
+              [content to go here]
+            </section>
+            <section className="o-columnbox__sidebar">
+              <header>
+                <h2 className="o-columnbox__sidebar-heading">Follow us on Twitter</h2>
+              </header>
+              [content to go here]
             </section>
           </aside>
         </div>
