@@ -2,7 +2,6 @@
 
 .c-frontmatter {
   margin: 0 0 $spacing-md;
-  padding: 0 $spacing-sm;
 
   @include bp(screen1) {
     display: flex;
@@ -10,7 +9,7 @@
   }
 
   ~ .c-frontmatter {
-    padding: $spacing-md $spacing-sm 0;
+    padding: $spacing-md 0 0;
     border-top: 1px solid $color-dark-gray;
   }
 
@@ -45,6 +44,6 @@
 }
 
 .c-frontmatter__subheading {
-  margin: 0 0 -0.4em;
+  margin: 0 0 0.4em;
   font-size: 1.2em;
 }
