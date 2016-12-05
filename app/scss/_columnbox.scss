@@ -5,7 +5,6 @@
 	margin: 0 0 $spacing-md;
 	padding-top: $spacing-md;
 	padding-bottom: $spacing-md;
-	background: $color-white;
 	box-shadow: $box-shadow;
 
 	header {
@@ -29,9 +28,23 @@
 	@extend %o-columnbox;
 	padding-right: $spacing-lg;
 	padding-left: $spacing-lg;
+	background: $color-white;
 }
 
 .o-columnbox2 { // smaller box for sidebar, etc.
+	@extend %o-columnbox;
+	padding-right: $spacing-md;
+	padding-left: $spacing-md;
+	background: $color-white;
+}
+
+.o-columnbox3 { // .o-columnbox1 without background color
+	@extend %o-columnbox;
+	padding-right: $spacing-lg;
+	padding-left: $spacing-lg;
+}
+
+.o-columnbox4 { // .o-columnbox2 without background color
 	@extend %o-columnbox;
 	padding-right: $spacing-md;
 	padding-left: $spacing-md;
