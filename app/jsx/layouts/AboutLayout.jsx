@@ -10,23 +10,23 @@ import FooterComp from '../components/FooterComp.jsx'
 class AboutLayout extends React.Component {
   render() {
     return (
-      <div className="l_about">
+      <div className="l-about">
         <Header1Comp />
         <Nav1Comp />
         <BreadcrumbComp />
         <div className="c-columns">
           <aside>
-            <section className="o-columnbox-sidebar o-sidebarnav">
+            <section className="o-columnbox__sidebar o__sidebarnav">
               <header>
-                <h1 className="o-columnbox-sidebar__heading">About eScholarship</h1>
+                <h1 className="o-columnbox__sidebar-heading">About eScholarship</h1>
               </header>
               <SidebarNavComp />
             </section>
           </aside>
           <main>
-            <section className="o-columnbox-main">
+            <section className="o-columnbox__main">
               <header>
-                <h1 className="o-columnbox-main__heading">About eScholarship</h1>
+                <h1 className="o-columnbox__main-heading">About eScholarship</h1>
               </header>
               <p>eScholarship provides a suite of open access, scholarly publishing services and research tools that enable departments, research units, publishing programs, and individual scholars associated with the University of California to have direct control over the creation and dissemination of the full range of their scholarship.
               <p>With eScholarship, you can publish the following original scholarly works on a dynamic research platform available to scholars worldwide:</p>
