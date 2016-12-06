@@ -13,10 +13,11 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
 import ButtonPage from './pages/ButtonPage.jsx'
-import CheckboxPage from './pages/CheckboxPage.jsx'
 import CampusSelectorPage from './pages/CampusSelectorPage.jsx'
+import CarouselPage from './pages/CarouselPage.jsx'
 import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
 import ColumnsPage from './pages/ColumnsPage.jsx'
+import CheckboxPage from './pages/CheckboxPage.jsx'
 import ExportPage from './pages/ExportPage.jsx'
 import FacetBoxPage from './pages/FacetBoxPage.jsx'
 import FilterPage from './pages/FilterPage.jsx'
@@ -68,6 +69,7 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbPage} />
       <Route path="/campusselector" component={CampusSelectorPage} />
+      <Route path="/carousel" component={CarouselPage} />
       <Route path="/button" component={ButtonPage} />
       <Route path="/checkbox" component={CheckboxPage} />
       <Route path="/columnbox" component={ColumnBoxPage} />
