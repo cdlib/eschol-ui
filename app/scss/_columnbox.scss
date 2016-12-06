@@ -3,8 +3,8 @@
 %o-columnbox {
 	position: relative;
 	margin: 0 0 $spacing-md;
-	padding-top: $spacing-md;
-	padding-bottom: $spacing-md;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 	header {
 		margin-top: (-$spacing-md);
@@ -45,8 +45,7 @@
 	padding: 7px $spacing-md;
 	background: $color-light-gray;
 	font-family: 'KievitWebLight';
-	font-size: 1.2em;
-	font-weight: normal;
+	font-size: 1.15em;
 }
 
 .o-columnbox1__heading {
