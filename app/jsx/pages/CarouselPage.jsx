@@ -1,4 +1,4 @@
-// ##### Breadcrumb Page ##### //
+// ##### Carousel Page ##### //
 
 import React from 'react'
 import CarouselComp from '../components/CarouselComp.jsx'

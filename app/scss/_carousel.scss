@@ -1,5 +1,13 @@
 // ##### Carousel Component ##### //
 
 .c-carousel {
-  // empty
+  display: flex;
+}
+
+.c-carousel__textblock {
+  flex: 0 0 28%;
+}
+
+.c-carousel__object {
+  flex: 1;
 }
