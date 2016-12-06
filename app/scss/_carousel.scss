@@ -2,12 +2,15 @@
 
 .c-carousel {
   display: flex;
+  align-items: stretch;
 }
 
 .c-carousel__textblock {
   flex: 0 0 28%;
+  margin: 0 $spacing-lg 0 0;
 }
 
 .c-carousel__object {
   flex: 1;
+  height: 150px;
 }

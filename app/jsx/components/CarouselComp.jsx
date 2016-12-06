@@ -1,6 +1,7 @@
 // ##### Carousel Component ##### //
 
 import React from 'react'
+import Flickity from 'flickity'
 
 class CarouselComp extends React.Component {
   render() {
@@ -13,8 +14,13 @@ class CarouselComp extends React.Component {
           <p>Quo dolores unde alias, distinctio rem reprehenderit adipisci officiis eum facilis sunt, vero obcaecati qui porro, sed mollitia consequuntur, aperiam quaerat. Excepturi placeat iure aperiam necessitatibus repellendus veniam iste, omnis.
           </p>
         </section>
-        <div className="c-carousel__object">
-        [carousel object to go here</div>
+        <div className="c-carousel__object" data-flickity='{ "cellAlign": "left", "contain": true }'>
+          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+        </div>
       </div>
     )
   }
