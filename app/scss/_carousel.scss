@@ -1,16 +1,27 @@
 // ##### Carousel Component ##### //
 
 .c-carousel {
-  display: flex;
-  align-items: stretch;
+  @include bp(screen2) {
+    display: flex;
+  }
+
 }
 
 .c-carousel__textblock {
   flex: 0 0 28%;
-  margin: 0 $spacing-lg 0 0;
+
+  @include bp(screen2) {
+    margin: 0 $spacing-lg 0 0;
+  }
+
 }
 
 .c-carousel__object {
   flex: 1;
   height: 150px;
+
+  img {
+    border-right: 1px solid $color-dark-gray;
+  }
+
 }
