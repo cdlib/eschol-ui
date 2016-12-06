@@ -1,8 +1,13 @@
 // ##### Scholarly Works Component ##### //
 
 import React from 'react'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 
 class ScholWorksComp extends React.Component {
+  componentDidMount() {
+    $('header').dotdotdot({watch:"window"});
+  }
   render() {
     return (
       <div className="c-scholworks">

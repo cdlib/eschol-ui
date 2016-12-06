@@ -69,7 +69,9 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__main-column {
-	// empty
+	header {
+		height: 2.5em; // truncate to 2 lines
+	}
 }
 
 .c-scholworks__institution-link {
