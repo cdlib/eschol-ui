@@ -31,7 +31,7 @@ class ScholWorksComp extends React.Component {
                 <li className="c-scholworks__media-pdf">Contains 2 additional PDFs</li>
                 <li className="c-scholworks__media-audio">Contains 5 audio files</li>
               </ul>
-              <img className="c-scholworks__cc" src="images/icon_cc-by.svg" alt="cc"/>
+              <img className="c-scholworks__rights" src="images/icon_cc-by.svg" alt="cc"/>
             </div>
           </div>
           <img className="c-scholworks__article-preview" src="images/temp_article.png" alt="article"/>
