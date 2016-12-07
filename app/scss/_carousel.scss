@@ -4,6 +4,7 @@
 
   @include bp(screen2) {
     display: flex;
+    margin: 0 0 $spacing-md;
   }
 
 }
@@ -12,7 +13,7 @@
   flex: 0 0 28%;
 
   @include bp(screen2) {
-    margin: 0 $spacing-lg 0 0;
+    margin: 0 $spacing-md 0 0;
   }
 
 }
