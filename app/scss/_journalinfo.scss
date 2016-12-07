@@ -1,5 +1,25 @@
 // ##### Journal Information Component ##### //
 
 .c-journalinfo {
-  // empty
+
+  img {
+    margin: 0 0 $spacing-md;
+
+    &:not(:first-child) {
+      margin-left: $spacing-md;
+    }
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 1.1em;
+    }
+
+  }
+
 }
