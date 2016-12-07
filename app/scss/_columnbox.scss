@@ -2,7 +2,6 @@
 
 %o-columnbox {
 	position: relative;
-	margin: 0 0 $spacing-md;
 	padding-top: 15px;
 	padding-bottom: 15px;
 
@@ -14,6 +13,7 @@
 
 .o-columnbox1 { // larger box for main content areas
 	@extend %o-columnbox;
+	margin: 0 0 $spacing-md;
 	padding-right: $spacing-lg;
 	padding-left: $spacing-lg;
 	background: $color-white;
@@ -22,6 +22,7 @@
 
 .o-columnbox2 { // smaller box for sidebar, etc.
 	@extend %o-columnbox;
+	margin: 0 0 $spacing-md;
 	padding-right: $spacing-md;
 	padding-left: $spacing-md;
 	background: $color-white;
