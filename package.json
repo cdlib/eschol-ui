@@ -23,6 +23,7 @@
     "eslint-plugin-standard": "^2.0.0",
     "eslintify": "^2.1.0",
     "flickity": "^2.0.5",
+    "flickity-imagesloaded": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.12",

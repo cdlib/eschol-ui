@@ -1,6 +1,7 @@
 // ##### Carousel Component ##### //
 
 .c-carousel {
+
   @include bp(screen2) {
     display: flex;
   }
