@@ -3,12 +3,7 @@
 .c-journalinfo {
 
   img {
-    margin: 0 0 $spacing-md;
-
-    &:not(:first-child) {
-      margin-left: $spacing-md;
-    }
-
+    margin: 0 $spacing-md $spacing-md 0;
   }
 
   ul {
