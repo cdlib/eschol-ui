@@ -1,48 +1,40 @@
 // ##### Column Box Objects ##### //
 
-%o-columnbox {
-	position: relative;
-	padding-top: 15px;
-	padding-bottom: 15px;
+.o-columnbox1 { // larger box for main content areas
+	margin: 0 0 $spacing-md;
+	padding: $spacing-lg;
+	background: $color-white;
+	box-shadow: $box-shadow;
 
 	header {
-		margin-top: -15px;
+		margin-top: (-$spacing-lg);
 	}
 
 }
 
-.o-columnbox1 { // larger box for main content areas
-	@extend %o-columnbox;
-	margin: 0 0 $spacing-md;
-	padding-right: $spacing-lg;
-	padding-left: $spacing-lg;
-	background: $color-white;
-	box-shadow: $box-shadow;
-}
-
 .o-columnbox2 { // smaller box for sidebar, etc.
-	@extend %o-columnbox;
 	margin: 0 0 $spacing-md;
-	padding-right: $spacing-md;
-	padding-left: $spacing-md;
+	padding: $spacing-md;
 	background: $color-white;
 	box-shadow: $box-shadow;
+
+	header {
+		margin-top: (-$spacing-md);
+	}
+
 }
 
 .o-columnbox3 { // .o-columnbox1 without background color and shadow
-	@extend %o-columnbox;
 	padding-right: $spacing-lg;
 	padding-left: $spacing-lg;
 }
 
 .o-columnbox4 { // .o-columnbox2 without background color and shadow
-	@extend %o-columnbox;
 	padding-right: $spacing-md;
 	padding-left: $spacing-md;
 }
 
 %o-columnbox__heading {
-	position: relative;
 	padding: 7px $spacing-md;
 	background: $color-light-gray;
 	font-family: 'KievitWebLight';
