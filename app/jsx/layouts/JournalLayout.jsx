@@ -6,6 +6,7 @@ import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import CarouselComp from '../components/CarouselComp.jsx'
 import FrontmatterComp from '../components/FrontmatterComp.jsx'
+import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class JournalLayout extends React.Component {
@@ -39,7 +40,7 @@ class JournalLayout extends React.Component {
               <header>
                 <h2 className="o-columnbox2__heading">Journal Information</h2>
               </header>
-              [content to go here]
+              <JournalInfoComp />
             </section>
             <section className="o-columnbox2">
               <header>
