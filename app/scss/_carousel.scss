@@ -10,6 +10,7 @@
 
 .c-carousel__textblock {
   flex: 0 0 28%;
+  height: 140px;
 
   @include bp(screen2) {
     margin: 0 $spacing-lg 0 0;

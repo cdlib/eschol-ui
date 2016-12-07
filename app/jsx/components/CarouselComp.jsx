@@ -27,7 +27,7 @@ class CarouselComp extends React.Component {
           <header>
             <h2 className="o-columnbox2__heading">About</h2>
           </header>
-          <p>Quo dolores unde alias, distinctio rem reprehenderit adipisci officiis eum facilis sunt, vero obcaecati qui porro, sed mollitia consequuntur, aperiam quaerat.
+          <p>Quo dolores unde alias, distinctio rem reprehenderit adipisci officiis eum facilis sunt, vero obcaecati qui porro, sed mollitia consequuntur, aperiam quaerat. <a class="o-textlink__secondary" href="">More</a>
           </p>
         </section>
         <div className="c-carousel__object">
