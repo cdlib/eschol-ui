@@ -69,6 +69,15 @@ $scholworks-tag-height: $element-height;
 
 }
 
+.c-scholworks__author {
+	height: 1.1em; // truncate beyond 1 line per jquery.dotdotdot
+
+	a {
+		@extend %o-textlink__secondary;
+	}
+
+}
+
 .c-scholworks__institution-link {
 	@extend %o-textlink__secondary;
 }

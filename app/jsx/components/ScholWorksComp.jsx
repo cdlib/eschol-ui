@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
-    $('.c-scholworks__heading').dotdotdot({watch:"window"});
+    $('.c-scholworks__heading, .c-scholworks__author').dotdotdot({watch:"window"});
   }
   render() {
     return (
@@ -20,8 +20,12 @@ class ScholWorksComp extends React.Component {
             <h2 className="c-scholworks__heading">
               <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
             </h2 >
-            <p>Dahle, Kevin W: Pelfrey, Patricia A; Walker, Iain S; Kling, Rob; Huh, Tina <br/>
-            <a className="c-scholworks__institution-link" href="">Mester Journal, Volume 42, Issue 1</a> (2012)</p>
+            <div className="c-scholworks__author">
+              <a href="">Dahle, Kevin W</a>; <a href="">Pelfrey, Patricia A</a>; <a href="">Walker, Iain S</a>; <a href="">Kling, Rob</a>; <a href="">Huh, Tina</a>
+            </div>
+            <p>
+            <a className="c-scholworks__institution-link" href="">Mester Journal, Volume 42, Issue 1</a> (2012)
+            </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse ea laboriosam modi! Distinctio itaque rerum totam, architecto ad dolor et, repudiandae ipsum tempora voluptatem praesentium quaerat quod, nihil consectetur.
             </p>
             <div className="c-scholworks__media">
