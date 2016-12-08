@@ -87,6 +87,10 @@ $scholworks-tag-height: $element-height;
 
 }
 
+.c-scholworks__abstract {
+	height: 2.4em; // truncate beyond 2 lines per jquery.dotdotdot
+}
+
 .c-scholworks__article-preview {
 	flex: 0 0 auto;
 

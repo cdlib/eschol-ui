@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
-    $('.c-scholworks__heading, .c-scholworks__author').dotdotdot({watch:"window"});
+    $('.c-scholworks__heading, .c-scholworks__author, .c-scholworks__abstract').dotdotdot({watch:"window"});
   }
   render() {
     return (
@@ -26,8 +26,10 @@ class ScholWorksComp extends React.Component {
             <div className="c-scholworks__publication">
               <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse ea laboriosam modi! Distinctio itaque rerum totam, architecto ad dolor et, repudiandae ipsum tempora voluptatem praesentium quaerat quod, nihil consectetur.
-            </p>
+            <div className="c-scholworks__abstract">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor obcaecati magni quas quos ab dignissimos neque beatae, provident unde architecto ut corrupti! Ratione aperiam, recusandae quidem nisi inventore asperiores nam sed eaque totam, quam minima reprehenderit, quisquam cupiditate reiciendis. Vero earum magni asperiores quisquam impedit voluptates eveniet aspernatur assumenda.
+              </p>
+            </div>
             <div className="c-scholworks__media">
               <ul className="c-scholworks__media-list">
                 <li className="c-scholworks__media-video">Contains 5 videos</li>
