@@ -23,9 +23,9 @@ class ScholWorksComp extends React.Component {
             <div className="c-scholworks__author">
               <a href="">Dahle, Kevin W</a>; <a href="">Pelfrey, Patricia A</a>; <a href="">Walker, Iain S</a>; <a href="">Kling, Rob</a>; <a href="">Huh, Tina</a>
             </div>
-            <p>
-            <a className="c-scholworks__publication" href="">Mester Journal, Volume 42, Issue 1</a> (2012)
-            </p>
+            <div className="c-scholworks__publication">
+              <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse ea laboriosam modi! Distinctio itaque rerum totam, architecto ad dolor et, repudiandae ipsum tempora voluptatem praesentium quaerat quod, nihil consectetur.
             </p>
             <div className="c-scholworks__media">
