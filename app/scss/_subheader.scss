@@ -2,35 +2,39 @@
 
 // ***** Layout ***** //
 
-// Would rather try CSS Grid Layout here, but spec not yet ratified, so here's some Flexbox hacking:
-
 .c-subheader {
-	display: flex;
   position: relative; // to absolute positioned campus, nav2, and nav3 components
   margin: 0 0 $spacing-md;
   background: $color-white;
 
   @include bp(screen2) {
-  	flex-wrap: wrap;
     margin: 0 (-$spacing-sm) $spacing-md;
     padding: 0 $spacing-sm $spacing-sm;
   }
 
 }
 
-.c-subheader__campus {
+.c-subheader__row1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 $spacing-sm;
+  padding: 0 0 $spacing-sm;
+  border-bottom: 2px solid $color-light-gray;
 
-	@include bp(screen3) {
-    order: 1;
+  @include bp(screen3) {
+    margin: 0;
+    padding: 0;
+    border: none;
   }
 
 }
 
-.c-subheader__nav {
+.c-subheader__banner {
+  display: none;
 
-	@include bp(screen3) {
-		flex: 1 1 100%;
-		order: 4;
+  @include bp(screen3) {
+    display: block;
   }
 
 }
@@ -41,28 +45,15 @@
 
 	@include bp(screen3) {
     flex-direction: column;
-    order: 3;
   }
 
 }
 
-.c-subheader__banner {
-	display: none;
-
-	@include bp(screen3) {
-    display: block;
-    flex: 1 0 auto;
-    order: 2;
-  }
-
+.c-subheader__row2 {
+  // not yet used
 }
 
 // ***** Nested Grid Elements ***** //
-
-.c-subheader__banner-image {
-  display: block;
-  margin: 0 auto;
-}
 
 .c-subheader__button-deposit {
   padding: 8px 16px;

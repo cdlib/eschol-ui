@@ -19,6 +19,10 @@ $campus-selector-button-width: 30px;
 	font-size: 1em;
 	text-align: right;
 
+	@include bp(screen1) {
+		font-size: 1.3em;
+	}
+
 	@include bp(screen3) {
 		width: 7.5em; // component width
 		font-size: 1.5em;
@@ -37,7 +41,6 @@ $campus-selector-button-width: 30px;
 		width: $campus-selector-button-width;
 		height: $element-height;
 		border: 1px solid $color-dark-gray;
-		border-right: none;
 
 		@include bp(screen3) {
 			position: absolute;
