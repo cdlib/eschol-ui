@@ -60,6 +60,7 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__heading {
 	height: 2.2em; // truncate beyond 2 lines per jquery.dotdotdot
+	margin: 0 0 $spacing-md;
 	font-size: 1.2em;
 	font-weight: bold;
 
@@ -89,6 +90,7 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__abstract {
 	height: 2.4em; // truncate beyond 2 lines per jquery.dotdotdot
+	margin: 0 0 $spacing-md;
 }
 
 .c-scholworks__article-preview {
@@ -116,7 +118,7 @@ $scholworks-tag-height: $element-height;
 .c-scholworks__media-list {
 	display: flex;
 	flex-flow: row wrap;
-	margin-right: $spacing-sm;
+	margin: 0 $spacing-sm $spacing-md 0;
 	padding: 0;
 	list-style: none;
 }
@@ -151,7 +153,6 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__rights {
 	flex: 0 0 auto;
-	margin: 0 0 $spacing-sm;
 
 	@include bp(screen2) {
 		margin: ($spacing-sm * 2) 0 0;
