@@ -42,6 +42,18 @@ Selector pattern using above media query mixin:
 
 */
 
+// No bullet unordered lists 
+
+%no-bullet-ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+
+}
+
 // Hide/show something visually but not for screen readers
 
 %hide {

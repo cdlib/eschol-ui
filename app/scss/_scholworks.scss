@@ -129,11 +129,10 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__media-list {
+	@extend %no-bullet-ul;
 	display: flex;
 	flex-flow: row wrap;
 	margin: 0 $spacing-sm $spacing-md 0;
-	padding: 0;
-	list-style: none;
 }
 
 %c-scholworks__media-item {
