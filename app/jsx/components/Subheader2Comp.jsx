@@ -12,8 +12,8 @@ class Subheader2Comp extends React.Component {
           <CampusSelectorComp />
           <img className="c-subheader__banner" src="http://placehold.it/400x100?text=Campus Logo Here" alt=""/>
           <div className="c-subheader__buttons">
-            <a href="" className="c-subheader__button-submit">Submit</a>
-            <a href="" className="c-subheader__button-manage">Manage <span className="c-subheader__button-fragment">Submissions</span></a>
+            <a href="" className="o-button__3 c-subheader__button">Submit</a>
+            <a href="" className="o-button__3 c-subheader__button">Manage <span className="c-subheader__button-fragment">Submissions</span></a>
           </div>
         </div>
         <div className="c-subheader__row2">

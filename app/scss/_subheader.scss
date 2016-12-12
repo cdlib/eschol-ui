@@ -41,10 +41,23 @@
 
 .c-subheader__buttons {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 
 	@include bp(screen3) {
     flex-direction: column;
+  }
+
+}
+
+.c-subheader__button {
+
+  &:not(:first-child) {
+    margin: 0 0 0 2px;
+
+    @include bp(screen3) {
+      margin: 2px 0 0;
+    }
+
   }
 
 }
@@ -54,38 +67,6 @@
 }
 
 // ***** Nested Grid Elements ***** //
-
-.c-subheader__button-deposit {
-  padding: 8px 16px;
-  background-color: $color-orange;
-  color: $color-white;
-  text-decoration: none;
-}
-
-.c-subheader__button-submit {
-  @extend %o-textlink__primary;
-  margin: 0 $spacing-sm;
-  padding: 0 $spacing-sm 0 0;
-  border-right: 1px solid $color-dark-gray;
-
-  @include bp(screen3) {
-    margin: 0 0 $spacing-sm;
-    padding: 8px 16px;
-    background-color: $color-orange;
-    color: $color-white;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-  }
-
-}
-
-.c-subheader__button-manage {
-  @extend %o-textlink__primary;
-  white-space: nowrap;
-}
 
 .c-subheader__button-fragment {
   position: absolute;
