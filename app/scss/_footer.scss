@@ -56,14 +56,14 @@
 }
 
 .c-footer__icons {
-	margin: 0 0 $spacing-md;
+	margin-bottom: $spacing-md;
 
 	a {
 		@extend %circular-border;
     border-color: $color-white;
 
 		&:not(:first-child) {
-			margin: 0 0 0 $spacing-lg;
+			margin-left: $spacing-lg;
 		}
 
 		img {
