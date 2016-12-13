@@ -25,6 +25,9 @@ class Subheader2Comp extends React.Component {
             <a href="">
               <img src="images/logo_twitter-black.svg" alt="Twitter"/>
             </a>
+            <a href="">
+              <img src="images/icon_rss-black.svg" alt="RSS"/>
+            </a>
           </div>
           <div className="c-subheader__language">
             <a className="o-textlink__primary" href="">Español</a>

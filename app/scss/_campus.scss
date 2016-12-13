@@ -5,6 +5,7 @@ $campus-selector-button-width: 30px;
 .c-campusselector {
   display: inline-flex;
   align-items: center;
+  margin-right: 2px;
 
   @include bp(screen3) {
 		position: relative;
