@@ -18,6 +18,18 @@ class Subheader2Comp extends React.Component {
         </div>
         <div className="c-subheader__row2">
           <Nav3Comp />
+          <div className="c-subheader__social">
+            <a href="">
+              <img src="http://placehold.it/30x30?text=Icon" alt="Facebook"/>
+            </a>
+            <a href="">
+              <img src="http://placehold.it/30x30?text=Icon" alt="Twitter"/>
+            </a>
+          </div>
+          <div className="c-subheader__language">
+            <a className="o-textlink__primary" href="">Español</a>
+            <a className="o-textlink__primary" href="">Português</a>
+          </div>
         </div>
       </div>
     )
