@@ -47,15 +47,15 @@
     flex-direction: column;
   }
 
-}
+  button {
 
-.c-subheader__button {
+    &:not(:first-child) {
+      margin: 0 0 0 2px;
 
-  &:not(:first-child) {
-    margin: 0 0 0 2px;
+      @include bp(screen3) {
+        margin: 2px 0 0;
+      }
 
-    @include bp(screen3) {
-      margin: 2px 0 0;
     }
 
   }
