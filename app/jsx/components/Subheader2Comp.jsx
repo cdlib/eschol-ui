@@ -20,10 +20,10 @@ class Subheader2Comp extends React.Component {
           <Nav3Comp />
           <div className="c-subheader__social">
             <a href="">
-              <img src="http://placehold.it/30x30?text=Icon" alt="Facebook"/>
+              <img src="images/logo_facebook-black.svg" alt="Facebook"/>
             </a>
             <a href="">
-              <img src="http://placehold.it/30x30?text=Icon" alt="Twitter"/>
+              <img src="images/logo_twitter-black.svg" alt="Twitter"/>
             </a>
           </div>
           <div className="c-subheader__language">

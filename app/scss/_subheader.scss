@@ -75,21 +75,19 @@
   justify-content: space-between;
 }
 
-.c-subheader__social { // same here as in footer (create mixin?)
-  margin: 0 $spacing-sm 0 0;
+.c-subheader__social {
+  margin-right: $spacing-sm;
 
   a {
-    display: inline-block;
-    padding: 6px 6px 0;
-    border: 1px solid $color-black;
-    border-radius: 50%;
+    @extend %circular-border;
+    border-color: $color-black;
 
     &:not(:first-child) {
-      margin: 0 0 0 $spacing-lg;
+      margin-left: $spacing-sm;
     }
 
     img {
-      width: 30px;
+      width: 20px;
     }
 
   }
