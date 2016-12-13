@@ -12,7 +12,7 @@ class Subheader1Comp extends React.Component {
           <CampusSelectorComp />
           <img className="c-subheader__banner" src="http://placehold.it/400x100?text=Campus Logo Here" alt=""/>
           <div className="c-subheader__buttons">
-            <a href="" className="o-button__3 c-subheader__button">Deposit</a>
+            <button className="o-button__3 c-subheader__button">Deposit</button>
           </div>
         </div>
         <div className="c-subheader__row2">
