@@ -17,8 +17,7 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__tag-list {
-	margin: 0;
-	padding: 0;
+	@extend %no-bullet-ul;
 }
 
 %c-scholworks__tag {
@@ -26,7 +25,6 @@ $scholworks-tag-height: $element-height;
 	margin: 0 $spacing-sm $spacing-md 0;
 	padding: 0 0 0 25px;
 	background: no-repeat left top / 16px;
-	list-style: none;
 }
 
 .c-scholworks__tag-article {
