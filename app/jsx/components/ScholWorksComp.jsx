@@ -16,9 +16,11 @@ class ScholWorksComp extends React.Component {
             <li className="c-scholworks__tag-article">Article</li>
             <li className="c-scholworks__tag-peer">Peer Reviewed</li>
           </ul>
-          <h2 className="c-scholworks__heading">
-            <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-          </h2 >
+          <heading>
+            <h2 className="c-scholworks__heading">
+              <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
+            </h2 >
+          </heading>
           <div className="c-scholworks__author">
             <a href="">Dahle, Kevin W</a>; <a href="">Pelfrey, Patricia A</a>; <a href="">Walker, Iain S</a>; <a href="">Kling, Rob</a>; <a href="">Huh, Tina</a>
           </div>
