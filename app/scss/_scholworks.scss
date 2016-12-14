@@ -6,12 +6,19 @@ $scholworks-tag-height: $element-height;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: flex-end;
-	padding: $spacing-lg;
-	border-bottom: 1px solid $color-dark-gray;
 
 	@include bp(screen1) {
 		flex-flow: row nowrap;
 		align-items: flex-start;
+	}
+
+	~ .c-scholworks {
+		padding-top: $spacing-md;
+		border-top: 1px solid $color-dark-gray;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: $spacing-md;
 	}
 
 }
