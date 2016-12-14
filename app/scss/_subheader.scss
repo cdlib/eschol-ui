@@ -108,3 +108,20 @@
   }
 
 }
+
+.c-subheader__language-small-label {
+
+  @include bp(screen1) {
+    display: none;
+  }
+
+}
+
+.c-subheader__language-large-label {
+  display: none;
+
+  @include bp(screen1) {
+    display: inline-block;
+  }
+
+}

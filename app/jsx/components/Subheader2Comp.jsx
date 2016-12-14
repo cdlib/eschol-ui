@@ -30,8 +30,14 @@ class Subheader2Comp extends React.Component {
             </a>
           </div>
           <div className="c-subheader__language">
-            <a className="o-textlink__primary" href="">Español</a>
-            <a className="o-textlink__primary" href="">Português</a>
+            <a href="" className="o-textlink__primary">
+              <abbr className="c-subheader__language-small-label" title="Español">ES</abbr>
+              <span className="c-subheader__language-large-label">Español</span>
+            </a>
+            <a href="" className="o-textlink__primary">
+              <abbr className="c-subheader__language-small-label" title="Português">PT</abbr>
+              <span className="c-subheader__language-large-label">Português</span>
+            </a>
           </div>
         </div>
       </div>
