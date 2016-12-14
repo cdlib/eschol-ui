@@ -3,10 +3,6 @@
 $scholworks-tag-height: $element-height;
 
 .c-scholworks {
-	margin: 0 0 $spacing-md;
-}
-
-.c-scholworks__item {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: flex-end;
