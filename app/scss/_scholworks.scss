@@ -134,6 +134,11 @@ $scholworks-tag-height: $element-height;
 	display: flex;
 	flex-flow: row wrap;
 	margin: 0 $spacing-sm $spacing-md 0;
+
+	@include bp(screen2) {
+		margin: 0 $spacing-sm 0 0;
+	}
+
 }
 
 %c-scholworks__media-item {
