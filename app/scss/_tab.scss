@@ -1,6 +1,6 @@
 // ##### Tab Component ##### //
 
-$tab-bottom-margin: 2px;
+$tab-spacing: 2px;
 
 .c-tab {
   display: flex;
@@ -27,12 +27,13 @@ details {
 
 summary {
   height: $element-height;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  margin-right: $tab-spacing;
+  margin-bottom: $tab-spacing;
   padding: 0 $spacing-sm;
   background-color: $color-dark-gray;
   color: $color-white;
   line-height: $element-height;
+  user-select: none;
 
   @include bp(screen3) {
     margin-bottom: 0;
@@ -44,16 +45,16 @@ summary {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: ($element-height + $tab-bottom-margin) * 5;
+  margin-top: ($element-height + $tab-spacing) * 5;
   padding: $spacing-sm;
   background-color: $color-white;
 
   @include bp(screen1) {
-    margin-top: ($element-height + $tab-bottom-margin) * 3;
+    margin-top: ($element-height + $tab-spacing) * 3;
   }
 
   @include bp(screen2) {
-    margin-top: ($element-height + $tab-bottom-margin) * 2;
+    margin-top: ($element-height + $tab-spacing) * 2;
   }
 
   @include bp(screen3) {
