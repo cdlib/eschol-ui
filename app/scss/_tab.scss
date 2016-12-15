@@ -1,54 +1,28 @@
 // ##### Tab Component ##### //
 
-// Inspired from: http://codepen.io/vulpesigni/pen/yyZYNy
-
 .c-tab {
-  display: flex;
-  flex-flow: row wrap;
+  position: relative;
+
+  border: $bred;
 }
 
-.c-tab__input {
-  display: none;
+.c-tab__bar {
+  margin-bottom: 50px;
 
-  &:checked + .c-tab__label {
-    border-bottom: 1px solid $color-white;
-
-    + .c-tab__content {
-      display: block;
-    }
-
-  }
-
+  border: $bgreen;
 }
 
-.c-tab__label {
-  margin: 0 10px 0 0;
-  padding: 0.5em 10px;
-  border: 1px solid $color-dark-gray;
-  background: $color-white;
-  font-size: 1.1em;
-  font-weight: normal;
-  cursor: pointer;
-  z-index: 1;
-  user-select: none;
+details {
+  // empty
+}
 
-  &:not(:first-of-type) {
-    margin-left: -1px;
-  }
-
+summary {
+  @extend %nav-item;
 }
 
 .c-tab__content {
-  display: none;
-  order: 1;
-  width: 100%;
-  margin-top: -1px;
-  padding: 10px;
-  border: 1px solid $color-dark-gray;
-  background: $color-white;
+  position: absolute;
+  bottom: 0;
 
-  @include bp(screen2) {
-    padding: 30px;
-  }
-
+  border: $bblue;
 }

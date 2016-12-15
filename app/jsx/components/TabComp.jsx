@@ -6,30 +6,32 @@ class TabComp extends React.Component {
   render() {
     return (
       <div className="c-tab">
-        <input className="c-tab__input" id="tab-1" type="radio" name="name" defaultChecked={true} />
-        <label className="c-tab__label" htmlFor="tab-1">Main Content</label>
-        <div className="c-tab__content">
-          Content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium officia aliquam accusantium magnam hic inventore at commodi velit similique qui, voluptatem, aliquid consectetur impedit. Error, maxime. Facilis, magni distinctio labore.
-        </div>
-        <input className="c-tab__input" id="tab-2" type="radio" name="name" />
-        <label className="c-tab__label" htmlFor="tab-2">Supplemental Material</label>
-        <div className="c-tab__content">
-          Content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nemo fuga accusantium reiciendis qui aliquid placeat dolorum, obcaecati fugit necessitatibus fugiat quod at quia iste totam earum, animi iure eaque!
-        </div>
-        <input className="c-tab__input" id="tab-3" type="radio" name="name" />
-        <label className="c-tab__label" htmlFor="tab-3">Metrics</label>
-        <div className="c-tab__content">
-          Content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur itaque non expedita, tenetur velit sit impedit illum! Placeat rem odit itaque nesciunt, nostrum in ab quae vero enim fuga.
-        </div>
-        <input className="c-tab__input" id="tab-4" type="radio" name="name" />
-        <label className="c-tab__label" htmlFor="tab-4">Author & Article Info</label>
-        <div className="c-tab__content">
-          Content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor enim ipsa beatae illo asperiores temporibus molestiae a? Cum soluta excepturi optio animi, adipisci quae quod eligendi eius aperiam odit.
-        </div>
-        <input className="c-tab__input" id="tab-5" type="radio" name="name" />
-        <label className="c-tab__label" htmlFor="tab-5">Comments (2)</label>
-        <div className="c-tab__content">
-          Content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam, ipsa exercitationem maxime ex libero, odit vitae vero ea, esse, assumenda! Voluptates eaque, sit, natus recusandae id est. Ad, qui.
+        <div className="c-tab__bar">
+          <details>
+            <summary>Main Content</summary>
+            <div className="c-tab__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptas accusamus provident suscipit at voluptatum quod eum, facere iure ratione quaerat ex laudantium perspiciatis saepe porro et fugit quisquam doloremque!</div>
+          </details>
+          <details>
+            <summary>Supplemental Material</summary>
+            <div className="c-tab__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere beatae quidem, eius accusantium officia in incidunt, hic totam eveniet vero, quam veniam nulla iure nesciunt non modi quaerat repellendus delectus.</div>
+          </details>
+          <details>
+            <summary>Metrics</summary>
+            <div className="c-tab__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia architecto qui numquam, id, maxime molestiae autem officia deleniti magnam adipisci, suscipit a laborum quaerat cumque, vel minima! Sunt autem, illo.</div>
+          </details>
+          <details>
+            <summary>Author & Article Info</summary>
+            <div className="c-tab__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatibus, nihil maiores voluptates nulla reiciendis, nam vitae. Sit, adipisci voluptatibus totam nemo quod, repellat deserunt. Hic officia a incidunt eaque.</div>
+          </details>
+          <details>
+            <summary>Comments (2)</summary>
+            <div className="c-tab__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quam, explicabo enim deserunt iure, in nesciunt libero facere architecto maxime pariatur, consequuntur at cumque quos praesentium, mollitia nostrum recusandae eaque.</div>
+          </details>
         </div>
       </div>
     )
