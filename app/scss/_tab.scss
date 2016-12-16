@@ -4,63 +4,36 @@ $tab-height: $element-height;
 $tab-spacing: 2px;
 
 .c-tab {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  // empty
 }
 
-details {
-  flex: 1 1 100%; // 1 tab per row
-
-  @include bp(screen1) {
-    flex: 1 1 50%; // 2 tabs per row
-  }
-
-  @include bp(screen2) {
-    flex: 1 1 33%; // 3 tabs per row
-  }
-
-  @include bp(screen3) {
-    flex: 0 1 auto; // all tabs on 1 row
-  }
-
-}
-
-summary {
+%c-tab__button {
   height: $tab-height;
   margin-right: $tab-spacing;
   margin-bottom: $tab-spacing;
   padding: 0 $spacing-sm;
+  border: none;
   background-color: $color-dark-gray;
   color: $color-white;
   line-height: $tab-height;
   user-select: none;
+}
 
-  @include bp(screen3) {
-    margin-bottom: 0;
+.c-tab__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  button {
+    @extend %c-tab__button;
+
+    @include bp(screen3) {
+      margin-bottom: 0;
+    }
+
   }
 
 }
 
-.c-tab__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: ($tab-height + $tab-spacing) * 5;
-  padding: $spacing-sm;
-  background-color: $color-white;
-
-  @include bp(screen1) {
-    margin-top: ($tab-height + $tab-spacing) * 3;
-  }
-
-  @include bp(screen2) {
-    margin-top: ($tab-height + $tab-spacing) * 2;
-  }
-
-  @include bp(screen3) {
-    top: auto;
-    margin-top: auto;
-  }
-
+.c-tab__details {
+  @extend %c-tab__button;
 }
