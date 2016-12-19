@@ -35,5 +35,27 @@ $tab-spacing: 2px;
 }
 
 .c-tab__details {
-  @extend %c-tab__button;
+  position: relative;
+
+  summary {
+    @extend %c-tab__button;
+    position: absolute;
+    width: 15px;
+    text-align: center;
+
+    @include bp(screen1) {
+      display: none;
+    }
+
+  }
+
+}
+
+.c-tab__details-buttons {
+  margin-left: 37px;
+
+  @include bp(screen1) {
+    margin-left: 0;
+  }
+
 }
