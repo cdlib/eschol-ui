@@ -46,7 +46,7 @@ class Home extends React.Component {
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
           <li><a href="#subheader1">Subheader 1 - Campus</a></li>
           <li><a href="#subheader2">Subheader 2 - Journal and Unit</a></li>
-          <li><a href="#tab">Tabs</a></li>
+          <li><a href="#tabs">Tabs</a></li>
         </ul>
       </div>
     )

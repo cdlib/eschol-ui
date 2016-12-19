@@ -1,13 +1,13 @@
-// ##### Tab Component ##### //
+// ##### Tabs Component ##### //
 
 $tab-height: $element-height;
 $tab-spacing: 2px;
 
-.c-tab {
+.c-tabs {
   // empty
 }
 
-%c-tab__button {
+%c-tabs__button {
   height: $tab-height;
   margin-right: $tab-spacing;
   margin-bottom: $tab-spacing;
@@ -19,12 +19,12 @@ $tab-spacing: 2px;
   user-select: none;
 }
 
-.c-tab__list {
+.c-tabs__list {
   display: flex;
   flex-wrap: wrap;
 
   button {
-    @extend %c-tab__button;
+    @extend %c-tabs__button;
 
     @include bp(screen3) {
       margin-bottom: 0;
@@ -34,11 +34,11 @@ $tab-spacing: 2px;
 
 }
 
-.c-tab__details {
+.c-tabs__details {
   position: relative;
 
   summary {
-    @extend %c-tab__button;
+    @extend %c-tabs__button;
     position: absolute;
     width: 15px;
     text-align: center;
@@ -51,7 +51,7 @@ $tab-spacing: 2px;
 
 }
 
-.c-tab__details-buttons {
+.c-tabs__details-buttons {
   margin-left: 37px;
 
   @include bp(screen1) {
@@ -60,11 +60,11 @@ $tab-spacing: 2px;
 
 }
 
-.c-tab__panel {
+.c-tabs__panel {
   display: none;
 }
 
-.c-tab__panel--active {
+.c-tabs__panel--active {
   padding: $spacing-sm;
   background-color: $color-white;
 }

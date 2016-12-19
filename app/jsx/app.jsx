@@ -42,7 +42,7 @@ import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import SortPage from './pages/SortPage.jsx'
 import Subheader1Page from './pages/Subheader1Page.jsx'
 import Subheader2Page from './pages/Subheader2Page.jsx'
-import TabPage from './pages/TabPage.jsx'
+import TabsPage from './pages/TabsPage.jsx'
 import TextlinkPage from './pages/TextlinkPage.jsx'
 import Test from './pages/Test.jsx'
 
@@ -100,7 +100,7 @@ ReactDOM.render((
       <Route path="/test" component={Test} />
       <Route path="/subheader1" component={Subheader1Page} />
       <Route path="/subheader2" component={Subheader2Page} />
-      <Route path="/tab" component={TabPage} />
+      <Route path="/tabs" component={TabsPage} />
       <Route path="/textlink" component={TextlinkPage} />
     </Route>
   </Router>
