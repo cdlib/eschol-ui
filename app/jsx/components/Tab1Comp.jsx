@@ -6,7 +6,7 @@ class Tab1Comp extends React.Component {
   render() {
     return (
       <div className="c-tab1">
-        Tab 1 component to go here
+        Tab 1 content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nobis maxime officiis aliquid delectus libero neque ullam voluptatibus distinctio quod, illo ab, repudiandae voluptate incidunt dolor consequatur debitis fugiat nostrum.
       </div>
     )
   }
