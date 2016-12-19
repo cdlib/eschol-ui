@@ -59,3 +59,12 @@ $tab-spacing: 2px;
   }
 
 }
+
+.c-tab__panel {
+  display: none;
+}
+
+.c-tab__panel--active {
+  padding: $spacing-sm;
+  background-color: $color-white;
+}

@@ -29,7 +29,7 @@ class TabComp extends React.Component {
             </div>
           </details>
         </div>
-        <div className="c-tab__panel" aria-labelledby="c-tab__main">
+        <div className="c-tab__panel--active" aria-labelledby="c-tab__main">
           <h2>Main Content</h2>
           Main content here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptas accusamus provident suscipit at voluptatum quod eum, facere iure ratione quaerat ex laudantium perspiciatis saepe porro et fugit quisquam doloremque!
         </div>
