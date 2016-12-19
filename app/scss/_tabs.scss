@@ -61,10 +61,6 @@ $tab-spacing: 2px;
 }
 
 .c-tabs__panel {
-  display: none;
-}
-
-.c-tabs__panel--active {
   padding: $spacing-sm;
   background-color: $color-white;
 }
