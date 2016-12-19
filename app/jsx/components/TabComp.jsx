@@ -1,15 +1,26 @@
 // ##### Breadcrumb Component ##### //
 
 import React from 'react'
+import Breakpoints from '../../js/breakpoints.json'
 
 class TabComp extends React.Component {
+  componentWillMount() {
+    if (matchMedia) {
+      this.mq = matchMedia("(min-width:"+Breakpoints.screen1+")")
+      this.mq.addListener(this.widthChange)
+      this.widthChange()
+    }
+  }
+  widthChange = ()=> {
+    this.setState({isOpen: this.mq.matches})
+  }
   render() {
     return (
       <div className="c-tab">
         <div className="c-tab__list">
           <button id="c-tab__main" aria-selected="true">Main Content</button>
           <button id="c-tab__supp" aria-selected="false">Supplemental material</button>
-          <details open className="c-tab__details">
+          <details open={this.state.isOpen ? "open" : ""} className="c-tab__details">
             <summary>...</summary>
             <div className="c-tab__details-buttons">
               <button id="c-tab__metrics" aria-selected="false">Metrics</button>
