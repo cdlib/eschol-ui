@@ -42,6 +42,11 @@ import SidebarNavPage from './pages/SidebarNavPage.jsx'
 import SortPage from './pages/SortPage.jsx'
 import Subheader1Page from './pages/Subheader1Page.jsx'
 import Subheader2Page from './pages/Subheader2Page.jsx'
+import Tab1Page from './pages/Tab1Page.jsx'
+import Tab2Page from './pages/Tab2Page.jsx'
+import Tab3Page from './pages/Tab3Page.jsx'
+import Tab4Page from './pages/Tab4Page.jsx'
+import Tab5Page from './pages/Tab5Page.jsx'
 import TabsPage from './pages/TabsPage.jsx'
 import TextlinkPage from './pages/TextlinkPage.jsx'
 import Test from './pages/Test.jsx'
@@ -100,6 +105,11 @@ ReactDOM.render((
       <Route path="/test" component={Test} />
       <Route path="/subheader1" component={Subheader1Page} />
       <Route path="/subheader2" component={Subheader2Page} />
+      <Route path="/tab1" component={Tab1Page} />
+      <Route path="/tab2" component={Tab2Page} />
+      <Route path="/tab3" component={Tab3Page} />
+      <Route path="/tab4" component={Tab4Page} />
+      <Route path="/tab5" component={Tab5Page} />
       <Route path="/tabs" component={TabsPage} />
       <Route path="/textlink" component={TextlinkPage} />
     </Route>
