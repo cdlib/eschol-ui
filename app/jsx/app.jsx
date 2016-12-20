@@ -11,45 +11,45 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 // ***** Components ***** //
 
 import AboutLayout from './layouts/AboutLayout.jsx'
-import BreadcrumbPage from './pages/BreadcrumbPage.jsx'
-import ButtonPage from './pages/ButtonPage.jsx'
-import CampusSelectorPage from './pages/CampusSelectorPage.jsx'
-import CarouselPage from './pages/CarouselPage.jsx'
-import ColumnBoxPage from './pages/ColumnBoxPage.jsx'
-import ColumnsPage from './pages/ColumnsPage.jsx'
-import CheckboxPage from './pages/CheckboxPage.jsx'
-import ExportPage from './pages/ExportPage.jsx'
-import FacetBoxPage from './pages/FacetBoxPage.jsx'
-import FilterPage from './pages/FilterPage.jsx'
-import FrontmatterPage from './pages/FrontmatterPage.jsx'
-import Home from './pages/Home.jsx'
-import FooterPage from './pages/FooterPage.jsx'
-import Header1Page from './pages/Header1Page.jsx'
-import Header2Page from './pages/Header2Page.jsx'
-import InfoPagesPage from './pages/InfoPagesPage.jsx'
-import InputPage from './pages/InputPage.jsx'
-import JournalInfoPage from './pages/JournalInfoPage.jsx'
+import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
+import ButtonDisp from './display/ButtonDisp.jsx'
+import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
+import CarouselDisp from './display/CarouselDisp.jsx'
+import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
+import ColumnsDisp from './display/ColumnsDisp.jsx'
+import CheckboxDisp from './display/CheckboxDisp.jsx'
+import ExportDisp from './display/ExportDisp.jsx'
+import FacetBoxDisp from './display/FacetBoxDisp.jsx'
+import FilterDisp from './display/FilterDisp.jsx'
+import FrontmatterDisp from './display/FrontmatterDisp.jsx'
+import Home from './display/Home.jsx'
+import FooterDisp from './display/FooterDisp.jsx'
+import Header1Disp from './display/Header1Disp.jsx'
+import Header2Disp from './display/Header2Disp.jsx'
+import InfoPagesDisp from './display/InfoPagesDisp.jsx'
+import InputDisp from './display/InputDisp.jsx'
+import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalLayout from './layouts/JournalLayout.jsx'
-import Nav1Page from './pages/Nav1Page.jsx'
-import Nav2Page from './pages/Nav2Page.jsx'
-import Nav3Page from './pages/Nav3Page.jsx'
-import PaginationPage from './pages/PaginationPage.jsx'
-import ScholWorksPage from './pages/ScholWorksPage.jsx'
+import Nav1Disp from './display/Nav1Disp.jsx'
+import Nav2Disp from './display/Nav2Disp.jsx'
+import Nav3Disp from './display/Nav3Disp.jsx'
+import PaginationDisp from './display/PaginationDisp.jsx'
+import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
-import Search1Page from './pages/Search1Page.jsx'
-import Search2Page from './pages/Search2Page.jsx'
-import SidebarNavPage from './pages/SidebarNavPage.jsx'
-import SortPage from './pages/SortPage.jsx'
-import Subheader1Page from './pages/Subheader1Page.jsx'
-import Subheader2Page from './pages/Subheader2Page.jsx'
-import Tab1Page from './pages/Tab1Page.jsx'
-import Tab2Page from './pages/Tab2Page.jsx'
-import Tab3Page from './pages/Tab3Page.jsx'
-import Tab4Page from './pages/Tab4Page.jsx'
-import Tab5Page from './pages/Tab5Page.jsx'
-import TabsPage from './pages/TabsPage.jsx'
-import TextlinkPage from './pages/TextlinkPage.jsx'
-import Test from './pages/Test.jsx'
+import Search1Disp from './display/Search1Disp.jsx'
+import Search2Disp from './display/Search2Disp.jsx'
+import SidebarNavDisp from './display/SidebarNavDisp.jsx'
+import SortDisp from './display/SortDisp.jsx'
+import Subheader1Disp from './display/Subheader1Disp.jsx'
+import Subheader2Disp from './display/Subheader2Disp.jsx'
+import Tab1Disp from './display/Tab1Disp.jsx'
+import Tab2Disp from './display/Tab2Disp.jsx'
+import Tab3Disp from './display/Tab3Disp.jsx'
+import Tab4Disp from './display/Tab4Disp.jsx'
+import Tab5Disp from './display/Tab5Disp.jsx'
+import TabsDisp from './display/TabsDisp.jsx'
+import TextlinkDisp from './display/TextlinkDisp.jsx'
+import Test from './display/Test.jsx'
 
 // ***** UI Library Home Page ***** //
 
@@ -74,44 +74,44 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/about" component={AboutLayout} />
-      <Route path="/breadcrumb" component={BreadcrumbPage} />
-      <Route path="/campusselector" component={CampusSelectorPage} />
-      <Route path="/carousel" component={CarouselPage} />
-      <Route path="/button" component={ButtonPage} />
-      <Route path="/checkbox" component={CheckboxPage} />
-      <Route path="/columnbox" component={ColumnBoxPage} />
-      <Route path="/columns" component={ColumnsPage} />
-      <Route path="/export" component={ExportPage} />
-      <Route path="/input" component={InputPage} />
-      <Route path="/facetbox" component={FacetBoxPage} />
-      <Route path="/frontmatter" component={FrontmatterPage} />
-      <Route path="/filter" component={FilterPage} />
-      <Route path="/footer" component={FooterPage} />
-      <Route path="/header1" component={Header1Page} />
-      <Route path="/header2" component={Header2Page} />
-      <Route path="/infopages" component={InfoPagesPage} />
-      <Route path="/journalinfo" component={JournalInfoPage} />
+      <Route path="/breadcrumb" component={BreadcrumbDisp} />
+      <Route path="/campusselector" component={CampusSelectorDisp} />
+      <Route path="/carousel" component={CarouselDisp} />
+      <Route path="/button" component={ButtonDisp} />
+      <Route path="/checkbox" component={CheckboxDisp} />
+      <Route path="/columnbox" component={ColumnBoxDisp} />
+      <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/export" component={ExportDisp} />
+      <Route path="/input" component={InputDisp} />
+      <Route path="/facetbox" component={FacetBoxDisp} />
+      <Route path="/frontmatter" component={FrontmatterDisp} />
+      <Route path="/filter" component={FilterDisp} />
+      <Route path="/footer" component={FooterDisp} />
+      <Route path="/header1" component={Header1Disp} />
+      <Route path="/header2" component={Header2Disp} />
+      <Route path="/infodisplay" component={InfoPagesDisp} />
+      <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journal" component={JournalLayout} />
-      <Route path="/nav1" component={Nav1Page} />
-      <Route path="/nav2" component={Nav2Page} />
-      <Route path="/nav3" component={Nav3Page} />
-      <Route path="/pagination" component={PaginationPage} />
-      <Route path="/scholworks" component={ScholWorksPage} />
-      <Route path="/search1" component={Search1Page} />
-      <Route path="/search2" component={Search2Page} />
+      <Route path="/nav1" component={Nav1Disp} />
+      <Route path="/nav2" component={Nav2Disp} />
+      <Route path="/nav3" component={Nav3Disp} />
+      <Route path="/pagination" component={PaginationDisp} />
+      <Route path="/scholworks" component={ScholWorksDisp} />
+      <Route path="/search1" component={Search1Disp} />
+      <Route path="/search2" component={Search2Disp} />
       <Route path="/searchlayout" component={SearchLayout} />
-      <Route path="/sidebarnav" component={SidebarNavPage} />
-      <Route path="/sort" component={SortPage} />
+      <Route path="/sidebarnav" component={SidebarNavDisp} />
+      <Route path="/sort" component={SortDisp} />
       <Route path="/test" component={Test} />
-      <Route path="/subheader1" component={Subheader1Page} />
-      <Route path="/subheader2" component={Subheader2Page} />
-      <Route path="/tab1" component={Tab1Page} />
-      <Route path="/tab2" component={Tab2Page} />
-      <Route path="/tab3" component={Tab3Page} />
-      <Route path="/tab4" component={Tab4Page} />
-      <Route path="/tab5" component={Tab5Page} />
-      <Route path="/tabs" component={TabsPage} />
-      <Route path="/textlink" component={TextlinkPage} />
+      <Route path="/subheader1" component={Subheader1Disp} />
+      <Route path="/subheader2" component={Subheader2Disp} />
+      <Route path="/tab1" component={Tab1Disp} />
+      <Route path="/tab2" component={Tab2Disp} />
+      <Route path="/tab3" component={Tab3Disp} />
+      <Route path="/tab4" component={Tab4Disp} />
+      <Route path="/tab5" component={Tab5Disp} />
+      <Route path="/tabs" component={TabsDisp} />
+      <Route path="/textlink" component={TextlinkDisp} />
     </Route>
   </Router>
 ), document.getElementById('main'))
