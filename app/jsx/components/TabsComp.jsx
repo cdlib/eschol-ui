@@ -27,14 +27,14 @@ class TabsComp extends React.Component {
     return (
       <div className="c-tabs">
         <div className="c-tabs__list">
-          <button id="c-tabs__main" aria-selected="true" onClick = {()=> this.setState({currentTab: 1})}>Main Content</button>
-          <button id="c-tabs__supp" aria-selected="false" onClick = {()=> this.setState({currentTab: 2})}>Supplemental material</button>
+          <button onClick = {()=> this.setState({currentTab: 1})}>Main Content</button>
+          <button onClick = {()=> this.setState({currentTab: 2})}>Supplemental material</button>
           <details open={this.state.isOpen ? "open" : ""} className="c-tabs__details">
             <summary>...</summary>
             <div className="c-tabs__details-buttons">
-              <button id="c-tabs__metrics" aria-selected="false" onClick = {()=> this.setState({currentTab: 3})}>Metrics</button>
-              <button id="c-tabs__author" aria-selected="false" onClick = {()=> this.setState({currentTab: 4})}>Author & Article Info</button>
-              <button id="c-tabs__comments" aria-selected="false" onClick = {()=> this.setState({currentTab: 5})}>Comments (2)</button>
+              <button onClick = {()=> this.setState({currentTab: 3})}>Metrics</button>
+              <button onClick = {()=> this.setState({currentTab: 4})}>Author & Article Info</button>
+              <button onClick = {()=> this.setState({currentTab: 5})}>Comments (2)</button>
             </div>
           </details>
         </div>
