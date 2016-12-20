@@ -3,6 +3,7 @@
 
 // ***** Libraries ***** //
 
+import 'babel-polyfill'
 import 'details-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
