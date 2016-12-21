@@ -51,6 +51,7 @@ import Tab5Disp from './display/Tab5Disp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
+import TreeListDisp from './display/TreeListDisp.jsx'
 
 // ***** UI Library Home Page ***** //
 
@@ -113,6 +114,7 @@ ReactDOM.render((
       <Route path="/tab5" component={Tab5Disp} />
       <Route path="/tabs" component={TabsDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
+      <Route path="/treelist" component={TreeListDisp} />
     </Route>
   </Router>
 ), document.getElementById('main'))

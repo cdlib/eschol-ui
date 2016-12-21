@@ -18,6 +18,7 @@ class Home extends React.Component {
           <li><a href="#columnbox">Column Boxes</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#textlink">Text Links</a></li>
+          <li><a href="#treelist">Tree List</a></li>
         </ul>
         <h2>Components</h2>
         <ul>
