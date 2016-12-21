@@ -1,10 +1,10 @@
-// ##### Tree List Object ##### //
+// ##### Tree Object ##### //
 
-.o-treelist {
+.o-tree {
   // not used
 }
 
-.o-treelist__list {
+.o-tree__list {
   @extend %no-bullet-ul;
   margin-top: 5px;
 
