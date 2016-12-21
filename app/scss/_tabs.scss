@@ -24,7 +24,7 @@ $tab-height: $element-height;
 
 }
 
-.c-tabs__list {
+.c-tabs__main-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -34,7 +34,7 @@ $tab-height: $element-height;
 
 }
 
-.c-tabs__details {
+.c-tabs__sub-list {
   position: relative;
 
   summary {

@@ -26,10 +26,10 @@ class TabsComp extends React.Component {
   render() {
     return (
       <div className="c-tabs">
-        <div className="c-tabs__list">
+        <div className="c-tabs__main-list">
           <button onClick = {()=> this.setState({currentTab: 1})}>Main Content</button>
           <button onClick = {()=> this.setState({currentTab: 2})}>Supplemental material</button>
-          <details open={this.state.isOpen ? "open" : ""} className="c-tabs__details">
+          <details open={this.state.isOpen ? "open" : ""} className="c-tabs__sub-list">
             <summary>...</summary>
             <div className="c-tabs__details-buttons">
               <button onClick = {()=> this.setState({currentTab: 3})}>Metrics</button>
