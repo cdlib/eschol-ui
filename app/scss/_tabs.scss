@@ -6,7 +6,7 @@ $tab-height: $element-height;
   // empty
 }
 
-%c-tabs__button {
+%c-tabs__buttons {
   height: $tab-height;
   margin-right: $spacing-base;
   margin-bottom: $spacing-base;
@@ -24,21 +24,25 @@ $tab-height: $element-height;
 
 }
 
+.c-tabs__button {
+  @extend %c-tabs__buttons;
+}
+
+.c-tabs__button--active {
+  @extend %c-tabs__buttons;
+  background-color: $color-white;
+}
+
 .c-tabs__main-list {
   display: flex;
   flex-wrap: wrap;
-
-  button {
-    @extend %c-tabs__button;
-  }
-
 }
 
 .c-tabs__sub-list {
   position: relative;
 
   summary {
-    @extend %c-tabs__button;
+    @extend %c-tabs__buttons;
     position: absolute;
     width: 15px;
     text-align: center;
