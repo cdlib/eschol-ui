@@ -1,5 +1,26 @@
 // ##### Tree List Object ##### //
 
 .o-treelist {
-  // empty
+  // not used
+}
+
+.o-treelist__list {
+  @extend %no-bullet-ul;
+  margin-top: 5px;
+
+  li {
+    margin-left: $spacing-sm;
+    padding: 6px 20px;
+    background-image: inline('../images/icon_tree-node.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+
+
+    &:last-child {
+      background-image: inline('../images/icon_tree-end.svg');
+    }
+
+  }
+
 }
