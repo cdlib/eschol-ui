@@ -1,7 +1,6 @@
 // ##### Tabs Component ##### //
 
 $tab-height: $element-height;
-$tab-spacing: 2px;
 
 .c-tabs {
   // empty
@@ -9,14 +8,20 @@ $tab-spacing: 2px;
 
 %c-tabs__button {
   height: $tab-height;
-  margin-right: $tab-spacing;
-  margin-bottom: $tab-spacing;
+  margin-right: $spacing-base;
+  margin-bottom: $spacing-base;
   padding: 0 $spacing-sm;
   border: none;
-  background-color: $color-dark-gray;
-  color: $color-white;
+  background-color: $color-light-gray;
+  font-size: 1.1em;
   line-height: $tab-height;
   user-select: none;
+
+  @include bp(screen3) {
+    margin-right: $spacing-sm;
+    padding: 0 $spacing-md;
+  }
+
 }
 
 .c-tabs__list {
@@ -25,11 +30,6 @@ $tab-spacing: 2px;
 
   button {
     @extend %c-tabs__button;
-
-    @include bp(screen3) {
-      margin-bottom: 0;
-    }
-
   }
 
 }
@@ -43,7 +43,7 @@ $tab-spacing: 2px;
     width: 15px;
     text-align: center;
 
-    @include bp(screen1) {
+    @include bp(screen3) {
       display: none;
     }
 
@@ -52,15 +52,21 @@ $tab-spacing: 2px;
 }
 
 .c-tabs__details-buttons {
-  margin-left: 37px;
+  margin-left: 30px + $spacing-sm;
 
-  @include bp(screen1) {
+  @include bp(screen3) {
     margin-left: 0;
   }
 
 }
 
 .c-tabs__panel {
+  margin-top: (-$spacing-base);
   padding: $spacing-sm;
   background-color: $color-white;
+
+  @include bp(screen3) {
+    padding: $spacing-md;
+  }
+
 }

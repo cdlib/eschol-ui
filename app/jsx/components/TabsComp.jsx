@@ -15,7 +15,7 @@ class TabsComp extends React.Component {
   }
   componentWillMount() {
     if (matchMedia) {
-      this.mq = matchMedia("(min-width:"+Breakpoints.screen1+")")
+      this.mq = matchMedia("(min-width:"+Breakpoints.screen3+")")
       this.mq.addListener(this.widthChange)
       this.widthChange()
     }
