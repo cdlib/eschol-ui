@@ -134,7 +134,10 @@ gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      grid: false // don't prefix anything from grid spec since not all properties correlate with old IE grid spec
+    }))
     .pipe(postcss([assets({
       loadPaths: ['fonts/', 'images/']
     })]))
