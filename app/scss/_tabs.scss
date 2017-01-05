@@ -16,12 +16,6 @@ $tab-height: $element-height;
   font-size: 1.1em;
   line-height: $tab-height;
   user-select: none;
-
-  @include bp(screen3) {
-    margin-right: $spacing-sm;
-    padding: 0 $spacing-md;
-  }
-
 }
 
 .c-tabs__button {
