@@ -28,7 +28,6 @@ class JournalLayout extends React.Component {
               <header>
                 <h2 className="o-columnbox2__heading">Jump To</h2>
                 <JumpComp />
-                [additional links to go here]
               </header>
             </section>
             <section className="o-columnbox2">
