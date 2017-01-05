@@ -80,7 +80,7 @@ $bgreen: 1px solid #0c0;
   display: grid;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 1fr auto auto;
-  min-height: 90vh;
+  min-height: 90vh; // should be using 100% instead but not working
 
   border: 2px solid $color-black;
 
