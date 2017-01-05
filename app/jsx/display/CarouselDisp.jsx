@@ -5,12 +5,12 @@ import CarouselComp from '../components/CarouselComp.jsx'
 
 class CarouselDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<CarouselComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <CarouselComp />
+      </div>
+    )
+  }
 }
 
 module.exports = CarouselDisp;

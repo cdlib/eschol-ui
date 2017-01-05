@@ -5,12 +5,12 @@ import JournalInfoComp from '../components/JournalInfoComp.jsx'
 
 class JournalInfoDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<JournalInfoComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <JournalInfoComp />
+      </div>
+    )
+  }
 }
 
 module.exports = JournalInfoDisp;

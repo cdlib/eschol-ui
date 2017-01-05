@@ -5,12 +5,12 @@ import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 
 class BreadcrumbDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<BreadcrumbComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <BreadcrumbComp />
+      </div>
+    )
+  }
 }
 
 module.exports = BreadcrumbDisp;

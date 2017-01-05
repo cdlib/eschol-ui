@@ -3,14 +3,14 @@
 // Would prefer to use CSS Grid Layout for screen2 but spec not yet ratified, so using absolute positioning on .c-footer__nav
 
 .c-footer {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	margin: 0 (-$spacing-sm) $spacing-md;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 (-$spacing-sm) $spacing-md;
   padding: $spacing-md;
-	background-color: $color-light-black;
+  background-color: $color-light-black;
 
-	@include bp(screen2) {
+  @include bp(screen2) {
     position: relative;
     align-items: flex-start;
   }
@@ -46,42 +46,42 @@
 }
 
 .c-footer__logo {
-	margin: 0 0 $spacing-md;
-	color: $color-white;
+  margin: 0 0 $spacing-md;
+  color: $color-white;
 
-	img {
-		width: 200px;
-	}
+  img {
+    width: 200px;
+  }
 
 }
 
 .c-footer__icons {
-	margin-bottom: $spacing-md;
+  margin-bottom: $spacing-md;
 
-	a {
-		@extend %circular-border;
+  a {
+    @extend %circular-border;
     border-color: $color-white;
 
-		&:not(:first-child) {
-			margin-left: $spacing-lg;
-		}
+    &:not(:first-child) {
+      margin-left: $spacing-lg;
+    }
 
-		img {
-			width: 30px;
-		}
+    img {
+      width: 30px;
+    }
 
-	}
+  }
 
 }
 
 .c-footer__copyright {
-	color: $color-light-gray;
-	font-size: 0.9em;
-	line-height: 1.3;
+  color: $color-light-gray;
+  font-size: 0.9em;
+  line-height: 1.3;
 
-	a {
-		color: $color-white;
-		text-decoration: none;
-	}
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
 
 }

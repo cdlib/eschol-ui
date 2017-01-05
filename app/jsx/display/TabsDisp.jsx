@@ -5,12 +5,12 @@ import TabsComp from '../components/TabsComp.jsx'
 
 class TabsDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<TabsComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <TabsComp />
+      </div>
+    )
+  }
 }
 
 module.exports = TabsDisp;

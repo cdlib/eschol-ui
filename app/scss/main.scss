@@ -63,10 +63,10 @@
 @import 'ui-library';
 
 body {
-	margin: 0 auto;
-	padding: 10px;
-	font-family: 'KievitWeb';
-	overflow-x: hidden;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'KievitWeb';
+  overflow-x: hidden;
 
   @include bp(screen2) {
     background: lighten($color-light-gray, 15%);
@@ -75,6 +75,6 @@ body {
 }
 
 p {
-	margin: 0 0 1em;
+  margin: 0 0 1em;
   line-height: 1.2em;
 }

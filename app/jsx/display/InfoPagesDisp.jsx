@@ -5,12 +5,12 @@ import InfoPagesComp from '../components/InfoPagesComp.jsx'
 
 class InfoPagesDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<InfoPagesComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <InfoPagesComp />
+      </div>
+    )
+  }
 }
 
 module.exports = InfoPagesDisp;

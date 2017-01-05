@@ -12,39 +12,39 @@ $bgreen: 1px solid #0c0;
 // ***** Subhead Layout Test***** //
 
 .test-subhead {
-	display: flex;
-	flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .test-subhead__campus {
 
-	@include bp(screen3) {
+  @include bp(screen3) {
     order: 1;
   }
 
 }
 
 .test-subhead__menu {
-	
-	@include bp(screen3) {
+  
+  @include bp(screen3) {
     order: 4;
-		flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 
 }
 
 .test-subhead__deposit {
-	
-	@include bp(screen3) {
+  
+  @include bp(screen3) {
     order: 3;
   }
 
 }
 
 .test-subhead__banner {
-	display: none;
+  display: none;
 
-	@include bp(screen3) {
+  @include bp(screen3) {
     display: block;
     order: 2;
     flex: 1 0 auto;
@@ -55,23 +55,23 @@ $bgreen: 1px solid #0c0;
 // Borders:
 
 .test-subhead {
-	border: 2px solid gray;
+  border: 2px solid gray;
 }
 
 .test-subhead__campus {
-	border: 2px solid red;
+  border: 2px solid red;
 }
 
 .test-subhead__menu {
-	border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 .test-subhead__deposit {
-	border: 2px solid green;
+  border: 2px solid green;
 }
 
 .test-subhead__banner {
-	border: 2px solid orange;
+  border: 2px solid orange;
 }
 
 // Grid

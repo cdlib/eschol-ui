@@ -5,12 +5,12 @@ import InputObj from '../objects/InputObj.jsx'
 
 class InputDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<InputObj />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <InputObj />
+      </div>
+    )
+  }
 }
 
 module.exports = InputDisp;

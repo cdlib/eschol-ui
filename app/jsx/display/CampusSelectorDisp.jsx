@@ -5,12 +5,12 @@ import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 
 class CampusSelectorDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<CampusSelectorComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <CampusSelectorComp />
+      </div>
+    )
+  }
 }
 
 module.exports = CampusSelectorDisp;

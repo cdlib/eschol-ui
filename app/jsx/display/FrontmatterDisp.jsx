@@ -5,12 +5,12 @@ import FrontmatterComp from '../components/FrontmatterComp.jsx'
 
 class FrontmatterDisp extends React.Component {
   render() {
-		return (
-			<div>
-	   		<FrontmatterComp />
-	    </div>
-  	)
-	}
+    return (
+      <div>
+         <FrontmatterComp />
+      </div>
+    )
+  }
 }
 
 module.exports = FrontmatterDisp;
