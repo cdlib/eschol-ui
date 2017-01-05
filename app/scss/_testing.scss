@@ -79,7 +79,10 @@ $bgreen: 1px solid #0c0;
 .c-grid {
   display: grid;
   grid-template-columns: 25% auto 25%;
-  grid-template-rows: 100px auto auto;
+  grid-template-rows: 1fr auto auto;
+  min-height: 90vh;
+
+  border: 2px solid $color-black;
 
   header {
     grid-column: 1 / span 3;
@@ -90,7 +93,7 @@ $bgreen: 1px solid #0c0;
     grid-row: 2 / 3;
     border: $bgreen;
   }
-  
+
   aside {
 
     &:first-of-type { // left column
@@ -109,6 +112,9 @@ $bgreen: 1px solid #0c0;
 
   footer {
     grid-column: 1 / span 3;
+    align-self: end;
+
+    border: 1px solid $color-orange;
   }
 
 }
