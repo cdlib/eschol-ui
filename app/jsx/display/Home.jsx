@@ -19,7 +19,6 @@ class Home extends React.Component {
           <li><a href="#columnbox">Column Boxes</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#textlink">Text Links</a></li>
-          <li><a href="#tree">Tree</a></li>
         </ul>
         <h2>Components</h2>
         <ul>
@@ -37,6 +36,7 @@ class Home extends React.Component {
           <li><a href="#header2">Header 2 - Other Than Home</a></li>
           <li><a href="#infoDisps">Informational Disps Search Result</a></li>
           <li><a href="#journalinfo">Journal Information</a></li>
+          <li><a href="#jump">Jump</a></li>
           <li><a href="#nav1">Navigation 1 - Home</a></li>
           <li><a href="#nav2">Navigation 2 - Campus</a></li>
           <li><a href="#nav3">Navigation 3 - Journal</a></li>

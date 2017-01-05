@@ -32,6 +32,7 @@ import InputDisp from './display/InputDisp.jsx'
 import ItemLayout from './layouts/ItemLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalLayout from './layouts/JournalLayout.jsx'
+import JumpDisp from './display/JumpDisp.jsx'
 import Nav1Disp from './display/Nav1Disp.jsx'
 import Nav2Disp from './display/Nav2Disp.jsx'
 import Nav3Disp from './display/Nav3Disp.jsx'
@@ -52,7 +53,6 @@ import Tab5Disp from './display/Tab5Disp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
-import TreeDisp from './display/TreeDisp.jsx'
 
 // ***** UI Library Home Page ***** //
 
@@ -96,6 +96,7 @@ ReactDOM.render((
       <Route path="/item" component={ItemLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journal" component={JournalLayout} />
+      <Route path="/jump" component={JumpDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
       <Route path="/nav3" component={Nav3Disp} />
@@ -116,7 +117,6 @@ ReactDOM.render((
       <Route path="/tab5" component={Tab5Disp} />
       <Route path="/tabs" component={TabsDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
-      <Route path="/tree" component={TreeDisp} />
     </Route>
   </Router>
 ), document.getElementById('main'))
