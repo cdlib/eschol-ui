@@ -19,6 +19,7 @@ import CarouselDisp from './display/CarouselDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
+import DownloadDisp from './display/DownloadDisp.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
@@ -84,6 +85,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
       <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/download" component={DownloadDisp} />
       <Route path="/export" component={ExportDisp} />
       <Route path="/input" component={InputDisp} />
       <Route path="/facetbox" component={FacetBoxDisp} />
