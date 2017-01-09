@@ -3,7 +3,7 @@
 .c-download {
 
   @include bp(screen3) {
-    width: 200px;
+    width: 250px;
   }
 
   summary {
@@ -37,17 +37,24 @@
 
 }
 
+%c-download__menu-item {
+  @extend %nav-item;
+  color: $color-white;
+  padding-left: 40px;
+  background: no-repeat left $spacing-sm center / 16px;
+  // background-image: inline('../images/icon_pdf-black.svg');
+}
+
 .c-download__menu {
   margin: $spacing-sm 0 0;
   z-index: 1;
 }
 
 .c-download__menu-heading {
-  @extend %nav-item;
+  @extend %c-download__menu-item;
   border-top: none;
   border-bottom: none;
   background-color: $color-dark-gray;
-  color: $color-white;
 
   &:first-child {
     border-top: 1px solid $color-dark-gray;
@@ -61,9 +68,8 @@
   li {
 
     a {
-      @extend %nav-item;
+      @extend %c-download__menu-item;
       background-color: $color-teal;
-      color: $color-white;
     }
 
     &:not(:first-of-type) a {
