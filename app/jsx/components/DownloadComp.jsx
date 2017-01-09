@@ -5,7 +5,7 @@ import React from 'react'
 class DownloadComp extends React.Component {
   render() {
     return (
-      <details className="c-download">
+      <details open className="c-download">
         <summary>
           Download PDF
         </summary>

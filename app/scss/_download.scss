@@ -1,21 +1,75 @@
 // ##### Download Component ##### //
 
 .c-download {
-  
+
+  @include bp(screen3) {
+    width: 200px;
+  }
+
   summary {
+    position: relative;
+    height: $element-height;
+    padding-left: $spacing-sm;
+    background-color: $color-teal;
+    color: $color-white;
+    line-height: $element-height;
     user-select: none;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: $spacing-sm;
+      bottom: 0;
+      padding: 7px;
+      background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
+      content: '';
+    }
+
+  }
+
+  &[open] {
+
+    summary::after {
+      transform: rotate(180deg);
+    }
+
   }
 
 }
 
 .c-download__menu {
-  // empty
+  margin: $spacing-sm 0 0;
+  z-index: 1;
 }
 
 .c-download__menu-heading {
-  // empty
+  @extend %nav-item;
+  border-top: none;
+  border-bottom: none;
+  background-color: $color-dark-gray;
+  color: $color-white;
+
+  &:first-child {
+    border-top: 1px solid $color-dark-gray;
+  }
+
 }
 
 .c-download__menu-list {
   @extend %no-bullet-ul;
+
+  li {
+
+    a {
+      @extend %nav-item;
+      background-color: $color-teal;
+      color: $color-white;
+    }
+
+    &:not(:first-of-type) a {
+      border-top: none;
+    }
+
+  }
+
 }
