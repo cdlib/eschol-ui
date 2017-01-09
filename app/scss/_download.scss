@@ -1,5 +1,21 @@
 // ##### Download Component ##### //
 
 .c-download {
+  
+  summary {
+    user-select: none;
+  }
+
+}
+
+.c-download__menu {
   // empty
+}
+
+.c-download__menu-heading {
+  // empty
+}
+
+.c-download__menu-list {
+  @extend %no-bullet-ul;
 }
