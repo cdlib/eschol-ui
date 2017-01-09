@@ -37,7 +37,7 @@
 
 }
 
-%c-download__menu-item {
+%c-download__item {
   @extend %nav-item;
   color: $color-white;
   padding-left: 40px;
@@ -50,8 +50,8 @@
   z-index: 1;
 }
 
-.c-download__menu-heading {
-  @extend %c-download__menu-item;
+.c-download__heading {
+  @extend %c-download__item;
   border-top: none;
   border-bottom: none;
   background-color: $color-dark-gray;
@@ -62,13 +62,13 @@
 
 }
 
-.c-download__menu-list {
+.c-download__list {
   @extend %no-bullet-ul;
 
   li {
 
     a {
-      @extend %c-download__menu-item;
+      @extend %c-download__item;
       background-color: $color-teal;
     }
 
