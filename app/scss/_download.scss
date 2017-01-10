@@ -67,7 +67,12 @@
 
 .c-download__menu {
   margin: $spacing-sm 0 0;
-  z-index: 1;
+
+  @include bp(screen3) {
+    position: absolute;
+    z-index: 1;
+  }
+
 }
 
 %c-download__heading {
