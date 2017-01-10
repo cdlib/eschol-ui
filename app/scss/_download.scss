@@ -2,9 +2,7 @@
 
 .c-download {
 
-  @include bp(screen3) {
-    width: 250px;
-  }
+  // scss-lint:disable DeclarationOrder
 
   summary {
     position: relative;
@@ -23,6 +21,23 @@
       padding: 7px;
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
+
+    }
+
+  }
+
+  @include bp(screen3) {
+
+    summary {
+      display: inline-block;
+      padding-right: 45px;
+
+      &::after {
+        right: 0;
+        padding-left: 25px;
+        border-left: 1px solid $color-white;
+      }
+
     }
 
   }
@@ -31,6 +46,12 @@
 
     summary::after {
       transform: rotate(180deg);
+
+      @include bp(screen3) {
+        border-right: 1px solid $color-white;
+        border-left: none;
+      }
+
     }
 
   }
