@@ -39,10 +39,9 @@
 
 %c-download__item {
   @extend %nav-item;
-  color: $color-white;
   padding-left: 40px;
   background: no-repeat left $spacing-sm center / 16px;
-  // background-image: inline('../images/icon_pdf-black.svg');
+  color: $color-white;
 }
 
 .c-download__menu {
@@ -50,7 +49,7 @@
   z-index: 1;
 }
 
-.c-download__heading {
+%c-download__heading {
   @extend %c-download__item;
   border-top: none;
   border-bottom: none;
@@ -61,6 +60,22 @@
   }
 
 }
+
+.c-download__heading1 {
+  @extend %c-download__heading;
+  background-image: inline('../images/icon_pdf-black.svg');
+}
+
+.c-download__heading2 {
+  @extend %c-download__heading;
+  background-image: inline('../images/icon_pdf-black.svg');
+}
+
+.c-download__heading3 {
+  @extend %c-download__heading;
+  background-image: inline('../images/icon_pdf-black.svg');
+}
+
 
 .c-download__list {
   @extend %no-bullet-ul;

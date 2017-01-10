@@ -10,7 +10,7 @@ class DownloadComp extends React.Component {
           Download PDF
         </summary>
         <div className="c-download__menu">
-          <div className="c-download__heading" id="c-download__list1">
+          <div className="c-download__heading1" id="c-download__list1">
             Main
           </div>
           <ul className="c-download__list" aria-labelledby="c-download__list1">
@@ -18,7 +18,7 @@ class DownloadComp extends React.Component {
             <li><a href="">ePub</a></li>
             <li><a href="">HTML</a></li>
           </ul>
-          <div className="c-download__heading" id="c-download__list2">
+          <div className="c-download__heading2" id="c-download__list2">
             Citation
           </div>
           <ul className="c-download__list" aria-labelledby="c-download__list2">
@@ -27,7 +27,7 @@ class DownloadComp extends React.Component {
             <li><a href="">EndNote</a></li>
             <li><a href="">RefWorks</a></li>
           </ul>
-          <div className="c-download__heading" id="c-download__list3">
+          <div className="c-download__heading3" id="c-download__list3">
             Supplemental Material
           </div>
           <ul className="c-download__list" aria-labelledby="c-download__list3">
