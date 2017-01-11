@@ -58,18 +58,12 @@
 
 }
 
-%c-download__item {
-  @extend %nav-item;
-  padding-left: 40px;
-  background: no-repeat left $spacing-sm center / 16px;
-  color: $color-white;
-}
-
 .c-download__menu {
   margin: $spacing-sm 0 0;
   background-color: rgba($color-black, 0.6);
   // use @supports here (this only currently supported in Safari):
-  backdrop-filter: blur(5px); 
+  // scss-lint:disable PropertySpelling
+  backdrop-filter: blur(5px);
 
   @include bp(screen3) {
     position: absolute;
