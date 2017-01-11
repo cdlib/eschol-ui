@@ -67,6 +67,9 @@
 
 .c-download__menu {
   margin: $spacing-sm 0 0;
+  background-color: rgba($color-black, 0.6);
+  // use @supports here (this only currently supported in Safari):
+  backdrop-filter: blur(5px); 
 
   @include bp(screen3) {
     position: absolute;
@@ -75,11 +78,17 @@
 
 }
 
+%c-download__item {
+  @extend %nav-item;
+  padding-left: 40px;
+  background: no-repeat left $spacing-sm center / 16px;
+  color: $color-white;
+}
+
 %c-download__heading {
   @extend %c-download__item;
   border-top: none;
   border-bottom: none;
-  background-color: $color-dark-gray;
 
   &:first-child {
     border-top: 1px solid $color-dark-gray;
@@ -110,7 +119,6 @@
 
     a {
       @extend %c-download__item;
-      background-color: $color-teal;
     }
 
     &:not(:first-of-type) a {
