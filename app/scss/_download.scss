@@ -1,11 +1,30 @@
 // ##### Download Component ##### //
 
 .c-download {
+  display: flex;
   position: relative;
+
+  @include bp(screen3) {
+    display: inline-flex;
+  }
+
+}
+
+.c-download__button {
+  padding-right: $spacing-sm;
+  padding-left: $spacing-sm;
+  border: none;
+  border-right: 1px solid $color-white;
+  background-color: $color-teal;
+  color: $color-white;
+}
+
+.c-download__formats {
+  flex: 1 0 auto;
+
   // scss-lint:disable DeclarationOrder
 
   summary {
-    position: relative;
     height: $element-height;
     padding-left: $spacing-sm;
     background-color: $color-teal;
@@ -29,8 +48,8 @@
   @include bp(screen3) {
 
     summary {
-      display: inline-block;
-      padding-right: 45px;
+      // display: inline-block;
+      padding-right: 25px;
 
       &::after {
         right: 0;
@@ -67,6 +86,7 @@
 
   @include bp(screen3) {
     right: auto;
+    min-width: 230px;
   }
 
 }
