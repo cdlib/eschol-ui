@@ -35,7 +35,6 @@
       &::after {
         right: 0;
         padding-left: 25px;
-        border-left: 1px solid $color-white;
       }
 
     }
@@ -46,12 +45,6 @@
 
     summary::after {
       transform: rotate(180deg);
-
-      @include bp(screen3) {
-        border-right: 1px solid $color-white;
-        border-left: none;
-      }
-
     }
 
   }
