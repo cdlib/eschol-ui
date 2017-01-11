@@ -1,7 +1,7 @@
 // ##### Download Component ##### //
 
 .c-download {
-
+  position: relative;
   // scss-lint:disable DeclarationOrder
 
   summary {
@@ -59,8 +59,12 @@
 }
 
 .c-download__menu {
+  position: absolute;
+  right: 0;
+  left: 0;
   margin: $spacing-sm 0 0;
   background-color: lighten($color-black, 35%);
+  z-index: 1;
 
   @supports (backdrop-filter: blur()) {
     background-color: rgba($color-black, 0.6);
@@ -69,8 +73,7 @@
   }
 
   @include bp(screen3) {
-    position: absolute;
-    z-index: 1;
+    right: auto;
   }
 
 }
