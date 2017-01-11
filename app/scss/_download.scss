@@ -96,21 +96,17 @@
 
 }
 
-.c-download__heading1 {
-  @extend %c-download__heading;
-  background-image: inline('../images/icon_files-o-white.svg');
-}
+@each $download-heading-number, $download-img-label in
+  (1, files-o-white),
+  (2, quote-right-white),
+  (3, play-circle-white) {
 
-.c-download__heading2 {
-  @extend %c-download__heading;
-  background-image: inline('../images/icon_quote-right-white.svg');
-}
+  .c-download__heading#{$download-heading-number} {
+    @extend %c-download__heading;
+    background-image: inline('../images/icon_#{$download-img-label}.svg');
+  }
 
-.c-download__heading3 {
-  @extend %c-download__heading;
-  background-image: inline('../images/icon_play-circle-white.svg');
 }
-
 
 .c-download__list {
   @extend %no-bullet-ul;
