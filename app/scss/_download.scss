@@ -91,6 +91,13 @@
   padding-left: 40px;
   background: no-repeat left $spacing-sm center / 16px;
   color: $color-white;
+
+  @include bp(screen3) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+  }
+
 }
 
 %c-download__heading {
@@ -100,6 +107,12 @@
 
   &:first-child {
     border-top: 1px solid $color-dark-gray;
+
+    @include bp(screen3) {
+      margin-top: $spacing-sm;
+      border: none;
+    }
+
   }
 
 }
@@ -123,10 +136,24 @@
 
     a {
       @extend %c-download__item;
+      font-size: 1em;
+
+      @include bp(screen3) {
+        text-decoration: underline;
+      }
+
     }
 
     &:not(:first-of-type) a {
       border-top: none;
+    }
+
+    &:last-child {
+
+      @include bp(screen3) {
+        margin-bottom: $spacing-sm;
+      }
+
     }
 
   }
