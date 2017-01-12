@@ -22,8 +22,6 @@
 .c-download__formats {
   flex: 1 0 auto;
 
-  // scss-lint:disable DeclarationOrder
-
   summary {
     height: $element-height;
     padding-left: $spacing-sm;
@@ -31,6 +29,10 @@
     color: $color-white;
     line-height: $element-height;
     user-select: none;
+
+    @include bp(screen3) {
+      padding-right: 25px;
+    }
 
     &::after {
       position: absolute;
@@ -41,16 +43,8 @@
       padding-left: 7px;
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
-    }
 
-  }
-
-  @include bp(screen3) {
-
-    summary {
-      padding-right: 25px;
-
-      &::after {
+      @include bp(screen3) {
         right: 0;
         width: 20px;
       }
