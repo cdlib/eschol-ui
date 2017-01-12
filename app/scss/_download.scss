@@ -37,10 +37,10 @@
       top: 0;
       right: $spacing-sm;
       bottom: 0;
-      padding: 7px;
+      padding-right: 7px;
+      padding-left: 7px;
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
-
     }
 
   }
@@ -48,12 +48,11 @@
   @include bp(screen3) {
 
     summary {
-      // display: inline-block;
       padding-right: 25px;
 
       &::after {
         right: 0;
-        padding-left: 25px;
+        width: 20px;
       }
 
     }
@@ -69,6 +68,8 @@
   }
 
 }
+
+// ***** Menu and Components ***** //
 
 .c-download__menu {
   position: absolute;
