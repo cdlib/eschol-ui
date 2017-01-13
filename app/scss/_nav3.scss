@@ -39,7 +39,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    margin: 0 0 0 10px;
+    margin-left: 10px;
     padding: 7px;
     background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
     content: '';
@@ -62,7 +62,6 @@
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
-  margin: $spacing-sm 0 0;
   transition: transform 0.5s;
   z-index: 1;
 
@@ -77,6 +76,7 @@
     @extend %c-nav3__item;
 
     @include bp(screen3) {
+      padding: 6px 0;
       border: none;
       background: none;
     }
@@ -125,16 +125,17 @@
   border-top: none;
   user-select: none;
 
+  @include bp(screen3) {
+    padding: 6px 25px 6px 0;
+    border: none;
+    background: none;
+  }
+
   &::after {
     margin-left: 10px;
     content: '\00bb'; // double-right arrow
-  }
 
-  @include bp(screen3) {
-    border: none;
-    background: none;
-
-    &::after {
+    @include bp(screen3) {
       position: absolute;
       top: 0;
       bottom: 0;
