@@ -10,7 +10,7 @@
 }
 
 .c-marquee__textblock {
-  flex: 0 0 28%;
+  flex: 0 0 $column-width;
 
   @include bp(screen2) {
     margin: 0 $spacing-md 0 0;
