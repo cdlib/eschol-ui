@@ -1,16 +1,27 @@
 // ##### Navigation - Journal Component ##### //
 
 import React from 'react'
+import Breakpoints from '../../js/breakpoints.json'
 
 class Nav3Comp extends React.Component {
   constructor(props){
     super(props)
     this.state = {submenuActive: false}
   }
+  componentWillMount() {
+    if (matchMedia) {
+      this.mq = matchMedia("(min-width:"+Breakpoints.screen3+")")
+      this.mq.addListener(this.widthChange)
+      this.widthChange()
+    }
+  }
+  widthChange = ()=> {
+    this.setState({isOpen: this.mq.matches})
+  }
   render() {
     return (
       <nav className="c-nav3">
-        <details className="c-nav3__main">
+        <details open={this.state.isOpen ? "open" : ""} className="c-nav3__main">
           <summary className="c-nav3__main-button" role="button">Menu
           </summary>
           <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>
