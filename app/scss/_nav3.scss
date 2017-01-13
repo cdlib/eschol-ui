@@ -2,6 +2,11 @@
 
 .c-nav3 {
   flex: 1 0 auto; // to subheader flexbox
+
+  @include bp(screen3) {
+    background-color: $color-white;
+  }
+
 }
 
 .c-nav3__main {
@@ -26,6 +31,10 @@
   line-height: $element-height;
   user-select: none;
 
+  @include bp(screen3) {
+    display: none;
+  }
+
   &::after {
     position: absolute;
     top: 0;
@@ -38,11 +47,13 @@
 
 }
 
-%c-nav3__item {
-  @extend %nav-item; // from _mixins.scss
+// ***** Navigation Items ***** //
 
-  @include bp(screen3) {
-    width: 200px;
+%c-nav3__item {
+  @extend %nav-item;
+
+  &:not(:first-of-type) {
+    border-top: none;
   }
 
 }
@@ -55,11 +66,19 @@
   transition: transform 0.5s;
   z-index: 1;
 
-  a {
+  @include bp(screen3) {
+    // scss-lint:disable ImportantRule
+    display: flex !important; // override details polyfill
+    position: static;
+    justify-content: space-around;
+  }
+
+  > a {
     @extend %c-nav3__item;
 
-    &:not(:first-of-type) {
-      border-top: none;
+    @include bp(screen3) {
+      border: none;
+      background: none;
     }
 
   }
@@ -82,13 +101,23 @@
 }
 
 .c-nav3__sub {
-  // not used
+
+  @include bp(screen3) {
+    position: relative;
+  }
+
 }
 
 .c-nav3__sub-button {
   @extend %c-nav3__item;
   position: relative;
   border-top: none;
+  user-select: none;
+
+  @include bp(screen3) {
+    border: none;
+    background: none;
+  }
 
   &::after {
     margin: 0 0 0 10px;
@@ -106,11 +135,14 @@
 
   @include bp(screen3) {
     top: 40px;
-    right: auto;
-    left: 222px;
+    width: 200px;
     max-height: 340px;
     transform: translateX(0);
     overflow: scroll;
+  }
+
+  a {
+    @extend %c-nav3__item;
   }
 
 }
