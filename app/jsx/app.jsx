@@ -42,6 +42,7 @@ import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
 import Search1Disp from './display/Search1Disp.jsx'
 import Search2Disp from './display/Search2Disp.jsx'
+import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
@@ -110,6 +111,7 @@ ReactDOM.render((
       <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/test" component={Test} />
+      <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader2" component={Subheader2Disp} />
       <Route path="/tab1" component={Tab1Disp} />
