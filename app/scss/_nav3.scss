@@ -66,8 +66,7 @@
   z-index: 1;
 
   @include bp(screen3) {
-    // scss-lint:disable ImportantRule
-    display: flex !important; // override details polyfill
+    display: flex;
     position: static;
     justify-content: space-around;
   }
