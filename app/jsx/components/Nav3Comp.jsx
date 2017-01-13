@@ -57,7 +57,7 @@ class Nav3Comp extends React.Component {
                 <a href="">Editorial Board</a>
               </div>
             </details>
-            <a href="">Policies</a>
+            <a href="" className="c-nav3__item--active">Policies</a>
             <a href="">Submission Guidelines</a>
             <a href="">Contact</a>
           </div>

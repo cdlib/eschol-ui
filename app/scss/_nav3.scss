@@ -80,6 +80,16 @@
       background: none;
     }
 
+    &.c-nav3__item--active {
+      color: $color-orange;
+
+      @include bp(screen3) {
+        border-bottom: 3px solid $color-orange;
+        font-weight: bold;
+      }
+
+    }
+
   }
 
 }
