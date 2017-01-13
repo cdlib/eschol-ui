@@ -155,11 +155,12 @@
   transform: translateX(103%); // moves sub-items to right side of main-items
 
   @include bp(screen3) {
-    top: 40px;
+    top: auto;
+    left: (-$spacing-sm);
     width: 200px;
     max-height: 340px;
     transform: translateX(0);
-    overflow: scroll;
+    overflow: auto;
   }
 
   a {
