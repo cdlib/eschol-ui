@@ -47,7 +47,7 @@
 
 }
 
-// ***** Navigation Items ***** //
+// ***** Main Navigation Items ***** //
 
 %c-nav3__item {
   @extend %nav-item;
@@ -100,10 +100,21 @@
 
 }
 
+// ***** Sub Navigation Items ***** //
+
 .c-nav3__sub {
 
   @include bp(screen3) {
     position: relative;
+
+    &[open] {
+
+      .c-nav3__sub-button::after {
+        transform: rotate(180deg);
+      }
+
+    }
+
   }
 
 }
@@ -114,14 +125,24 @@
   border-top: none;
   user-select: none;
 
+  &::after {
+    margin-left: 10px;
+    content: '\00bb'; // double-right arrow
+  }
+
   @include bp(screen3) {
     border: none;
     background: none;
-  }
 
-  &::after {
-    margin: 0 0 0 10px;
-    content: '\00bb'; // double-right arrow
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 7px;
+      background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
+      content: '';
+    }
+
   }
 
 }
