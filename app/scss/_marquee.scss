@@ -1,6 +1,6 @@
-// ##### Carousel Component ##### //
+// ##### Marquee Component ##### //
 
-.c-carousel {
+.c-marquee {
 
   @include bp(screen2) {
     display: flex;
@@ -9,7 +9,7 @@
 
 }
 
-.c-carousel__textblock {
+.c-marquee__textblock {
   flex: 0 0 28%;
 
   @include bp(screen2) {
@@ -18,7 +18,7 @@
 
 }
 
-.c-carousel__object {
+.c-marquee__carousel {
   flex: 1;
   height: 150px;
 

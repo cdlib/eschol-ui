@@ -23,7 +23,6 @@ class Home extends React.Component {
         <h2>Components</h2>
         <ul>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
-          <li><a href="#carousel">Carousel</a></li>
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
@@ -41,6 +40,7 @@ class Home extends React.Component {
           <li><a href="#nav1">Navigation 1 - Home</a></li>
           <li><a href="#nav2">Navigation 2 - Campus</a></li>
           <li><a href="#nav3">Navigation 3 - Journal</a></li>
+          <li><a href="#marquee">Marquee</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#search1">Search 1 - With Tagline</a></li>

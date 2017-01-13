@@ -15,7 +15,7 @@ import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
-import CarouselDisp from './display/CarouselDisp.jsx'
+import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
@@ -81,7 +81,6 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
-      <Route path="/carousel" component={CarouselDisp} />
       <Route path="/button" component={ButtonDisp} />
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
@@ -100,6 +99,7 @@ ReactDOM.render((
       <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journal" component={JournalLayout} />
       <Route path="/jump" component={JumpDisp} />
+      <Route path="/marquee" component={MarqueeDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
       <Route path="/nav3" component={Nav3Disp} />
