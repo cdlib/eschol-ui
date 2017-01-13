@@ -46,9 +46,17 @@ class Nav3Comp extends React.Component {
                 <a href="">Volume 30, Issue 1</a>
               </div>
             </details>
-            <a href="">About Us</a>
-            <a href="">Aims &amp; Scope</a>
-            <a href="">Editorial Board</a>
+            <details className="c-nav3__sub" ref={(domNode)=> this.nav3__sub = domNode}>
+              <summary className="c-nav3__sub-button" onClick = {(event)=> this.setState({submenuActive: !this.nav3__sub.open})}>
+                About
+              </summary>
+              <div className="c-nav3__sub-items">
+                <button className="c-nav3__sub-items-button" aria-label="return to menu" onClick = {()=> { this.setState({submenuActive: false}); this.nav3__sub.open = false; }}>Main Menu</button>
+                <a href="">About Us</a>
+                <a href="">Aims &amp; Scope</a>
+                <a href="">Editorial Board</a>
+              </div>
+            </details>
             <a href="">Policies</a>
             <a href="">Submission Guidelines</a>
             <a href="">Contact</a>
