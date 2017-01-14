@@ -4,16 +4,16 @@
 
   @include bp(screen2) {
     display: flex;
-    margin: 0 0 $spacing-md;
+    margin-bottom: $spacing-md;
   }
 
 }
 
-.c-marquee__textblock {
+.c-marquee__sidebar {
   flex: 0 0 $column-width;
 
   @include bp(screen2) {
-    margin: 0 $spacing-md 0 0;
+    margin-left: $spacing-md;
   }
 
 }
@@ -21,6 +21,7 @@
 .c-marquee__carousel {
   flex: 1;
   height: 150px;
+  margin-bottom: $spacing-md;
 
   img {
     width: 100%;
