@@ -24,11 +24,11 @@ class CarouselComp extends React.Component {
     return (
       <div className="c-marquee">
         <div className="c-marquee__carousel">
-          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image 1" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image 2" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image 3" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image 4" alt="" className="c-columndivide__img"/>
+          <img src="http://placehold.it/300x150?text=Image 5" alt="" className="c-columndivide__img"/>
         </div>
         <div className="c-marquee__sidebar">
           <section className="o-columnbox4">
