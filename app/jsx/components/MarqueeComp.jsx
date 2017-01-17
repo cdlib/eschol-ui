@@ -24,11 +24,21 @@ class CarouselComp extends React.Component {
     return (
       <div className="c-marquee">
         <div className="c-marquee__carousel">
-          <img src="http://placehold.it/300x150?text=Image 1" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image 2" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image 3" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image 4" alt="" className="c-columndivide__img"/>
-          <img src="http://placehold.it/300x150?text=Image 5" alt="" className="c-columndivide__img"/>
+          <div className="c-marquee__carousel-cell">
+            <h2>Carousel Cell Title 1</h2>
+            <p>Magnam praesentium sint, ducimus aspernatur architecto, deserunt ipsa veniam quia nihil, doloribus, laudantium a ad error tenetur fuga consequuntur laboriosam omnis ipsam.</p>
+            <a href="" className="o-textlink__primary">More&hellip;</a>
+          </div>
+          <div className="c-marquee__carousel-cell">
+            <h2>Carousel Cell Title 2</h2>
+            <p>Iure quod itaque maiores optio eveniet assumenda omnis, similique. Possimus, expedita, ea?</p>
+            <a href="" className="o-textlink__primary">More&hellip;</a>
+          </div>
+          <div className="c-marquee__carousel-cell">
+            <h2>Carousel Cell Title 3</h2>
+            <p>Obcaecati consequatur quaerat eaque, beatae eligendi possimus, repudiandae magni quas dolores, sit voluptatem iusto laborum. Incidunt fuga sed dicta nisi voluptates eaque, beatae numquam officia animi, vel.</p>
+            <a href="" className="o-textlink__primary">More&hellip;</a>
+          </div>
         </div>
         <div className="c-marquee__sidebar">
           <section className="o-columnbox4">
