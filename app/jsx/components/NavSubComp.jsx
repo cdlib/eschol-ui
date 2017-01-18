@@ -6,7 +6,7 @@ class NavSubComp extends React.Component {
   render() {
     return (
       <details className="c-nav3__sub" ref={(domNode)=> this.nav3__sub = domNode}>
-        <summary className="c-nav3__sub-button" onClick = {(event)=> {this.props.onSubmenuChanged( !this.nav3__sub.open); console.log("click", !this.nav3__sub.open)}}>
+        <summary className="c-nav3__sub-button" onClick = {(event)=> this.props.onSubmenuChanged( !this.nav3__sub.open)}>
           {this.props.name}
         </summary>
         <div className="c-nav3__sub-items">
