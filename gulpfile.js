@@ -14,7 +14,6 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
-var scsslint = require('gulp-scss-lint');
 var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
 var source = require('vinyl-source-stream');
@@ -26,6 +25,7 @@ var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback');
 var gutil = require('gulp-util');
 var sftp = require('gulp-sftp');
+var sassLint = require('gulp-sass-lint');
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Transformations to build lib-bundle.js
@@ -194,9 +194,11 @@ gulp.task('copy-images', function(){
 // Lint Sass:
 gulp.task('scss-lint', function() {
   return gulp.src(['app/scss/**/*.scss', '!app/scss/vendor/**/*.scss'])
-    .pipe(scsslint({
-      'config': 'scss-lint-config.yml' // Settings for linters. See: https://github.com/brigade/scss-lint/tree/master/lib/scss_lint/linter
-    }));
+    .pipe(sassLint({
+      configFile: 'sass-lint-config.yml'
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
 });
 
 // Convert media query breakpoints from SCSS variables to JSON key/value pairs:
