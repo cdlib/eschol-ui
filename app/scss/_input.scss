@@ -20,6 +20,7 @@ $input-height: $element-height;
     background: inline('../images/icon_arrow-down.svg') right 12px center / 12px no-repeat;
     appearance: none;
 
+    // sass-lint:disable no-vendor-prefixes
     &::-ms-expand { // remove default down arrow for IE 10 and higher
       display: none;
     }

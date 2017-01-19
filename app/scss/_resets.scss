@@ -13,7 +13,6 @@ abbr {
 
 // Remove rounded corners from WebKit search fields on iOS:
 
-// scss-lint:disable ImportantRule
 input[type='search'] {
   border-radius: 0 !important;
   appearance: none !important;
@@ -24,6 +23,7 @@ summary {
   cursor: pointer;
 
   // Remove details arrow icon from webkit browsers:
+  // sass-lint:disable no-vendor-prefixes
   &::-webkit-details-marker {
     display: none;
   }
