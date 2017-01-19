@@ -7,7 +7,7 @@ import Breakpoints from '../../js/breakpoints.json'
 class Nav3Comp extends React.Component {
   constructor(props){
     super(props)
-    this.state = {submenuActive: false}
+    this.state = {submenuActive: null}
   }
   componentWillMount() {
     if (matchMedia) {
@@ -27,7 +27,7 @@ class Nav3Comp extends React.Component {
           </summary>
           <div className={this.state.submenuActive ? "c-nav3__main-items--submenu-active" : "c-nav3__main-items"}>
             <a href="">Journal Home</a>
-            <NavSubComp name="Issues" onSubmenuChanged={(flag)=> this.setState({submenuActive:flag})}>
+            <NavSubComp name="Issues" open={this.state.submenuActive == 1} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 1 : null})}>
               <a href="">Volume 41, Issue 1</a>
               <a href="">Volume 40, Issue 1</a>
               <a href="">Volume 39, Issue 1</a>
@@ -41,7 +41,7 @@ class Nav3Comp extends React.Component {
               <a href="">Volume 31, Issue 1</a>
               <a href="">Volume 30, Issue 1</a>
             </NavSubComp>
-            <NavSubComp name="About" onSubmenuChanged={(flag)=> this.setState({submenuActive:flag})}>
+            <NavSubComp name="About" open={this.state.submenuActive == 2} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 2 : null})}>
               <a href="">About Us</a>
               <a href="">Aims &amp; Scope</a>
               <a href="">Editorial Board</a>
