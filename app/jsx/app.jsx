@@ -15,7 +15,7 @@ import AboutLayout from './layouts/AboutLayout.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
-import CarouselDisp from './display/CarouselDisp.jsx'
+import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
@@ -42,6 +42,7 @@ import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
 import Search1Disp from './display/Search1Disp.jsx'
 import Search2Disp from './display/Search2Disp.jsx'
+import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
@@ -80,7 +81,6 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
-      <Route path="/carousel" component={CarouselDisp} />
       <Route path="/button" component={ButtonDisp} />
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
@@ -99,6 +99,7 @@ ReactDOM.render((
       <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journal" component={JournalLayout} />
       <Route path="/jump" component={JumpDisp} />
+      <Route path="/marquee" component={MarqueeDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
       <Route path="/nav3" component={Nav3Disp} />
@@ -110,6 +111,7 @@ ReactDOM.render((
       <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/test" component={Test} />
+      <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader2" component={Subheader2Disp} />
       <Route path="/tab1" component={Tab1Disp} />

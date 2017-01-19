@@ -7,7 +7,7 @@ class DownloadComp extends React.Component {
     return (
       <div className="c-download">
         <button className="c-download__button">Download PDF</button>
-        <details className="c-download__formats" open>
+        <details className="c-download__formats">
           <summary aria-label="formats"></summary>
           <div className="c-download__menu">
             <div className="c-download__heading1" id="c-download__list1">

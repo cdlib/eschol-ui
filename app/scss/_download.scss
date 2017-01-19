@@ -22,8 +22,6 @@
 .c-download__formats {
   flex: 1 0 auto;
 
-  // scss-lint:disable DeclarationOrder
-
   summary {
     height: $element-height;
     padding-left: $spacing-sm;
@@ -32,28 +30,23 @@
     line-height: $element-height;
     user-select: none;
 
+    @include bp(screen3) {
+      padding-right: 25px;
+    }
+
     &::after {
       position: absolute;
       top: 0;
       right: $spacing-sm;
       bottom: 0;
-      padding: 7px;
+      padding-right: 7px;
+      padding-left: 7px;
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
 
-    }
-
-  }
-
-  @include bp(screen3) {
-
-    summary {
-      // display: inline-block;
-      padding-right: 25px;
-
-      &::after {
+      @include bp(screen3) {
         right: 0;
-        padding-left: 25px;
+        width: 20px;
       }
 
     }
@@ -69,6 +62,8 @@
   }
 
 }
+
+// ***** Menu and Components ***** //
 
 .c-download__menu {
   position: absolute;
@@ -96,6 +91,13 @@
   padding-left: 40px;
   background: no-repeat left $spacing-sm center / 16px;
   color: $color-white;
+
+  @include bp(screen3) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+  }
+
 }
 
 %c-download__heading {
@@ -105,6 +107,12 @@
 
   &:first-child {
     border-top: 1px solid $color-dark-gray;
+
+    @include bp(screen3) {
+      margin-top: $spacing-sm;
+      border: none;
+    }
+
   }
 
 }
@@ -128,10 +136,24 @@
 
     a {
       @extend %c-download__item;
+      font-size: 1em;
+
+      @include bp(screen3) {
+        text-decoration: underline;
+      }
+
     }
 
     &:not(:first-of-type) a {
       border-top: none;
+    }
+
+    &:last-child {
+
+      @include bp(screen3) {
+        margin-bottom: $spacing-sm;
+      }
+
     }
 
   }
