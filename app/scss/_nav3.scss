@@ -2,6 +2,11 @@
 
 .c-nav3 {
   flex: 1 0 auto; // to subheader flexbox
+
+  @include bp(screen3) {
+    background-color: $color-white;
+  }
+
 }
 
 .c-nav3__main {
@@ -26,11 +31,15 @@
   line-height: $element-height;
   user-select: none;
 
+  @include bp(screen3) {
+    display: none;
+  }
+
   &::after {
     position: absolute;
     top: 0;
     bottom: 0;
-    margin: 0 0 0 10px;
+    margin-left: 10px;
     padding: 7px;
     background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
     content: '';
@@ -38,11 +47,13 @@
 
 }
 
-%c-nav3__item {
-  @extend %nav-item; // from _mixins.scss
+// ***** Main Navigation Items ***** //
 
-  @include bp(screen3) {
-    width: 200px;
+%c-nav3__item {
+  @extend %nav-item;
+
+  &:not(:first-of-type) {
+    border-top: none;
   }
 
 }
@@ -51,15 +62,32 @@
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
-  margin: $spacing-sm 0 0;
   transition: transform 0.5s;
   z-index: 1;
 
-  a {
+  @include bp(screen3) {
+    display: flex;
+    position: static;
+    justify-content: space-around;
+  }
+
+  > a {
     @extend %c-nav3__item;
 
-    &:not(:first-of-type) {
-      border-top: none;
+    @include bp(screen3) {
+      padding: 6px 0 3px;
+      border: none;
+      background: none;
+    }
+
+    &.c-nav3__item--active {
+      color: $color-orange;
+
+      @include bp(screen3) {
+        border-bottom: 3px solid $color-orange;
+        font-weight: bold;
+      }
+
     }
 
   }
@@ -81,18 +109,50 @@
 
 }
 
+// ***** Sub Navigation Items ***** //
+
 .c-nav3__sub {
-  // not used
+
+  @include bp(screen3) {
+    position: relative;
+
+    &[open] {
+
+      .c-nav3__sub-button::after {
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
 }
 
 .c-nav3__sub-button {
   @extend %c-nav3__item;
   position: relative;
   border-top: none;
+  user-select: none;
+
+  @include bp(screen3) {
+    padding: 6px 25px 3px 0;
+    border: none;
+    background: none;
+  }
 
   &::after {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
     content: '\00bb'; // double-right arrow
+
+    @include bp(screen3) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 7px;
+      background: url('../images/icon_arrow-down.svg') no-repeat center / 13px;
+      content: '';
+    }
+
   }
 
 }
@@ -105,12 +165,16 @@
   transform: translateX(103%); // moves sub-items to right side of main-items
 
   @include bp(screen3) {
-    top: 40px;
-    right: auto;
-    left: 222px;
+    top: auto;
+    left: (-$spacing-sm);
+    width: 200px;
     max-height: 340px;
     transform: translateX(0);
-    overflow: scroll;
+    overflow: auto;
+  }
+
+  a {
+    @extend %c-nav3__item;
   }
 
 }
