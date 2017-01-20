@@ -19,7 +19,6 @@ input[type='search'] {
 }
 
 summary {
-  min-height: auto !important; // reset details polyfill
   cursor: pointer;
 
   // Remove details arrow icon from webkit browsers:
