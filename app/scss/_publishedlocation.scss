@@ -1,11 +1,20 @@
 // ##### Published Location Component ##### //
 
 .c-publishedlocation {
-  display: flex;
+
+  @include bp(screen1) {
+    display: flex;
+    align-items: flex-start;
+  }
+
 }
 
 .c-publishedlocation__location {
-  flex: 1 0 auto;
+
+  @include bp(screen1) {
+    margin-right: $spacing-md;
+  }
+
 }
 
 .c-publishedlocation__license {
