@@ -5,12 +5,7 @@ $togglecontent-left-spacing: 25px;
 .c-togglecontent {
   padding-left: $togglecontent-left-spacing;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  @include headings() {
     display: inline;
     font-size: 1.2em;
   }
