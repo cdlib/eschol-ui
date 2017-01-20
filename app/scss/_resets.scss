@@ -28,8 +28,8 @@ summary {
     display: none;
   }
 
-  &::before {
-    display: none !important; // reset details polyfill
-  }
+  // &::before {
+  //   display: none !important; // reset details polyfill
+  // }
 
 }

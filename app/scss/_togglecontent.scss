@@ -1,5 +1,50 @@
 // ##### Toggle Content Component ##### //
 
+$togglecontent-left-spacing: 25px;
+
 .c-togglecontent {
-  // empty
+  padding-left: $togglecontent-left-spacing;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline;
+    font-size: 1.2em;
+  }
+
+  summary {
+    position: relative;
+    height: $element-height;
+    margin-left: (-$togglecontent-left-spacing);
+    padding-left: $togglecontent-left-spacing;
+    line-height: $element-height;
+    user-select: none;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      padding: 8px;
+      background: url('../images/icon_plus-black.svg') no-repeat center / 16px;
+      content: '';
+    }
+
+  }
+
+  &[open] {
+
+    summary {
+
+      &::before {
+        background-image: url('../images/icon_minus-black.svg');
+      }
+
+    }
+
+  }
+
 }
