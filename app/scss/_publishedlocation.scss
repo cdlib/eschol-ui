@@ -1,5 +1,13 @@
 // ##### Published Location Component ##### //
 
 .c-publishedlocation {
-  // empty
+  display: flex;
+}
+
+.c-publishedlocation__location {
+  flex: 1 0 auto;
+}
+
+.c-publishedlocation__license {
+  // not used
 }
