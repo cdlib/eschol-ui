@@ -27,8 +27,14 @@ summary {
     display: none;
   }
 
-  // &::before {
-  //   display: none !important; // reset details polyfill
-  // }
+}
+
+// Remove details polyfill arrow icon (use ::after pseudo element in development instead of ::before)
+
+html.no-details summary {
+
+  &::before {
+    display: none !important;
+  }
 
 }
