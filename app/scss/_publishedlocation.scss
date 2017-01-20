@@ -12,6 +12,7 @@
 .c-publishedlocation__location {
 
   @include bp(screen1) {
+    flex: 1;
     margin-right: $spacing-md;
   }
 
