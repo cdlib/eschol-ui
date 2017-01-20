@@ -18,7 +18,7 @@ $togglecontent-left-spacing: 25px;
     line-height: $element-height;
     user-select: none;
 
-    &::before {
+    &::after { // ::before can't be used; see resets.scss
       position: absolute;
       top: 0;
       bottom: 0;
@@ -34,7 +34,7 @@ $togglecontent-left-spacing: 25px;
 
     summary {
 
-      &::before {
+      &::after {
         background-image: url('../images/icon_minus-black.svg');
       }
 
