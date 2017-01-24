@@ -38,6 +38,70 @@ $tab-height: $element-height;
     grid-template-columns: repeat(5, auto);
   }
 
+  button {
+
+    &:focus {
+      border: $bgreen !important;
+    }
+
+    &:nth-child(n+2):not(:last-child) {
+      display: none;
+    }
+
+    @include bp(screen1) {
+
+      &:nth-child(n+2):not(:last-child) {
+        display: block;
+      }
+
+      &:nth-child(n+3):not(:last-child) {
+        display: none;
+      }
+
+    }
+
+    @include bp(screen3) {
+
+      &:nth-child(n+3):not(:last-child) {
+        display: block;
+      }
+
+    }
+
+  }
+
+  &.--show-all {
+    
+    button {
+      
+      &:nth-child(n+2):not(:last-child) {
+        display: none;
+      }
+
+      @include bp(screen1) {
+
+        &:nth-child(n+2):not(:last-child) {
+          display: block;
+        }
+
+        &:nth-child(n+3):not(:last-child) {
+          display: none;
+        }
+
+      }
+
+      @include bp(screen3) {
+
+        &:nth-child(n+3):not(:last-child) {
+          display: block;
+        }
+
+      }
+
+    }
+
+  }
+
 }
 
 .c-tabs__button-more {
