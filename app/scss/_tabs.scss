@@ -51,28 +51,32 @@ $tab-height: $element-height;
 .c-tabs__tabs {
   @extend %c-tabs__tabs;
 
-  button {
+  @supports (display: grid) {
 
-    &:nth-child(n+3) {
-      display: none;
-    }
-
-    @include bp(screen1) {
+    button {
 
       &:nth-child(n+3) {
-        display: block;
-      }
-
-      &:nth-child(n+4) {
         display: none;
       }
 
-    }
+      @include bp(screen1) {
 
-    @include bp(screen3) {
+        &:nth-child(n+3) {
+          display: block;
+        }
 
-      &:nth-child(n+4) {
-        display: block;
+        &:nth-child(n+4) {
+          display: none;
+        }
+
+      }
+
+      @include bp(screen3) {
+
+        &:nth-child(n+4) {
+          display: block;
+        }
+
       }
 
     }
