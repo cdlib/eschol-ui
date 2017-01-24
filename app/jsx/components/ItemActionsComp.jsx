@@ -1,12 +1,21 @@
 // ##### Item Actions Component ##### //
 
 import React from 'react'
+import DownloadComp from '../components/DownloadComp.jsx'
+import ShareComp from '../components/ShareComp.jsx'
 
 class ItemActionsComp extends React.Component {
   render() {
     return (
       <div className="c-itemactions">
-      [item actions component to go here]
+        <div className="c-itemactions__download">
+          <DownloadComp />
+          <button className="o-button__6">Buy in Print</button>
+          <button className="o-button__6">Buy e-Book</button>
+        </div>
+        <div className="c-itemactions__share">
+          <ShareComp />
+        </div>
       </div>
     )
   }

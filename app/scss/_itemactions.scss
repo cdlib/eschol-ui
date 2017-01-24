@@ -1,5 +1,18 @@
 // ##### Item Actions Component ##### //
 
 .c-itemactions {
-  // empty
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-itemactions__download {
+
+  .o-button__6 {
+    margin-left: $spacing-sm;
+  }
+
+}
+
+.c-itemactions__share {
+  // not used
 }
