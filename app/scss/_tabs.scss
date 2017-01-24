@@ -26,7 +26,7 @@ $tab-height: $element-height;
   background-color: $color-white;
 }
 
-.c-tabs__main-list {
+%c-tabs__tabs {
   display: grid;
   grid-template-columns: repeat(2, auto);
 
@@ -41,20 +41,29 @@ $tab-height: $element-height;
   button {
 
     &:focus {
-      border: $bgreen !important;
+      outline: $color-orange solid 1px;
     }
 
-    &:nth-child(n+2):not(:last-child) {
+  }
+
+}
+
+.c-tabs__tabs {
+  @extend %c-tabs__tabs;
+
+  button {
+
+    &:nth-child(n+3) {
       display: none;
     }
 
     @include bp(screen1) {
 
-      &:nth-child(n+2):not(:last-child) {
+      &:nth-child(n+3) {
         display: block;
       }
 
-      &:nth-child(n+3):not(:last-child) {
+      &:nth-child(n+4) {
         display: none;
       }
 
@@ -62,7 +71,7 @@ $tab-height: $element-height;
 
     @include bp(screen3) {
 
-      &:nth-child(n+3):not(:last-child) {
+      &:nth-child(n+4) {
         display: block;
       }
 
@@ -70,38 +79,10 @@ $tab-height: $element-height;
 
   }
 
-  &.--show-all {
-    
-    button {
-      
-      &:nth-child(n+2):not(:last-child) {
-        display: none;
-      }
+}
 
-      @include bp(screen1) {
-
-        &:nth-child(n+2):not(:last-child) {
-          display: block;
-        }
-
-        &:nth-child(n+3):not(:last-child) {
-          display: none;
-        }
-
-      }
-
-      @include bp(screen3) {
-
-        &:nth-child(n+3):not(:last-child) {
-          display: block;
-        }
-
-      }
-
-    }
-
-  }
-
+.c-tabs__tabs--show-all {
+  @extend %c-tabs__tabs;
 }
 
 .c-tabs__button-more {
