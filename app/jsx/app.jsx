@@ -47,6 +47,7 @@ import Search1Disp from './display/Search1Disp.jsx'
 import Search2Disp from './display/Search2Disp.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
+import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
 import Subheader2Disp from './display/Subheader2Disp.jsx'
@@ -116,6 +117,7 @@ ReactDOM.render((
       <Route path="/search2" component={Search2Disp} />
       <Route path="/searchlayout" component={SearchLayout} />
       <Route path="/sidebarnav" component={SidebarNavDisp} />
+      <Route path="/socialicons" component={SocialIconsDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/test" component={Test} />
       <Route path="/share" component={ShareDisp} />
