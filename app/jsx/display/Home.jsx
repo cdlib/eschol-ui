@@ -54,8 +54,8 @@ class Home extends React.Component {
           <li><a href="#sidebarnav">Sidebar Navigation</a></li>
           <li><a href="#socialicons">Social Icons</a></li>
           <li><a href="#sort">Sort By</a></li>
-          <li><a href="#subheader1">Subheader 1 - Campus</a></li>
-          <li><a href="#subheader2">Subheader 2 - Journal and Unit</a></li>
+          <li><a href="#subheader">Subheader</a></li>
+          <li><a href="#subheader1">Subheader 1 (old) - Campus</a></li>
           <li><a href="#tabs">Tabs</a></li>
           <li><a href="#tab1">Tab 1 - Main</a></li>
           <li><a href="#tab2">Tab 2 - Supplemental Material</a></li>

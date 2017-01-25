@@ -1,17 +1,17 @@
-// ##### Subhead Display ##### //
+// ##### Subheader Display ##### //
 
 import React from 'react'
-import Subheader2Comp from '../components/Subheader2Comp.jsx'
+import SubheaderComp from '../components/SubheaderComp.jsx'
 
-class Subheader2Disp extends React.Component {
+class SubheaderDisp extends React.Component {
   render() {
     return (
       <div>
-         <Subheader2Comp />
+         <SubheaderComp />
         <div>Disp content would be here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, provident, autem, reprehenderit ipsa odit soluta voluptatem aspernatur esse ullam vel doloribus. Asperiores nisi, ex libero dicta deserunt suscipit iste eaque.</div>
       </div>
     )
   }
 }
 
-module.exports = Subheader2Disp;
+module.exports = SubheaderDisp;

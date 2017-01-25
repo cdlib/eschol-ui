@@ -1,10 +1,10 @@
-// ##### Subheader 2 Component ##### //
+// ##### Subheader Component ##### //
 
 import React from 'react'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import NavComp from '../components/NavComp.jsx'
 
-class Subheader2Comp extends React.Component {
+class SubheaderComp extends React.Component {
   render() {
     return (
       <div className="c-subheader">
@@ -45,4 +45,4 @@ class Subheader2Comp extends React.Component {
   }
 }
 
-module.exports = Subheader2Comp;
+module.exports = SubheaderComp;
