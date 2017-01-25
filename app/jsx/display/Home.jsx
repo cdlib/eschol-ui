@@ -43,6 +43,7 @@ class Home extends React.Component {
           <li><a href="#nav1">Navigation 1 - Home</a></li>
           <li><a href="#nav2">Navigation 2 - Campus</a></li>
           <li><a href="#nav3">Navigation 3 - Journal</a></li>
+          <li><a href="#navbar">Nav Bar</a></li>
           <li><a href="#marquee">Marquee</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#publishedlocation">Published Location</a></li>
