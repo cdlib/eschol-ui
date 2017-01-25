@@ -2,11 +2,6 @@
 
 .c-nav {
   flex: 1 0 auto; // to subheader flexbox
-
-  @include bp(screen3) {
-    background-color: $color-white;
-  }
-
 }
 
 .c-nav__main {
