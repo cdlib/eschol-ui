@@ -1,17 +1,17 @@
-// ##### Navigation - Journal Display ##### //
+// ##### Navigation Display ##### //
 
 import React from 'react'
-import Nav3Comp from '../components/Nav3Comp.jsx'
+import NavComp from '../components/NavComp.jsx'
 
-class Nav3Disp extends React.Component {
+class NavDisp extends React.Component {
   render() {
     return (
       <div>
-         <Nav3Comp />
+        <NavComp />
         <p>Disp content would be here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam hic impedit, maxime aperiam, provident totam! Et culpa adipisci, assumenda ex, provident ab, itaque ipsum pariatur tempore corporis tempora! Doloremque, eos?</p>
       </div>
     )
   }
 }
 
-module.exports = Nav3Disp;
+module.exports = NavDisp;

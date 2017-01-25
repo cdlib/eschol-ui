@@ -37,9 +37,9 @@ import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalLayout from './layouts/JournalLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
+import NavDisp from './display/NavDisp.jsx'
 import Nav1Disp from './display/Nav1Disp.jsx'
 import Nav2Disp from './display/Nav2Disp.jsx'
-import Nav3Disp from './display/Nav3Disp.jsx'
 import NavBarDisp from './display/NavBarDisp.jsx'
 import PaginationDisp from './display/PaginationDisp.jsx'
 import PublishedLocationDisp from './display/PublishedLocationDisp.jsx'
@@ -110,9 +110,9 @@ ReactDOM.render((
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
+      <Route path="/nav" component={NavDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
-      <Route path="/nav3" component={Nav3Disp} />
       <Route path="/navbar" component={NavBarDisp} />
       <Route path="/pagination" component={PaginationDisp} />
       <Route path="/publishedlocation" component={PublishedLocationDisp} />

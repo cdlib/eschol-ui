@@ -2,7 +2,7 @@
 
 import React from 'react'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
-import Nav3Comp from '../components/Nav3Comp.jsx'
+import NavComp from '../components/NavComp.jsx'
 
 class Subheader2Comp extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Subheader2Comp extends React.Component {
           </div>
         </div>
         <div className="c-subheader__row2">
-          <Nav3Comp />
+          <NavComp />
           <div className="c-subheader__social">
             <a href="">
               <img src="images/logo_facebook-black.svg" alt="Facebook"/>

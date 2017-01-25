@@ -1,6 +1,6 @@
-// ##### Navigation - Journal Component ##### //
+// ##### Navigation Component ##### //
 
-.c-nav3 {
+.c-nav {
   flex: 1 0 auto; // to subheader flexbox
 
   @include bp(screen3) {
@@ -9,11 +9,11 @@
 
 }
 
-.c-nav3__main {
+.c-nav__main {
 
   &[open] {
 
-    .c-nav3__main-button::after {
+    .c-nav__main-button::after {
       transform: rotate(180deg);
     }
 
@@ -21,7 +21,7 @@
 
 }
 
-.c-nav3__main-button {
+.c-nav__main-button {
   display: inline-block;
   position: relative;
   height: $element-height;
@@ -49,7 +49,7 @@
 
 // ***** Main Navigation Items ***** //
 
-%c-nav3__item {
+%c-nav__item {
   @extend %nav-item;
 
   &:not(:first-of-type) {
@@ -58,7 +58,7 @@
 
 }
 
-%c-nav3__main-items {
+%c-nav__main-items {
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
@@ -72,7 +72,7 @@
   }
 
   > a {
-    @extend %c-nav3__item;
+    @extend %c-nav__item;
 
     @include bp(screen3) {
       padding: 6px 0 3px;
@@ -80,7 +80,7 @@
       background: none;
     }
 
-    &.c-nav3__item--active {
+    &.c-nav__item--active {
       color: $color-orange;
 
       @include bp(screen3) {
@@ -94,13 +94,13 @@
 
 }
 
-.c-nav3__main-items {
-  @extend %c-nav3__main-items;
+.c-nav__main-items {
+  @extend %c-nav__main-items;
 }
 
-// toggle this on presence of 'open' attr on c-nav3__sub to show/hide c-nav3__sub-items
-.c-nav3__main-items--submenu-active {
-  @extend %c-nav3__main-items;
+// toggle this on presence of 'open' attr on c-nav__sub to show/hide c-nav__sub-items
+.c-nav__main-items--submenu-active {
+  @extend %c-nav__main-items;
   transform: translateX(-103%);
 
   @include bp(screen3) {
@@ -111,14 +111,14 @@
 
 // ***** Sub Navigation Items ***** //
 
-.c-nav3__sub {
+.c-nav__sub {
 
   @include bp(screen3) {
     position: relative;
 
     &[open] {
 
-      .c-nav3__sub-button::after {
+      .c-nav__sub-button::after {
         transform: rotate(180deg);
       }
 
@@ -128,8 +128,8 @@
 
 }
 
-.c-nav3__sub-button {
-  @extend %c-nav3__item;
+.c-nav__sub-button {
+  @extend %c-nav__item;
   position: relative;
   border-top: none;
   user-select: none;
@@ -157,7 +157,7 @@
 
 }
 
-.c-nav3__sub-items {
+.c-nav__sub-items {
   position: absolute;
   top: 0;
   right: 0;
@@ -174,13 +174,13 @@
   }
 
   a {
-    @extend %c-nav3__item;
+    @extend %c-nav__item;
   }
 
 }
 
-.c-nav3__sub-items-button {
-  @extend %c-nav3__item;
+.c-nav__sub-items-button {
+  @extend %c-nav__item;
   width: 100%;
   border-bottom: none;
   text-align: left;
