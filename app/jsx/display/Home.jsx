@@ -39,6 +39,7 @@ class Home extends React.Component {
           <li><a href="#itemactions">Item Actions</a></li>
           <li><a href="#journalinfo">Journal Information</a></li>
           <li><a href="#jump">Jump</a></li>
+          <li><a href="#language">language</a></li>
           <li><a href="#nav1">Navigation 1 - Home</a></li>
           <li><a href="#nav2">Navigation 2 - Campus</a></li>
           <li><a href="#nav3">Navigation 3 - Journal</a></li>
