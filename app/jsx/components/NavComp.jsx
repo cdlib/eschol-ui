@@ -23,7 +23,7 @@ class NavComp extends React.Component {
     return (
       <nav className="c-nav">
         <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
-          <summary className="c-nav__main-button" role="button">Menu
+          <summary className="c-nav__main-button">Menu
           </summary>
           <div className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"} role="list">
             <a href="" role="listitem">Journal Home</a>
