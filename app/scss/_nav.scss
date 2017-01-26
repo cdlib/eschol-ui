@@ -1,7 +1,7 @@
 // ##### Navigation Component ##### //
 
 .c-nav {
-  flex: 1 0 auto; // to subheader flexbox
+  flex: 1 0 auto; // to .c-subheader flexbox
 }
 
 .c-nav__main {
@@ -54,9 +54,10 @@
 }
 
 %c-nav__main-items {
-  position: absolute; // to .c-subheader
-  right: 0;
-  left: 0;
+  position: absolute; // to <body>
+  right: $spacing-sm;
+  left: $spacing-sm;
+  margin-top: $spacing-sm;
   transition: transform 0.5s;
   z-index: 1;
 
