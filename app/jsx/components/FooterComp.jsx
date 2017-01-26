@@ -5,7 +5,7 @@ import React from 'react'
 class FooterComp extends React.Component {
   render() {
     return (
-      <div className="c-footer">
+      <footer className="c-footer">
         <nav className="c-footer__nav" role="list">
           <a href="" role="listitem">Home</a>
           <a href="" role="listitem">About eScholarship</a>
@@ -37,7 +37,7 @@ class FooterComp extends React.Component {
           Copyright &copy; 2017<br/>
           The Regents of the University of California.
         </div>
-      </div>
+      </footer>
     )
   }
 }
