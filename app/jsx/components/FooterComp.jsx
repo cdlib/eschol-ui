@@ -6,17 +6,17 @@ class FooterComp extends React.Component {
   render() {
     return (
       <div className="c-footer">
-        <nav className="c-footer__nav">
-          <a href="">Home</a>
-          <a href="">About eScholarship</a>
-          <a href="">Campuses</a>
-          <a href="">OA Policies</a>
-          <a href="">Journals</a>
-          <a href="">Deposit</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
-          <a href="">Help</a>
-          <a href="">Admin Login</a>
+        <nav className="c-footer__nav" role="list">
+          <a href="" role="listitem">Home</a>
+          <a href="" role="listitem">About eScholarship</a>
+          <a href="" role="listitem">Campuses</a>
+          <a href="" role="listitem">OA Policies</a>
+          <a href="" role="listitem">Journals</a>
+          <a href="" role="listitem">Deposit</a>
+          <a href="" role="listitem">Privacy Policy</a>
+          <a href="" role="listitem">Terms & Conditions</a>
+          <a href="" role="listitem">Help</a>
+          <a href="" role="listitem">Admin Login</a>
         </nav>
         <div className="c-footer__logo">
           <a href="">
