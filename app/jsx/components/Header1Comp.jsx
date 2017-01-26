@@ -11,7 +11,7 @@ class HeaderComp1 extends React.Component {
   }
   render() {
     return (
-      <div className="c-header1">
+      <header className="c-header1">
         <div className="c-header1__logosearch">
           <a href="">
             <picture>
@@ -27,7 +27,7 @@ class HeaderComp1 extends React.Component {
         <div className="c-header1__deposit">
           <button className="c-header1__deposit-button">Get Started</button>
         </div>
-      </div>
+      </header>
     )
   }
 }
