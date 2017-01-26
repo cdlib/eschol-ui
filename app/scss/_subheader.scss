@@ -5,18 +5,18 @@
   position: relative; // to absolute positioned nav component
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 $spacing-sm;
-  padding: 0 0 $spacing-sm;
+  // margin-bottom: $spacing-sm;
+  padding-bottom: $spacing-sm;
   border-bottom: 2px solid $color-light-gray;
 
   @include bp(screen2) {
-    margin: 0 (-$spacing-sm) $spacing-md;
+    margin: 0 (-$spacing-sm) 0;
     padding: 0 $spacing-sm $spacing-sm;
+    background-color: $color-white;
   }
 
   @include bp(screen3) {
-    padding: 0;
-    background-color: $color-white;
+    padding: 0 $spacing-sm 0;
   }
 
 }
