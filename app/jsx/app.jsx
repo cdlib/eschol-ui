@@ -32,7 +32,7 @@ import Header2Disp from './display/Header2Disp.jsx'
 import InfoPagesDisp from './display/InfoPagesDisp.jsx'
 import InputDisp from './display/InputDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
-import ItemLayout from './layouts/ItemLayout.jsx'
+import JournalItemLayout from './layouts/JournalItemLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalHomeLayout from './layouts/JournalHomeLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
@@ -104,9 +104,9 @@ ReactDOM.render((
       <Route path="/header2" component={Header2Disp} />
       <Route path="/infodisplay" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
-      <Route path="/item" component={ItemLayout} />
+      <Route path="/journalhome" component={JournalHomeLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
-      <Route path="/journal" component={JournalHomeLayout} />
+      <Route path="/journalitem" component={JournalItemLayout} />
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
