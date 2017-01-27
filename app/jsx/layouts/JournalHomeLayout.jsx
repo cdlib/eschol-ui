@@ -10,7 +10,7 @@ import FrontmatterComp from '../components/FrontmatterComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
-class JournalLayout extends React.Component {
+class JournalHomeLayout extends React.Component {
   render() {
     return (
       <div className="l-about">
@@ -68,4 +68,4 @@ class JournalLayout extends React.Component {
   }
 }
 
-module.exports = JournalLayout;
+module.exports = JournalHomeLayout;

@@ -34,7 +34,7 @@ import InputDisp from './display/InputDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
 import ItemLayout from './layouts/ItemLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
-import JournalLayout from './layouts/JournalLayout.jsx'
+import JournalHomeLayout from './layouts/JournalHomeLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
@@ -106,7 +106,7 @@ ReactDOM.render((
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/item" component={ItemLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
-      <Route path="/journal" component={JournalLayout} />
+      <Route path="/journal" component={JournalHomeLayout} />
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
