@@ -5,7 +5,7 @@ $togglecontent-left-spacing: 25px;
 .c-togglecontent {
   padding-left: $togglecontent-left-spacing;
 
-  ~ .c-togglecontent {
+  + .c-togglecontent {
     margin-top: $spacing-md;
     padding-top: $spacing-md;
     border-top: 1px solid $color-light-gray;
