@@ -3,7 +3,6 @@
 $togglecontent-left-spacing: 25px;
 
 .c-togglecontent {
-  padding-left: $togglecontent-left-spacing;
 
   + .c-togglecontent {
     margin-top: $spacing-md;
@@ -16,10 +15,13 @@ $togglecontent-left-spacing: 25px;
     font-size: 1.2em;
   }
 
+  @include bp(screen2) {
+    padding-left: $togglecontent-left-spacing;
+  }
+
   summary {
     position: relative;
     margin-bottom: $spacing-sm;
-    margin-left: (-$togglecontent-left-spacing);
     padding-left: $togglecontent-left-spacing;
     user-select: none;
 
@@ -31,6 +33,10 @@ $togglecontent-left-spacing: 25px;
       padding: 8px;
       background: url('../images/icon_plus-black.svg') no-repeat center / 16px;
       content: '';
+    }
+
+    @include bp(screen2) {
+      margin-left: (-$togglecontent-left-spacing);
     }
 
   }
