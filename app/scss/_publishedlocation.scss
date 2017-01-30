@@ -11,10 +11,17 @@
 }
 
 .c-publishedlocation__location {
+  margin-bottom: 0.25em;
+
+  a {
+    display: block;
+    margin-bottom: 0.25em;
+  }
 
   @include bp(screen1) {
     flex: 1;
     margin-right: $spacing-md;
+    margin-bottom: 0;
   }
 
 }

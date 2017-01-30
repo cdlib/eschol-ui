@@ -7,8 +7,8 @@ class PublishedLocationComp extends React.Component {
     return (
       <div className="c-publishedlocation">
         <div className="c-publishedlocation__location">
-          <p><a className="o-textlink__secondary" href="">Published Web Location</a></p>
-          <p>No data is associated with this publication.</p>
+          <a className="o-textlink__secondary" href="">Published Web Location</a>
+          <span>No data is associated with this publication.</span>
         </div>
         <a href="" className="c-publishedlocation__license">
           <img src="images/icon_cc-by-nc.svg" alt=""/>
