@@ -12,6 +12,7 @@ $togglecontent-left-spacing: 25px;
 
   @include headings() {
     display: inline;
+    margin: 0;
     font-size: 1.2em;
   }
 
