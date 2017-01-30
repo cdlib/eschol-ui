@@ -1,15 +1,34 @@
 // ##### Item Actions Component ##### //
 
 .c-itemactions {
-  display: flex;
-  justify-content: space-between;
+
+  @include bp(screen3) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-md;
+  }
+
 }
 
 .c-itemactions__download {
   flex: 1;
 
   .o-button__6 {
-    margin-left: $spacing-sm;
+    margin-bottom: $spacing-sm;
+
+    &:not(:first-of-type) {
+      margin-left: $spacing-sm;
+    }
+
+    @include bp(screen3) {
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        margin-left: $spacing-sm;
+      }
+
+    }
+
   }
 
 }

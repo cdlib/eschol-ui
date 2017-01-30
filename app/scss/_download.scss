@@ -3,9 +3,11 @@
 .c-download {
   display: flex;
   position: relative;
+  margin-bottom: $spacing-sm;
 
   @include bp(screen3) {
     display: inline-flex;
+    margin-bottom: 0;
   }
 
 }

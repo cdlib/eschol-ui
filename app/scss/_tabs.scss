@@ -8,13 +8,17 @@ $tab-height: $element-height;
 
 %c-tabs__buttons {
   min-height: $tab-height;
-  margin-right: $spacing-base;
   margin-bottom: $spacing-base;
   padding: 5px $spacing-sm;
   border: none;
   background-color: $color-light-gray;
   font-size: 1.1em;
   user-select: none;
+
+  &:not(:first-child):not(:last-child) {
+    margin-right: $spacing-base;
+  }
+
 }
 
 .c-tabs__button {
