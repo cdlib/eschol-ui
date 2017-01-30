@@ -1,6 +1,7 @@
 // ##### Published Location Component ##### //
 
 .c-publishedlocation {
+  margin-bottom: $spacing-md;
 
   @include bp(screen1) {
     display: flex;
