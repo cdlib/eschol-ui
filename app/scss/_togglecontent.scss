@@ -5,6 +5,12 @@ $togglecontent-left-spacing: 25px;
 .c-togglecontent {
   padding-left: $togglecontent-left-spacing;
 
+  ~ .c-togglecontent {
+    margin-top: $spacing-md;
+    padding-top: $spacing-md;
+    border-top: 1px solid $color-light-gray;
+  }
+
   @include headings() {
     display: inline;
     font-size: 1.2em;
@@ -12,10 +18,9 @@ $togglecontent-left-spacing: 25px;
 
   summary {
     position: relative;
-    height: $element-height;
+    margin-bottom: $spacing-sm;
     margin-left: (-$togglecontent-left-spacing);
     padding-left: $togglecontent-left-spacing;
-    line-height: $element-height;
     user-select: none;
 
     &::after { // ::before can't be used; see resets.scss
