@@ -117,6 +117,7 @@ $tab-height: $element-height;
 
 .c-tabs__panel {
   margin-top: (-$spacing-base);
+  margin-bottom: $spacing-sm;
   padding: $spacing-sm;
   background-color: $color-white;
 
