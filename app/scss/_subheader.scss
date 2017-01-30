@@ -25,14 +25,7 @@
 
   @include bp(screen3) {
     display: block;
-    width: 480px;
-    height: 100px;
     margin-right: $spacing-md;
-    object-fit: cover;
-  }
-
-  @include bp(screen4) {
-    width: 900px;
   }
 
 }
