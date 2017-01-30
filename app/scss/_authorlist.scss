@@ -1,7 +1,12 @@
 // ##### Author List Component ##### //
 
 .c-authorlist {
-  display: flex;
+  margin-bottom: $spacing-md;
+
+  @include bp(screen1) {
+    display: flex;
+  }
+
 }
 
 .c-authorlist__year {
