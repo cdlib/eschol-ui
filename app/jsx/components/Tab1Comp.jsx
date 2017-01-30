@@ -12,9 +12,17 @@ class Tab1Comp extends React.Component {
       <div className="c-tab1">
         <ItemActionsComp />
         <h1>From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
-          <AuthorListComp />
-          <PublishedLocationComp />
-          <ToggleContentComp />
+        <AuthorListComp />
+        <PublishedLocationComp />
+        <details className="c-togglecontent" open>
+          <summary><h2>Abstract</h2></summary>
+          <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
+          <p className="c-well">Libero dolores rerum nesciunt deserunt incidunt, aspernatur similique fugit beatae quis impedit corrupti, voluptate, unde facilis. Voluptatibus labore sunt maxime, accusantium animi mollitia ducimus.</p>
+        </details>
+        <details className="c-togglecontent" open>
+          <summary><h2>Main Content</h2></summary>
+          <p>Fugit dignissimos, laborum repudiandae consequuntur, sit iure nobis animi numquam laudantium error veniam incidunt in at, nihil doloremque labore, odio illo cumque debitis vel enim rerum possimus saepe blanditiis. Temporibus ducimus rerum quidem ipsa quas asperiores, sapiente in, delectus quae excepturi dolor officiis at quia fugit minus vitae libero. Voluptas quos nobis unde sequi laborum ipsam similique placeat, mollitia debitis provident, consequuntur, blanditiis ducimus! Blanditiis quibusdam ab aspernatur, repellendus recusandae, dolor quidem ipsa id laborum inventore illum eligendi laboriosam necessitatibus nam labore, pariatur delectus corporis suscipit amet asperiores soluta doloremque iste voluptate.</p>
+        </details>
       </div>
     )
   }
