@@ -54,11 +54,11 @@ import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
 import SubheaderDisp from './display/SubheaderDisp.jsx'
-import Tab1Disp from './display/Tab1Disp.jsx'
-import Tab2Disp from './display/Tab2Disp.jsx'
-import Tab3Disp from './display/Tab3Disp.jsx'
-import Tab4Disp from './display/Tab4Disp.jsx'
-import Tab5Disp from './display/Tab5Disp.jsx'
+import TabContent1Disp from './display/TabContent1Disp.jsx'
+import TabContent2Disp from './display/TabContent2Disp.jsx'
+import TabContent3Disp from './display/TabContent3Disp.jsx'
+import TabContent4Disp from './display/TabContent4Disp.jsx'
+import TabContent5Disp from './display/TabContent5Disp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
@@ -130,11 +130,11 @@ ReactDOM.render((
       <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader" component={SubheaderDisp} />
-      <Route path="/tab1" component={Tab1Disp} />
-      <Route path="/tab2" component={Tab2Disp} />
-      <Route path="/tab3" component={Tab3Disp} />
-      <Route path="/tab4" component={Tab4Disp} />
-      <Route path="/tab5" component={Tab5Disp} />
+      <Route path="/tabcontent1" component={TabContent1Disp} />
+      <Route path="/tabcontent2" component={TabContent2Disp} />
+      <Route path="/tabcontent3" component={TabContent3Disp} />
+      <Route path="/tabcontent4" component={TabContent4Disp} />
+      <Route path="/tabcontent5" component={TabContent5Disp} />
       <Route path="/tabs" component={TabsDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
       <Route path="/togglecontent" component={ToggleContentDisp} />
