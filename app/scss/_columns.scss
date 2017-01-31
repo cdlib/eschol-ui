@@ -33,3 +33,31 @@
   }
 
 }
+
+.c-columns__split {
+  margin-bottom: $spacing-md;
+
+  > * {
+
+    &:first-child {
+      margin-bottom: $spacing-md;
+    }
+
+  }
+
+  @include bp(screen2) {
+    display: flex;
+    align-items: flex-start;
+
+    > * {
+
+      &:first-child {
+        margin-right: $spacing-md;
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+}
