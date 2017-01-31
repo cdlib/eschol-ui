@@ -11,7 +11,7 @@ class TabContent1Comp extends React.Component {
     return (
       <div className="c-tabcontent">
         <ItemActionsComp />
-        <h1>From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+        <h1 className="c-tabcontent__heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
         <AuthorListComp />
         <PublishedLocationComp />
         <details className="c-togglecontent" open>
