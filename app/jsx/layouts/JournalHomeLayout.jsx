@@ -31,7 +31,7 @@ class JournalHomeLayout extends React.Component {
                 </p>
                 <p>Consectetur et, excepturi minima hic vero numquam. Alias nulla sunt culpa accusantium distinctio enim maxime, quis ratione consectetur delectus omnis suscipit atque asperiores nemo in molestiae similique quos autem pariatur?
                 </p>
-                <img src="http://placehold.it/300x150?text=Image" alt="" className="c-columndivide__img"/>
+                <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
                 <p>Nisi excepturi error molestias, accusamus quas non minima nam quis. Et blanditiis minima, consequatur error quibusdam maxime autem repellat id soluta ab saepe quos qui at vel ducimus voluptatem dolorem.
                 </p>
               </div>
