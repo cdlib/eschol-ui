@@ -17,6 +17,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#button">Buttons</a></li>
           <li><a href="#columnbox">Column Boxes</a></li>
+          <li><a href="#imagecontent">Image Content</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#textlink">Text Links</a></li>
         </ul>

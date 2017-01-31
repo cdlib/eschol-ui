@@ -19,6 +19,7 @@ import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
+import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
@@ -94,6 +95,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
       <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/imagecontent" component={ImageContentDisp} />
       <Route path="/download" component={DownloadDisp} />
       <Route path="/export" component={ExportDisp} />
       <Route path="/input" component={InputDisp} />
