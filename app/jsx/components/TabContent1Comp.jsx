@@ -22,7 +22,7 @@ class TabContent1Comp extends React.Component {
         <details className="c-togglecontent" open>
           <summary><h2>Main Content</h2></summary>
           <p>Fugit dignissimos, laborum repudiandae consequuntur, sit iure nobis animi numquam laudantium error veniam incidunt in at, nihil doloremque labore, odio illo cumque debitis vel enim rerum possimus saepe blanditiis. Temporibus ducimus rerum quidem ipsa quas asperiores, sapiente in, delectus quae excepturi dolor officiis at quia fugit minus vitae libero. Voluptas quos nobis unde sequi laborum ipsam similique placeat, mollitia debitis provident, consequuntur, blanditiis ducimus! Blanditiis quibusdam ab aspernatur, repellendus recusandae, dolor quidem ipsa id laborum inventore illum eligendi laboriosam necessitatibus nam labore, pariatur delectus corporis suscipit amet asperiores soluta doloremque iste voluptate.</p>
-          <div className="c-columns__split">
+          <div className="o-dividecontent2x">
             <img className="o-imagecontent" src="http://placehold.it/250x150?text=Placeholder" alt="" />
             <img className="o-imagecontent" src="http://placehold.it/250x150?text=Placeholder" alt=""/>
           </div>

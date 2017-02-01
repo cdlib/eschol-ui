@@ -24,7 +24,7 @@ class JournalHomeLayout extends React.Component {
             <section className="o-columnbox1">
               <FrontmatterComp />
               <h3>Table of Contents</h3>
-              <div className="o-columnbox__divided">
+              <div className="o-dividecontent2x--ruled">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque similique aperiam recusandae quisquam deserunt soluta laudantium nemo dignissimos eum autem qui tenetur veniam, ducimus nobis maxime id eveniet, laborum, amet.
                 </p>
                 <p>Quia, tempore quis vitae a dolore! Accusantium eveniet fuga architecto ratione, nemo facere labore, repellat illo porro, harum amet. Cum voluptates commodi at facere doloribus, eos, saepe libero obcaecati nesciunt.
