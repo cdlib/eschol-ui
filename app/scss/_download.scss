@@ -5,7 +5,7 @@
   position: relative;
   margin-bottom: $spacing-sm;
 
-  @include bp(screen3) {
+  @include bp(screen2) {
     display: inline-flex;
     margin-right: $spacing-sm;
     margin-bottom: 0;
@@ -33,7 +33,7 @@
     line-height: $element-height;
     user-select: none;
 
-    @include bp(screen3) {
+    @include bp(screen2) {
       padding-right: 25px;
     }
 
@@ -47,7 +47,7 @@
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
 
-      @include bp(screen3) {
+      @include bp(screen2) {
         right: 0;
         width: 20px;
       }
@@ -81,7 +81,7 @@
     backdrop-filter: blur(5px);
   }
 
-  @include bp(screen3) {
+  @include bp(screen2) {
     right: auto;
     min-width: 230px;
   }
@@ -94,7 +94,7 @@
   background: no-repeat left $spacing-sm center / 16px;
   color: $color-white;
 
-  @include bp(screen3) {
+  @include bp(screen2) {
     padding-top: 3px;
     padding-bottom: 3px;
     border: none;
@@ -110,7 +110,7 @@
   &:first-child {
     border-top: 1px solid $color-dark-gray;
 
-    @include bp(screen3) {
+    @include bp(screen2) {
       margin-top: $spacing-sm;
       border: none;
     }
@@ -140,7 +140,7 @@
       @extend %c-download__item;
       font-size: 1em;
 
-      @include bp(screen3) {
+      @include bp(screen2) {
         text-decoration: underline;
       }
 
@@ -152,7 +152,7 @@
 
     &:last-child {
 
-      @include bp(screen3) {
+      @include bp(screen2) {
         margin-bottom: $spacing-sm;
       }
 
