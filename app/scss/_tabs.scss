@@ -118,11 +118,11 @@ $tab-height: $element-height;
 .c-tabs__content {
   margin-top: (-$spacing-base);
   margin-bottom: $spacing-sm;
-  padding: $spacing-sm;
+  padding: $spacing-sm 0;
   background-color: $color-white;
 
-  @include bp(screen3) {
-    padding: $spacing-md;
+  @include bp(screen2) {
+    padding: $spacing-md $spacing-sm $spacing-sm;
   }
 
 }
