@@ -46,14 +46,6 @@ class ColumnsComp extends React.Component {
             <h3>Main Content</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, saepe fugiat nihil molestias quam fugit harum suscipit, soluta debitis praesentium. Minus repudiandae debitis non dolore dignissimos, aliquam corporis ratione, quasi.</p>
             <p>Est itaque, expedita magnam voluptatem tempora quia odit quo natus labore! Deserunt libero culpa, sequi placeat nobis soluta aliquam. Quam cum itaque vero necessitatibus, aliquid saepe possimus. Esse laboriosam, voluptas.</p>
-            <div className="c-columns__split">
-              <div>
-                <b>1st Half of Split Main Column</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sapiente provident voluptatem ad, sequi voluptate beatae animi et. Ratione obcaecati, cum voluptatibus dolor quas pariatur quisquam ea enim eveniet ut.
-              </div>
-              <div>
-                <b>Second Half of Split Main Column</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sit, accusamus temporibus quidem pariatur corporis nulla vel numquam earum quia, expedita amet qui sint fugit, accusantium similique praesentium alias quibusdam!
-              </div>
-            </div>
             <p>Minima a, ullam dignissimos beatae voluptatibus labore iure vero vitae blanditiis. Aliquid a at perspiciatis magnam facere harum totam molestias repellat nulla quis debitis, perferendis quaerat adipisci soluta ullam veniam.</p>
           </main>
           <aside>
