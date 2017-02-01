@@ -35,8 +35,10 @@ class JournalItemLayout extends React.Component {
             <section className="o-columnbox2">
               <header>
                 <h2 className="o-columnbox2__heading">Related Items</h2>
-                </header>
-                [content to go here]
+              </header>
+              <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
+              <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>
+              <p><a className="o-textlink__secondary" href="">United States-Based Latina Producers of Feature Films</a><br/>UCLA Electronic Theses and Dissertations</p>
             </section>
           </aside>
         </div>
