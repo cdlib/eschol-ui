@@ -23,7 +23,7 @@ class TabsComp extends React.Component {
           <button className={this.state.currentTab === 4 ? "c-tabs__button--active" : "c-tabs__button"} onClick = {()=> this.setState({currentTab: 4})}>Author & Article Info</button>
           <button className={this.state.currentTab === 5 ? "c-tabs__button--active" : "c-tabs__button"} onClick = {()=> this.setState({currentTab: 5})}>Comments (2)</button>
         </div>
-        <div className="c-tabs__panel">
+        <div className="c-tabs__content">
           {this.state.currentTab === 1 ? <TabContent1Comp /> : null}
           {this.state.currentTab === 2 ? <TabContent2Comp /> : null}
           {this.state.currentTab === 3 ? <TabContent3Comp /> : null}
