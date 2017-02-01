@@ -7,6 +7,7 @@
 
   @include bp(screen3) {
     display: inline-flex;
+    margin-right: $spacing-sm;
     margin-bottom: 0;
   }
 

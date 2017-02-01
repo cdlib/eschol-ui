@@ -5,34 +5,21 @@
   @include bp(screen3) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-sm;
   }
 
 }
 
-.c-itemactions__download {
+.c-itemactions__items1 {
   flex: 1;
 
   .o-button__6 {
+    margin-right: $spacing-sm;
     margin-bottom: $spacing-sm;
-
-    &:not(:first-of-type) {
-      margin-left: $spacing-sm;
-    }
-
-    @include bp(screen3) {
-      margin-bottom: 0;
-
-      &:not(:first-child) {
-        margin-left: $spacing-sm;
-      }
-
-    }
-
   }
 
 }
 
-.c-itemactions__share {
+.c-itemactions__items2 {
   // not used
 }
