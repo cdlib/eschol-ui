@@ -60,6 +60,7 @@ import TabContent2Disp from './display/TabContent2Disp.jsx'
 import TabContent3Disp from './display/TabContent3Disp.jsx'
 import TabContent4Disp from './display/TabContent4Disp.jsx'
 import TabContent5Disp from './display/TabContent5Disp.jsx'
+import TableDisp from './display/TableDisp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
@@ -132,6 +133,7 @@ ReactDOM.render((
       <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader" component={SubheaderDisp} />
+      <Route path="/table" component={TableDisp} />
       <Route path="/tabcontent1" component={TabContent1Disp} />
       <Route path="/tabcontent2" component={TabContent2Disp} />
       <Route path="/tabcontent3" component={TabContent3Disp} />

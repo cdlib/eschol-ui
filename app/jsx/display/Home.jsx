@@ -64,6 +64,7 @@ class Home extends React.Component {
           <li><a href="#tabcontent3">Tab 3 - Metrics</a></li>
           <li><a href="#tabcontent4">Tab 4 - Author & Article Info</a></li>
           <li><a href="#tabcontent5">Tab 5 - Comments</a></li>
+          <li><a href="#table">Table</a></li>
           <li><a href="#togglecontent">Toggle Content</a></li>
           <li><a href="#well">Well for Content</a></li>
         </ul>
