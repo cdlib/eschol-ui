@@ -38,9 +38,14 @@ $tab-height: $element-height;
   }
 
   button {
+    margin-right: $spacing-sm;
+    margin-bottom: $spacing-sm;
+  }
 
-    &:focus {
-      outline: $color-orange solid 1px;
+  @supports (display: grid) {
+
+    button {
+      margin: 0;
     }
 
   }
@@ -111,9 +116,14 @@ $tab-height: $element-height;
 }
 
 .c-tabs__content {
+  margin-top: (-$spacing-sm);
   margin-bottom: $spacing-sm;
   padding: $spacing-sm 0;
   background-color: $color-white;
+
+  @supports (display: grid) {
+    margin-top: 0;
+  }
 
   @include bp(screen2) {
     padding: $spacing-md $spacing-sm $spacing-sm;
