@@ -1,5 +1,38 @@
 // ##### Table Component ##### //
 
 .c-table {
-  // empty
+
+  th,
+  td {
+    padding: $spacing-sm;
+  }
+
+  th {
+    background-color: $color-teal;
+    color: $color-white;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  thead {
+
+    th + th {
+      border-left: 2px solid $color-white;
+    }
+
+  }
+
+  tbody {
+        
+    th {
+      border-top: 2px solid $color-white;
+    }
+
+  }
+  
+
+  td {
+    border: 2px solid $color-teal;
+  }
+
 }
