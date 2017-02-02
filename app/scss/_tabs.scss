@@ -8,17 +8,11 @@ $tab-height: $element-height;
 
 %c-tabs__buttons {
   min-height: $tab-height;
-  margin-bottom: $spacing-base;
   padding: 5px $spacing-sm;
   border: none;
   background-color: $color-light-gray;
   font-size: 1.1em;
   user-select: none;
-
-  &:not(:first-child):not(:last-child) {
-    margin-right: $spacing-base;
-  }
-
 }
 
 .c-tabs__button {
@@ -33,6 +27,7 @@ $tab-height: $element-height;
 %c-tabs__tabs {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  grid-gap: $spacing-sm;
 
   @include bp(screen1) {
     grid-template-columns: repeat(3, auto);
@@ -116,7 +111,6 @@ $tab-height: $element-height;
 }
 
 .c-tabs__content {
-  margin-top: (-$spacing-base);
   margin-bottom: $spacing-sm;
   padding: $spacing-sm 0;
   background-color: $color-white;
