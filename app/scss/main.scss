@@ -91,3 +91,7 @@ p {
   margin: 0 0 1em;
   line-height: 1.2em;
 }
+
+*:focus {
+  outline: $color-orange solid 1px;
+}
