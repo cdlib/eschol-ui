@@ -73,7 +73,7 @@ $campus-selector-button-width: 30px;
 
 }
 
-.c-campusselector__selector-items {
+.c-campusselector__menu {
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
@@ -85,19 +85,19 @@ $campus-selector-button-width: 30px;
     margin-right: (-$campus-selector-button-width) - 1px;
   }
 
-  div {
-    @extend %nav-item;
-    color: $color-black;
-    background-color: $color-light-gray;
-  }
+}
+
+.c-campusselector__sub-heading {
+  @extend %nav-item;
+  color: $color-black;
+  background-color: $color-light-gray;
+}
+
+.c-campusselector__items {
 
   a {
     @extend %nav-item;
-
-    &:not(:first-child) {
-      border-top: none;
-    }
-
+    border-top: none;
   }
 
 }
