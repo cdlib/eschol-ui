@@ -86,20 +86,15 @@ $campus-selector-button-width: 30px;
   }
 
   div {
-    padding: $spacing-sm;
+    @extend %nav-item;
+    color: $color-black;
     background-color: $color-light-gray;
-    font-size: 1.1em;
   }
 
   a {
-    display: block;
-    padding: $spacing-sm;
-    border: 1px solid $color-dark-gray;
-    color: $color-dark-gray;
-    font-size: 1.1em;
-    text-decoration: none;
+    @extend %nav-item;
 
-    &:not(:first-of-type) {
+    &:not(:first-child) {
       border-top: none;
     }
 
