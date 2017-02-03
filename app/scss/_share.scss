@@ -8,7 +8,7 @@
     position: relative;
     min-height: $element-height;
     padding: 0 40px;
-    background: $color-teal url('../images/icon_share-square-o-white.svg') no-repeat left $spacing-sm center / 18px;
+    background: $color-teal url('../images/icon_share-square-o-white.svg') no-repeat left $spacing-sm center / 16px;
     color: $color-white;
     line-height: $element-height;
     user-select: none;
@@ -18,8 +18,7 @@
       top: 0;
       right: $spacing-sm;
       bottom: 0;
-      padding-right: 7px;
-      padding-left: 7px;
+      padding: 0 7px;
       background: url('../images/icon_arrow-down-white.svg') no-repeat center / 13px;
       content: '';
     }
@@ -41,7 +40,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  margin: 5px 0 0;
+  margin-top: 5px;
   background-color: lighten($color-black, 35%);
   z-index: 1;
 
@@ -75,7 +74,7 @@
 %c-share__link {
   @extend %nav-item;
   padding-left: 40px;
-  background: no-repeat left $spacing-sm center / 18px;
+  background: no-repeat left $spacing-sm center / 16px;
   color: $color-white;
 }
 
