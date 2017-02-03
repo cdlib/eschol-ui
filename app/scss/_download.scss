@@ -10,6 +10,7 @@
   padding: 0 $spacing-sm;
   border: none;
   border-right: 1px solid $color-white;
+  border-radius: $round-corner 0 0 $round-corner;
   background-color: $color-teal;
   color: $color-white;
 }
@@ -21,6 +22,7 @@
     min-height: $element-height;
     padding-right: 25px;
     padding-left: $spacing-sm;
+    border-radius: 0 $round-corner $round-corner 0;
     background-color: $color-teal;
     color: $color-white;
     line-height: $element-height;
