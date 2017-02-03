@@ -10,8 +10,8 @@ class ItemActionsComp extends React.Component {
       <div className="c-itemactions">
         <div className="c-itemactions__items1">
           <DownloadComp />
-          <button className="o-button__6">Buy in Print</button>
-          <button className="o-button__6">Buy e-Book</button>
+          <button className="c-itemactions__button1 o-button__6">Buy in Print</button>
+          <button className="c-itemactions__button2 o-button__6">Buy e-Book</button>
         </div>
         <div className="c-itemactions__items2">
           <ShareComp />
