@@ -2,12 +2,12 @@
 
 .c-share {
   position: relative;
-  width: 130px;
 
   summary {
+    display: inline-block;
     position: relative;
     min-height: $element-height;
-    padding-left: 40px;
+    padding: 0 40px;
     background: $color-teal url('../images/icon_share-square-o-white.svg') no-repeat left $spacing-sm center / 18px;
     color: $color-white;
     line-height: $element-height;
@@ -50,12 +50,31 @@
     backdrop-filter: blur(5px);
   }
 
+  @include bp(screen2) {
+    width: 130px;
+  }
+
+  li {
+
+    &:not(:first-child) a {
+      border-top: none;
+    }
+
+    @include bp(screen2) {
+
+      a {
+        border: none;
+      }
+
+    }
+
+  }
+
 }
 
 %c-share__link {
   @extend %nav-item;
   padding-left: 40px;
-  border: none;
   background: no-repeat left $spacing-sm center / 18px;
   color: $color-white;
 }
