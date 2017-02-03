@@ -1,6 +1,7 @@
 // ##### Item Actions Component ##### //
 
 .c-itemactions {
+  margin-bottom: $spacing-md;
 
   @include bp(screen3) {
     display: flex;
