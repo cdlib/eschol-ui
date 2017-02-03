@@ -5,9 +5,14 @@ import React from 'react'
 class ShareComp extends React.Component {
   render() {
     return (
-      <div className="c-share">
-        [share component to go here]
-      </div>
+      <details className="c-share">
+        <summary>Share</summary>
+        <ul className="c-share__list">
+          <li><a className="c-share__email" href="">Email</a></li>
+          <li><a className="c-share__facebook" href="">Facebook</a></li>
+          <li><a className="c-share__twitter" href="">Twitter</a></li>
+        </ul>
+      </details>
     )
   }
 }
