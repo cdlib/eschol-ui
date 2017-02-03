@@ -86,7 +86,7 @@ Selector pattern using above media query mixin:
   font-size: 1.1em;
   text-decoration: none;
 
-  &:hover {
+  &:hover:not(div) {
     color: $color-orange;
   }
 
