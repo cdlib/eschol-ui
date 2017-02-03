@@ -1,4 +1,4 @@
-// ##### Campus Display ##### //
+// ##### Campus Selector Component ##### //
 
 import React from 'react'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'

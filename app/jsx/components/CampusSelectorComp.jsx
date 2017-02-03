@@ -1,4 +1,4 @@
-// ##### Campus Heading and Menu Component ##### //
+// ##### Campus Selector Component ##### //
 
 import React from 'react'
 
