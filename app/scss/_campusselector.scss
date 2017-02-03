@@ -41,7 +41,7 @@ $campus-selector-button-width: 30px;
   summary {
     position: relative;
     width: $campus-selector-button-width;
-    height: $element-height;
+    min-height: $element-height;
 
     @include bp(screen3) {
       position: absolute;
@@ -77,12 +77,12 @@ $campus-selector-button-width: 30px;
   position: absolute; // to .c-subheader
   right: 0;
   left: 0;
-  margin: $spacing-sm 0 0;
+  margin-top: 5px;
   background-color: $color-white;
   z-index: 2;
 
   @include bp(screen3) {
-    margin-right: (-$campus-selector-button-width) - 1px;
+    margin-right: (-$campus-selector-button-width);
   }
 
 }
