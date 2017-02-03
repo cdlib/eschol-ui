@@ -10,7 +10,7 @@ class CampusSelectorComp extends React.Component {
           <a href="">UC Office of the President</a>
         </h2>
         <details className="c-campusselector__selector">
-          <summary></summary>
+          <summary arial-label="select campus"></summary>
           <div className="c-campusselector__selector-items">
             <div>eScholarship at &hellip;</div>
             <a href="">UC Berkeley</a>
