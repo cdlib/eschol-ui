@@ -89,8 +89,8 @@ $campus-selector-button-width: 30px;
 
 .c-campusselector__sub-heading {
   @extend %nav-item;
-  color: $color-black;
   background-color: $color-light-gray;
+  color: $color-black;
 }
 
 .c-campusselector__items {
