@@ -2,7 +2,7 @@
 
 .c-subheader1 {
   display: grid;
-  margin: (-$spacing-sm) (-$spacing-sm) 0;
+  margin: (-$spacing-sm) (-$spacing-sm) $spacing-md;
   padding: $spacing-sm;
   border-bottom: 2px solid $color-light-gray;
   background: $color-white;
