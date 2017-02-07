@@ -1,5 +1,43 @@
 // ##### Subheader 1 Component ##### //
 
 .c-subheader1 {
-  border: $bgreen;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  @include bp(screen3) {
+    grid-template-columns: repeat(3, auto);
+  }
+
+}
+
+.c-subheader1__logo {
+  // empty
+}
+
+.c-subheader1__search {
+  
+  @include bp(screen3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+}
+
+.c-subheader1__nav {
+
+  @include bp(screen3) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+}
+
+.c-subheader1__button {
+  justify-self: end;
+
+  @include bp(screen3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
 }
