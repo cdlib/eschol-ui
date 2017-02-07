@@ -2,11 +2,19 @@
 
 .c-subheader1 {
   display: grid;
+  margin: (-$spacing-sm) (-$spacing-sm) 0;
+  padding: $spacing-sm;
+  border-bottom: 2px solid $color-light-gray;
   background: $color-white;
 }
 
 .c-subheader1__header {
-  // no styles
+  margin-bottom: $spacing-sm;
+
+  @include bp(screen3) {
+    margin-bottom: 0;
+  }
+
 }
 
 .c-subheader1__nav {
