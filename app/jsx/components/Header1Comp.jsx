@@ -11,22 +11,17 @@ class HeaderComp1 extends React.Component {
   }
   render() {
     return (
-      <header className="c-header1">
-        <div className="c-header1__logosearch">
-          <a href="">
-            <picture>
-              <source srcSet="images/logo_escholarship.svg" media={"(min-width: "+Breakpoints.screen2+")"}/>
-              <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
-            </picture>
-          </a>  
-          <div className={this.state.searchActive ? "c-header1__search--active" : "c-header1__search"}>
-            <Search1Comp onClose = {()=>this.setState({searchActive: false})} />
-          </div>
-          <button className="c-header1__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
+      <header className="c-header2">
+        <a href="">
+          <picture>
+            <source srcSet="images/logo_escholarship.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
+            <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
+          </picture>
+        </a>
+        <div className={this.state.searchActive ? "c-header2__search--active" : "c-header2__search"}>
+          <Search1Comp onClose = {()=>this.setState({searchActive: false})} />
         </div>
-        <div className="c-header1__deposit">
-          <button className="c-header1__deposit-button">Get Started</button>
-        </div>
+        <button className="c-header2__search-open-button" aria-label="open search field" onClick = {()=> this.setState({searchActive: true})}></button>
       </header>
     )
   }

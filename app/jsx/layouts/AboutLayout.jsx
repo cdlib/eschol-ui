@@ -1,7 +1,7 @@
 // ##### About Layout ##### //
 
 import React from 'react'
-import Header2Comp from '../components/Header2Comp.jsx'
+import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
@@ -29,7 +29,7 @@ class AboutLayout extends React.Component {
       <div className="l-about">
         <div className="c-subheader1">
           <div className="c-subheader1__header">
-            <Header2Comp />
+            <Header1Comp />
           </div>
           <div className="c-subheader1__nav">
             <nav className="c-nav">
