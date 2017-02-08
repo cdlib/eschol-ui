@@ -27,7 +27,7 @@
 
   @include headings() {
     margin: 0 0 $spacing-sm;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
 
     a {
@@ -40,6 +40,7 @@
 
 .c-infopages__heading-title {
   display: block;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
