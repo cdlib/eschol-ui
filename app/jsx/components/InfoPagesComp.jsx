@@ -7,7 +7,7 @@ class InfoPagesComp extends React.Component {
     return (
       <div className="c-infopages">
         <div className="c-infopages__item">
-          <h2 className="c-infopages__heading">
+          <h2>
             <a href="">The Center for Environmental Design Research <span className="c-infopages__heading-title">In the Press</span>
             </a>
           </h2>
@@ -15,7 +15,7 @@ class InfoPagesComp extends React.Component {
           </p>
         </div>
         <div className="c-infopages__item">
-          <h2 className="c-infopages__heading">
+          <h2>
             <a href="">eScholarship <span className="c-infopages__heading-title">Content on this Site: Frequently Asked Questions</span>
             </a>
           </h2>
@@ -23,7 +23,7 @@ class InfoPagesComp extends React.Component {
           </p>
         </div>
         <div className="c-infopages__item">
-          <h2 className="c-infopages__heading">
+          <h2>
             <a href="">UC Berkeley <span className="c-infopages__heading-title">Content on this Site: Frequently Asked Questions</span>
             </a>
           </h2>

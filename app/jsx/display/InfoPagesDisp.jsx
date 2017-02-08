@@ -1,4 +1,4 @@
-// ##### Information Pages Search Result Display ##### //
+// ##### Informational Pages Display ##### //
 
 import React from 'react'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'

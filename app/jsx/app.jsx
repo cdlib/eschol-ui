@@ -108,7 +108,7 @@ ReactDOM.render((
       <Route path="/footer" component={FooterDisp} />
       <Route path="/header1" component={Header1Disp} />
       <Route path="/header2" component={Header2Disp} />
-      <Route path="/infodisplay" component={InfoPagesDisp} />
+      <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/journalhome" component={JournalHomeLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />

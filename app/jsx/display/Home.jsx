@@ -37,7 +37,7 @@ class Home extends React.Component {
           <li><a href="#frontmatter">Front Matter</a></li>
           <li><a href="#header1">Header 1 - Home</a></li>
           <li><a href="#header2">Header 2 - Other Than Home</a></li>
-          <li><a href="#infodisplay">Informational Display Search Result</a></li>
+          <li><a href="#infopages">Informational Pages</a></li>
           <li><a href="#itemactions">Item Actions</a></li>
           <li><a href="#journalinfo">Journal Information</a></li>
           <li><a href="#jump">Jump</a></li>
