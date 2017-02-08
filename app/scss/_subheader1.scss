@@ -9,12 +9,7 @@
 }
 
 .c-subheader1__header {
-  margin-bottom: $spacing-sm;
-
-  @include bp(screen3) {
-    margin-bottom: 0;
-  }
-
+  // no styles
 }
 
 .c-subheader1__nav {
