@@ -26,7 +26,7 @@
   }
 
   @include headings() {
-    margin: 0;
+    margin: 0 0 $spacing-sm;
     font-size: 1.2em;
     font-weight: normal;
 
@@ -41,4 +41,8 @@
 .c-infopages__heading-title {
   display: block;
   font-weight: bold;
+}
+
+.c-infopages__text {
+  max-height: 3.3em; // truncate beyond 3 lines via jQuery dotdotdot
 }
