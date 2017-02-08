@@ -5,7 +5,7 @@ import React from 'react'
 class PaginationComp extends React.Component {
   render() {
     return (
-      <div className="c-pagination" action="">
+      <div className="c-pagination">
         <a className="c-pagination__prevnext" href="">Previous</a>
         <a className="c-pagination__item--active" href="">1</a>
         <a className="c-pagination__item" href="">2</a>
