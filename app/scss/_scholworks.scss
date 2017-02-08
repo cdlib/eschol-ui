@@ -60,13 +60,13 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__heading {
-  height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
+  max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
   margin: 0 0 $spacing-md;
   font-size: 1.2em;
   font-weight: bold;
 
   @include bp(screen1) {
-    height: 2.2em; // truncate beyond 3 lines per jquery.dotdotdot
+    max-height: 2.2em; // truncate beyond 3 lines per jquery.dotdotdot
   }
 
   a {
@@ -76,10 +76,10 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__author {
-  height: 2.2em; // truncate beyond 2 lines per jquery.dotdotdot
+  max-height: 2.2em; // truncate beyond 2 lines per jquery.dotdotdot
 
   @include bp(screen1) {
-    height: 1.1em; // truncate beyond 1 line per jquery.dotdotdot
+    max-height: 1.1em; // truncate beyond 1 line per jquery.dotdotdot
   }
 
   a {
@@ -98,11 +98,11 @@ $scholworks-tag-height: $element-height;
 }
 
 .c-scholworks__abstract {
-  height: 3.8em; // truncate beyond 3 lines per jquery.dotdotdot
+  max-height: 3.8em; // truncate beyond 3 lines per jquery.dotdotdot
   margin: 0 0 $spacing-md;
 
   @include bp(screen1) {
-    height: 2.4em; // truncate beyond 2 lines per jquery.dotdotdot
+    max-height: 2.4em; // truncate beyond 2 lines per jquery.dotdotdot
   }
 
 }
