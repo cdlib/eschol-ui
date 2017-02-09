@@ -1,9 +1,14 @@
 // ##### Informational Pages Component ##### //
 
 .c-infopages {
+  // no styles
+}
+
+.c-infopages__items {
 
   @include bp(screen2) {
     display: flex;
+    margin-bottom: $spacing-md;
   }
 
 }
@@ -54,4 +59,10 @@
 
 .c-infopages__text {
   max-height: 3.3em; // truncate beyond 3 lines via jQuery dotdotdot
+}
+
+.c-infopages__all {
+  @extend %o-textlink__secondary;
+  display: flex;
+  justify-content: flex-end;
 }
