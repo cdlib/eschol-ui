@@ -2,6 +2,7 @@
 
 .c-subheader1 {
   display: grid;
+  position: relative; // to .c-subheader1__button
   margin: (-$spacing-sm) (-$spacing-sm) $spacing-md;
   padding: $spacing-sm;
   border-bottom: 2px solid $color-light-gray;
@@ -9,10 +10,20 @@
 }
 
 .c-subheader1__header {
-  // no styles
+  
+  @include bp(screen3) {
+    margin-right: 25%;
+
+    @supports (display: grid) {
+      margin-right: 0;
+    }
+
+  }
+
 }
 
 .c-subheader1__nav {
+
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 
@@ -23,6 +34,18 @@
 }
 
 .c-subheader1__button {
+  position: absolute;
+  top: 75px;
+  right: 10px;
+
+  @include bp(screen3) {
+    top: 10px;
+  }
+
+  @supports (display: grid) {
+    position: static;
+  }
+
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   justify-self: end;
