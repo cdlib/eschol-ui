@@ -1,6 +1,6 @@
-// ##### Header2 Component ##### //
+// ##### Header 1 & 2 Component Styles ##### //
 
-.c-header2 {
+.c-header {
   display: flex;
   justify-content: space-between;
   margin: (-$spacing-sm) (-$spacing-sm) 0;
@@ -8,7 +8,7 @@
   background: $color-white;
 }
 
-.c-header2__logo {
+.c-header__logo {
   height: $input-height;
 
   @include bp(screen3) {
@@ -17,7 +17,7 @@
 
 }
 
-%c-header2__search {
+%c-header__search {
   position: absolute;
   right: $spacing-sm;
   left: $spacing-sm;
@@ -34,16 +34,16 @@
 
 }
 
-.c-header2__search {
-  @extend %c-header2__search;
+.c-header__search {
+  @extend %c-header__search;
 }
 
-.c-header2__search--active {
-  @extend %c-header2__search;
+.c-header__search--active {
+  @extend %c-header__search;
   transform: translateX(0%);
 }
 
-.c-header2__search-open-button {
+.c-header__search-open-button {
   align-self: flex-start;
   height: $input-height;
   padding: 0 13px;
