@@ -1,6 +1,6 @@
-// ##### Subheader Component ##### //
+// ##### Subheader 2 Component ##### //
 
-.c-subheader {
+.c-subheader2 {
   display: flex;
   position: relative; // to absolute positioned nav component
   align-items: center;
@@ -20,7 +20,7 @@
 
 }
 
-.c-subheader__banner {
+.c-subheader2__banner {
   display: none;
 
   @include bp(screen3) {
@@ -30,7 +30,7 @@
 
 }
 
-.c-subheader__buttons {
+.c-subheader2__buttons {
   display: flex;
   flex-direction: row;
 
@@ -53,7 +53,7 @@
 
 }
 
-.c-subheader__button-fragment {
+.c-subheader2__button-fragment {
   position: absolute;
   left: -9999px;
 

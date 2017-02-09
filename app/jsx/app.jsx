@@ -54,7 +54,7 @@ import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
-import SubheaderDisp from './display/SubheaderDisp.jsx'
+import Subheader2Disp from './display/Subheader2Disp.jsx'
 import TabContent1Disp from './display/TabContent1Disp.jsx'
 import TabContent2Disp from './display/TabContent2Disp.jsx'
 import TabContent3Disp from './display/TabContent3Disp.jsx'
@@ -132,7 +132,7 @@ ReactDOM.render((
       <Route path="/test" component={Test} />
       <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
-      <Route path="/subheader" component={SubheaderDisp} />
+      <Route path="/subheader2" component={Subheader2Disp} />
       <Route path="/table" component={TableDisp} />
       <Route path="/tabcontent1" component={TabContent1Disp} />
       <Route path="/tabcontent2" component={TabContent2Disp} />

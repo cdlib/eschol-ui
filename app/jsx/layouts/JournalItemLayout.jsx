@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
-import SubheaderComp from '../components/SubheaderComp.jsx'
+import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import TabsComp from '../components/TabsComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
@@ -13,7 +13,7 @@ class JournalItemLayout extends React.Component {
     return (
       <div className="l-item">
         <Header2Comp />
-        <SubheaderComp />
+        <Subheader2Comp />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <a href="">eScholarship</a>
