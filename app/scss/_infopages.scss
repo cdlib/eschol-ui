@@ -16,7 +16,15 @@
     border: 1px solid $color-dark-gray;
 
     &:not(:first-child) {
-      border-left: none;
+      margin-left: $spacing-sm;
+    }
+
+  }
+
+  @include bp(screen3) {
+
+    &:not(:first-child) {
+      margin-left: $spacing-md;
     }
 
   }
