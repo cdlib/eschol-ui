@@ -5,19 +5,10 @@
   position: relative; // to absolute positioned nav component
   align-items: center;
   justify-content: space-between;
-  padding-bottom: $spacing-sm;
+  margin: 0 (-$spacing-sm);
+  padding: 0 $spacing-sm $spacing-sm;
   border-bottom: 2px solid $color-light-gray;
-
-  @include bp(screen2) {
-    margin: 0 (-$spacing-sm);
-    padding: 0 $spacing-sm $spacing-sm;
-    background-color: $color-white;
-  }
-
-  @include bp(screen3) {
-    padding: 0 $spacing-sm $spacing-sm;
-  }
-
+  background-color: $color-white;
 }
 
 .c-subheader2__banner {
@@ -41,7 +32,7 @@
   button {
 
     &:not(:first-child) {
-      margin: 0 0 0 2px;
+      margin-left: 2px;
 
       @include bp(screen3) {
         margin: 2px 0 0;
