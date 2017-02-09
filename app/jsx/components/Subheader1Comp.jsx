@@ -1,9 +1,8 @@
 // ##### Subheader 1 Component ##### //
 
 import React from 'react'
-import Breakpoints from '../../js/breakpoints.json'
-import NavComp from '../components/NavComp.jsx'
 import Header2Comp from '../components/Header2Comp.jsx'
+import NavComp from '../components/NavComp.jsx'
 
 class Subheader1Comp extends React.Component {
   render() {
