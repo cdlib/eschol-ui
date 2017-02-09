@@ -79,13 +79,9 @@
 body {
   margin: 0 auto;
   padding: 10px;
+  background-color: lighten($color-light-gray, 15%);
   font-family: 'KievitWeb';
   overflow-x: hidden;
-
-  @include bp(screen2) {
-    background: lighten($color-light-gray, 15%);
-  }
-
 }
 
 p {
