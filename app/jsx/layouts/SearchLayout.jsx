@@ -94,10 +94,6 @@ class SearchLayout extends React.Component {
             </details>
           </aside>
           <main>
-            <div className="l-search__sort-pagination">
-              <SortComp />
-              <PaginationComp />
-            </div>
             <section className="o-columnbox1">
               <header>
                 <h2 className="o-columnbox1__heading">Informational Pages (12 results)</h2>
@@ -108,6 +104,10 @@ class SearchLayout extends React.Component {
               <header>
                 <h2 className="o-columnbox1__heading">Scholarly Works (12,023 results)</h2>
               </header>
+              <div className="l-search__sort-pagination">
+                <SortComp />
+                <PaginationComp />
+              </div>
               <ScholWorksComp />
               <ScholWorksComp />
             </section>
