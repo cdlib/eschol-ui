@@ -96,13 +96,13 @@ class SearchLayout extends React.Component {
           <main>
             <section className="o-columnbox1">
               <header>
-                <h2 className="o-columnbox1__heading">Informational Pages (12 results)</h2>
+                <h2>Informational Pages (12 results)</h2>
               </header>
               <InfoPagesComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2 className="o-columnbox1__heading">Scholarly Works (12,023 results)</h2>
+                <h2>Scholarly Works (12,023 results)</h2>
               </header>
               <div className="l-search__sort-pagination">
                 <SortComp />
