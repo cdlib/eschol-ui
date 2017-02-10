@@ -1,0 +1,34 @@
+// ##### Toggle List Component ##### //
+
+.c-togglelist {
+
+  summary {
+    position: relative;
+    padding-left: 25px;
+    user-select: none;
+
+    &::after { // ::before can't be used; see resets.scss
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      padding: 8px;
+      background: url('../images/icon_plus-black.svg') no-repeat center / 16px;
+      content: '';
+    }
+
+  }
+
+  &[open] {
+
+    summary {
+
+      &::after {
+        background-image: url('../images/icon_minus-black.svg');
+      }
+
+    }
+
+  }
+
+}
