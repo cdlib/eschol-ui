@@ -4,6 +4,23 @@ $togglelist-list-spacing: 10px;
 $togglelist-indent: 22px;
 
 .c-togglelist {
+  // no styles
+}
+
+.c-togglelist__buttons {
+  margin-bottom: $spacing-md;
+
+  button {
+
+    &:first-child {
+      margin-right: $spacing-sm;
+    }
+
+  }
+
+}
+
+.c-togglelist__mainlist {
   @extend %no-bullet-ul;
   margin-left: $togglelist-indent;
 
