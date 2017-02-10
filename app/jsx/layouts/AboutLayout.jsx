@@ -32,30 +32,30 @@ class AboutLayout extends React.Component {
             <Header1Comp />
           </div>
           <div className="c-subheader1__nav">
-            <nav className="c-nav">
+            <div className="c-nav">
               <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
                 <summary className="c-nav__main-button">Menu
                 </summary>
-                <div className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"} role="list">
+                <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
                   <NavSubComp name="Campus Sites" open={this.state.submenuActive == 1} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 1 : null})}>
-                    <a href="" role="listitem">UC Berkeley</a>
-                    <a href="" role="listitem">UC Davis</a>
-                    <a href="" role="listitem">UC Irvine</a>
-                    <a href="" role="listitem">UCLA</a>
-                    <a href="" role="listitem">UC Merced</a>
-                    <a href="" role="listitem">UC Riverside</a>
-                    <a href="" role="listitem">UC San Diego</a>
-                    <a href="" role="listitem">UC San Francisco</a>
-                    <a href="" role="listitem">UC Santa Barbara</a>
-                    <a href="" role="listitem">UC Santa Cruz</a>
-                    <a href="" role="listitem">UC Office of the President</a>
-                    <a href="" role="listitem">UC Press</a>
+                    <a href="">UC Berkeley</a>
+                    <a href="">UC Davis</a>
+                    <a href="">UC Irvine</a>
+                    <a href="">UCLA</a>
+                    <a href="">UC Merced</a>
+                    <a href="">UC Riverside</a>
+                    <a href="">UC San Diego</a>
+                    <a href="">UC San Francisco</a>
+                    <a href="">UC Santa Barbara</a>
+                    <a href="">UC Santa Cruz</a>
+                    <a href="">UC Office of the President</a>
+                    <a href="">UC Press</a>
                   </NavSubComp>
-                  <a href="" role="listitem" className="c-nav__item--active">UC Open Access Policies</a>
-                  <a href="" role="listitem">eScholarship Publishing</a>
-                </div>
+                  <a href="" className="c-nav__item--active">UC Open Access Policies</a>
+                  <a href="">eScholarship Publishing</a>
+                </nav>
               </details>
-            </nav>
+            </div>
           </div>
           <div className="c-subheader1__button">
             <button className="o-button__3">Get Started</button>
