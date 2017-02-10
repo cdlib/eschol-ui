@@ -3,25 +3,29 @@
 import React from 'react'
 
 class ToggleListComp extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {submenuActive: false}
+  }
   render() {
     return (
       <div className="c-togglelist">
         <div className="c-togglelist__buttons">
-          <button className="o-button__2">Expand All</button>
-          <button className="o-button__2">Collapse All</button>
+          <button className="o-button__2" onClick = {()=> this.setState({submenuActive: true})}>Expand All</button>
+          <button className="o-button__2" onClick = {()=> this.setState({submenuActive: false})}>Collapse All</button>
         </div>
         <ul className="c-togglelist__mainlist">
           <li><a href="">Bourns College of Engineering</a></li>
           <li><a href="">Center for Environmental Design Research</a></li>
           <li><a href="">California Academic Partnership Program</a></li>
           <li>
-            <details className="c-togglelist__sublist">
+            <details className="c-togglelist__sublist" open={this.state.submenuActive ? "open" : ""}>
               <summary>California Center for Population Research</summary>
               <ul>
                 <li><a href="">Safe Transportation Research & Education Center</a></li>
                 <li><a href="">UC Berkeley Center for Future Urban Transport: A Volvo Center of Excellence</a></li>
                 <li>
-                  <details className="c-togglelist__sublist">
+                  <details className="c-togglelist__sublist" open={this.state.submenuActive ? "open" : ""}>
                     <summary>UC Berkeley Transportation Sustainability Research Center</summary>
                     <ul>
                       <li><a href="">Center for Latino Policy Research</a></li>
