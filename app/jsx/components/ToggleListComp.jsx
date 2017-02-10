@@ -5,18 +5,18 @@ import React from 'react'
 class ToggleListComp extends React.Component {
   render() {
     return (
-      <ul>
+      <ul className="c-togglelist">
         <li><a href="">Bourns College of Engineering</a></li>
         <li><a href="">Center for Environmental Design Research</a></li>
         <li><a href="">California Academic Partnership Program</a></li>
         <li>
-          <details className="c-togglelist">
+          <details className="c-togglelist__sublist">
             <summary>California Center for Population Research</summary>
             <ul>
               <li><a href="">Safe Transportation Research & Education Center</a></li>
               <li><a href="">UC Berkeley Center for Future Urban Transport: A Volvo Center of Excellence</a></li>
               <li>
-                <details className="c-togglelist">
+                <details className="c-togglelist__sublist">
                   <summary>UC Berkeley Transportation Sustainability Research Center</summary>
                   <ul>
                     <li><a href="">Center for Latino Policy Research</a></li>

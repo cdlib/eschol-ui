@@ -1,27 +1,50 @@
 // ##### Toggle List Component ##### //
 
+$togglelist-list-spacing: 10px;
+$togglelist-indent: 22px;
+
 .c-togglelist {
+  @extend %no-bullet-ul;
+  margin-left: $togglelist-indent;
+
+  li {
+    margin-bottom: $togglelist-list-spacing;
+
+    a {
+      @extend %o-textlink__secondary;
+    }
+
+  }
+
+}
+
+.c-togglelist__sublist {
 
   summary {
     position: relative;
-    padding-left: 25px;
+    margin-bottom: $togglelist-list-spacing;
+    color: $color-teal;
     user-select: none;
 
     &::after { // ::before can't be used; see resets.scss
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 0;
+      left: (-$togglelist-indent);
       padding: 8px;
       background: url('../images/icon_plus-black.svg') no-repeat center / 16px;
       content: '';
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
 
   }
 
   &[open] {
 
-    summary {
+    > summary {
 
       &::after {
         background-image: url('../images/icon_minus-black.svg');
@@ -29,6 +52,11 @@
 
     }
 
+  }
+
+  ul {
+    @extend %no-bullet-ul;
+    margin-left: $togglelist-indent;
   }
 
 }
