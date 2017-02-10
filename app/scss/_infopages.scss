@@ -14,28 +14,34 @@
 }
 
 .c-infopages__item {
-  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  &:not(:first-child) {
+    padding-top: $spacing-md;
+    border-top: 1px solid $color-dark-gray;
+  }
 
   @include bp(screen2) {
     flex: 0 1 33%; // 3 columns
+    margin-bottom: 0;
+    padding: $spacing-sm;
     border: 1px solid $color-dark-gray;
 
     &:not(:first-child) {
       margin-left: $spacing-sm;
+      padding-top: $spacing-sm;
     }
 
   }
 
   @include bp(screen3) {
+    padding: $spacing-md;
 
     &:not(:first-child) {
       margin-left: $spacing-md;
+      padding-top: $spacing-md;
     }
 
-  }
-
-  &:not(:first-child) {
-    border-top: 1px solid $color-dark-gray;
   }
 
   @include headings() {
