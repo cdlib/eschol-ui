@@ -14,6 +14,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import AboutLayout from './layouts/AboutLayout.jsx'
 import AuthorListDisp from './display/AuthorListDisp.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
+import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import MarqueeDisp from './display/MarqueeDisp.jsx'
@@ -93,6 +94,7 @@ ReactDOM.render((
       <Route path="/about" component={AboutLayout} />
       <Route path="/authorlist" component={AuthorListDisp} />
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
+      <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
       <Route path="/button" component={ButtonDisp} />
       <Route path="/checkbox" component={CheckboxDisp} />
