@@ -1,7 +1,7 @@
 // ##### Content Well Component ##### //
 
 .c-well {
-  margin-bottom: $spacing-md;
+  margin: 0 $spacing-sm $spacing-md;
   padding: $spacing-sm;
   background-color: lighten($color-teal, 60%);
 
