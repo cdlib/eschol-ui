@@ -16,6 +16,9 @@
 
   @include bp(screen3) {
     display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 800px;
     margin-right: $spacing-md;
   }
 
