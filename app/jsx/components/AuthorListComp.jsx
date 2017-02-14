@@ -1,8 +1,13 @@
 // ##### Author List Component ##### //
 
 import React from 'react'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 
 class AuthorListComp extends React.Component {
+  componentDidMount() {
+    $('.c-authorlist__list').dotdotdot({watch:'window', after:'.c-authorlist__list-more-link'});
+  }
   render() {
     return (
       <div className="c-authorlist">
@@ -25,7 +30,9 @@ class AuthorListComp extends React.Component {
           <li>Price, Amber L;</li>
           <li>Turner, Bryce A;</li>
           <li>Robic, Srebrenka</li>
+          <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
         </ul>
+        
       </div>
     )
   }

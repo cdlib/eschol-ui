@@ -18,6 +18,7 @@
 
 .c-authorlist__list {
   @extend %no-bullet-ul;
+  max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
 
   li {
     display: inline;
@@ -28,4 +29,8 @@
 
   }
 
+}
+
+.c-authorlist__list-more-link {
+  // no styles
 }
