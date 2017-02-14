@@ -27,6 +27,14 @@
       content: '\00a0'; // no-break space
     }
 
+    &:nth-last-child(n+3) {
+
+      &::after {
+      content: ';\00a0'; // semicolon with no-break space
+      }
+
+    }
+
   }
 
 }
