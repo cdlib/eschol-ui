@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 
 class AuthorListComp extends React.Component {
   componentDidMount() {
-    $('.c-authorlist__list').dotdotdot({watch:'window', after:'.c-authorlist__list-more-link'});
+    $('.c-authorlist__list').dotdotdot({watch:'window', after:'.c-authorlist__list-more-link', ellipsis:' '});
   }
   render() {
     return (
