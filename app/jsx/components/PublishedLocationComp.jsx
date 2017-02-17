@@ -6,10 +6,10 @@ class PublishedLocationComp extends React.Component {
   render() {
     return (
       <div className="c-publishedlocation">
-        <div className="c-publishedlocation__location">
-          <a className="o-textlink__secondary" href="">Published Web Location</a>
-          <span>No data is associated with this publication.</span>
+        <div className="c-publishedlocation__heading">
+          <h2>Published Web Location</h2>
         </div>
+        <a className="c-publishedlocation__link" href="">http://www.ieee-security.org/gdgfhnhlgkbdfvsasdfhkmhfxzfbcvxbdjbkgbgcbnbvnvbdvzfsgfdbdsgdvfshfbsdghnbdvsfhbdvfbdv.PDF</a>
         <a href="" className="c-publishedlocation__license">
           <img src="images/icon_cc-by-nc.svg" alt=""/>
         </a>

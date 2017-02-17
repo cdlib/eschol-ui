@@ -1,31 +1,43 @@
 // ##### Published Location Component ##### //
 
 .c-publishedlocation {
+  position: relative;
   margin-bottom: $spacing-md;
 
   @include bp(screen1) {
-    display: flex;
-    align-items: flex-start;
+    // empty
   }
 
 }
 
-.c-publishedlocation__location {
-  margin-bottom: 0.25em;
-
-  a {
-    display: block;
-    margin-bottom: 0.25em;
+.c-publishedlocation__heading {
+  @include headings() {
+    margin: 0 0 $spacing-sm;
+    font-size: 1em;
   }
 
+}
+
+.c-publishedlocation__link {
+  @extend %o-textlink__secondary;
+  display: inline-block;
+  margin-bottom: $spacing-sm;
+  overflow-wrap: break-word; // all except IE
+  word-wrap: break-word; // IE
+  hyphens: auto;
+
   @include bp(screen1) {
-    flex: 1;
-    margin-right: $spacing-md;
-    margin-bottom: 0;
+    margin-right: 130px; // width of license image
   }
 
 }
 
 .c-publishedlocation__license {
-  // not used
+
+  @include bp(screen1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }
