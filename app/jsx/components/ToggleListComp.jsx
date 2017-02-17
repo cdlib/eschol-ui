@@ -1,18 +1,19 @@
 // ##### Toggle List Component ##### //
 
 import React from 'react'
+import ToggleListSubComp from '../components/ToggleListSubComp.jsx'
 
 class ToggleListComp extends React.Component {
   constructor(props){
     super(props)
-    this.state = {submenuActive: false}
+    this.state = {override: {open: false, date: new Date()}}
   }
   render() {
     return (
       <div className="c-togglelist">
         <div className="c-togglelist__buttons">
-          <button className="o-button__2" onClick = {()=> this.setState({submenuActive: true})}>Expand All</button>
-          <button className="o-button__2" onClick = {()=> this.setState({submenuActive: false})}>Collapse All</button>
+          <button className="o-button__2" onClick = {()=> this.setState({override: {open: true, date: new Date()}})}>Expand All</button>
+          <button className="o-button__2" onClick = {()=> this.setState({override: {open: false, date: new Date()}})}>Collapse All</button>
         </div>
         <ul className="c-togglelist__mainlist">
           <li><a href="">Bourns College of Engineering</a></li>
