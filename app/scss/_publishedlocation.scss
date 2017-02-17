@@ -2,10 +2,9 @@
 
 .c-publishedlocation {
   position: relative;
-  margin-bottom: $spacing-md;
 
   @include bp(screen1) {
-    
+
     @supports (display: grid) {
       display: grid;
       grid-template-columns: 1fr auto;
