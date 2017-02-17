@@ -3,7 +3,7 @@
 import React from 'react'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
-import PublishedLocationComp from '../components/PublishedLocationComp.jsx'
+import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
 import ToggleContentComp from '../components/ToggleContentComp.jsx'
 
@@ -14,7 +14,7 @@ class TabContent1Comp extends React.Component {
         <ItemActionsComp />
         <h1 className="c-tabcontent__heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
         <AuthorListComp />
-        <PublishedLocationComp />
+        <PubLocationComp />
         <PubDataComp />
         <details className="c-togglecontent" open>
           <summary><h2>Abstract</h2></summary>

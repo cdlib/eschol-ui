@@ -1,6 +1,6 @@
 // ##### Published Location Component ##### //
 
-.c-publishedlocation {
+.c-publocation {
   position: relative;
 
   @include bp(screen1) {
@@ -15,7 +15,7 @@
 
 }
 
-.c-publishedlocation__heading {
+.c-publocation__heading {
 
   @include headings() {
     margin: 0 0 $spacing-sm;
@@ -24,7 +24,7 @@
 
 }
 
-.c-publishedlocation__link {
+.c-publocation__link {
   @extend %o-textlink__secondary;
   display: block;
   margin-bottom: $spacing-sm;
@@ -44,7 +44,7 @@
 
 }
 
-.c-publishedlocation__license {
+.c-publocation__license {
 
   @include bp(screen1) {
     position: absolute;
