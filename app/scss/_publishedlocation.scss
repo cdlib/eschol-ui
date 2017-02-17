@@ -35,7 +35,7 @@
 
   @include bp(screen1) {
     margin-right: 120px; // width of license image
-    padding-right: $spacing-sm;
+    padding-right: $spacing-md;
 
     @supports (display: grid) {
       margin-right: 0;
