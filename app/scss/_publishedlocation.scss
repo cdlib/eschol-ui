@@ -5,12 +5,19 @@
   margin-bottom: $spacing-md;
 
   @include bp(screen1) {
-    // empty
+    
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: repeat(2, auto);
+    }
+    
   }
 
 }
 
 .c-publishedlocation__heading {
+
   @include headings() {
     margin: 0 0 $spacing-sm;
     font-size: 1em;
@@ -20,14 +27,20 @@
 
 .c-publishedlocation__link {
   @extend %o-textlink__secondary;
-  display: inline-block;
+  display: block;
   margin-bottom: $spacing-sm;
   overflow-wrap: break-word; // all except IE
   word-wrap: break-word; // IE
   hyphens: auto;
 
   @include bp(screen1) {
-    margin-right: 130px; // width of license image
+    margin-right: 120px; // width of license image
+    padding-right: $spacing-sm;
+
+    @supports (display: grid) {
+      margin-right: 0;
+    }
+
   }
 
 }
@@ -38,6 +51,13 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    @supports (display: grid) {
+      position: static;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+
   }
 
 }
