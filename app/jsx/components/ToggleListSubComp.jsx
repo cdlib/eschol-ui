@@ -9,8 +9,11 @@ class ToggleListSubComp extends React.Component {
   }
   render() {
     return (
-      <details className="c-togglelist__sublist" open={this.props.override.date > this.state.date ? this.props.override.open : this.state.open}>
-        <summary onClick={event => this.setState({open: !event.target.open})}>{this.props.title}</summary>
+      <details className="c-togglelist__sublist" ref={dom => this.details = dom} open={this.props.override.date > this.state.date ? this.props.override.open : this.state.open}>
+        <summary onClick={event => {
+          this.setState({open: !this.details.open, date: new Date()})
+          event.preventDefault()
+        }}>{this.props.title}</summary>
         <ul>
           {this.props.children}
         </ul>

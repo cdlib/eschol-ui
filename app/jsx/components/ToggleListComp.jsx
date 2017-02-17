@@ -20,23 +20,17 @@ class ToggleListComp extends React.Component {
           <li><a href="">Center for Environmental Design Research</a></li>
           <li><a href="">California Academic Partnership Program</a></li>
           <li>
-            <details className="c-togglelist__sublist" open={this.state.submenuActive ? "open" : ""}>
-              <summary>California Center for Population Research</summary>
-              <ul>
-                <li><a href="">Safe Transportation Research & Education Center</a></li>
-                <li><a href="">UC Berkeley Center for Future Urban Transport: A Volvo Center of Excellence</a></li>
-                <li>
-                  <details className="c-togglelist__sublist" open={this.state.submenuActive ? "open" : ""}>
-                    <summary>UC Berkeley Transportation Sustainability Research Center</summary>
-                    <ul>
-                      <li><a href="">Center for Latino Policy Research</a></li>
-                      <li><a href="">Center for Research on Native American Issues</a></li>
-                      <li><a href="">Center for Right-Wing Studies</a></li>
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-            </details>
+            <ToggleListSubComp title="California Center for Population Research" override={this.state.override}>
+              <li><a href="">Safe Transportation Research & Education Center</a></li>
+              <li><a href="">UC Berkeley Center for Future Urban Transport: A Volvo Center of Excellence</a></li>
+              <li>
+                <ToggleListSubComp title="UC Berkeley Transportation Sustainability Research Center" override={this.state.override}>
+                  <li><a href="">Center for Latino Policy Research</a></li>
+                  <li><a href="">Center for Research on Native American Issues</a></li>
+                  <li><a href="">Center for Right-Wing Studies</a></li>
+                </ToggleListSubComp>
+              </li>
+            </ToggleListSubComp>
           </li>
           <li><a href="">California Community College Collaborative (C4)</a></li>
           <li><a href="">California Digital Library</a></li>
