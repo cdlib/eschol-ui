@@ -50,7 +50,7 @@ class Home extends React.Component {
           <li><a href="#marquee">Marquee</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#pubdata">Published Data</a></li>
-          <li><a href="#publishedlocation">Published Location</a></li>
+          <li><a href="#publocation">Published Location</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#search1">Search 1 - With Tagline</a></li>
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
