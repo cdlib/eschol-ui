@@ -61,11 +61,11 @@ class Home extends React.Component {
           <li><a href="#subheader1">Subheader 1</a></li>
           <li><a href="#subheader2">Subheader 2</a></li>
           <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#tabcontent1">Tab 1 - Main</a></li>
-          <li><a href="#tabcontent2">Tab 2 - Supplemental Material</a></li>
-          <li><a href="#tabcontent3">Tab 3 - Metrics</a></li>
-          <li><a href="#tabcontent4">Tab 4 - Author & Article Info</a></li>
-          <li><a href="#tabcontent5">Tab 5 - Comments</a></li>
+          <li><a href="#tabmain">Tab - Main</a></li>
+          <li><a href="#tabsupplemental">Tab - Supplemental Material</a></li>
+          <li><a href="#tabmetrics">Tab - Metrics</a></li>
+          <li><a href="#tabauthor">Tab - Author & Article</a></li>
+          <li><a href="#tabcomments">Tab - Comments</a></li>
           <li><a href="#table">Table</a></li>
           <li><a href="#togglecontent">Toggle Content</a></li>
           <li><a href="#togglelist">Toggle List</a></li>

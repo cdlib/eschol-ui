@@ -1,4 +1,4 @@
-// ##### Tab Content 1 Component ##### //
+// ##### Tab Main Content Component ##### //
 
 import React from 'react'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
@@ -7,7 +7,7 @@ import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
 import ToggleContentComp from '../components/ToggleContentComp.jsx'
 
-class TabContent1Comp extends React.Component {
+class TabMainComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
@@ -36,4 +36,4 @@ class TabContent1Comp extends React.Component {
   }
 }
 
-module.exports = TabContent1Comp;
+module.exports = TabMainComp;
