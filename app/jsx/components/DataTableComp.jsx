@@ -1,11 +1,11 @@
-// ##### Table Component ##### //
+// ##### Data Table Component ##### //
 
 import React from 'react'
 
-class TableComp extends React.Component {
+class DataTableComp extends React.Component {
   render() {
     return (
-      <table className="c-table">
+      <table className="c-datatable">
         <thead>
           <tr>
             <th scope="col">Quantity</th>
@@ -39,4 +39,4 @@ class TableComp extends React.Component {
   }
 }
 
-module.exports = TableComp;
+module.exports = DataTableComp;

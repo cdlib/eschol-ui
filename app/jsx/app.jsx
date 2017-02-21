@@ -62,7 +62,7 @@ import TabSupplementalDisp from './display/TabSupplementalDisp.jsx'
 import TabMetricsDisp from './display/TabMetricsDisp.jsx'
 import TabAuthorDisp from './display/TabAuthorDisp.jsx'
 import TabCommentsDisp from './display/TabCommentsDisp.jsx'
-import TableDisp from './display/TableDisp.jsx'
+import DataTableDisp from './display/DataTableDisp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
@@ -138,7 +138,7 @@ ReactDOM.render((
       <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader2" component={Subheader2Disp} />
-      <Route path="/table" component={TableDisp} />
+      <Route path="/table" component={DataTableDisp} />
       <Route path="/tabmain" component={TabMainDisp} />
       <Route path="/tabsupplemental" component={TabSupplementalDisp} />
       <Route path="/tabmetrics" component={TabMetricsDisp} />
