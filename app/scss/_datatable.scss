@@ -18,7 +18,7 @@ $table-border-size: 1px;
 
   thead {
 
-    th {
+    th[scope='col'] {
       background-color: $color-teal;
       color: $color-white;
       font-weight: normal;
