@@ -173,11 +173,13 @@ $scholworks-tag-height: $element-height;
   background-image: inline('../images/icon_play-circle-o.svg');
 }
 
-.c-scholworks__rights {
+.c-scholworks__license {
   flex: 0 0 auto;
+  margin-bottom: $spacing-sm;
 
   @include bp(screen2) {
-    margin: ($spacing-sm * 2) 0 0;
+    align-self: flex-end;
+    margin-bottom: 0;
   }
 
 }
