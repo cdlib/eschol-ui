@@ -33,6 +33,7 @@ class Home extends React.Component {
           <li><a href="#download">Download</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
+          <li><a href="#fileitem">File Item</a></li>
           <li><a href="#filter">Filter</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#frontmatter">Front Matter</a></li>
