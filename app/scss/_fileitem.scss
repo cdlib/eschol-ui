@@ -1,5 +1,40 @@
 // ##### File Item Component ##### //
 
 .c-fileitem {
-  border: $bgreen;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-md;
+  border-bottom: 1px solid $color-dark-gray;
+}
+
+.c-fileitem__heading {
+  margin: 0 0 $spacing-sm;
+  color: $color-teal;
+  font-size: 1.2em;
+  font-weight: normal;
+  // background: url('../images/icon_picture.svg') no-repeat center left / 16px;
+
+  &::before {
+    margin-right: 8px;
+    padding: 8px;
+    background: url('../images/icon_picture.svg') no-repeat center / 16px;
+    content: '';
+  }
+
+}
+
+.c-fileitem__image {
+  display: block;
+  align-self: flex-start;
+  max-width: 100%;
+  margin-bottom: $spacing-sm;
+}
+
+.c-fileitem__button {
+  align-self: flex-end;
+  margin-bottom: $spacing-sm;
+}
+
+.c-fileitem__description {
+  margin-bottom: $spacing-md;
 }
