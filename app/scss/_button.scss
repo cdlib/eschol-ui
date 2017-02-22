@@ -53,3 +53,9 @@
   background: $color-teal url('../images/icon_print-white.svg') no-repeat left 8px center / 16px;
   color: $color-white;
 }
+
+// no border or background with teal text:
+.o-button__7 {
+  @extend %o-button;
+  color: $color-teal;
+}
