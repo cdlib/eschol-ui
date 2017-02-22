@@ -1,13 +1,13 @@
-// ##### File Item Component ##### //
+// ##### Media File Component ##### //
 
-.c-fileitem {
+.c-mediafile {
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing-md;
   border-bottom: 1px solid $color-dark-gray;
 }
 
-.c-fileitem__heading {
+.c-mediafile__heading {
   margin: 0 0 $spacing-sm;
   color: $color-teal;
   font-size: 1.2em;
@@ -23,18 +23,18 @@
 
 }
 
-.c-fileitem__image {
+.c-mediafile__image {
   display: block;
   align-self: flex-start;
   max-width: 100%;
   margin-bottom: $spacing-sm;
 }
 
-.c-fileitem__button {
+.c-mediafile__button {
   align-self: flex-end;
   margin-bottom: $spacing-sm;
 }
 
-.c-fileitem__description {
+.c-mediafile__description {
   margin-bottom: $spacing-md;
 }

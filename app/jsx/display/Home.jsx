@@ -33,7 +33,6 @@ class Home extends React.Component {
           <li><a href="#download">Download</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
-          <li><a href="#fileitem">File Item</a></li>
           <li><a href="#filter">Filter</a></li>
           <li><a href="#footer">Footer</a></li>
           <li><a href="#frontmatter">Front Matter</a></li>
@@ -49,6 +48,7 @@ class Home extends React.Component {
           <li><a href="#nav2">Navigation 2 (old) - Campus</a></li>
           <li><a href="#navbar">Nav Bar</a></li>
           <li><a href="#marquee">Marquee</a></li>
+          <li><a href="#mediafile">Media File</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#pubdata">Published Data</a></li>
           <li><a href="#publocation">Published Location</a></li>
