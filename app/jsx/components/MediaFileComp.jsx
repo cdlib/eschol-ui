@@ -10,7 +10,7 @@ class MediaFileComp extends React.Component {
         <img className="c-mediafile__image" src="http://placehold.it/300x200?text=Image" alt="" />
         <button className="c-mediafile__button o-button__7">Download</button>
         <div className="c-mediafile__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe, quia sequi ipsum excepturi officiis perferendis, nihil omnis, voluptatem facilis explicabo maxime, fugiat repudiandae rerum? Adipisci id necessitatibus dolorem. Alias!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe, quia sequi ipsum excepturi officiis perferendis, nihil omnis!
         </div>
       </div>
     )

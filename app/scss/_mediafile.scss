@@ -6,6 +6,13 @@
   margin-bottom: $spacing-md;
   padding: $spacing-sm;
   border-bottom: 1px solid $color-dark-gray;
+
+  @include bp(screen1) {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
 }
 
 .c-mediafile {
@@ -28,6 +35,11 @@
     margin-right: 8px;
     padding: 8px;
     background: no-repeat center / 16px;
+  }
+
+  @include bp(screen1) {
+    float: right;
+    width: 48%;
   }
 
 }
@@ -61,13 +73,32 @@
   align-self: flex-start;
   max-width: 100%;
   margin-bottom: $spacing-sm;
+
+  @include bp(screen1) {
+    float: left;
+    width: 48%;
+  }
+
 }
 
 .c-mediafile__button {
   align-self: flex-end;
   margin-bottom: $spacing-sm;
+
+  @include bp(screen1) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
 }
 
 .c-mediafile__description {
-  // no styles
+
+  @include bp(screen1) {
+    margin-bottom: 35px;
+    float: right;
+    width: 48%;
+  }
+
 }
