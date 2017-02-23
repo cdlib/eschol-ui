@@ -1,10 +1,21 @@
 // ##### Media File Component ##### //
 
-.c-mediafile {
+%c-mediafile {
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing-md;
+  padding: $spacing-sm;
   border-bottom: 1px solid $color-dark-gray;
+}
+
+.c-mediafile {
+  @extend %c-mediafile;
+}
+
+.c-mediafile--selected {
+  @extend %c-mediafile;
+  border: none;
+  background-color: $color-light-gray;
 }
 
 %c-mediafile__heading {
@@ -58,5 +69,5 @@
 }
 
 .c-mediafile__description {
-  margin-bottom: $spacing-md;
+  // no styles
 }
