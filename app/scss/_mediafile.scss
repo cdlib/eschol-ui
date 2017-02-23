@@ -38,8 +38,8 @@
   }
 
   @include bp(screen1) {
-    float: right;
     width: 48%;
+    float: right;
   }
 
 }
@@ -75,8 +75,8 @@
   margin-bottom: $spacing-sm;
 
   @include bp(screen1) {
-    float: left;
     width: 48%;
+    float: left;
   }
 
 }
@@ -96,9 +96,9 @@
 .c-mediafile__description {
 
   @include bp(screen1) {
+    width: 48%;
     margin-bottom: 35px;
     float: right;
-    width: 48%;
   }
 
 }
