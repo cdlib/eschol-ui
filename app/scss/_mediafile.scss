@@ -7,18 +7,40 @@
   border-bottom: 1px solid $color-dark-gray;
 }
 
-.c-mediafile__heading {
+%c-mediafile__heading {
   margin: 0 0 $spacing-sm;
   color: $color-teal;
   font-size: 1.2em;
   font-weight: normal;
-  // background: url('../images/icon_picture.svg') no-repeat center left / 16px;
 
   &::before {
     margin-right: 8px;
     padding: 8px;
-    background: url('../images/icon_picture.svg') no-repeat center / 16px;
-    content: '';
+    background: no-repeat center / 16px;
+  }
+
+}
+
+.c-mediafile__heading {
+  @extend %c-mediafile__heading;
+}
+
+// ***** Media-specific Icons Within Heading ***** //
+
+// Example: c-mediafile__heading--picture
+
+@each $mediafile-type, $mediafile-icon in
+  (audio, icon_volume-up),
+  (picture, icon_picture) {
+
+  .c-mediafile__heading--#{$mediafile-type} {
+    @extend %c-mediafile__heading;
+
+    &::before {
+      background-image: inline('../images/#{$mediafile-icon}.svg');
+      content: '';
+    }
+
   }
 
 }
