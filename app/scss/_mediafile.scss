@@ -11,6 +11,12 @@
     display: block;
     position: relative;
     overflow: hidden;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
   }
 
 }
@@ -40,6 +46,13 @@
   @include bp(screen1) {
     width: 48%;
     float: right;
+
+    @supports (display: grid) {
+      width: auto;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
   }
 
 }
@@ -77,6 +90,12 @@
   @include bp(screen1) {
     width: 48%;
     float: left;
+
+    @supports (display: grid) {
+      width: auto;
+      grid-row: 1 / 4;
+    }
+
   }
 
 }
@@ -89,6 +108,12 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+
+    @supports (display: grid) {
+      position: static;
+      grid-column: 2 / 3;
+    }
+
   }
 
 }
@@ -99,6 +124,14 @@
     width: 48%;
     margin-bottom: 35px;
     float: right;
+
+    @supports (display: grid) {
+      width: auto;
+      margin-bottom: 0;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
   }
 
 }
