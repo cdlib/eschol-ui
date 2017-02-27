@@ -1,5 +1,28 @@
 // ##### Media File Grid Component ##### //
 
 .c-mediafilegrid {
-  border: $bgreen;
+
+  @include bp(screen2) {
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+  }
+
+  .c-mediafile {
+
+    @include bp(screen2) {
+      width: 47%;
+      float: left;
+
+      @supports (display: grid) {
+        width: auto;
+      }
+
+    }
+
+  }
+
 }
