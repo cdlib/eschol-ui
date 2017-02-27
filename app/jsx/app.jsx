@@ -26,7 +26,6 @@ import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
-import MediaFileDisp from './display/MediaFileDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
 import FrontmatterDisp from './display/FrontmatterDisp.jsx'
 import Home from './display/Home.jsx'
@@ -41,6 +40,8 @@ import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalHomeLayout from './layouts/JournalHomeLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
+import MediaFileDisp from './display/MediaFileDisp.jsx'
+import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
 import Nav1Disp from './display/Nav1Disp.jsx'
 import Nav2Disp from './display/Nav2Disp.jsx'
@@ -122,6 +123,7 @@ ReactDOM.render((
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
       <Route path="/mediafile" component={MediaFileDisp} />
+      <Route path="/mediafilegrid" component={MediaFileGridDisp} />
       <Route path="/nav" component={NavDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
