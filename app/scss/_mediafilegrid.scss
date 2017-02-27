@@ -6,7 +6,9 @@
 
     @supports (display: grid) {
       display: grid;
-      grid-template-columns: 50% 50%;
+      padding: $spacing-md;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: $spacing-md;
     }
 
   }
@@ -14,11 +16,13 @@
   .c-mediafile {
 
     @include bp(screen2) {
-      width: 47%;
+      width: 43%;
+      padding: $spacing-md;
       float: left;
 
       @supports (display: grid) {
         width: auto;
+        padding: 0;
       }
 
     }

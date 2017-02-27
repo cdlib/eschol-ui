@@ -3,9 +3,6 @@
 %c-mediafile {
   display: flex;
   flex-direction: column;
-  margin-bottom: $spacing-md;
-  padding: $spacing-sm;
-  border-bottom: 1px solid $color-dark-gray;
 
   @include bp(screen1) {
     display: block;
@@ -34,7 +31,6 @@
 
 .c-mediafile--selected {
   @extend %c-mediafile;
-  border: none;
   background-color: $color-light-gray;
 }
 
