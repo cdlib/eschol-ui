@@ -86,7 +86,7 @@
 
 .c-mediafile__image {
   display: block;
-  height: 120px;
+  height: 140px;
   margin-bottom: $spacing-sm;
   object-fit: cover;
 
@@ -125,6 +125,7 @@
 }
 
 .c-mediafile__description {
+  max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
 
   @include bp(screen1) {
     width: 48%;

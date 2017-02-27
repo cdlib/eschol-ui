@@ -1,8 +1,13 @@
 // ##### Media File Component ##### //
 
 import React from 'react'
+import $ from 'jquery'
 
 class MediaFileComp extends React.Component {
+  componentDidMount() {
+    $('.c-mediafile__description').dotdotdot({watch:
+      'window'});
+  }
   render() {
     return (
       <div className="c-mediafile">
@@ -10,7 +15,7 @@ class MediaFileComp extends React.Component {
         <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
         <button className="c-mediafile__button o-button__7">Download</button>
         <div className="c-mediafile__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe, quia sequi ipsum excepturi officiis perferendis, nihil omnis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, in quo libero recusandae debitis, repudiandae rem hic, ut quisquam maxime dolores? Harum expedita fugiat molestiae explicabo, qui, perspiciatis architecto numquam.
         </div>
       </div>
     )
