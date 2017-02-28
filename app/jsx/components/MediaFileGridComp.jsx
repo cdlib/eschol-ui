@@ -12,7 +12,7 @@ class MediaFileGridComp extends React.Component {
     return (
       <div className="c-mediafilegrid">
         {/* Media File Component #1 */}
-        <div className="c-mediafile">
+        <div className="c-mediafile--selected">
           <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
           <button className="c-mediafile__button o-button__7">Download</button>
