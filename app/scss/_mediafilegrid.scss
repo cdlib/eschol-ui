@@ -16,6 +16,10 @@
   .c-mediafile--selected {
     margin-bottom: $spacing-md;
 
+    @include bp(screen1) {
+      margin-bottom: $spacing-sm;
+    }
+
     @include bp(screen2) {
       width: 45%;
       margin: $spacing-base;
