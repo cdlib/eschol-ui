@@ -1,18 +1,13 @@
 // ##### Media File Component ##### //
 
 %c-mediafile {
+  @extend %clearfix;
   display: flex;
   flex-direction: column;
 
   @include bp(screen1) {
     display: block;
     position: relative;
-
-    &::after { // clearfix for floats
-      display: table;
-      clear: both;
-      content: '';
-    }
 
     @supports (display: grid) {
       display: grid;

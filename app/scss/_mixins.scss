@@ -101,3 +101,15 @@ Selector pattern using above media query mixin:
     }
   }
 }
+
+// Clear floats
+
+%clearfix {
+
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+}
