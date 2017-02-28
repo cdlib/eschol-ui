@@ -104,7 +104,7 @@
 
   @include bp(screen1) {
     position: absolute;
-    bottom: 0;
+    bottom: $spacing-base;
     left: 50.5%;
 
     @supports (display: grid) {
