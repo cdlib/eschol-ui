@@ -68,7 +68,9 @@
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up),
-  (picture, icon_picture) {
+  (file, icon_archive-teal),
+  (picture, icon_picture),
+  (video, icon_video-camera-teal) {
 
   .c-mediafile__heading--#{$mediafile-type} {
     @extend %c-mediafile__heading;
