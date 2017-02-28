@@ -64,12 +64,12 @@
 
 // ***** Media-specific Icons Within Heading ***** //
 
-// Example: c-mediafile__heading--picture
+// Example: c-mediafile__heading--image
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up),
   (file, icon_archive-teal),
-  (picture, icon_picture),
+  (image, icon_picture),
   (video, icon_video-camera-teal) {
 
   .c-mediafile__heading--#{$mediafile-type} {

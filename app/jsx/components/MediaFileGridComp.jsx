@@ -13,7 +13,7 @@ class MediaFileGridComp extends React.Component {
       <div className="c-mediafilegrid">
         {/* Media File Component #1 */}
         <div className="c-mediafile--selected">
-          <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
+          <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
           <button className="c-mediafile__button o-button__7">Download</button>
           <div className="c-mediafile__description">
@@ -22,7 +22,7 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #2 */}
         <div className="c-mediafile">
-          <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
+          <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
           <button className="c-mediafile__button o-button__7">Download</button>
           <div className="c-mediafile__description">
@@ -31,7 +31,7 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #3 */}
         <div className="c-mediafile">
-          <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
+          <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
           <button className="c-mediafile__button o-button__7">Download</button>
           <div className="c-mediafile__description">
@@ -40,7 +40,7 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #4 */}
         <div className="c-mediafile">
-          <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
+          <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
           <button className="c-mediafile__button o-button__7">Download</button>
           <div className="c-mediafile__description">
@@ -49,7 +49,7 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #5 */}
         <div className="c-mediafile">
-          <h2 className="c-mediafile__heading--picture">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
+          <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory Blitzkrieg Bonanza</h2>
           <img className="c-mediafile__image" src="http://placehold.it/300x300?text=Image" alt="" />
           <button className="c-mediafile__button o-button__7">Download</button>
           <div className="c-mediafile__description">
