@@ -27,6 +27,7 @@
 
 .c-mediafile--selected {
   @extend %c-mediafile;
+  padding: $spacing-sm;
   background-color: $color-light-gray;
 }
 
