@@ -26,7 +26,7 @@
 
 .c-itemactions__button2 {
   @extend %c-itemactions__buttons;
-  background-image: url('../images/icon_book-white.svg');
+  background-image: inline('../images/icon_book-white.svg');
 }
 
 .c-itemactions__items2 {
