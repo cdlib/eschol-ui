@@ -14,6 +14,7 @@
 
   .c-mediafile,
   .c-mediafile--selected {
+    margin-bottom: $spacing-md;
 
     @include bp(screen2) {
       width: 45%;
@@ -25,6 +26,12 @@
         margin: 0;
       }
 
+    }
+
+    ~ .c-mediafile,
+    .c-mediafile--selected {
+      padding-top: $spacing-md;
+      border-top: 1px solid $color-dark-gray;
     }
 
   }
