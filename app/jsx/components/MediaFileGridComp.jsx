@@ -5,7 +5,7 @@ import $ from 'jquery'
 
 class MediaFileGridComp extends React.Component {
   componentDidMount() {
-    $('.c-mediafile__description').dotdotdot({watch:
+    $('[class^="c-mediafile__heading"], .c-mediafile__description').dotdotdot({watch:
       'window'});
   }
   render() {

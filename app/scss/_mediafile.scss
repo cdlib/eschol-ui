@@ -17,7 +17,7 @@
     @supports (display: grid) {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: auto auto 1fr;
+      grid-template-rows: auto 1fr auto;
       grid-column-gap: $spacing-sm;
     }
 
@@ -35,6 +35,7 @@
 }
 
 %c-mediafile__heading {
+  max-height: 2.1em; // truncate beyond 2 lines per jquery.dotdotdot
   margin: 0 0 $spacing-sm;
   color: $color-teal;
   font-size: 1.2em;
@@ -87,12 +88,10 @@
 .c-mediafile__image {
   display: block;
   height: 140px;
-  margin-bottom: $spacing-sm;
   object-fit: cover;
 
   @include bp(screen1) {
     width: 48%;
-    margin-bottom: 0;
     float: left;
 
     @supports (display: grid) {
@@ -106,18 +105,17 @@
 
 .c-mediafile__button {
   align-self: flex-end;
-  margin-bottom: $spacing-sm;
 
   @include bp(screen1) {
     position: absolute;
-    bottom: 0;
+    bottom: $spacing-md;
     left: 50.5%;
-    margin-bottom: 0;
 
     @supports (display: grid) {
       position: static;
+      margin-left: (-$spacing-sm);
       grid-column: 2 / 3;
-      justify-self: end;
+      justify-self: start;
     }
 
   }
@@ -129,7 +127,6 @@
 
   @include bp(screen1) {
     width: 48%;
-    margin-bottom: 35px;
     float: right;
 
     @supports (display: grid) {
@@ -142,3 +139,7 @@
   }
 
 }
+
+// *[class^='c-mediafile__heading'] {
+//   border: $bred;
+// }
