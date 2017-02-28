@@ -8,6 +8,7 @@
   @include bp(screen1) {
     display: block;
     position: relative;
+    padding: $spacing-sm;
 
     @supports (display: grid) {
       display: grid;
