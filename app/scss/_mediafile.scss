@@ -3,11 +3,11 @@
 %c-mediafile {
   @extend %clearfix;
   display: flex;
+  position: relative;
   flex-direction: column;
 
   @include bp(screen1) {
     display: block;
-    position: relative;
     padding: $spacing-sm;
 
     @supports (display: grid) {
@@ -29,6 +29,22 @@
   @extend %c-mediafile;
   padding: $spacing-sm;
   background-color: $color-light-gray;
+}
+
+.c-mediafile--eye {
+  @extend %c-mediafile;
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    width: 48%;
+    height: 140px;
+    margin-left: $spacing-sm;
+    background: inline('../images/icon_eye-white.svg') no-repeat center center / 60px;
+    content: '';
+    opacity: 0.7;
+  }
+
 }
 
 %c-mediafile__heading {

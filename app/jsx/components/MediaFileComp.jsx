@@ -10,7 +10,7 @@ class MediaFileComp extends React.Component {
   }
   render() {
     return (
-      <div className="c-mediafile">
+      <div className="c-mediafile--eye">
         <h2 className="c-mediafile__heading--image">New Horizons Full Trajectory - Side View</h2>
         <img className="c-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
         <button className="c-mediafile__button o-button__7">Download</button>
