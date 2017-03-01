@@ -25,6 +25,32 @@
   @extend %c-mediafile;
 }
 
+.c-mediafile--image {
+  @extend %c-mediafile;
+
+  .c-mediafile__link {
+
+    &::before {
+      background-image: inline('../images/icon_eye-white.svg');
+    }
+
+  }
+
+}
+
+.c-mediafile--video {
+  @extend %c-mediafile;
+
+  .c-mediafile__link {
+
+    &::before {
+      background-image: inline('../images/icon_play-circle-white.svg');
+    }
+
+  }
+
+}
+
 .c-mediafile--selected {
   @extend %c-mediafile;
   padding: $spacing-sm;
@@ -98,13 +124,13 @@
 
   }
 
-  &::after {
+  &::before {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: inline('../images/icon_eye-white.svg') no-repeat center / 60px;
+    background: no-repeat center / 60px;
     content: '';
     opacity: 0.7;
   }
