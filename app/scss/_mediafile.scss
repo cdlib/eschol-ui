@@ -45,6 +45,19 @@
 
 }
 
+.c-mediafile--file {
+  @extend %c-mediafile;
+
+  .c-mediafile__heading {
+    width: 67%; // allow for float with .c-mediafile__button at 320px screen
+  }
+
+  .c-mediafile__link {
+    display: none;
+  }
+
+}
+
 .c-mediafile--video {
   @extend %c-mediafile;
 
