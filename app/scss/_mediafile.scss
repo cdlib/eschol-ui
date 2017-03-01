@@ -25,6 +25,15 @@
   @extend %c-mediafile;
 }
 
+// .c-mediafile--audio {
+//   @extend %c-mediafile;
+
+//   .c-mediafile__heading {
+    
+//   }
+
+// }
+
 .c-mediafile--image {
   @extend %c-mediafile;
 
@@ -90,7 +99,7 @@
 
 // ***** Media-specific Icons Within Heading ***** //
 
-// Example: c-mediafile__heading--image
+// Example: c-mediafile--image
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up),
@@ -98,12 +107,16 @@
   (image, icon_picture),
   (video, icon_video-camera-teal) {
 
-  .c-mediafile__heading--#{$mediafile-type} {
-    @extend %c-mediafile__heading;
+  .c-mediafile--#{$mediafile-type} {
 
-    &::before {
-      background-image: inline('../images/#{$mediafile-icon}.svg');
-      content: '';
+    .c-mediafile__heading {
+      @extend %c-mediafile__heading;
+
+      &::before {
+        background-image: inline('../images/#{$mediafile-icon}.svg');
+        content: '';
+      }
+
     }
 
   }
