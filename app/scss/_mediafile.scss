@@ -1,6 +1,6 @@
-// ##### Media File Component ##### //
+// ##### Media File Object ##### //
 
-%c-mediafile {
+%o-mediafile {
   @extend %clearfix;
   position: relative;
 
@@ -19,16 +19,16 @@
 
 }
 
-// ***** Set layout for heading, link, button, and description elements when --file, --image, or --video classes are appended to .c-mediafile ***** //
+// ***** Set layout for heading, link, button, and description elements when --audio, --file, --image, or --video classes are appended to .o-mediafile ***** //
 
-.c-mediafile--audio,
-.c-mediafile--image,
-.c-mediafile--video {
-  @extend %c-mediafile;
+.o-mediafile--audio,
+.o-mediafile--image,
+.o-mediafile--video {
+  @extend %o-mediafile;
 
   @include bp(screen1) {
 
-    .c-mediafile__heading {
+    .o-mediafile__heading {
       width: 48%;
       float: right;
 
@@ -40,7 +40,7 @@
 
     }
 
-    .c-mediafile__link {
+    .o-mediafile__link {
       width: 48%;
       float: left;
 
@@ -51,7 +51,7 @@
 
     }
 
-    .c-mediafile__button {
+    .o-mediafile__button {
       position: absolute;
       bottom: $spacing-base;
       left: 50.5%;
@@ -65,7 +65,7 @@
 
     }
 
-    .c-mediafile__description {
+    .o-mediafile__description {
       width: 48%;
       float: right;
       clear: none;
@@ -83,9 +83,9 @@
 
 }
 
-.c-mediafile--audio {
+.o-mediafile--audio {
 
-  .c-mediafile__link {
+  .o-mediafile__link {
 
     img {
       display: none; // if there's an image in the html
@@ -106,9 +106,9 @@
 
 }
 
-.c-mediafile--image {
+.o-mediafile--image {
 
-  .c-mediafile__link {
+  .o-mediafile__link {
 
     &::before {
       background-image: inline('../images/icon_eye-white.svg');
@@ -118,22 +118,22 @@
 
 }
 
-.c-mediafile--file {
+.o-mediafile--file {
 
-  .c-mediafile__heading {
-    width: 67%; // allow for float with .c-mediafile__button at 320px screen
+  .o-mediafile__heading {
+    width: 67%; // allow for float with .o-mediafile__button at 320px screen
     float: left;
   }
 
-  .c-mediafile__link {
-    display: none; // will also remove c-mediafile__image if present in the html
+  .o-mediafile__link {
+    display: none; // will also remove o-mediafile__image if present in the html
   }
 
 }
 
-.c-mediafile--video {
+.o-mediafile--video {
 
-  .c-mediafile__link {
+  .o-mediafile__link {
 
     &::before {
       background-image: inline('../images/icon_play-circle-white.svg');
@@ -145,13 +145,13 @@
 
 // to be refactored:
 
-// .c-mediafile--selected {
-//   @extend %c-mediafile;
+// .o-mediafile--selected {
+//   @extend %o-mediafile;
 //   padding: $spacing-sm;
 //   background-color: $color-light-gray;
 // }
 
-%c-mediafile__heading {
+%o-mediafile__heading {
   max-height: 2.1em; // truncate beyond 2 lines per jquery.dotdotdot
   margin: 0 0 $spacing-sm;
   color: $color-teal;
@@ -166,13 +166,13 @@
 
 }
 
-.c-mediafile__heading {
-  @extend %c-mediafile__heading;
+.o-mediafile__heading {
+  @extend %o-mediafile__heading;
 }
 
 // ***** Media-specific Icons Within Heading ***** //
 
-// Example: c-mediafile--image
+// Example: o-mediafile--image
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up),
@@ -180,10 +180,10 @@
   (image, icon_picture),
   (video, icon_video-camera-teal) {
 
-  .c-mediafile--#{$mediafile-type} {
+  .o-mediafile--#{$mediafile-type} {
 
-    .c-mediafile__heading {
-      @extend %c-mediafile__heading;
+    .o-mediafile__heading {
+      @extend %o-mediafile__heading;
 
       &::before {
         background-image: inline('../images/#{$mediafile-icon}.svg');
@@ -196,7 +196,7 @@
 
 }
 
-.c-mediafile__link {
+.o-mediafile__link {
   display: block;
   position: relative;
   clear: left;
@@ -214,18 +214,18 @@
 
 }
 
-.c-mediafile__image {
+.o-mediafile__image {
   display: block;
   width: 100%;
   height: 140px;
   object-fit: cover;
 }
 
-.c-mediafile__button {
+.o-mediafile__button {
   float: right;
 }
 
-.c-mediafile__description {
+.o-mediafile__description {
   max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
   clear: both;
 }

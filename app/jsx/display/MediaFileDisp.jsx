@@ -1,13 +1,13 @@
 // ##### Media File Display ##### //
 
 import React from 'react'
-import MediaFileComp from '../components/MediaFileComp.jsx'
+import MediaFileObj from '../objects/MediaFileObj.jsx'
 
 class MediaFileDisp extends React.Component {
   render() {
     return (
       <div>
-        <MediaFileComp />
+        <MediaFileObj />
       </div>
     )
   }
