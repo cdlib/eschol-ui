@@ -14,7 +14,7 @@ class MediaFileObj extends React.Component {
 
         <h2>Audio File (no image present)</h2>
 
-        <div className="o-mediafile--audio">
+        <div className="o-mediafile--audio--selected">
           <h2 className="o-mediafile__heading">Outer Space Music</h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
             {/* image with o-media__image doesn't extist */}

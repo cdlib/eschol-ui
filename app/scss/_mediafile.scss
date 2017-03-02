@@ -22,8 +22,11 @@
 // ***** Set layout for heading, link, button, and description elements when --audio, --file, --image, or --video classes are appended to .o-mediafile ***** //
 
 .o-mediafile--audio,
+.o-mediafile--audio--selected,
 .o-mediafile--image,
-.o-mediafile--video {
+.o-mediafile--image--selected,
+.o-mediafile--video,
+.o-mediafile--video--selected {
   @extend %o-mediafile;
 
   @include bp(screen1) {
@@ -83,7 +86,9 @@
 
 }
 
-.o-mediafile--audio {
+.o-mediafile--audio,
+.o-mediafile--audio--selected
+  {
 
   .o-mediafile__link {
 
@@ -106,7 +111,8 @@
 
 }
 
-.o-mediafile--image {
+.o-mediafile--image,
+.o-mediafile--image--selected {
 
   .o-mediafile__link {
 
@@ -118,7 +124,8 @@
 
 }
 
-.o-mediafile--file {
+.o-mediafile--file,
+.o-mediafile--file--selected {
 
   .o-mediafile__heading {
     width: 67%; // allow for float with .o-mediafile__button at 320px screen
@@ -131,7 +138,8 @@
 
 }
 
-.o-mediafile--video {
+.o-mediafile--video,
+.o-mediafile--video--selected {
 
   .o-mediafile__link {
 
@@ -143,13 +151,14 @@
 
 }
 
-// to be refactored:
-
-// .o-mediafile--selected {
-//   @extend %o-mediafile;
-//   padding: $spacing-sm;
-//   background-color: $color-light-gray;
-// }
+.o-mediafile--audio--selected,
+.o-mediafile--file--selected,
+.o-mediafile--image--selected,
+.o-mediafile--video--selected {
+  @extend %o-mediafile;
+  padding: $spacing-sm;
+  background-color: $color-light-gray;
+}
 
 %o-mediafile__heading {
   max-height: 2.1em; // truncate beyond 2 lines per jquery.dotdotdot
@@ -180,7 +189,8 @@
   (image, icon_picture),
   (video, icon_video-camera-teal) {
 
-  .o-mediafile--#{$mediafile-type} {
+  .o-mediafile--#{$mediafile-type},
+  .o-mediafile--#{$mediafile-type}--selected {
 
     .o-mediafile__heading {
       @extend %o-mediafile__heading;
