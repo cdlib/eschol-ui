@@ -21,6 +21,7 @@
 
 // ***** Set layout for heading, link, button, and description elements when --file, --image, or --video classes are appended to .c-mediafile ***** //
 
+.c-mediafile--audio,
 .c-mediafile--image,
 .c-mediafile--video {
   @extend %c-mediafile;
@@ -82,6 +83,29 @@
 
 }
 
+.c-mediafile--audio {
+
+  .c-mediafile__link {
+
+    img {
+      display: none; // if there's an image in the html
+    }
+
+    &::before {
+      background-image: inline('../images/icon_volume-up-white.svg');
+    }
+
+    &::after {
+      display: block;
+      height: 140px;
+      background-color: $color-light-gray;
+      content: '';
+    }
+
+  }
+
+}
+
 .c-mediafile--image {
 
   .c-mediafile__link {
@@ -102,7 +126,7 @@
   }
 
   .c-mediafile__link {
-    display: none;
+    display: none; // will also remove c-mediafile__image if present in the html
   }
 
 }

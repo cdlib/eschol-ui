@@ -10,7 +10,7 @@ class MediaFileComp extends React.Component {
   }
   render() {
     return (
-      <div className="c-mediafile--video">
+      <div className="c-mediafile--audio">
       {/* Append above class with media type: --audio, --file, --image, and --video */}
         <h2 className="c-mediafile__heading">New Horizons Full Trajectory - Side View</h2>
         <a className="c-mediafile__link" href="">
