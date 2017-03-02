@@ -19,21 +19,70 @@
 
 }
 
-.c-mediafile {
+// ***** Set layout for heading, link, button, and description elements when --file, --image, or --video classes are appended to .c-mediafile ***** //
+
+.c-mediafile--image,
+.c-mediafile--video {
   @extend %c-mediafile;
+
+  @include bp(screen1) {
+
+    .c-mediafile__heading {
+      width: 48%;
+      float: right;
+
+      @supports (display: grid) {
+        width: auto;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+    }
+
+    .c-mediafile__link {
+      width: 48%;
+      float: left;
+
+      @supports (display: grid) {
+        width: 100%;
+        grid-row: 1 / 4;
+      }
+
+    }
+
+    .c-mediafile__button {
+      position: absolute;
+      bottom: $spacing-base;
+      left: 50.5%;
+
+      @supports (display: grid) {
+        position: static;
+        margin-left: (-$spacing-sm);
+        grid-column: 2 / 3;
+        justify-self: start;
+      }
+
+    }
+
+    .c-mediafile__description {
+      width: 48%;
+      float: right;
+      clear: none;
+
+      @supports (display: grid) {
+        width: auto;
+        margin-bottom: 0;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+    }
+
+  }
+
 }
 
-// .c-mediafile--audio {
-//   @extend %c-mediafile;
-
-//   .c-mediafile__heading {
-    
-//   }
-
-// }
-
 .c-mediafile--image {
-  @extend %c-mediafile;
 
   .c-mediafile__link {
 
@@ -46,10 +95,10 @@
 }
 
 .c-mediafile--file {
-  @extend %c-mediafile;
 
   .c-mediafile__heading {
     width: 67%; // allow for float with .c-mediafile__button at 320px screen
+    float: left;
   }
 
   .c-mediafile__link {
@@ -59,7 +108,6 @@
 }
 
 .c-mediafile--video {
-  @extend %c-mediafile;
 
   .c-mediafile__link {
 
@@ -71,16 +119,17 @@
 
 }
 
-.c-mediafile--selected {
-  @extend %c-mediafile;
-  padding: $spacing-sm;
-  background-color: $color-light-gray;
-}
+// to be refactored:
+
+// .c-mediafile--selected {
+//   @extend %c-mediafile;
+//   padding: $spacing-sm;
+//   background-color: $color-light-gray;
+// }
 
 %c-mediafile__heading {
   max-height: 2.1em; // truncate beyond 2 lines per jquery.dotdotdot
   margin: 0 0 $spacing-sm;
-  float: left;
   color: $color-teal;
   font-size: 1.2em;
   font-weight: normal;
@@ -89,18 +138,6 @@
     margin-right: 8px;
     padding: 8px;
     background: no-repeat center / 16px;
-  }
-
-  @include bp(screen1) {
-    width: 48%;
-    float: right;
-
-    @supports (display: grid) {
-      width: auto;
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-    }
-
   }
 
 }
@@ -140,17 +177,6 @@
   position: relative;
   clear: left;
 
-  @include bp(screen1) {
-    width: 48%;
-    float: left;
-
-    @supports (display: grid) {
-      width: 100%;
-      grid-row: 1 / 4;
-    }
-
-  }
-
   &::before {
     position: absolute;
     top: 0;
@@ -173,43 +199,9 @@
 
 .c-mediafile__button {
   float: right;
-
-  @include bp(screen1) {
-    position: absolute;
-    bottom: $spacing-base;
-    left: 50.5%;
-
-    @supports (display: grid) {
-      position: static;
-      margin-left: (-$spacing-sm);
-      grid-column: 2 / 3;
-      justify-self: start;
-    }
-
-  }
-
 }
 
 .c-mediafile__description {
   max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
   clear: both;
-
-  @include bp(screen1) {
-    width: 48%;
-    float: right;
-    clear: none;
-
-    @supports (display: grid) {
-      width: auto;
-      margin-bottom: 0;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-
-  }
-
 }
-
-// *[class^='c-mediafile__heading'] {
-//   border: $bred;
-// }
