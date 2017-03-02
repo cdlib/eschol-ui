@@ -5,7 +5,7 @@ import $ from 'jquery'
 
 class MediaFileObj extends React.Component {
   componentDidMount() {
-    $('[class^="o-mediafile__heading"], .o-mediafile__description').dotdotdot({watch:
+    $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch:
       'window'});
   }
   render() {
