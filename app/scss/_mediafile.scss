@@ -155,7 +155,6 @@
 .o-mediafile--file--selected,
 .o-mediafile--image--selected,
 .o-mediafile--video--selected {
-  @extend %o-mediafile;
   padding: $spacing-sm;
   background-color: $color-light-gray;
 }

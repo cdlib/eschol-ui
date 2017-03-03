@@ -14,7 +14,7 @@ class MediaFileObj extends React.Component {
 
         <h2>Audio File (no image present)</h2>
 
-        <div className="o-mediafile--audio--selected">
+        <div className="o-mediafile--audio">
           <h2 className="o-mediafile__heading">Outer Space Music</h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
             {/* image with o-media__image doesn't extist */}
@@ -36,9 +36,9 @@ class MediaFileObj extends React.Component {
           </div>
         </div>
 
-        <h2>Image File</h2>
+        <h2>Image File (with selected state)</h2>
 
-        <div className="o-mediafile--image">
+        <div className="o-mediafile--image--selected">
           <h2 className="o-mediafile__heading">New Horizons Full Trajectory - Side View</h2>
           <a className="o-mediafile__link" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
