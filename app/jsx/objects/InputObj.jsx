@@ -6,8 +6,8 @@ class InputObj extends React.Component {
   render() {
     return (
       <div>
-        <h2>Droplists</h2>
-        <div className="o-input__droplist">
+        <h2>Drop-down Lists</h2>
+        <div className="o-input__droplist1">
           <label htmlFor="o-input__droplist-label">Fruit:</label>
           <select name="" id="o-input__droplist-label">
             <option value="">Apples</option>

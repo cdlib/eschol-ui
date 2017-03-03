@@ -6,7 +6,7 @@ class SortComp extends React.Component {
   render() {
     return (
       <form className="c-sort">
-        <div className="o-input__droplist">
+        <div className="o-input__droplist1">
           <label htmlFor="c-sort1">Sort By</label>
           <select name="" id="c-sort1">
             <option value="">Relevance</option>
@@ -19,7 +19,7 @@ class SortComp extends React.Component {
             <option value="">Date Decending</option>
           </select>
         </div>
-        <div className="o-input__droplist c-sort__page-input">
+        <div className="o-input__droplist1 c-sort__page-input">
           <label htmlFor="c-sort2">Per Page</label>
           <select name="" id="c-sort2">
             <option value="">10</option>
