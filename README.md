@@ -1,10 +1,7 @@
-# eschol-ui
 
-The eScholarship UI library.
+#The eScholarship UI Library
 
-**The UI Library is currently testing a proposed Gulp toolkit for React**
-
-Work creating the UI components will begin shortly.
+This contains all UI elements for the eScholarship JSX redesign or ['jschol'](https://github.com/eScholarship/jschol) project. It uses a Gulp-based build toolkit for development, including a Sass plugin to compile SCSS to CSS.
 
 ## Using the Gulp Toolkit
 
@@ -16,17 +13,13 @@ Work creating the UI components will begin shortly.
 
 * [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md): `$ sudo npm install -g gulp-cli`
 
-* [Ruby](https://www.ruby-lang.org/en/downloads) for the Sass lint plugin
-
 ### Toolkit Installation
 
 1. Clone this repo and cd to its root directory on your machine
 
 2. Run `$ npm install` to install Gulp plugins. Ignore the various "depreciated" warnings that appear.
 
-3. Run `$ gem install scss_lint` for the Sass lint plugin.
-
-4. Run `$ bower install` to install Bower libraries
+3. Run `$ bower install` to install Bower libraries
 
 ### Running the Toolkit
 
@@ -34,14 +27,10 @@ Work creating the UI components will begin shortly.
 
 * Run `$ gulp hello` to confirm that the Gulp toolkit is installed
 
-* While developing files in **/ui-library**, run `$ gulp` to watch live changes
+* While developing files in **/app**, run `$ gulp` to watch live changes
 
 * To minify images during development, run `$ gulp minify-images` after adding new, unoptimized images
 
-* To update the custom modernizr file based off of classes found in CSS, run `$ gulp modernizr` after introducing new CSS features referenced in the [Modernizr development build](https://modernizr.com)
+* To create a finished build of the UI Library, run `$ gulp build`
 
-## To Dos
-
-* Do we need to create "builds" with the toolkit?
-
-* Would linting our JSX be a nice-to-have?
+* To publish a finished build of the library to GitHub Pages, run `$ gulp deploy`. It will publish to [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)
