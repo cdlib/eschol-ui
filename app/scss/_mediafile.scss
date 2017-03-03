@@ -127,6 +127,10 @@
 .o-mediafile--file,
 .o-mediafile--file--selected {
 
+  @include bp(screen1) {
+    padding: $spacing-sm;
+  }
+
   .o-mediafile__heading {
     width: 67%; // allow for float with .o-mediafile__button at 320px screen
     float: left;
