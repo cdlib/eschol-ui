@@ -7,13 +7,12 @@
     @supports (display: grid) {
       display: grid;
       grid-template-columns: repeat(2, auto);
-      grid-gap: $spacing-sm;
+      // grid-gap: $spacing-sm;
     }
 
   }
 
-  .c-mediafile,
-  .c-mediafile--selected {
+  [class^='o-mediafile--'] {
     margin-bottom: $spacing-md;
 
     @include bp(screen1) {
@@ -21,25 +20,21 @@
     }
 
     @include bp(screen2) {
-      width: 45%;
+      width: 45.5%;
       margin: $spacing-base;
-      float: left;
+
+      &:nth-child(odd) {
+        float: left;
+        clear: left;
+      }
+
+      &:nth-child(even) {
+        float: right;
+      }
 
       @supports (display: grid) {
         width: auto;
         margin: 0;
-      }
-
-    }
-
-    ~ .c-mediafile,
-    .c-mediafile--selected {
-      padding-top: $spacing-md;
-      border-top: 1px solid $color-dark-gray;
-
-      @include bp(screen2) {
-        padding-top: $spacing-sm;
-        border-top: none;
       }
 
     }
