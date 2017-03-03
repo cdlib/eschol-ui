@@ -7,6 +7,7 @@ import dotdotdot from 'jquery.dotdotdot'
 class AuthorListComp extends React.Component {
   componentDidMount() {
     $('.c-authorlist__list').dotdotdot({watch:'window', after:'.c-authorlist__list-more-link', ellipsis:' ', wrap:'children'});
+    setTimeout(()=> $('.c-authorlist__list').trigger("update"), 0)
   }
   render() {
     return (
