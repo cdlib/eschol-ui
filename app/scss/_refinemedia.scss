@@ -1,5 +1,8 @@
 // ##### Refine Media Component ##### //
 
 .c-refinemedia {
-  border: $bgreen;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
 }
