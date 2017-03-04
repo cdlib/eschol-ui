@@ -49,6 +49,7 @@ import NavBarDisp from './display/NavBarDisp.jsx'
 import PaginationDisp from './display/PaginationDisp.jsx'
 import PubDataDisp from './display/PubDataDisp.jsx'
 import PubLocationDisp from './display/PubLocationDisp.jsx'
+import RefineMediaDisp from './display/RefineMediaDisp.jsx'
 import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
 import Search1Disp from './display/Search1Disp.jsx'
@@ -131,6 +132,7 @@ ReactDOM.render((
       <Route path="/pagination" component={PaginationDisp} />
       <Route path="/pubdata" component={PubDataDisp} />
       <Route path="/publocation" component={PubLocationDisp} />
+      <Route path="/refinemedia" component={RefineMediaDisp} />
       <Route path="/scholworks" component={ScholWorksDisp} />
       <Route path="/search1" component={Search1Disp} />
       <Route path="/search2" component={Search2Disp} />
