@@ -10,7 +10,7 @@ class DownloadComp extends React.Component {
         <details className="c-download__formats">
           <summary aria-label="formats"></summary>
           <ul className="c-download__menu-nested">
-            <li className="c-download__heading1">
+            <li className="c-download__nested-list1">
               Main
               <ul>
                 <li><a href="">PDF</a></li>
@@ -18,7 +18,7 @@ class DownloadComp extends React.Component {
                 <li><a href="">HTML</a></li>
               </ul>
             </li>
-            <li className="c-download__heading2">
+            <li className="c-download__nested-list2">
               Citation
               <ul>
                 <li><a href="">RIS</a></li>
@@ -27,7 +27,7 @@ class DownloadComp extends React.Component {
                 <li><a href="">RefWorks</a></li>
               </ul>
             </li>
-            <li className="c-download__heading3">
+            <li className="c-download__nested-list3">
               Supplemental Material
               <ul>
                 <li><a href="">Image</a></li>

@@ -115,7 +115,7 @@
 
 }
 
-%c-download__item {
+%c-download__item-nested {
   @extend %nav-item;
   margin-left: -40px;
   padding-left: 40px;
@@ -131,7 +131,7 @@
 
 }
 
-%c-download__heading {
+%c-download__nested-list {
   padding-top: $spacing-sm;
   padding-left: 40px;
   background: no-repeat left 10px top 10px / 16px;
@@ -144,7 +144,7 @@
     li {
 
       a {
-        @extend %c-download__item;
+        @extend %c-download__item-nested;
 
         @include bp(screen2) {
           text-decoration: underline;
@@ -167,8 +167,8 @@
   (2, quote-right-white),
   (3, play-circle-white) {
 
-  .c-download__heading#{$download-heading-number} {
-    @extend %c-download__heading;
+  .c-download__nested-list#{$download-heading-number} {
+    @extend %c-download__nested-list;
     background-image: inline('../images/icon_#{$download-img-label}.svg');
   }
 
