@@ -9,7 +9,7 @@ class DownloadComp extends React.Component {
         <button className="c-download__button">Download PDF</button>
         <details className="c-download__formats">
           <summary aria-label="formats"></summary>
-          <ul className="c-download__menu">
+          <ul className="c-download__menu-nested">
             <li className="c-download__heading1">
               Main
               <ul className="c-download__list">

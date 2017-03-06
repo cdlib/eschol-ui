@@ -58,7 +58,7 @@
 
 // ***** Menu and Components ***** //
 
-.c-download__menu {
+%c-download__menu {
   @extend %no-bullet-ul;
   position: absolute;
   right: $spacing-sm;
@@ -73,8 +73,43 @@
   }
 
   @include bp(screen2) {
-    left: 0;
     right: 0;
+    left: 0;
+  }
+
+}
+
+// ***** Single Menu Items ***** //
+
+.c-download__menu-single {
+  @extend %c-download__menu;
+
+  li {
+
+    &:not(:first-child) {
+
+      a {
+        border-top: none;
+      }
+
+    }
+
+    a {
+      @extend %nav-item;
+      background: none;
+      color: $color-white;
+    }
+
+  }
+
+}
+
+// ***** Nested Menu Items ***** //
+
+.c-download__menu-nested {
+  @extend %c-download__menu;
+
+  @include bp(screen2) {
     padding-bottom: $spacing-sm;
   }
 
