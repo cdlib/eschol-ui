@@ -59,6 +59,7 @@
 // ***** Menu and Components ***** //
 
 .c-download__menu {
+  @extend %no-bullet-ul;
   position: absolute;
   right: $spacing-sm;
   left: $spacing-sm;
@@ -74,15 +75,18 @@
   @include bp(screen2) {
     left: 0;
     width: 230px;
+    padding-bottom: $spacing-sm;
   }
 
 }
 
 %c-download__item {
   @extend %nav-item;
+  margin-left: -40px;
   padding-left: 40px;
-  background: no-repeat left $spacing-sm center / 16px;
+  background: none;
   color: $color-white;
+  font-size: 1em;
 
   @include bp(screen2) {
     padding-top: 3px;
@@ -93,20 +97,10 @@
 }
 
 %c-download__heading {
-  @extend %c-download__item;
-  border-top: none;
-  border-bottom: none;
-
-  &:first-child {
-    border-top: 1px solid $color-dark-gray;
-
-    @include bp(screen2) {
-      margin-top: $spacing-sm;
-      border: none;
-    }
-
-  }
-
+  padding-top: $spacing-sm;
+  padding-left: 40px;
+  background: no-repeat left 10px top 10px / 16px;
+  color: $color-white;
 }
 
 @each $download-heading-number, $download-img-label in
@@ -123,12 +117,12 @@
 
 .c-download__list {
   @extend %no-bullet-ul;
+  margin-top: $spacing-sm;
 
   li {
 
     a {
       @extend %c-download__item;
-      font-size: 1em;
 
       @include bp(screen2) {
         text-decoration: underline;
@@ -138,14 +132,6 @@
 
     &:not(:first-of-type) a {
       border-top: none;
-    }
-
-    &:last-child {
-
-      @include bp(screen2) {
-        margin-bottom: $spacing-sm;
-      }
-
     }
 
   }
