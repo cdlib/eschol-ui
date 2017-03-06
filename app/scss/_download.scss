@@ -4,6 +4,11 @@
   display: inline-flex;
   margin-right: $spacing-sm;
   margin-bottom: $spacing-sm;
+
+  @include bp(screen2) {
+    position: relative;
+  }
+
 }
 
 .c-download__button {
@@ -67,7 +72,7 @@
   }
 
   @include bp(screen2) {
-    left: $spacing-md;
+    left: 0;
     width: 230px;
   }
 
