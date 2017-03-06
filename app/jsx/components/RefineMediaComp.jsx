@@ -20,17 +20,13 @@ class RefineMediaComp extends React.Component {
           <button className="c-download__button">Download All Files</button>
           <details className="c-download__formats">
             <summary aria-label="formats"></summary>
-            <div className="c-download__menu">
-              <div className="c-download__heading1" id="c-download__list1">
-                Image
-              </div>
-              <div className="c-download__heading2" id="c-download__list2">
-                Audio
-              </div>
-              <div className="c-download__heading3" id="c-download__list3">
-                Video
-              </div>
-            </div>
+            <ul className="c-download__single-menu">
+              <li><a href="">Image</a></li>
+              <li><a href="">Audio</a></li>
+              <li><a href="">Video</a></li>
+              <li><a href="">Zip</a></li>
+              <li><a href="">File</a></li>
+            </ul>
           </details>
         </div>
       </div>
