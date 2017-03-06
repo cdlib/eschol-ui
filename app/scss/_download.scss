@@ -1,5 +1,7 @@
 // ##### Download Component ##### //
 
+// ***** Toggle and Button ***** //
+
 .c-download {
   display: inline-flex;
   margin-right: $spacing-sm;
@@ -56,7 +58,7 @@
 
 }
 
-// ***** Menu and Components ***** //
+// ***** Menu and Menu Items ***** //
 
 %c-download__menu {
   @extend %no-bullet-ul;
@@ -106,7 +108,7 @@
 
 // ***** Nested Menu Items ***** //
 
-.c-download__menu-nested {
+.c-download__nested-menu {
   @extend %c-download__menu;
 
   @include bp(screen2) {
@@ -115,7 +117,7 @@
 
 }
 
-%c-download__item-nested {
+%c-download__nested-item {
   @extend %nav-item;
   margin-left: -40px;
   padding-left: 40px;
@@ -144,7 +146,7 @@
     li {
 
       a {
-        @extend %c-download__item-nested;
+        @extend %c-download__nested-item;
 
         @include bp(screen2) {
           text-decoration: underline;
@@ -161,6 +163,8 @@
   }
 
 }
+
+// ***** Nested Menu Item Icons ***** //
 
 @each $download-heading-number, $download-img-label in
   (1, files-o-white),
