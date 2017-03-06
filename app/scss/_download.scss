@@ -74,6 +74,7 @@
 
   @include bp(screen2) {
     left: 0;
+    right: 0;
     padding-bottom: $spacing-sm;
   }
 
