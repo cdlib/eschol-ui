@@ -1,12 +1,16 @@
 // ##### Tab Supplemental Material Component ##### //
 
 import React from 'react'
+import RefineMediaComp from '../components/RefineMediaComp.jsx'
+import MediaFileGridComp from '../components/MediaFileGridComp.jsx'
 
 class TabSupplementalComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
-        <h1>Supplemental Material content to go here</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nostrum sint hic placeat rerum harum excepturi odit quae provident, optio consequatur amet consequuntur a, dolore, dolores doloribus non! Reprehenderit, exercitationem.
+        <h1 className="c-tabcontent__heading">Supplemental Material</h1>
+        <RefineMediaComp />
+        <MediaFileGridComp />
       </div>
     )
   }
