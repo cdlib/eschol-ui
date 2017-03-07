@@ -54,8 +54,10 @@
   color: $color-white;
 }
 
-// no border or background with teal text:
+// no min-height, padding, or background with teal text:
 .o-button__7 {
   @extend %o-button;
+  min-height: 0;
+  padding: 0;
   color: $color-teal;
 }
