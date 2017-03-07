@@ -149,6 +149,11 @@ $mediafile-img-height: 120px;
       position: absolute;
       bottom: 0;
       left: $spacing-sm;
+
+      @supports (display: grid) {
+        bottom: $spacing-sm;
+      }
+
     }
 
     .o-mediafile__description {
@@ -261,12 +266,8 @@ $mediafile-img-height: 120px;
   margin-bottom: $spacing-sm;
   float: right;
 
-  @include bp(screen1) {
-
-    @supports (display: grid) {
-      margin-bottom: 0;
-    }
-
+  @supports (display: grid) {
+    margin-bottom: 0;
   }
 
 }
