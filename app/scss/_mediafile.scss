@@ -58,12 +58,11 @@ $mediafile-img-height: 120px;
 
     .o-mediafile__button {
       position: absolute;
-      bottom: $spacing-base;
-      left: 50.5%;
+      bottom: 0;
+      left: 51.7%;
 
       @supports (display: grid) {
         position: static;
-        margin-left: (-$spacing-sm);
         grid-column: 2 / 3;
         justify-self: start;
       }
@@ -89,14 +88,10 @@ $mediafile-img-height: 120px;
 }
 
 .o-mediafile--audio,
-.o-mediafile--audio--selected
-  {
+.o-mediafile--audio--selected {
 
   .o-mediafile__link {
-
-    img {
-      display: none; // if there's an image in the html
-    }
+    margin-bottom: $spacing-sm;
 
     &::before {
       background-image: inline('../images/icon_volume-up-white.svg');
@@ -107,6 +102,14 @@ $mediafile-img-height: 120px;
       height: $mediafile-img-height;
       background-color: $color-dark-gray;
       content: '';
+    }
+
+    img {
+      display: none; // if there's an image in the html
+    }
+
+    @include bp(screen1) {
+      margin-bottom: 0;
     }
 
   }
@@ -145,7 +148,7 @@ $mediafile-img-height: 120px;
     .o-mediafile__button {
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: $spacing-sm;
     }
 
     .o-mediafile__description {
@@ -245,11 +248,27 @@ $mediafile-img-height: 120px;
   display: block;
   width: 100%;
   height: $mediafile-img-height;
+  margin-bottom: $spacing-sm;
   object-fit: cover;
+
+  @include bp(screen1) {
+    margin-bottom: 0;
+  }
+
 }
 
 .o-mediafile__button {
+  margin-bottom: $spacing-sm;
   float: right;
+
+  @include bp(screen1) {
+
+    @supports (display: grid) {
+      margin-bottom: 0;
+    }
+
+  }
+
 }
 
 .o-mediafile__description {
