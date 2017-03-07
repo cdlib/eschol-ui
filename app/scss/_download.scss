@@ -4,8 +4,6 @@
 
 .o-download {
   display: inline-flex;
-  margin-right: $spacing-sm;
-  margin-bottom: $spacing-sm;
 
   @include bp(screen2) {
     position: relative;
