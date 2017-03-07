@@ -164,10 +164,10 @@
 }
 
 %o-mediafile__heading {
-  max-height: 2.1em; // truncate beyond 2 lines per jquery.dotdotdot
+  max-height: 2em; // truncate beyond 2 lines per jquery.dotdotdot
   margin: 0 0 $spacing-sm;
   color: $color-teal;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: normal;
 
   &::before {
