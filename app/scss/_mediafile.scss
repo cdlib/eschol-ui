@@ -256,8 +256,12 @@ $mediafile-img-height: 120px;
   margin-bottom: $spacing-sm;
   float: right;
 
-  @supports (display: grid) {
-    margin-bottom: 0;
+  @include bp(screen1) {
+
+    @supports (display: grid) {
+      margin-bottom: 0;
+    }
+
   }
 
 }
