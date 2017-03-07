@@ -18,24 +18,31 @@
     margin-bottom: $spacing-md;
 
     @include bp(screen2) {
-      width: 45.5%;
+      width: 45%;
       margin-bottom: $spacing-md;
 
       &:nth-child(odd) {
-        margin-right: $spacing-md / 2;
         float: left;
         clear: left;
       }
 
       &:nth-child(even) {
-        margin-left: $spacing-md / 2;
         float: right;
       }
 
-      // If grid is supported, don't float objects (current floats & clears get ignored when using grid):
+      // If grid is supported, don't float objects (floats & clears get ignored when using grid):
 
       @supports (display: grid) {
         width: auto;
+
+        &:nth-child(odd) {
+          margin-right: $spacing-md / 2;
+        }
+
+        &:nth-child(even) {
+          margin-left: $spacing-md / 2;
+        }
+
       }
 
     }
