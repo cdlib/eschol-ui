@@ -16,11 +16,11 @@ class RefineMediaComp extends React.Component {
             <option value="">Others</option>
           </select>
         </div>
-        <div className="c-download">
-          <button className="c-download__button">Download All Files</button>
-          <details className="c-download__formats">
+        <div className="o-download">
+          <button className="o-download__button">Download All Files</button>
+          <details className="o-download__formats">
             <summary aria-label="formats"></summary>
-            <ul className="c-download__single-menu">
+            <ul className="o-download__single-menu">
               <li><a href="">Image</a></li>
               <li><a href="">Audio</a></li>
               <li><a href="">Video</a></li>

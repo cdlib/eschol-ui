@@ -19,6 +19,7 @@ class Home extends React.Component {
           <li><a href="#button">Buttons</a></li>
           <li><a href="#columnbox">Column Boxes</a></li>
           <li><a href="#dividecontent">Divide Content into Balanced Columms</a></li>
+          <li><a href="#download">Download</a></li>
           <li><a href="#imagecontent">Image Content</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#mediafile">Media File</a></li>
@@ -31,7 +32,6 @@ class Home extends React.Component {
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
-          <li><a href="#download">Download</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>
