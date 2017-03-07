@@ -186,18 +186,13 @@ $mediafile-img-height: 120px;
 }
 
 %o-mediafile__heading {
-  max-height: 1.9em; // truncate beyond 2 lines per jquery.dotdotdot
+  max-height: 2.3em; // truncate beyond 2 lines per jquery.dotdotdot
   margin: 0 0 $spacing-sm;
+  padding-left: 25px;
+  background: no-repeat top left / 16px;
   color: $color-teal;
   font-size: 1.1em;
   font-weight: normal;
-
-  &::before {
-    margin-right: 8px;
-    padding: 8px;
-    background: no-repeat center / 16px;
-  }
-
 }
 
 .o-mediafile__heading {
@@ -219,12 +214,7 @@ $mediafile-img-height: 120px;
 
     .o-mediafile__heading {
       @extend %o-mediafile__heading;
-
-      &::before {
-        background-image: inline('../images/#{$mediafile-icon}.svg');
-        content: '';
-      }
-
+      background-image: inline('../images/#{$mediafile-icon}.svg');
     }
 
   }
