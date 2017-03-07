@@ -128,18 +128,30 @@ $mediafile-img-height: 120px;
 
 .o-mediafile--file,
 .o-mediafile--file--selected {
-
-  @include bp(screen1) {
-    padding: $spacing-sm;
-  }
+  position: relative;
 
   .o-mediafile__heading {
-    width: 67%; // allow for float with .o-mediafile__button at 320px screen
+    width: 67%; // allow for float with .o-mediafile__button at 320px minimum screen size
     float: left;
   }
 
   .o-mediafile__link {
     display: none; // will also remove o-mediafile__image if present in the html
+  }
+
+  @include bp(screen1) {
+    padding: $spacing-sm;
+
+    .o-mediafile__button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .o-mediafile__description {
+      margin-bottom: 25px;
+    }
+
   }
 
 }
