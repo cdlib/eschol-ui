@@ -12,6 +12,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 // ***** Components ***** //
 
 import AboutLayout from './layouts/AboutLayout.jsx'
+import AlertDisp from './display/AlertDisp.jsx'
 import AuthorListDisp from './display/AuthorListDisp.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
 import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
@@ -98,6 +99,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/about" component={AboutLayout} />
+      <Route path="/alert" component={AlertDisp} />
       <Route path="/authorlist" component={AuthorListDisp} />
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
       <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
