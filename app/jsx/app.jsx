@@ -54,6 +54,8 @@ import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
 import Search1Disp from './display/Search1Disp.jsx'
 import Search2Disp from './display/Search2Disp.jsx'
+import SeriesItemEmbargoedLayout from './layouts/SeriesItemEmbargoedLayout.jsx'
+import SeriesItemWithdrawnLayout from './layouts/SeriesItemWithdrawnLayout.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
@@ -137,6 +139,8 @@ ReactDOM.render((
       <Route path="/search1" component={Search1Disp} />
       <Route path="/search2" component={Search2Disp} />
       <Route path="/searchlayout" component={SearchLayout} />
+      <Route path="/seriesitemembargoed" component={SeriesItemEmbargoedLayout} />
+      <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
       <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/socialicons" component={SocialIconsDisp} />
       <Route path="/sort" component={SortDisp} />

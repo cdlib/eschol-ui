@@ -13,6 +13,8 @@ class Home extends React.Component {
           <li><a href="#journalhome">Journal Home Layout</a></li>
           <li><a href="#journalitem">Journal Item Layout</a></li>
           <li><a href="#searchlayout">Search</a></li>
+          <li><a href="#seriesitemembargoed">Series Item Layout - Embargoed</a></li>
+          <li><a href="#seriesitemwithdrawn">Series Item Layout - Withdrawn</a></li>
         </ul>
         <h2>Objects</h2>
         <ul>
