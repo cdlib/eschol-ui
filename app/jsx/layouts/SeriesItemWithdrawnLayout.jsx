@@ -4,7 +4,7 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
-import TabsComp from '../components/TabsComp.jsx'
+import ShareComp from '../components/ShareComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -18,7 +18,8 @@ class SeriesItemWithdrawnLayout extends React.Component {
         <nav className="c-breadcrumb">
           <a href="">eScholarship</a>
           <a href="">Campus Name</a>
-          <a href="">Journal Name</a>
+          <a href="">Unit Name</a>
+          <a href="">Series Name</a>
           <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
         </nav>
         <div className="c-columns">
@@ -29,7 +30,14 @@ class SeriesItemWithdrawnLayout extends React.Component {
                 <button className="c-tabs__button--active">Main Content</button>
               </div>
               <div className="c-tabs__content">
-                [item withdrawn content goes here]
+                <div className="c-itemactions">
+                  <div className="c-itemactions__items1">
+                    [Alert goes here]
+                  </div>
+                  <div className="c-itemactions__items2">
+                    <ShareComp />
+                  </div>
+                </div>
               </div>
             </div>
           </main>
