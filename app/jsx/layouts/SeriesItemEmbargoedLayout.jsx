@@ -31,14 +31,10 @@ class SeriesItemEmbargoedLayout extends React.Component {
               </div>
               <div className="c-tabs__content">
                 <div className="c-itemactions">
-                  <div className="c-itemactions__items1">
-                    <div className="o-alert1">
-                      This item is <strong>not available</strong> for download from eScholarship
-                    </div>
+                  <div className="o-alert1">
+                    This item is <strong>not available</strong> for download from eScholarship
                   </div>
-                  <div className="c-itemactions__items2">
-                    <ShareComp />
-                  </div>
+                  <ShareComp />
                 </div>
               </div>
             </div>
