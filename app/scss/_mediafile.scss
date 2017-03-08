@@ -141,6 +141,10 @@ $mediafile-img-height: 120px;
       width: auto;
     }
 
+    @include bp(screen2) {
+      width: 50%;
+    }
+
   }
 
   .o-mediafile__link {
@@ -163,6 +167,11 @@ $mediafile-img-height: 120px;
 
     .o-mediafile__description {
       margin-bottom: 25px;
+
+      @include bp(screen2) {
+        width: 50%;
+      }
+
     }
 
   }
