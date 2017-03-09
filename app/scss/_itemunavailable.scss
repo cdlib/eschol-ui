@@ -15,12 +15,12 @@
 
 .o-itemunavailable__embargoed {
   @extend %o-itemunavailable;
-  background-image: url('../images/icon_book.svg')
+  background-image: url('../images/icon_book.svg');
 }
 
 .o-itemunavailable__withdrawn {
   @extend %o-itemunavailable;
-  background-image: url('../images/icon_pdf-black.svg')
+  background-image: url('../images/icon_pdf-black.svg');
 }
 
 .o-itemunavailable__lede {

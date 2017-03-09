@@ -17,12 +17,12 @@ class TabMainComp extends React.Component {
         <PubLocationComp />
         <PubDataComp />
         <details className="c-togglecontent" open>
-          <summary><h2>Abstract</h2></summary>
+          <summary>Abstract</summary>
           <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
           <p className="c-well">Libero dolores rerum nesciunt deserunt incidunt, aspernatur similique fugit beatae quis impedit corrupti, voluptate, unde facilis. Voluptatibus labore sunt maxime, accusantium animi mollitia ducimus.</p>
         </details>
         <details className="c-togglecontent" open>
-          <summary><h2>Main Content</h2></summary>
+          <summary>Main Content</summary>
           <p>Fugit dignissimos, laborum repudiandae consequuntur, sit iure nobis animi numquam laudantium error veniam incidunt in at, nihil doloremque labore, odio illo cumque debitis vel enim rerum possimus saepe blanditiis. Temporibus ducimus rerum quidem ipsa quas asperiores, sapiente in, delectus quae excepturi dolor officiis at quia fugit minus vitae libero. Voluptas quos nobis unde sequi laborum ipsam similique placeat, mollitia debitis provident, consequuntur, blanditiis ducimus! Blanditiis quibusdam ab aspernatur, repellendus recusandae, dolor quidem ipsa id laborum inventore illum eligendi laboriosam necessitatibus nam labore, pariatur delectus corporis suscipit amet asperiores soluta doloremque iste voluptate.</p>
           <div className="o-dividecontent2x">
             <img className="o-imagecontent" src="http://placehold.it/250x150?text=Placeholder" alt="" />

@@ -44,11 +44,11 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 <PubLocationComp />
                 <PubDataComp />
                 <details className="c-togglecontent" open>
-                  <summary><h2>Abstract</h2></summary>
+                  <summary>Abstract</summary>
                   <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
                 </details>
                 <details className="c-togglecontent" open>
-                  <summary><h2>Main Content</h2></summary>
+                  <summary>Main Content</summary>
                   <div className="o-itemunavailable__embargoed">
                     <h2 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h2>
                     <p>You may have access to the publisher's version here:</p>
