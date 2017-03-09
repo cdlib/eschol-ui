@@ -1,13 +1,13 @@
 // ##### Item Unavailable Display ##### //
 
 import React from 'react'
-import ItemUnavailableComp from '../components/ItemUnavailableComp.jsx'
+import ItemUnavailableObj from '../objects/ItemUnavailableObj.jsx'
 
 class ItemUnavailableDisp extends React.Component {
   render() {
     return (
       <div>
-        <ItemUnavailableComp />
+        <ItemUnavailableObj />
       </div>
     )
   }
