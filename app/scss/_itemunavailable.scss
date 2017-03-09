@@ -3,7 +3,7 @@
 %o-itemunavailable {
   margin: $spacing-sm 0 $spacing-md $spacing-md;
   padding-left: 30px;
-  background: no-repeat top 2px left / 16px;
+  background: no-repeat top left / 20px;
 
   .o-textlink__secondary {
     display: block;
@@ -14,12 +14,12 @@
 
 .o-itemunavailable__embargoed {
   @extend %o-itemunavailable;
-  background-image: url('../images/icon_book.svg');
+  background-image: inline('../images/icon_clock-o-black.svg');
 }
 
 .o-itemunavailable__withdrawn {
   @extend %o-itemunavailable;
-  background-image: url('../images/icon_pdf-black.svg');
+  background-image: inline('../images/icon_times-circle-o-black.svg');
 }
 
 .o-itemunavailable__lede {
