@@ -113,3 +113,11 @@ Selector pattern using above media query mixin:
   }
 
 }
+
+// Wrap unbroken text upon text overflow
+
+%overflow-wrap {
+  overflow-wrap: break-word; // all except IE
+  word-wrap: break-word; // IE
+  hyphens: auto;
+}
