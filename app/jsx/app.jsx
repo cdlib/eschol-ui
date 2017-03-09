@@ -60,6 +60,7 @@ import SeriesItemEmbargoedLayout from './layouts/SeriesItemEmbargoedLayout.jsx'
 import SeriesItemWithdrawnLayout from './layouts/SeriesItemWithdrawnLayout.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
+import SkipNavDisp from './display/SkipNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import Subheader1Disp from './display/Subheader1Disp.jsx'
@@ -146,6 +147,7 @@ ReactDOM.render((
       <Route path="/seriesitemembargoed" component={SeriesItemEmbargoedLayout} />
       <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
       <Route path="/sidebarnav" component={SidebarNavDisp} />
+      <Route path="/skipnav" component={SkipNavDisp} />
       <Route path="/socialicons" component={SocialIconsDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/test" component={Test} />
