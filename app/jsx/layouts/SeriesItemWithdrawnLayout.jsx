@@ -5,6 +5,7 @@ import Header2Comp from '../components/Header2Comp.jsx'
 import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
+import AuthorListComp from '../components/AuthorListComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -35,6 +36,11 @@ class SeriesItemWithdrawnLayout extends React.Component {
                     This item is <strong>not available</strong> for download from eScholarship
                   </div>
                   <ShareComp />
+                </div>
+                <h1 className="c-tabcontent__heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <AuthorListComp />
+                <div className="o-itemunavailable__withdrawn">
+                  <p className="o-itemunavailable__lede">This item has been withdrawn and is <strong>no longer available</strong>.</p>
                 </div>
               </div>
             </div>

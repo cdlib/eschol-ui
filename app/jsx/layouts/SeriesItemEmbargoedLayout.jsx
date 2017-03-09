@@ -49,7 +49,12 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 </details>
                 <details className="c-togglecontent" open>
                   <summary><h2>Main Content</h2></summary>
-                  ['item unavailable' comp to go here]
+                  <div className="o-itemunavailable__embargoed">
+                    <h2 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h2>
+                    <p>You may have access to the publisher's version here:</p>
+                    <a href="" className="o-textlink__secondary">http://www.ieee-security.org/TC/SPW2014/papers/5103a251.pdf</a>
+                    <a href="" className="o-textlink__secondary">Notify me by email when this item becomes available</a>
+                  </div>
                 </details>
               </div>
             </div>
