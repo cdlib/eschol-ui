@@ -5,9 +5,7 @@ import React from 'react'
 class SkipNavComp extends React.Component {
   render() {
     return (
-      <div className="c-skipnav">
-      [skip nav component to go here]
-      </div>
+      <a href="#main" className="c-skipnav">Skip to main content</a>
     )
   }
 }

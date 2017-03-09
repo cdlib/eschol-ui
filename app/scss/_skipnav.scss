@@ -1,5 +1,19 @@
 // ##### Skip Navigation Component ##### //
 
 .c-skipnav {
-  border: $bgreen;
+  @extend %hide;
+  display: inline-block;
+  padding: $spacing-sm;
+  transition: opacity 0.5s;
+  border-radius: $round-corner;
+  background-color: $color-teal;
+  color: $color-white;
+  text-decoration: none;
+  opacity: 0;
+
+  &:focus {
+    left: $spacing-sm;
+    opacity: 1;
+  }
+
 }
