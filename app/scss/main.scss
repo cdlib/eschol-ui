@@ -95,13 +95,13 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 10px 10px 0;
+  padding: $spacing-sm $spacing-sm 0;
   background-color: lighten($color-light-gray, 15%);
   font-family: 'KievitWeb';
   overflow-x: hidden;
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 $spacing-sm;
   line-height: 1.2em;
 }
