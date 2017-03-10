@@ -83,16 +83,6 @@
 @import 'resets';
 @import 'ui-library';
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0 auto;
   padding: $spacing-sm $spacing-sm 0;
