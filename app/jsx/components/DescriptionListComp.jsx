@@ -5,9 +5,18 @@ import React from 'react'
 class DescriptionListComp extends React.Component {
   render() {
     return (
-      <div className="c-descriptionlist">
-      [description list component to go here]
-      </div>
+      <dl className="c-descriptionlist">
+        <dt><a href="">UC Berkeley</a></dt>
+        <dd>17,280 Publications, 74 Units, 26 Journals</dd>
+        <dt><a href="">UC Davis</a></dt>
+        <dd>17,280 Publications, 74 Units, 26 Journals</dd>
+        <dt><a href="">UC Irvine</a></dt>
+        <dd>17,280 Publications, 74 Units, 26 Journals</dd>
+        <dt><a href="">UCLA</a></dt>
+        <dd>17,280 Publications, 74 Units, 26 Journals</dd>
+        <dt><a href="">UC Merced</a></dt>
+        <dd>17,280 Publications, 74 Units, 26 Journals</dd>
+      </dl>
     )
   }
 }
