@@ -13,6 +13,7 @@
   z-index: 1;
 
   &:focus {
+    top: $spacing-sm;
     left: $spacing-sm;
     opacity: 1;
   }
