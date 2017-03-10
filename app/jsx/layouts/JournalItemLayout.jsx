@@ -12,6 +12,7 @@ class JournalItemLayout extends React.Component {
   render() {
     return (
       <div className="l-item">
+        <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <Subheader2Comp />
         <NavBarComp />
@@ -22,7 +23,7 @@ class JournalItemLayout extends React.Component {
           <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
         </nav>
         <div className="c-columns">
-          <main>
+          <main id="maincontent">
             <TabsComp />
           </main>
           <aside>

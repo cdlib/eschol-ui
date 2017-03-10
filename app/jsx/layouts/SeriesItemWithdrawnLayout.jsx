@@ -13,6 +13,7 @@ class SeriesItemWithdrawnLayout extends React.Component {
   render() {
     return (
       <div>
+        <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <Subheader2Comp />
         <NavBarComp />
@@ -24,7 +25,7 @@ class SeriesItemWithdrawnLayout extends React.Component {
           <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
         </nav>
         <div className="c-columns">
-          <main>
+          <main id="maincontent">
             <div className="c-tabs">
               <div className="c-tabs__tabs">
                 <button className="c-tabs__button-more">...</button>

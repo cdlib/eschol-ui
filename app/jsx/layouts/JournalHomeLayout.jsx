@@ -14,13 +14,14 @@ class JournalHomeLayout extends React.Component {
   render() {
     return (
       <div className="l-about">
+        <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <Subheader2Comp />
         <NavBarComp />
         <BreadcrumbComp />
         <MarqueeComp />
         <div className="c-columns">
-          <main>
+          <main id="maincontent">
             <section className="o-columnbox1">
               <FrontmatterComp />
               <h3>Table of Contents</h3>

@@ -26,6 +26,7 @@ class JournalItemLayout extends React.Component {
   render() {
     return (
       <div className="l-browsedepartments">
+      <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <div className="c-subheader2">
           <CampusSelectorComp />
@@ -54,7 +55,7 @@ class JournalItemLayout extends React.Component {
           <a className="c-breadcrumb-link--active" href="">Academic Units</a>
         </nav>
         <div className="c-columns">
-          <main>
+          <main id="maincontent">
             <section className="o-columnbox1">
               <header>
                 <h2>Academic Units</h2>

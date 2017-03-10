@@ -27,6 +27,7 @@ class AboutLayout extends React.Component {
   render() {
     return (
       <div className="l-about">
+        <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <div className="c-subheader1">
           <div className="c-subheader1__header">
             <Header1Comp />
@@ -71,7 +72,7 @@ class AboutLayout extends React.Component {
               <SidebarNavComp />
             </section>
           </aside>
-          <main>
+          <main id="maincontent">
             <section className="o-columnbox1">
               <header>
                 <h1>About eScholarship</h1>

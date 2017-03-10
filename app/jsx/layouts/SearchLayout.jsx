@@ -32,6 +32,7 @@ class SearchLayout extends React.Component {
   render() {
     return (
       <div className="l-search">
+        <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <div className="c-subheader1">
           <div className="c-subheader1__header">
             <Header1Comp />
@@ -93,7 +94,7 @@ class SearchLayout extends React.Component {
                 <CheckboxComp />
             </details>
           </aside>
-          <main>
+          <main id="maincontent">
             <section className="o-columnbox1">
               <header>
                 <h2>Informational Pages (12 results)</h2>
