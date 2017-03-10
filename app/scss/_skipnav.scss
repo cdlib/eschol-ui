@@ -10,6 +10,7 @@
   color: $color-white;
   text-decoration: none;
   opacity: 0;
+  z-index: 1;
 
   &:focus {
     left: $spacing-sm;
