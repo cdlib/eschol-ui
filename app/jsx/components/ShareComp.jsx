@@ -7,11 +7,11 @@ class ShareComp extends React.Component {
     return (
       <details className="c-share">
         <summary>Share</summary>
-        <ul className="c-share__list">
-          <li><a className="c-share__email" href="">Email</a></li>
-          <li><a className="c-share__facebook" href="">Facebook</a></li>
-          <li><a className="c-share__twitter" href="">Twitter</a></li>
-        </ul>
+        <div className="c-share__list">
+          <a className="c-share__email" href="">Email</a>
+          <a className="c-share__facebook" href="">Facebook</a>
+          <a className="c-share__twitter" href="">Twitter</a>
+        </div>
       </details>
     )
   }
