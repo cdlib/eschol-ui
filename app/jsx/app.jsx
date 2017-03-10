@@ -15,6 +15,7 @@ import AboutLayout from './layouts/AboutLayout.jsx'
 import AlertDisp from './display/AlertDisp.jsx'
 import AuthorListDisp from './display/AuthorListDisp.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
+import BrowseCampusesLayout from './layouts/BrowseCampusesLayout.jsx'
 import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
@@ -105,6 +106,7 @@ ReactDOM.render((
       <Route path="/alert" component={AlertDisp} />
       <Route path="/authorlist" component={AuthorListDisp} />
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
+      <Route path="/browsecampuses" component={BrowseCampusesLayout} />
       <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
       <Route path="/button" component={ButtonDisp} />

@@ -9,6 +9,7 @@ class Home extends React.Component {
         <h2>Layouts</h2>
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#browsecampuses">Browse Campuses</a></li>
           <li><a href="#browsedepartments">Browse Departments</a></li>
           <li><a href="#journalhome">Journal Home Layout</a></li>
           <li><a href="#journalitem">Journal Item Layout</a></li>
