@@ -22,8 +22,11 @@ class NavComp extends React.Component {
   render() {
     return (
       <div className="c-nav">
-        <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
-          <summary className="c-nav__main-button">Menu
+        <details open={this.state.isOpen ? "open" : ""} aria-expanded={this.state.isOpen ? "true" : "false"} className="c-nav__main" ref={(domNode)=> this.details = domNode}>
+          <summary className="c-nav__main-button" onClick = {(event)=>{
+            this.setState({isOpen: !this.details.open})
+            event.preventDefault()
+          }}>Menu
           </summary>
           <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
             <a href="">Journal Home</a>
