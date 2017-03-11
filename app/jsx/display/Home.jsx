@@ -27,7 +27,8 @@ class Home extends React.Component {
           <li><a href="#imagecontent">Image Content</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#itemunavailable">Item Unavailable</a></li>
-          <li><a href="#mediafile">Media File</a></li>
+          <li><a href="#journal">Journals</a></li>
+          <li><a href="#mediafile">Media Files</a></li>
           <li><a href="#textlink">Text Links</a></li>
         </ul>
         <h2>Components</h2>

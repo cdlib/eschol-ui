@@ -39,6 +39,7 @@ import InfoPagesDisp from './display/InfoPagesDisp.jsx'
 import InputDisp from './display/InputDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
 import ItemUnavailableDisp from './display/ItemUnavailableDisp.jsx'
+import JournalDisp from './display/JournalDisp.jsx'
 import JournalItemLayout from './layouts/JournalItemLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalHomeLayout from './layouts/JournalHomeLayout.jsx'
@@ -128,6 +129,7 @@ ReactDOM.render((
       <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
+      <Route path="/journal" component={JournalDisp} />
       <Route path="/journalhome" component={JournalHomeLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journalitem" component={JournalItemLayout} />
