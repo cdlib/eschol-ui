@@ -6,9 +6,15 @@ class JournalObj extends React.Component {
   render() {
     return (
       <div>
-        <div className="o-journal">
-          [Journal object to go here]
-        </div>
+        
+        <h2>Featured Journal</h2>
+        <a href="" className="o-journal">
+          <figure>
+            <img src="images/sample_journal1.png" alt="sample journal"/>
+            <figcaption>Chicana-Latina Law Review</figcaption>
+          </figure>
+        </a>
+
       </div>
     )
   }
