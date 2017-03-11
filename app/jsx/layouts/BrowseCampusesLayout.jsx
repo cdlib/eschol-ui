@@ -77,19 +77,19 @@ class BrowseCampusesLayout extends React.Component {
               <header>
                 <h2>Featured Journals</h2>
               </header>
-              <a href="" className="o-journal">
+              <a href="" className="o-journal1">
                 <figure>
                   <img src="images/sample_journal1.png" alt="sample journal"/>
                   <figcaption>Chicana-Latina Law Review</figcaption>
                 </figure>
               </a>
-              <a href="" className="o-journal">
+              <a href="" className="o-journal1">
                 <figure>
                   <img src="images/sample_journal1.png" alt="sample journal"/>
                   <figcaption>Chicana-Latina Law Review</figcaption>
                 </figure>
               </a>
-              <a href="" className="o-journal">
+              <a href="" className="o-journal1">
                 <figure>
                   <img src="images/sample_journal1.png" alt="sample journal"/>
                   <figcaption>Chicana-Latina Law Review</figcaption>
