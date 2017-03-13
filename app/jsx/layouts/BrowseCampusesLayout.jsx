@@ -62,6 +62,10 @@ class BrowseCampusesLayout extends React.Component {
             <button className="o-button__3">Get Started</button>
           </div>
         </div>
+        <nav className="c-breadcrumb">
+          <a href="">eScholarship</a>
+          <a className="c-breadcrumb-link--active" href="">Journals</a>
+        </nav>
         <div className="c-columns">
           <main id="maincontent">
             <section className="o-columnbox1">
