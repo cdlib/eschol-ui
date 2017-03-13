@@ -13,7 +13,7 @@ class ToggleListSubComp extends React.Component {
         <summary onClick={event => {
           this.setState({open: !this.details.open, date: new Date()})
           event.preventDefault()
-        }}>{this.props.title}</summary>
+        }} aria-label="list of sub items"></summary>
         <ul>
           {this.props.children}
         </ul>

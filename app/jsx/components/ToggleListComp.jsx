@@ -20,11 +20,13 @@ class ToggleListComp extends React.Component {
           <li><a href="">Center for Environmental Design Research</a></li>
           <li><a href="">California Academic Partnership Program</a></li>
           <li>
-            <ToggleListSubComp title="California Center for Population Research" override={this.state.override}>
+            <a href="">California Center for Population Research</a>
+            <ToggleListSubComp override={this.state.override}>
               <li><a href="">Safe Transportation Research & Education Center</a></li>
               <li><a href="">UC Berkeley Center for Future Urban Transport: A Volvo Center of Excellence</a></li>
               <li>
-                <ToggleListSubComp title="UC Berkeley Transportation Sustainability Research Center" override={this.state.override}>
+                <a href="">UC Berkeley Transportation Sustainability Research Center</a>
+                <ToggleListSubComp override={this.state.override}>
                   <li><a href="">Center for Latino Policy Research</a></li>
                   <li><a href="">Center for Research on Native American Issues</a></li>
                   <li><a href="">Center for Right-Wing Studies</a></li>
