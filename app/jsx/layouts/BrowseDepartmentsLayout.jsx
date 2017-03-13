@@ -8,7 +8,7 @@ import WellComp from '../components/WellComp.jsx'
 import ToggleListComp from '../components/ToggleListComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
-class JournalItemLayout extends React.Component {
+class BrowseDepartmentsLayout extends React.Component {
   constructor(props){
     super(props)
     this.state = {submenuActive: null}
@@ -79,4 +79,4 @@ class JournalItemLayout extends React.Component {
   }
 }
 
-module.exports = JournalItemLayout;
+module.exports = BrowseDepartmentsLayout;
