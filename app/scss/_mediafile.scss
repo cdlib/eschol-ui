@@ -198,7 +198,7 @@ $mediafile-img-height: 120px;
 .o-mediafile--image--selected,
 .o-mediafile--video--selected {
   padding: $spacing-sm;
-  background-color: $color-light-gray;
+  background-color: lighten($color-light-gray, 15%);
 }
 
 %o-mediafile__heading {
