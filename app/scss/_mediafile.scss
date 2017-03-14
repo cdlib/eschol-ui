@@ -2,6 +2,8 @@
 
 $mediafile-img-height: 120px;
 
+// Note that space and border styles around these objects are contained within _mediafilegrid.scss
+
 %o-mediafile {
   @extend %clearfix;
   position: relative;
