@@ -47,6 +47,30 @@
 
 }
 
+.c-subheader2__sidebar-text {
+  display: none;
+
+  @include bp(screen3) {
+    display: block;
+    width: 14em;
+    margin: $spacing-sm 0;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+}
+
+.c-subheader2__sidebar-number {
+  display: none;
+
+  @include bp(screen3) {
+    display: block;
+    color: $color-teal;
+    text-align: right;
+  }
+
+}
+
 .c-subheader2__button-fragment {
   position: absolute;
   left: -9999px;
