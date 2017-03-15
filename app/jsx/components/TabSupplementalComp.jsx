@@ -8,7 +8,7 @@ class TabSupplementalComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
-        <h1 className="c-tabcontent__heading">Supplemental Material</h1>
+        <h1 className="c-tabcontent__heading" tabIndex="-1">Supplemental Material</h1>
         <RefineMediaComp />
         <MediaFileGridComp />
       </div>
