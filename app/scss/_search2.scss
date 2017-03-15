@@ -1,5 +1,7 @@
 // ##### Search2 Component ##### //
 
+$search2-refine-height: 50px;
+
 .c-search2 {
   display: flex;
   align-items: flex-start;
@@ -68,9 +70,8 @@
 %c-search2__refine {
   display: flex;
   align-items: center;
-  height: $input-height;
   padding: 0 8px;
-  transition: margin 0.5s 0.1s;
+  transition: height 0.5s 0.1s, margin 0.5s 0.1s;
   background: lighten($color-light-gray, 10%);
 
   label {
@@ -82,10 +83,12 @@
 
 .c-search2__refine {
   @extend %c-search2__refine;
-  margin: (-$input-height) 0 0;
+  height: 0;
+  margin-top: -5px;
 }
 
 .c-search2__refine--active {
   @extend %c-search2__refine;
-  margin: 0;
+  height: $search2-refine-height;
+  margin-top: 0;
 }
