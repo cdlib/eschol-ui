@@ -7,9 +7,8 @@
 
 .c-search2__inputs {
   display: flex;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   flex-flow: column nowrap;
-  width: 23.5em;
   margin: 0 $spacing-body 0 0;
   border: 1px solid $color-light-gray;
   border-radius: $round-corner;
