@@ -73,8 +73,13 @@
   background: lighten($color-light-gray, 10%);
 
   label {
-    margin: 0 20px 0 5px;
+    margin-left: 5px;
     font-size: 0.9em;
+
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+
   }
 
 }
