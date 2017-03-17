@@ -89,4 +89,9 @@
   @extend %c-search2__refine;
   height: 3em;
   margin-top: 0;
+
+  @include bp(screen3) {
+    height: $input-height;
+  }
+
 }
