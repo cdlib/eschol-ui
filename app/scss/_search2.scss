@@ -1,7 +1,5 @@
 // ##### Search2 Component ##### //
 
-$search2-refine-height: 50px;
-
 .c-search2 {
   display: flex;
   align-items: flex-start;
@@ -83,12 +81,12 @@ $search2-refine-height: 50px;
 
 .c-search2__refine {
   @extend %c-search2__refine;
-  height: 0;
-  margin-top: -5px;
+  height: $input-height;
+  margin-top: (-$input-height);
 }
 
 .c-search2__refine--active {
   @extend %c-search2__refine;
-  height: $search2-refine-height;
+  height: 3em;
   margin-top: 0;
 }
