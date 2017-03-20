@@ -7,13 +7,13 @@ class SocialIconsComp extends React.Component {
     return (
       <div className="c-socialicons">
         <a href="">
-          <img src="images/logo_facebook-black.svg" alt="Facebook"/>
+          <img src="images/logo_facebook-circle-black.svg" alt="Facebook"/>
         </a>
         <a href="">
-          <img src="images/logo_twitter-black.svg" alt="Twitter"/>
+          <img src="images/logo_twitter-circle-black.svg" alt="Twitter"/>
         </a>
         <a href="">
-          <img src="images/icon_rss-black.svg" alt="RSS"/>
+          <img src="images/logo_rss-circle-black.svg" alt="RSS"/>
         </a>
       </div>
     )
