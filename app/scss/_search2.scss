@@ -69,7 +69,8 @@
   display: flex;
   align-items: center;
   padding: 0 8px;
-  transition: height 0.5s 0.1s, margin 0.5s 0.1s;
+  transition: min-height 0.5s, margin-top 0.5s;
+  transition-delay: 0.2s;
   background: lighten($color-light-gray, 10%);
 
   label {
