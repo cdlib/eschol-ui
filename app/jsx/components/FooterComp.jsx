@@ -20,7 +20,7 @@ class FooterComp extends React.Component {
         </nav>
         <div className="c-footer__logo">
           <a href="">
-            <img src="images/logo_temp-footer-eschol.png" alt="eScholarship logo"/>
+            <img src="images/logo_footer-eschol.svg" alt="eScholarship, University of California"/>
           </a>
         </div>
         <div className="c-footer__icons">
