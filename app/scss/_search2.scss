@@ -74,7 +74,8 @@
   background: lighten($color-light-gray, 10%);
 
   label {
-    margin-left: 5px;
+    margin-left: -15px;
+    padding: 8px 0 6px 20px;
     font-size: 0.9em;
 
     &:not(:last-of-type) {
