@@ -25,10 +25,10 @@ class FooterComp extends React.Component {
         </div>
         <div className="c-footer__icons">
           <a href="">
-            <img src="images/logo_facebook.svg" alt="Facebook"/>
+            <img src="images/logo_facebook-circle-white.svg" alt="Facebook"/>
           </a>
           <a href="">
-            <img src="images/logo_twitter.svg" alt="Twitter"/>
+            <img src="images/logo_twitter-circle-white.svg" alt="Twitter"/>
           </a>
         </div>
         <div className="c-footer__copyright">

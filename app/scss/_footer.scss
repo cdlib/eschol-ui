@@ -79,15 +79,13 @@
   }
 
   a {
-    @extend %circular-border;
-    border-color: $color-white;
 
     &:not(:first-child) {
       margin-left: $spacing-lg;
     }
 
     img {
-      width: 30px;
+      width: 40px;
     }
 
   }
