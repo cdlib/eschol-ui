@@ -11,21 +11,20 @@
 
 }
 
-.c-itemactions__download {
+%c-itemactions__elements {
   margin-right: $spacing-sm;
   margin-bottom: $spacing-sm;
 }
 
-%c-itemactions__buttons {
-  margin-right: $spacing-sm;
-  margin-bottom: $spacing-sm;
+.c-itemactions__download {
+  @extend %c-itemactions__elements;
 }
 
 .c-itemactions__button1 {
-  @extend %c-itemactions__buttons;
+  @extend %c-itemactions__elements;
 }
 
 .c-itemactions__button2 {
-  @extend %c-itemactions__buttons;
+  @extend %c-itemactions__elements;
   background-image: inline('../images/icon_book-white.svg');
 }
