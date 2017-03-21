@@ -4,15 +4,11 @@
   margin-bottom: $spacing-md;
 
   @include bp(screen3) {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     margin-bottom: $spacing-sm;
   }
 
-}
-
-.c-itemactions__items1 {
-  flex: 1;
 }
 
 .c-itemactions__download {
@@ -33,8 +29,3 @@
   @extend %c-itemactions__buttons;
   background-image: inline('../images/icon_book-white.svg');
 }
-
-.c-itemactions__items2 {
-  // not used
-}
-
