@@ -3,7 +3,7 @@
 .c-share {
   display: inline-block;
   position: relative;
-  justify-self: end; // within c-itemactions grid
+  margin-left: auto; // right-justify within c-itemactions
 
   summary {
     display: inline-block;
