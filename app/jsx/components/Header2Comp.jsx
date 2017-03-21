@@ -12,11 +12,14 @@ class HeaderComp2 extends React.Component {
   render() {
     return (
       <header className="c-header">
-        <a href="">
+        <a className="c-header__logo2" href="">
           <picture>
             <source srcSet="images/logo_eschol-small.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
             <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
           </picture>
+          <div className="c-header__logo2-tagline">
+            Open Access Publications from the University of California
+          </div>
         </a>  
         <div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>
           <Search2Comp onClose = {()=>this.setState({searchActive: false})} />
