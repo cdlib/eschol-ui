@@ -42,6 +42,7 @@ class ItemActionsComp extends React.Component {
             </ul>
           </details>
         </div>
+        {/* buttons below can be omitted */}
         <button className="c-itemactions__button1 o-button__6">Buy in Print</button>
         <button className="c-itemactions__button2 o-button__6">Buy e-Book</button>
         <ShareComp />
