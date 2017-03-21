@@ -1,6 +1,7 @@
 // ##### Item Actions Component ##### //
 
 .c-itemactions {
+  position: relative; // for o-download and c-share
   margin-bottom: $spacing-md;
 
   @include bp(screen3) {

@@ -2,7 +2,6 @@
 
 .c-share {
   display: inline-block;
-  position: relative;
   margin-left: auto; // right-justify within c-itemactions
 
   summary {
@@ -39,7 +38,7 @@
 }
 
 .c-share__list {
-  position: absolute;
+  position: absolute; // to c-itemactions
   right: 0;
   left: 0;
   margin-top: 5px;
