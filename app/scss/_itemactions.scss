@@ -4,8 +4,8 @@
   margin-bottom: $spacing-md;
 
   @include bp(screen3) {
-    // display: flex;
-    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
     margin-bottom: $spacing-sm;
   }
 
