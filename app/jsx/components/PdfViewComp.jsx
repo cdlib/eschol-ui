@@ -5,9 +5,14 @@ import React from 'react'
 class PdfViewComp extends React.Component {
   render() {
     return (
-      <div className="c-pdfview">
-        [PDF View component to go here]
-      </div>
+      <details className="c-togglecontent" open>
+        <summary>Main Content</summary>
+        <div className="c-pdfview">
+          <button className="c-pdfview__button-download">Download PDF to View</button>
+          <button className="c-pdfview__button-view">View Larger</button>
+        </div>
+        <div>PDF viewer to go here</div>
+      </details>
     )
   }
 }

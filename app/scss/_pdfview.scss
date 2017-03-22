@@ -1,5 +1,29 @@
 // ##### PDF View Component ##### //
 
 .c-pdfview {
-  border: $bgreen;
+  
+  @include bp(screen1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+}
+
+.c-pdfview__button-download {
+  margin-bottom: $spacing-sm;
+
+  @include bp(screen2) {
+    display: none;
+  }
+
+}
+
+.c-pdfview__button-view {
+  display: none;
+
+  @include bp(screen2) {
+    display: block;
+  }
+
 }
