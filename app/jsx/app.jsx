@@ -40,9 +40,9 @@ import InputDisp from './display/InputDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
 import ItemUnavailableDisp from './display/ItemUnavailableDisp.jsx'
 import JournalDisp from './display/JournalDisp.jsx'
-import JournalItemLayout from './layouts/JournalItemLayout.jsx'
+import JournalItemHtmlLayout from './layouts/JournalItemHtmlLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
-import JournalHomeLayout from './layouts/JournalHomeLayout.jsx'
+import JournalSplashyLayout from './layouts/JournalSplashyLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
@@ -130,9 +130,9 @@ ReactDOM.render((
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
       <Route path="/journal" component={JournalDisp} />
-      <Route path="/journalhome" component={JournalHomeLayout} />
+      <Route path="/journalsplashy" component={JournalSplashyLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
-      <Route path="/journalitem" component={JournalItemLayout} />
+      <Route path="/journalitemhtml" component={JournalItemHtmlLayout} />
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
