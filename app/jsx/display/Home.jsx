@@ -10,7 +10,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#browsecampuses">Browse Campuses</a></li>
-          <li><a href="#browsedepartments">Browse Departments</a></li>
+          <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
           <li><a href="#journalsplashy">Journal (Splashy) Layout</a></li>
           <li><a href="#journalitemhtml">Journal Item (HTML) Layout</a></li>
           <li><a href="#searchlayout">Search</a></li>
