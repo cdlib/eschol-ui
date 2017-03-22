@@ -4,7 +4,7 @@
   
   @include bp(screen1) {
     position: absolute;
-    top: 0;
+    top: $spacing-sm;
     right: 0;
   }
 

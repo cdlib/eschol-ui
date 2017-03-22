@@ -8,6 +8,7 @@ import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
+import PdfViewComp from '../components/PdfViewComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -46,12 +47,7 @@ class JournalItemPdfLayout extends React.Component {
                     Many UC-authored scholarly publications are freely available on this site because of the UC Academic Senate’s Open Access Policy. <a className="o-textlink__secondary" href="">Let us know how this access is important for you</a>.
                   </div>
                 </details>
-                <details className="c-togglecontent" open>
-                  <summary>Main Content</summary>
-                  <div>
-                    [PDF content to go here]
-                  </div>
-                </details>
+                <PdfViewComp />
               </div>
             </div>
           </main>
