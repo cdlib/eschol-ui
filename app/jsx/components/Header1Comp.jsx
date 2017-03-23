@@ -15,7 +15,7 @@ class HeaderComp1 extends React.Component {
         <a className="c-header__logo1" href="">
           <picture>
             <source srcSet="images/logo_escholarship.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
-            <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
+            <img src="images/logo_eschol-mobile.svg" alt="escholarship"/>
           </picture>
         </a>
         <div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>

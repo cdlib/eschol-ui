@@ -15,7 +15,7 @@ class HeaderComp2 extends React.Component {
         <a className="c-header__logo2" href="">
           <picture>
             <source srcSet="images/logo_eschol-small.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
-            <img src="images/logo_temp-eschol-mobile.png" alt="escholarship"/>
+            <img src="images/logo_eschol-mobile.svg" alt="escholarship"/>
           </picture>
           <div className="c-header__logo2-tagline">
             Open Access Publications from the University of California

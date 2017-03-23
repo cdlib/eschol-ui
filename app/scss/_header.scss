@@ -13,11 +13,7 @@
 .c-header__logo1 {
 
   img {
-
-    @include bp(screen3) {
-      // (TBD)
-    }
-
+    height: 50px;
   }
 
 }
@@ -33,11 +29,7 @@
   }
 
   img {
-
-    @include bp(screen3) {
-      height: $element-height;
-    }
-
+    height: $element-height;
   }
 
 }
