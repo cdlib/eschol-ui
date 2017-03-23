@@ -27,7 +27,7 @@ class JournalItemPdfLayout extends React.Component {
           <a href="">Series Name</a>
           <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
         </nav>
-        <div className="c-columns">
+        <div className="c-columns--sticky-sidebar">
           <main id="maincontent">
             <div className="c-tabs">
               <div className="c-tabs__tabs">
