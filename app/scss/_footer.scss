@@ -39,8 +39,8 @@
 
     @supports (display: grid) {
       position: static;
-      margin: 0 0 0 35%;
-      grid-column: 2 / 3;
+      margin-left: 35%;
+      grid-column: 2;
       grid-row: 1 / 4;
     }
 
