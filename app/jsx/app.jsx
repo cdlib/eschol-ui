@@ -46,6 +46,7 @@ import JournalInfoDisp from './display/JournalInfoDisp.jsx'
 import JournalSplashyLayout from './layouts/JournalSplashyLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
+import MediaFeatureDisp from './display/MediaFeatureDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
 import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
@@ -139,6 +140,7 @@ ReactDOM.render((
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
+      <Route path="/mediafeature" component={MediaFeatureDisp} />
       <Route path="/mediafile" component={MediaFileDisp} />
       <Route path="/mediafilegrid" component={MediaFileGridDisp} />
       <Route path="/nav" component={NavDisp} />
