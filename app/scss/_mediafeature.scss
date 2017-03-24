@@ -4,14 +4,29 @@
   margin-bottom: $spacing-md;
 }
 
-.o-mediafeature__item {
-  // temp styles to fill container until further styled for separate media types:
+%o-mediafeature__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vw;
   margin-bottom: $spacing-sm;
+}
+
+.o-mediafeature__item--audio {
+  @extend %o-mediafeature__item;
+  height: 50vw;
   background-color: $color-light-gray;
+}
+
+.o-mediafeature__item--file {
+  @extend %o-mediafeature__item;
+}
+
+.o-mediafeature__item--picture {
+  @extend %o-mediafeature__item;
+}
+
+.o-mediafeature__item--video {
+  @extend %o-mediafeature__item;
 }
 
 .o-mediafeature__title-bar {
