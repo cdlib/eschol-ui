@@ -16,9 +16,9 @@ class SearchComp2 extends React.Component {
             <input type="search" id="global-search" className="c-search2__field" placeholder="Search" onFocus = {()=> this.setState({refineActive: true})} onBlur = {()=> this.setState({refineActive: false})}/>
           </div>
           <div className={this.state.refineActive ? "c-search2__refine--active" : "c-search2__refine"}>
-            <input type="radio" name="search-refine" id="c-search2__refine-eschol" defaultChecked={true}/>
+            <input type="radio" name="search-refine" id="c-search2__refine-eschol" defaultChecked={true} onFocus = {()=> this.setState({refineActive: true})} onBlur = {()=> this.setState({refineActive: false})}/>
             <label htmlFor="c-search2__refine-eschol">All of eScholarship</label>
-            <input type="radio" name="search-refine" id="c-search2__refine-campus"/>
+            <input type="radio" name="search-refine" id="c-search2__refine-campus" onFocus = {()=> this.setState({refineActive: true})} onBlur = {()=> this.setState({refineActive: false})}/>
             <label htmlFor="c-search2__refine-campus">This campus</label>
           </div>
         </div>
