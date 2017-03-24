@@ -1,13 +1,13 @@
 // ##### Media Feature Display ##### //
 
 import React from 'react'
-import MediaFeatureComp from '../components/MediaFeatureComp.jsx'
+import MediaFeatureObj from '../objects/MediaFeatureObj.jsx'
 
 class MediaFeatureDisp extends React.Component {
   render() {
     return (
       <div>
-         <MediaFeatureComp />
+         <MediaFeatureObj />
       </div>
     )
   }

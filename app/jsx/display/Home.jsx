@@ -29,6 +29,7 @@ class Home extends React.Component {
           <li><a href="#input">Inputs</a></li>
           <li><a href="#itemunavailable">Item Unavailable</a></li>
           <li><a href="#journal">Journals</a></li>
+          <li><a href="#mediafeature">Media Feature</a></li>
           <li><a href="#mediafile">Media Files</a></li>
           <li><a href="#textlink">Text Links</a></li>
         </ul>
@@ -53,7 +54,6 @@ class Home extends React.Component {
           <li><a href="#jump">Jump</a></li>
           <li><a href="#language">language</a></li>
           <li><a href="#marquee">Marquee</a></li>
-          <li><a href="#mediafeature">Media Feature</a></li>
           <li><a href="#mediafilegrid">Media File Grid</a></li>
           <li><a href="#nav">Navigation</a></li>
           <li><a href="#nav1">Navigation 1 (old) - Home</a></li>
