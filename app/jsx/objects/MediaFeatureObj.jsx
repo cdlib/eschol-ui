@@ -38,10 +38,10 @@ class MediaFeatureObj extends React.Component {
         <h2>Picture Example</h2>
         <div className="o-mediafeature--picture">
           <div className="o-mediafeature__item">
-            <img src="images/sample_overhead-view.png" alt="New horizons full trajectory overhead view"/>
+            <img src="images/temp_new-horizons-data.png" alt="New horizons full trajectory side view"/>
           </div>
           <div className="o-mediafeature__title-bar">
-            <h2>New Horizons Full Trajectory - Overhead View</h2>
+            <h2>New Horizons Full Trajectory - Side View</h2>
             <button>Download</button>
           </div>
           <div className="o-mediafeature__description">
