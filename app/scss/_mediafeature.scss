@@ -1,6 +1,6 @@
 // ##### Media Feature Objects ##### //
 
-.o-mediafeature {
+%o-mediafeature {
   margin-bottom: $spacing-md;
 }
 
@@ -13,42 +13,62 @@
   background-color: $color-light-gray;
 }
 
-.o-mediafeature__item--audio {
-  @extend %o-mediafeature__item;
-  height: 50vw;
-}
+.o-mediafeature--audio {
+  @extend %o-mediafeature;
 
-.o-mediafeature__item--file {
-  @extend %o-mediafeature__item;
-  height: 50vw;
-  padding: 0 $spacing-sm;
-
-  strong {
-    margin-bottom: $spacing-md;
-    text-transform: uppercase;
-  }
-
-  button {
-    @extend %o-button__6;
-    background-image: inline('../images/icon_download-white.svg');
+  .o-mediafeature__item {
+    @extend %o-mediafeature__item;
+    height: 50vw;
   }
 
 }
 
-.o-mediafeature__item--picture {
-  @extend %o-mediafeature__item;
+.o-mediafeature--file {
+  @extend %o-mediafeature;
 
-  img {
-    max-width: 100%;
+  .o-mediafeature__item {
+    @extend %o-mediafeature__item;
+    height: 50vw;
+    padding: 0 $spacing-sm;
+
+    strong {
+      margin-bottom: $spacing-md;
+      text-transform: uppercase;
+    }
+
+    button {
+      @extend %o-button__6;
+      background-image: inline('../images/icon_download-white.svg');
+    }
+
   }
 
 }
 
-.o-mediafeature__item--video {
-  @extend %o-mediafeature__item;
+.o-mediafeature--picture {
+  @extend %o-mediafeature;
 
-  video {
-    max-width: 100%;
+  .o-mediafeature__item {
+    @extend %o-mediafeature__item;
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+
+}
+
+.o-mediafeature--video {
+  @extend %o-mediafeature;
+
+  .o-mediafeature__item {
+    @extend %o-mediafeature__item;
+
+    video {
+      max-width: 100%;
+    }
+
   }
 
 }

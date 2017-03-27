@@ -8,8 +8,8 @@ class MediaFeatureObj extends React.Component {
       <div>
 
         <h2>Audio Example</h2>
-        <div className="o-mediafeature">
-          <div className="o-mediafeature__item--audio">
+        <div className="o-mediafeature--audio">
+          <div className="o-mediafeature__item">
             <audio src="images/sample_audio.mp3" controls></audio>
           </div>
           <div className="o-mediafeature__title-bar">
@@ -22,8 +22,8 @@ class MediaFeatureObj extends React.Component {
         </div>
 
         <h2>File Example</h2>
-        <div className="o-mediafeature">
-          <div className="o-mediafeature__item--file">
+        <div className="o-mediafeature--file">
+          <div className="o-mediafeature__item">
             <strong>No preview available</strong>
             <button>Download New Horizons Telemetry Data</button>
           </div>
@@ -36,9 +36,9 @@ class MediaFeatureObj extends React.Component {
         </div>
 
         <h2>Picture Example</h2>
-        <div className="o-mediafeature">
-          <div className="o-mediafeature__item--picture">
-            <img src="images/sample_overhead-view.png" alt=""/>
+        <div className="o-mediafeature--picture">
+          <div className="o-mediafeature__item">
+            <img src="images/sample_overhead-view.png" alt="New horizons full trajectory overhead view"/>
           </div>
           <div className="o-mediafeature__title-bar">
             <h2>New Horizons Full Trajectory - Overhead View</h2>
@@ -50,8 +50,8 @@ class MediaFeatureObj extends React.Component {
         </div>
 
         <h2>Video Example</h2>
-        <div className="o-mediafeature">
-          <div className="o-mediafeature__item--video">
+        <div className="o-mediafeature--video">
+          <div className="o-mediafeature__item">
             <video src="images/sample_video.mp4" controls poster="images/sample_video-poster.jpg"></video>
           </div>
           <div className="o-mediafeature__title-bar">
