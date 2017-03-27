@@ -6,24 +6,37 @@
 
 %o-mediafeature__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: $spacing-sm;
+  background-color: $color-light-gray;
 }
 
 .o-mediafeature__item--audio {
   @extend %o-mediafeature__item;
   height: 50vw;
-  background-color: $color-light-gray;
 }
 
 .o-mediafeature__item--file {
   @extend %o-mediafeature__item;
+  height: 50vw;
+  padding: 0 $spacing-sm;
+
+  strong {
+    margin-bottom: $spacing-md;
+    text-transform: uppercase;
+  }
+
+  button {
+    @extend %o-button__6;
+    background-image: inline('../images/icon_download-white.svg');
+  }
+
 }
 
 .o-mediafeature__item--picture {
   @extend %o-mediafeature__item;
-  background-color: $color-light-gray;
 
   img {
     max-width: 100%;
