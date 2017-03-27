@@ -85,35 +85,34 @@
 
   // ***** Custom Checkbox Styles ***** //
 
-  // To dos: (1) combine selectors, (2) make into separate component or object
-
-  // hide default radio button:
   [type='radio'] {
+    // hide default radio button:
     @extend %hide;
-  }
 
-  // unchecked style:
-  [type='radio'] + label:before {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.5em;
-    transition: 0.2s ease all;
-    border: 1px solid $color-black;
-    border-radius: 100%;
-    content: '';
-    vertical-align: middle;
-  }
+    // unchecked style:
+    + label:before {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 0.5em;
+      transition: 0.2s ease all;
+      border: 1px solid $color-black;
+      border-radius: 100%;
+      content: '';
+      vertical-align: middle;
+    }
 
-  // checked style:
-  [type='radio']:checked + label:before {
-    background-color: $color-teal;
-  }
+    // checked style:
+    &:checked + label:before {
+      background-color: $color-teal;
+    }
 
-  // focused style:
-  [type='radio']:focus + label:before {
-    border: 2px solid $color-black;
-    background-color: desaturate(lighten($color-teal, 20%), 20%);
+    // focused style:
+    &:focus + label:before {
+      border: 2px solid $color-black;
+      background-color: desaturate(lighten($color-teal, 20%), 20%);
+    }
+
   }
 
 }
