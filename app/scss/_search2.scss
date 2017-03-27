@@ -42,7 +42,6 @@
   @extend %hide;
 
   @include bp(screen3) {
-    // first 2 properties make up %show, because Sass @extends are not allowed within media queries:
     position: static;
     left: auto;
     min-height: $input-height;
@@ -70,7 +69,7 @@
   align-items: center;
   padding: 0 8px;
   transition: min-height 0.5s, margin-top 0.5s;
-  transition-delay: 0.2s; // fixes open/close jitter
+  transition-delay: 0.2s; // fixes open/close jitter upon onfocus/blur
   background: lighten($color-light-gray, 10%);
 
   label {
