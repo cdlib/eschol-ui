@@ -23,6 +23,12 @@
 
 .o-mediafeature__item--picture {
   @extend %o-mediafeature__item;
+  background-color: $color-light-gray;
+
+  img {
+    max-width: 100%;
+  }
+
 }
 
 .o-mediafeature__item--video {
