@@ -31,7 +31,7 @@ class MediaFileGridComp extends React.Component {
           </div>
         </div>
         {/* Media File Component #3 */}
-        <div className="o-mediafile--image--selected">
+        <div className="o-mediafile--image">
           <h2 className="o-mediafile__heading">New Horizons Full Trajectory - Side View</h2>
           <a className="o-mediafile__link" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
@@ -42,7 +42,7 @@ class MediaFileGridComp extends React.Component {
           </div>
         </div>
         {/* Media File Component #4 */}
-        <div className="o-mediafile--video">
+        <div className="o-mediafile--video--selected">
           <h2 className="o-mediafile__heading">New Horizons Kuiper Belt Fly-through</h2>
           <a className="o-mediafile__link" href="images/sample_video.mp4" aria-label="play video file">
             <img className="o-mediafile__image" src="images/sample_video-poster.jpg" alt="New horizons data" />
