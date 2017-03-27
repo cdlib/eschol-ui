@@ -46,6 +46,11 @@
 
 .o-mediafeature__item--video {
   @extend %o-mediafeature__item;
+
+  video {
+    max-width: 100%;
+  }
+
 }
 
 .o-mediafeature__title-bar {
