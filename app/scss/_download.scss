@@ -4,6 +4,7 @@
 
 .o-download {
   display: inline-flex;
+  border-radius: 0 $round-corner $round-corner 0;
   box-shadow: $box-shadow2;
 
   @include bp(screen3) {
