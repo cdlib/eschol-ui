@@ -3,6 +3,7 @@
 .c-share {
   display: inline-block;
   margin-left: auto; // right-justify within c-itemactions
+  box-shadow: $box-shadow2;
 
   summary {
     display: inline-block;

@@ -4,6 +4,7 @@
 
 .o-download {
   display: inline-flex;
+  box-shadow: $box-shadow2;
 
   @include bp(screen3) {
     position: relative;
