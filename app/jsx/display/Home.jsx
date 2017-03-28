@@ -11,13 +11,14 @@ class Home extends React.Component {
           <li><a href="#about">About</a></li>
           <li><a href="#browsecampuses">Browse Campuses</a></li>
           <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
-          <li><a href="#journalsplashy">Journal (Splashy) Layout</a></li>
-          <li><a href="#journalitemhtml">Journal Item (HTML) Layout</a></li>
-          <li><a href="#journalitemmultimedia">Journal Item (Multimedia) Layout</a></li>
-          <li><a href="#journalitempdf">Journal Item (PDF) Layout</a></li>
+          <li><a href="#journalsplashy">Journal (Splashy)</a></li>
+          <li><a href="#journalitemhtml">Journal Item (HTML)</a></li>
+          <li><a href="#journalitemmultimedia">Journal Item (Multimedia)</a></li>
+          <li><a href="#journalitempdf">Journal Item (PDF)</a></li>
           <li><a href="#searchlayout">Search</a></li>
-          <li><a href="#seriesitemembargoed">Series Item Layout - Embargoed</a></li>
-          <li><a href="#seriesitemwithdrawn">Series Item Layout - Withdrawn</a></li>
+          <li><a href="#seriesitemembargoed">Series Item (Embargoed)</a></li>
+          <li><a href="#seriesitemurl">Series Item (URL)</a></li>
+          <li><a href="#seriesitemwithdrawn">Series Item (Withdrawn)</a></li>
         </ul>
         <h2>Objects</h2>
         <ul>
