@@ -84,6 +84,7 @@ import TextlinkDisp from './display/TextlinkDisp.jsx'
 import Test from './display/Test.jsx'
 import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
+import ViewExternalDisp from './display/ViewExternalDisp.jsx'
 import WellDisp from './display/WellDisp.jsx'
 
 // ***** UI Library Home Page ***** //
@@ -180,6 +181,7 @@ ReactDOM.render((
       <Route path="/textlink" component={TextlinkDisp} />
       <Route path="/togglecontent" component={ToggleContentDisp} />
       <Route path="/togglelist" component={ToggleListDisp} />
+      <Route path="/viewexternal" component={ViewExternalDisp} />
       <Route path="/well" component={WellDisp} />
     </Route>
   </Router>
