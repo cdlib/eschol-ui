@@ -8,6 +8,7 @@ import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
+import ViewExternalComp from '../components/ViewExternalComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class SeriesItemUrlLayout extends React.Component {
@@ -46,9 +47,7 @@ class SeriesItemUrlLayout extends React.Component {
                 <details className="c-togglecontent" open>
                   <summary>Abstract</summary>
                   <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
-                  <div>
-                    [view external component to go here]
-                  </div>
+                  <ViewExternalComp />
                 </details>
               </div>
             </div>
