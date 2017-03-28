@@ -5,7 +5,7 @@ import $ from 'jquery'
 
 class MediaFileGridComp extends React.Component {
   componentDidMount() {
-    $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch: 'window'});
+    $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch:'window', after:'.c-mediafile__description-link'});
   }
   render() {
     return (
@@ -19,6 +19,7 @@ class MediaFileGridComp extends React.Component {
           <button className="o-mediafile__button o-button__7">Download</button>
           <div className="o-mediafile__description">
             Architecto quo praesentium, suscipit, qui est maxime ut repellendus earum odio ab, consequuntur saepe voluptatem commodi dolorum eos adipisci, fugiat tempore ipsa. Reprehenderit corrupti quae ea, veritatis iste, perspiciatis. Ad, reiciendis praesentium!
+            <a href="" className="c-mediafile__description-link">More</a>
           </div>
         </div>
         {/* Media File Component #2 */}
@@ -28,6 +29,7 @@ class MediaFileGridComp extends React.Component {
           <button className="o-mediafile__button o-button__7">Download</button>
           <div className="o-mediafile__description">
             Eaque, qui rerum fugiat sed. Error aperiam quo atque debitis doloremque. Adipisci, ab placeat! Atque vitae blanditiis, fuga necessitatibus harum libero, repudiandae quasi vero repellendus fugiat asperiores placeat tempore qui vel iusto!
+            <a href="" className="c-mediafile__description-link">More</a>
           </div>
         </div>
         {/* Media File Component #3 */}
@@ -39,6 +41,7 @@ class MediaFileGridComp extends React.Component {
           <button className="o-mediafile__button o-button__7">Download</button>
           <div className="o-mediafile__description">
             Esse nulla ad veritatis dolorum, vitae maxime tenetur nemo. Quod eius corrupti provident nisi ullam, repellendus molestias, aliquam neque nulla dolorem, magnam commodi ratione enim ex, suscipit labore veniam deserunt nam exercitationem!
+            <a href="" className="c-mediafile__description-link">More</a>
           </div>
         </div>
         {/* Media File Component #4 */}
@@ -50,6 +53,7 @@ class MediaFileGridComp extends React.Component {
           <button className="o-mediafile__button o-button__7">Download</button>
           <div className="o-mediafile__description">
             Veritatis veniam quidem voluptatem laborum necessitatibus iure facilis laudantium possimus sequi libero aliquid, adipisci explicabo, itaque odit ut delectus nemo quas, quia neque. Error cum porro pariatur vel ducimus aliquid quo adipisci.
+            <a href="" className="c-mediafile__description-link">More</a>
           </div>
         </div>
       </div>
