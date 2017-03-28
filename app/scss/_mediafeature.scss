@@ -2,6 +2,8 @@
 
 %o-mediafeature {
   margin-bottom: $spacing-md;
+  padding: $spacing-sm $spacing-sm $spacing-md;
+  border-bottom: 1px solid $color-light-gray;
 }
 
 %o-mediafeature__item {
@@ -9,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: $spacing-sm;
+  margin-bottom: $spacing-md;
   background-color: $color-light-gray;
 }
 
@@ -82,7 +84,7 @@
     flex: 1 1 auto;
     margin: 0 $spacing-md 0 0;
     color: $color-teal;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: normal;
   }
 
