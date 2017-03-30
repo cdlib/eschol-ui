@@ -12,6 +12,7 @@
 
 .c-pdfview__button-download {
   @extend %o-button__6;
+  // fixes chrome/safari min-height + padding within <details> bug:
   padding-top: 0;
   padding-bottom: 0;
   background-image: inline('../images/icon_download-white.svg');
@@ -28,6 +29,7 @@
 
   @include bp(screen1) {
     display: inline-block;
+    // fixes chrome/safari min-height + padding within <details> bug:
     padding-top: 0;
     padding-bottom: 0;
     background-image: inline('../images/icon_expand-white.svg');
