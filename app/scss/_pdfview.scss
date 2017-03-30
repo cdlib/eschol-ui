@@ -4,7 +4,7 @@
   
   @include bp(screen1) {
     position: absolute;
-    top: 0;
+    top: $spacing-md;
     right: 0;
   }
 
@@ -17,10 +17,6 @@
   background-image: inline('../images/icon_download-white.svg');
 
   @include bp(screen1) {
-    margin-top: $spacing-md;
-  }
-
-  @include bp(screen1) {
     display: none;
   }
 
@@ -29,10 +25,6 @@
 .c-pdfview__button-view {
   @extend %o-button__6;
   display: none;
-
-  @include bp(screen1) {
-    margin-top: $spacing-md;
-  }
 
   @include bp(screen1) {
     display: inline-block;
