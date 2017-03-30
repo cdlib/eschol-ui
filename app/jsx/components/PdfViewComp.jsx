@@ -11,7 +11,9 @@ class PdfViewComp extends React.Component {
           <button className="c-pdfview__button-download">Download PDF to View</button>
           <button className="c-pdfview__button-view">View Larger</button>
         </div>
-        <div>[PDF viewer to go here]</div>
+        <div className="c-pdfview__viewer">
+          [PDF viewer to go here]
+        </div>
       </details>
     )
   }
