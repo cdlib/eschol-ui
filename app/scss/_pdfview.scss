@@ -4,7 +4,7 @@
   
   @include bp(screen1) {
     position: absolute;
-    top: $spacing-sm;
+    top: 0;
     right: 0;
   }
 
@@ -12,7 +12,8 @@
 
 .c-pdfview__button-download {
   @extend %o-button__6;
-  margin-bottom: $spacing-sm;
+  padding-top: 0;
+  padding-bottom: 0;
   background-image: inline('../images/icon_download-white.svg');
 
   @include bp(screen2) {
@@ -26,7 +27,9 @@
   display: none;
 
   @include bp(screen2) {
-    display: block;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
     background-image: inline('../images/icon_expand-white.svg');
   }
 
