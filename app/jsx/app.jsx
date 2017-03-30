@@ -44,6 +44,7 @@ import JournalItemHtmlLayout from './layouts/JournalItemHtmlLayout.jsx'
 import JournalItemMultimediaLayout from './layouts/JournalItemMultimediaLayout.jsx'
 import JournalItemPdfLayout from './layouts/JournalItemPdfLayout.jsx'
 import JournalInfoDisp from './display/JournalInfoDisp.jsx'
+import JournalSimpleLayout from './layouts/JournalSimpleLayout.jsx'
 import JournalSplashyLayout from './layouts/JournalSplashyLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
@@ -136,6 +137,7 @@ ReactDOM.render((
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
       <Route path="/journal" component={JournalDisp} />
+      <Route path="/journalsimple" component={JournalSimpleLayout} />
       <Route path="/journalsplashy" component={JournalSplashyLayout} />
       <Route path="/journalinfo" component={JournalInfoDisp} />
       <Route path="/journalitemhtml" component={JournalItemHtmlLayout} />
