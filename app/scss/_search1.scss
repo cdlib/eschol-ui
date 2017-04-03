@@ -15,7 +15,7 @@
 .c-search1__form {
   display: flex;
   min-height: $input-height;
-  margin: 0 0 $spacing-sm;
+  margin-bottom: $spacing-sm;
 }
 
 .c-search1__label {
@@ -24,7 +24,7 @@
 
 .c-search1__field {
   flex: 1 0 auto;
-  margin: 0 5px 0 0;
+  margin-right: 5px;
   padding: 0 0 0 30px;
   border: 1px solid $color-light-gray;
   border-radius: 3px;

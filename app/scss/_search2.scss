@@ -18,7 +18,7 @@
   display: flex;
   flex: 1 1 auto;
   flex-flow: column nowrap;
-  margin: 0 $spacing-body 0 0;
+  margin-right: $spacing-body;
   border: 1px solid $color-light-gray;
   border-radius: $round-corner;
 }
