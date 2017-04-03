@@ -2,7 +2,16 @@
 
 .c-search2 {
   display: flex;
+  position: fixed; // prevents horizontal overflow and scrollbar on small screens
+  right: 0;
+  left: 0;
   align-items: flex-start;
+  background-color: $color-white;
+
+  @include bp(screen2) {
+    position: static;
+  }
+
 }
 
 .c-search2__inputs {

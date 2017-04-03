@@ -1,7 +1,15 @@
 // ##### Search1 Component ##### //
 
 .c-search1 {
-  // not used
+  position: fixed; // prevents horizontal overflow and scrollbar on small screens
+  right: 0;
+  left: 0;
+  background-color: $color-white;
+
+  @include bp(screen2) {
+    position: static;
+  }
+
 }
 
 .c-search1__form {
