@@ -9,7 +9,10 @@
   background-color: $color-white;
 
   @include bp(screen2) {
-    position: static;
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: 310px;
   }
 
 }
