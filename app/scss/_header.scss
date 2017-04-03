@@ -76,8 +76,8 @@
 
 .c-header__search-open-button {
   align-self: flex-start;
-  height: $input-height;
-  padding: 0 13px;
+  min-height: $input-height;
+  padding: 0 ($input-height / 2);
   border: none;
   background: inline('../images/icon_magnify.svg') no-repeat center right / 25px;
 
