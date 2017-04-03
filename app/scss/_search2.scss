@@ -82,8 +82,8 @@
   background: lighten($color-light-gray, 10%);
 
   label {
-    margin-left: -15px;
-    padding: 8px 0 6px 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
     font-size: 0.9em;
 
     &:not(:last-of-type) {
@@ -104,9 +104,9 @@
       width: 1em;
       height: 1em;
       margin-right: 0.5em;
-      transition: 0.2s ease all;
+      transition: border 0.2s, background-color 0.2s;
       border: 1px solid $color-black;
-      border-radius: 100%;
+      border-radius: 50%;
       content: '';
       vertical-align: middle;
     }
