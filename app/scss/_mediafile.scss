@@ -251,6 +251,7 @@ $mediafile-img-height: 120px;
 }
 
 .o-mediafile__button {
+  @extend %o-button__7;
   margin-bottom: $spacing-sm;
   float: right;
 
