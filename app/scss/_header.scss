@@ -52,7 +52,7 @@
   position: absolute;
   right: $spacing-sm;
   left: $spacing-sm;
-  transform: translateX(110%);
+  transform: translateX(calc(100% + #{$spacing-sm}));
   transition: transform 0.5s;
   background: $color-white;
   z-index: 2;
