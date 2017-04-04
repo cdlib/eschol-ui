@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   align-items: flex-start;
-  background-color: $color-white;
+  // background-color: $color-white;
 
   @include bp(screen2) {
     position: absolute;
@@ -67,7 +67,7 @@
   min-height: $input-height;
   padding: 0 ($input-height / 2);
   border: none;
-  background: inline('../images/icon_close.svg') no-repeat center right / 20px;
+  background: $color-white inline('../images/icon_close.svg') no-repeat center right / 20px;
 
   @include bp(screen3) {
     display: none;
