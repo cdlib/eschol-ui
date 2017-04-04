@@ -23,12 +23,12 @@ $mediafile-img-height: 120px;
 
 }
 
-// ***** Set layout for heading, link, button, and description elements when --audio, --file, --image, or --video classes are appended to .o-mediafile ***** //
+// ***** Set layout for heading, link, button, and description elements when --audio, --data, --image, or --video classes are appended to .o-mediafile ***** //
 
 .o-mediafile--audio,
 .o-mediafile--audio--selected,
-.o-mediafile--file,
-.o-mediafile--file--selected,
+.o-mediafile--data,
+.o-mediafile--data--selected,
 .o-mediafile--image,
 .o-mediafile--image--selected,
 .o-mediafile--video,
@@ -93,8 +93,8 @@ $mediafile-img-height: 120px;
 
 .o-mediafile--audio,
 .o-mediafile--audio--selected,
-.o-mediafile--file,
-.o-mediafile--file--selected {
+.o-mediafile--data,
+.o-mediafile--data--selected {
 
   .o-mediafile__link {
     margin-bottom: $spacing-sm;
@@ -131,8 +131,8 @@ $mediafile-img-height: 120px;
 
 }
 
-.o-mediafile--file,
-.o-mediafile--file--selected {
+.o-mediafile--data,
+.o-mediafile--data--selected {
 
   .o-mediafile__link {
 
@@ -171,7 +171,7 @@ $mediafile-img-height: 120px;
 }
 
 .o-mediafile--audio--selected,
-.o-mediafile--file--selected,
+.o-mediafile--data--selected,
 .o-mediafile--image--selected,
 .o-mediafile--video--selected {
   padding: $spacing-sm;
@@ -199,11 +199,11 @@ $mediafile-img-height: 120px;
 
 // ***** Media-specific Icons Within Heading ***** //
 
-// Example: o-mediafile--image
+// Example: o-mediafile--audio
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up),
-  (file, icon_archive-teal),
+  (data, icon_archive-teal),
   (image, icon_picture),
   (video, icon_video-camera-teal) {
 

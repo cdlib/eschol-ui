@@ -22,7 +22,7 @@ class MediaFileGridComp extends React.Component {
           </div>
         </div>
         {/* Media File Component #2 */}
-        <div className="o-mediafile--file">
+        <div className="o-mediafile--data">
           <h2 className="o-mediafile__heading">New Horizons File Archive</h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
             {/* image with o-media__image doesn't extist */}

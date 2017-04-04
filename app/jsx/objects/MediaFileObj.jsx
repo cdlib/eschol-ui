@@ -24,9 +24,9 @@ class MediaFileObj extends React.Component {
           </div>
         </div>
 
-        <h2>Data or PDF File (no link or image present)</h2>
+        <h2>Data or PDF File (no image present)</h2>
 
-        <div className="o-mediafile--file">
+        <div className="o-mediafile--data">
           <h2 className="o-mediafile__heading">New Horizons File Archive</h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
             {/* image with o-media__image doesn't extist */}
