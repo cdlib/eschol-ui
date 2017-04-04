@@ -2,7 +2,7 @@
 
 $mediafile-img-height: 120px;
 
-// Note that space and border styles around these objects are contained within _mediafilegrid.scss
+// Space and border styles around these objects are contained within _mediafilegrid.scss
 
 %o-mediafile {
   @extend %clearfix;
@@ -36,7 +36,7 @@ $mediafile-img-height: 120px;
   @include bp(screen1) {
 
     .o-mediafile__heading {
-      width: 48%;
+      width: calc(50% - #{$spacing-base});
       float: right;
 
       @supports (display: grid) {
@@ -48,7 +48,7 @@ $mediafile-img-height: 120px;
     }
 
     .o-mediafile__link {
-      width: 48%;
+      width: calc(50% - #{$spacing-base});
       float: left;
 
       @supports (display: grid) {
@@ -61,7 +61,7 @@ $mediafile-img-height: 120px;
     .o-mediafile__button {
       position: absolute;
       bottom: 0;
-      left: 51.7%;
+      left: calc(50% + #{$spacing-base});
 
       @supports (display: grid) {
         position: static;
@@ -72,7 +72,7 @@ $mediafile-img-height: 120px;
     }
 
     .o-mediafile__description {
-      width: 48%;
+      width: calc(50% - #{$spacing-base});
       float: right;
       clear: none;
 
