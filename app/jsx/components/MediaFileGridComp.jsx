@@ -12,7 +12,9 @@ class MediaFileGridComp extends React.Component {
       <div className="c-mediafilegrid">
         {/* Media File Component #1 */}
         <div className="o-mediafile--audio">
-          <h2 className="o-mediafile__heading">Outer Space Music</h2>
+          <h2 className="o-mediafile__heading">
+            <a href="">Outer Space Music</a>
+          </h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3" aria-label="play audio file">
             {/* image with o-media__image doesn't extist */}
           </a>
@@ -23,7 +25,9 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #2 */}
         <div className="o-mediafile--data">
-          <h2 className="o-mediafile__heading">New Horizons File Archive</h2>
+          <h2 className="o-mediafile__heading">
+            <a href="">New Horizons File Archive</a>
+          </h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
             {/* image with o-media__image doesn't extist */}
           </a>
@@ -34,7 +38,9 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #3 */}
         <div className="o-mediafile--image">
-          <h2 className="o-mediafile__heading">New Horizons Full Trajectory - Side View</h2>
+          <h2 className="o-mediafile__heading">
+            <a href="">New Horizons Full Trajectory - Side View</a>
+          </h2>
           <a className="o-mediafile__link" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
           </a>
@@ -45,7 +51,9 @@ class MediaFileGridComp extends React.Component {
         </div>
         {/* Media File Component #4 */}
         <div className="o-mediafile--video--selected">
-          <h2 className="o-mediafile__heading">New Horizons Kuiper Belt Fly-through</h2>
+          <h2 className="o-mediafile__heading">
+            <a href="">New Horizons Kuiper Belt Fly-through</a>
+          </h2>
           <a className="o-mediafile__link" href="images/sample_video.mp4" aria-label="play video file">
             <img className="o-mediafile__image" src="images/sample_video-poster.jpg" alt="New horizons data" />
           </a>

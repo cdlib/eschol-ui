@@ -182,10 +182,13 @@ $mediafile-img-height: 120px;
   margin: 0 0 $spacing-sm;
   padding-left: 25px;
   background: no-repeat top left / 16px;
-  color: $color-teal;
   font-size: 1.3em;
   font-weight: normal;
   box-sizing: border-box; // for Chrome & Safari (don't know why this in _resets.scss isn't getting applied here)
+
+  a {
+    @extend %o-textlink__secondary;
+  }
 
   @include bp(screen1) {
     max-height: 2.3em; // truncate beyond 2 lines per jquery.dotdotdot
