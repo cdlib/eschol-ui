@@ -27,6 +27,8 @@ $mediafile-img-height: 120px;
 
 .o-mediafile--audio,
 .o-mediafile--audio--selected,
+.o-mediafile--file,
+.o-mediafile--file--selected,
 .o-mediafile--image,
 .o-mediafile--image--selected,
 .o-mediafile--video,
@@ -90,14 +92,12 @@ $mediafile-img-height: 120px;
 }
 
 .o-mediafile--audio,
-.o-mediafile--audio--selected {
+.o-mediafile--audio--selected,
+.o-mediafile--file,
+.o-mediafile--file--selected {
 
   .o-mediafile__link {
     margin-bottom: $spacing-sm;
-
-    &::before {
-      background-image: inline('../images/icon_volume-up-white.svg');
-    }
 
     &::after {
       display: block;
@@ -118,13 +118,13 @@ $mediafile-img-height: 120px;
 
 }
 
-.o-mediafile--image,
-.o-mediafile--image--selected {
+.o-mediafile--audio,
+.o-mediafile--audio--selected {
 
   .o-mediafile__link {
 
     &::before {
-      background-image: inline('../images/icon_eye-white.svg');
+      background-image: inline('../images/icon_volume-up-white.svg');
     }
 
   }
@@ -133,47 +133,24 @@ $mediafile-img-height: 120px;
 
 .o-mediafile--file,
 .o-mediafile--file--selected {
-  position: relative;
-
-  .o-mediafile__heading {
-    width: 67%; // allow for float with .o-mediafile__button at 320px minimum screen size
-    float: left;
-
-    @include bp(screen1) {
-      width: auto;
-    }
-
-    @include bp(screen2) {
-      width: 50%;
-    }
-
-  }
 
   .o-mediafile__link {
-    display: none; // will also remove o-mediafile__image if present in the html
-  }
 
-  @include bp(screen1) {
-    padding: $spacing-sm;
-
-    .o-mediafile__button {
-      position: absolute;
-      bottom: 0;
-      left: $spacing-sm;
-
-      @supports (display: grid) {
-        bottom: $spacing-sm;
-      }
-
+    &::before {
+      background-image: inline('../images/icon_archive-white.svg');
     }
 
-    .o-mediafile__description {
-      margin-bottom: 25px;
+  }
 
-      @include bp(screen2) {
-        width: 50%;
-      }
+}
 
+.o-mediafile--image,
+.o-mediafile--image--selected {
+
+  .o-mediafile__link {
+
+    &::before {
+      background-image: inline('../images/icon_eye-white.svg');
     }
 
   }
