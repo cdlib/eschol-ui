@@ -55,7 +55,7 @@
   transform: translateX(calc(100% + #{$spacing-sm}));
   transition: transform 0.5s;
   background: $color-white;
-  z-index: 2;
+  z-index: 1; // allows .c-search2__refine to open over other page elements
 
   @include bp(screen3) {
     position: relative;
