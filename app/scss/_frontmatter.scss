@@ -30,16 +30,15 @@
 
 .c-frontmatter__heading {
   margin: 0.8em 0;
-  color: $color-teal;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: normal;
 
   @include bp(screen1) {
     margin: 0 0 0.8em;
   }
 
   a {
-    color: inherit;
-    text-decoration: none;
+    @extend %o-textlink__secondary;
   }
 
 }
