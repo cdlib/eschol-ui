@@ -37,7 +37,7 @@ class JournalSimpleLayout extends React.Component {
               <div className="c-frontmatter">
                 <div className="c-frontmatter__text">
                   <h2 className="c-frontmatter__heading">
-                    <a href="">Volume 41, Issue 1, 2015</a>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                   </h2>
                   <div className="c-frontmatter__subheading">Focus: Caribbean Studies and Literatures</div>
                   <p>
@@ -61,7 +61,7 @@ class JournalSimpleLayout extends React.Component {
                 {/* linked thumbnail image intentionally left out */}
                 <div className="c-frontmatter__text">
                   <h2 className="c-frontmatter__heading">
-                    <a href="">Volume 41, Issue 1, 2015</a>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                   </h2>
                   <div className="c-authorlist">
                     {/* <time> element intentionally left out */}
@@ -83,7 +83,7 @@ class JournalSimpleLayout extends React.Component {
                 {/* linked thumbnail image intentionally left out */}
                 <div className="c-frontmatter__text">
                   <h2 className="c-frontmatter__heading">
-                    <a href="">Volume 41, Issue 1, 2015</a>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                   </h2>
                   <div className="c-authorlist">
                     {/* <time> element intentionally left out */}
@@ -105,7 +105,7 @@ class JournalSimpleLayout extends React.Component {
                 {/* linked thumbnail image intentionally left out */}
                 <div className="c-frontmatter__text">
                   <h2 className="c-frontmatter__heading">
-                    <a href="">Volume 41, Issue 1, 2015</a>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                   </h2>
                   <div className="c-authorlist">
                     {/* <time> element intentionally left out */}

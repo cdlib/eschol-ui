@@ -17,7 +17,7 @@ class FrontmatterComp extends React.Component {
         </a>
         <div className="c-frontmatter__text">
           <h2 className="c-frontmatter__heading">
-            <a href="">Volume 41, Issue 1, 2015</a>
+            <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
           </h2>
           <div className="c-authorlist">
             {/* <time> element intentionally left out */}
