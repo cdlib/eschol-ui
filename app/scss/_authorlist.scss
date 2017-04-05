@@ -41,6 +41,10 @@
 
   }
 
+  a {
+    @extend %o-textlink__secondary;
+  }
+
 }
 
 .c-authorlist__list-more-link {
