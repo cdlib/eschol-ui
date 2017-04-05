@@ -34,7 +34,6 @@ class AuthorListComp extends React.Component {
           <li><a href="">Robic, Srebrenka</a></li>
           <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
         </ul>
-        
       </div>
     )
   }
