@@ -48,6 +48,7 @@
 }
 
 .c-authorlist__list-more-link {
+  @extend %o-textlink__secondary;
 
   &::before {
     display: inline-block;
