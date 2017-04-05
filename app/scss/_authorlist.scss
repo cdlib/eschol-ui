@@ -39,10 +39,10 @@
 
     }
 
-  }
+    a {
+      @extend %o-textlink__secondary;
+    }
 
-  a {
-    @extend %o-textlink__secondary;
   }
 
 }
