@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
+import MediaListComp from '../components/MediaListComp.jsx'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
@@ -32,12 +33,7 @@ class ScholWorksComp extends React.Component {
             </p>
           </div>
           <div className="c-scholworks__media">
-            <ul className="c-scholworks__media-list">
-              <li className="c-scholworks__media-video">Contains 5 videos</li>
-              <li className="c-scholworks__media-image">Contains 2 images</li>
-              <li className="c-scholworks__media-pdf">Contains 2 additional PDFs</li>
-              <li className="c-scholworks__media-audio">Contains 5 audio files</li>
-            </ul>
+            <MediaListComp />
             <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
           </div>
         </div>

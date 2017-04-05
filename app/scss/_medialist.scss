@@ -5,12 +5,12 @@ $medialist-item-length: 13em;
 .c-medialist {
   @extend %no-bullet-ul;
   @extend %clearfix;
+  flex: 1 0 auto; // to .c-scholworks__media flexbox
 
   @supports (display: grid) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax($medialist-item-length, 1fr));
     grid-column-gap: $spacing-md;
-    grid-row-gap: $spacing-sm;
   }
 
 }
@@ -26,7 +26,7 @@ $medialist-item-length: 13em;
 
   @supports (display: grid) {
     width: auto;
-    margin: 0;
+    margin-right: 0;
     float: none;
   }
 
