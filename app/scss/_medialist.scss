@@ -1,11 +1,13 @@
 // ##### Media List Component ##### //
 
+$medialist-item-length: 13em;
+
 .c-medialist {
   @extend %no-bullet-ul;
 
   @supports (display: grid) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($medialist-item-length, 1fr));
     grid-column-gap: $spacing-md;
     grid-row-gap: $spacing-sm;
   }
@@ -13,7 +15,7 @@
 }
 
 %c-medialist__item {
-  width: 15em;
+  width: $medialist-item-length;
   margin-bottom: $spacing-sm;
   padding-left: 1.5em;
   float: left;
