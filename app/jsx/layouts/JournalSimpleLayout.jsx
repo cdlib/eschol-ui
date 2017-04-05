@@ -53,9 +53,76 @@ class JournalSimpleLayout extends React.Component {
               <FrontmatterComp />
               <FrontmatterComp />
               <h3>Articles</h3>
-              [to go here]
+              <FrontmatterComp />
+              <FrontmatterComp />
+              <FrontmatterComp />
               <h3>Book Reviews</h3>
-              [to go here]
+              <div className="c-frontmatter">
+                {/* linked thumbnail image intentionally left out */}
+                <div className="c-frontmatter__text">
+                  <h2 className="c-frontmatter__heading">
+                    <a href="">Volume 41, Issue 1, 2015</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    {/* <time> element intentionally left out */}
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                    </ul>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
+                  <ul className="c-medialist">
+                    <li className="c-medialist__image">Contains 2 images</li>
+                    <li className="c-medialist__video">Contains 8 videos</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="c-frontmatter">
+                {/* linked thumbnail image intentionally left out */}
+                <div className="c-frontmatter__text">
+                  <h2 className="c-frontmatter__heading">
+                    <a href="">Volume 41, Issue 1, 2015</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    {/* <time> element intentionally left out */}
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                    </ul>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
+                  <ul className="c-medialist">
+                    <li className="c-medialist__image">Contains 2 images</li>
+                    <li className="c-medialist__video">Contains 8 videos</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="c-frontmatter">
+                {/* linked thumbnail image intentionally left out */}
+                <div className="c-frontmatter__text">
+                  <h2 className="c-frontmatter__heading">
+                    <a href="">Volume 41, Issue 1, 2015</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    {/* <time> element intentionally left out */}
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                    </ul>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
+                  <ul className="c-medialist">
+                    <li className="c-medialist__image">Contains 2 images</li>
+                    <li className="c-medialist__video">Contains 8 videos</li>
+                  </ul>
+                </div>
+              </div>
             </section>
           </main>
           <aside>
