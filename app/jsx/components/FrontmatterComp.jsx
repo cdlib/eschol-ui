@@ -12,8 +12,8 @@ class FrontmatterComp extends React.Component {
   render() {
     return (
       <div className="c-frontmatter">
-        <a href="">
-          <img src="http://placehold.it/150x200?text=Image" alt="" className="c-frontmatter__img"/>
+        <a className="c-frontmatter__img" href="">
+          <img src="http://placehold.it/150x200?text=Image" alt="" />
         </a>
         <div className="c-frontmatter__text">
           <h2 className="c-frontmatter__heading">
