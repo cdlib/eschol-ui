@@ -1,0 +1,31 @@
+// ##### Media List Component ##### //
+
+.c-medialist {
+  @extend %no-bullet-ul;
+}
+
+%c-medialist__item {
+  padding-left: 1.5em;
+  background: no-repeat left top / 16px;
+  color: $color-teal;
+}
+
+.c-medialist__audio {
+  @extend %c-medialist__item;
+  background-image: inline('../images/icon_volume-up.svg');
+}
+
+.c-medialist__image {
+  @extend %c-medialist__item;
+  background-image: inline('../images/icon_picture.svg');
+}
+
+.c-medialist__pdf {
+  @extend %c-medialist__item;
+  background-image: inline('../images/icon_pdf-teal.svg');
+}
+
+.c-medialist__video {
+  @extend %c-medialist__item;
+  background-image: inline('../images/icon_play-circle-o.svg');
+}

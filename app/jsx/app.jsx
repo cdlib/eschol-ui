@@ -51,6 +51,7 @@ import LanguageDisp from './display/LanguageDisp.jsx'
 import MediaFeatureDisp from './display/MediaFeatureDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
 import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
+import MediaListDisp from './display/MediaListDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
 import Nav1Disp from './display/Nav1Disp.jsx'
 import Nav2Disp from './display/Nav2Disp.jsx'
@@ -149,6 +150,7 @@ ReactDOM.render((
       <Route path="/mediafeature" component={MediaFeatureDisp} />
       <Route path="/mediafile" component={MediaFileDisp} />
       <Route path="/mediafilegrid" component={MediaFileGridDisp} />
+      <Route path="/medialist" component={MediaListDisp} />
       <Route path="/nav" component={NavDisp} />
       <Route path="/nav1" component={Nav1Disp} />
       <Route path="/nav2" component={Nav2Disp} />
