@@ -20,6 +20,10 @@ class FrontmatterComp extends React.Component {
             Dolore quod illum praesentium sint. Consectetur illum voluptas reiciendis possimus ullam nesciunt, laboriosam nisi nihil hic. Veritatis porro doloribus iste eos, assumenda fugiat dicta nesciunt. Autem sed recusandae at quod!
             Ducimus adipisci provident nam voluptatem officia. Quos maiores molestias atque alias deserunt ullam laborum similique, quae cum excepturi. Rem harum facilis perspiciatis a illum, eum, officiis. Ducimus officia, veniam ea.
           </p>
+          <ul className="c-medialist">
+            <li className="c-medialist__image">Contains 2 images</li>
+            <li className="c-medialist__video">Contains 8 videos</li>
+          </ul>
         </div>
       </div>
     )

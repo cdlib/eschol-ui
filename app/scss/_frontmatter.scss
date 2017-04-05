@@ -1,7 +1,7 @@
 // ##### Front Matter Component ##### //
 
 .c-frontmatter {
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
 
   @include bp(screen1) {
     display: flex;
