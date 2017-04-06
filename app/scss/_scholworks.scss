@@ -79,21 +79,8 @@ $scholworks-tag-height: $element-height;
 
 }
 
-.c-scholworks__author {
-  max-height: 2.2em; // truncate beyond 2 lines per jquery.dotdotdot
-
-  @include bp(screen1) {
-    max-height: 1.1em; // truncate beyond 1 line per jquery.dotdotdot
-  }
-
-  a {
-    @extend %o-textlink__secondary;
-  }
-
-}
-
 .c-scholworks__publication {
-  margin: 0 0 $spacing-md;
+  margin: (-$spacing-md) 0 $spacing-md;
 
   a {
     @extend %o-textlink__secondary;

@@ -22,8 +22,18 @@ class ScholWorksComp extends React.Component {
               <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
             </h2 >
           </heading>
-          <div className="c-scholworks__author">
-            <a href="">Dahle, Kevin W</a>; <a href="">Pelfrey, Patricia A</a>; <a href="">Walker, Iain S</a>; <a href="">Kling, Rob</a>; <a href="">Huh, Tina</a>
+          <div className="c-authorlist">
+            {/* <time> element intentionally omitted */}
+            <ul className="c-authorlist__list">
+            {/* links can be left out of the list if no links are desired: */}
+              <li><a href="">Leung, Wilson</a></li>
+              <li><a href="">Shaffer, Christopher D</a></li>
+              <li><a href="">Reed, Laura K</a></li>
+              <li><a href="">Smith, Sheryl T</a></li>
+              <li><a href="">Barshop, William</a></li>
+              <li><a href="">Dirkes, William</a></li>
+              <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+            </ul>
           </div>
           <div className="c-scholworks__publication">
             <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
