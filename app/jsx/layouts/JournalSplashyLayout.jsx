@@ -6,6 +6,7 @@ import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import MarqueeComp from '../components/MarqueeComp.jsx'
+import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import PubComp from '../components/PubComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
@@ -24,6 +25,7 @@ class JournalSplashyLayout extends React.Component {
         <div className="c-columns">
           <main id="maincontent">
             <section className="o-columnbox1">
+              <ItemActionsComp />
               <PubPreviewComp />
               <h3>Table of Contents</h3>
               <div className="o-dividecontent2x--ruled">
