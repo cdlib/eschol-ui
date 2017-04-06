@@ -5,8 +5,9 @@ import Header2Comp from '../components/Header2Comp.jsx'
 import Subheader2Comp from '../components/Subheader2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
+import PubComp from '../components/PubComp.jsx'
+import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
-import FrontmatterComp from '../components/FrontmatterComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class JournalSimpleLayout extends React.Component {
@@ -37,7 +38,7 @@ class JournalSimpleLayout extends React.Component {
               <div className="c-frontmatter">
                 <div className="c-frontmatter__text">
                   <h2 className="c-frontmatter__heading">
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                    <a href="">Volume 41, Issue 1, 2012</a>
                   </h2>
                   <div className="c-frontmatter__subheading">Focus: Caribbean Studies and Literatures</div>
                   <p>
@@ -49,80 +50,17 @@ class JournalSimpleLayout extends React.Component {
                 </div>
               </div>
               <h3>Front Matter</h3>
-              <FrontmatterComp />
-              <FrontmatterComp />
-              <FrontmatterComp />
+              <PubPreviewComp />
+              <PubPreviewComp />
+              <PubPreviewComp />
               <h3>Articles</h3>
-              <FrontmatterComp />
-              <FrontmatterComp />
-              <FrontmatterComp />
+              <PubPreviewComp />
+              <PubPreviewComp />
+              <PubPreviewComp />
               <h3>Book Reviews</h3>
-              <div className="c-frontmatter">
-                {/* linked thumbnail image intentionally left out */}
-                <div className="c-frontmatter__text">
-                  <h2 className="c-frontmatter__heading">
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally left out */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                    </ul>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
-                  <ul className="c-medialist">
-                    <li className="c-medialist__image">Contains 2 images</li>
-                    <li className="c-medialist__video">Contains 8 videos</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="c-frontmatter">
-                {/* linked thumbnail image intentionally left out */}
-                <div className="c-frontmatter__text">
-                  <h2 className="c-frontmatter__heading">
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally left out */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                    </ul>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
-                  <ul className="c-medialist">
-                    <li className="c-medialist__image">Contains 2 images</li>
-                    <li className="c-medialist__video">Contains 8 videos</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="c-frontmatter">
-                {/* linked thumbnail image intentionally left out */}
-                <div className="c-frontmatter__text">
-                  <h2 className="c-frontmatter__heading">
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally left out */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                    </ul>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos, laudantium dicta ipsum nihil! Vero, odit beatae! Facere ratione provident possimus quidem! Quam labore excepturi tempore culpa, dolores fugiat repudiandae!</p>
-                  <ul className="c-medialist">
-                    <li className="c-medialist__image">Contains 2 images</li>
-                    <li className="c-medialist__video">Contains 8 videos</li>
-                  </ul>
-                </div>
-              </div>
+              <PubComp />
+              <PubComp />
+              <PubComp />
             </section>
           </main>
           <aside>
