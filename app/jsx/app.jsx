@@ -61,6 +61,7 @@ import PdfViewDisp from './display/PdfViewDisp.jsx'
 import PubDataDisp from './display/PubDataDisp.jsx'
 import PubDisp from './display/PubDisp.jsx'
 import PubLocationDisp from './display/PubLocationDisp.jsx'
+import PubPreviewDisp from './display/PubPreviewDisp.jsx'
 import RefineMediaDisp from './display/RefineMediaDisp.jsx'
 import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
@@ -161,6 +162,7 @@ ReactDOM.render((
       <Route path="/pub" component={PubDisp} />
       <Route path="/pubdata" component={PubDataDisp} />
       <Route path="/publocation" component={PubLocationDisp} />
+      <Route path="/pubpreview" component={PubPreviewDisp} />
       <Route path="/refinemedia" component={RefineMediaDisp} />
       <Route path="/scholworks" component={ScholWorksDisp} />
       <Route path="/search1" component={Search1Disp} />
