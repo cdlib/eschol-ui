@@ -1,12 +1,16 @@
 // ##### Publication Preview Component ##### //
 
 import React from 'react'
+import PubComp from '../components/PubComp.jsx'
 
 class PubPreviewComp extends React.Component {
   render() {
     return (
       <div className="c-pubpreview">
-        [publication preview component to go here]
+        <a className="c-frontmatter__img" href="">
+          <img src="http://placehold.it/150x200?text=Image" alt="" />
+        </a>
+        <PubComp />
       </div>
     )
   }
