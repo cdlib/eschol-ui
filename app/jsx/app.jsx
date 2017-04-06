@@ -59,6 +59,7 @@ import NavBarDisp from './display/NavBarDisp.jsx'
 import PaginationDisp from './display/PaginationDisp.jsx'
 import PdfViewDisp from './display/PdfViewDisp.jsx'
 import PubDataDisp from './display/PubDataDisp.jsx'
+import PubDisp from './display/PubDisp.jsx'
 import PubLocationDisp from './display/PubLocationDisp.jsx'
 import RefineMediaDisp from './display/RefineMediaDisp.jsx'
 import ScholWorksDisp from './display/ScholWorksDisp.jsx'
@@ -157,6 +158,7 @@ ReactDOM.render((
       <Route path="/navbar" component={NavBarDisp} />
       <Route path="/pagination" component={PaginationDisp} />
       <Route path="/pdfview" component={PdfViewDisp} />
+      <Route path="/pub" component={PubDisp} />
       <Route path="/pubdata" component={PubDataDisp} />
       <Route path="/publocation" component={PubLocationDisp} />
       <Route path="/refinemedia" component={RefineMediaDisp} />

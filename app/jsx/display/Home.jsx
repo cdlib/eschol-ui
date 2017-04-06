@@ -65,6 +65,7 @@ class Home extends React.Component {
           <li><a href="#navbar">Nav Bar</a></li>
           <li><a href="#pagination">Pagination</a></li>
           <li><a href="#pdfview">PDF View</a></li>
+          <li><a href="#pub">Publication</a></li>
           <li><a href="#pubdata">Published Data</a></li>
           <li><a href="#publocation">Published Location</a></li>
           <li><a href="#refinemedia">Refine Media</a></li>
