@@ -27,11 +27,11 @@ class JournalSplashyLayout extends React.Component {
               <PubPreviewComp />
               <h3>Table of Contents</h3>
               <div className="o-dividecontent2x--ruled">
-                <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
-                <PubComp />
-                <PubComp />
                 <PubComp />
                 <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
+                <PubComp />
+                <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
+                <PubComp />
               </div>
             </section>
           </main>
