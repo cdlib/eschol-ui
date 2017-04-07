@@ -30,7 +30,6 @@ import DownloadDisp from './display/DownloadDisp.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
-import FrontmatterDisp from './display/FrontmatterDisp.jsx'
 import Home from './display/Home.jsx'
 import FooterDisp from './display/FooterDisp.jsx'
 import Header1Disp from './display/Header1Disp.jsx'
@@ -131,7 +130,6 @@ ReactDOM.render((
       <Route path="/imagecontent" component={ImageContentDisp} />
       <Route path="/input" component={InputDisp} />
       <Route path="/facetbox" component={FacetBoxDisp} />
-      <Route path="/frontmatter" component={FrontmatterDisp} />
       <Route path="/filter" component={FilterDisp} />
       <Route path="/footer" component={FooterDisp} />
       <Route path="/header1" component={Header1Disp} />

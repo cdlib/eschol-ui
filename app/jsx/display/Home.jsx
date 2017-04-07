@@ -48,7 +48,6 @@ class Home extends React.Component {
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>
           <li><a href="#footer">Footer</a></li>
-          <li><a href="#frontmatter">Front Matter</a></li>
           <li><a href="#header1">Header 1 - Home</a></li>
           <li><a href="#header2">Header 2 - Other Than Home</a></li>
           <li><a href="#infopages">Informational Pages</a></li>
