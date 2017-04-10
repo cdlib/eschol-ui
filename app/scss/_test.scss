@@ -14,24 +14,79 @@ $bgreen: 1px solid #0c0;
 }
 
 .c-test {
-  position: relative;
   display: flex;
+  position: relative;
+  flex-wrap: wrap;
+
+  // [class='c-test__details'] {
+
+  //   &:nth-of-type(n+3) {
+  //     // border: $bred;
+  //   }
+
+  //   @include bp(screen1) {
+      
+  //     &:nth-of-type(n+4) {
+  //       border: $bred;
+  //     }
+
+  //   }
+
+  // }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: $spacing-sm;
+
+    @include bp(screen1) {
+      grid-template-columns: repeat(3, auto);
+    }
+
+    @include bp(screen3) {
+      grid-template-columns: repeat(5, auto);
+    }
+
+  }
+
 }
 
 .c-test__details {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 .c-test__summary {
   padding: 10px;
   border: 1px solid $color-dark-gray;
-
 }
 
 .c-test__tabpanel {
   position: absolute;
   right: 0;
   left: 0;
+}
 
-  border: $bblue;
+.c-test__button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @supports (display: grid) {
+    display: block;
+    position: static;
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 1;
+
+    @include bp(screen1) {
+      grid-column: 3;
+    }
+
+    @include bp(screen3) {
+      display: none;
+    }
+
+  }
+
 }
