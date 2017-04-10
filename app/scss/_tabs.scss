@@ -2,120 +2,110 @@
 
 $tab-height: $element-height;
 
-.c-tabs {
-  // not used
+%c-tabs {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: $spacing-sm;
+
+    @include bp(screen1) {
+      grid-template-columns: repeat(3, auto);
+    }
+
+    @include bp(screen3) {
+      grid-template-columns: repeat(5, auto);
+    }
+
+  }
+
 }
 
-%c-tabs__buttons {
+.c-tabs {
+  @extend %c-tabs;
+}
+
+%c-tabs__details {
+  flex: 1 0 auto;
+}
+
+.c-tabs__details {
+  @extend %c-tabs__details;
+
+  @supports (display: grid) {
+
+    &:nth-of-type(n+2) { // 2 and more children
+      display: none;
+    }
+
+    @include bp(screen1) {
+
+      &:nth-of-type(n) { // all children
+        display: block;
+      }
+
+      &:nth-of-type(n+3) { // 3 and more children
+        display: none;
+      }
+
+    }
+
+    @include bp(screen3) {
+
+      &:nth-of-type(n) {
+        display: block;
+      }
+
+    }
+
+  }
+
+}
+
+.c-tabs--show-all {
+  @extend %c-tabs;
+
+  .c-tabs__details {
+    @extend %c-tabs__details;
+
+    @supports (display: grid) {
+
+      &:nth-of-type(n) {
+        display: block;
+      }
+
+    }
+
+  }
+
+}
+
+%c-tabs__summary {
   min-height: $tab-height;
   padding: 5px $spacing-sm;
   border: none;
   background-color: $color-light-gray;
   font-size: 1.1em;
+  text-align: center;
   user-select: none;
 }
 
-.c-tabs__button {
-  @extend %c-tabs__buttons;
+.c-tabs__summary {
+  @extend %c-tabs__summary;
 }
 
-.c-tabs__button--active {
-  @extend %c-tabs__buttons;
+.c-tabs__summary--active {
+  @extend %c-tabs__summary;
   background-color: $color-white;
 }
 
-%c-tabs__tabs {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: $spacing-sm;
-
-  @include bp(screen1) {
-    grid-template-columns: repeat(3, auto);
-  }
-
-  @include bp(screen3) {
-    grid-template-columns: repeat(5, auto);
-  }
-
-  button {
-    margin-right: $spacing-sm;
-    margin-bottom: $spacing-sm;
-  }
-
-  @supports (display: grid) {
-
-    button {
-      margin: 0;
-    }
-
-  }
-
-}
-
-.c-tabs__tabs {
-  @extend %c-tabs__tabs;
-
-  @supports (display: grid) {
-
-    button {
-
-      &:nth-child(n+3) {
-        display: none;
-      }
-
-      @include bp(screen1) {
-
-        &:nth-child(n+3) {
-          display: block;
-        }
-
-        &:nth-child(n+4) {
-          display: none;
-        }
-
-      }
-
-      @include bp(screen3) {
-
-        &:nth-child(n+4) {
-          display: block;
-        }
-
-      }
-
-    }
-
-  }
-
-}
-
-.c-tabs__tabs--show-all {
-  @extend %c-tabs__tabs;
-}
-
-.c-tabs__button-more {
-  @extend %c-tabs__buttons;
-  display: none;
-  width: 40px;
-  justify-self: end;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-
-  @supports (display: grid) {
-    display: block;
-  }
-
-  @include bp(screen1) {
-    grid-column: 3 / 4;
-  }
-
-  @include bp(screen3) {
-    display: none;
-  }
-
-}
-
-.c-tabs__content {
+.c-tabs__tabpanel {
+  position: absolute;
+  right: 0;
+  left: 0;
   margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
   padding: $spacing-md $spacing-sm;
   background-color: $color-white;
@@ -129,6 +119,33 @@ $tab-height: $element-height;
     margin-right: 0;
     margin-left: 0;
     padding: $spacing-md $spacing-sm $spacing-sm;
+  }
+
+}
+
+.c-tabs__button {
+  @extend %c-tabs__summary;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @supports (display: grid) {
+    display: block;
+    position: static;
+    width: 40px;
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 1;
+
+    @include bp(screen1) {
+      grid-column: 3;
+    }
+
+    @include bp(screen3) {
+      display: none;
+    }
+
   }
 
 }
