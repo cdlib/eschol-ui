@@ -104,6 +104,7 @@ $tab-height: $element-height;
 
 .c-tabs__tabpanel {
   position: absolute;
+  top: 100%;
   right: 0;
   left: 0;
   margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
