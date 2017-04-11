@@ -13,121 +13,28 @@ $bgreen: 1px solid #0c0;
   // outline: $color-orange solid 1px;
 }
 
-%c-test {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: $spacing-sm;
-
-    @include bp(screen1) {
-      grid-template-columns: repeat(3, auto);
-    }
-
-    @include bp(screen3) {
-      grid-template-columns: repeat(5, auto);
-    }
-
-  }
-
-}
-
 .c-test {
-  @extend %c-test;
-}
+  position: relative;
 
-%c-test__details {
-  flex: 1 0 auto;
+  border: 5px solid black;
 }
 
 .c-test__details {
-  @extend %c-test__details;
+  display: inline-block;
 
-  @supports (display: grid) {
-
-    &:nth-of-type(n+2) { // 2 and more children
-      display: none;
-    }
-
-    @include bp(screen1) {
-
-      &:nth-of-type(n) { // all children
-        display: block;
-      }
-
-      &:nth-of-type(n+3) { // 3 and more children
-        display: none;
-      }
-
-    }
-
-    @include bp(screen3) {
-
-      &:nth-of-type(n) {
-        display: block;
-      }
-
-    }
-
-  }
-
-}
-
-.c-test--show-all {
-  @extend %c-test;
-
-  .c-test__details {
-    @extend %c-test__details;
-
-    @supports (display: grid) {
-
-      &:nth-of-type(n) {
-        display: block;
-      }
-
-    }
-
-  }
-
+  border: 5px solid green;
 }
 
 .c-test__summary {
-  padding: 10px;
-  border: 1px solid $color-dark-gray;
-  text-align: center;
+
+  border: 5px solid blue;
 }
 
-.c-test__tabpanel {
+.c-test__content {
   position: absolute;
   top: 100%;
   right: 0;
   left: 0;
-}
 
-.c-test__button {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  @supports (display: grid) {
-    display: block;
-    position: static;
-    justify-self: end;
-    grid-column: 2;
-    grid-row: 1;
-
-    @include bp(screen1) {
-      grid-column: 3;
-    }
-
-    @include bp(screen3) {
-      display: none;
-    }
-
-  }
-
+  border: 5px solid red;
 }
