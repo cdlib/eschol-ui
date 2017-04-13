@@ -79,7 +79,8 @@ class Home extends React.Component {
           <li><a href="#sort">Sort By</a></li>
           <li><a href="#subheader1">Subheader 1</a></li>
           <li><a href="#subheader2">Subheader 2</a></li>
-          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#tabs">Tabs (stable)</a></li>
+          <li><a href="#tabs2">Tabs v.2 (experimental only)</a></li>
           <li><a href="#tabmain">Tab - Main</a></li>
           <li><a href="#tabsupplemental">Tab - Supplemental Material</a></li>
           <li><a href="#tabmetrics">Tab - Metrics</a></li>
