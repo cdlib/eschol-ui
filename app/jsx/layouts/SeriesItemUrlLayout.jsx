@@ -53,7 +53,7 @@ class SeriesItemUrlLayout extends React.Component {
             </div>
           </main>
           <aside>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Related Items</h2>
               </header>

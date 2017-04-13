@@ -26,7 +26,7 @@ class JournalSimpleLayout extends React.Component {
         </nav>
         <div className="c-columns">
           <main id="maincontent">
-            <section className="o-columnbox3">
+            <section className="o-columnbox2">
               <header>
                 <h2>About</h2>
               </header>
@@ -59,13 +59,13 @@ class JournalSimpleLayout extends React.Component {
             </section>
           </main>
           <aside>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Journal Information</h2>
               </header>
               <JournalInfoComp />
             </section>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Featured Articles</h2>
                 </header>
@@ -75,7 +75,7 @@ class JournalSimpleLayout extends React.Component {
                 <p><a className="o-textlink__secondary" href="">Interview with Guillermo Cabrera Infante</a> <br/> Graham-Jones, Jean; Deosthale, Duleep</p>
                 <p><a className="o-textlink__secondary" href="">Lazlo Moussong. Castillos en la letra. Xalapa, México: Universidad Veracruzana, 1986.</a> <br/> Radchik, Laura</p>
             </section>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Follow us on Twitter</h2>
               </header>

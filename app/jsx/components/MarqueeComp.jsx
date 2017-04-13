@@ -40,15 +40,15 @@ class CarouselComp extends React.Component {
             <a href="" className="o-textlink__primary">More&hellip;</a>
           </div>
         </div>
-        <div className="c-marquee__sidebar">
-          <section className="o-columnbox4">
+        <aside className="c-marquee__sidebar">
+          <section className="o-columnbox2">
             <header>
-              <h2 className="o-columnbox2__heading">About</h2>
+              <h2>About</h2>
             </header>
             <p>Quo dolores unde alias, distinctio rem reprehenderit adipisci officiis eum facilis sunt, vero obcaecati qui porro, sed mollitia consequuntur, aperiam quaerat. <a className="o-textlink__secondary" href="">More</a>
             </p>
           </section>
-        </div>
+        </aside>
       </div>
     )
   }

@@ -69,13 +69,13 @@ class JournalItemMultimediaLayout extends React.Component {
             </div>
           </main>
           <aside>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Jump To</h2>
-                <JumpComp />
               </header>
+              <JumpComp />
             </section>
-            <section className="o-columnbox2">
+            <section className="o-columnbox1">
               <header>
                 <h2>Related Items</h2>
               </header>
