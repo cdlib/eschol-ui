@@ -13,19 +13,24 @@ $bgreen: 1px solid #0c0;
 // ***** Highlight No Longer Used Classnames ***** //
 
 @each $unused-classname in
-  columnbox__heading,
-  columnbox__3,
-  columnbox__4,
+  c-columns__split
+  c-download__list
+  c-subheader__row1
+  c-subheader__row2
+  o-columnbox__divided
+  o-columnbox__heading,
+  o-columnbox__3,
+  o-columnbox__4,
   l-about,
   l-search,
   l-search__sort-pagination,
-  o-button__1,
-  o-button__2,
-  o-button__3,
-  o-button__4,
-  o-button__5,
-  o-button__6,
-  o-button__7
+  // o-button__1,
+  // o-button__2,
+  // o-button__3,
+  // o-button__4,
+  // o-button__5,
+  // o-button__6,
+  // o-button__7
   {
 
   .#{$unused-classname} {
