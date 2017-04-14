@@ -13,14 +13,21 @@ $bgreen: 1px solid #0c0;
 // ***** Highlight No Longer Used Classnames ***** //
 
 @each $unused-classname in
-  c-columns__split
-  c-download__list
-  c-subheader__row1
-  c-subheader__row2
-  o-columnbox__divided
+  c-columns__split,
+  c-download__list,
+  c-subheader__row1,
+  c-subheader__row2,
+  o-columnbox__divided,
   o-columnbox__heading,
   o-columnbox__3,
   o-columnbox__4,
+  c-nav1,
+  c-nav2,
+  c-header1,
+  c-header2,
+  c-header1__search,
+  c-header2__search,
+  c-header2__logo,
   l-about,
   l-search,
   l-search__sort-pagination,
@@ -34,7 +41,7 @@ $bgreen: 1px solid #0c0;
   {
 
   .#{$unused-classname} {
-    
+
     &::after {
       margin: 0 2px;
       padding: 0 2px;
