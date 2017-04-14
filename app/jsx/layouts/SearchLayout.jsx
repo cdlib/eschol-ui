@@ -8,7 +8,7 @@ import Breakpoints from '../../js/breakpoints.json'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
 import CheckboxComp from '../components/CheckboxComp.jsx'
-import SortComp from '../components/SortComp.jsx'
+import SortPaginationComp from '../components/SortPaginationComp.jsx'
 import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
 import ScholWorksComp from '../components/ScholWorksComp.jsx'
@@ -105,10 +105,7 @@ class SearchLayout extends React.Component {
               <header>
                 <h2>Scholarly Works (12,023 results)</h2>
               </header>
-              <div className="l-search__sort-pagination">
-                <SortComp />
-                <PaginationComp />
-              </div>
+              <SortPaginationComp />
               <ScholWorksComp />
               <ScholWorksComp />
             </section>

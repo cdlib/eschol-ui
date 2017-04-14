@@ -1,5 +1,6 @@
-// ##### Breadcrumb Component ##### //
+// ##### Sort Pagination Component ##### //
 
 .c-sortpagination {
-  border: $bgreen;
+  display: flex;
+  flex-flow: row wrap;
 }
