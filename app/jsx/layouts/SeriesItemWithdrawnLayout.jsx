@@ -1,4 +1,4 @@
-// ##### About Layout ##### //
+// ##### Series Item Withdrawn Layout ##### //
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'

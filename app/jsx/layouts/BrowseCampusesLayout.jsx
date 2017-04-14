@@ -1,4 +1,4 @@
-// ##### Search Layout ##### //
+// ##### Browse Campuses Layout ##### //
 
 import React from 'react'
 import Header1Comp from '../components/Header1Comp.jsx'
@@ -26,7 +26,7 @@ class BrowseCampusesLayout extends React.Component {
   }
   render() {
     return (
-      <div className="l-search">
+      <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <div className="c-subheader1">
           <div className="c-subheader1__header">

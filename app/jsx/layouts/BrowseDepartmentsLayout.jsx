@@ -25,7 +25,7 @@ class BrowseDepartmentsLayout extends React.Component {
   }
   render() {
     return (
-      <div className="l-browsedepartments">
+      <div>
       <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <div className="c-subheader2">

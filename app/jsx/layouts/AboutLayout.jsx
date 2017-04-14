@@ -26,7 +26,7 @@ class AboutLayout extends React.Component {
   }
   render() {
     return (
-      <div className="l-about">
+      <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <div className="c-subheader1">
           <div className="c-subheader1__header">

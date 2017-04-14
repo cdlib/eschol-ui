@@ -1,4 +1,4 @@
-// ##### About Layout ##### //
+// ##### Journal Item HTML Layout ##### //
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
@@ -11,7 +11,7 @@ import FooterComp from '../components/FooterComp.jsx'
 class JournalItemHtmlLayout extends React.Component {
   render() {
     return (
-      <div className="l-item">
+      <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <Subheader2Comp />
