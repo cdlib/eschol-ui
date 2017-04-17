@@ -57,6 +57,7 @@ class Home extends React.Component {
           <li><a href="#language">language</a></li>
           <li><a href="#marquee">Marquee</a></li>
           <li><a href="#mediafilegrid">Media File Grid</a></li>
+          <li><a href="#modal">Modal</a></li>
           <li><a href="#medialist">Media List</a></li>
           <li><a href="#nav">Navigation</a></li>
           <li><a href="#nav1">Navigation 1 (old) - Home</a></li>
