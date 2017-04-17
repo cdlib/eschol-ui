@@ -34,8 +34,17 @@ class ModalComp extends React.Component {
            className="c-modal--open"
            overlayClassName="c-modal__overlay"
         >
-          <p>Modal content to go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptates dignissimos, ipsam, nobis doloremque facere voluptatibus unde! Quae sint ad ipsa atque ipsam, ratione error. Aperiam, reiciendis quas voluptatum modi. Non, molestiae quibusdam est similique neque facere doloribus cupiditate eveniet!</p>
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          <div className="modal__header">
+            <h2>Modal Heading</h2>
+          </div>
+          <div className="modal__content">
+            Modal content goes here.
+          </div>
+          <div className="c-modal__footer">
+            <button className="c-modal__button-close" onClick={this.handleCloseModal}>Cancel</button>
+            <button className="o-button__7">Clear All</button>
+            <button className="o-button__3">Select</button>
+          </div>
         </ReactModal>
       </div>
     )
