@@ -1,5 +1,30 @@
 // ##### Modal Component ##### //
 
+// Styles adopted from: https://reactcommunity.org/react-modal/examples/css_classes.html
+
 .c-modal {
-  border: $bgreen;
+  // no styles
+}
+
+.c-modal--open {
+  position: absolute;
+  top: $spacing-md;
+  right: $spacing-md;
+  bottom: $spacing-md;
+  left: $spacing-md;
+  padding: $spacing-md;
+  border: 1px solid $color-light-gray;
+  border-radius: $round-corner;
+  outline: none;
+  background-color: $color-white;
+  overflow: auto;
+}
+
+.c-modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color-white, 0.75);
 }
