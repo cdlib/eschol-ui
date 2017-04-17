@@ -26,6 +26,7 @@ class ModalComp extends React.Component {
   render() {
     return (
       <div className="c-modal">
+        {/* onClick element below can be a button or link */}
         <button onClick={this.handleOpenModal}>Trigger Modal</button>
         <ReactModal 
            isOpen={this.state.showModal}
