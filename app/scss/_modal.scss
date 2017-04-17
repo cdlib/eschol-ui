@@ -8,16 +8,27 @@
 
 .c-modal--open {
   position: absolute;
-  top: $spacing-md;
-  right: $spacing-md;
-  bottom: $spacing-md;
-  left: $spacing-md;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: $spacing-md;
   padding: $spacing-md;
   border: 1px solid $color-light-gray;
   border-radius: $round-corner;
   outline: none;
   background-color: $color-white;
+  box-shadow: 5px 5px 15px $color-light-black;
   overflow: auto;
+
+  @include bp(screen1) {
+    margin: 10%;
+  }
+
+  @include bp(screen3) {
+    margin: 15%;
+  }
+
 }
 
 .c-modal__overlay {
