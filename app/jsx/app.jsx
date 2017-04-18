@@ -36,6 +36,7 @@ import Home from './display/Home.jsx'
 import FooterDisp from './display/FooterDisp.jsx'
 import Header1Disp from './display/Header1Disp.jsx'
 import Header2Disp from './display/Header2Disp.jsx'
+import HeatMapDisp from './display/HeatMapDisp.jsx'
 import InfoPagesDisp from './display/InfoPagesDisp.jsx'
 import InputDisp from './display/InputDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
@@ -139,6 +140,7 @@ ReactDOM.render((
       <Route path="/footer" component={FooterDisp} />
       <Route path="/header1" component={Header1Disp} />
       <Route path="/header2" component={Header2Disp} />
+      <Route path="/heatmap" component={HeatMapDisp} />
       <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
