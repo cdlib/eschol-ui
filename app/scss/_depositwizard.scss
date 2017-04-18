@@ -52,6 +52,7 @@ $modal-footer-height: 3.5em;
   right: 0;
   left: 0;
   align-items: center;
+  justify-content: space-between;
   height: $modal-header-height;
   padding: 0 $spacing-md;
   background-color: $color-light-gray;
@@ -62,6 +63,13 @@ $modal-footer-height: 3.5em;
     font-weight: normal;
   }
 
+}
+
+.c-depositwizard__close {
+  min-height: $input-height;
+  padding: 0 ($input-height / 2);
+  border: none;
+  background: inline('../images/icon_close.svg') no-repeat center / 16px;
 }
 
 .c-depositwizard__content {
@@ -81,22 +89,8 @@ $modal-footer-height: 3.5em;
   bottom: 0;
   left: 0;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: $modal-footer-height;
   padding: 0 $spacing-md;
   border-top: 1px solid $color-light-gray;
-
-  button {
-    
-    &:not(:first-child) {
-      margin-left: $spacing-sm;
-    }
-
-  }
-
-}
-
-.c-depositwizard__button-close {
-  @extend %o-button__2;
-  margin-right: auto;
 }

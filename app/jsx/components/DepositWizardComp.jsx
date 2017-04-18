@@ -7,7 +7,7 @@ class DepositWizardComp extends React.Component {
   constructor () {
     super();
     this.state = {
-      showModal: false
+      showModal: true
     };
     
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -34,15 +34,16 @@ class DepositWizardComp extends React.Component {
            overlayClassName="c-depositwizard__overlay"
         >
           <div className="c-depositwizard__header">
-            <h2>Deposit Wizard</h2>
+            <h2>Deposit Wizard (in progress)</h2>
+            <button className="c-depositwizard__close" onClick={this.handleCloseModal} aria-label="close"></button>
           </div>
           <div className="c-depositwizard__content">
-            Content goes here.
+            What kind of material are you depositing?
+            <a href="">A published (or accepted) scholarly article</a>
+            <a href="">Any other material (e.g., working paper, book, multimedia)</a>
           </div>
           <div className="c-depositwizard__footer">
-            <button className="c-depositwizard__button-close" onClick={this.handleCloseModal}>Cancel</button>
-            <button className="o-button__7">Clear All</button>
-            <button className="o-button__3">Select</button>
+            We use these questions to direct you to the right place to deposit your materials.
           </div>
         </ReactModal>
       </div>
