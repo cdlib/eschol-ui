@@ -18,6 +18,7 @@ import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
 import BrowseCampusesLayout from './layouts/BrowseCampusesLayout.jsx'
 import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
+import CampusLayout from './layouts/CampusLayout.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
@@ -120,6 +121,7 @@ ReactDOM.render((
       <Route path="/breadcrumb" component={BreadcrumbDisp} />
       <Route path="/browsecampuses" component={BrowseCampusesLayout} />
       <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
+      <Route path="/campus" component={CampusLayout} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
       <Route path="/button" component={ButtonDisp} />
       <Route path="/checkbox" component={CheckboxDisp} />
