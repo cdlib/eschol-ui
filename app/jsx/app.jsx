@@ -53,8 +53,6 @@ import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
 import MediaListDisp from './display/MediaListDisp.jsx'
 import ModalDisp from './display/ModalDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
-import Nav1Disp from './display/Nav1Disp.jsx'
-import Nav2Disp from './display/Nav2Disp.jsx'
 import NavBarDisp from './display/NavBarDisp.jsx'
 import PaginationDisp from './display/PaginationDisp.jsx'
 import PdfViewDisp from './display/PdfViewDisp.jsx'
@@ -156,8 +154,6 @@ ReactDOM.render((
       <Route path="/medialist" component={MediaListDisp} />
       <Route path="/modal" component={ModalDisp} />
       <Route path="/nav" component={NavDisp} />
-      <Route path="/nav1" component={Nav1Disp} />
-      <Route path="/nav2" component={Nav2Disp} />
       <Route path="/navbar" component={NavBarDisp} />
       <Route path="/pagination" component={PaginationDisp} />
       <Route path="/pdfview" component={PdfViewDisp} />
