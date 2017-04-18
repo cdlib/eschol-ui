@@ -24,6 +24,7 @@ import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
+import DepositWizardDisp from './display/DepositWizardDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
@@ -124,6 +125,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
       <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/depositwizard" component={DepositWizardDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />
