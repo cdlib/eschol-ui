@@ -17,8 +17,12 @@
   @include bp(screen2) {
     align-items: flex-start;
     min-height: 35vw;
-    padding-left: 5vw;
+    padding-left: 2vw;
     background: top right / contain no-repeat;
+  }
+
+  @include bp(screen3) {
+    padding-left: 5vw;
   }
 
 }
