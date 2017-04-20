@@ -4,21 +4,66 @@
   // no styles
 }
 
-.c-campuscarousel__cell {
+.c-campuscarousel__section {
   display: flex;
   position: relative;
-  height: 180px; // sets the carousel height
+  height: 150px; // sets the carousel height
+  padding-top: 30px;
+
+  &:not(:first-child) {
+
+    [class^='c-campuscarousel__cell--'] {
+
+      &:first-of-type {
+        border-left: 1px solid $color-dark-gray;
+      }
+
+    }
+
+  }
+
 }
 
 .c-campuscarousel__cell-heading {
   position: absolute;
+  top: 0;
+  left: $spacing-sm;
   margin: 0;
   color: $color-dark-gray;
   font-size: 1.1em;
   font-weight: normal;
 }
 
-.c-campuscarousel__cell-item {
+%c-campuscarousel__cell {
   width: 150px;
-  margin-top: 30px;
+  padding: 35px 5px 5px;
+  text-align: center;
+
+  strong {
+    display: block;
+    color: $color-teal;
+    font-family: 'KievitWebLight';
+    font-size: 1.8em;
+  }
+
+}
+
+.c-campuscarousel__cell--item {
+  @extend %c-campuscarousel__cell;
+}
+
+.c-campuscarousel__cell--view {
+  @extend %c-campuscarousel__cell;
+}
+
+.c-campuscarousel__cell--passed {
+  @extend %c-campuscarousel__cell;
+}
+
+.c-campuscarousel__cell--journals {
+  @extend %c-campuscarousel__cell;
+}
+
+.c-campuscarousel__cell--units {
+  @extend %c-campuscarousel__cell;
 }
