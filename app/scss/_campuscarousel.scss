@@ -1,5 +1,24 @@
 // ##### Campus Carousel Component ##### //
 
-.campuscarousel {
-  border: $bgreen;
+.c-campuscarousel {
+  // no styles
+}
+
+.c-campuscarousel__cell {
+  display: flex;
+  position: relative;
+  height: 180px; // sets the carousel height
+}
+
+.c-campuscarousel__cell-heading {
+  position: absolute;
+  margin: 0;
+  color: $color-dark-gray;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.c-campuscarousel__cell-item {
+  width: 150px;
+  margin-top: 30px;
 }
