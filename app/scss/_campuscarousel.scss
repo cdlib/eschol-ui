@@ -7,7 +7,7 @@
 .c-campuscarousel__section {
   display: flex;
   position: relative;
-  height: 150px; // sets the carousel height
+  height: 145px; // sets the carousel height
   padding-top: 30px;
 
   &:not(:first-child) {
@@ -36,8 +36,9 @@
 
 %c-campuscarousel__cell {
   width: 150px;
-  padding: 35px 5px 5px;
+  padding: 35px $spacing-base $spacing-base;
   text-align: center;
+  background: top center / 1.5em no-repeat;
 
   strong {
     display: block;
@@ -50,10 +51,12 @@
 
 .c-campuscarousel__cell--item {
   @extend %c-campuscarousel__cell;
+  background-image: inline('../images/icon_book-light-black.svg');
 }
 
 .c-campuscarousel__cell--view {
   @extend %c-campuscarousel__cell;
+  background-image: inline('../images/icon_eye-light-black.svg');
 }
 
 .c-campuscarousel__cell--passed {
