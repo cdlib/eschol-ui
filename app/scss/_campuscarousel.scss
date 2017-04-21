@@ -61,12 +61,15 @@
 
 .c-campuscarousel__cell--passed {
   @extend %c-campuscarousel__cell;
+  background-image: inline('../images/icon_unlock-alt-light-black.svg');
 }
 
 .c-campuscarousel__cell--journals {
   @extend %c-campuscarousel__cell;
+  background-image: inline('../images/icon_file-text-light-black.svg');
 }
 
 .c-campuscarousel__cell--units {
   @extend %c-campuscarousel__cell;
+  background-image: inline('../images/icon_university-light-black.svg');
 }
