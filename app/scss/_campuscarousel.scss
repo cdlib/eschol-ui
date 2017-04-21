@@ -1,5 +1,7 @@
 // ##### Campus Carousel Component ##### //
 
+$campuscarousel-heading-height: 1.1em;
+
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
   padding: $spacing-sm 40px;
@@ -9,7 +11,7 @@
 .c-campuscarousel__section {
   display: flex;
   position: relative;
-  padding-top: 30px;
+  padding-top: $campuscarousel-heading-height + 0.5em;
   background-color: $color-white; // hides section underneith when overlapping upon browser resize
 
   &:not(:first-child) {
@@ -32,7 +34,7 @@
   left: $spacing-sm;
   margin: 0;
   color: $color-dark-gray;
-  font-size: 1.1em;
+  font-size: $campuscarousel-heading-height;
   font-weight: normal;
 }
 
