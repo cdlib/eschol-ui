@@ -2,7 +2,7 @@
 
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
-  padding: 0 50px;
+  padding: 0 35px;
 }
 
 .c-campuscarousel__section {
@@ -80,6 +80,9 @@
 %campuscarousel-flickity-customizations {
 
   .flickity-prev-next-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
 
     &:hover {
       background: transparent;
