@@ -11,7 +11,6 @@ class CampusCarouselComp extends React.Component {
       cellAlign: 'left',
       contain: true,
       initialIndex: 0,
-      imagesLoaded: true,
       pageDots: false
     }
     this.flkty = new Flickity(carousel, options);
