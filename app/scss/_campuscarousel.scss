@@ -4,7 +4,7 @@ $campuscarousel-heading-height: 1.1em;
 
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
-  padding: $spacing-sm 40px;
+  padding: $spacing-sm 2.5em;
   background-color: $color-white;
 }
 
@@ -40,8 +40,8 @@ $campuscarousel-heading-height: 1.1em;
 
 %c-campuscarousel__cell {
   width: 15vw;
-  min-width: 100px;
-  padding: 35px $spacing-base $spacing-base;
+  min-width: 6.3em;
+  padding: 2.2em $spacing-base $spacing-base;
   background: top center / 1.5em no-repeat;
   text-align: center;
 
@@ -89,8 +89,8 @@ $campuscarousel-heading-height: 1.1em;
 %campuscarousel-flickity-customizations {
 
   .flickity-prev-next-button {
-    width: 60px;
-    height: 60px;
+    width: 3.8em;
+    height: 3.8em;
     background: transparent;
 
     &:hover {
@@ -98,11 +98,11 @@ $campuscarousel-heading-height: 1.1em;
     }
 
     &.previous {
-      left: -10px;
+      left: -0.6em;
     }
 
     &.next {
-      right: -10px;
+      right: -0.6em;
     }
 
     .arrow {
