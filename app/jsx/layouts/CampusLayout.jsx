@@ -4,6 +4,8 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
+import HeatMapComp from '../components/HeatMapComp.jsx'
+import CampusCarouselComp from '../components/CampusCarouselComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class CampusLayout extends React.Component {
@@ -48,7 +50,8 @@ class CampusLayout extends React.Component {
             </details>
           </div>
         </div>
-        [heat map to go here]
+        <HeatMapComp />
+        <CampusCarouselComp />
         <div className="c-columns">
           <main id="maincontent">
             <section className="o-columnbox1">
