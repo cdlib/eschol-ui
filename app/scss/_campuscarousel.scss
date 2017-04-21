@@ -1,7 +1,8 @@
 // ##### Campus Carousel Component ##### //
 
 .c-campuscarousel {
-  // no styles
+  @extend %campuscarousel-flickity-customizations;
+  padding: 0 50px;
 }
 
 .c-campuscarousel__section {
@@ -72,4 +73,30 @@
 .c-campuscarousel__cell--units {
   @extend %c-campuscarousel__cell;
   background-image: inline('../images/icon_university-light-black.svg');
+}
+
+// ***** Flickity Customizations ***** //
+
+%campuscarousel-flickity-customizations {
+
+  .flickity-prev-next-button {
+
+    &:hover {
+      background: transparent;
+    }
+
+    &.previous {
+      left: -20px;
+    }
+
+    &.next {
+      right: -20px;
+    }
+
+    .arrow {
+      fill: $color-dark-gray;
+    }
+
+  }
+
 }
