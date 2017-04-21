@@ -3,6 +3,7 @@
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
   padding: 0 35px;
+  background-color: $color-white;
 }
 
 .c-campuscarousel__section {
@@ -10,6 +11,7 @@
   position: relative;
   height: 145px; // sets the carousel height
   padding-top: 30px;
+  background-color: $color-white;
 
   &:not(:first-child) {
 
