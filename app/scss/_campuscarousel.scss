@@ -37,7 +37,8 @@
 }
 
 %c-campuscarousel__cell {
-  width: 150px;
+  width: 15vw;
+  min-width: 100px;
   padding: 35px $spacing-base $spacing-base;
   background: top center / 1.5em no-repeat;
   text-align: center;
@@ -46,7 +47,12 @@
     display: block;
     color: $color-teal;
     font-family: 'KievitWebLight';
-    font-size: 1.8em;
+    font-size: 1.3em;
+
+    @include bp(screen3) {
+      font-size: 1.6em;
+    }
+
   }
 
 }
