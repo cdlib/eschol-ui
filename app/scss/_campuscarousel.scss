@@ -4,6 +4,7 @@ $campuscarousel-heading-height: 1.1em;
 
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
+  margin-bottom: $spacing-md;
   padding: $spacing-sm 2.5em;
   background-color: $color-white;
 }
