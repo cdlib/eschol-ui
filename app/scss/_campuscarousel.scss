@@ -2,16 +2,15 @@
 
 .c-campuscarousel {
   @extend %campuscarousel-flickity-customizations;
-  padding: 0 35px;
+  padding: $spacing-sm 40px;
   background-color: $color-white;
 }
 
 .c-campuscarousel__section {
   display: flex;
   position: relative;
-  height: 145px; // sets the carousel height
   padding-top: 30px;
-  background-color: $color-white;
+  background-color: $color-white; // hides section underneith when overlapping upon browser resize
 
   &:not(:first-child) {
 
@@ -91,11 +90,11 @@
     }
 
     &.previous {
-      left: -20px;
+      left: -10px;
     }
 
     &.next {
-      right: -20px;
+      right: -10px;
     }
 
     .arrow {
