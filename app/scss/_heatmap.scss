@@ -10,6 +10,7 @@
   border-bottom: 1px solid $color-light-gray;
   background: top center / cover no-repeat;
   // background-image url property/value is an inline style within the component
+  box-shadow: $box-shadow1;
 
   &::after {
     position: absolute;
