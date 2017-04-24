@@ -7,6 +7,7 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import SidebarNavComp from '../components/SidebarNavComp.jsx'
+import ModalComp from '../components/ModalComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class AboutLayout extends React.Component {
@@ -92,6 +93,7 @@ class AboutLayout extends React.Component {
               <p>Learn more about what to expect from publishing with eScholarship.</p>
               <p>eScholarship is a service of the Publishing Group of the California Digital Library.</p>
               <p>Questions? <a className="o-textlink__primary" href="">Contact us</a>.</p>
+              <ModalComp />
             </section>
           </main>
         </div>
