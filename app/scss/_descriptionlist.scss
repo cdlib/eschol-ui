@@ -3,6 +3,7 @@
 .c-descriptionlist {
 
   dt {
+    font-weight: bold;
 
     a {
       @extend %o-textlink__secondary;
@@ -11,8 +12,8 @@
   }
 
   dd {
-    margin-bottom: $spacing-sm;
-    margin-left: $spacing-md;
+    margin-bottom: $spacing-md;
+    margin-left: 0;
   }
 
 }

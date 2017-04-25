@@ -1,5 +1,7 @@
 // ##### Description List Component ##### //
 
+// The <dt>s use linked text in the example below but the <dd>s can instead use linked text depending on the design requirement
+
 import React from 'react'
 
 class DescriptionListComp extends React.Component {
