@@ -32,7 +32,6 @@ class JournalItemMultimediaLayout extends React.Component {
           <main id="maincontent">
             <div className="c-tabs">
               <div className="c-tabs__tabs">
-                <button className="c-tabs__button-more">...</button>
                 <button className="c-tabs__button--active">Main Content</button>
               </div>
               <div className="c-tabs__content">
