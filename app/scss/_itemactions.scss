@@ -11,6 +11,16 @@
     margin-bottom: $spacing-sm;
   }
 
+  .o-download,
+  .c-share,
+  button {
+
+    &:last-child {
+      margin-left: auto; // right-justify
+    }
+
+  }
+
 }
 
 %c-itemactions__elements {
