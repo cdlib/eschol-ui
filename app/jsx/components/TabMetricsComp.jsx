@@ -78,7 +78,7 @@ class TabMetricsComp extends React.Component {
             </table>
           </div>
           <div className="c-tabcontent__divide2x-child">
-            [right division]
+            [content to go here]
           </div>
         </div>
       </div>

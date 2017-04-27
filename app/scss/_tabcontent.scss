@@ -22,7 +22,15 @@
 
   @include bp(screen3) {
     width: 50%;
+
+    &:first-child {
+      padding-right: $spacing-md / 2;
+    }
+
+    &:last-child {
+      padding-left: $spacing-md / 2;
+    }
+
   }
 
-  border: $bred;
 }
