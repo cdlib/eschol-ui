@@ -26,6 +26,7 @@ import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
+import DataTableDisp from './display/DataTableDisp.jsx'
 import DepositWizardDisp from './display/DepositWizardDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
@@ -86,7 +87,6 @@ import TabSupplementalDisp from './display/TabSupplementalDisp.jsx'
 import TabMetricsDisp from './display/TabMetricsDisp.jsx'
 import TabAuthorDisp from './display/TabAuthorDisp.jsx'
 import TabCommentsDisp from './display/TabCommentsDisp.jsx'
-import DataTableDisp from './display/DataTableDisp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import Tabs2Disp from './display/Tabs2Disp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
@@ -131,6 +131,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
       <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/datatable" component={DataTableDisp} />
       <Route path="/depositwizard" component={DepositWizardDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
@@ -188,7 +189,6 @@ ReactDOM.render((
       <Route path="/share" component={ShareDisp} />
       <Route path="/subheader1" component={Subheader1Disp} />
       <Route path="/subheader2" component={Subheader2Disp} />
-      <Route path="/table" component={DataTableDisp} />
       <Route path="/tabmain" component={TabMainDisp} />
       <Route path="/tabsupplemental" component={TabSupplementalDisp} />
       <Route path="/tabmetrics" component={TabMetricsDisp} />

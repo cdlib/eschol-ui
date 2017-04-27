@@ -46,6 +46,7 @@ class Home extends React.Component {
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
+          <li><a href="#datatable">Data Table</a></li>
           <li><a href="#depositwizard">Deposit Wizard</a></li>
           <li><a href="#descriptionlist">Description List</a></li>
           <li><a href="#export">Export/RSS</a></li>
@@ -91,7 +92,6 @@ class Home extends React.Component {
           <li><a href="#tabmetrics">Tab - Metrics</a></li>
           <li><a href="#tabauthor">Tab - Author & Article</a></li>
           <li><a href="#tabcomments">Tab - Comments</a></li>
-          <li><a href="#table">Table</a></li>
           <li><a href="#togglecontent">Toggle Content</a></li>
           <li><a href="#togglelist">Toggle List</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
