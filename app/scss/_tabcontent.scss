@@ -4,11 +4,8 @@
   // not used
 }
 
-.c-tabcontent__heading {
-  margin-top: 0;
-  margin-bottom: $spacing-md;
-  color: $color-teal;
-  font-size: 1.6em;
-  font-weight: normal;
-  line-height: 1.1;
+#c-tabcontent__main-heading {
+ // this ID is present in each tab in order to receive focus from script in TabsComp
+
+ outline: none;
 }

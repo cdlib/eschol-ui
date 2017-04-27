@@ -15,7 +15,7 @@ class TabsComp extends React.Component {
   }
   tabFocus(tabNumber) {
     // For keyboard users, jump to heading within the tab.
-    setTimeout(()=>$(".c-tabcontent__heading").focus(), 0)
+    setTimeout(()=>$("#c-tabcontent__main-heading").focus(), 0)
     this.setState({currentTab: tabNumber})
   }
   render() {

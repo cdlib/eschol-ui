@@ -6,7 +6,7 @@ class TabMetricsComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
-        <h1 className="c-tabcontent__heading" tabIndex="-1">Metrics content to go here</h1> 
+        <h1 id="c-tabcontent__main-heading" className="o-heading1" tabIndex="-1">Metrics content to go here</h1> 
         <div className="o-dividecontent2x">
           <h2>Total Usage</h2>
           <table className="c-datatable">

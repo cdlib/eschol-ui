@@ -12,7 +12,7 @@ class TabMainComp extends React.Component {
     return (
       <div className="c-tabcontent">
         <ItemActionsComp />
-        <h1 className="c-tabcontent__heading" tabIndex="-1">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+        <h1 id="c-tabcontent__main-heading" className="o-heading1" tabIndex="-1">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
         <AuthorListComp />
         <PubLocationComp />
         <PubDataComp />
