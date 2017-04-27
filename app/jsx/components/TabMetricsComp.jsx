@@ -6,7 +6,7 @@ class TabMetricsComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
-        <h1 id="c-tabcontent__main-heading" className="o-heading1" tabIndex="-1">Metrics content to go here</h1>
+        <h1 id="c-tabcontent__main-heading" className="o-heading1" tabIndex="-1">Metrics</h1>
         <div className="c-tabcontent__divide2x">
           <div className="c-tabcontent__divide2x-child">
             <table className="c-datatable">
@@ -78,7 +78,7 @@ class TabMetricsComp extends React.Component {
             </table>
           </div>
           <div className="c-tabcontent__divide2x-child">
-            [content to go here]
+            <img className="o-imagecontent" src="images/sample_data.png" alt="sample data"/>
           </div>
         </div>
       </div>
