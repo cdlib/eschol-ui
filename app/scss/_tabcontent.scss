@@ -9,3 +9,20 @@
 
  outline: none;
 }
+
+.c-tabcontent__divide2x {
+
+  @include bp(screen3) {
+    display: flex;
+  }
+
+}
+
+.c-tabcontent__divide2x-child {
+
+  @include bp(screen3) {
+    width: 50%;
+  }
+
+  border: $bred;
+}
