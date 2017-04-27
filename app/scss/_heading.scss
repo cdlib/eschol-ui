@@ -37,3 +37,13 @@
 .o-heading3 {
   @extend %o-heading3;
 }
+
+%o-heading4 {
+  @extend %o-heading;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.o-heading4 {
+  @extend %o-heading4;
+}
