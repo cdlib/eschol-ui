@@ -4,10 +4,9 @@
   // not used
 }
 
-#c-tabcontent__main-heading {
- // this ID is present in each tab in order to receive focus from script in TabsComp
-
- outline: none;
+.c-tabcontent__main-heading {
+  @extend %o-heading1;
+  // outline: none;
 }
 
 .c-tabcontent__divide2x {
