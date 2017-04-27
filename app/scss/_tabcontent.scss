@@ -6,7 +6,11 @@
 
 .c-tabcontent__main-heading {
   @extend %o-heading1;
-  // outline: none;
+
+  &:focus {
+    outline: $color-light-gray solid 1px;
+  }
+
 }
 
 .c-tabcontent__divide2x {
