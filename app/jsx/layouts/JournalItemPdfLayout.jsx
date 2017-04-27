@@ -35,7 +35,7 @@ class JournalItemPdfLayout extends React.Component {
               </div>
               <div className="c-tabs__content">
                 <ItemActionsComp />
-                <h1 className="c-tabcontent__heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h1 className="o-heading1">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
                 <AuthorListComp />
                 <PubLocationComp />
                 <PubDataComp />

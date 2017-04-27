@@ -37,7 +37,7 @@ class SeriesItemWithdrawnLayout extends React.Component {
                   </div>
                   <ShareComp />
                 </div>
-                <h1 className="c-tabcontent__heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h1 className="o-heading1">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
                 <AuthorListComp />
                 <div className="o-itemunavailable__withdrawn">
                   <p className="o-itemunavailable__lede">This item has been withdrawn and is <strong>no longer available</strong>.</p>
