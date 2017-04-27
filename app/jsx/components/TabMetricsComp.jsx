@@ -8,7 +8,7 @@ class TabMetricsComp extends React.Component {
       <div className="c-tabcontent">
         <h1 id="c-tabcontent__main-heading" className="o-heading1" tabIndex="-1">Metrics content to go here</h1> 
         <div className="o-dividecontent2x">
-          <h2>Total Usage</h2>
+          <h2 className="o-heading3">Total Usage</h2>
           <table className="c-datatable">
             <thead>
               <tr>
@@ -30,7 +30,7 @@ class TabMetricsComp extends React.Component {
               </tr>
             </tbody>
           </table>
-          <h2>By Month</h2>
+          <h2 className="o-heading3">By Month</h2>
           <table className="c-datatable">
             <thead>
               <tr>
