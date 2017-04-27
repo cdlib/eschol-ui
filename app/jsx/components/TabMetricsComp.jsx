@@ -12,7 +12,7 @@ class TabMetricsComp extends React.Component {
             <caption>Total Usage</caption>
             <thead>
               <tr>
-                <th scope="col"></th>
+                <th scope="col">Actions</th>
                 <th scope="col">Total</th>
                 <th scope="col">Monthly Average</th>
               </tr>
