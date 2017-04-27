@@ -44,15 +44,15 @@ class JournalSimpleLayout extends React.Component {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!
                 </p>
               </div>
-              <h3>Front Matter</h3>
+              <h3 className="o-heading3">Front Matter</h3>
               <PubPreviewComp />
               <PubPreviewComp />
               <PubPreviewComp />
-              <h3>Articles</h3>
+              <h3 className="o-heading3">Articles</h3>
               <PubPreviewComp />
               <PubPreviewComp />
               <PubPreviewComp />
-              <h3>Book Reviews</h3>
+              <h3 className="o-heading3">Book Reviews</h3>
               <PubComp />
               <PubComp />
               <PubComp />
