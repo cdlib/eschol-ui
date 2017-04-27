@@ -28,6 +28,7 @@ $bgreen: 1px solid #0c0;
   c-header1__search,
   c-header2__search,
   c-header2__logo,
+  c-tabcontent__heading,
   l-about,
   l-search,
   l-search__sort-pagination,
@@ -48,7 +49,7 @@ $bgreen: 1px solid #0c0;
       background-color: #f00;
       color: #fff;
       font-size: 0.8em;
-      content: '("#{$unused-classname}" className here no longer used; OK to remove)';
+      content: '("#{$unused-classname}" className here changed or no longer used)';
     }
 
   }
