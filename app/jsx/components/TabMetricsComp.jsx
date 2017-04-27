@@ -30,8 +30,26 @@ class TabMetricsComp extends React.Component {
               </tr>
             </tbody>
           </table>
+          <h2 className="o-heading3">By Month</h2>
+          <div className="c-itemactions">
+            <div className="o-input__droplist2">
+              <label htmlFor="o-input__droplist-label2">From:</label>
+              <select name="" id="o-input__droplist-label2">
+                <option value="">January, 2017</option>
+                <option value="">February, 2017</option>
+                <option value="">March, 2017</option>
+              </select>
+            </div>
+            <div className="o-input__droplist2">
+              <label htmlFor="o-input__droplist-label2">To:</label>
+              <select name="" id="o-input__droplist-label2">
+                <option value="">January, 2017</option>
+                <option value="">February, 2017</option>
+                <option value="">March, 2017</option>
+              </select>
+            </div>
+          </div>
           <table className="c-datatable">
-            <caption>By Month</caption>
             <thead>
               <tr>
                 <th scope="col">Monthly</th>
