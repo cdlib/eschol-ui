@@ -9,7 +9,7 @@ class ItemActionsComp extends React.Component {
   render() {
     return (
       <div className="c-itemactions">
-        <div className="c-itemactions__download o-download">
+        <div className="o-download">
           <button className="o-download__button">Download PDF</button>
           <details className="o-download__formats">
             <summary aria-label="formats"></summary>
@@ -44,8 +44,8 @@ class ItemActionsComp extends React.Component {
             </ul>
           </details>
         </div>
-        <button className="c-itemactions__button1 o-button__6">Buy in Print</button>
-        <button className="c-itemactions__button2 o-button__6">Buy e-Book</button>
+        <button className="c-itemactions__button-print">Buy in Print</button>
+        <button className="c-itemactions__button-buy">Buy e-Book</button>
         <ShareComp />
       </div>
     )

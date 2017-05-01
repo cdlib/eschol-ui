@@ -12,29 +12,28 @@
   }
 
   > * {
+    margin-bottom: $spacing-sm;
 
     &:last-child {
-      margin-left: auto; // right-justify
+      margin-left: auto; // right-justify last button
+    }
+
+    &:not(:last-child) {
+      margin-right: $spacing-sm;
     }
 
   }
 
 }
 
-%c-itemactions__elements {
-  margin-right: $spacing-sm;
-  margin-bottom: $spacing-sm;
+// Specific button styles appearing in various layouts:
+
+.c-itemactions__button-print {
+  @extend %o-button__6;
+  background-image: inline('../images/icon_print-white.svg');
 }
 
-.c-itemactions__download {
-  @extend %c-itemactions__elements;
-}
-
-.c-itemactions__button1 {
-  @extend %c-itemactions__elements;
-}
-
-.c-itemactions__button2 {
-  @extend %c-itemactions__elements;
+.c-itemactions__button-buy {
+  @extend %o-button__6;
   background-image: inline('../images/icon_book-white.svg');
 }
