@@ -1,6 +1,8 @@
 // ##### Item Actions Component ##### //
 
-// Any <button>s below can be omitted, depending on the design requirements
+// Within c-itemactions parent <div>, between 2 - 5 buttons or similar components can be used, as in example below.
+
+// Styles that extend .o-button button object styles (like for applying custom button icons) should be placed in _itemactions.scss, as with the c-itemactions__button-[name] examples below:
 
 import React from 'react'
 import ShareComp from '../components/ShareComp.jsx'
