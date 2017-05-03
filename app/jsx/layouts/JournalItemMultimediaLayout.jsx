@@ -8,7 +8,6 @@ import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
-import RefineMediaComp from '../components/RefineMediaComp.jsx'
 import MediaFileGridComp from '../components/MediaFileGridComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -61,7 +60,31 @@ class JournalItemMultimediaLayout extends React.Component {
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio numquam aut facere odio et accusantium eius quo harum, quis ab molestias illum totam earum nemo voluptatum eligendi nobis. Molestiae reprehenderit et neque nisi nam corporis totam exercitationem, numquam fuga. Sint minima quisquam, velit quod ratione. Vero, libero, accusantium. Rem.
                     </div>
                   </div>
-                  <RefineMediaComp />
+                  <div className="c-itemactions">
+                    <div className="o-input__droplist2">
+                      <label htmlFor="o-input__droplist-label2">Refine media type by:</label>
+                      <select name="" id="o-input__droplist-label2">
+                        <option value="">All</option>
+                        <option value="">Documents</option>
+                        <option value="">Images</option>
+                        <option value="">Videos</option>
+                        <option value="">Others</option>
+                      </select>
+                    </div>
+                    <div className="o-download">
+                      <button className="o-download__button">Download All Files</button>
+                      <details className="o-download__formats">
+                        <summary aria-label="formats"></summary>
+                        <ul className="o-download__single-menu">
+                          <li><a href="">Image</a></li>
+                          <li><a href="">Audio</a></li>
+                          <li><a href="">Video</a></li>
+                          <li><a href="">Zip</a></li>
+                          <li><a href="">File</a></li>
+                        </ul>
+                      </details>
+                    </div>
+                  </div>
                   <MediaFileGridComp />
                 </details>
               </div>
