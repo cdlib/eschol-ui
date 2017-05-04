@@ -95,6 +95,11 @@ body {
   overflow-x: hidden;
 }
 
+// preload example for inline style in index.html:
+.c-preload {
+  display: none;
+}
+
 p {
   margin: 0 0 $spacing-sm;
   line-height: $line-height;
