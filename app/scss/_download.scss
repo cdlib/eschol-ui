@@ -25,8 +25,8 @@
 .o-download__formats {
 
   summary {
+    @extend %interactive-element-height; // sets the height for .o-download
     position: relative;
-    min-height: $element-height;
     padding-right: 25px;
     padding-left: $spacing-sm;
     border-radius: 0 $round-corner $round-corner 0;
