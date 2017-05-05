@@ -1,7 +1,7 @@
 // ##### Button Objects ##### //
 
 %o-button {
-  min-height: $element-height;
+  @extend %interactive-element-height;
   padding: 5px 10px;
   border: none;
   border-radius: $round-corner;
