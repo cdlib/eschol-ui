@@ -49,7 +49,6 @@ Selector pattern using above media query mixin:
 
   @media (any-pointer: coarse) {
     min-height: 3em;
-    // outline: red solid 1px;
   }
 
 }
@@ -81,8 +80,11 @@ Selector pattern using above media query mixin:
 // Navigation item styles
 
 %nav-item {
-  display: block;
-  padding: 10px;
+  @extend %interactive-element-size;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
   border: 1px solid $color-dark-gray;
   background: $color-white;
   color: $color-dark-gray;
