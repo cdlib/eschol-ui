@@ -20,12 +20,10 @@
 .c-nav__main-button {
   display: inline-block;
   position: relative;
-  height: $element-height;
   margin-bottom: 5px;
   padding: 0 35px 0 10px;
   border: 1px solid $color-dark-gray;
   color: $color-dark-gray;
-  line-height: $element-height;
   user-select: none;
 
   @include bp(screen3) {
@@ -40,6 +38,13 @@
     padding: 7px;
     background: inline('../images/icon_arrow-down.svg') no-repeat center / 13px;
     content: '';
+  }
+
+  // <summary> isn't responding to flexbox values in Safari, so need to use <span> child with those values:
+  span {
+    @extend %interactive-element-size;
+    display: inline-flex;
+    align-items: center;
   }
 
 }
