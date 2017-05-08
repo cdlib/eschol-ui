@@ -22,7 +22,7 @@ class NavComp extends React.Component {
   render() {
     return (
       <div className="c-nav">
-        <details open={this.state.isOpen ? "open" : ""} aria-expanded={this.state.isOpen ? "true" : "false"} className="c-nav__main" ref={(domNode)=> this.details = domNode}>
+        <details open aria-expanded={this.state.isOpen ? "true" : "false"} className="c-nav__main" ref={(domNode)=> this.details = domNode}>
           <summary className="c-nav__main-button" onClick = {(event)=>{
             this.setState({isOpen: !this.details.open})
             event.preventDefault()

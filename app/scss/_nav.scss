@@ -142,16 +142,18 @@
   }
 
   &::after {
-    margin-left: 10px;
-    content: '\00bb'; // double-right arrow
+    position: absolute;
+    top: 0;
+    right: $spacing-sm;
+    bottom: 0;
+    width: 1em;
+    background: inline('../images/icon_angle-double-right-gray.svg') no-repeat center / contain;
+    content: '';
 
     @include bp(screen3) {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      padding: 7px;
-      background: inline('../images/icon_arrow-down.svg') no-repeat center / 13px;
-      content: '';
+      right: 0;
+      width: 0.8em;
+      background-image: inline('../images/icon_arrow-down.svg');
     }
 
   }
