@@ -76,7 +76,7 @@
     @extend %c-nav__item;
 
     @include bp(screen3) {
-      padding: 6px 0 3px;
+      padding: 0;
       border: none;
       background: none;
     }
@@ -130,15 +130,21 @@
 }
 
 .c-nav__sub-button {
-  @extend %c-nav__item;
   position: relative;
-  border-top: none;
   user-select: none;
 
-  @include bp(screen3) {
-    padding: 6px 25px 3px 0;
-    border: none;
-    background: none;
+  // <summary> isn't responding to flexbox values in Safari, so need to use <span> child with those values:
+  span {
+    @extend %c-nav__item;
+    border-top: none;
+
+    @include bp(screen3) {
+      padding-right: 1.5em;
+      padding-left: 0;
+      border: none;
+      background: none;
+    }
+
   }
 
   &::after {
@@ -167,10 +173,13 @@
   left: 0;
   transform: translateX(103%); // moves sub-items to right side of main-items
 
+  // Drop-down menu:
+
   @include bp(screen3) {
     top: auto;
     left: (-$spacing-sm);
     width: 200px;
+    margin-top: $spacing-base;
     max-height: 360px;
     transform: translateX(0);
     overflow: auto;
@@ -185,7 +194,8 @@
 .c-nav__sub-items-button {
   @extend %c-nav__item;
   width: 100%;
-  padding-left: 2em;
+  margin-right: $spacing-sm;
+  padding: 0 0 0 2em;
   border-bottom: none;
   background: $color-white inline('../images/icon_angle-double-left-gray.svg') no-repeat left $spacing-sm center / 1em;
   text-align: left;
