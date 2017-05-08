@@ -49,6 +49,7 @@ Selector pattern using above media query mixin:
 
   @media (any-pointer: coarse) {
     min-height: 3em;
+    // outline: red solid 1px;
   }
 
 }
