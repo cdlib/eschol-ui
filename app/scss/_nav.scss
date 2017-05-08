@@ -178,9 +178,9 @@
   @include bp(screen3) {
     top: auto;
     left: (-$spacing-sm);
-    width: 200px;
+    width: 12em;
+    max-height: 23em;
     margin-top: $spacing-base;
-    max-height: 360px;
     transform: translateX(0);
     overflow: auto;
   }
