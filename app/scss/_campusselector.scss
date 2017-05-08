@@ -39,7 +39,7 @@ $campus-selector-button-width: 30px;
 .c-campusselector__selector {
 
   summary {
-    @extend %interactive-element-height;
+    @extend %interactive-element-size;
     position: relative;
     width: $campus-selector-button-width;
 

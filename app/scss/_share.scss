@@ -26,7 +26,7 @@
 
     // <summary> isn't responding to flexbox values in Safari, so need to use <span> child with those values:
     span {
-      @extend %interactive-element-height;
+      @extend %interactive-element-size;
       display: inline-flex;
       align-items: center;
     }

@@ -25,7 +25,7 @@
 .o-download__formats {
 
   summary {
-    @extend %interactive-element-height; // sets the height for .o-download
+    @extend %interactive-element-size; // sets the height for .o-download
     position: relative;
     padding-right: 25px;
     padding-left: $spacing-sm;
