@@ -45,7 +45,7 @@ Selector pattern using above media query mixin:
 // Enlarge an interactive element's minimum height if there's a touch screen:
 
 %interactive-element-size { 
-  min-height: 2em;
+  min-height: 4em;
 
   @media (any-pointer: coarse) {
     min-height: 3em;

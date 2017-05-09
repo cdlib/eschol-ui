@@ -40,7 +40,7 @@ class SearchLayout extends React.Component {
           <div className="c-subheader1__nav">
             <div className="c-nav">
               <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
-                <summary className="c-nav__main-button">Menu
+                <summary className="c-nav__main-button"><span>Menu</span>
                 </summary>
                 <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
                   <NavSubComp name="Campus Sites" open={this.state.submenuActive == 1} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 1 : null})}>

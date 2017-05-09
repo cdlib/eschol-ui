@@ -40,7 +40,7 @@ class CampusLayout extends React.Component {
         <div className="c-navbar">
           <div className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
-              <summary className="c-nav__main-button">Menu
+              <summary className="c-nav__main-button"><span>Menu</span>
               </summary>
               <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
                 <a href="" className="c-nav__item--active">Open Access Policies</a>
