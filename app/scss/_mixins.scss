@@ -53,6 +53,18 @@ Selector pattern using above media query mixin:
 
 }
 
+// Enlarge an interactive element's minimum height if there's a touch screen and pass any other styles into the @media directive, if any:
+
+@mixin inter-element {
+  min-height: $pointer-size-fine;
+
+  @media (any-pointer: coarse) {
+    min-height: $pointer-size-coarse;
+    @content;
+  }
+
+}
+
 // No bullet unordered lists
 
 %no-bullet-ul {
