@@ -55,34 +55,28 @@ Selector pattern using above media query mixin:
 
 /*
 
-Set an interactive element's base minimum height and increase it if there's a touchscreen. Optionally, pass any other touchscreen styles.
+Set an interactive element's styles if there's a touchscreen (coarse) or mouse-only screen (fine). Example:
 
-For setting just the height:
-
-@include interactive-element;
-
-For setting the height and touchscreen styles:
-
-@include interactive-element(coarse) {
+@include interactive-element-pointer(coarse) {
   property: $value;
 }
 
 */
 
-@mixin interactive-element($pointer-size: null) {
-  min-height: $pointer-size-fine;
+@mixin interactive-element-pointer($pointer-size) {
 
   @if $pointer-size == coarse {
     
     @media (any-pointer: coarse) {
-      min-height: $pointer-size-coarse;
       @content;
     }
 
-  } @else {
+  // The "fine" option is not currenty used in any components but here for possible future cases:
 
-    @media (any-pointer: coarse) {
-      min-height: $pointer-size-coarse;
+  } @else if $pointer-size == fine {
+
+    @media (any-pointer: fine) {
+      @content;
     }
 
   }

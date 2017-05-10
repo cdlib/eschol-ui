@@ -35,8 +35,8 @@
 }
 
 .c-search2__field {
+  @extend %interactive-element-size;
   flex: 1 0 auto;
-  min-height: $input-height;
   padding: 0 0 0 30px;
   border: none;
   background: inline('../images/icon_magnify.svg') no-repeat left 8px center / 16px;
@@ -75,6 +75,7 @@
 }
 
 %c-search2__refine {
+  @extend %interactive-element-size;
   display: flex;
   align-items: center;
   padding: 0 8px;
@@ -129,17 +130,15 @@
 
 .c-search2__refine {
   @extend %c-search2__refine;
-  min-height: $input-height;
-  margin-top: (-$input-height);
+  margin-top: (-$pointer-size-fine);
+
+  @include interactive-element-pointer(coarse) {
+    margin-top: (-$pointer-size-coarse);
+  }
+
 }
 
 .c-search2__refine--active {
   @extend %c-search2__refine;
-  min-height: 3em;
   margin-top: 0;
-
-  @include bp(screen3) {
-    min-height: $input-height;
-  }
-
 }
