@@ -1,4 +1,4 @@
-// ##### Global Mixins ##### //
+// ##### Global Mixins and Placeholders ##### //
 
 // Create short media query blocks:
 
@@ -42,13 +42,15 @@ Selector pattern using above media query mixin:
 
 */
 
-// Enlarge an interactive element's minimum height if there's a touch screen:
+// Enlarge an interactive element's minimum width and height if there's a touch screen:
 
 %interactive-element-size { 
-  min-height: 2em;
+  min-width: $pointer-size-fine;
+  min-height: $pointer-size-fine;
 
   @media (any-pointer: coarse) {
-    min-height: 3em;
+    min-width: $pointer-size-coarse;
+    min-height: $pointer-size-coarse;
   }
 
 }
