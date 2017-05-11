@@ -108,3 +108,19 @@
 .o-button__8 {
   @extend %o-button__8;
 }
+
+// icon button:
+%o-button__9 {
+  @extend %o-button;
+  background: no-repeat center / 70%;
+
+  &::before {
+    content: '\00a0'; // no-break space
+  }
+
+}
+
+.o-button__9 {
+  @extend %o-button__9;
+  background-image: inline('../images/icon_magnify.svg');
+}
