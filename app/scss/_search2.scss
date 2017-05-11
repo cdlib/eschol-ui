@@ -62,6 +62,7 @@
 
 .c-search2__search-close-button {
   @extend %o-button__9;
+  background-color: $color-white;
   background-image: inline('../images/icon_close.svg');
 
   @include bp(screen3) {
