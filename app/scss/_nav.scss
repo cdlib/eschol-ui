@@ -195,6 +195,7 @@
     width: 12em;
     max-height: 23em;
     margin-top: $spacing-base;
+    border-top: 1px solid $color-dark-gray;
     transform: translateX(0);
     overflow: auto;
   }
