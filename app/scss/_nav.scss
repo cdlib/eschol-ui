@@ -155,9 +155,8 @@
   span {
 
     @include bp(screen3) {
-      padding-right: 1.5em;
+      padding-right: 0.9em;
       padding-left: 0;
-      background: none;
     }
 
   }
