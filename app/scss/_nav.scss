@@ -153,6 +153,9 @@
 
   // <summary> isn't responding to flexbox values in Safari, so need to use <span> child with those values:
   span {
+    @extend %interactive-element-size;
+    display: inline-flex;
+    align-items: center;
 
     @include bp(screen3) {
       padding-right: 0.9em;
