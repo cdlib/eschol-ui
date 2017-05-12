@@ -4,9 +4,8 @@
   margin-bottom: $spacing-sm;
 
   a {
-    @extend %interactive-element-size;
     display: inline-flex;
-    align-items: center;
+    margin-bottom: $spacing-sm;
     color: $color-black;
     font-size: 1.1em;
     text-decoration: none;
