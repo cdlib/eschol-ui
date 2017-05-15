@@ -34,6 +34,7 @@
 }
 
 .c-facetbox[open] {
+  padding-bottom: $spacing-base;
   border-bottom: 1px solid $color-light-gray;
 
   .c-facetbox__summary {
