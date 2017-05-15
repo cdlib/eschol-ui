@@ -72,14 +72,14 @@ class SearchLayout extends React.Component {
           <aside>
             <FilterComp />
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary">Refine By</summary>
+              <summary className="c-facetbox__summary"><span>Refine By</span></summary>
               <div className="c-checkbox">
                 <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
                 <label htmlFor="c-checkbox__number6" className="c-checkbox__label">Peer-Reviewed only (##)</label>
               </div>
             </details>
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary">Research</summary>
+              <summary className="c-facetbox__summary"><span>Research</span></summary>
               <div className="c-checkbox">
                 <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
                 <label htmlFor="c-checkbox__number7" className="c-checkbox__label">Articles (##)</label>
@@ -90,7 +90,7 @@ class SearchLayout extends React.Component {
               </div>
             </details>
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary">Content Type</summary>
+              <summary className="c-facetbox__summary"><span>Content Type</span></summary>
                 <CheckboxComp />
             </details>
           </aside>
