@@ -43,6 +43,7 @@ class Home extends React.Component {
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#campuscarousel">Campus Carousel</a></li>
+          <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
