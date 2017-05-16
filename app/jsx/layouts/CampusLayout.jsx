@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
+import CampusSearchComp from '../components/CampusSearchComp.jsx'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import HeatMapComp from '../components/HeatMapComp.jsx'
@@ -54,9 +55,7 @@ class CampusLayout extends React.Component {
         <CampusCarouselComp />
         <div className="c-columns">
           <main id="maincontent">
-            <section className="o-columnbox1">
-              [campus search section to go here]
-            </section>
+            <CampusSearchComp />
             <section className="o-columnbox1">
               [collections section to go here]
             </section>
