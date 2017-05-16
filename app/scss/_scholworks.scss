@@ -109,10 +109,11 @@ $scholworks-tag-height: $element-height;
 
 .c-scholworks__media {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
 }
 
 .c-scholworks__license {
   margin-bottom: $spacing-sm;
-  margin-left: $spacing-md;
+  margin-left: auto;
 }
