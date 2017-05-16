@@ -4,11 +4,11 @@ $pagination-button-height: $element-height;
 
 .c-pagination {
   display: flex;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   align-items: flex-end; // for c-pagination__ellipses
   justify-content: flex-end;
-  margin: 0 0 $spacing-md;
+  margin-bottom: $spacing-md;
 }
 
 %c-pagination__items {

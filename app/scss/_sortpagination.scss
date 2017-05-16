@@ -2,5 +2,6 @@
 
 .c-sortpagination {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
