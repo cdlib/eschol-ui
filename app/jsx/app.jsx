@@ -26,6 +26,7 @@ import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import ImageContentDisp from './display/ImageContentDisp.jsx'
+import ItemCarouselDisp from './display/ItemCarouselDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
 import DepositWizardDisp from './display/DepositWizardDisp.jsx'
@@ -140,6 +141,7 @@ ReactDOM.render((
       <Route path="/export" component={ExportDisp} />
       <Route path="/imagecontent" component={ImageContentDisp} />
       <Route path="/input" component={InputDisp} />
+      <Route path="/itemcarousel" component={ItemCarouselDisp} />
       <Route path="/facetbox" component={FacetBoxDisp} />
       <Route path="/filter" component={FilterDisp} />
       <Route path="/footer" component={FooterDisp} />
