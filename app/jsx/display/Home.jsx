@@ -11,6 +11,7 @@ class Home extends React.Component {
           <li><a href="#about">About</a></li>
           <li><a href="#browsecampuses">Browse Campuses</a></li>
           <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
+          <li><a href="#browsejournals">Browse Journals</a></li>
           <li><a href="#campus">Campus</a></li>
           <li><a href="#journalsimple">Journal (Simple)</a></li>
           <li><a href="#journalsplashy">Journal (Splashy)</a></li>
