@@ -7,11 +7,11 @@ class InputObj extends React.Component {
     return (
       <div>
 
-        <h2>Drop-down List with Inline Label</h2>
+        <h2>Dropdown List with Inline Label</h2>
 
         <div className="o-input__droplist1">
-          <label htmlFor="o-input__droplist1-label">Fruit:</label>
-          <select name="" id="o-input__droplist1-label">
+          <label htmlFor="o-input__droplist-label1">Fruit:</label>
+          <select name="" id="o-input__droplist-label1">
             <option value="">Apples</option>
             <option value="">Oranges</option>
             <option value="">Pears</option>
@@ -20,7 +20,7 @@ class InputObj extends React.Component {
           </select>
         </div>
 
-        <h2>Drop-down List with Block Label</h2>
+        <h2>Dropdown List with Block Label</h2>
 
         <div className="o-input__droplist2">
           <label htmlFor="o-input__droplist-label2">Refine media type by:</label>
@@ -33,13 +33,26 @@ class InputObj extends React.Component {
           </select>
         </div>
 
+        <h2>Dropdown List with Hidden Label</h2>
+
+        <div className="o-input__droplist1">
+          <label className="o-input__label--hidden" htmlFor="o-input__droplist-label3">Fruit:</label>
+          <select name="" id="o-input__droplist-label3">
+            <option value="">Apples</option>
+            <option value="">Oranges</option>
+            <option value="">Pears</option>
+            <option value="">Grapes</option>
+            <option value="">Strawberries</option>
+          </select>
+        </div>
+
         <h2>Inline Inputs</h2>
 
         {/* Any input examples above can be used inline */}
         <div className="o-input__inline">
           <div className="o-input__droplist1">
-            <label htmlFor="o-input__droplist3-label">Fruit:</label>
-            <select name="" id="o-input__droplist3-label">
+            <label htmlFor="o-input__droplist-label4">Fruit:</label>
+            <select name="" id="o-input__droplist-label4">
               <option value="">Apples</option>
               <option value="">Oranges</option>
               <option value="">Pears</option>
@@ -48,8 +61,8 @@ class InputObj extends React.Component {
             </select>
           </div>
           <div className="o-input__droplist1">
-            <label htmlFor="o-input__droplist4-label">Fruit:</label>
-            <select name="" id="o-input__droplist4-label">
+            <label htmlFor="o-input__droplist-label5">Fruit:</label>
+            <select name="" id="o-input__droplist-label5">
               <option value="">Apples</option>
               <option value="">Oranges</option>
               <option value="">Pears</option>

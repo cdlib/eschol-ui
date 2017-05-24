@@ -17,7 +17,11 @@
 
 }
 
-// ***** Droplists ***** //
+.o-input__label--hidden {
+  @extend %hide;
+}
+
+// ***** Dropdown Lists ***** //
 
 %o-input__droplist {
 
