@@ -92,6 +92,7 @@ import TabCommentsDisp from './display/TabCommentsDisp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
 import Tabs2Disp from './display/Tabs2Disp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
+import TextListDisp from './display/TextListDisp.jsx'
 import Test from './display/Test.jsx'
 import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
@@ -200,6 +201,7 @@ ReactDOM.render((
       <Route path="/tabcomments" component={TabCommentsDisp} />
       <Route path="/tabs" component={TabsDisp} />
       <Route path="/tabs2" component={Tabs2Disp} />
+      <Route path="/textlist" component={TextListDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
       <Route path="/togglecontent" component={ToggleContentDisp} />
       <Route path="/togglelist" component={ToggleListDisp} />

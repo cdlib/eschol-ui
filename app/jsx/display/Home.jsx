@@ -37,6 +37,7 @@ class Home extends React.Component {
           <li><a href="#journal">Journals</a></li>
           <li><a href="#mediafeature">Media Feature</a></li>
           <li><a href="#mediafile">Media Files</a></li>
+          <li><a href="#textlist">Text Lists</a></li>
           <li><a href="#textlink">Text Links</a></li>
         </ul>
         <h2>Components</h2>
