@@ -73,23 +73,26 @@ class BrowseJournalsLayout extends React.Component {
                 <h2>Journals</h2>
               </header>
               <WellComp />
-              {/* component containing input droplists to go here */}
-                <label htmlFor="o-input__droplist-label2a">Show:</label>
-                <select name="" id="o-input__droplist-label2a">
-                  <option value="">All</option>
-                  <option value="">Actively publishing</option>
-                  <option value="">Archived</option>
-                </select>
-              
-                <label htmlFor="o-input__droplist-label2b">Campus:</label>
-                <select name="" id="o-input__droplist-label2b">
-                  <option value="">All</option>
-                  <option value="">Documents</option>
-                  <option value="">Images</option>
-                  <option value="">Videos</option>
-                  <option value="">Others</option>
-                </select>
-              {/* </div> */}
+              <div className="o-input__inline">
+                <div className="o-input__droplist1">
+                  <label className="o-input__label--hidden" htmlFor="o-input__droplist-label1">Show</label>
+                  <select name="" id="o-input__droplist-label1">
+                    <option value="">All</option>
+                    <option value="">Actively publishing</option>
+                    <option value="">Archived</option>
+                  </select>
+                </div>
+                <div className="o-input__droplist1">
+                  <label className="o-input__label--hidden" htmlFor="o-input__droplist-label2">Campus</label>
+                  <select name="" id="o-input__droplist-label2">
+                    <option value="">All Campuses</option>
+                    <option value="">UC Berkeley</option>
+                    <option value="">UC Davis</option>
+                    <option value="">UC Irvine</option>
+                    <option value="">UCLA</option>
+                  </select>
+                </div>
+              </div>
               {/* list component to go here */}
                 <ul>
                   <li>
