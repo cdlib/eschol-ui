@@ -5,6 +5,7 @@
 .o-input__inline {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: $spacing-sm;
 
   // Any input object:
   [class^='o-input__'] {
