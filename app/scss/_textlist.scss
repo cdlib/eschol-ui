@@ -4,7 +4,10 @@
   margin-bottom: $spacing-sm;
 
   li {
-    line-height: $line-height;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-sm;
+    }
 
     a {
       @extend %o-textlink__secondary;
