@@ -61,13 +61,11 @@ class InputObj extends React.Component {
             </select>
           </div>
           <div className="o-input__droplist1">
-            <label htmlFor="o-input__droplist-label5">Fruit:</label>
+            <label htmlFor="o-input__droplist-label5">Vegetables:</label>
             <select name="" id="o-input__droplist-label5">
-              <option value="">Apples</option>
-              <option value="">Oranges</option>
-              <option value="">Pears</option>
-              <option value="">Grapes</option>
-              <option value="">Strawberries</option>
+              <option value="">Carrots</option>
+              <option value="">Beans</option>
+              <option value="">Potatoes</option>
             </select>
           </div>
         </div>
