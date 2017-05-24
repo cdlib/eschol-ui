@@ -93,37 +93,35 @@ class BrowseJournalsLayout extends React.Component {
                   </select>
                 </div>
               </div>
-              {/* list component to go here */}
-                <ul>
-                  <li>
-                    <a href="">Archive of the Yiddish Literary Journal Kheshbn (UCLA)</a>
-                  </li>
-                  <li>
-                    <a href="">Asian Pacific American Law Journal (UCLA)</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Chemical Review (UC Berkeley)  - ARCHIVE</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Planning Journal (UC Berkeley)</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Review of Education (UC Berkeley)</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Scientific Journal (UC Berkeley)</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Undergraduate Journal (UC Berkeley)</a>
-                  </li>
-                  <li>
-                    <a href="">Berkeley Undergraduate Journal of Classics (UC Berkeley)</a>
-                  </li>
-                  <li>
-                    <a href="">Biogeographia – The Journal of Integrative Biogeography (UC Merced)</a>
-                  </li>
-                </ul>
-              {/* </div> */}
+              <ul className="o-textlist2">
+                <li>
+                  <a href="">Archive of the Yiddish Literary Journal Kheshbn (UCLA)</a>
+                </li>
+                <li>
+                  <a href="">Asian Pacific American Law Journal (UCLA)</a>
+                </li>
+                <li>
+                  <a href="">Berkeley Chemical Review (UC Berkeley)</a> - ARCHIVE
+                </li>
+                <li>
+                  <a href="">Berkeley Planning Journal (UC Berkeley)</a>
+                </li>
+                <li>
+                  <a href="">Berkeley Review of Education (UC Berkeley)</a>
+                </li>
+                <li>
+                  <a href="">Berkeley Scientific Journal (UC Berkeley)</a>
+                </li>
+                <li>
+                  <a href="">Berkeley Undergraduate Journal (UC Berkeley)</a>
+                </li>
+                <li>
+                  <a href="">Berkeley Undergraduate Journal of Classics (UC Berkeley)</a>
+                </li>
+                <li>
+                  <a href="">Biogeographia – The Journal of Integrative Biogeography (UC Merced)</a>
+                </li>
+              </ul>
             </section>
           </main>
           <aside>
