@@ -21,8 +21,9 @@
   display: flex;
 
   input[type='search'] {
+    @extend %interactive-element-size;
     flex: 1 1 auto;
-    padding: 1vw;
+    padding: 0 1vw;
     border: 1px solid $color-light-gray;
     font-size: 1.8vw;
   }
