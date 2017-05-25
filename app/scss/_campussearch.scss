@@ -16,10 +16,10 @@
   display: block;
   margin-bottom: $spacing-sm;
   color: $color-orange;
-  font-size: 5vw;
+  font-size: 5.2vw;
 
   @include bp(screen1) {
-    font-size: 4vw;
+    font-size: 4.2vw;
   }
 
   @include bp(screen2) {
