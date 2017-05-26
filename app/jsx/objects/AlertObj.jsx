@@ -17,7 +17,7 @@ class AlertObj extends React.Component {
           This item is <strong>not available</strong> for download from eScholarship.
         </div>
 
-        <h2>Full-width with Close Alert</h2>
+        <h2>Full-width Close Alert</h2>
 
         <div className={this.state.alertClose ? "o-alert2--close" : "o-alert2"} role="alert">
           <strong className="o-alert2__main-text">New Website In Progress</strong>

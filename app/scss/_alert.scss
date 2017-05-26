@@ -16,6 +16,7 @@
 %o-alert2 {
   display: flex;
   align-items: center;
+  margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
   padding: 0 1em;
   transition-duration: 0.5s;
   transition-property: height, opacity;
