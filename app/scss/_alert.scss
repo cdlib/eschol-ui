@@ -18,7 +18,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 1em;
-  transition: height 1s;
+  transition-duration: 0.5s;
+  transition-property: height, opacity;
   background-color: $color-orange;
   overflow: hidden;
 }
@@ -26,11 +27,13 @@
 .o-alert2 {
   @extend %o-alert2;
   height: 3em;
+  opacity: 1;
 }
 
 .o-alert2--close {
   @extend %o-alert2;
   height: 0;
+  opacity: 0;
 }
 
 .o-alert2__text {
