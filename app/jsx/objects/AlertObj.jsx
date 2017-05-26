@@ -20,8 +20,9 @@ class AlertObj extends React.Component {
         <h2>Full-width with Close Alert</h2>
 
         <div className={this.state.alertClose ? "o-alert2--close" : "o-alert2"} role="alert">
-          <div className="o-alert2__text">
-            New Website In Progress
+          <strong className="o-alert2__main-text">New Website In Progress</strong>
+          <div className="o-alert2__more-info">
+            {/* more info text */}
           </div>
           <button className="o-alert2__button" onClick = {()=> this.setState({alertClose: true})}>Got it!</button>
         </div>
