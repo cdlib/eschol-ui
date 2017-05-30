@@ -19,25 +19,21 @@
   margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
   padding: 0 1em;
   transition-duration: 0.5s;
-  transition-property: height, opacity;
+  transition-property: max-height, opacity;
   background-color: $color-orange;
   overflow: hidden;
 }
 
 .o-alert2 {
   @extend %o-alert2;
-  height: 4em;
+  height: auto;
+  max-height: 100px; // approx value for now
   opacity: 1;
-
-  @include bp(screen1) {
-    height: 3em;
-  }
-
 }
 
 .o-alert2--close {
   @extend %o-alert2;
-  height: 0;
+  max-height: 0;
   opacity: 0;
 }
 
