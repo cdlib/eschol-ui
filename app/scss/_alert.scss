@@ -14,52 +14,66 @@
 }
 
 %o-alert2 {
-  display: flex;
+  display: grid;
   align-items: center;
   margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
-  padding: 0 1em;
+  padding-right: $spacing-sm;
+  padding-left: $spacing-sm;
   transition-duration: 0.5s;
-  transition-property: max-height, opacity;
+  transition-property: max-height, padding-top, padding-bottom, opacity;
   background-color: $color-orange;
   overflow: hidden;
+  grid-template-columns: 1fr auto;
 }
 
 .o-alert2 {
   @extend %o-alert2;
   height: auto;
-  max-height: 100px; // approx value for now
+  max-height: 7em; // allows no more than about 2 lines of text within more-info <div>
+  padding-top: $spacing-sm;
+  padding-bottom: $spacing-sm;
   opacity: 1;
 }
 
 .o-alert2--close {
   @extend %o-alert2;
   max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   opacity: 0;
 }
 
 .o-alert2__main-text {
   margin-right: 1em;
   color: $color-white;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
-  word-spacing: 0.2em;
+
+  @include bp(screen1) {
+    font-size: 1.3em;
+    word-spacing: 0.25em;
+  }
+
 }
 
 .o-alert2__more-info {
-  margin-right: 1em;
   font-size: 1.1em;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  
 
   a {
     color: $color-dark-blue;
   }
 
+  &:not(:empty) {
+    margin-top: $spacing-sm;
+  }
+
 }
 
 .o-alert2__button {
-  flex: 0 0 auto;
-  margin-left: auto;
   padding: 0.3em 0.5em 0.3em 1.8em;
   border: 1px solid $color-light-gray;
   border-radius: $round-corner;
