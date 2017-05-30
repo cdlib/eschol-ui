@@ -1,6 +1,7 @@
 // ##### About Layout ##### //
 
 import React from 'react'
+import TestMessageComp from '../components/TestMessageComp.jsx'
 import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
@@ -13,7 +14,7 @@ import FooterComp from '../components/FooterComp.jsx'
 class AboutLayout extends React.Component {
   constructor(props){
     super(props)
-    this.state = {alertClose: false, submenuActive: null}
+    this.state = {submenuActive: null}
   }
   componentWillMount() {
     if (matchMedia) {
@@ -28,10 +29,7 @@ class AboutLayout extends React.Component {
   render() {
     return (
       <div>
-        <div className={this.state.alertClose ? "o-alert2--close" : "o-alert2"} role="alert">
-          <strong className="o-alert2__main-text">New Website In Progress</strong>
-          <button className="o-alert2__button" onClick = {()=> this.setState({alertClose: true})}>Got it!</button>
-        </div>
+        <TestMessageComp />
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <div className="c-subheader1">
           <div className="c-subheader1__header">

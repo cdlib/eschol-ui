@@ -3,10 +3,6 @@
 import React from 'react'
 
 class AlertObj extends React.Component {
-  constructor(){
-    super()
-    this.state = {alertClose: false}
-  }
   render() {
     return (
       <div>
@@ -15,16 +11,6 @@ class AlertObj extends React.Component {
 
         <div className="o-alert1" role="alert">
           This item is <strong>not available</strong> for download from eScholarship.
-        </div>
-
-        <h2>Full-width Close Alert</h2>
-
-        <div className={this.state.alertClose ? "o-alert2--close" : "o-alert2"} role="alert">
-          <strong className="o-alert2__main-text">New Website In Progress</strong>
-          <div className="o-alert2__more-info">
-            {/* optional informational text would go here */}
-          </div>
-          <button className="o-alert2__button" onClick = {()=> this.setState({alertClose: true})}>Got it!</button>
         </div>
 
       </div>
