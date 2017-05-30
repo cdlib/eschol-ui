@@ -3,8 +3,8 @@
 import React from 'react'
 
 class AlertObj extends React.Component {
-  constructor(props){
-    super(props)
+  constructor(){
+    super()
     this.state = {alertClose: false}
   }
   render() {
