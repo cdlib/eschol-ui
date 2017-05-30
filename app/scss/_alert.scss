@@ -30,7 +30,7 @@
 .o-alert2 {
   @extend %o-alert2;
   height: auto;
-  max-height: 7em; // allows no more than about 2 lines of text within more-info <div>
+  max-height: 7em; // allows no more than about 2 lines of text at small screen within more-info <div>
   padding-top: $spacing-sm;
   padding-bottom: $spacing-sm;
   opacity: 1;
