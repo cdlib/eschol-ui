@@ -7,7 +7,7 @@ import MediaListComp from '../components/MediaListComp.jsx'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
-    $('.c-scholworks__heading, .c-scholworks__author, .c-scholworks__abstract').dotdotdot({watch:"window"});
+    $('.c-scholworks__heading, .c-scholworks__abstract').dotdotdot({watch:"window"});
   }
   render() {
     return (
