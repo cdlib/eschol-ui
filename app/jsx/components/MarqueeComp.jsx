@@ -2,10 +2,15 @@
 
 import React from 'react'
 import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 import Flickity from 'flickity-imagesloaded'
 
 class CarouselComp extends React.Component {
   componentDidMount () {
+    $('.c-marquee__sidebar').dotdotdot({
+      watch: 'window',
+      after: '.c-marquee__sidebar-more-link'
+    });
     var carousel = $('.c-marquee__carousel')[0];
     var options = {
       cellAlign: 'left',
@@ -45,7 +50,7 @@ class CarouselComp extends React.Component {
             <header>
               <h2>About</h2>
             </header>
-            <p>Quo dolores unde alias, distinctio rem reprehenderit adipisci officiis eum facilis sunt, vero obcaecati qui porro, sed mollitia consequuntur, aperiam quaerat. <a className="o-textlink__secondary" href="">More</a>
+            <p>Ex voluptatum debitis natus ab provident ratione, laborum voluptas totam officia consequatur doloremque quas itaque quibusdam veniam. Maiores fugiat fugit libero consequatur, consectetur impedit explicabo, ipsum repellendus incidunt sapiente expedita optio commodi ratione, iure beatae dolor! Vel eligendi, amet, veniam et unde optio harum, dolorum dicta, ipsum illum voluptatum autem sit cumque! <a className="c-marquee__sidebar-more-link" href="">More</a>
             </p>
           </section>
         </aside>
