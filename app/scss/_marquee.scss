@@ -1,6 +1,7 @@
 // ##### Marquee Component ##### //
 
 $marquee-height: 250px;
+$marquee-overlay-size: 50%;
 
 .c-marquee {
   @extend %marquee-flickity-customizations;
@@ -16,8 +17,8 @@ $marquee-height: 250px;
   flex: 0 0 $column-width;
 
   @include bp(screen2) {
-    margin-left: $spacing-md;
     max-height: $marquee-height; // truncate beyond container per jquery.dotdotdot
+    margin-left: $spacing-md;
     overflow: hidden; // hide text beyond max-height
   }
 
@@ -42,30 +43,41 @@ $marquee-height: 250px;
 }
 
 .c-marquee__carousel-cell {
+  position: relative;
   width: 100%;
   height: $marquee-height; // sets the carousel height
   padding: $spacing-md 70px;
-  background-color: $color-light-gray;
+  background-color: $color-black;
+  z-index: -1;
+
+  @include bp(screen1) {
+    padding: $spacing-md $marquee-overlay-size $spacing-md 70px;
+    background: right center / cover no-repeat;
+    // background-image url property/value is set as an inline style after this class within the component
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: $marquee-overlay-size;
+      bottom: 0;
+      left: 0;
+      margin-right: (-$spacing-md);
+      background-image: linear-gradient(to right, $color-black 95%, transparent);
+      content: '';
+      z-index: -1;
+    }
+
+  }
 
   h2 {
     @extend %o-heading1;
     color: $color-white;
-
-    @include bp(screen1) {
-      width: 350px;
-    }
-
   }
 
   p {
     margin-bottom: $spacing-md;
     color: $color-white;
     font-size: 1.1em;
-
-    @include bp(screen1) {
-      width: 350px;
-    }
-
   }
 
   a {
