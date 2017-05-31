@@ -44,13 +44,12 @@ $marquee-height: 250px;
 .c-marquee__carousel-cell {
   width: 100%;
   height: $marquee-height; // sets the carousel height
+  padding: $spacing-md 70px;
   background-color: $color-light-gray;
 
   h2 {
-    margin: $spacing-md 70px 0;
+    @extend %o-heading1;
     color: $color-white;
-    font-size: 1.6em;
-    font-weight: normal;
 
     @include bp(screen1) {
       width: 350px;
@@ -59,7 +58,7 @@ $marquee-height: 250px;
   }
 
   p {
-    margin: $spacing-md 70px;
+    margin-bottom: $spacing-md;
     color: $color-white;
     font-size: 1.1em;
 
@@ -70,8 +69,8 @@ $marquee-height: 250px;
   }
 
   a {
+    @extend %o-textlink__primary;
     display: inline-block;
-    margin: 0 70px $spacing-md;
     font-size: 1.1em;
   }
 

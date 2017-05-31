@@ -32,17 +32,17 @@ class CarouselComp extends React.Component {
           <div className="c-marquee__carousel-cell">
             <h2>Carousel Cell Title 1</h2>
             <p>Magnam praesentium sint, ducimus aspernatur architecto, deserunt ipsa veniam quia nihil, doloribus, laudantium a ad error tenetur fuga consequuntur laboriosam omnis ipsam.</p>
-            <a href="" className="o-textlink__primary">More&hellip;</a>
+            <a href="">More&hellip;</a>
           </div>
           <div className="c-marquee__carousel-cell">
             <h2>Carousel Cell Title 2</h2>
             <p>Iure quod itaque maiores optio eveniet assumenda omnis, similique. Possimus, expedita, ea?</p>
-            <a href="" className="o-textlink__primary">More&hellip;</a>
+            <a href="">More&hellip;</a>
           </div>
           <div className="c-marquee__carousel-cell">
             <h2>Carousel Cell Title 3</h2>
             <p>Obcaecati consequatur quaerat eaque, beatae eligendi possimus, repudiandae magni quas dolores, sit voluptatem iusto laborum. Incidunt fuga sed dicta nisi voluptates eaque, beatae numquam officia animi, vel.</p>
-            <a href="" className="o-textlink__primary">More&hellip;</a>
+            <a href="">More&hellip;</a>
           </div>
         </div>
         <aside className="c-marquee__sidebar">
