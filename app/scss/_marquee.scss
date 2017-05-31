@@ -1,6 +1,6 @@
 // ##### Marquee Component ##### //
 
-$marquee-height: 250px;
+$marquee-height: 15.6em;
 $marquee-overlay-size: 50%;
 
 .c-marquee {
@@ -46,12 +46,12 @@ $marquee-overlay-size: 50%;
   position: relative;
   width: 100%;
   height: $marquee-height; // sets the carousel height
-  padding: $spacing-md 70px;
+  padding: $spacing-md 4.4em;
   background-color: $color-black;
   z-index: -1;
 
   @include bp(screen1) {
-    padding: $spacing-md $marquee-overlay-size $spacing-md 70px;
+    padding: $spacing-md $marquee-overlay-size $spacing-md 4.4em;
     background: right center / cover no-repeat;
     // background-image url property/value is set as an inline style after this class within the component
 
@@ -91,7 +91,7 @@ $marquee-overlay-size: 50%;
 // ***** Flickity Customizations ***** //
 
 .flickity-page-dots {
-  bottom: 10px;
+  bottom: $spacing-sm;
 
   .dot {
     background: $color-white;
@@ -102,14 +102,9 @@ $marquee-overlay-size: 50%;
 %marquee-flickity-customizations {
 
   .flickity-prev-next-button {
-    width: 60px;
-    height: 60px;
+    width: 5em;
+    height: 5em;
     background: transparent;
-
-    @include bp(screen1) {
-      width: 80px;
-      height: 80px;
-    }
 
     &:hover {
       background: transparent;
