@@ -39,7 +39,7 @@ class MediaFileGridComp extends React.Component {
         {/* Media File Component #3 */}
         <div className="o-mediafile--image">
           <h2 className="o-mediafile__heading">
-            <a href="">New Horizons Full Trajectory - Side View</a>
+            <a href="">New_Horizons_Full_Trajectory_Side_View_And_Even_More_To_See</a>
           </h2>
           <a className="o-mediafile__link" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
