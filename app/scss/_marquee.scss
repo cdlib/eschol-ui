@@ -47,24 +47,27 @@ $marquee-overlay-size: 50%;
   width: 100%;
   height: $marquee-height; // sets the carousel height
   padding: $spacing-md 4.4em;
-  background-color: $color-black;
+  background: right center / cover no-repeat;
+  // background-image url property/value is set as an inline style after this class within the component
   z-index: -1;
+
+  &::after {
+    @include background-filter($color-black);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+  }
 
   @include bp(screen1) {
     padding: $spacing-md $marquee-overlay-size $spacing-md 4.4em;
-    background: right center / cover no-repeat;
-    // background-image url property/value is set as an inline style after this class within the component
 
     &::after {
-      @include background-filter($color-black);
-      position: absolute;
-      top: 0;
       right: $marquee-overlay-size;
-      bottom: 0;
-      left: 0;
       margin-right: (-$spacing-md);
-      content: '';
-      z-index: -1;
     }
 
   }
