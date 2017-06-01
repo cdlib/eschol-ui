@@ -7,7 +7,7 @@ import Flickity from 'flickity-imagesloaded'
 
 class CarouselComp extends React.Component {
   componentDidMount () {
-    $('.c-marquee__sidebar').dotdotdot({
+    $('.c-marquee__carousel-cell, .c-marquee__sidebar').dotdotdot({
       watch: 'window',
       after: '.c-marquee__sidebar-more-link'
     });

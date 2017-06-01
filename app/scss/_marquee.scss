@@ -17,7 +17,7 @@ $marquee-overlay-size: 50%;
   flex: 0 0 $column-width;
 
   @include bp(screen2) {
-    max-height: $marquee-height; // truncate beyond container per jquery.dotdotdot
+    height: $marquee-height; // truncate beyond container per jquery.dotdotdot
     margin-left: $spacing-md;
     overflow: hidden; // hide text beyond max-height
   }
