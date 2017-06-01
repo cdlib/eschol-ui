@@ -56,13 +56,13 @@ $marquee-overlay-size: 50%;
     // background-image url property/value is set as an inline style after this class within the component
 
     &::after {
+      @include background-filter($color-black);
       position: absolute;
       top: 0;
       right: $marquee-overlay-size;
       bottom: 0;
       left: 0;
       margin-right: (-$spacing-md);
-      background-image: linear-gradient(to right, $color-black 95%, transparent);
       content: '';
       z-index: -1;
     }
