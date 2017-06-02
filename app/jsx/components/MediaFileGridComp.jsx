@@ -33,7 +33,7 @@ class MediaFileGridComp extends React.Component {
           </a>
           <button className="o-mediafile__button">Download</button>
           <div className="o-mediafile__description">
-            Eaque, qui rerum fugiat sed. Error aperiam quo atque debitis doloremque. Adipisci, ab placeat! Atque vitae blanditiis, fuga necessitatibus harum libero, repudiandae quasi vero repellendus fugiat asperiores placeat tempore qui vel iusto!
+            
           </div>
         </div>
         {/* Media File Component #3 */}
@@ -59,7 +59,7 @@ class MediaFileGridComp extends React.Component {
           </a>
           <button className="o-mediafile__button">Download</button>
           <div className="o-mediafile__description">
-            Veritatis veniam quidem voluptatem laborum necessitatibus iure facilis laudantium possimus sequi libero aliquid, adipisci explicabo, itaque odit ut delectus nemo quas, quia neque. Error cum porro pariatur vel ducimus aliquid quo adipisci.
+            
           </div>
         </div>
       </div>
