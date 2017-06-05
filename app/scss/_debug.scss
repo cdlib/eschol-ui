@@ -13,6 +13,7 @@ $bgreen: 1px solid #0c0;
 // ***** Highlight No Longer Used Classnames ***** //
 
 @each $unused-classname in
+  c-search1__tagline,
   c-columns__split,
   c-download__list,
   c-itemactions__download,

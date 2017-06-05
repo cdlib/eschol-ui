@@ -1,6 +1,7 @@
 // ##### Search1 Component ##### //
 
 .c-search1 {
+  display: flex;
   position: fixed; // prevents horizontal overflow and scrollbar on small screens
   right: 0;
   left: 0;
@@ -12,10 +13,10 @@
 
 }
 
-.c-search1__form {
-  display: flex;
-  margin-bottom: $spacing-sm;
-}
+// .c-search1__form {
+//   display: flex;
+//   margin-bottom: $spacing-sm;
+// }
 
 .c-search1__label {
   @extend %hide;
@@ -58,7 +59,7 @@
 
 }
 
-.c-search1__tagline {
-  color: $color-dark-gray;
-  font-size: 0.75em;
-}
+// .c-search1__tagline {
+//   color: $color-dark-gray;
+//   font-size: 0.75em;
+// }
