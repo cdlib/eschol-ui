@@ -9,14 +9,11 @@
 
   @include bp(screen2) {
     position: static;
+    left: auto;
+    width: 310px;
   }
 
 }
-
-// .c-search1__form {
-//   display: flex;
-//   margin-bottom: $spacing-sm;
-// }
 
 .c-search1__label {
   @extend %hide;
@@ -58,8 +55,3 @@
   }
 
 }
-
-// .c-search1__tagline {
-//   color: $color-dark-gray;
-//   font-size: 0.75em;
-// }
