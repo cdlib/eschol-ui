@@ -2,12 +2,20 @@
 
 .c-itemcarousel {
   display: flex;
+  background-color: $color-white;
 }
 
 .c-itemcarousel__carousel {
+  flex: 1 0 auto;
+  border: $bred;
+}
+
+.c-itemcarousel__item {
+  width: 200px;
   min-height: 10em;
 }
 
 .c-itemcarousel__stats {
-  // no styles yet
+  width: 150px;
+  border: $bblue;
 }
