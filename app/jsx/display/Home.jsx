@@ -8,20 +8,34 @@ class Home extends React.Component {
       <div>
         <h2>Layouts</h2>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#browsecampuses">Browse Campuses</a></li>
-          <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
-          <li><a href="#browsejournals">Browse Journals</a></li>
-          <li><a href="#campus">Campus</a></li>
-          <li><a href="#journalsimple">Journal (Simple)</a></li>
-          <li><a href="#journalsplashy">Journal (Splashy)</a></li>
-          <li><a href="#journalitemhtml">Journal Item (HTML)</a></li>
-          <li><a href="#journalitemmultimedia">Journal Item (Multimedia)</a></li>
-          <li><a href="#journalitempdf">Journal Item (PDF)</a></li>
-          <li><a href="#searchlayout">Search</a></li>
-          <li><a href="#seriesitemembargoed">Series Item (Embargoed)</a></li>
-          <li><a href="#seriesitemurl">Series Item (URL)</a></li>
-          <li><a href="#seriesitemwithdrawn">Series Item (Withdrawn)</a></li>
+          <li>Home
+            <ul>
+              <li><a href="#browsecampuses">Browse Campuses</a></li>
+              <li><a href="#browsejournals">Browse Journals</a></li>
+              <li><a href="#searchlayout">Search</a></li>
+              <li><a href="#about">Static</a></li>
+            </ul>
+          </li>
+          <li><a href="#campus">Campus</a>
+            <ul>
+              <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
+            </ul>
+          </li>
+          <li><a href="#journalsplashy">Journal (Splashy)</a>
+            <ul>
+              <li><a href="#journalsimple">Journal (Simple)</a></li>
+              <li><a href="#journalitemhtml">Journal Item (HTML)</a></li>
+              <li><a href="#journalitemmultimedia">Journal Item (Multimedia)</a></li>
+              <li><a href="#journalitempdf">Journal Item (PDF)</a></li>
+            </ul>
+          </li>
+          <li>Unit Series
+            <ul>
+              <li><a href="#seriesitemembargoed">Series Item (Embargoed)</a></li>
+              <li><a href="#seriesitemurl">Series Item (URL)</a></li>
+              <li><a href="#seriesitemwithdrawn">Series Item (Withdrawn)</a></li>
+            </ul>
+          </li>
         </ul>
         <h2>Objects</h2>
         <ul>
