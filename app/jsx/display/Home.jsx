@@ -1,11 +1,11 @@
-// ##### UI Library Home Page ##### //
+// ##### UI Library Index ##### //
 
 import React from 'react'
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="ui-library__list">
         <h2>Layouts</h2>
         <ul>
           <li>Home

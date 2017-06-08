@@ -106,7 +106,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="ui-library-header">
+        <div className="ui-library__header">
           <h1><Link to="/">eScholarship UI Library</Link></h1>
           <h2>{this.props.children.type.name.replace("Page", "")}</h2>
         </div>
