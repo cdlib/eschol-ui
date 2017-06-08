@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
-import Subheader2Comp from '../components/Subheader2Comp.jsx'
+import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
@@ -17,7 +17,13 @@ class SeriesItemEmbargoedLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <Subheader2Comp />
+        <div className="c-subheader2">
+          <CampusSelectorComp />
+          <img className="c-subheader2__banner" src="images/temp_journal-banner.png" alt=""/>
+          <div className="c-subheader2__sidebar">
+            <button className="o-button__3">Deposit</button>
+          </div>
+        </div>
         <NavBarComp />
         <nav className="c-breadcrumb">
           <a href="">eScholarship</a>
