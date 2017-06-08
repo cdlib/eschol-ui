@@ -17,10 +17,10 @@ class SeriesItemUrlLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <div className="c-subheader2">
+        <div className="c-subheader">
           <CampusSelectorComp />
-          <img className="c-subheader2__banner" src="images/temp_journal-banner.png" alt=""/>
-          <div className="c-subheader2__sidebar">
+          <img className="c-subheader__banner" src="images/temp_journal-banner.png" alt=""/>
+          <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
           </div>
         </div>

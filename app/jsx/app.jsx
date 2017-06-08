@@ -82,7 +82,7 @@ import SkipNavDisp from './display/SkipNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import SortPaginationDisp from './display/SortPaginationDisp.jsx'
-import Subheader2Disp from './display/Subheader2Disp.jsx'
+import SubheaderDisp from './display/SubheaderDisp.jsx'
 import TabMainDisp from './display/TabMainDisp.jsx'
 import TabSupplementalDisp from './display/TabSupplementalDisp.jsx'
 import TabMetricsDisp from './display/TabMetricsDisp.jsx'
@@ -192,7 +192,7 @@ ReactDOM.render((
       <Route path="/sortpagination" component={SortPaginationDisp} />
       <Route path="/test" component={Test} />
       <Route path="/share" component={ShareDisp} />
-      <Route path="/subheader2" component={Subheader2Disp} />
+      <Route path="/subheader" component={SubheaderDisp} />
       <Route path="/tabmain" component={TabMainDisp} />
       <Route path="/tabsupplemental" component={TabSupplementalDisp} />
       <Route path="/tabmetrics" component={TabMetricsDisp} />

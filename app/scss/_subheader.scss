@@ -1,6 +1,6 @@
-// ##### Subheader 2 Component ##### //
+// ##### Subheader Component ##### //
 
-.c-subheader2 {
+.c-subheader {
   display: flex;
   position: relative; // to absolute positioned nav component
   align-items: center;
@@ -10,7 +10,7 @@
   background-color: $color-white;
 }
 
-.c-subheader2__banner {
+.c-subheader__banner {
   display: none;
 
   @include bp(screen3) {
@@ -23,7 +23,7 @@
 
 }
 
-.c-subheader2__sidebar {
+.c-subheader__sidebar {
   display: flex;
   flex-direction: row;
 
@@ -46,7 +46,7 @@
 
 }
 
-.c-subheader2__sidebar-text {
+.c-subheader__sidebar-text {
   display: none;
 
   @include bp(screen3) {
@@ -59,7 +59,7 @@
 
 }
 
-.c-subheader2__sidebar-number {
+.c-subheader__sidebar-number {
   display: none;
 
   @include bp(screen3) {
@@ -70,7 +70,7 @@
 
 }
 
-.c-subheader2__button-fragment {
+.c-subheader__button-fragment {
   position: absolute;
   left: -9999px;
 
