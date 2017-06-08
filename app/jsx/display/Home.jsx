@@ -100,7 +100,6 @@ class Home extends React.Component {
           <li><a href="#socialicons">Social Icons</a></li>
           <li><a href="#sort">Sort By</a></li>
           <li><a href="#sortpagination">Sort Pagination</a></li>
-          <li><a href="#subheader1">Subheader 1</a></li>
           <li><a href="#subheader2">Subheader 2</a></li>
           <li><a href="#tabs">Tabs (stable)</a></li>
           <li><a href="#tabs2">Tabs v.2 (experimental only)</a></li>
