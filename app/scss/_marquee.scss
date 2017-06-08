@@ -52,13 +52,12 @@ $marquee-overlay-size: 50%;
   z-index: -1;
 
   &::after {
+    @include background-filter($color-black);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: $spacing-sm;
-    background-color: $color-black;
     content: '';
     z-index: -1;
   }
