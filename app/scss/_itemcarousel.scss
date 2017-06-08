@@ -1,13 +1,11 @@
 // ##### Item Carousel Component ##### //
 
 .c-itemcarousel {
-  display: flex;
   background-color: $color-white;
 }
 
 .c-itemcarousel__carousel {
   flex: 1 0 auto;
-  border: $bred;
 }
 
 .c-itemcarousel__item {
@@ -15,7 +13,26 @@
   min-height: 10em;
 }
 
-.c-itemcarousel__stats {
-  width: 150px;
-  border: $bblue;
+%c-itemcarousel__stats {
+  @extend %clearfix;
+  width: 50%;
+  background-color: $color-white;
+  text-align: center;
+
+  b {
+    color: $color-teal;
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+}
+
+.c-itemcarousel__stats-items {
+  @extend %c-itemcarousel__stats;
+  float: left;
+}
+
+.c-itemcarousel__stats-views {
+  @extend %c-itemcarousel__stats;
+  float: right;
 }

@@ -40,8 +40,11 @@ class ItemCarouselComp extends React.Component {
             Item 5
           </div>
         </div>
-        <div className="c-itemcarousel__stats">
-          [item/view stats]
+        <div className="c-itemcarousel__stats-items">
+          <b>1,000</b><br/>Items
+        </div>
+        <div className="c-itemcarousel__stats-views">
+          <b>100,000</b><br/>Views
         </div>
       </div>
     )
