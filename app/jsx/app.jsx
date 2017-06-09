@@ -82,6 +82,7 @@ import SkipNavDisp from './display/SkipNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import SortPaginationDisp from './display/SortPaginationDisp.jsx'
+import StatsDisp from './display/StatsDisp.jsx'
 import SubheaderDisp from './display/SubheaderDisp.jsx'
 import TabMainDisp from './display/TabMainDisp.jsx'
 import TabSupplementalDisp from './display/TabSupplementalDisp.jsx'
@@ -187,11 +188,11 @@ ReactDOM.render((
       <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
       <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/skipnav" component={SkipNavDisp} />
+      <Route path="/share" component={ShareDisp} />
       <Route path="/socialicons" component={SocialIconsDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/sortpagination" component={SortPaginationDisp} />
-      <Route path="/test" component={Test} />
-      <Route path="/share" component={ShareDisp} />
+      <Route path="/stats" component={StatsDisp} />
       <Route path="/subheader" component={SubheaderDisp} />
       <Route path="/tabmain" component={TabMainDisp} />
       <Route path="/tabsupplemental" component={TabSupplementalDisp} />
@@ -200,6 +201,7 @@ ReactDOM.render((
       <Route path="/tabcomments" component={TabCommentsDisp} />
       <Route path="/tabs" component={TabsDisp} />
       <Route path="/tabs2" component={Tabs2Disp} />
+      <Route path="/test" component={Test} />
       <Route path="/testmessage" component={TestMessageDisp} />
       <Route path="/textlist" component={TextListDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
