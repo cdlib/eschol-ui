@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
-import Subheader2Comp from '../components/Subheader2Comp.jsx'
+import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import TabsComp from '../components/TabsComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
@@ -14,7 +14,7 @@ class JournalItemHtmlLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <Subheader2Comp />
+        <SubheaderComp />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <a href="">eScholarship</a>
