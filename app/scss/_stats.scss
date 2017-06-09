@@ -1,5 +1,46 @@
 // ##### Statistics Objects ##### //
 
-.o-stats {
-  border: $bgreen;
+%o-stats {
+  display: inline-block;
+  padding: 2.2em $spacing-base 0;
+  background: no-repeat top center / 1.5em;
+  text-align: center;
+
+  b {
+    display: block;
+    color: $color-teal;
+    font-family: 'KievitWebLight';
+    font-size: 1.3em;
+
+    @include bp(screen3) {
+      font-size: 1.6em;
+    }
+
+  }
+
+}
+
+.o-stats--item {
+  @extend %o-stats;
+  background-image: inline('../images/icon_book-light-black.svg');
+}
+
+.o-stats--view {
+  @extend %o-stats;
+  background-image: inline('../images/icon_eye-light-black.svg');
+}
+
+.o-stats--passed {
+  @extend %o-stats;
+  background-image: inline('../images/icon_unlock-alt-light-black.svg');
+}
+
+.o-stats--journals {
+  @extend %o-stats;
+  background-image: inline('../images/icon_file-text-light-black.svg');
+}
+
+.o-stats--units {
+  @extend %o-stats;
+  background-image: inline('../images/icon_university-light-black.svg');
 }
