@@ -35,7 +35,6 @@
   @extend %clearfix;
   width: 50%;
   background-color: $color-white;
-  text-align: center;
 
   @include bp(screen1) {
 
@@ -45,20 +44,14 @@
 
   }
 
-  b {
-    color: $color-teal;
-    font-size: 1.2em;
-    font-weight: normal;
-  }
-
 }
 
-.c-itemcarousel__stats-items {
+.c-itemcarousel__stats-item {
   @extend %c-itemcarousel__stats;
   float: left;
 }
 
-.c-itemcarousel__stats-views {
+.c-itemcarousel__stats-view {
   @extend %c-itemcarousel__stats;
   float: right;
 }
