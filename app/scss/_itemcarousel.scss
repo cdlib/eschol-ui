@@ -1,13 +1,16 @@
 // ##### Item Carousel Component ##### //
 
 .c-itemcarousel {
+  @extend %clearfix;
+  padding: $spacing-md;
   background-color: $color-white;
+  box-shadow: $box-shadow1;
 
   @include bp(screen1) {
 
     @supports (display: grid) {
       display: grid;
-      grid-template-columns: auto 15%;
+      grid-template-columns: 1fr 15%;
     }
 
   }
@@ -45,7 +48,6 @@
 }
 
 %c-itemcarousel__stats {
-  @extend %clearfix;
   width: 50%;
   background-color: $color-white;
 
