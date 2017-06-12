@@ -30,6 +30,7 @@ class UnitItemObj extends React.Component {
             <li>Lee, Paul</li>
             <li>Wong, Jeannette</li>
           </ul>
+          <div className="o-unititem__type--article" aria-label="Item type:">Article</div>
         </a>
 
         <a href="" className="o-unititem--horz">
@@ -45,6 +46,7 @@ class UnitItemObj extends React.Component {
             <li>Lee, Paul</li>
             <li>Wong, Jeannette</li>
           </ul>
+          <div className="o-unititem__type--multimedia" aria-label="Item type:">Multimedia</div>
         </a>
 
       </div>

@@ -1,10 +1,12 @@
 // ##### Unit Item Objects ##### //
 
-$unititem-long-length: 15em;
+$unititem-long-length: 16em;
 $unititem-short-length: $unititem-long-length * 0.8;
 
 %o-unititem {
   display: inline-block;
+  position: relative;
+  border: 1px solid $color-teal;
   background-color: $color-light-teal;
   text-decoration: none;
 }
@@ -51,4 +53,21 @@ $unititem-short-length: $unititem-long-length * 0.8;
 
   }
 
+}
+
+%o-unititem__type {
+  position: absolute;
+  bottom: $spacing-sm;
+  left: $spacing-sm;
+  padding-top: 2em;
+  color: $color-black;
+  font-size: 0.7em;
+}
+
+.o-unititem__type--article {
+  @extend %o-unititem__type;
+}
+
+.o-unititem__type--multimedia {
+  @extend %o-unititem__type;
 }
