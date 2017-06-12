@@ -97,6 +97,7 @@ import TestMessageDisp from './display/TestMessageDisp.jsx'
 import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
 import UnitCarouselDisp from './display/UnitCarouselDisp.jsx'
+import UnitItemDisp from './display/UnitItemDisp.jsx'
 import ViewExternalDisp from './display/ViewExternalDisp.jsx'
 import WellDisp from './display/WellDisp.jsx'
 
@@ -207,6 +208,7 @@ ReactDOM.render((
       <Route path="/togglecontent" component={ToggleContentDisp} />
       <Route path="/togglelist" component={ToggleListDisp} />
       <Route path="/unitcarousel" component={UnitCarouselDisp} />
+      <Route path="/unititem" component={UnitItemDisp} />
       <Route path="/viewexternal" component={ViewExternalDisp} />
       <Route path="/well" component={WellDisp} />
     </Route>

@@ -54,6 +54,7 @@ class Home extends React.Component {
           <li><a href="#textlist">Text Lists</a></li>
           <li><a href="#textlink">Text Links</a></li>
           <li><a href="#stats">Statistics</a></li>
+          <li><a href="#unititem">Unit Items</a></li>
         </ul>
         <h2>Components</h2>
         <ul>
