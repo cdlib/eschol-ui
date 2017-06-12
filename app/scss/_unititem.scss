@@ -1,19 +1,24 @@
 // ##### Unit Item Objects ##### //
 
+$unititem-long-length: 15em;
+$unititem-short-length: $unititem-long-length * 0.8;
+
 %o-unititem {
   display: inline-block;
   background-color: $color-light-teal;
   text-decoration: none;
 }
 
-.o-unititem__horizontal {
+.o-unititem--horz {
   @extend %o-unititem;
+  width: $unititem-long-length;
+  height: $unititem-short-length;
 }
 
-.o-unititem__vertical {
+.o-unititem--vert {
   @extend %o-unititem;
-  width: 12.5em;
-  height: 15em;
+  width: $unititem-short-length;
+  height: $unititem-long-length;
 }
 
 .o-unititem__title {
@@ -28,7 +33,7 @@
 
 .o-unititem__author {
   @extend %no-bullet-ul;
-  height: 4.5em;
+  height: 3.5em; // truncate to 2 lines per jquery.dotdotdot
   padding: $spacing-md $spacing-sm 0;
   color: $color-black;
   overflow: hidden;
