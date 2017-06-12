@@ -28,7 +28,7 @@
 
 .c-itemcarousel__item {
   width: 200px;
-  min-height: 10em;
+  min-height: 13em;
 }
 
 %c-itemcarousel__stats {
@@ -39,6 +39,7 @@
   @include bp(screen1) {
 
     @supports (display: grid) {
+      align-self: center;
       width: auto;
     }
 
