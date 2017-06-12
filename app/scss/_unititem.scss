@@ -1,5 +1,49 @@
 // ##### Unit Item Objects ##### //
 
-.o-unititem {
-  border: $bgreen;
+%o-unititem {
+  display: inline-block;
+  background-color: $color-light-teal;
+  text-decoration: none;
+}
+
+.o-unititem__horizontal {
+  @extend %o-unititem;
+}
+
+.o-unititem__vertical {
+  @extend %o-unititem;
+  width: 12.5em;
+  height: 15em;
+}
+
+.o-unititem__title {
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+  padding: $spacing-sm $spacing-sm $spacing-base;
+  background-color: $color-teal;
+  color: $color-white;
+  line-height: $line-height;
+}
+
+.o-unititem__author {
+  @extend %no-bullet-ul;
+  height: 4.5em;
+  padding: $spacing-md $spacing-sm 0;
+  color: $color-black;
+  overflow: hidden;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+
+      &::after {
+      content: ';\00a0'; // semicolon with no-break space
+      }
+
+    }
+
+  }
+
 }

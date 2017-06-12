@@ -1,17 +1,36 @@
 // ##### Unit Item Objects ##### //
 
 import React from 'react'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 
 class UnitItemObj extends React.Component {
+  componentDidMount() {
+    $('.o-unititem__author').dotdotdot({
+      watch: 'window'
+    });
+    setTimeout(()=> $('.o-unititem__author').trigger("update"), 0)
+  }
   render() {
     return (
       <div>
 
         <h2>Unit Item Objects</h2>
 
-        <div className="o-unititem">
-          [unit items to go here}
-        </div>
+        <a href="" className="o-unititem__vertical">
+          <div className="o-unititem__title">Corporate Social Responsibility and Financial Performance</div>
+          <ul className="o-unititem__author">
+            <li>Fung, Joe</li>
+            <li>Wu, Abe</li>
+            <li>Reed, Laura K</li>
+            <li>Smith, Sheryl T</li>
+            <li>Barshop, William</li>
+            <li>Wong, Jeannette</li>
+            <li>Dothager, Matthew</li>
+            <li>Lee, Paul</li>
+            <li>Wong, Jeannette</li>
+          </ul>
+        </a>
 
       </div>
     )
