@@ -14,12 +14,25 @@
 
 }
 
+.c-itemcarousel__heading {
+  @extend %o-heading3;
+
+  @include bp(screen1) {
+
+    @supports (display: grid) {
+      grid-column: 1 / 3;
+    }
+
+  }
+
+}
+
 .c-itemcarousel__carousel {
 
   @include bp(screen1) {
 
     @supports (display: grid) {
-      grid-row: 1 / 3;
+      grid-row: 2 / 4;
     }
 
   }

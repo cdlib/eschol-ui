@@ -23,6 +23,7 @@ class ItemCarouselComp extends React.Component {
   render() {
     return (
       <div className="c-itemcarousel">
+        <h2 className="c-itemcarousel__heading">Center for Medieval and Renaissance Studies</h2>
         <div className="c-itemcarousel__carousel">
           <div className="c-itemcarousel__item">
             Item 1
