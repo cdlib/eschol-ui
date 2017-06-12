@@ -76,7 +76,6 @@ class Home extends React.Component {
           <li><a href="#heatmap">Heat Map</a></li>
           <li><a href="#infopages">Informational Pages</a></li>
           <li><a href="#itemactions">Item Actions</a></li>
-          <li><a href="#itemcarousel">Item Carousel</a></li>
           <li><a href="#journalinfo">Journal Information</a></li>
           <li><a href="#jump">Jump</a></li>
           <li><a href="#language">language</a></li>
@@ -112,6 +111,7 @@ class Home extends React.Component {
           <li><a href="#testmessage">Test Message</a></li>
           <li><a href="#togglecontent">Toggle Content</a></li>
           <li><a href="#togglelist">Toggle List</a></li>
+          <li><a href="#unitcarousel">Unit Carousel</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
           <li><a href="#well">Well for Content</a></li>
         </ul>

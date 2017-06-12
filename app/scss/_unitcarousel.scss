@@ -1,6 +1,6 @@
-// ##### Item Carousel Component ##### //
+// ##### Unit Carousel Component ##### //
 
-.c-itemcarousel {
+.c-unitcarousel {
   @extend %clearfix;
   padding: $spacing-md;
   background-color: $color-white;
@@ -17,7 +17,7 @@
 
 }
 
-.c-itemcarousel__heading {
+.c-unitcarousel__heading {
   @extend %o-heading3;
 
   @include bp(screen1) {
@@ -30,7 +30,7 @@
 
 }
 
-.c-itemcarousel__carousel {
+.c-unitcarousel__carousel {
 
   @include bp(screen1) {
 
@@ -42,12 +42,12 @@
 
 }
 
-.c-itemcarousel__item {
+.c-unitcarousel__item {
   width: 200px;
   min-height: 13em;
 }
 
-%c-itemcarousel__stats {
+%c-unitcarousel__stats {
   width: 50%;
   background-color: $color-white;
 
@@ -62,12 +62,12 @@
 
 }
 
-.c-itemcarousel__stats-item {
-  @extend %c-itemcarousel__stats;
+.c-unitcarousel__stats-item {
+  @extend %c-unitcarousel__stats;
   float: left;
 }
 
-.c-itemcarousel__stats-view {
-  @extend %c-itemcarousel__stats;
+.c-unitcarousel__stats-view {
+  @extend %c-unitcarousel__stats;
   float: right;
 }
