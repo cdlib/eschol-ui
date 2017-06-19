@@ -18,7 +18,7 @@ class UnitItemObj extends React.Component {
         <h2>Unit Item Objects</h2>
 
         <a href="" className="o-unititem--vert">
-          <div className="o-unititem__title">Corporate Social Responsibility and Financial Performance</div>
+          <div className="o-unititem__title">Libero doloremque suscipit perferendis amet nostrum! Nostrum quisquam, tempore voluptatum ea dolor, hic esse adipisci reprehenderit ullam minima distinctio. Vero, molestias non.</div>
           <ul className="o-unititem__author">
             <li>Fung, Joe</li>
             <li>Wu, Abe</li>

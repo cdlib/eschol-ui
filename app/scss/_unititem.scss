@@ -31,6 +31,7 @@ $unititem-short-length: $unititem-long-length * 0.8;
   background-color: $color-teal;
   color: $color-white;
   line-height: $line-height;
+  overflow: hidden;
 }
 
 .o-unititem__author {
