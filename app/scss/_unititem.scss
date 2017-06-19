@@ -59,15 +59,18 @@ $unititem-short-length: $unititem-long-length * 0.8;
   position: absolute;
   bottom: $spacing-sm;
   left: $spacing-sm;
-  padding-top: 2em;
+  padding-top: 1.7em;
+  background: no-repeat top center / 1.4em;
   color: $color-black;
   font-size: 0.7em;
 }
 
 .o-unititem__type--article {
   @extend %o-unititem__type;
+  background-image: inline('../images/icon_file-text-o-black.svg');
 }
 
 .o-unititem__type--multimedia {
   @extend %o-unititem__type;
+  background-image: inline('../images/icon_play-circle-o-black.svg');
 }
