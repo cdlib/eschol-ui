@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 
 class UnitItemObj extends React.Component {
   componentDidMount() {
-    $('.o-unititem__author').dotdotdot({
+    $('.o-unititem__title, .o-unititem__author').dotdotdot({
       watch: 'window'
     });
     setTimeout(()=> $('.o-unititem__author').trigger("update"), 0)
@@ -34,7 +34,7 @@ class UnitItemObj extends React.Component {
         </a>
 
         <a href="" className="o-unititem--horz">
-          <div className="o-unititem__title">Internalized Stigma of Mental Illness: Psychometric Properties of a New Measure</div>
+          <div className="o-unititem__title">Sapiente pariatur voluptatibus, quisquam quam libero aspernatur esse dolorem, nisi voluptate accusantium consectetur temporibus maiores quis tempore. Non, architecto eveniet a laudantium.</div>
           <ul className="o-unititem__author">
             <li>Fung, Joe</li>
             <li>Wu, Abe</li>
