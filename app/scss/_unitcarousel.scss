@@ -1,9 +1,11 @@
 // ##### Unit Carousel Component ##### //
 
+$unitcarousel-spacing: 2.5em;
+
 .c-unitcarousel {
   @extend %unitcarousel-flickity-customizations;
   @extend %clearfix;
-  padding: $spacing-md;
+  padding: $spacing-md $spacing-sm;
   background-color: $color-white;
   box-shadow: $box-shadow1;
 
@@ -20,6 +22,7 @@
 
 .c-unitcarousel__heading {
   @extend %o-heading3;
+  // padding-left: $unitcarousel-spacing;
 
   @include bp(screen1) {
 
@@ -32,6 +35,7 @@
 }
 
 .c-unitcarousel__carousel {
+  padding: 0 $unitcarousel-spacing;
 
   @include bp(screen1) {
 
@@ -40,7 +44,7 @@
     }
 
   }
-border: $bred;
+
 }
 
 .c-unitcarousel__item {
