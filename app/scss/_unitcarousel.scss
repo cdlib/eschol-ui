@@ -1,6 +1,7 @@
 // ##### Unit Carousel Component ##### //
 
 .c-unitcarousel {
+  @extend %unitcarousel-flickity-customizations;
   @extend %clearfix;
   padding: $spacing-md;
   background-color: $color-white;
@@ -39,7 +40,7 @@
     }
 
   }
-
+border: $bred;
 }
 
 .c-unitcarousel__item {
@@ -72,4 +73,37 @@
 .c-unitcarousel__stats-view {
   @extend %c-unitcarousel__stats;
   float: right;
+}
+
+// ***** Flickity Customizations ***** //
+
+%unitcarousel-flickity-customizations {
+
+  .flickity-prev-next-button {
+    width: 5em;
+    height: 5em;
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &.previous {
+      left: -1.3em;
+    }
+
+    &.next {
+      right: -1.3em;
+    }
+
+    .arrow {
+      fill: $color-dark-gray;
+    }
+
+    .no-svg {
+      color: $color-dark-gray;
+    }
+
+  }
+
 }
