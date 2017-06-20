@@ -1,6 +1,6 @@
 // ##### Unit Item Objects ##### //
 
-$unititem-long-length: 16em;
+$unititem-long-length: $unitcarousel-height;
 $unititem-short-length: $unititem-long-length * 0.8;
 
 %o-unititem {

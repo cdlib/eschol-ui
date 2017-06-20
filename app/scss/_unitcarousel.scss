@@ -43,8 +43,10 @@
 }
 
 .c-unitcarousel__item {
-  width: 200px;
-  min-height: 13em;
+  display: flex;
+  align-items: center;
+  height: $unitcarousel-height;
+  margin-left: $spacing-md;
 }
 
 %c-unitcarousel__stats {
