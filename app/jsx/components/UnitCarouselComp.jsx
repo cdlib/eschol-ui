@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import Flickity from 'flickity-imagesloaded'
+import dotdotdot from 'jquery.dotdotdot'
 
 class UnitCarouselComp extends React.Component {
   componentDidMount () {
@@ -14,6 +15,11 @@ class UnitCarouselComp extends React.Component {
       pageDots: false
     }
     this.flkty = new Flickity(carousel, options);
+
+    /* jquery dotdotdot */
+    $('.o-unititem__title, .o-unititem__author').dotdotdot({
+      watch: 'window'
+    });
   }
   componentWillUnmount() {
     if (this.flkty) {
