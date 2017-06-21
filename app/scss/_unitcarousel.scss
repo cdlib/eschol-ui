@@ -1,6 +1,6 @@
 // ##### Unit Carousel Component ##### //
 
-$unitcarousel-spacing: 2.5em;
+$unitcarousel-spacing: 2.5rem;
 
 .c-unitcarousel {
   @extend %unitcarousel-flickity-customizations;
@@ -22,7 +22,7 @@ $unitcarousel-spacing: 2.5em;
 
 .c-unitcarousel__heading {
   @extend %o-heading3;
-  // padding-left: $unitcarousel-spacing;
+  margin-left: $unitcarousel-spacing;
 
   @include bp(screen1) {
 
