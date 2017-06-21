@@ -13,6 +13,14 @@ $unitcarousel-spacing: 2.5rem;
 
     @supports (display: grid) {
       display: grid;
+      grid-template-columns: 1fr 20%;
+    }
+
+  }
+
+  @include bp(screen2) {
+
+    @supports (display: grid) {
       grid-template-columns: 1fr 15%;
     }
 
