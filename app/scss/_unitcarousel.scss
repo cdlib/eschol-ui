@@ -35,9 +35,11 @@ $unitcarousel-spacing: 2.5rem;
 }
 
 .c-unitcarousel__carousel {
+  margin-bottom: $spacing-md;
   padding: 0 $unitcarousel-spacing;
 
   @include bp(screen1) {
+    margin-bottom: 0;
 
     @supports (display: grid) {
       grid-row: 2 / 4;
