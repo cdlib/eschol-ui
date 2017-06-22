@@ -1,8 +1,15 @@
 // ##### Journal Objects ##### //
 
 import React from 'react'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 
 class JournalObj extends React.Component {
+  componentDidMount () {
+    $('.o-journal2 figcaption').dotdotdot({
+      watch: 'window'
+    });
+  }
   render() {
     return (
       <div>
@@ -19,7 +26,7 @@ class JournalObj extends React.Component {
         <a href="" className="o-journal2">
           <figure>
             <img src="http://escholarship.org/issueCovers/jmie_sfews/15_01_cover.png" alt=""/>
-            <figcaption>San Francisco Estuary & Watershed Science</figcaption>
+            <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
           </figure>
         </a>
 
