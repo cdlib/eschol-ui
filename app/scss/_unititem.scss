@@ -40,9 +40,19 @@ $unititem-short-length: $unititem-long-length * 0.8;
   background-image: inline('../images/icon_file-text-o-black.svg');
 }
 
+.o-unititem__type--book {
+  @extend %o-unititem__type;
+  background-image: inline('../images/icon_book.svg');
+}
+
 .o-unititem__type--multimedia {
   @extend %o-unititem__type;
   background-image: inline('../images/icon_play-circle-o-black.svg');
+}
+
+.o-unititem__type--thesis {
+  @extend %o-unititem__type;
+  background-image: inline('../images/icon_graduation-cap-black.svg');
 }
 
 .o-unititem__title {
