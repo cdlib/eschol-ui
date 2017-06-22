@@ -1,21 +1,51 @@
-// ##### Journal Item ##### //
+// ##### Journal Objects ##### //
+
+%o-journal {
+  display: block;
+
+  figure {
+    margin: 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+  }
+
+}
 
 .o-journal1 {
+  @extend %o-journal;
   @extend %o-textlink__secondary;
-  display: block;
   width: 7.5em;
 
   &:not(:last-child) {
     margin-bottom: $spacing-md;
   }
 
-  figure {
+  figcaption {
+    margin-top: $spacing-base;
+  }
+
+}
+
+.o-journal2 {
+  @extend %o-journal;
+  position: relative;
+  max-width: 15em;
+
+  figcaption {
+    @include background-filter($color-black);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3.4em;
     margin: 0;
-
-    img {
-      width: 100%;
-    }
-
+    padding: $spacing-sm;
+    color: $color-white;
+    overflow: hidden;
   }
 
 }
