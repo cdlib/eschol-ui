@@ -5,6 +5,7 @@ $itemcarousel-spacing: 2.5rem;
 .o-itemcarousel {
   @extend %itemcarousel-flickity-customizations;
   @extend %clearfix;
+  margin-bottom: $spacing-md;
   padding: $spacing-md $spacing-sm;
   background-color: $color-white;
   box-shadow: $box-shadow1;
