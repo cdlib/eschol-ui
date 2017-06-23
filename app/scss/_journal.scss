@@ -36,6 +36,7 @@
   @extend %o-journal;
   position: relative;
   height: $itemcarousel-height;
+  border: 1px solid $color-teal;
 
   figcaption {
     @include background-filter($color-black);
