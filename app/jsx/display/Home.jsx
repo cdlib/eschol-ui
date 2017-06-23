@@ -60,7 +60,6 @@ class Home extends React.Component {
         <ul>
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
-          <li><a href="#campuscarousel">Campus Carousel</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#campusselector">Campus Heading and Selector</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
@@ -102,6 +101,7 @@ class Home extends React.Component {
           <li><a href="#socialicons">Social Icons</a></li>
           <li><a href="#sort">Sort By</a></li>
           <li><a href="#sortpagination">Sort Pagination</a></li>
+          <li><a href="#statcarousel">Statistics Carousel</a></li>
           <li><a href="#subheader">Subheader</a></li>
           <li><a href="#tabs">Tabs (stable)</a></li>
           <li><a href="#tabs2">Tabs v.2 (experimental only)</a></li>

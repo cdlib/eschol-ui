@@ -6,7 +6,7 @@ import CampusSearchComp from '../components/CampusSearchComp.jsx'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import HeatMapComp from '../components/HeatMapComp.jsx'
-import CampusCarouselComp from '../components/CampusCarouselComp.jsx'
+import StatCarouselComp from '../components/StatCarouselComp.jsx'
 import UnitCarouselComp from '../components/UnitCarouselComp.jsx'
 import JournalCarouselComp from '../components/JournalCarouselComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -54,7 +54,7 @@ class CampusLayout extends React.Component {
           </div>
         </div>
         <HeatMapComp />
-        <CampusCarouselComp />
+        <StatCarouselComp />
         <div className="c-columns">
           <main id="maincontent">
             <CampusSearchComp />
