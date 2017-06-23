@@ -7,7 +7,7 @@ import dotdotdot from 'jquery.dotdotdot'
 
 class UnitCarouselComp extends React.Component {
   componentDidMount () {
-    var carousel = $('.o-itemcarousel__carousel')[0];
+    var carousel = $('.c-journalcarousel')[0];
     var options = {
       cellAlign: 'left',
       contain: true,
@@ -30,7 +30,7 @@ class UnitCarouselComp extends React.Component {
     return (
       <div className="o-itemcarousel">
         <h2 className="o-itemcarousel__heading">UC Berkeley Journals</h2>
-        <div className="o-itemcarousel__carousel">
+        <div className="c-journalcarousel o-itemcarousel__carousel">
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
