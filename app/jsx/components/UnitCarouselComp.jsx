@@ -10,9 +10,9 @@ class UnitCarouselComp extends React.Component {
     var carousel = $('.c-unitcarousel')[0];
     var options = {
       cellAlign: 'left',
-      contain: true,
       initialIndex: 0,
-      pageDots: false
+      pageDots: false,
+      percentPosition: false, // px instead of % cells
     }
     this.flkty = new Flickity(carousel, options);
 

@@ -14,7 +14,6 @@ class UnitCarouselComp extends React.Component {
       pageDots: false,
       imagesLoaded: true,
       percentPosition: false, // px instead of % cells
-      freeScroll: true, // don't align cells to the end
     }
     this.flkty = new Flickity(carousel, options);
 
