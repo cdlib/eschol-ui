@@ -68,7 +68,7 @@ $unititem-short-length: $unititem-long-length * 0.8;
 
 .o-unititem__author {
   @extend %no-bullet-ul;
-  height: 3.5em; // truncate to 2 lines per jquery.dotdotdot
+  height: 2.5em; // truncate to 1 line per jquery.dotdotdot
   padding: $spacing-md $spacing-sm 0;
   color: $color-black;
   overflow: hidden;
