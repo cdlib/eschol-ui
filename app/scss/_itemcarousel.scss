@@ -1,9 +1,9 @@
-// ##### Unit Carousel Component ##### //
+// ##### Item Carousel Objects ##### //
 
-$unitcarousel-spacing: 2.5rem;
+$itemcarousel-spacing: 2.5rem;
 
-.c-unitcarousel {
-  @extend %unitcarousel-flickity-customizations;
+.o-itemcarousel {
+  @extend %itemcarousel-flickity-customizations;
   @extend %clearfix;
   padding: $spacing-md $spacing-sm;
   background-color: $color-white;
@@ -20,9 +20,9 @@ $unitcarousel-spacing: 2.5rem;
 
 }
 
-.c-unitcarousel__heading {
+.o-itemcarousel__heading {
   @extend %o-heading3;
-  margin-left: $unitcarousel-spacing;
+  margin-left: $itemcarousel-spacing;
 
   @include bp(screen1) {
 
@@ -34,9 +34,9 @@ $unitcarousel-spacing: 2.5rem;
 
 }
 
-.c-unitcarousel__carousel {
+.o-itemcarousel__carousel {
   margin-bottom: $spacing-md;
-  padding: 0 $unitcarousel-spacing;
+  padding: 0 $itemcarousel-spacing;
 
   @include bp(screen1) {
     margin-bottom: 0;
@@ -49,14 +49,14 @@ $unitcarousel-spacing: 2.5rem;
 
 }
 
-.c-unitcarousel__item {
+.o-itemcarousel__item {
   display: flex;
   align-items: center;
-  height: $unitcarousel-height;
+  height: $itemcarousel-height;
   margin-left: $spacing-md;
 }
 
-%c-unitcarousel__stats {
+%o-itemcarousel__stats {
   width: 50%;
   background-color: $color-white;
 
@@ -71,19 +71,19 @@ $unitcarousel-spacing: 2.5rem;
 
 }
 
-.c-unitcarousel__stats-item {
-  @extend %c-unitcarousel__stats;
+.o-itemcarousel__stats-item {
+  @extend %o-itemcarousel__stats;
   float: left;
 }
 
-.c-unitcarousel__stats-view {
-  @extend %c-unitcarousel__stats;
+.o-itemcarousel__stats-view {
+  @extend %o-itemcarousel__stats;
   float: right;
 }
 
 // ***** Flickity Customizations ***** //
 
-%unitcarousel-flickity-customizations {
+%itemcarousel-flickity-customizations {
 
   .flickity-prev-next-button {
     width: 5em;

@@ -35,7 +35,7 @@
 .o-journal2 {
   @extend %o-journal;
   position: relative;
-  height: $unitcarousel-height;
+  height: $itemcarousel-height;
 
   figcaption {
     @include background-filter($color-black);
