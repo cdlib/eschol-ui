@@ -10,9 +10,11 @@ class UnitCarouselComp extends React.Component {
     var carousel = $('.c-journalcarousel')[0];
     var options = {
       cellAlign: 'left',
-      contain: true,
       initialIndex: 0,
-      pageDots: false
+      pageDots: false,
+      imagesLoaded: true,
+      percentPosition: false, // px instead of % cells
+      freeScroll: true, // don't align cells to the end
     }
     this.flkty = new Flickity(carousel, options);
 
