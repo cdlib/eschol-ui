@@ -57,6 +57,16 @@ $scholworks-tag-height: 1.4em;
   background-image: inline('../images/icon_play-circle-o-black.svg');
 }
 
+.c-scholworks__tag-other {
+  @extend %c-scholworks__tag;
+  background-image: inline('../images/icon_file-text-o-black.svg');
+}
+
+.c-scholworks__tag-zip {
+  @extend %c-scholworks__tag;
+  background-image: inline('../images/icon_file-archive-o-black.svg');
+}
+
 .c-scholworks__tag-peer {
   @extend %c-scholworks__tag;
   padding: 0 $spacing-sm;
