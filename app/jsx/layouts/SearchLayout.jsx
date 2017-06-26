@@ -7,7 +7,6 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
-import CheckboxComp from '../components/CheckboxComp.jsx'
 import SortPaginationComp from '../components/SortPaginationComp.jsx'
 import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
@@ -76,6 +75,7 @@ class SearchLayout extends React.Component {
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Refine By</span></summary>
               <div className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per pair below for accessibility */}
                 <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
                 <label htmlFor="c-checkbox__number6" className="c-checkbox__label">Peer-Reviewed only (##)</label>
               </div>
@@ -83,6 +83,7 @@ class SearchLayout extends React.Component {
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Research</span></summary>
               <div className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per pair below for accessibility */}
                 <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
                 <label htmlFor="c-checkbox__number7" className="c-checkbox__label">Articles (##)</label>
                 <input id="c-checkbox__number8" type="checkbox" className="c-checkbox__input"/>
@@ -93,7 +94,23 @@ class SearchLayout extends React.Component {
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Content Type</span></summary>
-                <CheckboxComp />
+              <div className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per pair below for accessibility */}
+                <input id="c-checkbox__number1" type="checkbox" className="c-checkbox__input"/>
+                <label htmlFor="c-checkbox__number1" className="c-checkbox__label">Video</label>
+
+                <input id="c-checkbox__number2" type="checkbox" className="c-checkbox__input"/>
+                <label htmlFor="c-checkbox__number2" className="c-checkbox__label">Audio</label>
+
+                <input id="c-checkbox__number3" type="checkbox" className="c-checkbox__input"/>
+                <label htmlFor="c-checkbox__number3" className="c-checkbox__label">images</label>
+
+                <input id="c-checkbox__number4" type="checkbox" className="c-checkbox__input"/>
+                <label htmlFor="c-checkbox__number4" className="c-checkbox__label">PDF</label>
+                
+                <input id="c-checkbox__number5" type="checkbox" className="c-checkbox__input"/>
+                <label htmlFor="c-checkbox__number5" className="c-checkbox__label">ZIP</label>
+              </div>
             </details>
           </aside>
           <main id="maincontent">
