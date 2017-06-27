@@ -1,10 +1,11 @@
 // ##### Media List Component ##### //
 
-$medialist-item-length: 13em;
+$medialist-item-length: 11em;
 
 .c-medialist {
   @extend %no-bullet-ul;
   @extend %clearfix;
+  flex: 1 0 auto; // to c-scholworks__media flexbox
   margin-right: $spacing-md;
 
   @supports (display: grid) {
