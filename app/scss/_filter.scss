@@ -1,6 +1,7 @@
 // ##### Filter Component ##### //
 
 %c-filter {
+  @extend %clearfix;
   margin: 0 0 $spacing-md;
   padding: $spacing-sm;
   background: $color-white;
@@ -29,39 +30,75 @@
   // no styles
 }
 
-.c-filter__active-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: $spacing-base 0 0;
+.c-filter__active {
+  
+  summary {
+    width: 50%;
+    float: left;
+    user-select: none;
 
-  button {
-    @extend %interactive-element-size;
-    display: inline-flex;
-    align-items: center;
-    padding-right: 1.3em;
-    border: none;
-    background: $color-white inline('../images/icon_times.svg') no-repeat right -0.2em center / auto 60%;
-    color: $color-teal;
+    span {
+      @extend %interactive-element-size;
+      display: flex;
+      align-items: center;
+      color: $color-teal;
 
-    @include interactive-element-pointer(coarse) {
-      padding-right: 1.8em;
+      &::before {
+        content: 'Show ';
+      }
+
+      strong {
+        margin: 0 0.3em; // reinstate collapsed flexbox whitespace
+      }
+
     }
 
   }
 
 }
 
-.c-filter__active {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
+.c-filter__active[open] {
+  
+  summary {
+
+    span {
+
+      &::before {
+        content: 'Hide ';
+      }
+
+    }
+
+  }
+
+}
+
+.c-filter__active-list {
+  @extend %no-bullet-ul;
+  clear: left;
 
   button {
     @extend %o-button__5;
     background-image: inline('../images/icon_times-circle.svg');
     color: $color-black;
     font-weight: normal;
+  }
+
+}
+
+.c-filter__clear-all {
+  @extend %interactive-element-size;
+  width: 50%;
+  padding: 0 1.3em 0 0;
+  float: right;
+  border: none;
+  background: $color-white inline('../images/icon_times.svg') no-repeat right -0.2em center / auto 60%;
+  color: $color-teal;
+  text-align: right;
+  box-sizing: border-box;
+
+  @include interactive-element-pointer(coarse) {
+    padding-right: 1.8em;
   }
 
 }
