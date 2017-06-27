@@ -7,7 +7,8 @@ class FilterComp extends React.Component {
     return (
       <form action="" className="c-filter">
         <h2 className="c-filter__heading">Your Search: “Open Access”</h2>
-        <div>Results: 12 pages, 12,023 works</div>
+        <div className="c-filter__results">Results: 12 pages, 12,023 works</div>
+        <div className="c-filter__inactive-note">No filters applied</div>
         <div className="c-filter__active-header">
           <span id="c-filter__active-title">Active filters:</span>
           <button>clear all</button>

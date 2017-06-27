@@ -1,16 +1,32 @@
 // ##### Filter Component ##### //
 
-.c-filter {
+%c-filter {
   margin: 0 0 $spacing-md;
   padding: $spacing-sm;
   background: $color-white;
   box-shadow: $box-shadow1;
 }
 
+.c-filter {
+  @extend %c-filter;
+}
+
+.c-filter--active {
+  @extend %c-filter;
+}
+
 .c-filter__heading {
   @extend %o-heading3;
   margin-bottom: $spacing-sm;
   font-weight: normal;
+}
+
+.c-filter__results {
+  margin-bottom: $spacing-sm;
+}
+
+.c-filter__inactive-note {
+  // no styles
 }
 
 .c-filter__active-header {
