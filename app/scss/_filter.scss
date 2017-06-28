@@ -14,6 +14,15 @@
 
 .c-filter--active {
   @extend %c-filter;
+
+  .c-filter__inactive-note {
+    display: none;
+  }
+
+  .c-filter__active {
+    display: block;
+  }
+
 }
 
 .c-filter__heading {
@@ -31,7 +40,8 @@
 }
 
 .c-filter__active {
-  
+  display: none; // get's set to 'block' with c-filter--active declaration above
+
   summary {
     margin-right: $spacing-md;
     float: left;
