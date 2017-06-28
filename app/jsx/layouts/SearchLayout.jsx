@@ -1,6 +1,8 @@
 // ##### Search Layout ##### //
 
 import React from 'react'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
@@ -24,6 +26,9 @@ class SearchLayout extends React.Component {
       this.mq.addListener(this.widthChange)
       this.widthChange()
     }
+  }
+  componentDidMount() {
+    $('.c-scholworks__heading, .c-authorlist__list, .c-scholworks__abstract').dotdotdot({watch:'window'});
   }
   widthChange = ()=> {
     this.setState({isOpen: this.mq.matches})
