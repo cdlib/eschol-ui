@@ -14,7 +14,7 @@ class FilterComp extends React.Component {
           <summary><span><strong>3</strong> filters applied</span></summary>
           <button className="c-filter__clear-all">clear all</button>
           <ul className="c-filter__active-list">
-            <li><button>Type of work (Articles)</button></li>
+            <li><button>Type of work (Articles, Books, Thesis, Multimedia)</button></li>
             <li><button>Publication Year (All)</button></li>
             <li><button>Campus (UC Berkeley)</button></li>
           </ul>
