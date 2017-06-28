@@ -94,7 +94,6 @@
   background: $color-white inline('../images/icon_times.svg') no-repeat right -0.2em center / auto 60%;
   color: $color-teal;
   text-align: right;
-  box-sizing: border-box;
 
   @include interactive-element-pointer(coarse) {
     padding-right: 1.8em;
