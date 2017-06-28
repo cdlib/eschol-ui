@@ -112,6 +112,7 @@ class SearchLayout extends React.Component {
                   <label htmlFor="c-checkbox__number7" className="c-checkbox__label">ZIP</label>
                 </li>
               </ul>
+              <a href="" className="c-facetbox__show-more-link">Show more</a>
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Research</span></summary>

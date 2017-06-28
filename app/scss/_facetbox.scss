@@ -49,3 +49,11 @@
   }
 
 }
+
+.c-facetbox__show-more-link {
+  @extend %o-textlink__secondary;
+  display: block;
+  padding-right: 1em;
+  background: inline('../images/icon_angle-double-right-teal.svg') no-repeat center right / 0.9em;
+  text-align: right;
+}

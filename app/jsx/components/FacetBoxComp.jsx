@@ -8,6 +8,7 @@ class FacetBoxComp extends React.Component {
       <details className="c-facetbox">
         <summary className="c-facetbox__summary"><span>Refine By</span></summary>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias error sit possimus ducimus pariatur, repellat facere quod beatae eaque saepe eos tenetur nulla excepturi culpa aspernatur, quisquam adipisci dolore officia.</div>
+        <a href="" className="c-facetbox__show-more-link">Show more</a>
       </details>
     )
   }
