@@ -97,6 +97,12 @@
     color: $color-black;
     font-weight: normal;
     text-align: left;
+
+    &:focus,
+    &:hover {
+      background-image: inline('../images/icon_times-circle-orange.svg');
+    }
+
   }
 
 }
