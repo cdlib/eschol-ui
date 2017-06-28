@@ -33,7 +33,7 @@
 .c-filter__active {
   
   summary {
-    width: 50%;
+    margin-right: $spacing-md;
     float: left;
     user-select: none;
 
@@ -88,7 +88,6 @@
 
 .c-filter__clear-all {
   @extend %interactive-element-size;
-  width: 50%;
   padding: 0 1.3em 0 0;
   float: right;
   border: none;
