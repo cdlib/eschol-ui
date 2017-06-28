@@ -1,6 +1,7 @@
 // ##### Facet Box Component ##### //
 
 .c-facetbox {
+  @extend %clearfix;
   margin-bottom: $spacing-sm;
   padding: 0 $spacing-sm;
 }
@@ -50,10 +51,11 @@
 
 }
 
-.c-facetbox__show-more-link {
-  @extend %o-textlink__secondary;
-  display: block;
-  padding-right: 1em;
+.c-facetbox__show-more {
+  @extend %interactive-element-size;
+  padding: 0 1em 0 0;
+  float: right;
+  border: none;
   background: inline('../images/icon_angle-double-right-teal.svg') no-repeat center right / 0.9em;
-  text-align: right;
+  color: $color-teal;
 }
