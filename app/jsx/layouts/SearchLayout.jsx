@@ -194,7 +194,9 @@ class SearchLayout extends React.Component {
                     </p>
                   </div>
                   <div className="c-scholworks__media">
-                    <MediaListComp />
+                    <ul className="c-medialist">
+                      <li className="c-medialist__image">Contains 2 supplemental images</li>
+                    </ul>
                     <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
                   </div>
                 </div>
