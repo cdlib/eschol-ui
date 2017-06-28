@@ -19,7 +19,7 @@ class FilterComp extends React.Component {
             <li><button>Campus (UC Berkeley)</button></li>
           </ul>
         </details>
-        <a href="" className="c-filter__tips">search tips</a>
+        <a href="" className="c-filter__tips">Search tips</a>
       </div>
     )
   }
