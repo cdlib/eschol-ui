@@ -42,6 +42,11 @@
   cursor: pointer;
   user-select: none;
 
+  &:focus,
+  &:hover {
+    background-image: inline('../images/icon_checkbox-unchecked-orange.svg');
+  }
+
   @include interactive-element-pointer(coarse) {
     padding: 0.3em 0 0.7em 2.4em;
   }
