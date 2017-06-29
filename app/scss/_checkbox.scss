@@ -1,6 +1,6 @@
 // ##### Checkbox Component ##### //
 
-.c-checkbox {
+%c-checkbox {
   @extend %no-bullet-ul;
 
   ul {
@@ -8,6 +8,26 @@
 
     @include interactive-element-pointer(coarse) {
       padding-left: 2.4em;
+    }
+
+  }
+
+}
+
+.c-checkbox {
+  @extend %c-checkbox;
+}
+
+.c-checkbox--2column {
+  @extend %c-checkbox;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    flex: 1 0 40%;
+
+    &:nth-child(odd) {
+      margin-right: $spacing-sm;
     }
 
   }

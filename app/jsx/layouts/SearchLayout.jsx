@@ -122,7 +122,7 @@ class SearchLayout extends React.Component {
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Included Media</span></summary>
-              <ul className="c-checkbox">
+              <ul className="c-checkbox--2column">
                 {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
                 <li>
                   <input id="c-checkbox__media1" type="checkbox" className="c-checkbox__input"/>
