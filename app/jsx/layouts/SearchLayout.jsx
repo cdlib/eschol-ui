@@ -13,12 +13,15 @@ import SortPaginationComp from '../components/SortPaginationComp.jsx'
 import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
+import ReactModal from 'react-modal'
 import FooterComp from '../components/FooterComp.jsx'
 
 class SearchLayout extends React.Component {
   constructor(props){
     super(props)
-    this.state = {submenuActive: null}
+    this.state = {submenuActive: null, showModal: false}
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
   }
   componentWillMount() {
     if (matchMedia) {
@@ -32,6 +35,13 @@ class SearchLayout extends React.Component {
   }
   widthChange = ()=> {
     this.setState({isOpen: this.mq.matches})
+  }
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
   }
   render() {
     return (
@@ -100,10 +110,6 @@ class SearchLayout extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <input id="c-checkbox__number5" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number5" className="c-checkbox__label">Western Journal of Emergency Medicine: Integrating Emergency Care with Population Health</label>
-                </li>
-                <li>
                   <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
                   <label htmlFor="c-checkbox__number6" className="c-checkbox__label">American Cultures Center</label>
                 </li>
@@ -112,7 +118,7 @@ class SearchLayout extends React.Component {
                   <label htmlFor="c-checkbox__number7" className="c-checkbox__label">American Cultures and Global Contexts Center</label>
                 </li>
               </ul>
-              <button className="c-facetbox__show-more">Show more</button>
+              <button className="c-facetbox__show-more" onClick={this.handleOpenModal}>Show more</button>
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Research</span></summary>
@@ -321,6 +327,59 @@ class SearchLayout extends React.Component {
           </main>
         </div>
         <FooterComp />
+
+        {/* Start Facet Modal */}
+        <div className="c-modal">
+          <ReactModal 
+             isOpen={this.state.showModal}
+             contentLabel="onRequestClose Example"
+             onRequestClose={this.handleCloseModal}
+             className="c-modal--open"
+             overlayClassName="c-modal__overlay"
+          >
+            <div className="modal__header">
+              <h2>Refine By Department</h2>
+            </div>
+            <div className="modal__content">
+              <ul className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
+                <li>
+                  <input id="c-checkbox__modal1" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal1" className="c-checkbox__label">Agricultural History Center (##)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal2" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal2" className="c-checkbox__label">Agriculture and Natural Resources Research and Extension Centers (##)</label>
+                  <ul>
+                    <li>
+                      <input id="c-checkbox__modal3" type="checkbox" className="c-checkbox__input"/>
+                      <label htmlFor="c-checkbox__modal3" className="c-checkbox__label">Hopland Research and Extension Center (##)</label>
+                    </li>
+                    <li>
+                      <input id="c-checkbox__modal4" type="checkbox" className="c-checkbox__input"/>
+                      <label htmlFor="c-checkbox__modal4" className="c-checkbox__label">Sierra Foothill Research and Extension Center (##)</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal6" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal6" className="c-checkbox__label">American Cultures Center</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal7" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal7" className="c-checkbox__label">American Cultures and Global Contexts Center</label>
+                </li>
+              </ul>
+            </div>
+            <div className="c-modal__footer">
+              <button className="c-modal__button-close">Clear</button>
+              <button className="o-button__7" onClick={this.handleCloseModal}>Cancel</button>
+              <button className="o-button__3">Select</button>
+            </div>
+          </ReactModal>
+        </div>
+        {/* End Facet Modal */}
+
       </div>
     )
   }
