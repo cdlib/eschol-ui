@@ -121,16 +121,34 @@ class SearchLayout extends React.Component {
               <button className="c-facetbox__show-more" onClick={this.handleOpenModal}>Show more</button>
             </details>
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary"><span>Research</span></summary>
-              <div className="c-checkbox">
-                {/* 'id' and 'htmlFor' values must contain a unique number per pair below for accessibility */}
-                <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number7" className="c-checkbox__label">Articles (##)</label>
-                <input id="c-checkbox__number8" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number8" className="c-checkbox__label">Books (##)</label>
-                <input id="c-checkbox__number9" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number9" className="c-checkbox__label">Journals (##)</label>
-              </div>
+              <summary className="c-facetbox__summary"><span>Included Media</span></summary>
+              <ul className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
+                <li>
+                  <input id="c-checkbox__media1" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media1" className="c-checkbox__label">Video (6)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__media2" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media2" className="c-checkbox__label">Audio (13)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__media3" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media3" className="c-checkbox__label">Images (2)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__media4" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media4" className="c-checkbox__label">PDF (24)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__media5" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media5" className="c-checkbox__label">ZIP (19)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__media6" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__media6" className="c-checkbox__label">Other (7)</label>
+                </li>
+              </ul>
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Reuse License</span></summary>
