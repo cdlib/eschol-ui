@@ -1,5 +1,7 @@
 // ##### Checkbox Component ##### //
 
+// $checkbox-spacing: 0.5em;
+
 %c-checkbox {
   @extend %no-bullet-ul;
 
@@ -35,10 +37,10 @@
 }
 
 %c-checkbox__icon {
-  background: no-repeat left top / 1.3em;
+  background: no-repeat left top 0.3em / 1.3em;
 
   @include interactive-element-pointer(coarse) {
-    background-size: 1.8em;
+    background: no-repeat left top 0.5em / 1.8em; 
   }
 
 }
@@ -54,10 +56,9 @@
 }
 
 .c-checkbox__label {
-  @extend %interactive-element-size;
   @extend %c-checkbox__icon;
   display: block;
-  padding: 0.1em 0 0.7em 1.9em;
+  padding: 0.5em 0 0.5em 1.9em;
   background-image: inline('../images/icon_checkbox-unchecked.svg');
   cursor: pointer;
   user-select: none;
@@ -68,7 +69,7 @@
   }
 
   @include interactive-element-pointer(coarse) {
-    padding: 0.3em 0 0.7em 2.4em;
+    padding: 0.8em 0 0.8em 2.4em;
   }
 
 }
