@@ -37,6 +37,34 @@ class CheckboxComp extends React.Component {
           <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
           <label htmlFor="c-checkbox__number7" className="c-checkbox__label">ZIP</label>
         </li>
+        <li className="c-checkbox__attrib-cc-by-nc-nd">
+          <input id="c-checkbox__number8" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number8" className="c-checkbox__label">Attribution; NonCommercial use; No derivatives (57)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-by-nc-sa">
+          <input id="c-checkbox__number9" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number9" className="c-checkbox__label">Attribution, NonCommercial use, Derivatives use same license (13)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-by-nc">
+          <input id="c-checkbox__number10" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number10" className="c-checkbox__label">Attribution; NonCommercial use only (26)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-by-nd">
+          <input id="c-checkbox__number11" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number11" className="c-checkbox__label">Attribution required (5)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-by-sa">
+          <input id="c-checkbox__number12" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number12" className="c-checkbox__label">Attribution required (12)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-by">
+          <input id="c-checkbox__number13" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number13" className="c-checkbox__label">Attribution required (24)</label>
+        </li>
+        <li className="c-checkbox__attrib-cc-zero">
+          <input id="c-checkbox__number14" type="checkbox" className="c-checkbox__input"/>
+          <label htmlFor="c-checkbox__number14" className="c-checkbox__label">Attribution required (36)</label>
+        </li>
       </ul>
     )
   }
