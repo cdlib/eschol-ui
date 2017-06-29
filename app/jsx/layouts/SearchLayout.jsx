@@ -151,6 +151,12 @@ class SearchLayout extends React.Component {
               </ul>
             </details>
             <details className="c-facetbox">
+              <summary className="c-facetbox__summary"><span>Publication Year</span></summary>
+              
+                [to be added]
+              
+            </details>
+            <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Reuse License</span></summary>
               <ul className="c-checkbox">
                 {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}

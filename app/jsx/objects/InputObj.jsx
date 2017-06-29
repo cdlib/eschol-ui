@@ -46,6 +46,13 @@ class InputObj extends React.Component {
           </select>
         </div>
 
+        <h2>Dropdown List with Block Label</h2>
+
+        <div className="o-input__textfield">
+          <label htmlFor="o-input__textfield1">Label:</label>
+          <input name="" id="o-input__textfield1" type="text"/>
+        </div>
+
         <h2>Inline Inputs</h2>
 
         {/* Any input examples above can be used inline */}
@@ -67,6 +74,17 @@ class InputObj extends React.Component {
               <option value="">Beans</option>
               <option value="">Potatoes</option>
             </select>
+          </div>
+        </div>
+
+        <div className="o-input__inline">
+          <div className="o-input__textfield">
+            <label htmlFor="o-input__textfield2">To:</label>
+            <input name="" id="o-input__textfield2" type="date"/>
+          </div>
+          <div className="o-input__textfield">
+            <label htmlFor="o-input__textfield3">From:</label>
+            <input name="" id="o-input__textfield3" type="date"/>
           </div>
         </div>
 
