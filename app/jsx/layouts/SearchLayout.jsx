@@ -369,6 +369,128 @@ class SearchLayout extends React.Component {
                   <input id="c-checkbox__modal7" type="checkbox" className="c-checkbox__input"/>
                   <label htmlFor="c-checkbox__modal7" className="c-checkbox__label">American Cultures and Global Contexts Center</label>
                 </li>
+                <li>
+                  <input id="c-checkbox__modal8" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal8" className="c-checkbox__label">Bay Area International Group</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal9" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal9" className="c-checkbox__label">Berkeley Food Institute</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal10" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal10" className="c-checkbox__label">Berkeley Graduate School of Journalism</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal11" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal11" className="c-checkbox__label">Berkeley Natural History Museum</label>
+                  <ul>
+                    <li>
+                      <input id="c-checkbox__modal12" type="checkbox" className="c-checkbox__input"/>
+                      <label htmlFor="c-checkbox__modal12" className="c-checkbox__label">UCB Moorea Class: Biology and Geomorphology of Tropical Islands</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal13" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal13" className="c-checkbox__label">Berkeley Program in Law and Economics</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal14" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal14" className="c-checkbox__label">Berkeley Program on Housing and Urban Policy</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal15" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal15" className="c-checkbox__label">Berkeley Roundtable on the International Economy</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal16" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal16" className="c-checkbox__label">Biostatistics</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal17" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal17" className="c-checkbox__label">Bixby Center for Global Reproductive Health</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal18" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal18" className="c-checkbox__label">Bixby Center for Population, Health & Sustainability</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal19" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal19" className="c-checkbox__label">Boalt Hall</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal20" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal20" className="c-checkbox__label">Bourns College of Engineering</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal21" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal21" className="c-checkbox__label">Center for Environmental Research and Technology</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal22" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal22" className="c-checkbox__label">California Academic Partnership Program</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal23" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal23" className="c-checkbox__label">California Center for Population Research</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal24" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal24" className="c-checkbox__label">California Community College Collaborative (C4)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal25" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal25" className="c-checkbox__label">California Digital Library</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal26" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal26" className="c-checkbox__label">California Health Benefits Review Program</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal27" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal27" className="c-checkbox__label">California Policy Research Center</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal28" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal28" className="c-checkbox__label">California Sea Grant College Program</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal29" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal29" className="c-checkbox__label">California Social Work Education Center</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal30" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal30" className="c-checkbox__label">Center for African Studies</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal31" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal31" className="c-checkbox__label">Center for Agroecology and Sustainable Food Systems</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal32" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal32" className="c-checkbox__label">Center for Bioinformatics and Molecular Biostatistics</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal33" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal33" className="c-checkbox__label">Center for Black Studies Research</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal34" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal34" className="c-checkbox__label">Center for Comparative Immigration Studies</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal35" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal35" className="c-checkbox__label">Center for Complex and Nonlinear Science</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal36" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal36" className="c-checkbox__label">Center for Conservation Biology</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__modal37" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__modal37" className="c-checkbox__label">Center for Control, Dynamical Systems, and Computation</label>
+                </li>
               </ul>
             </div>
             <div className="c-modal__footer">
