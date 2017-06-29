@@ -1,7 +1,5 @@
 // ##### Checkbox Component ##### //
 
-// $checkbox-spacing: 0.5em;
-
 %c-checkbox {
   @extend %no-bullet-ul;
 
@@ -77,10 +75,19 @@
 // ***** Attribution Checkboxes ***** //
 
 %c-checkbox__attrib {
-  background: no-repeat left 2em top / 6.4em;
+  background: no-repeat left 2em top 0.3em / 6.4em;
+
+  @include interactive-element-pointer(coarse) {
+    background: no-repeat left 2.4em top 0.5em / 9em;
+  }
 
   .c-checkbox__label {
-    padding-top: 1.3em;
+    padding-top: 1.7em;
+
+    @include interactive-element-pointer(coarse) {
+      padding-top: 2.3em;
+    }
+
   }
 
 }
