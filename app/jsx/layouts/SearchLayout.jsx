@@ -105,11 +105,11 @@ class SearchLayout extends React.Component {
                 </li>
                 <li>
                   <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number6" className="c-checkbox__label">PDF</label>
+                  <label htmlFor="c-checkbox__number6" className="c-checkbox__label">American Cultures Center</label>
                 </li>
                 <li>
                   <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number7" className="c-checkbox__label">ZIP</label>
+                  <label htmlFor="c-checkbox__number7" className="c-checkbox__label">American Cultures and Global Contexts Center</label>
                 </li>
               </ul>
               <button className="c-facetbox__show-more">Show more</button>
