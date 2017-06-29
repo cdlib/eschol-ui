@@ -133,24 +133,38 @@ class SearchLayout extends React.Component {
               </div>
             </details>
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary"><span>Content Type</span></summary>
-              <div className="c-checkbox">
-                {/* 'id' and 'htmlFor' values must contain a unique number per pair below for accessibility */}
-                <input id="c-checkbox__number1" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number1" className="c-checkbox__label">Video</label>
-
-                <input id="c-checkbox__number2" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number2" className="c-checkbox__label">Audio</label>
-
-                <input id="c-checkbox__number3" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number3" className="c-checkbox__label">images</label>
-
-                <input id="c-checkbox__number4" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number4" className="c-checkbox__label">PDF</label>
-                
-                <input id="c-checkbox__number5" type="checkbox" className="c-checkbox__input"/>
-                <label htmlFor="c-checkbox__number5" className="c-checkbox__label">ZIP</label>
-              </div>
+              <summary className="c-facetbox__summary"><span>Reuse License</span></summary>
+              <ul className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
+                <li className="c-checkbox__attrib-cc-by-nc-nd">
+                  <input id="c-checkbox__attrib1" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib1" className="c-checkbox__label">Attribution; NonCommercial use; No derivatives (57)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-by-nc-sa">
+                  <input id="c-checkbox__attrib2" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib2" className="c-checkbox__label">Attribution, NonCommercial use, Derivatives use same license (13)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-by-nc">
+                  <input id="c-checkbox__attrib3" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib3" className="c-checkbox__label">Attribution; NonCommercial use only (26)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-by-nd">
+                  <input id="c-checkbox__attrib4" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib4" className="c-checkbox__label">Attribution required (5)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-by-sa">
+                  <input id="c-checkbox__attrib5" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib5" className="c-checkbox__label">Attribution required (12)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-by">
+                  <input id="c-checkbox__attrib6" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib6" className="c-checkbox__label">Attribution required (24)</label>
+                </li>
+                <li className="c-checkbox__attrib-cc-zero">
+                  <input id="c-checkbox__attrib7" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__attrib7" className="c-checkbox__label">Attribution required (36)</label>
+                </li>
+              </ul>
             </details>
           </aside>
           <main id="maincontent">
