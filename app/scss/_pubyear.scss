@@ -1,5 +1,24 @@
 // ##### Publication Year Facet Component ##### //
 
 .c-pubyear {
-  border: $bgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: $spacing-lg;
+
+  label {
+    margin-bottom: $spacing-base;
+
+    &:last-of-type {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+  }
+
+  input {
+    @extend %interactive-element-size;
+    width: 3em;
+  }
+
 }
