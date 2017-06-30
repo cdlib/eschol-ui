@@ -4,7 +4,7 @@
 
 .o-input__inline {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: $spacing-md;
 
   // Any input object:
@@ -65,20 +65,6 @@
   label {
     display: block;
     margin-bottom: $spacing-base;
-  }
-
-}
-
-// ***** Text Fields ***** //
-
-.o-input__textfield {
-
-  label {
-    display: block;
-  }
-
-  input {
-    @extend %interactive-element-size;
   }
 
 }
