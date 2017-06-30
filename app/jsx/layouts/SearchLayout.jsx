@@ -89,39 +89,6 @@ class SearchLayout extends React.Component {
           <aside>
             <FilterComp />
             <details className="c-facetbox">
-              <summary className="c-facetbox__summary"><span>Department</span></summary>
-              <ul className="c-checkbox">
-                {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
-                <li>
-                  <input id="c-checkbox__number1" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number1" className="c-checkbox__label">Agricultural History Center (4)</label>
-                </li>
-                <li>
-                  <input id="c-checkbox__number2" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number2" className="c-checkbox__label">Agriculture and Natural Resources Research and Extension Centers (15)</label>
-                  <ul>
-                    <li>
-                      <input id="c-checkbox__number3" type="checkbox" className="c-checkbox__input"/>
-                      <label htmlFor="c-checkbox__number3" className="c-checkbox__label">Hopland Research and Extension Center (7)</label>
-                    </li>
-                    <li>
-                      <input id="c-checkbox__number4" type="checkbox" className="c-checkbox__input"/>
-                      <label htmlFor="c-checkbox__number4" className="c-checkbox__label">Sierra Foothill Research and Extension Center (11)</label>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number6" className="c-checkbox__label">American Cultures Center (2)</label>
-                </li>
-                <li>
-                  <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
-                  <label htmlFor="c-checkbox__number7" className="c-checkbox__label">American Cultures and Global Contexts Center (19)</label>
-                </li>
-              </ul>
-              <button className="c-facetbox__show-more" onClick={this.handleOpenModal}>Show more</button>
-            </details>
-            <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Included Media</span></summary>
               <ul className="c-checkbox--2column">
                 {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
@@ -154,6 +121,39 @@ class SearchLayout extends React.Component {
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Publication Year</span></summary>
               <PubYearComp />
+            </details>
+            <details className="c-facetbox">
+              <summary className="c-facetbox__summary"><span>Department</span></summary>
+              <ul className="c-checkbox">
+                {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
+                <li>
+                  <input id="c-checkbox__number1" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__number1" className="c-checkbox__label">Agricultural History Center (4)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__number2" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__number2" className="c-checkbox__label">Agriculture and Natural Resources Research and Extension Centers (15)</label>
+                  <ul>
+                    <li>
+                      <input id="c-checkbox__number3" type="checkbox" className="c-checkbox__input"/>
+                      <label htmlFor="c-checkbox__number3" className="c-checkbox__label">Hopland Research and Extension Center (7)</label>
+                    </li>
+                    <li>
+                      <input id="c-checkbox__number4" type="checkbox" className="c-checkbox__input"/>
+                      <label htmlFor="c-checkbox__number4" className="c-checkbox__label">Sierra Foothill Research and Extension Center (11)</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <input id="c-checkbox__number6" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__number6" className="c-checkbox__label">American Cultures Center (2)</label>
+                </li>
+                <li>
+                  <input id="c-checkbox__number7" type="checkbox" className="c-checkbox__input"/>
+                  <label htmlFor="c-checkbox__number7" className="c-checkbox__label">American Cultures and Global Contexts Center (19)</label>
+                </li>
+              </ul>
+              <button className="c-facetbox__show-more" onClick={this.handleOpenModal}>Show more</button>
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Reuse License</span></summary>
