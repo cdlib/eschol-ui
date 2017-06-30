@@ -3,6 +3,7 @@
 $pubyear-element-width: 3em;
 
 .c-pubyear {
+  margin-bottom: $spacing-sm;
 
   @supports (display: grid) {
     display: grid;
