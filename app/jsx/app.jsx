@@ -68,6 +68,7 @@ import PubDataDisp from './display/PubDataDisp.jsx'
 import PubDisp from './display/PubDisp.jsx'
 import PubLocationDisp from './display/PubLocationDisp.jsx'
 import PubPreviewDisp from './display/PubPreviewDisp.jsx'
+import PubYearDisp from './display/PubYearDisp.jsx'
 import ScholWorksDisp from './display/ScholWorksDisp.jsx'
 import SearchLayout from './layouts/SearchLayout.jsx'
 import Search1Disp from './display/Search1Disp.jsx'
@@ -180,6 +181,7 @@ ReactDOM.render((
       <Route path="/pubdata" component={PubDataDisp} />
       <Route path="/publocation" component={PubLocationDisp} />
       <Route path="/pubpreview" component={PubPreviewDisp} />
+      <Route path="/pubyear" component={PubYearDisp} />
       <Route path="/scholworks" component={ScholWorksDisp} />
       <Route path="/search1" component={Search1Disp} />
       <Route path="/search2" component={Search2Disp} />
