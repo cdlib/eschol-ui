@@ -9,6 +9,7 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
+import PubYearComp from '../components/PubYearComp.jsx'
 import SortPaginationComp from '../components/SortPaginationComp.jsx'
 import PaginationComp from '../components/PaginationComp.jsx'
 import InfoPagesComp from '../components/InfoPagesComp.jsx'
@@ -152,9 +153,7 @@ class SearchLayout extends React.Component {
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Publication Year</span></summary>
-              
-                [to be added]
-              
+              <PubYearComp />
             </details>
             <details className="c-facetbox">
               <summary className="c-facetbox__summary"><span>Reuse License</span></summary>
