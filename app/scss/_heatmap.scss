@@ -64,6 +64,7 @@
 
   @include bp(screen2) {
     width: 30vw;
+    margin: 3vw 0 $spacing-md;
     font-size: 4.3vw;
     text-align: left;
   }
