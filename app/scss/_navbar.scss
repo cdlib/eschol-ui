@@ -8,4 +8,9 @@
   border-top: 1px solid $color-light-gray;
   border-bottom: 1px solid $color-light-gray;
   background-color: $color-white;
+
+  @include bp(screen4) {
+    padding: $spacing-sm $spacing-lg;
+  }
+
 }
