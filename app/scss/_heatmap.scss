@@ -21,8 +21,8 @@
     left: 0;
     background-image: linear-gradient(
       $color-white,
-      darken($color-light-teal, 2%) 15%,
-      darken($color-light-teal, 2%) 85%,
+      $color-light-teal 15%,
+      $color-light-teal 85%,
       $color-white);
     content: '';
     z-index: -1;
