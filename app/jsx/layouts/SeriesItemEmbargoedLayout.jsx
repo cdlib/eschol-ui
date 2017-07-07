@@ -19,7 +19,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <CampusSelectorComp />
-          <img className="c-subheader__banner" src="images/temp_journal-banner.png" alt=""/>
+          <img className="c-subheader__banner" src="images/logo_ucla.svg" alt=""/>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
           </div>
