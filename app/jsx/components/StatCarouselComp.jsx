@@ -28,19 +28,19 @@ class StatCarouselComp extends React.Component {
             UC Berkeley
           </h2>
           <div className="o-stat--item c-statcarousel__cell">
-            <b>24,844</b> Items
+            <a href="">24,844</a> Items
           </div>
           <div className="o-stat--view c-statcarousel__cell">
             <b>380,941</b> Views
           </div>
           <div className="o-stat--passed c-statcarousel__cell">
-            <b>6,532</b> Items since UC OA Policy passed
+            <a href="">6,532</a> Items since UC OA Policy passed
           </div>
           <div className="o-stat--journals c-statcarousel__cell">
-            <b>31</b> eScholarship Journals
+            <a href="">31</a> eScholarship Journals
           </div>
           <div className="o-stat--units c-statcarousel__cell">
-            <b>119</b> Research Units
+            <a href="">119</a> Research Units
           </div>
         </div>
         <div className="c-statcarousel__section">
@@ -48,19 +48,19 @@ class StatCarouselComp extends React.Component {
             All eScholarship
           </h2>
           <div className="o-stat--item c-statcarousel__cell">
-            <b>127,057</b> Items
+            <a href="">127,057</a> Items
           </div>
           <div className="o-stat--view c-statcarousel__cell">
-            <b>35,489,231</b> Views
+            <a href="">35,489,231</a> Views
           </div>
           <div className="o-stat--passed c-statcarousel__cell">
-            <b>31,750</b> Items since UC OA Policy passed
+            <a href="">31,750</a> Items since UC OA Policy passed
           </div>
           <div className="o-stat--journals c-statcarousel__cell">
-            <b>91</b> eScholarship Journals
+            <a href="">91</a> eScholarship Journals
           </div>
           <div className="o-stat--units c-statcarousel__cell">
-            <b>500</b> Research Units
+            <a href="">500</a> Research Units
           </div>
         </div>
       </div>

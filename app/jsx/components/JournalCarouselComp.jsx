@@ -74,7 +74,7 @@ class UnitCarouselComp extends React.Component {
           </div>
         </div>
         <div className="o-stat--item o-itemcarousel__stats-item">
-          <b>1,000</b>Items
+          <a href="">1,000</a>Items
         </div>
         <div className="o-stat--view o-itemcarousel__stats-view">
           <b>100,000</b>Views
