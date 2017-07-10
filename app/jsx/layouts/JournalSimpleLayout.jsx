@@ -9,8 +9,17 @@ import PubComp from '../components/PubComp.jsx'
 import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import $ from 'jquery'
+import dotdotdot from 'jquery.dotdotdot'
 
 class JournalSimpleLayout extends React.Component {
+  componentDidMount() {
+    $('.o-columnbox__truncate-5').dotdotdot({
+      watch: 'window',
+      after: '.o-columnbox__truncate-more-link'
+    });
+    setTimeout(()=> $('.o-columnbox__truncate-5').trigger("update"), 0)
+  }
   render() {
     return (
       <div>
@@ -30,7 +39,7 @@ class JournalSimpleLayout extends React.Component {
               <header>
                 <h2>About</h2>
               </header>
-              <div>Praesentium dolorem voluptate incidunt reiciendis eius, libero atque commodi amet corporis sed! Exercitationem atque porro perferendis cupiditate quisquam eligendi, eius aspernatur ad esse, iure quos iusto voluptas commodi maxime facere consectetur explicabo reiciendis. Pariatur debitis sequi quibusdam facere esse aut, nostrum soluta corporis similique. Distinctio illo eaque nesciunt quisquam nostrum, reiciendis! Porro dignissimos nostrum pariatur nihil error ipsam repudiandae molestias qui expedita praesentium suscipit magni illo explicabo rerum natus accusamus, non, voluptatem inventore ducimus odit placeat? Molestiae ad architecto dolore at harum, voluptatem nihil mollitia vel est, nam ex inventore neque aut!
+              <div className="o-columnbox__truncate-5">Praesentium dolorem voluptate incidunt reiciendis eius, libero atque commodi amet corporis sed! Exercitationem atque porro perferendis cupiditate quisquam eligendi, eius aspernatur ad esse, iure quos iusto voluptas commodi maxime facere consectetur explicabo reiciendis. Pariatur debitis sequi quibusdam facere esse aut, nostrum soluta corporis similique. Distinctio illo eaque nesciunt quisquam nostrum, reiciendis! Porro dignissimos nostrum pariatur nihil error ipsam repudiandae molestias qui expedita praesentium suscipit magni illo explicabo rerum natus accusamus, non, voluptatem inventore ducimus odit placeat? Molestiae ad architecto dolore at harum, voluptatem nihil mollitia vel est, nam ex inventore neque aut! <a href="" className="o-columnbox__truncate-more-link">More</a>
               </div>
             </section>
             <section className="o-columnbox1">
