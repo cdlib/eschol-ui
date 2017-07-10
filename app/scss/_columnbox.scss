@@ -78,7 +78,11 @@ aside {
 
 // ***** If jQuery Dotdotdot Used ***** //
 
-.o-columnbox1__more-link,
-.o-columnbox2__more-link {
+.o-columnbox__truncate-5 {
+  max-height: 5.5em; // truncate to 5 lines per jquery.dotdotdot
+  overflow: hidden; // hide text beyond max-height
+}
+
+.o-columnbox__truncate-more-link {
   @extend %o-textlink__secondary;
 }
