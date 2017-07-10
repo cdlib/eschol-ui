@@ -30,7 +30,7 @@ class UnitCarouselComp extends React.Component {
   render() {
     return (
       <div className="o-itemcarousel">
-        <h2 className="o-itemcarousel__heading">UC Berkeley Journals</h2>
+        <h2 className="o-itemcarousel__heading"><a href="">UC Berkeley Journals</a></h2>
         <div className="c-journalcarousel o-itemcarousel__carousel">
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
