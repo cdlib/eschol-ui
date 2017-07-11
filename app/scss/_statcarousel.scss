@@ -18,7 +18,7 @@ $statcarousel-heading-height: 1.1em;
 
   &:not(:first-child) {
 
-    [class^='c-statcarousel__cell--'] {
+    .c-statcarousel__cell {
 
       &:first-of-type {
         border-left: 1px solid $color-dark-gray;
