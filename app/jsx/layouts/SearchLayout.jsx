@@ -3,7 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
-import Header1Comp from '../components/Header1Comp.jsx'
+import Header2Comp from '../components/Header2Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
@@ -48,7 +48,7 @@ class SearchLayout extends React.Component {
     return (
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
-        <Header1Comp />
+        <Header2Comp />
         <div className="c-navbar">
           <div className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
