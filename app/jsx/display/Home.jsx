@@ -29,7 +29,7 @@ class Home extends React.Component {
               <li><a href="#journalitempdf">Journal Item (PDF)</a></li>
             </ul>
           </li>
-          <li>Unit Series
+          <li><a href="#unitsimple">Unit (Simple)</a>
             <ul>
               <li><a href="#seriesitemembargoed">Series Item (Embargoed)</a></li>
               <li><a href="#seriesitemurl">Series Item (URL)</a></li>
