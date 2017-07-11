@@ -39,7 +39,9 @@ class JournalSimpleLayout extends React.Component {
               <header>
                 <h2>About</h2>
               </header>
-              <div className="o-columnbox__truncate1">Praesentium dolorem voluptate incidunt reiciendis eius, libero atque commodi amet corporis sed! Exercitationem atque porro perferendis cupiditate quisquam eligendi, eius aspernatur ad esse, iure quos iusto voluptas commodi maxime facere consectetur explicabo reiciendis. Pariatur debitis sequi quibusdam facere esse aut, nostrum soluta corporis similique. Distinctio illo eaque nesciunt quisquam nostrum, reiciendis! Porro dignissimos nostrum pariatur nihil error ipsam repudiandae molestias qui expedita praesentium suscipit magni illo explicabo rerum natus accusamus, non, voluptatem inventore ducimus odit placeat? Molestiae ad architecto dolore at harum, voluptatem nihil mollitia vel est, nam ex inventore neque aut! <a href="" className="o-columnbox__truncate-more-link">More</a>
+              <div className="o-columnbox__truncate1">
+                <div> {/* this element (or any child) required so that 'more' link goes away at less than truncation threshold */}Praesentium dolorem voluptate incidunt reiciendis eius, libero atque commodi amet corporis sed! Exercitationem atque porro perferendis cupiditate quisquam eligendi, eius aspernatur ad esse, iure quos iusto voluptas commodi maxime facere consectetur explicabo reiciendis. Pariatur debitis sequi quibusdam facere esse aut, nostrum soluta corporis similique. Distinctio illo eaque nesciunt quisquam nostrum, reiciendis! Porro dignissimos nostrum pariatur nihil error ipsam repudiandae molestias qui expedita praesentium suscipit magni illo explicabo rerum natus accusamus, non, voluptatem inventore ducimus odit placeat? Molestiae ad architecto dolore at harum, voluptatem nihil mollitia vel est, nam ex inventore neque aut! <a href="" className="o-columnbox__truncate-more-link">More</a>
+                </div>
               </div>
             </section>
             <section className="o-columnbox1">
