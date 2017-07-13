@@ -119,13 +119,25 @@ class UnitSimpleLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
-                <h3>Works by the Center for Environmental Design</h3>
+                <h2>Works by the Center for Environmental Design</h2>
               </header>
               <div className="c-itemactions">
                 <ShareComp />
               </div>
               <p>There are 99 publications in this collection, published between 1989 and 2010.</p>
-              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Recent Works</a></h4>
+              <h3 className="o-heading2"><a className="o-textlink__secondary" href="">Recent Works</a></h3>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Kirschen, Bryan</a></li>
+                  </ul>
+                </div>
+                <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
+              </div>
               <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
@@ -133,29 +145,37 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
-                    <li><a href="">Leung, Wilson</a></li>
-                    <li><a href="">Shaffer, Christopher D</a></li>
-                    <li><a href="">Reed, Laura K</a></li>
-                    <li><a href="">Smith, Sheryl T</a></li>
-                    <li><a href="">Barshop, William</a></li>
-                    <li><a href="">Dirkes, William</a></li>
-                    <li><a href="">Dothager, Matthew</a></li>
-                    <li><a href="">Lee, Paul</a></li>
-                    <li><a href="">Wong, Jeannette</a></li>
-                    <li><a href="">Xiong, David</a></li>
-                    <li><a href="">Yuan, Han</a></li>
-                    <li><a href="">Bedard James E J</a></li>
-                    <li><a href="">Machone, Joshua F</a></li>
-                    <li><a href="">Patterson, Seantay D</a></li>
-                    <li><a href="">Price, Amber L</a></li>
-                    <li><a href="">Turner, Bryce A</a></li>
-                    <li><a href="">Robic, Srebrenka</a></li>
-                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    <li><a href="">Dahle, Kevin W</a></li>
                   </ul>
                 </div>
-                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
               </div>
-              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Seminar and Conference Papers</a></h4>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Pardo, Maria Gracia</a></li>
+                  </ul>
+                </div>
+                <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
+              </div>
+              <p>24 more works&mdash; <a className="o-textlink__secondary" href="">show all</a></p>
+              <h3 className="o-heading2"><a className="o-textlink__secondary" href="">Seminar and Conference Papers</a></h3>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Kirschen, Bryan</a></li>
+                  </ul>
+                </div>
+                <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
+              </div>
               <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
@@ -163,29 +183,37 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
-                    <li><a href="">Leung, Wilson</a></li>
-                    <li><a href="">Shaffer, Christopher D</a></li>
-                    <li><a href="">Reed, Laura K</a></li>
-                    <li><a href="">Smith, Sheryl T</a></li>
-                    <li><a href="">Barshop, William</a></li>
-                    <li><a href="">Dirkes, William</a></li>
-                    <li><a href="">Dothager, Matthew</a></li>
-                    <li><a href="">Lee, Paul</a></li>
-                    <li><a href="">Wong, Jeannette</a></li>
-                    <li><a href="">Xiong, David</a></li>
-                    <li><a href="">Yuan, Han</a></li>
-                    <li><a href="">Bedard James E J</a></li>
-                    <li><a href="">Machone, Joshua F</a></li>
-                    <li><a href="">Patterson, Seantay D</a></li>
-                    <li><a href="">Price, Amber L</a></li>
-                    <li><a href="">Turner, Bryce A</a></li>
-                    <li><a href="">Robic, Srebrenka</a></li>
-                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    <li><a href="">Dahle, Kevin W</a></li>
                   </ul>
                 </div>
-                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
               </div>
-              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Working Papers</a></h4>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Pardo, Maria Gracia</a></li>
+                  </ul>
+                </div>
+                <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
+              </div>
+              <p>6 more works&mdash; <a className="o-textlink__secondary" href="">show all</a></p>
+              <h3 className="o-heading2"><a className="o-textlink__secondary" href="">Working Papers</a></h3>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Kirschen, Bryan</a></li>
+                  </ul>
+                </div>
+                <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
+              </div>
               <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
@@ -193,28 +221,24 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
-                    <li><a href="">Leung, Wilson</a></li>
-                    <li><a href="">Shaffer, Christopher D</a></li>
-                    <li><a href="">Reed, Laura K</a></li>
-                    <li><a href="">Smith, Sheryl T</a></li>
-                    <li><a href="">Barshop, William</a></li>
-                    <li><a href="">Dirkes, William</a></li>
-                    <li><a href="">Dothager, Matthew</a></li>
-                    <li><a href="">Lee, Paul</a></li>
-                    <li><a href="">Wong, Jeannette</a></li>
-                    <li><a href="">Xiong, David</a></li>
-                    <li><a href="">Yuan, Han</a></li>
-                    <li><a href="">Bedard James E J</a></li>
-                    <li><a href="">Machone, Joshua F</a></li>
-                    <li><a href="">Patterson, Seantay D</a></li>
-                    <li><a href="">Price, Amber L</a></li>
-                    <li><a href="">Turner, Bryce A</a></li>
-                    <li><a href="">Robic, Srebrenka</a></li>
-                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    <li><a href="">Dahle, Kevin W</a></li>
                   </ul>
                 </div>
-                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
               </div>
+              <div className="c-pub--indent">
+                <h2 className="c-pub__heading">
+                  <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Pardo, Maria Gracia</a></li>
+                  </ul>
+                </div>
+                <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
+              </div>
+              <p>57 more works&mdash; <a className="o-textlink__secondary" href="">show all</a></p>
             </section>
           </main>
           <aside>
