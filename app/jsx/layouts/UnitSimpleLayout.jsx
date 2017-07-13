@@ -16,7 +16,6 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import SocialIconsComp from '../components/SocialIconsComp.jsx'
 import LanguageComp from '../components/LanguageComp.jsx'
-import MediaListComp from '../components/MediaListComp.jsx'
 
 class UnitSimpleLayout extends React.Component {
   constructor(props){
@@ -155,7 +154,6 @@ class UnitSimpleLayout extends React.Component {
                   </ul>
                 </div>
                 <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
-                <MediaListComp />
               </div>
               <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Seminar and Conference Papers</a></h4>
               <div className="c-pub--indent">
@@ -186,7 +184,6 @@ class UnitSimpleLayout extends React.Component {
                   </ul>
                 </div>
                 <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
-                <MediaListComp />
               </div>
               <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Working Papers</a></h4>
               <div className="c-pub--indent">
@@ -217,7 +214,6 @@ class UnitSimpleLayout extends React.Component {
                   </ul>
                 </div>
                 <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
-                <MediaListComp />
               </div>
             </section>
           </main>
