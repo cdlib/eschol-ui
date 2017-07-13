@@ -132,8 +132,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Kirschen, Bryan</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
                   </ul>
                 </div>
                 <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
@@ -144,8 +145,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Dahle, Kevin W</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
                   </ul>
                 </div>
                 <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
@@ -156,8 +158,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Pardo, Maria Gracia</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
                   </ul>
                 </div>
                 <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
@@ -170,8 +173,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Kirschen, Bryan</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
                   </ul>
                 </div>
                 <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
@@ -182,8 +186,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Dahle, Kevin W</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
                   </ul>
                 </div>
                 <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
@@ -194,8 +199,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Pardo, Maria Gracia</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
                   </ul>
                 </div>
                 <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
@@ -208,8 +214,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Kirschen, Bryan</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
                   </ul>
                 </div>
                 <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
@@ -220,8 +227,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Dahle, Kevin W</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
                   </ul>
                 </div>
                 <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
@@ -232,8 +240,9 @@ class UnitSimpleLayout extends React.Component {
                 </h2>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
-                  {/* links can be left out of the list if no links are desired: */}
                     <li><a href="">Pardo, Maria Gracia</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
                   </ul>
                 </div>
                 <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
