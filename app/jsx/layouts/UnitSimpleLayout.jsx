@@ -127,7 +127,7 @@ class UnitSimpleLayout extends React.Component {
               </div>
               <p>There are 99 publications in this collection, published between 1989 and 2010.</p>
               <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Recent Works</a></h4>
-              <div className="c-pub">
+              <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                 </h2>
@@ -158,7 +158,7 @@ class UnitSimpleLayout extends React.Component {
                 <MediaListComp />
               </div>
               <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Seminar and Conference Papers</a></h4>
-              <div className="c-pub">
+              <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                 </h2>
@@ -189,7 +189,7 @@ class UnitSimpleLayout extends React.Component {
                 <MediaListComp />
               </div>
               <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Working Papers</a></h4>
-              <div className="c-pub">
+              <div className="c-pub--indent">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
                 </h2>
