@@ -126,7 +126,7 @@ class UnitSimpleLayout extends React.Component {
                 <ShareComp />
               </div>
               <p>There are 99 publications in this collection, published between 1989 and 2010.</p>
-              <h4 className="o-heading3">Recent Works</h4>
+              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Recent Works</a></h4>
               <div className="c-pub">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
@@ -157,7 +157,7 @@ class UnitSimpleLayout extends React.Component {
                 <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
                 <MediaListComp />
               </div>
-              <h4 className="o-heading3">Seminar and Conference Papers</h4>
+              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Seminar and Conference Papers</a></h4>
               <div className="c-pub">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
@@ -188,7 +188,7 @@ class UnitSimpleLayout extends React.Component {
                 <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
                 <MediaListComp />
               </div>
-              <h4 className="o-heading3">Working Papers</h4>
+              <h4 className="o-heading2"><a className="o-textlink__secondary" href="">Working Papers</a></h4>
               <div className="c-pub">
                 <h2 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
