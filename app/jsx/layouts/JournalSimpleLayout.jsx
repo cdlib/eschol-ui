@@ -68,7 +68,26 @@ class JournalSimpleLayout extends React.Component {
               </div>
               <h3 className="o-heading3">Front Matter</h3>
               <PubPreviewComp />
-              <PubPreviewComp />
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">Comment on Ginsborg et al</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                      <li><a href="">Grew, Raymond</a></li>
+                    </ul>
+                  </div>
+                  <p>A comment on Paul Ginsborg's "Salviamo l'Italia".</p>
+                  <ul className="c-medialist">
+                    <li className="c-medialist__image">Contains 2 supplemental images</li>
+                    <li className="c-medialist__pdf">Contains 2 supplemental PDFs</li>
+                  </ul>
+                </div>
+              </div>
               <PubPreviewComp />
               <h3 className="o-heading3">Articles</h3>
               <PubPreviewComp />
