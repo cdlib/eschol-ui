@@ -2,7 +2,6 @@
 
 import React from 'react'
 import $ from 'jquery'
-import dotdotdot from 'jquery.dotdotdot'
 import Header2Comp from '../components/Header2Comp.jsx'
 import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
@@ -16,6 +15,11 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import SocialIconsComp from '../components/SocialIconsComp.jsx'
 import LanguageComp from '../components/LanguageComp.jsx'
+
+// Load dotdotdot in browser but not server:
+if (!(typeof document === "undefined")) {
+  const dotdotdot = require('jquery.dotdotdot')
+}
 
 class UnitSimpleLayout extends React.Component {
   constructor(props){
@@ -33,11 +37,16 @@ class UnitSimpleLayout extends React.Component {
     this.setState({isOpen: this.mq.matches})
   }
   componentDidMount() {
-    $('.o-columnbox__truncate1').dotdotdot({
+    $(this.element).dotdotdot({
       watch: 'window',
-      after: '.o-columnbox__truncate-more-link'
+      after: '.o-columnbox__truncate-more',
+      callback: ()=> $(this.element).find(".o-columnbox__truncate-more").click(this.destroydotdotdot)
     });
-    setTimeout(()=> $('.o-columnbox__truncate1').trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+    setTimeout(()=> $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+  }
+  destroydotdotdot = event => {
+    $(this.element).trigger('destroy')
+    $(this.element).removeClass("o-columnbox__truncate1")
   }
   render() {
     return (
@@ -111,10 +120,11 @@ class UnitSimpleLayout extends React.Component {
               <header>
                 <h2>About</h2>
               </header>
-              <div className="o-columnbox__truncate1">
-                <div> {/* this element (or any child) required so that 'more' link goes away at less than truncation threshold */}
-                  Repudiandae fugiat ab earum dignissimos veniam quae enim nesciunt deleniti deserunt. Numquam commodi sunt autem dolore repellendus, minus quae modi natus dignissimos. Repellendus, expedita quos doloremque neque asperiores voluptates atque? Aliquam vel quae hic nostrum sint illum, alias soluta rerum at consectetur, eaque nemo nulla sed officia labore illo magni nisi suscipit libero reiciendis. Illo esse a commodi aperiam sequi voluptatibus doloremque eaque cum id. Harum excepturi, fuga molestiae, sunt aperiam recusandae odit! Laborum, voluptas quos. Corporis mollitia itaque perspiciatis, nulla odio incidunt ex maxime, delectus repellat illo nisi eos quas quam doloribus aliquid nesciunt, fugit totam minima neque? Iure, necessitatibus maxime porro, non cum iusto. <a href="" className="o-columnbox__truncate-more-link">More</a>
-                </div>
+              <div className="o-columnbox__truncate1" ref={element => this.element = element}>
+                <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
+                </p>
+                <p>A distinctio minus praesentium consectetur sit sequi dolor, quasi impedit omnis dolore eveniet nisi quas pariatur similique dignissimos alias corporis officia eaque quidem cumque. Dicta eaque iste numquam quia illum, doloremque nobis temporibus eius sed, sunt velit similique eos repellendus! Laudantium reprehenderit iure quo laboriosam, in autem ratione, cum veritatis. Ut itaque quidem tenetur nobis esse, tempora quo ab quasi fugiat eligendi consectetur sapiente rem architecto amet, dignissimos quisquam est? <button className="o-columnbox__truncate-more">More</button>
+                </p>
               </div>
             </section>
             <section className="o-columnbox1">
