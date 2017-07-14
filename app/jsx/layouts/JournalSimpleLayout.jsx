@@ -10,15 +10,24 @@ import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import $ from 'jquery'
-import dotdotdot from 'jquery.dotdotdot'
+
+// Load dotdotdot in browser but not server:
+if (!(typeof document === "undefined")) {
+  const dotdotdot = require('jquery.dotdotdot')
+}
 
 class JournalSimpleLayout extends React.Component {
   componentDidMount() {
-    $('.o-columnbox__truncate1').dotdotdot({
+    $(this.element).dotdotdot({
       watch: 'window',
-      after: '.o-columnbox__truncate-more-link'
+      after: '.o-columnbox__truncate-more',
+      callback: ()=> $(this.element).find(".o-columnbox__truncate-more").click(this.destroydotdotdot)
     });
-    setTimeout(()=> $('.o-columnbox__truncate1').trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+    setTimeout(()=> $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+  }
+  destroydotdotdot = event => {
+    $(this.element).trigger('destroy')
+    $(this.element).removeClass("o-columnbox__truncate1")
   }
   render() {
     return (
@@ -39,9 +48,11 @@ class JournalSimpleLayout extends React.Component {
               <header>
                 <h2>About</h2>
               </header>
-              <div className="o-columnbox__truncate1">
-                <div> {/* this element (or any child) required so that 'more' link goes away at less than truncation threshold */}Praesentium dolorem voluptate incidunt reiciendis eius, libero atque commodi amet corporis sed! Exercitationem atque porro perferendis cupiditate quisquam eligendi, eius aspernatur ad esse, iure quos iusto voluptas commodi maxime facere consectetur explicabo reiciendis. Pariatur debitis sequi quibusdam facere esse aut, nostrum soluta corporis similique. Distinctio illo eaque nesciunt quisquam nostrum, reiciendis! Porro dignissimos nostrum pariatur nihil error ipsam repudiandae molestias qui expedita praesentium suscipit magni illo explicabo rerum natus accusamus, non, voluptatem inventore ducimus odit placeat? Molestiae ad architecto dolore at harum, voluptatem nihil mollitia vel est, nam ex inventore neque aut! <a href="" className="o-columnbox__truncate-more-link">More</a>
-                </div>
+              <div className="o-columnbox__truncate1" ref={element => this.element = element}>
+                <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
+                </p>
+                <p>A distinctio minus praesentium consectetur sit sequi dolor, quasi impedit omnis dolore eveniet nisi quas pariatur similique dignissimos alias corporis officia eaque quidem cumque. Dicta eaque iste numquam quia illum, doloremque nobis temporibus eius sed, sunt velit similique eos repellendus! Laudantium reprehenderit iure quo laboriosam, in autem ratione, cum veritatis. Ut itaque quidem tenetur nobis esse, tempora quo ab quasi fugiat eligendi consectetur sapiente rem architecto amet, dignissimos quisquam est? <button className="o-columnbox__truncate-more">More</button>
+                </p>
               </div>
             </section>
             <section className="o-columnbox1">
