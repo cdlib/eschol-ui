@@ -83,6 +83,7 @@ aside {
   overflow: hidden; // hide text beyond max-height
 }
 
-.o-columnbox__truncate-more-link {
-  @extend %o-textlink__secondary;
+// Button to show untruncated text:
+.o-columnbox__truncate-more {
+  @extend %o-button__7;
 }
