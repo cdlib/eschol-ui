@@ -2,15 +2,29 @@
 
 import React from 'react'
 import $ from 'jquery'
-import dotdotdot from 'jquery.dotdotdot'
 import Flickity from 'flickity-imagesloaded'
+
+// Load dotdotdot in browser but not server:
+if (!(typeof document === "undefined")) {
+  const dotdotdot = require('jquery.dotdotdot')
+}
 
 class CarouselComp extends React.Component {
   componentDidMount () {
-    $('.c-marquee__carousel-cell, .c-marquee__sidebar').dotdotdot({
+    // Dotdotdot 1 for carousel:
+    $('.c-marquee__carousel-cell').dotdotdot({
       watch: 'window',
-      after: '.c-marquee__sidebar-more-link'
     });
+
+    // Dotdotdot 2 with truncation for sidebar:
+    $(this.element).dotdotdot({
+      watch: 'window',
+      after: '.c-marquee__sidebar-more',
+      callback: ()=> $(this.element).find(".c-marquee__sidebar-more").click(this.destroydotdotdot)
+    });
+    setTimeout(()=> $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+
+    // Flickity:
     var carousel = $('.c-marquee__carousel')[0];
     var options = {
       cellAlign: 'left',
@@ -19,6 +33,10 @@ class CarouselComp extends React.Component {
       imagesLoaded: true
     }
     this.flkty = new Flickity(carousel, options);
+  }
+  destroydotdotdot = event => {
+    $(this.element).trigger('destroy')
+    $(this.element).removeClass("c-marquee__sidebar-truncate")
   }
   componentWillUnmount() {
     if (this.flkty) {
@@ -47,8 +65,12 @@ class CarouselComp extends React.Component {
             <header>
               <h2>About</h2>
             </header>
-            <p>Ex voluptatum debitis natus ab provident ratione, laborum voluptas totam officia consequatur doloremque quas itaque quibusdam veniam. Maiores fugiat fugit libero consequatur, consectetur impedit explicabo, ipsum repellendus incidunt sapiente expedita optio commodi ratione, iure beatae dolor! Vel eligendi, amet, veniam et unde optio harum, dolorum dicta, ipsum illum voluptatum autem sit cumque! <a className="c-marquee__sidebar-more-link" href="">More</a>
-            </p>
+            <div className="c-marquee__sidebar-truncate" ref={element => this.element = element}>
+              <p>Doloribus reiciendis quasi neque necessitatibus fugiat natus pariatur impedit iure temporibus rerum totam aspernatur repudiandae dolor!
+              </p>
+              <p>Commodi, excepturi, nam? Perferendis qui amet, dolore voluptas tempora sequi ipsum animi vero asperiores doloribus beatae repudiandae porro. Perferendis, provident quasi. Repellat amet odio aliquam, voluptates quo, minima veritatis. Repellendus quod blanditiis, aliquid molestiae aperiam, modi fugiat esse tempore. <button className="c-marquee__sidebar-more">More</button>
+              </p>
+            </div>
           </section>
         </aside>
       </div>
