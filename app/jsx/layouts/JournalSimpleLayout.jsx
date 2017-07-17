@@ -57,7 +57,7 @@ class JournalSimpleLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <div className="c-itemactions">
-                <button className="c-itemactions__button-print">Buy Issue</button>
+                <button className="c-itemactions__button-buy">Buy Issue</button>
                 <div className="o-download">
                   <button className="o-download__button">Download Issue</button>
                   <details className="o-download__formats">
