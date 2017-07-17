@@ -259,6 +259,34 @@ class UnitSimpleLayout extends React.Component {
                 <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
               </div>
               <p>57 more works&mdash; <a className="o-textlink__secondary" href="">show all</a></p>
+              <div className="c-unitlist">
+                <h3>Journals</h3>
+                <ul>
+                  <li>
+                    <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
+                  </li>
+                  <li>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </li>
+                  <li>
+                    <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="c-unitlist">
+                <h3>Related Research Centers and Groups</h3>
+                <ul>
+                  <li>
+                    <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
+                  </li>
+                  <li>
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </li>
+                  <li>
+                    <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
+                  </li>
+                </ul>
+              </div>
             </section>
           </main>
           <aside>
