@@ -9,9 +9,9 @@ class FooterComp extends React.Component {
         <nav className="c-footer__nav">
           <a href="">Home</a>
           <a href="">About eScholarship</a>
-          <a href="">Campuses</a>
-          <a href="">OA Policies</a>
-          <a href="">Journals</a>
+          <a href="">Campus Sites</a>
+          <a href="">UC Open Access Policy</a>
+          <a href="">eScholarship Publishing</a>
           <a href="">Deposit</a>
           <a href="">Privacy Policy</a>
           <a href="">Terms & Conditions</a>
