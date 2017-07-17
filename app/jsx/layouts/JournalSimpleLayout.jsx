@@ -6,6 +6,7 @@ import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import PubComp from '../components/PubComp.jsx'
+import MediaListComp from '../components/MediaListComp.jsx'
 import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -67,7 +68,43 @@ class JournalSimpleLayout extends React.Component {
                 </p>
               </div>
               <h3 className="o-heading3">Front Matter</h3>
-              <PubPreviewComp />
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
+
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
                   <img src="http://placehold.it/150x200?text=Image" alt="" />
@@ -88,15 +125,245 @@ class JournalSimpleLayout extends React.Component {
                   </ul>
                 </div>
               </div>
-              <PubPreviewComp />
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
               <h3 className="o-heading3">Articles</h3>
-              <PubPreviewComp />
-              <PubPreviewComp />
-              <PubPreviewComp />
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                </a>
+                <div className="c-pub">
+                  <h2 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h2>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
               <h3 className="o-heading3">Book Reviews</h3>
-              <PubComp />
-              <PubComp />
-              <PubComp />
+              {/* PubComp Example */}
+              <div className="c-pub">
+                <h2 className="c-pub__heading">
+                  <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Leung, Wilson</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
+                    <li><a href="">Dirkes, William</a></li>
+                    <li><a href="">Dothager, Matthew</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
+                    <li><a href="">Xiong, David</a></li>
+                    <li><a href="">Yuan, Han</a></li>
+                    <li><a href="">Bedard James E J</a></li>
+                    <li><a href="">Machone, Joshua F</a></li>
+                    <li><a href="">Patterson, Seantay D</a></li>
+                    <li><a href="">Price, Amber L</a></li>
+                    <li><a href="">Turner, Bryce A</a></li>
+                    <li><a href="">Robic, Srebrenka</a></li>
+                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                  </ul>
+                </div>
+                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <MediaListComp />
+              </div>
+              {/* PubComp Example */}
+              <div className="c-pub">
+                <h2 className="c-pub__heading">
+                  <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Leung, Wilson</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
+                    <li><a href="">Dirkes, William</a></li>
+                    <li><a href="">Dothager, Matthew</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
+                    <li><a href="">Xiong, David</a></li>
+                    <li><a href="">Yuan, Han</a></li>
+                    <li><a href="">Bedard James E J</a></li>
+                    <li><a href="">Machone, Joshua F</a></li>
+                    <li><a href="">Patterson, Seantay D</a></li>
+                    <li><a href="">Price, Amber L</a></li>
+                    <li><a href="">Turner, Bryce A</a></li>
+                    <li><a href="">Robic, Srebrenka</a></li>
+                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                  </ul>
+                </div>
+                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <MediaListComp />
+              </div>
+              {/* PubComp Example */}
+              <div className="c-pub">
+                <h2 className="c-pub__heading">
+                  <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                </h2>
+                <div className="c-authorlist">
+                  <ul className="c-authorlist__list">
+                  {/* links can be left out of the list if no links are desired: */}
+                    <li><a href="">Leung, Wilson</a></li>
+                    <li><a href="">Shaffer, Christopher D</a></li>
+                    <li><a href="">Reed, Laura K</a></li>
+                    <li><a href="">Smith, Sheryl T</a></li>
+                    <li><a href="">Barshop, William</a></li>
+                    <li><a href="">Dirkes, William</a></li>
+                    <li><a href="">Dothager, Matthew</a></li>
+                    <li><a href="">Lee, Paul</a></li>
+                    <li><a href="">Wong, Jeannette</a></li>
+                    <li><a href="">Xiong, David</a></li>
+                    <li><a href="">Yuan, Han</a></li>
+                    <li><a href="">Bedard James E J</a></li>
+                    <li><a href="">Machone, Joshua F</a></li>
+                    <li><a href="">Patterson, Seantay D</a></li>
+                    <li><a href="">Price, Amber L</a></li>
+                    <li><a href="">Turner, Bryce A</a></li>
+                    <li><a href="">Robic, Srebrenka</a></li>
+                    <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                  </ul>
+                </div>
+                <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                <MediaListComp />
+              </div>
             </section>
           </main>
           <aside>
