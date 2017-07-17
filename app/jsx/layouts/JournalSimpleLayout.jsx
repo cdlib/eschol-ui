@@ -4,7 +4,6 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
-import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import PubComp from '../components/PubComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
 import PubPreviewComp from '../components/PubPreviewComp.jsx'
@@ -57,7 +56,52 @@ class JournalSimpleLayout extends React.Component {
               </div>
             </section>
             <section className="o-columnbox1">
-              <ItemActionsComp />
+              <div className="c-itemactions">
+                <button className="c-itemactions__button-print">Buy Issue</button>
+                <div className="o-download">
+                  <button className="o-download__button">Download Issue</button>
+                  <details className="o-download__formats">
+                    <summary aria-label="formats"></summary>
+                    <ul className="o-download__nested-menu">
+                      <li className="o-download__nested-list1">
+                        Main
+                        <ul>
+                          <li><a href="">PDF</a></li>
+                          <li><a href="">ePub</a></li>
+                          <li><a href="">HTML</a></li>
+                        </ul>
+                      </li>
+                      <li className="o-download__nested-list2">
+                        Citation
+                        <ul>
+                          <li><a href="">RIS</a></li>
+                          <li><a href="">BibText</a></li>
+                          <li><a href="">EndNote</a></li>
+                          <li><a href="">RefWorks</a></li>
+                        </ul>
+                      </li>
+                      <li className="o-download__nested-list3">
+                        Supplemental Material
+                        <ul>
+                          <li><a href="">Image</a></li>
+                          <li><a href="">Audio</a></li>
+                          <li><a href="">Video</a></li>
+                          <li><a href="">Zip</a></li>
+                          <li><a href="">File</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </details>
+                </div>
+                <details className="c-share">
+                  <summary><span>Share Issue</span></summary>
+                  <div className="c-share__list">
+                    <a className="c-share__email" href="">Email</a>
+                    <a className="c-share__facebook" href="">Facebook</a>
+                    <a className="c-share__twitter" href="">Twitter</a>
+                  </div>
+                </details>
+              </div>
               <div className="c-pub">
                 <h2 className="c-pub__heading">
                   <a href="">Volume 41, Issue 1, 2012</a>
