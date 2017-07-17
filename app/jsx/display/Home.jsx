@@ -115,6 +115,7 @@ class Home extends React.Component {
           <li><a href="#togglecontent">Toggle Content</a></li>
           <li><a href="#togglelist">Toggle List</a></li>
           <li><a href="#unitcarousel">Unit Carousel</a></li>
+          <li><a href="#unitlist">Unit List</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
           <li><a href="#well">Well for Content</a></li>
         </ul>
