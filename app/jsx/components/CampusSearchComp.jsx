@@ -7,8 +7,8 @@ class CampusSearchComp extends React.Component {
     return (
       <div className="c-campussearch">
         <label htmlFor="c-campussearch__search" className="c-campussearch__label">Discover UC Berkeley scholarship</label>
-        <div id="c-campussearch__search" className="c-campussearch__search">
-          <input type="search" className="c-campussearch__input"/>
+        <div className="c-campussearch__search">
+          <input type="search" className="c-campussearch__input" id="c-campussearch__search"/>
           <button className="c-campussearch__button" aria-label="Search"></button>
         </div>
         <small className="c-campussearch__subtext">
