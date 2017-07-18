@@ -118,7 +118,7 @@ class UnitSimpleLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox2">
               <header>
-                <h2>About</h2>
+                <h1>About</h1>
               </header>
               <div className="o-columnbox__truncate1" ref={element => this.element = element}>
                 <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
@@ -129,19 +129,19 @@ class UnitSimpleLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Works by the Center for Environmental Design</h2>
+                <h1>Works by the Center for Environmental Design</h1>
               </header>
               <div className="c-itemactions">
                 <ShareComp />
               </div>
               <div className="c-unitpub__publications">There are 99 publications in this collection, published between 1989 and 2010.</div>
-              <h3 className="o-heading1a">Series Category A</h3>
+              <h2 className="o-heading1a">Series Category A</h2>
               <div className="c-unitpub">
-                <h4 className="c-unitpub__heading"><a href="">Series 1 Title</a></h4>
+                <h3 className="c-unitpub__heading"><a href="">Series 1 Title</a></h3>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -152,9 +152,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -165,9 +165,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -180,11 +180,11 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitpub">
-                <h4 className="c-unitpub__heading"><a href="">Series 2 Title</a></h4>
+                <h3 className="c-unitpub__heading"><a href="">Series 2 Title</a></h3>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -195,9 +195,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -208,9 +208,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -223,11 +223,11 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitpub">
-                <h4 className="c-unitpub__heading"><a href="">Series 3 Title</a></h4>
+                <h3 className="c-unitpub__heading"><a href="">Series 3 Title</a></h3>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -238,9 +238,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Animi, illo placeat impedit rem voluptate dolore tempore, debitis quibusdam quae deleniti tempora maxime dolorum deserunt sunt asperiores pariatur! Ipsa eveniet culpa, obcaecati earum ex nam explicabo cumque neque rem excepturi dicta!</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -251,9 +251,9 @@ class UnitSimpleLayout extends React.Component {
                   <p>Et debitis consequuntur aut nobis natus atque, dignissimos excepturi eligendi animi id provident similique ad non dolorum suscipit placeat. Praesentium quas adipisci aspernatur cum! Tenetur aliquid harum illum officia facilis quasi consequuntur.</p>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h4 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h4>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -266,7 +266,7 @@ class UnitSimpleLayout extends React.Component {
                 <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitlist">
-                <h3>Journals</h3>
+                <h2>Journals</h2>
                 <ul>
                   <li>
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -280,7 +280,7 @@ class UnitSimpleLayout extends React.Component {
                 </ul>
               </div>
               <div className="c-unitlist">
-                <h3>Related Research Centers and Groups</h3>
+                <h2>Related Research Centers and Groups</h2>
                 <ul>
                   <li>
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -298,7 +298,7 @@ class UnitSimpleLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Featured Articles</h2>
+                <h1>Featured Articles</h1>
               </header>
               <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
               <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>
