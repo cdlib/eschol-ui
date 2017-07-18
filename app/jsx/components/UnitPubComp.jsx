@@ -46,7 +46,7 @@ class UnitPubComp extends React.Component {
           </div>
           <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
         </div>
-        <div className="c-unitpub__works">24 more works&mdash; <a href="">show all</a></div>
+        <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
       </div>
     )
   }

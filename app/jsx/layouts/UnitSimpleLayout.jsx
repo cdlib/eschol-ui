@@ -134,7 +134,7 @@ class UnitSimpleLayout extends React.Component {
               <div className="c-itemactions">
                 <ShareComp />
               </div>
-              <div className="c-unitpub__works">There are 99 publications in this collection, published between 1989 and 2010.</div>
+              <div className="c-unitpub__publications">There are 99 publications in this collection, published between 1989 and 2010.</div>
               <h3 className="o-heading1a">Series Category A</h3>
               <div className="c-unitpub">
                 <h4 className="c-unitpub__heading"><a href="">Series 1 Title</a></h4>
@@ -177,7 +177,7 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                   <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
                 </div>
-                <div className="c-unitpub__works">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitpub">
                 <h4 className="c-unitpub__heading"><a href="">Series 2 Title</a></h4>
@@ -220,7 +220,7 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                   <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
                 </div>
-                <div className="c-unitpub__works">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitpub">
                 <h4 className="c-unitpub__heading"><a href="">Series 3 Title</a></h4>
@@ -263,7 +263,7 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                   <p>Distinctio quae tempore iure aliquid. Sed odit ut, quod provident odio velit fugiat totam reiciendis sint suscipit perspiciatis vero molestias ducimus architecto perferendis pariatur. Quibusdam distinctio a fuga sint provident hic inventore.</p>
                 </div>
-                <div className="c-unitpub__works">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitpub__publications">24 more works&mdash; <a href="">show all</a></div>
               </div>
               <div className="c-unitlist">
                 <h3>Journals</h3>
