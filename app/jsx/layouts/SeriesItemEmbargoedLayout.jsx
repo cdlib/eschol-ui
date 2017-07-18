@@ -19,9 +19,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="c-campusselector">
-            <div className="c-campusselector__heading">
-              <a href="">UCLA</a>
-            </div>
+            <a className="c-campusselector__heading" href="">UCLA</a>
             <details className="c-campusselector__selector">
               <summary aria-label="select campus"></summary>
               <div className="c-campusselector__menu">

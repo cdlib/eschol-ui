@@ -6,9 +6,7 @@ class CampusSelectorComp extends React.Component {
   render() {
     return (
       <div className="c-campusselector">
-        <div className="c-campusselector__heading">
-          <a href="">UC Office of the President</a>
-        </div>
+        <a className="c-campusselector__heading" href="">UC Office of the President</a>
         <details className="c-campusselector__selector">
           <summary aria-label="select campus"></summary>
           <div className="c-campusselector__menu">
