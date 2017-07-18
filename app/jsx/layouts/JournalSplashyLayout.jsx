@@ -27,7 +27,7 @@ class JournalSplashyLayout extends React.Component {
             <section className="o-columnbox1">
               <ItemActionsComp />
               <PubPreviewComp />
-              <h3 className="o-heading3">Table of Contents</h3>
+              <h1 className="o-heading1a">Table of Contents</h1>
               <div className="o-dividecontent2x--ruled">
                 <PubComp />
                 <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
@@ -40,13 +40,13 @@ class JournalSplashyLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Journal Information</h2>
+                <h1>Journal Information</h1>
               </header>
               <JournalInfoComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Featured Articles</h2>
+                <h1>Featured Articles</h1>
                 </header>
                 <p><a className="o-textlink__secondary" href="">Entre la ficción y el periodismo: Cambio social y la crónica mexicana contemporánea</a> <br/> Nadeau, Evelyn</p> 
                 <p><a className="o-textlink__secondary" href="">Journalism in Catalonia During Francoism</a> <br/> Reguant, Monserrat</p>
@@ -56,7 +56,7 @@ class JournalSplashyLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Follow us on Twitter</h2>
+                <h1>Follow us on Twitter</h1>
               </header>
               [content to go here]
             </section>

@@ -48,22 +48,22 @@ class CarouselComp extends React.Component {
       <div className="c-marquee">
         <div className="c-marquee__carousel">
           <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://static.pexels.com/photos/27714/pexels-photo-27714.jpg')"}}>
-            <h2>Carousel Cell Title 1</h2>
+            <h1>Carousel Cell Title 1</h1>
             <p>Totam iusto vero, omnis ut modi, possimus fugiat consequuntur incidunt eius delectus, enim commodi dicta itaque! Dolores quis natus itaque delectus fuga. Id debitis, corporis, suscipit placeat architecto doloremque reprehenderit deleniti in iure assumenda cum dignissimos sit! Exercitationem reiciendis quas voluptatibus tempora.</p>
           </div>
           <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://static.pexels.com/photos/40797/wild-flowers-flowers-plant-macro-40797.jpeg')"}}>
-            <h2>Carousel Cell Title 2</h2>
+            <h1>Carousel Cell Title 2</h1>
             <p>Iure quod itaque maiores optio eveniet assumenda omnis, similique. Possimus, expedita, ea?</p>
           </div>
           <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://www.almanac.com/sites/default/files/birth_month_flowers-primary-1920x1280px_pixabay.jpg')"}}>
-            <h2>Carousel Cell Title 3</h2>
+            <h1>Carousel Cell Title 3</h1>
             <p>Obcaecati consequatur quaerat eaque, beatae eligendi possimus, repudiandae magni quas dolores, sit voluptatem iusto laborum. Incidunt fuga sed dicta nisi voluptates eaque, beatae numquam officia animi, vel.</p>
           </div>
         </div>
         <aside className="c-marquee__sidebar">
           <section className="o-columnbox2">
             <header>
-              <h2>About</h2>
+              <h1>About</h1>
             </header>
             <div className="c-marquee__sidebar-truncate" ref={element => this.element = element}>
               <p>Doloribus reiciendis quasi neque necessitatibus fugiat natus pariatur impedit iure temporibus rerum totam aspernatur repudiandae dolor!
