@@ -53,7 +53,7 @@ class JournalItemMultimediaLayout extends React.Component {
                       <video src="images/sample_video.mp4" controls poster="images/sample_video-poster.jpg"></video>
                     </div>
                     <div className="o-mediafeature__title-bar">
-                      <h2>New Horizons Kuiper Belt Fly-Through</h2>
+                      <h1>New Horizons Kuiper Belt Fly-Through</h1>
                       <button>Download</button>
                     </div>
                     <div className="o-mediafeature__description">
@@ -93,13 +93,13 @@ class JournalItemMultimediaLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Jump To</h2>
+                <h1>Jump To</h1>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Related Items</h2>
+                <h1>Related Items</h1>
               </header>
               <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
               <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>
