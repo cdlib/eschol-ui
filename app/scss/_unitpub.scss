@@ -1,5 +1,27 @@
 // ##### Unit Publication Component ##### //
 
 .c-unitpub {
-  border: $bgreen;
+  margin-bottom: $spacing-md;
+
+  .c-pub {
+    padding-left: 4%;
+  }
+
+}
+
+.c-unitpub__heading {
+  @extend %o-heading2a;
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+}
+
+.c-unitpub__works {
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
 }
