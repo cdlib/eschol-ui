@@ -28,7 +28,7 @@ class JournalSplashyLayout extends React.Component {
               <ItemActionsComp />
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
                   <h1 className="c-pub__heading">
