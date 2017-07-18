@@ -46,7 +46,7 @@ class JournalSimpleLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox2">
               <header>
-                <h2>About</h2>
+                <h1>About</h1>
               </header>
               <div className="o-columnbox__truncate1" ref={element => this.element = element}>
                 <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
@@ -103,24 +103,24 @@ class JournalSimpleLayout extends React.Component {
                 </details>
               </div>
               <div className="c-pub">
-                <h2 className="c-pub__heading">
+                <h1 className="c-pub__heading">
                   <a href="">Volume 41, Issue 1, 2012</a>
-                </h2>
+                </h1>
                 <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures</div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!
                 </p>
               </div>
-              <h3 className="o-heading3">Front Matter</h3>
+              <h2 className="o-heading3">Front Matter</h2>
               {/* PubReviewComp Example */}
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h2 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                     {/* links can be left out of the list if no links are desired: */}
@@ -151,12 +151,12 @@ class JournalSimpleLayout extends React.Component {
 
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h2 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Comment on Ginsborg et al</a>
-                  </h2>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Grew, Raymond</a></li>
@@ -172,12 +172,12 @@ class JournalSimpleLayout extends React.Component {
               {/* PubReviewComp Example */}
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h2 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                     {/* links can be left out of the list if no links are desired: */}
@@ -205,52 +205,16 @@ class JournalSimpleLayout extends React.Component {
                   <MediaListComp />
                 </div>
               </div>
-              <h3 className="o-heading3">Articles</h3>
+              <h2 className="o-heading3">Articles</h2>
               {/* PubReviewComp Example */}
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h2 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
-                  <div className="c-authorlist">
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                      <li><a href="">Smith, Sheryl T</a></li>
-                      <li><a href="">Barshop, William</a></li>
-                      <li><a href="">Dirkes, William</a></li>
-                      <li><a href="">Dothager, Matthew</a></li>
-                      <li><a href="">Lee, Paul</a></li>
-                      <li><a href="">Wong, Jeannette</a></li>
-                      <li><a href="">Xiong, David</a></li>
-                      <li><a href="">Yuan, Han</a></li>
-                      <li><a href="">Bedard James E J</a></li>
-                      <li><a href="">Machone, Joshua F</a></li>
-                      <li><a href="">Patterson, Seantay D</a></li>
-                      <li><a href="">Price, Amber L</a></li>
-                      <li><a href="">Turner, Bryce A</a></li>
-                      <li><a href="">Robic, Srebrenka</a></li>
-                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
-                    </ul>
-                  </div>
-                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
-                  <MediaListComp />
-                </div>
-              </div>
-              {/* PubReviewComp Example */}
-              <div className="c-pubpreview">
-                <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
-                </a>
-                <div className="c-pub">
-                  <h2 className="c-pub__heading">
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                     {/* links can be left out of the list if no links are desired: */}
@@ -281,12 +245,12 @@ class JournalSimpleLayout extends React.Component {
               {/* PubReviewComp Example */}
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
-                  <img src="http://placehold.it/150x200?text=Image" alt="" />
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h2 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h2>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                     {/* links can be left out of the list if no links are desired: */}
@@ -314,12 +278,48 @@ class JournalSimpleLayout extends React.Component {
                   <MediaListComp />
                 </div>
               </div>
-              <h3 className="o-heading3">Book Reviews</h3>
+              {/* PubReviewComp Example */}
+              <div className="c-pubpreview">
+                <a className="c-pubpreview__img" href="">
+                  <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
+                </a>
+                <div className="c-pub">
+                  <h3 className="c-pub__heading">
+                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
+                  </h3>
+                  <div className="c-authorlist">
+                    <ul className="c-authorlist__list">
+                    {/* links can be left out of the list if no links are desired: */}
+                      <li><a href="">Leung, Wilson</a></li>
+                      <li><a href="">Shaffer, Christopher D</a></li>
+                      <li><a href="">Reed, Laura K</a></li>
+                      <li><a href="">Smith, Sheryl T</a></li>
+                      <li><a href="">Barshop, William</a></li>
+                      <li><a href="">Dirkes, William</a></li>
+                      <li><a href="">Dothager, Matthew</a></li>
+                      <li><a href="">Lee, Paul</a></li>
+                      <li><a href="">Wong, Jeannette</a></li>
+                      <li><a href="">Xiong, David</a></li>
+                      <li><a href="">Yuan, Han</a></li>
+                      <li><a href="">Bedard James E J</a></li>
+                      <li><a href="">Machone, Joshua F</a></li>
+                      <li><a href="">Patterson, Seantay D</a></li>
+                      <li><a href="">Price, Amber L</a></li>
+                      <li><a href="">Turner, Bryce A</a></li>
+                      <li><a href="">Robic, Srebrenka</a></li>
+                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
+                    </ul>
+                  </div>
+                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <MediaListComp />
+                </div>
+              </div>
+              <h2 className="o-heading3">Book Reviews</h2>
               {/* PubComp Example */}
               <div className="c-pub">
-                <h2 className="c-pub__heading">
+                <h3 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                </h2>
+                </h3>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
@@ -348,9 +348,9 @@ class JournalSimpleLayout extends React.Component {
               </div>
               {/* PubComp Example */}
               <div className="c-pub">
-                <h2 className="c-pub__heading">
+                <h3 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                </h2>
+                </h3>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
@@ -379,9 +379,9 @@ class JournalSimpleLayout extends React.Component {
               </div>
               {/* PubComp Example */}
               <div className="c-pub">
-                <h2 className="c-pub__heading">
+                <h3 className="c-pub__heading">
                   <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                </h2>
+                </h3>
                 <div className="c-authorlist">
                   <ul className="c-authorlist__list">
                   {/* links can be left out of the list if no links are desired: */}
@@ -413,13 +413,13 @@ class JournalSimpleLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Journal Information</h2>
+                <h1>Journal Information</h1>
               </header>
               <JournalInfoComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Featured Articles</h2>
+                <h1>Featured Articles</h1>
                 </header>
                 <p><a className="o-textlink__secondary" href="">Entre la ficción y el periodismo: Cambio social y la crónica mexicana contemporánea</a> <br/> Nadeau, Evelyn</p> 
                 <p><a className="o-textlink__secondary" href="">Journalism in Catalonia During Francoism</a> <br/> Reguant, Monserrat</p>
@@ -429,7 +429,7 @@ class JournalSimpleLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Follow us on Twitter</h2>
+                <h1>Follow us on Twitter</h1>
               </header>
               [content to go here]
             </section>
