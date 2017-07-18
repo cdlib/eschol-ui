@@ -80,7 +80,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 <details className="c-togglecontent" open>
                   <summary>Main Content</summary>
                   <div className="o-itemunavailable__embargoed">
-                    <h2 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h2>
+                    <h1 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h1>
                     <p>You may have access to the publisher's version here:</p>
                     <a href="" className="o-textlink__secondary">http://www.ieee-security.org/TC/SPW2014/papers/5103a251.pdf</a>
                     <a href="" className="o-textlink__secondary">Notify me by email when this item becomes available</a>
@@ -92,13 +92,13 @@ class SeriesItemEmbargoedLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Jump To</h2>
+                <h1>Jump To</h1>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h2>Related Items</h2>
+                <h1>Related Items</h1>
               </header>
               <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
               <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>

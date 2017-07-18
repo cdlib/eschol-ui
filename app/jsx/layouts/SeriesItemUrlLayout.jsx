@@ -84,7 +84,7 @@ class SeriesItemUrlLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Related Items</h2>
+                <h1>Related Items</h1>
               </header>
               <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
               <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>
