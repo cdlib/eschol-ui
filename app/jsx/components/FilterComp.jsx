@@ -7,7 +7,7 @@ class FilterComp extends React.Component {
     return (
       <div className="c-filter">
       {/* This component's default state is 'inactive' (no filters applied). To set it to 'active' (filters applied), append the base className 'c-filter' above to 'c-filter--active' */}
-        <h2 className="c-filter__heading">Your Search: “Open Access”</h2>
+        <h1 className="c-filter__heading">Your Search: “Open Access”</h1>
         <div className="c-filter__results">Results: 12 pages, 12,023 works</div>
         <div className="c-filter__inactive-note">No filters applied</div>
         <details className="c-filter__active">

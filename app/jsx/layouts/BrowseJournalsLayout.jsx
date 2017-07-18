@@ -72,7 +72,7 @@ class BrowseJournalsLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox1">
               <header>
-                <h2>Journals</h2>
+                <h1>Journals</h1>
               </header>
               <WellComp />
               <div className="o-input__inline">
@@ -129,7 +129,7 @@ class BrowseJournalsLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h2>Featured Journals</h2>
+                <h1>Featured Journals</h1>
               </header>
               <a href="" className="o-journal1">
                 <figure>
