@@ -55,9 +55,9 @@ class UnitSimpleLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="c-campusselector">
-            <h2 className="c-campusselector__heading">
+            <div className="c-campusselector__heading">
               <a href="">UC Riverside</a>
-            </h2>
+            </div>
             <details className="c-campusselector__selector">
               <summary aria-label="select campus"></summary>
               <div className="c-campusselector__menu">
