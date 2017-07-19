@@ -12,6 +12,7 @@ class Home extends React.Component {
             <ul>
               <li><a href="#browsecampuses">Browse Campuses</a></li>
               <li><a href="#browsejournals">Browse Journals</a></li>
+              <li><a href="#error404">Error 404</a></li>
               <li><a href="#searchlayout">Search</a></li>
               <li><a href="#about">Static</a></li>
             </ul>

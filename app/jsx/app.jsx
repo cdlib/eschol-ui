@@ -32,6 +32,7 @@ import DepositWizardDisp from './display/DepositWizardDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
+import Error404Layout from './layouts/Error404Layout.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
@@ -145,6 +146,7 @@ ReactDOM.render((
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />
+      <Route path="/error404" component={Error404Layout} />
       <Route path="/export" component={ExportDisp} />
       <Route path="/imagecontent" component={ImageContentDisp} />
       <Route path="/input" component={InputDisp} />
