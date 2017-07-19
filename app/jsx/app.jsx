@@ -77,6 +77,7 @@ import Search2Disp from './display/Search2Disp.jsx'
 import SeriesItemEmbargoedLayout from './layouts/SeriesItemEmbargoedLayout.jsx'
 import SeriesItemUrlLayout from './layouts/SeriesItemUrlLayout.jsx'
 import SeriesItemWithdrawnLayout from './layouts/SeriesItemWithdrawnLayout.jsx'
+import ServerErrorDisp from './display/ServerErrorDisp.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
 import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SkipNavDisp from './display/SkipNavDisp.jsx'
@@ -192,6 +193,7 @@ ReactDOM.render((
       <Route path="/seriesitemembargoed" component={SeriesItemEmbargoedLayout} />
       <Route path="/seriesitemurl" component={SeriesItemUrlLayout} />
       <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
+      <Route path="/servererror" component={ServerErrorDisp} />
       <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/skipnav" component={SkipNavDisp} />
       <Route path="/share" component={ShareDisp} />
