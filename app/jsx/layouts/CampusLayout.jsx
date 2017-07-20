@@ -66,13 +66,14 @@ class CampusLayout extends React.Component {
               <header>
                 <h2>Campus Contact</h2>
               </header>
-              <a className="o-textlink__primary" href="">Rachael Samberg</a>
-              <br/>Scholarly Communication Officer,
-              <br/>University of California, Berkeley
-              <br/>212/218 Doe Library
-              <br/>UC Berkeley
-              <br/>Berkeley, CA 94720-6000
-              <br/>(510) 664-9815
+              <p><a className="o-textlink__secondary" href="">Rachael Samberg</a>
+                <br/>Scholarly Communication Officer,
+                <br/>University of California, Berkeley
+                <br/>212/218 Doe Library
+                <br/>UC Berkeley
+                <br/>Berkeley, CA 94720-6000
+                <br/>(510) 664-9815
+              </p>
             </section>
             <section className="o-columnbox1">
               <header>
