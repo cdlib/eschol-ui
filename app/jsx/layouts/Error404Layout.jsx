@@ -5,6 +5,7 @@ import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
+import ServerErrorComp from '../components/ServerErrorComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class Error404Layout extends React.Component {
@@ -65,7 +66,7 @@ class Error404Layout extends React.Component {
         <div className="c-columns">
           <main id="maincontent">
             <section className="o-columnbox1">
-              [Error component to go here]
+              <ServerErrorComp />
             </section>
           </main>
         </div>
