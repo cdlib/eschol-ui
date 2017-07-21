@@ -1,13 +1,13 @@
 // ##### Breadcrumb Component ##### //
 
 .c-breadcrumb {
-  margin-bottom: $spacing-sm;
+  margin-bottom: $spacing-base;
 
   a {
     @extend %o-textlink__secondary;
     display: inline-flex;
-    margin-bottom: $spacing-sm;
-    font-size: 1.1em;
+    margin-bottom: $spacing-base;
+    font-size: 0.9em;
 
     &:not(:last-child) {
 
