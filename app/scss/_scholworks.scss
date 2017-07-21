@@ -83,7 +83,7 @@ $scholworks-tag-height: 1.4em;
 }
 
 .c-scholworks__publication {
-  margin: (-$spacing-md) 0 $spacing-md;
+  margin-bottom: $spacing-md;
 
   a {
     @extend %o-textlink__secondary;
