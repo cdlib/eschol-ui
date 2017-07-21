@@ -95,7 +95,11 @@ $scholworks-tag-height: 1.4em;
   overflow: hidden; // hide text beyond max-height
 
   @include bp(screen1) {
-    max-height: 2.4em; // truncate beyond 2 lines per jquery.dotdotdot
+    max-height: 2.7em; // truncate beyond 2 lines per jquery.dotdotdot
+  }
+
+  p {
+    line-height: $line-height2;
   }
 
 }

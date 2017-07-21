@@ -11,6 +11,10 @@ $togglecontent-spacing: 25px;
     border-top: 1px solid $color-light-gray;
   }
 
+  p {
+    line-height: $line-height2;
+  }
+
   @include bp(screen2) {
     padding: 0 $togglecontent-spacing;
   }
