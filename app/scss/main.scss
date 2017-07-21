@@ -2,9 +2,9 @@
 
 // ***** Global Settings ***** //
 
+@import 'breakpoints';
 @import 'variables';
 @import 'mixins';
-@import 'breakpoints';
 
 // ***** Vendor Libraries ***** //
 
@@ -99,6 +99,11 @@ body {
   background-color: lighten($color-light-gray, 15%);
   font-family: 'KievitWeb';
   overflow-x: hidden;
+
+  @include bp (screen2) {
+    padding: $spacing-sm $spacing-md 0;
+  }
+
 }
 
 p {
