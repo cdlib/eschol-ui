@@ -1,7 +1,7 @@
 // ##### Column Box Objects ##### //
 
 %o-columnbox {
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
   padding: $spacing-sm $spacing-sm 0;
 
   header {
@@ -29,6 +29,10 @@
 
     }
 
+  }
+
+  @include bp(screen2) {
+    margin-bottom: $spacing-md;
   }
 
 }
