@@ -66,10 +66,8 @@ $scholworks-tag-height: 1.4em;
 }
 
 .c-scholworks__heading {
+  @extend %o-heading1a;
   max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
-  margin: 0 0 $spacing-md;
-  font-size: 1.2em;
-  font-weight: bold;
   overflow: hidden; // hide text beyond max-height
 
   @include bp(screen1) {
