@@ -43,7 +43,7 @@ class JournalItemMultimediaLayout extends React.Component {
                   <summary>Abstract</summary>
                   <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
                   <div className="c-well">
-                    Many UC-authored scholarly publications are freely available on this site because of the UC Academic Senate’s Open Access Policy. <a className="o-textlink__secondary" href="">Let us know how this access is important for you</a>.
+                    Many UC-authored scholarly publications are freely available on this site because of the UC Academic Senate’s Open Access Policy. <a href="">Let us know how this access is important for you</a>.
                   </div>
                 </details>
                 <details className="c-togglecontent" open>
