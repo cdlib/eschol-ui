@@ -46,9 +46,8 @@
   @extend %interactive-element-size;
   display: inline-flex;
   align-items: center;
-  padding-right: $spacing-sm;
-  padding-left: 2em;
-  background: no-repeat left 0.5em center / 1em;
+  padding-left: 1.5em;
+  background: no-repeat left center / 1em;
 }
 
 .o-textlink__left-icon {
