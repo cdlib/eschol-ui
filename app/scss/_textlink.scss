@@ -28,7 +28,7 @@
   @extend %o-textlink__secondary;
 }
 
-%o-textlink__colorless {
+%o-textlink__black {
   color: inherit;
   text-decoration: none;
 
@@ -38,6 +38,6 @@
 
 }
 
-.o-textlink__colorless {
-  @extend %o-textlink__colorless;
+.o-textlink__black {
+  @extend %o-textlink__black;
 }
