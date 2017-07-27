@@ -15,6 +15,9 @@ class TextlinkObj extends React.Component {
         <div>
           <a href="" className="o-textlink__black">Black Link</a>
         </div>
+        <div>
+          <a href="" className="o-textlink__left-icon">Left Icon Link</a>
+        </div>
       </div>
     )
   }

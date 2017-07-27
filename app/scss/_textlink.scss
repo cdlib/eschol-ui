@@ -41,3 +41,20 @@
 .o-textlink__black {
   @extend %o-textlink__black;
 }
+
+%o-textlink__left-icon {
+  @extend %interactive-element-size;
+  display: inline-flex;
+  align-items: center;
+  padding-right: $spacing-sm;
+  padding-left: 2em;
+  background: no-repeat left 0.5em center / 1em;
+}
+
+.o-textlink__left-icon {
+  @extend %o-textlink__left-icon;
+  // Default textlink style:
+  @extend %o-textlink__secondary;
+  // Default icon below. To use a different icon, create a new class, @extend with %o-textlink__left-icon, and apply background-image property with different image path:
+  background-image: inline('../images/icon_pdf-teal.svg');
+}
