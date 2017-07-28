@@ -79,6 +79,7 @@
 
 .c-campusselector__sub-heading {
   @extend %nav-item;
+  border-bottom: none;
   background-color: $color-light-gray;
   color: $color-black;
 }
@@ -87,7 +88,11 @@
 
   a {
     @extend %nav-item;
-    border-top: none;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+
   }
 
 }
