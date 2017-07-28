@@ -85,12 +85,20 @@
 }
 
 .o-customselector__items {
+  @extend %no-bullet-ul;
 
-  a {
-    @extend %nav-item;
+  li {
 
     &:not(:first-child) {
-      border-top: none;
+
+      a {
+        border-top: none;
+      }
+      
+    }
+
+    a {
+      @extend %nav-item;
     }
 
   }

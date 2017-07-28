@@ -16,23 +16,23 @@ class CustomSelectorObj extends React.Component {
         <div className="o-customselector">
           <a className="o-customselector__heading" href="">UC Office of the President</a>
           <details className="o-customselector__selector">
-            <summary aria-label="select campus"></summary>
+            <summary aria-label="Select a different item"></summary>
             <div className="o-customselector__menu">
               <div className="o-customselector__sub-heading" id="o-customselector__sub-heading">eScholarship at &hellip;</div>
-              <div className="o-customselector__items" aria-labelledby="o-customselector__sub-heading" role="list">
-                <a href="" role="listitem">UC Berkeley</a>
-                <a href="" role="listitem">UC Davis</a>
-                <a href="" role="listitem">UC Irvine</a>
-                <a href="" role="listitem">UCLA</a>
-                <a href="" role="listitem">UC Merced</a>
-                <a href="" role="listitem">UC Riverside</a>
-                <a href="" role="listitem">UC San Diego</a>
-                <a href="" role="listitem">UC San Francisco</a>
-                <a href="" role="listitem">UC Santa Barbara</a>
-                <a href="" role="listitem">UC Santa Cruz</a>
-                <a href="" role="listitem">UC Office of the President</a>
-                <a href="" role="listitem">UC Press</a>
-              </div>
+              <ul className="o-customselector__items">
+                <li><a href="">UC Berkeley</a></li>
+                <li><a href="">UC Davis</a></li>
+                <li><a href="">UC Irvine</a></li>
+                <li><a href="">UCLA</a></li>
+                <li><a href="">UC Merced</a></li>
+                <li><a href="">UC Riverside</a></li>
+                <li><a href="">UC San Diego</a></li>
+                <li><a href="">UC San Francisco</a></li>
+                <li><a href="">UC Santa Barbara</a></li>
+                <li><a href="">UC Santa Cruz</a></li>
+                <li><a href="">UC Office of the President</a></li>
+                <li><a href="">UC Press</a></li>
+              </ul>
             </div>
           </details>
         </div>
@@ -46,21 +46,21 @@ class CustomSelectorObj extends React.Component {
         <div className="o-customselector">
           <a className="o-customselector__heading" href="">Volume 6, Issue 2, 2016</a>
           <details className="o-customselector__selector">
-            <summary aria-label="select campus"></summary>
+            <summary aria-label="Select a different item"></summary>
             <div className="o-customselector__menu">
-              <div className="o-customselector__items" role="list">
-                <a href="" role="listitem">Volume 6, Issue 1, 2016</a>
-                <a href="" role="listitem">Volume 5, Issue 2, 2015</a>
-                <a href="" role="listitem">Volume 5, Issue 1, 2015</a>
-                <a href="" role="listitem">Volume 4, Issue 2, 2014</a>
-                <a href="" role="listitem">Volume 4, Issue 1, 2014</a>
-                <a href="" role="listitem">Volume 3, Issue 2, 2013</a>
-                <a href="" role="listitem">Volume 3, Issue 1, 2013</a>
-                <a href="" role="listitem">Volume 2, Issue 2, 2012</a>
-                <a href="" role="listitem">Volume 2, Issue 1, 2012</a>
-                <a href="" role="listitem">Volume 1, Issue 2, 2011</a>
-                <a href="" role="listitem">Volume 1, Issue 1, 2011</a>
-              </div>
+              <ul className="o-customselector__items">
+                <li><a href="">Volume 6, Issue 1, 2016</a></li>
+                <li><a href="">Volume 5, Issue 2, 2015</a></li>
+                <li><a href="">Volume 5, Issue 1, 2015</a></li>
+                <li><a href="">Volume 4, Issue 2, 2014</a></li>
+                <li><a href="">Volume 4, Issue 1, 2014</a></li>
+                <li><a href="">Volume 3, Issue 2, 2013</a></li>
+                <li><a href="">Volume 3, Issue 1, 2013</a></li>
+                <li><a href="">Volume 2, Issue 2, 2012</a></li>
+                <li><a href="">Volume 2, Issue 1, 2012</a></li>
+                <li><a href="">Volume 1, Issue 2, 2011</a></li>
+                <li><a href="">Volume 1, Issue 1, 2011</a></li>
+              </ul>
             </div>
           </details>
         </div>
