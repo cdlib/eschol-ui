@@ -43,7 +43,27 @@ class CustomSelectorObj extends React.Component {
           <li>No item group sub-heading</li>
         </ul>
 
-        [to be built]
+        <div className="o-customselector">
+          <a className="o-customselector__heading" href="">Volume 6, Issue 2, 2016</a>
+          <details className="o-customselector__selector">
+            <summary aria-label="select campus"></summary>
+            <div className="o-customselector__menu">
+              <div className="o-customselector__items" role="list">
+                <a href="" role="listitem">Volume 6, Issue 1, 2016</a>
+                <a href="" role="listitem">Volume 5, Issue 2, 2015</a>
+                <a href="" role="listitem">Volume 5, Issue 1, 2015</a>
+                <a href="" role="listitem">Volume 4, Issue 2, 2014</a>
+                <a href="" role="listitem">Volume 4, Issue 1, 2014</a>
+                <a href="" role="listitem">Volume 3, Issue 2, 2013</a>
+                <a href="" role="listitem">Volume 3, Issue 1, 2013</a>
+                <a href="" role="listitem">Volume 2, Issue 2, 2012</a>
+                <a href="" role="listitem">Volume 2, Issue 1, 2012</a>
+                <a href="" role="listitem">Volume 1, Issue 2, 2011</a>
+                <a href="" role="listitem">Volume 1, Issue 1, 2011</a>
+              </div>
+            </div>
+          </details>
+        </div>
 
       </div>
     )
