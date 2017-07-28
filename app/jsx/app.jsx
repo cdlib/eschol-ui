@@ -27,6 +27,7 @@ import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
+import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
 import DepositWizardDisp from './display/DepositWizardDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
@@ -142,6 +143,7 @@ ReactDOM.render((
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
       <Route path="/columns" component={ColumnsDisp} />
+      <Route path="/customselector" component={CustomSelectorDisp} />
       <Route path="/datatable" component={DataTableDisp} />
       <Route path="/depositwizard" component={DepositWizardDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
