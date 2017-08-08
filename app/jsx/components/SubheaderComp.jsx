@@ -1,13 +1,36 @@
 // ##### Subheader Component ##### //
 
 import React from 'react'
-import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 
 class SubheaderComp extends React.Component {
   render() {
     return (
       <div className="c-subheader">
-        <CampusSelectorComp />
+        <div className="o-customselector">
+          <h1 className="o-customselector__heading--campus">
+            <a href="">UC Office of the President</a>
+          </h1>
+          <details className="o-customselector__selector">
+            <summary aria-label="Select a different item"></summary>
+            <div className="o-customselector__menu">
+              <div className="o-customselector__sub-heading" id="o-customselector__sub-heading">eScholarship at &hellip;</div>
+              <ul className="o-customselector__items">
+                <li><a href="">UC Berkeley</a></li>
+                <li><a href="">UC Davis</a></li>
+                <li><a href="">UC Irvine</a></li>
+                <li><a href="">UCLA</a></li>
+                <li><a href="">UC Merced</a></li>
+                <li><a href="">UC Riverside</a></li>
+                <li><a href="">UC San Diego</a></li>
+                <li><a href="">UC San Francisco</a></li>
+                <li><a href="">UC Santa Barbara</a></li>
+                <li><a href="">UC Santa Cruz</a></li>
+                <li><a href="">UC Office of the President</a></li>
+                <li><a href="">UC Press</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
         <a className="c-subheader__banner" href="">
           <img src="images/temp_journal-banner.png" alt=""/>
         </a>
