@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
-import CampusSelectorComp from '../components/CampusSelectorComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
@@ -18,26 +17,28 @@ class SeriesItemEmbargoedLayout extends React.Component {
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <div className="c-subheader">
-          <div className="c-campusselector">
-            <a className="c-campusselector__heading" href="">UCLA</a>
-            <details className="c-campusselector__selector">
-              <summary aria-label="select campus"></summary>
-              <div className="c-campusselector__menu">
-                <div className="c-campusselector__sub-heading" id="c-campusselector__sub-heading">eScholarship at &hellip;</div>
-                <div className="c-campusselector__items" aria-labelledby="c-campusselector__sub-heading" role="list">
-                  <a href="" role="listitem">UC Berkeley</a>
-                  <a href="" role="listitem">UC Davis</a>
-                  <a href="" role="listitem">UC Irvine</a>
-                  <a href="" role="listitem">UCLA</a>
-                  <a href="" role="listitem">UC Merced</a>
-                  <a href="" role="listitem">UC Riverside</a>
-                  <a href="" role="listitem">UC San Diego</a>
-                  <a href="" role="listitem">UC San Francisco</a>
-                  <a href="" role="listitem">UC Santa Barbara</a>
-                  <a href="" role="listitem">UC Santa Cruz</a>
-                  <a href="" role="listitem">UC Office of the President</a>
-                  <a href="" role="listitem">UC Press</a>
-                </div>
+          <div className="o-customselector">
+            <h1 className="o-customselector__heading--campus">
+              <a href="">UCLA</a>
+            </h1>
+            <details className="o-customselector__selector">
+              <summary aria-label="Select a different item"></summary>
+              <div className="o-customselector__menu">
+                <div className="o-customselector__sub-heading" id="o-customselector__sub-heading">eScholarship at &hellip;</div>
+                <ul className="o-customselector__items">
+                  <li><a href="">UC Berkeley</a></li>
+                  <li><a href="">UC Davis</a></li>
+                  <li><a href="">UC Irvine</a></li>
+                  <li><a href="">UCLA</a></li>
+                  <li><a href="">UC Merced</a></li>
+                  <li><a href="">UC Riverside</a></li>
+                  <li><a href="">UC San Diego</a></li>
+                  <li><a href="">UC San Francisco</a></li>
+                  <li><a href="">UC Santa Barbara</a></li>
+                  <li><a href="">UC Santa Cruz</a></li>
+                  <li><a href="">UC Office of the President</a></li>
+                  <li><a href="">UC Press</a></li>
+                </ul>
               </div>
             </details>
           </div>

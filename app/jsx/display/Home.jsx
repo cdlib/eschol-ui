@@ -63,7 +63,7 @@ class Home extends React.Component {
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
-          <li><a href="#campusselector">Campus Selector</a> (to be replaced with Custom Selector object above)</li>
+          <li><a href="#campusselector">Campus Selector</a> (depreciated; replaced by Custom Selector object above)</li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#datatable">Data Table</a></li>
