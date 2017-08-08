@@ -12,10 +12,19 @@
 
 }
 
-.o-customselector__heading {
+%o-customselector__heading {
   margin: 0 $spacing-base 0 0;
-  font-size: 1em;
   font-weight: normal;
+}
+
+.o-customselector__heading {
+  @extend %o-customselector__heading;
+  font-size: 1.5em;
+}
+
+.o-customselector__heading--campus {
+  @extend %o-customselector__heading;
+  font-size: 1em;
   text-align: right;
 
   @include bp(screen1) {

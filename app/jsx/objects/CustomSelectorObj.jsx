@@ -15,7 +15,7 @@ class CustomSelectorObj extends React.Component {
         </ul>
 
         <div className="o-customselector">
-          <h1 className="o-customselector__heading">
+          <h1 className="o-customselector__heading--campus">
             <a href="">UC Office of the President</a>
           </h1>
           <details className="o-customselector__selector">
