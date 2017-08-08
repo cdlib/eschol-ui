@@ -17,11 +17,13 @@
   font-weight: normal;
 }
 
+// Normal heading:
 .o-customselector__heading {
   @extend %o-customselector__heading;
   font-size: 1.5em;
 }
 
+// Campus selector heading:
 .o-customselector__heading--campus {
   @extend %o-customselector__heading;
   font-size: 1em;
