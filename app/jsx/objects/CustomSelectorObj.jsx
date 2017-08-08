@@ -10,11 +10,14 @@ class CustomSelectorObj extends React.Component {
         <h2>Custom Selector 1</h2>
         <ul>
           <li>Right-aligned heading</li>
+          <li>Heading with link</li>
           <li>Item group sub-heading</li>
         </ul>
 
         <div className="o-customselector">
-          <a className="o-customselector__heading" href="">UC Office of the President</a>
+          <h1 className="o-customselector__heading">
+            <a href="">UC Office of the President</a>
+          </h1>
           <details className="o-customselector__selector">
             <summary aria-label="Select a different item"></summary>
             <div className="o-customselector__menu">
@@ -40,11 +43,12 @@ class CustomSelectorObj extends React.Component {
         <h2>Custom Selector 2</h2>
         <ul>
           <li>Left-aligned heading</li>
+          <li>Heading without link</li>
           <li>No item group sub-heading</li>
         </ul>
 
         <div className="o-customselector">
-          <a className="o-customselector__heading" href="">Volume 6, Issue 2, 2016</a>
+          <h1 className="o-customselector__heading">Volume 6, Issue 2, 2016</h1>
           <details className="o-customselector__selector">
             <summary aria-label="Select a different item"></summary>
             <div className="o-customselector__menu">

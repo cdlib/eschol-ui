@@ -13,9 +13,9 @@
 }
 
 .o-customselector__heading {
-  @extend %o-textlink__black;
-  margin-right: $spacing-base;
+  margin: 0 $spacing-base 0 0;
   font-size: 1em;
+  font-weight: normal;
   text-align: right;
 
   @include bp(screen1) {
@@ -24,6 +24,10 @@
 
   @include bp(screen3) {
     font-size: 1.5em;
+  }
+
+  a {
+    @extend %o-textlink__black;
   }
 
 }
