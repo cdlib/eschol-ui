@@ -9,7 +9,7 @@
     position: relative;
     align-items: flex-end;
   }
-border: $bred;
+
 }
 
 %o-customselector__heading {
@@ -57,10 +57,6 @@ border: $bred;
       left: 0;
       background: inline('../images/icon_arrow-down.svg') no-repeat center / 0.8em;
       content: '';
-
-      @include bp(screen3) {
-        bottom: -0.4em;
-      }
 
     }
 
