@@ -102,10 +102,28 @@ class JournalSimpleLayout extends React.Component {
                   </div>
                 </details>
               </div>
+              <div className="o-customselector">
+                <h1 className="o-customselector__heading">Volume 6, Issue 2, 2016</h1>
+                <details className="o-customselector__selector">
+                  <summary aria-label="Select a different item"></summary>
+                  <div className="o-customselector__menu">
+                    <ul className="o-customselector__items">
+                      <li><a href="">Volume 6, Issue 1, 2016</a></li>
+                      <li><a href="">Volume 5, Issue 2, 2015</a></li>
+                      <li><a href="">Volume 5, Issue 1, 2015</a></li>
+                      <li><a href="">Volume 4, Issue 2, 2014</a></li>
+                      <li><a href="">Volume 4, Issue 1, 2014</a></li>
+                      <li><a href="">Volume 3, Issue 2, 2013</a></li>
+                      <li><a href="">Volume 3, Issue 1, 2013</a></li>
+                      <li><a href="">Volume 2, Issue 2, 2012</a></li>
+                      <li><a href="">Volume 2, Issue 1, 2012</a></li>
+                      <li><a href="">Volume 1, Issue 2, 2011</a></li>
+                      <li><a href="">Volume 1, Issue 1, 2011</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
               <div className="c-pub">
-                <h1 className="c-pub__heading">
-                  <a href="">Volume 41, Issue 1, 2012</a>
-                </h1>
                 <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures</div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!
