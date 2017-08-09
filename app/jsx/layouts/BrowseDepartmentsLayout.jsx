@@ -28,8 +28,8 @@ class BrowseDepartmentsLayout extends React.Component {
       <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <div className="c-subheader">
-          <div className="o-customselector">
-            <h1 className="o-customselector__heading--campus">
+          <div className="o-customselector--campus">
+            <h1 className="o-customselector__heading">
               <a href="">UC Office of the President</a>
             </h1>
             <details className="o-customselector__selector">
