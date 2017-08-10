@@ -47,7 +47,7 @@ class CarouselComp extends React.Component {
     return (
       <div className="c-marquee">
         <div className="c-marquee__carousel">
-          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://static.pexels.com/photos/27714/pexels-photo-27714.jpg')"}}>
+          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://flowerwallpaper.us/wp-content/uploads/Purple-Crocus-Flowers.jpg')"}}>
             <h1>Carousel Cell Title 1</h1>
             <p>Totam iusto vero, omnis ut modi, possimus fugiat consequuntur incidunt eius delectus, enim commodi dicta itaque! Dolores quis natus itaque delectus fuga. Id debitis, corporis, suscipit placeat architecto doloremque reprehenderit deleniti in iure assumenda cum dignissimos sit! Exercitationem reiciendis quas voluptatibus tempora.</p>
           </div>
