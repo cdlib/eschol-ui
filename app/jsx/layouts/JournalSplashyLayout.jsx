@@ -11,8 +11,18 @@ import MediaListComp from '../components/MediaListComp.jsx'
 import PubComp from '../components/PubComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import $ from 'jquery'
+
+// Load dotdotdot in browser but not server:
+if (!(typeof document === "undefined")) {
+  const dotdotdot = require('jquery.dotdotdot')
+}
 
 class JournalSplashyLayout extends React.Component {
+  componentDidMount() {
+    $('.c-pub__heading, .c-pub__abstract').dotdotdot({watch: 'window'
+    });
+  }
   render() {
     return (
       <div>
@@ -57,7 +67,10 @@ class JournalSplashyLayout extends React.Component {
                       <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
                     </ul>
                   </div>
-                  <p>Pariatur fuga laborum, qui debitis vitae quaerat quas ab officia, dolor dignissimos ipsum nam ratione unde animi? Officiis rerum unde eveniet natus. Laboriosam tenetur vel, rem culpa maiores non, tempora voluptatibus quasi quos provident exercitationem itaque dolorum quam sequi dolor odio hic accusamus, repellendus ut dignissimos. Labore modi consectetur ullam, iste accusamus!</p>
+                  <div className="c-pub__abstract">
+                    <p>Itaque iure laboriosam est porro ipsam veritatis quidem error nostrum officiis molestias aperiam voluptate voluptas odit suscipit velit, repellendus non, provident quia quibusdam labore. Id consectetur, reiciendis soluta sint earum nam nihil autem tempora aperiam adipisci magnam quidem quia velit, eum quasi veniam magni explicabo quae commodi quod vitae libero. In, officiis! Qui, expedita nihil ipsa quibusdam quia, enim voluptas corrupti placeat.
+                    </p>
+                  </div>
                   <MediaListComp />
                 </div>
               </div>
