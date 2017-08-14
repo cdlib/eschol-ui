@@ -16,7 +16,8 @@ class MediaFileGridComp extends React.Component {
             <a href="">Outer Space Music</a>
           </h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3" aria-label="play audio file">
-            {/* image with o-media__image doesn't extist */}
+            {/* No preview image for this type. To add, use:
+            <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </a>
           <button className="o-mediafile__button">Download</button>
           <div className="o-mediafile__description">
@@ -29,7 +30,8 @@ class MediaFileGridComp extends React.Component {
             <a href="">New Horizons File Archive</a>
           </h2>
           <a className="o-mediafile__link" href="images/sample_audio.mp3">
-            {/* image with o-media__image doesn't extist */}
+            {/* No preview image for this type. To add, use:
+            <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </a>
           <button className="o-mediafile__button">Download</button>
           <div className="o-mediafile__description">
@@ -55,11 +57,11 @@ class MediaFileGridComp extends React.Component {
             <a href="">New Horizons Kuiper Belt Fly-through</a>
           </h2>
           <a className="o-mediafile__link" href="images/sample_video.mp4" aria-label="play video file">
-            <img className="o-mediafile__image" src="images/sample_video-poster.jpg" alt="New horizons data" />
+            {/* No preview image for this type. To add, use:
+            <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </a>
           <button className="o-mediafile__button">Download</button>
           <div className="o-mediafile__description">
-            
           </div>
         </div>
       </div>
