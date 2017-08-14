@@ -1,12 +1,15 @@
 // ##### Media Feature Objects ##### //
 
 %o-mediafeature {
+  display: flex;
+  flex-direction: column;
   margin-bottom: $spacing-md;
   padding-bottom: $spacing-md;
   border-bottom: 1px solid $color-light-gray;
 
   @include headings() {
     @extend %o-heading2;
+    order: 2;
   }
 
 }
@@ -16,8 +19,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  order: 1;
   margin-bottom: $spacing-md;
   background-color: $color-light-gray;
+}
+
+.o-mediafeature__description {
+  order: 3;
 }
 
 .o-mediafeature--audio {
