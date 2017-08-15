@@ -11,7 +11,7 @@ class MediaFileObj extends React.Component {
     return (
       <div>
 
-        <h2>Audio File (no image present)</h2>
+        <h2>Audio File (no preview image)</h2>
 
         <div className="o-mediafile--audio">
           <h2 className="o-mediafile__heading">
@@ -27,7 +27,7 @@ class MediaFileObj extends React.Component {
           </div>
         </div>
 
-        <h2>Data or PDF File (no image present)</h2>
+        <h2>Data or PDF File (no preview image)</h2>
 
         <div className="o-mediafile--data">
           <h2 className="o-mediafile__heading">
@@ -43,7 +43,7 @@ class MediaFileObj extends React.Component {
           </div>
         </div>
 
-        <h2>Image File (with selected state)</h2>
+        <h2>Image File (preview image; selected state)</h2>
 
         <div className="o-mediafile--image--selected">
           <h2 className="o-mediafile__heading">
@@ -58,7 +58,7 @@ class MediaFileObj extends React.Component {
           </div>
         </div>
 
-        <h2>Video File</h2>
+        <h2>Video File (no preview image)</h2>
 
         <div className="o-mediafile--video">
           <h2 className="o-mediafile__heading">
