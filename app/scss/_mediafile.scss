@@ -49,7 +49,7 @@ $mediafile-img-height: 120px;
 
     }
 
-    .o-mediafile__link {
+    .o-mediafile__preview {
       width: calc(50% - #{$spacing-base});
       float: left;
 
@@ -102,7 +102,7 @@ $mediafile-img-height: 120px;
   .o-mediafile--#{$mediafile-type},
   .o-mediafile--#{$mediafile-type}--selected {
 
-    .o-mediafile__link {
+    .o-mediafile__preview {
 
       &::before {
         background-image: inline('../images/#{$mediafile-icon}.svg');
@@ -166,7 +166,7 @@ $mediafile-img-height: 120px;
 
 }
 
-.o-mediafile__link {
+.o-mediafile__preview {
   display: block;
   position: relative;
   height: $mediafile-img-height;
