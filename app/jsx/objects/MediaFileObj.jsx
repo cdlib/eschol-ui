@@ -2,8 +2,27 @@
 
 import React from 'react'
 import $ from 'jquery'
+import ReactModal from 'react-modal'
 
 class MediaFileObj extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      showModal: false
+    };
+    
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+  
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
+
   componentDidMount() {
     $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch: 'window'});
   }
@@ -72,6 +91,32 @@ class MediaFileObj extends React.Component {
           <div className="o-mediafile__description">
             Veritatis veniam quidem voluptatem laborum necessitatibus iure facilis laudantium possimus sequi libero aliquid, adipisci explicabo, itaque odit ut delectus nemo quas, quia neque. Error cum porro pariatur vel ducimus aliquid quo adipisci.
           </div>
+        </div>
+
+        {/* Modal */}
+
+        <div className="c-modal">
+          {/* onClick element below can be a button or link */}
+          <button onClick={this.handleOpenModal}>Trigger Modal</button>
+          <ReactModal 
+             isOpen={this.state.showModal}
+             contentLabel="onRequestClose Example"
+             onRequestClose={this.handleCloseModal}
+             className="c-modal--open"
+             overlayClassName="c-modal__overlay"
+          >
+            <div className="modal__header">
+              <h2>Modal Heading</h2>
+            </div>
+            <div className="modal__content">
+              <p>Modal content goes here.</p>
+            </div>
+            <div className="c-modal__footer">
+              <button className="c-modal__button-close" onClick={this.handleCloseModal}>Cancel</button>
+              <button className="o-button__7">Clear All</button>
+              <button className="o-button__3">Select</button>
+            </div>
+          </ReactModal>
         </div>
 
       </div>
