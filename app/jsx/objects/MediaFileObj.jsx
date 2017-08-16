@@ -34,7 +34,7 @@ class MediaFileObj extends React.Component {
 
         <div className="o-mediafile--audio">
           <h2 className="o-mediafile__heading">
-            <a href="">Outer Space Music</a>
+            <button>Outer Space Music</button>
           </h2>
           <div className="o-mediafile__preview" href="images/sample_audio.mp3" aria-label="play audio file">
             {/* No preview image for this type. To add, use:
@@ -50,7 +50,7 @@ class MediaFileObj extends React.Component {
 
         <div className="o-mediafile--data">
           <h2 className="o-mediafile__heading">
-            <a href="">New Horizons File Archive</a>
+            <button>New Horizons File Archive</button>
           </h2>
           <div className="o-mediafile__preview" href="images/sample_audio.mp3">
             {/* No preview image for this type. To add, use:
@@ -66,7 +66,7 @@ class MediaFileObj extends React.Component {
 
         <div className="o-mediafile--image--selected">
           <h2 className="o-mediafile__heading">
-            <a href="">New Horizons Full Trajectory - Side View</a>
+            <button>New Horizons Full Trajectory - Side View</button>
           </h2>
           <div className="o-mediafile__preview" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
@@ -81,7 +81,7 @@ class MediaFileObj extends React.Component {
 
         <div className="o-mediafile--video">
           <h2 className="o-mediafile__heading">
-            <a href="">New Horizons Kuiper Belt Fly-through</a>
+            <button>New Horizons Kuiper Belt Fly-through</button>
           </h2>
           <div className="o-mediafile__preview" href="images/sample_video.mp4" aria-label="play video file">
             {/* No preview image for this type. To add, use:

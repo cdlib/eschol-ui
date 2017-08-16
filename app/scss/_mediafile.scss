@@ -130,8 +130,8 @@ $mediafile-img-height: 120px;
   background: no-repeat top left / 16px;
   font-weight: normal;
 
-  a {
-    @extend %o-textlink__secondary;
+  button {
+    @extend %o-button__7;
   }
 
   @include bp(screen1) {
