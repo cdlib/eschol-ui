@@ -204,8 +204,8 @@ $mediafile-img-height: 120px;
 
 }
 
-.o-mediafile__button {
-  @extend %o-button__7;
+.o-mediafile__download {
+  @extend %o-textlink__secondary;
   margin-bottom: $spacing-sm;
   float: right;
 

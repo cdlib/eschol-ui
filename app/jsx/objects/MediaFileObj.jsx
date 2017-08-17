@@ -40,7 +40,7 @@ class MediaFileObj extends React.Component {
             {/* No preview image for this type. To add, use:
             <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </div>
-          <button className="o-mediafile__button">Download</button>
+          <a href="" className="o-mediafile__download" download>Download</a>
           <div className="o-mediafile__description">
             Architecto quo praesentium, suscipit, qui est maxime ut repellendus earum odio ab, consequuntur saepe voluptatem commodi dolorum eos adipisci, fugiat tempore ipsa. Reprehenderit corrupti quae ea, veritatis iste, perspiciatis. Ad, reiciendis praesentium!
           </div>
@@ -56,7 +56,7 @@ class MediaFileObj extends React.Component {
             {/* No preview image for this type. To add, use:
             <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </div>
-          <button className="o-mediafile__button">Download</button>
+          <a href="" className="o-mediafile__download" download>Download</a>
           <div className="o-mediafile__description">
             Eaque, qui rerum fugiat sed. Error aperiam quo atque debitis doloremque. Adipisci, ab placeat! Atque vitae blanditiis, fuga necessitatibus harum libero, repudiandae quasi vero repellendus fugiat asperiores placeat tempore qui vel iusto!
           </div>
@@ -71,7 +71,7 @@ class MediaFileObj extends React.Component {
           <div className="o-mediafile__preview" href="images/temp_new-horizons-data.png">
             <img className="o-mediafile__image" src="images/temp_new-horizons-data.png" alt="New horizons data" />
           </div>
-          <button className="o-mediafile__button">Download</button>
+          <a href="" className="o-mediafile__download" download>Download</a>
           <div className="o-mediafile__description">
             Esse nulla ad veritatis dolorum, vitae maxime tenetur nemo. Quod eius corrupti provident nisi ullam, repellendus molestias, aliquam neque nulla dolorem, magnam commodi ratione enim ex, suscipit labore veniam deserunt nam exercitationem!
           </div>
@@ -87,7 +87,7 @@ class MediaFileObj extends React.Component {
             {/* No preview image for this type. To add, use:
             <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </div>
-          <button className="o-mediafile__button">Download</button>
+          <a href="" className="o-mediafile__download" download>Download</a>
           <div className="o-mediafile__description">
             Veritatis veniam quidem voluptatem laborum necessitatibus iure facilis laudantium possimus sequi libero aliquid, adipisci explicabo, itaque odit ut delectus nemo quas, quia neque. Error cum porro pariatur vel ducimus aliquid quo adipisci.
           </div>
