@@ -36,7 +36,7 @@ class MediaFileObj extends React.Component {
           <h2 className="o-mediafile__heading">
             Outer Space Music
           </h2>
-          <div className="o-mediafile__preview" href="images/sample_audio.mp3" onClick={this.handleOpenModal} aria-label="play audio file">
+          <div className="o-mediafile__preview" href="images/sample_audio.mp3" onClick={this.handleOpenModal}>
             {/* No preview image for this type. To add, use:
             <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </div>
@@ -86,7 +86,7 @@ class MediaFileObj extends React.Component {
           <h2 className="o-mediafile__heading">
             New Horizons Kuiper Belt Fly-through
           </h2>
-          <div className="o-mediafile__preview" href="images/sample_video.mp4" aria-label="play video file">
+          <div className="o-mediafile__preview" href="images/sample_video.mp4">
             {/* No preview image for this type. To add, use:
             <img className="o-mediafile__image" src="[image path]" alt="[alt text]" /> */}
           </div>
