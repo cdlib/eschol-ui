@@ -2,9 +2,11 @@
 
 $mediafile-img-height: 120px;
 
-// Space and border styles around these objects are contained within _mediafilegrid.scss
+// The layout grid for Media File objects is set within _mediafilegrid.scss
 
-%o-mediafile {
+// ***** Element Layout ***** //
+
+div[class^='o-mediafile--'] {
   @extend %clearfix;
   position: relative;
 
@@ -14,28 +16,10 @@ $mediafile-img-height: 120px;
 
     @supports (display: grid) {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 1fr auto;
       grid-column-gap: $spacing-sm;
     }
-
-  }
-
-}
-
-// ***** Set layout for heading, link, button, and description elements when --audio, --data, --image, or --video classes are appended to .o-mediafile ***** //
-
-.o-mediafile--audio,
-.o-mediafile--audio--selected,
-.o-mediafile--data,
-.o-mediafile--data--selected,
-.o-mediafile--image,
-.o-mediafile--image--selected,
-.o-mediafile--video,
-.o-mediafile--video--selected {
-  @extend %o-mediafile;
-
-  @include bp(screen1) {
 
     .o-mediafile__heading {
       width: calc(50% - #{$spacing-base});
@@ -84,7 +68,9 @@ $mediafile-img-height: 120px;
 
 }
 
-// Media-specific icons within links:
+// ***** Element Decoration ***** //
+
+// Media-specific icons:
 
 @each $mediafile-type, $mediafile-icon in
   (audio, icon_volume-up-white),
@@ -107,10 +93,7 @@ $mediafile-img-height: 120px;
 
 }
 
-.o-mediafile--audio--selected,
-.o-mediafile--data--selected,
-.o-mediafile--image--selected,
-.o-mediafile--video--selected {
+div[class$='--selected'] {
   padding: $spacing-sm;
   background-color: lighten($color-light-gray, 15%);
 }
