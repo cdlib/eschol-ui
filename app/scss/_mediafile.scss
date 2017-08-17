@@ -49,6 +49,12 @@ $mediafile-img-height: 120px;
 
     }
 
+    .o-mediafile__view {
+      z-index: 5; // stack above o-mediafile__heading
+      grid-column: 2;
+      grid-row: 1;
+    }
+
     .o-mediafile__preview {
       width: calc(50% - #{$spacing-base});
       float: left;
@@ -56,19 +62,6 @@ $mediafile-img-height: 120px;
       @supports (display: grid) {
         width: 100%;
         grid-row: 1 / 4;
-      }
-
-    }
-
-    .o-mediafile__button {
-      position: absolute;
-      bottom: 0;
-      left: calc(50% + #{$spacing-base});
-
-      @supports (display: grid) {
-        position: static;
-        grid-column: 2;
-        justify-self: start;
       }
 
     }
@@ -123,20 +116,16 @@ $mediafile-img-height: 120px;
 }
 
 %o-mediafile__heading {
-  @extend %o-heading3;
   @extend %overflow-wrap;
-  margin-bottom: $spacing-sm;
+  margin: 0 0 $spacing-sm;
   padding-left: 25px;
   background: no-repeat top left / 16px;
+  color: $color-teal;
+  font-size: 1.1em;
   font-weight: normal;
-
-  button {
-    @extend %o-button__7;
-  }
 
   @include bp(screen1) {
     max-height: 2.3em; // truncate beyond 2 lines per jquery.dotdotdot
-    font-size: 1.1em;
     overflow: hidden; // hide text beyond max-height
   }
 
@@ -166,6 +155,18 @@ $mediafile-img-height: 120px;
 
 }
 
+// 'View Media' button:
+.o-mediafile__view {
+  margin-bottom: $spacing-sm;
+  border: none;
+  background: none;
+
+  span { // button label
+    @extend %hide;
+  }
+
+}
+
 .o-mediafile__preview {
   display: block;
   position: relative;
@@ -173,6 +174,7 @@ $mediafile-img-height: 120px;
   margin-bottom: $spacing-sm;
   clear: left;
   background-color: $color-dark-gray;
+  cursor: pointer;
 
   &::before {
     position: absolute;
