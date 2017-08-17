@@ -7,63 +7,62 @@ $mediafile-img-height: 120px;
 // ***** Element Layout ***** //
 
 div[class^='o-mediafile--'] {
-  @extend %clearfix;
-  position: relative;
+  display: grid;
 
   @include bp(screen1) {
-    display: block;
     padding: $spacing-sm;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-column-gap: $spacing-sm;
+  }
 
-    @supports (display: grid) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 1fr auto;
-      grid-column-gap: $spacing-sm;
-    }
+}
 
-    .o-mediafile__heading {
-      width: calc(50% - #{$spacing-base});
-      float: right;
+.o-mediafile__heading {
+  grid-column: 1;
+  grid-row: 1;
 
-      @supports (display: grid) {
-        width: auto;
-        grid-column: 2;
-        grid-row: 1;
-      }
+  @supports (display: grid) {
+    color: $color-teal;
+  }
 
-    }
+  @include bp(screen1) {
+    grid-column: 2;
+  }
 
-    .o-mediafile__view {
-      z-index: 5; // stack above o-mediafile__heading
-      grid-column: 2;
-      grid-row: 1;
-    }
+}
 
-    .o-mediafile__preview {
-      width: calc(50% - #{$spacing-base});
-      float: left;
+.o-mediafile__view {
+  z-index: 5; // stack above o-mediafile__heading
+  grid-column: 1;
+  grid-row: 1;
 
-      @supports (display: grid) {
-        width: 100%;
-        grid-row: 1 / 4;
-      }
+  @include bp(screen1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-    }
+}
 
-    .o-mediafile__description {
-      width: calc(50% - #{$spacing-base});
-      float: right;
-      clear: none;
+.o-mediafile__download {
+  @extend %o-textlink__secondary;
+  float: right;
+  justify-self: end;
+}
 
-      @supports (display: grid) {
-        width: auto;
-        margin-bottom: 0;
-        grid-column: 2;
-        grid-row: 2;
-      }
+.o-mediafile__preview {
+  
+  @include bp(screen1) {
+    grid-row: 1 / 4;
+  }
 
-    }
+}
 
+.o-mediafile__description {
+
+  @include bp(screen1) {
+    grid-column: 2;
+    grid-row: 2;
   }
 
 }
@@ -103,7 +102,6 @@ div[class$='--selected'] {
   margin: 0 0 $spacing-sm;
   padding-left: 25px;
   background: no-repeat top left / 16px;
-  color: $color-teal;
   font-size: 1.1em;
   font-weight: normal;
 
@@ -140,12 +138,18 @@ div[class$='--selected'] {
 
 // 'View Media' button:
 .o-mediafile__view {
-  margin-bottom: $spacing-sm;
-  border: none;
-  background: none;
+  @extend %o-button__7;
 
-  span { // button label
-    @extend %hide;
+  @supports (display: grid) {
+    margin-bottom: $spacing-sm;
+    border: none;
+    background: none;
+
+    span { // hide button label
+      position: absolute;
+      left: -9999px;
+    }
+
   }
 
 }
@@ -171,7 +175,11 @@ div[class$='--selected'] {
   }
 
   @include bp(screen1) {
-    margin-bottom: 0;
+
+    @supports (display: grid) {
+      margin-bottom: 0;
+    }
+
   }
 
 }
@@ -182,30 +190,10 @@ div[class$='--selected'] {
   height: $mediafile-img-height;
   margin-bottom: $spacing-sm;
   object-fit: cover;
-
-  @include bp(screen1) {
-    margin-bottom: 0;
-  }
-
-}
-
-.o-mediafile__download {
-  @extend %o-textlink__secondary;
-  margin-bottom: $spacing-sm;
-  float: right;
-
-  @include bp(screen1) {
-
-    @supports (display: grid) {
-      margin-bottom: 0;
-    }
-
-  }
-
 }
 
 .o-mediafile__description {
-  clear: both;
+  margin-bottom: $spacing-sm;
   font-size: 0.9em;
 
   @include bp(screen1) {
