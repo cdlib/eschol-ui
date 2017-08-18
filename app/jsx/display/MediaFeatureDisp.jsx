@@ -1,13 +1,19 @@
 // ##### Media Feature Display ##### //
 
 import React from 'react'
-import MediaFeatureObj from '../objects/MediaFeatureObj.jsx'
+import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
+import MediaFeatureFileObj from '../objects/MediaFeatureFileObj.jsx'
+import MediaFeaturePictureObj from '../objects/MediaFeaturePictureObj.jsx'
+import MediaFeatureVideoObj from '../objects/MediaFeatureVideoObj.jsx'
 
 class MediaFeatureDisp extends React.Component {
   render() {
     return (
       <div>
-         <MediaFeatureObj />
+        <MediaFeatureAudioObj />
+        <MediaFeatureFileObj />
+        <MediaFeaturePictureObj />
+        <MediaFeatureVideoObj />
       </div>
     )
   }
