@@ -134,8 +134,7 @@ div[class$='--selected'] {
   (image, icon_eye-white),
   (video, icon_play-circle-white) {
 
-  .o-mediafile--#{$mediafile-type},
-  .o-mediafile--#{$mediafile-type}--selected {
+  div[class^='o-mediafile--#{$mediafile-type}'] {
 
     .o-mediafile__preview {
 
@@ -157,8 +156,7 @@ div[class$='--selected'] {
   (image, icon_picture),
   (video, icon_video-camera-teal) {
 
-  .o-mediafile--#{$mediafile-type},
-  .o-mediafile--#{$mediafile-type}--selected {
+  div[class^='o-mediafile--#{$mediafile-type}'] {
 
     .o-mediafile__heading {
       @extend %o-mediafile__heading;
