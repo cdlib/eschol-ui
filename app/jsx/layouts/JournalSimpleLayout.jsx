@@ -62,7 +62,7 @@ class JournalSimpleLayout extends React.Component {
               <div className="c-itemactions">
                 <a href="" className="c-itemactions__link-buy">Buy Issue</a>
                 <div className="o-download">
-                  <button className="o-download__button">Download Issue</button>
+                  <a href="" className="o-download__button" download>Download Issue</a>
                   <details className="o-download__formats">
                     <summary aria-label="formats"></summary>
                     <ul className="o-download__nested-menu">

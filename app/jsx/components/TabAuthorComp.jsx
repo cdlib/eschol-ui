@@ -8,7 +8,7 @@ class TabAuthorComp extends React.Component {
       <div className="c-tabcontent">
         <div className="c-itemactions">
           <div className="o-download">
-            <button className="o-download__button">Download Citation</button>
+            <a href="" className="o-download__button" download>Download Citation</a>
             <details className="o-download__formats">
               <summary aria-label="formats"></summary>
               <ul className="o-download__single-menu">

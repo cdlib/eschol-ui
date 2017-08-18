@@ -12,7 +12,7 @@ class ItemActionsComp extends React.Component {
     return (
       <div className="c-itemactions">
         <div className="o-download">
-          <button className="o-download__button">Download PDF</button>
+          <a href="" className="o-download__button" download>Download PDF</a>
           <details className="o-download__formats">
             <summary aria-label="formats"></summary>
             <ul className="o-download__nested-menu">
