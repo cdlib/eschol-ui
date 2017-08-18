@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import ReactModal from 'react-modal'
+import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
 
 class MediaFileGridComp extends React.Component {
   constructor () {
@@ -106,12 +107,10 @@ class MediaFileGridComp extends React.Component {
               <h2>Modal Heading</h2>
             </div>
             <div className="modal__content">
-              <p>Modal content goes here.</p>
+              <MediaFeatureAudioObj />
             </div>
             <div className="c-modal__footer">
               <button className="c-modal__button-close" onClick={this.handleCloseModal}>Cancel</button>
-              <button className="o-button__7">Clear All</button>
-              <button className="o-button__3">Select</button>
             </div>
           </ReactModal>
         </div>
