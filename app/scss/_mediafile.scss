@@ -1,7 +1,5 @@
 // ##### Media File Object ##### //
 
-$mediafile-img-height: 120px;
-
 // The layout grid for Media File objects is set within _mediafilegrid.scss
 
 div[class^='o-mediafile--'] {
@@ -40,7 +38,7 @@ div[class^='o-mediafile--'] {
 
 .o-mediafile__preview {
   position: relative;
-  height: $mediafile-img-height;
+  height: 7.5em;
   margin-bottom: $spacing-sm;
   background-color: $color-dark-gray;
   cursor: pointer;
@@ -68,9 +66,8 @@ div[class^='o-mediafile--'] {
 }
 
 .o-mediafile__image {
-  display: block;
   width: 100%;
-  height: $mediafile-img-height;
+  height: 100%;
   margin-bottom: $spacing-sm;
   object-fit: cover;
 }
