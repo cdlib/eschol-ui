@@ -63,13 +63,13 @@ div[class^='o-mediafile--'] {
 
   }
 
-}
+  img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: $spacing-sm;
+    object-fit: cover;
+  }
 
-.o-mediafile__image {
-  width: 100%;
-  height: 100%;
-  margin-bottom: $spacing-sm;
-  object-fit: cover;
 }
 
 .o-mediafile__description {
