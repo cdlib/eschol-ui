@@ -16,6 +16,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: $spacing-sm;
+    background-color: $color-dark-gray;
+
+    span {
+      color: $color-white;
+    }
+
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+    }
+
   }
 
 }

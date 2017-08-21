@@ -10,7 +10,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__role">
           <header>
             <span>eScholarship</span>
-            <button className="c-depositwizard__close"><span>Close</span></button>
+            <button><span>Close</span></button>
           </header>
           <h1>How are you affiliated with [campus]</h1>
           <ul>
@@ -32,7 +32,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__campus">
           <header>
             <span>eScholarship</span>
-            <button className="c-depositwizard__close"><span>Close</span></button>
+            <button><span>Close</span></button>
           </header>
           <h1>Which UC Campus are you affiliated with?</h1>
           <ul>
@@ -84,7 +84,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__type">
           <header>
             <span>eScholarship</span>
-            <button className="c-depositwizard__close"><span>Close</span></button>
+            <button><span>Close</span></button>
           </header>
           <h1>What kind of material are you depositing?</h1>
           <ul>
@@ -106,7 +106,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__unit">
           <header>
             <span>eScholarship</span>
-            <button className="c-depositwizard__close"><span>Close</span></button>
+            <button><span>Close</span></button>
           </header>
           <h1>Which [campus] department are you affiliated with?</h1>
           <ul>
