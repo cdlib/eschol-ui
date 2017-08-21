@@ -5,9 +5,17 @@
 }
 
 .c-depositwizard__step {
+  max-width: 400px;
+  margin-bottom: $spacing-md;
 
   @include headings() {
-    font-size: 1em;
+    font-size: 1.2em;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
 }
