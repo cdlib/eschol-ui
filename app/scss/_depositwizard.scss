@@ -1,5 +1,9 @@
 // ##### Deposit Wizard Component ##### //
 
 .c-depositwizard {
-  // no styles
+
+  @include headings() {
+    font-size: 1em;
+  }
+
 }
