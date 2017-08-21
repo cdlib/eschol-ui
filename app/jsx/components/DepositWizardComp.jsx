@@ -7,7 +7,22 @@ class DepositWizardComp extends React.Component {
     return (
       <div className="c-depositwizard">
 
-        <div className="c-depositwizard__step1">
+        <div className="c-depositwizard__step" id="c-depositwizard__role">
+          <h1>How are you affiliated with [campus]</h1>
+          <ul>
+            <li>
+              <a href="">Academic Senate-represented faculy</a>
+            </li>
+            <li>
+              <a href="">Other faculty, student, or staff</a>
+            </li>
+            <li>
+              <a href="">Not affiliated</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="c-depositwizard__step" id="c-depositwizard__campus">
           <h1>Which UC Campus are you affiliated with?</h1>
           <ul>
             <li>
@@ -52,7 +67,7 @@ class DepositWizardComp extends React.Component {
           </ul>
         </div>
 
-        <div className="c-depositwizard__step2">
+        <div className="c-depositwizard__step" id="c-depositwizard__type">
           <h1>What kind of material are you depositing?</h1>
           <ul>
             <li>
@@ -67,22 +82,9 @@ class DepositWizardComp extends React.Component {
           </ul>
         </div>
 
-        <div className="c-depositwizard__step3">
-          <h1>How are you affiliated with [campus]</h1>
-          <ul>
-            <li>
-              <a href="">Academic Senate-represented faculy</a>
-            </li>
-            <li>
-              <a href="">Other faculty, student, or staff</a>
-            </li>
-            <li>
-              <a href="">Not affiliated</a>
-            </li>
-          </ul>
-        </div>
+        
 
-        <div className="c-depositwizard__step4">
+        <div className="c-depositwizard__step" id="c-depositwizard__unit">
           <h1>Which [campus] department are you affiliated with?</h1>
           <ul>
             <li>
