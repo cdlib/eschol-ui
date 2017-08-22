@@ -12,7 +12,7 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>How are you affiliated with [campus]</h1>
+          <h1>How are you affiliated with [campus]?</h1>
           <ul>
             <li>
               <a href="">Academic Senate-represented faculy</a>
@@ -108,7 +108,7 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>Which [campus] department are you affiliated with?</h1>
+          <h1>What is your departmental affiliation?</h1>
           <ul>
             <li>
               <a href="">American Cultures Center</a>
@@ -130,6 +130,34 @@ class DepositWizardComp extends React.Component {
             </li>
             <li>
               <a href="">[etc.]</a>
+            </li>
+          </ul>
+          <footer>
+            Don't see your department? <a href="">Add it to eScholarship here</a>.
+          </footer>
+        </div>
+
+        <div className="c-depositwizard__step" id="c-depositwizard__series">
+          <header>
+            <span>eScholarship</span>
+            <button><span>Close</span></button>
+          </header>
+          <h1>What UCLA School of Law series would you like to deposit your work in?</h1>
+          <ul>
+            <li>
+              <a href="">Disability Law Society</a>
+            </li>
+            <li>
+              <a href="">The Docket</a>
+            </li>
+            <li>
+              <a href="">UCLA Law & Economics Series</a>
+            </li>
+            <li>
+              <a href="">UCLA Public Law & Legal Theory Series</a>
+            </li>
+            <li>
+              <a href="">Experimental Legal Scholarship Research Paper Series</a>
             </li>
           </ul>
           <footer>
