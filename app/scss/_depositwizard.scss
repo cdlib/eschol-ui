@@ -7,6 +7,8 @@
 .c-depositwizard__step {
   max-width: 400px;
   margin-bottom: $spacing-md;
+  padding: $spacing-md;
+  background-color: $color-light-gray;
 
   @include headings() {
     font-size: 1.2em;
@@ -16,7 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $spacing-sm;
+    margin: (-$spacing-md) (-$spacing-md) 0;
+    padding: $spacing-sm $spacing-md;
     background-color: $color-dark-gray;
 
     span {
@@ -24,9 +27,9 @@
     }
 
     button {
-      background: none;
-      border: none;
       padding: 0;
+      border: none;
+      background: none;
     }
 
   }
