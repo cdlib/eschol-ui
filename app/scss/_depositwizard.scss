@@ -11,7 +11,8 @@
   background-color: $color-light-gray;
 
   @include headings() {
-    font-size: 1.2em;
+    margin-bottom: $spacing-sm;
+    font-size: 1.1em;
   }
 
   header {
@@ -32,6 +33,32 @@
       background: none;
     }
 
+  }
+
+  ul {
+    @extend %no-bullet-ul;
+    margin-bottom: $spacing-md;
+
+    li {
+
+      &:not(:last-child) {
+        margin-bottom: $spacing-sm;
+      }
+
+      a {
+        display: block;
+        padding: $spacing-sm;
+        background-color: $color-teal;
+        color: $color-white;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+  footer {
+    font-size: 0.9em;
   }
 
 }
