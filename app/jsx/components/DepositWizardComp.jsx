@@ -179,6 +179,24 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
+        <div className="c-depositwizard__step" id="c-depositwizard__link">
+          <header>
+            <span>eScholarship</span>
+            <button><span>Close</span></button>
+          </header>
+          <div className="c-depositwizard__heading">
+            <a href=""><span>Go back</span></a>
+            <span>UC Publication Management</span>
+          </div>
+          <div className="c-depositwizard__message">
+            <p>Faculty use the UC Publication Management system for all eScholarship deposits– including to claim and deposit publications in compliance with the <a href="">UC Academic Senate faculty Open Acces Policy</a>.</p>
+            <button>Go to UC Publication Management</button>
+          </div>
+          <footer>
+            Alternately, you may choose to wait for the system to automatically detect your new publication and send you a deposit link via email.
+          </footer>
+        </div>
+
       </div>
     )
   }

@@ -1,5 +1,7 @@
 // ##### Deposit Wizard Component ##### //
 
+$depositwizard-nav-icon-size: 1.5em;
+
 .c-depositwizard {
   // no styles
 }
@@ -49,7 +51,7 @@
       a {
         display: block;
         padding: $spacing-sm 2.5em $spacing-sm $spacing-sm;
-        background: $color-teal inline('../images/icon_angle-double-right-white.svg') no-repeat center right #{$spacing-sm} / 1.5em;
+        background: $color-teal inline('../images/icon_angle-double-right-white.svg') no-repeat center right #{$spacing-sm} / #{$depositwizard-nav-icon-size};
         color: $color-white;
         text-decoration: none;
       }
@@ -78,12 +80,27 @@
   a {
     @extend %interactive-element-size;
     margin-left: (-$spacing-sm);
-    background: inline('../images/icon_angle-double-left-black.svg') no-repeat center bottom 0.4em / 1.5em;
+    background: inline('../images/icon_angle-double-left-black.svg') no-repeat center bottom 0.4em / #{$depositwizard-nav-icon-size};
 
     span {
       @extend %hide;
     }
 
+  }
+
+}
+
+.c-depositwizard__message {
+  margin-bottom: $spacing-md;
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+  button {
+    @extend %o-button__8;
+    display: block;
+    margin: 0 auto $spacing-sm;
   }
 
 }
