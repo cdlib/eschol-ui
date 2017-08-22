@@ -20,7 +20,8 @@
     align-items: center;
     justify-content: space-between;
     margin: (-$spacing-md) (-$spacing-md) 0;
-    padding: $spacing-sm $spacing-md;
+    padding-right: $spacing-sm;
+    padding-left: $spacing-md;
     background-color: $color-dark-gray;
 
     span {
@@ -28,9 +29,15 @@
     }
 
     button {
-      padding: 0;
-      border: none;
-      background: none;
+      @extend %o-button__9;
+      background-image: inline('../images/icon_close-white.svg');
+      background-size: 0.9em;
+
+      span {
+        position: absolute;
+        left: -9999px;
+      }
+
     }
 
   }
