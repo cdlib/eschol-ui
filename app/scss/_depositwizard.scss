@@ -10,16 +10,11 @@
   padding: $spacing-md;
   background-color: $color-light-gray;
 
-  @include headings() {
-    margin-bottom: $spacing-sm;
-    font-size: 1.1em;
-  }
-
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: (-$spacing-md) (-$spacing-md) 0;
+    margin: (-$spacing-md) (-$spacing-md) $spacing-md;
     padding-right: $spacing-sm;
     padding-left: $spacing-md;
     background-color: $color-dark-gray;
@@ -34,8 +29,7 @@
       background-size: 0.9em;
 
       span {
-        position: absolute;
-        left: -9999px;
+        @extend %hide;
       }
 
     }
@@ -69,6 +63,25 @@
 
     a {
       @extend %o-textlink__secondary;
+    }
+
+  }
+
+}
+
+.c-depositwizard__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-sm;
+  font-size: 1.1em;
+
+  a {
+    @extend %interactive-element-size;
+    margin-left: (-$spacing-sm);
+    background: inline('../images/icon_angle-double-left-black.svg') no-repeat center bottom 0.4em / 1.5em;
+
+    span {
+      @extend %hide;
     }
 
   }

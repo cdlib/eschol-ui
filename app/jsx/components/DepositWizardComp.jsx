@@ -12,7 +12,9 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>How are you affiliated with [campus]?</h1>
+          <div className="c-depositwizard__heading">
+            <span>How are you affiliated with [campus]?</span>
+          </div>
           <ul>
             <li>
               <a href="">Academic Senate-represented faculy</a>
@@ -34,7 +36,10 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>Which UC Campus are you affiliated with?</h1>
+          <div className="c-depositwizard__heading">
+            <a href=""><span>Go back</span></a>
+            <span>Which UC Campus are you affiliated with?</span>
+          </div>
           <ul>
             <li>
               <a href="">UC Berkeley</a>
@@ -86,7 +91,10 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>What kind of material are you depositing?</h1>
+          <div className="c-depositwizard__heading">
+            <a href=""><span>Go back</span></a>
+            <span>What kind of material are you depositing?</span>
+          </div>
           <ul>
             <li>
               <a href="">A published (or accepted) scholarly article</a>
@@ -108,7 +116,10 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>What is your departmental affiliation?</h1>
+          <div className="c-depositwizard__heading">
+            <a href=""><span>Go back</span></a>
+            <span>What is your departmental affiliation?</span>
+          </div>
           <ul>
             <li>
               <a href="">American Cultures Center</a>
@@ -142,7 +153,10 @@ class DepositWizardComp extends React.Component {
             <span>eScholarship</span>
             <button><span>Close</span></button>
           </header>
-          <h1>What UCLA School of Law series would you like to deposit your work in?</h1>
+          <div className="c-depositwizard__heading">
+            <a href=""><span>Go back</span></a>
+            <span>What [title] series would you like to deposit your work in?</span>
+          </div>
           <ul>
             <li>
               <a href="">Disability Law Society</a>
