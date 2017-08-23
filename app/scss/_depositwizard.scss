@@ -22,6 +22,7 @@ $depositwizard-nav-icon-size: 1.5em;
     background-color: $color-light-black;
 
     @include headings() {
+      order: 2;
       margin: 0;
       color: $color-white;
       font-size: 1em;
@@ -30,6 +31,7 @@ $depositwizard-nav-icon-size: 1.5em;
 
     a {
       @extend %interactive-element-size;
+      order: 1;
       margin-left: (-$spacing-sm);
       transform: scaleX(-1);
       background: inline('../images/icon_caret-right-white.svg') no-repeat center / #{$depositwizard-nav-icon-size};
@@ -42,6 +44,7 @@ $depositwizard-nav-icon-size: 1.5em;
 
     button {
       @extend %o-button__9;
+      order: 3;
       background-image: inline('../images/icon_close-white.svg');
       background-size: 0.9em;
 
