@@ -9,7 +9,7 @@ class DepositWizardComp extends React.Component {
 
         <div className="c-depositwizard__step" id="c-depositwizard__role">
           <header>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">
@@ -34,7 +34,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__campus">
           <header>
             <a href=""><span>Go back</span></a>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">
@@ -89,7 +89,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__type">
           <header>
             <a href=""><span>Go back</span></a>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">
@@ -114,7 +114,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__unit">
           <header>
             <a href=""><span>Go back</span></a>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">
@@ -151,7 +151,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__series">
           <header>
             <a href=""><span>Go back</span></a>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">
@@ -182,7 +182,7 @@ class DepositWizardComp extends React.Component {
         <div className="c-depositwizard__step" id="c-depositwizard__link">
           <header>
             <a href=""><span>Go back</span></a>
-            <span>eScholarship Deposit</span>
+            <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
           <div className="c-depositwizard__heading">

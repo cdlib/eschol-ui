@@ -21,6 +21,12 @@ $depositwizard-nav-icon-size: 1.5em;
     padding-left: $spacing-md;
     background-color: $color-light-black;
 
+    @include headings() {
+      color: $color-white;
+      font-size: 1em;
+      font-weight: normal;
+    }
+
     a {
       @extend %interactive-element-size;
       margin-left: (-$spacing-sm);
@@ -31,10 +37,6 @@ $depositwizard-nav-icon-size: 1.5em;
         @extend %hide;
       }
 
-    }
-
-    span {
-      color: $color-white;
     }
 
     button {
