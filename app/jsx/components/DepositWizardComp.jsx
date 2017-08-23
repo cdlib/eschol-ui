@@ -15,7 +15,7 @@ class DepositWizardComp extends React.Component {
           <div className="c-depositwizard__heading">
             How are you affiliated with [campus]?
           </div>
-          <ul>
+          <ul className="c-depositwizard__list">
             <li>
               <a href="">Academic Senate-represented faculy</a>
             </li>
@@ -40,7 +40,7 @@ class DepositWizardComp extends React.Component {
           <div className="c-depositwizard__heading">
             Which UC Campus are you affiliated with?
           </div>
-          <ul>
+          <ul className="c-depositwizard__list">
             <li>
               <a href="">UC Berkeley</a>
             </li>
@@ -95,7 +95,7 @@ class DepositWizardComp extends React.Component {
           <div className="c-depositwizard__heading">
             What kind of material are you depositing?
           </div>
-          <ul>
+          <ul className="c-depositwizard__list">
             <li>
               <a href="">A published (or accepted) scholarly article</a>
             </li>
@@ -120,7 +120,7 @@ class DepositWizardComp extends React.Component {
           <div className="c-depositwizard__heading">
             What is your departmental affiliation?
           </div>
-          <ul>
+          <ul className="c-depositwizard__list">
             <li>
               <a href="">American Cultures Center</a>
             </li>
@@ -157,7 +157,7 @@ class DepositWizardComp extends React.Component {
           <div className="c-depositwizard__heading">
             What [title] series would you like to deposit your work in?
           </div>
-          <ul>
+          <ul className="c-depositwizard__list">
             <li>
               <a href="">Disability Law Society</a>
             </li>
