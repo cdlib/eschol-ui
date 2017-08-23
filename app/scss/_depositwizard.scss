@@ -21,6 +21,18 @@ $depositwizard-nav-icon-size: 1.5em;
     padding-left: $spacing-md;
     background-color: $color-light-black;
 
+    a {
+      @extend %interactive-element-size;
+      margin-left: (-$spacing-sm);
+      transform: scaleX(-1);
+      background: inline('../images/icon_caret-right-white.svg') no-repeat center / #{$depositwizard-nav-icon-size};
+
+      span {
+        @extend %hide;
+      }
+
+    }
+
     span {
       color: $color-white;
     }
@@ -72,23 +84,8 @@ $depositwizard-nav-icon-size: 1.5em;
 }
 
 .c-depositwizard__heading {
-  display: flex;
-  align-items: center;
   margin-bottom: $spacing-sm;
   font-size: 1.1em;
-
-  a {
-    @extend %interactive-element-size;
-    margin-left: (-$spacing-sm);
-    transform: scaleX(-1);
-    background: inline('../images/icon_caret-right-black.svg') no-repeat center bottom 0.4em / #{$depositwizard-nav-icon-size};
-
-    span {
-      @extend %hide;
-    }
-
-  }
-
 }
 
 .c-depositwizard__message {
