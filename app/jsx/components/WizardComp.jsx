@@ -2,20 +2,20 @@
 
 import React from 'react'
 
-class DepositWizardComp extends React.Component {
+class WizardComp extends React.Component {
   render() {
     return (
-      <div className="c-depositwizard">
+      <div className="c-wizard">
 
-        <div className="c-depositwizard__step" id="c-depositwizard__role">
+        <div className="c-wizard__step" id="c-wizard__role">
           <header>
             <h1>eScholarship Deposit</h1>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             How are you affiliated with [campus]?
           </div>
-          <ul className="c-depositwizard__list">
+          <ul className="c-wizard__list">
             <li>
               <a href="">Academic Senate-represented faculy</a>
             </li>
@@ -31,16 +31,16 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
-        <div className="c-depositwizard__step" id="c-depositwizard__campus">
+        <div className="c-wizard__step" id="c-wizard__campus">
           <header>
             <h1>eScholarship Deposit</h1>
             <a href=""><span>Go back</span></a>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             Which UC Campus are you affiliated with?
           </div>
-          <ul className="c-depositwizard__list">
+          <ul className="c-wizard__list">
             <li>
               <a href="">UC Berkeley</a>
             </li>
@@ -86,16 +86,16 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
-        <div className="c-depositwizard__step" id="c-depositwizard__type">
+        <div className="c-wizard__step" id="c-wizard__type">
           <header>
             <h1>eScholarship Deposit</h1>
             <a href=""><span>Go back</span></a>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             What kind of material are you depositing?
           </div>
-          <ul className="c-depositwizard__list">
+          <ul className="c-wizard__list">
             <li>
               <a href="">A published (or accepted) scholarly article</a>
             </li>
@@ -111,16 +111,16 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
-        <div className="c-depositwizard__step" id="c-depositwizard__unit">
+        <div className="c-wizard__step" id="c-wizard__unit">
           <header>
             <h1>eScholarship Deposit</h1>
             <a href=""><span>Go back</span></a>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             What is your departmental affiliation?
           </div>
-          <ul className="c-depositwizard__list">
+          <ul className="c-wizard__list">
             <li>
               <a href="">American Cultures Center</a>
             </li>
@@ -148,16 +148,16 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
-        <div className="c-depositwizard__step" id="c-depositwizard__series">
+        <div className="c-wizard__step" id="c-wizard__series">
           <header>
             <h1>eScholarship Deposit</h1>
             <a href=""><span>Go back</span></a>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             What [title] series would you like to deposit your work in?
           </div>
-          <ul className="c-depositwizard__list">
+          <ul className="c-wizard__list">
             <li>
               <a href="">Disability Law Society</a>
             </li>
@@ -179,16 +179,16 @@ class DepositWizardComp extends React.Component {
           </footer>
         </div>
 
-        <div className="c-depositwizard__step" id="c-depositwizard__link">
+        <div className="c-wizard__step" id="c-wizard__link">
           <header>
             <h1>eScholarship Deposit</h1>
             <a href=""><span>Go back</span></a>
             <button><span>Close</span></button>
           </header>
-          <div className="c-depositwizard__heading">
+          <div className="c-wizard__heading">
             UC Publication Management
           </div>
-          <div className="c-depositwizard__message">
+          <div className="c-wizard__message">
             <p>Faculty use the UC Publication Management system for all eScholarship deposits– including to claim and deposit publications in compliance with the <a href="">UC Academic Senate faculty Open Acces Policy</a>.</p>
             <button>Go to UC Publication Management</button>
           </div>
@@ -202,4 +202,4 @@ class DepositWizardComp extends React.Component {
   }
 }
 
-module.exports = DepositWizardComp;
+module.exports = WizardComp;

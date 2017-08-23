@@ -67,7 +67,6 @@ class Home extends React.Component {
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#datatable">Data Table</a></li>
-          <li><a href="#depositwizard">Deposit Wizard</a></li>
           <li><a href="#descriptionlist">Description List</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
@@ -122,6 +121,7 @@ class Home extends React.Component {
           <li><a href="#unitpub">Unit Publication</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
           <li><a href="#well">Well for Content</a></li>
+          <li><a href="#wizard">(Deposit) Wizard</a></li>
         </ul>
       </div>
     )

@@ -29,7 +29,6 @@ import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
-import DepositWizardDisp from './display/DepositWizardDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
@@ -106,6 +105,7 @@ import UnitPubDisp from './display/UnitPubDisp.jsx'
 import UnitSimpleLayout from './layouts/UnitSimpleLayout.jsx'
 import ViewExternalDisp from './display/ViewExternalDisp.jsx'
 import WellDisp from './display/WellDisp.jsx'
+import WizardDisp from './display/WizardDisp.jsx'
 
 // ***** UI Library Home Page ***** //
 
@@ -145,7 +145,6 @@ ReactDOM.render((
       <Route path="/columns" component={ColumnsDisp} />
       <Route path="/customselector" component={CustomSelectorDisp} />
       <Route path="/datatable" component={DataTableDisp} />
-      <Route path="/depositwizard" component={DepositWizardDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />
@@ -223,6 +222,7 @@ ReactDOM.render((
       <Route path="/unitsimple" component={UnitSimpleLayout} />
       <Route path="/viewexternal" component={ViewExternalDisp} />
       <Route path="/well" component={WellDisp} />
+      <Route path="/wizard" component={WizardDisp} />
     </Route>
   </Router>
 ), document.getElementById('main'))

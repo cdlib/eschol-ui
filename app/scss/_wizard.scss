@@ -1,12 +1,12 @@
 // ##### Deposit Wizard Component ##### //
 
-$depositwizard-nav-icon-size: 1.5em;
+$wizard-nav-icon-size: 1.5em;
 
-.c-depositwizard {
+.c-wizard {
   // no styles
 }
 
-.c-depositwizard__step {
+.c-wizard__step {
   max-width: 400px;
   margin-bottom: $spacing-md;
   padding: $spacing-md;
@@ -34,7 +34,7 @@ $depositwizard-nav-icon-size: 1.5em;
       order: 1;
       margin-left: (-$spacing-sm);
       transform: scaleX(-1);
-      background: inline('../images/icon_caret-right-white.svg') no-repeat center / #{$depositwizard-nav-icon-size};
+      background: inline('../images/icon_caret-right-white.svg') no-repeat center / #{$wizard-nav-icon-size};
 
       span {
         @extend %hide;
@@ -67,12 +67,12 @@ $depositwizard-nav-icon-size: 1.5em;
 
 }
 
-.c-depositwizard__heading {
+.c-wizard__heading {
   margin-bottom: $spacing-md;
   font-size: 1.1em;
 }
 
-.c-depositwizard__list {
+.c-wizard__list {
   @extend %no-bullet-ul;
   margin-bottom: $spacing-md;
 
@@ -85,7 +85,7 @@ $depositwizard-nav-icon-size: 1.5em;
     a {
       display: block;
       padding: $spacing-sm 2.5em $spacing-sm $spacing-sm;
-      background: $color-teal inline('../images/icon_caret-right-white.svg') no-repeat center right #{$spacing-sm} / #{$depositwizard-nav-icon-size};
+      background: $color-teal inline('../images/icon_caret-right-white.svg') no-repeat center right #{$spacing-sm} / #{$wizard-nav-icon-size};
       color: $color-white;
       text-decoration: none;
     }
@@ -94,7 +94,7 @@ $depositwizard-nav-icon-size: 1.5em;
 
 }
 
-.c-depositwizard__message {
+.c-wizard__message {
   margin-bottom: $spacing-md;
 
   a {
