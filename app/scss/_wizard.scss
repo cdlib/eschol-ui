@@ -3,8 +3,7 @@
 $wizard-nav-icon-size: 1.5em;
 
 %c-wizard {
-  transition: opacity 0.5s;
-  opacity: 0.5;
+  transition: transform 1s;
 }
 
 .c-wizard {
@@ -13,7 +12,7 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard--active {
   @extend %c-wizard;
-  opacity: 1;
+  transform: translateX(-100%);
 }
 
 .c-wizard__step {

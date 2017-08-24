@@ -17,9 +17,9 @@ class WizardComp extends React.Component {
 
   render() {
     return (
-      <div className={this.state.stepActive ? "c-wizard--active" : "c-wizard"}>
+      <div>
 
-        {/* Temporary buttons to test toggle */}
+      {/* Temporary buttons to test toggle */}
         <button onClick = {()=> this.setState({wizardStep: 1, stepActive: false})}>Role</button>
         <button onClick = {()=> this.setState({wizardStep: 2, stepActive: true})}>Campus</button>
         <button onClick = {()=> this.setState({wizardStep: 3, stepActive: false})}>Type</button>
@@ -28,12 +28,15 @@ class WizardComp extends React.Component {
         <button onClick = {()=> this.setState({wizardStep: 6, stepActive: false})}>Link</button>
         <br/><br/>
 
-        {this.state.wizardStep === 1 ? <WizardRoleComp /> : null}
-        {this.state.wizardStep === 2 ? <WizardCampusComp /> : null}
-        {this.state.wizardStep === 3 ? <WizardTypeComp /> : null}
-        {this.state.wizardStep === 4 ? <WizardUnitComp /> : null}
-        {this.state.wizardStep === 5 ? <WizardSeriesComp /> : null}
-        {this.state.wizardStep === 6 ? <WizardLinkComp /> : null}
+        <div className={this.state.stepActive ? "c-wizard--active" : "c-wizard"}>
+          {this.state.wizardStep === 1 ? <WizardRoleComp /> : null}
+          {this.state.wizardStep === 2 ? <WizardCampusComp /> : null}
+          {this.state.wizardStep === 3 ? <WizardTypeComp /> : null}
+          {this.state.wizardStep === 4 ? <WizardUnitComp /> : null}
+          {this.state.wizardStep === 5 ? <WizardSeriesComp /> : null}
+          {this.state.wizardStep === 6 ? <WizardLinkComp /> : null}
+        </div>
+
       </div>
     )
   }
