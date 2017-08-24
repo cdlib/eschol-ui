@@ -12,20 +12,20 @@ class WizardComp extends React.Component {
 
   constructor(props){
     super(props)
-    this.state = {wizardStep: 1}
+    this.state = {wizardStep: 1, stepActive: null}
   }
 
   render() {
     return (
-      <div className="c-wizard">
+      <div className={this.state.stepActive ? "c-wizard--active" : "c-wizard"}>
 
         {/* Temporary buttons to test toggle */}
-        <button onClick = {()=> this.setState({wizardStep: 1})}>Role</button>
-        <button onClick = {()=> this.setState({wizardStep: 2})}>Campus</button>
-        <button onClick = {()=> this.setState({wizardStep: 3})}>Type</button>
-        <button onClick = {()=> this.setState({wizardStep: 4})}>Unit</button>
-        <button onClick = {()=> this.setState({wizardStep: 5})}>Series</button>
-        <button onClick = {()=> this.setState({wizardStep: 6})}>Link</button>
+        <button onClick = {()=> this.setState({wizardStep: 1, stepActive: false})}>Role</button>
+        <button onClick = {()=> this.setState({wizardStep: 2, stepActive: true})}>Campus</button>
+        <button onClick = {()=> this.setState({wizardStep: 3, stepActive: false})}>Type</button>
+        <button onClick = {()=> this.setState({wizardStep: 4, stepActive: false})}>Unit</button>
+        <button onClick = {()=> this.setState({wizardStep: 5, stepActive: false})}>Series</button>
+        <button onClick = {()=> this.setState({wizardStep: 6, stepActive: false})}>Link</button>
         <br/><br/>
 
         {this.state.wizardStep === 1 ? <WizardRoleComp /> : null}

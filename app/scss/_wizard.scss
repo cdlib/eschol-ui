@@ -2,8 +2,18 @@
 
 $wizard-nav-icon-size: 1.5em;
 
+%c-wizard {
+  transition: opacity 0.5s;
+  opacity: 0.5;
+}
+
 .c-wizard {
-  // no styles
+  @extend %c-wizard;
+}
+
+.c-wizard--active {
+  @extend %c-wizard;
+  opacity: 1;
 }
 
 .c-wizard__step {
