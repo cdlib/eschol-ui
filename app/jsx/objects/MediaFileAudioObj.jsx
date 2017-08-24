@@ -2,8 +2,16 @@
 
 import React from 'react'
 import $ from 'jquery'
+import MediaModalComp from '../components/MediaModalComp.jsx'
+import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
 
 class MediaFileAudioObj extends React.Component {
+  state={showModal: false}
+
+  handleOpenModal = () => this.setState({ showModal: true });
+
+  handleCloseModal = () => this.setState({ showModal: false });
+
   componentDidMount() {
     $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch: 'window'});
   }
@@ -22,6 +30,9 @@ class MediaFileAudioObj extends React.Component {
         </div>
         <button className="o-mediafile__view" onClick={this.handleOpenModal}><span>View Media</span></button>
         <a href="" className="o-mediafile__download" download>Download</a>
+        <MediaModalComp showModal={this.state.showModal} handleCloseModal={this.handleCloseModal} heading="Outer Space Music">
+          <MediaFeatureAudioObj />
+        </MediaModalComp>
       </div>
     )
   }
