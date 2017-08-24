@@ -2,21 +2,38 @@
 
 $wizard-nav-icon-size: 1.5em;
 
-%c-wizard {
-  transition: transform 1s;
-}
+// ***** Animation ***** //
 
 .c-wizard {
-  @extend %c-wizard;
+  display: flex;
+  // transition: transform 3s;
 }
 
-.c-wizard--active {
-  @extend %c-wizard;
-  transform: translateX(-100%);
+// .c-wizard {
+//   @extend %c-wizard;
+//   transform: translateX(-400px);
+// }
+
+%c-wizard__state {
+  display: flex;
+  transition: margin-left 1s, opacity 1s;
+  opacity: 1;
 }
+
+.c-wizard__state--prev {
+  @extend %c-wizard__state;
+  margin-left: -400px;
+  opacity: 0;
+}
+
+.c-wizard__state {
+  @extend %c-wizard__state;
+}
+
+// ***** Styles ***** //
 
 .c-wizard__step {
-  max-width: 400px;
+  width: 400px;
   margin-bottom: $spacing-md;
   padding: $spacing-md;
   background-color: $color-light-gray;

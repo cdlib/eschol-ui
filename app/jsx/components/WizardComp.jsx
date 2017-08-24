@@ -28,14 +28,30 @@ class WizardComp extends React.Component {
         <button onClick = {()=> this.setState({wizardStep: 6, stepActive: false})}>Link</button>
         <br/><br/>
 
-        <div className={this.state.stepActive ? "c-wizard--active" : "c-wizard"}>
+        <div className="c-wizard">
+
+          <div className={this.state.stepActive ? "c-wizard__state--next" : "c-wizard__state--prev"}>
+            <WizardRoleComp />
+          </div>
+
+          <div className="c-wizard__state">
+            <WizardCampusComp />
+          </div>
+
+        </div>
+
+          {/*}
+          <div className={this.state.stepActive ? "c-wizard--active" : "c-wizard"}>
+
           {this.state.wizardStep === 1 ? <WizardRoleComp /> : null}
           {this.state.wizardStep === 2 ? <WizardCampusComp /> : null}
           {this.state.wizardStep === 3 ? <WizardTypeComp /> : null}
           {this.state.wizardStep === 4 ? <WizardUnitComp /> : null}
           {this.state.wizardStep === 5 ? <WizardSeriesComp /> : null}
           {this.state.wizardStep === 6 ? <WizardLinkComp /> : null}
-        </div>
+
+          </div>
+          {*/}
 
       </div>
     )
