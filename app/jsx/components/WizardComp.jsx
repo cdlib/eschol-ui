@@ -20,22 +20,38 @@ class WizardComp extends React.Component {
       <div>
 
       {/* Temporary buttons to test toggle */}
-        <button onClick = {()=> this.setState({wizardStep: 1, stepActive: false})}>Role</button>
+        <button onClick = {()=> this.setState({wizardStep: 1, stepActive: true})}>Role</button>
         <button onClick = {()=> this.setState({wizardStep: 2, stepActive: true})}>Campus</button>
-        <button onClick = {()=> this.setState({wizardStep: 3, stepActive: false})}>Type</button>
-        <button onClick = {()=> this.setState({wizardStep: 4, stepActive: false})}>Unit</button>
-        <button onClick = {()=> this.setState({wizardStep: 5, stepActive: false})}>Series</button>
-        <button onClick = {()=> this.setState({wizardStep: 6, stepActive: false})}>Link</button>
+        <button onClick = {()=> this.setState({wizardStep: 3, stepActive: true})}>Type</button>
+        <button onClick = {()=> this.setState({wizardStep: 4, stepActive: true})}>Unit</button>
+        <button onClick = {()=> this.setState({wizardStep: 5, stepActive: true})}>Series</button>
+        <button onClick = {()=> this.setState({wizardStep: 6, stepActive: true})}>Link</button>
         <br/><br/>
 
-        <div className={this.state.stepActive ? "c-wizard--prev" : "c-wizard--next"}>
+        <div className="c-wizard">
 
-          <div className="c-wizard__state1">
+          <div className={this.state.wizardStep === 1 ? "c-wizard__current" : "c-wizard__next"}>
             <WizardRoleComp />
           </div>
 
-          <div className="c-wizard__state2">
+          <div className={this.state.wizardStep === 2 ? "c-wizard__current" : "c-wizard__next"}>
             <WizardCampusComp />
+          </div>
+
+          <div className={this.state.wizardStep === 3 ? "c-wizard__current" : "c-wizard__next"}>
+            <WizardTypeComp />
+          </div>
+
+          <div className={this.state.wizardStep === 4 ? "c-wizard__current" : "c-wizard__next"}>
+            <WizardUnitComp />
+          </div>
+
+          <div className={this.state.wizardStep === 5 ? "c-wizard__current" : "c-wizard__next"}>
+            <WizardSeriesComp />
+          </div>
+
+          <div className={this.state.wizardStep === 6 ? "c-wizard__current" : "c-wizard__next"}>
+            <WizardLinkComp />
           </div>
 
         </div>

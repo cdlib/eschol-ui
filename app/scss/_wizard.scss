@@ -2,76 +2,53 @@
 
 $wizard-nav-icon-size: 1.5em;
 
-%c-wizard {
-  display: flex;
+.c-wizard {
+  position: relative;
 
-  .c-wizard__state1,
-  .c-wizard__state2 {
-    opacity: 0;
-  }
-}
-
-.c-wizard--prev {
-  @extend %c-wizard;
-  transform: translateX(0px);
-  transition: transform 1s;
-
-  .c-wizard__state1 {
-    transition: opacity 1s;
-    opacity: 1;
+  .c-wizard__current,
+  .c-wizard__next {
+    position: absolute;
   }
 
 }
 
-.c-wizard--next {
-  @extend %c-wizard;
-  transform: translateX(-400px);
-  transition: transform 1s;
-
-  .c-wizard__state2 {
-    transition: opacity 1s;
-    opacity: 1;
-  }
-
+.c-wizard__current {
+  opacity: 1;
+  animation: current 2s;
 }
 
-.c-wizard__prev {
-  animation: prev 2s;
+.c-wizard__next {
+  left: 400px;
+  opacity: 0;
+  animation: next 2s;
 }
 
-@keyframes prev {
+@keyframes current {
+
   0% {
-    transform: translateX(-100%);
+    left: -400px;
     opacity: 0;
   }
+
   100% {
-    transform: translateX(0px);
+    left: 0;
     opacity: 1;
   }
-}
 
-// .c-wizard__next {
-//   animation: next 2s;
-//   opacity: 0;
-// }
+}
 
 @keyframes next {
+
   0% {
-    transform: translateX(0px);
+    left: 0;
     opacity: 1;
   }
-  100% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-}
 
-@keyframes MenuAnimOut2 {
-  0% { }
   100% {
-    transform: translateX(-100%);
+    left: 400px;
     opacity: 0;
   }
+
 }
 
 // ***** Animation ***** //
