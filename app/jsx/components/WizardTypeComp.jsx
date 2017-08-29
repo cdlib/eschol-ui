@@ -8,15 +8,21 @@ class WizardTypeComp extends React.Component {
       <div className="c-wizard__step" id="c-wizard__type">
         <header>
           <h1>eScholarship Deposit</h1>
-          <a href=""><span>Go back</span></a>
-          <button><span>Close</span></button>
+          <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goBackward()}
+          } href=""><span>Go back</span></a>
+          <button onClick = {()=>this.props.goForward()}><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
           [3] What kind of material are you depositing?
         </div>
         <ul className="c-wizard__list">
           <li>
-            <a href="">A published (or accepted) scholarly article</a>
+            <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goForward()}
+          } href="">A published (or accepted) scholarly article</a>
           </li>
           <li>
             <a href="">Data (independent or associated with a publication)</a>

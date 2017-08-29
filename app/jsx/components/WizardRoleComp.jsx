@@ -15,7 +15,10 @@ class WizardRoleComp extends React.Component {
         </div>
         <ul className="c-wizard__list">
           <li>
-            <a href="">Academic Senate-represented faculy</a>
+            <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goForward()}
+          } href="">Academic Senate-represented faculy</a>
           </li>
           <li>
             <a href="">Other faculty, student, or staff</a>

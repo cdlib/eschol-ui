@@ -8,7 +8,10 @@ class WizardLinkComp extends React.Component {
       <div className="c-wizard__step" id="c-wizard__link">
         <header>
           <h1>eScholarship Deposit</h1>
-          <a href=""><span>Go back</span></a>
+          <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goBackward()}
+          } href=""><span>Go back</span></a>
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">

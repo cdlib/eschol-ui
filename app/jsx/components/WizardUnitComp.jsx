@@ -8,15 +8,21 @@ class WizardUnitComp extends React.Component {
       <div className="c-wizard__step" id="c-wizard__unit">
         <header>
           <h1>eScholarship Deposit</h1>
-          <a href=""><span>Go back</span></a>
-          <button><span>Close</span></button>
+          <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goBackward()}
+          } href=""><span>Go back</span></a>
+          <button onClick = {()=>this.props.goForward()}><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
           [4] What is your departmental affiliation?
         </div>
         <ul className="c-wizard__list">
           <li>
-            <a href="">American Cultures Center</a>
+            <a onClick = {(event)=>{
+            event.preventDefault()
+            this.props.goForward()}
+          } href="">American Cultures Center</a>
           </li>
           <li>
             <a href="">Archaeological Research Facility</a>

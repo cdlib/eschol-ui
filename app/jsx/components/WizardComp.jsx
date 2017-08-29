@@ -12,7 +12,7 @@ class WizardComp extends React.Component {
 
   constructor(props){
     super(props)
-    this.state = {wizardStep: 1}
+    this.state = {wizardStep: 1, wizardDir: "fwd"}
   }
 
   render() {
@@ -30,28 +30,28 @@ class WizardComp extends React.Component {
 
         <div className="c-wizard">
 
-          <div className={this.state.wizardStep === 1 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardRoleComp />
+          <div className={this.state.wizardStep === 1 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardRoleComp goForward = {()=>this.setState({wizardStep: 2, wizardDir: "fwd"})} />
           </div>
 
-          <div className={this.state.wizardStep === 2 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardCampusComp />
+          <div className={this.state.wizardStep === 2 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardCampusComp goForward = {()=>this.setState({wizardStep: 3, wizardDir: "fwd"})} goBackward = {()=>this.setState({wizardStep: 1, wizardDir: "bkw"})} />
           </div>
 
-          <div className={this.state.wizardStep === 3 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardTypeComp />
+          <div className={this.state.wizardStep === 3 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardTypeComp goForward = {()=>this.setState({wizardStep: 4, wizardDir: "fwd"})} goBackward = {()=>this.setState({wizardStep: 2, wizardDir: "bkw"})} />
           </div>
 
-          <div className={this.state.wizardStep === 4 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardUnitComp />
+          <div className={this.state.wizardStep === 4 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardUnitComp goForward = {()=>this.setState({wizardStep: 5, wizardDir: "fwd"})} goBackward = {()=>this.setState({wizardStep: 3, wizardDir: "bkw"})} />
           </div>
 
-          <div className={this.state.wizardStep === 5 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardSeriesComp />
+          <div className={this.state.wizardStep === 5 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardSeriesComp goForward = {()=>this.setState({wizardStep: 6, wizardDir: "fwd"})} goBackward = {()=>this.setState({wizardStep: 4, wizardDir: "bkw"})} />
           </div>
 
-          <div className={this.state.wizardStep === 6 ? "c-wizard__current" : "c-wizard__standby"}>
-            <WizardLinkComp />
+          <div className={this.state.wizardStep === 6 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`}>
+            <WizardLinkComp goBackward = {()=>this.setState({wizardStep: 5, wizardDir: "bkw"})} />
           </div>
 
         </div>
