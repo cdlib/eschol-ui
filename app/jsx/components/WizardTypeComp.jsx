@@ -12,7 +12,7 @@ class WizardTypeComp extends React.Component {
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
-          What kind of material are you depositing?
+          [3] What kind of material are you depositing?
         </div>
         <ul className="c-wizard__list">
           <li>

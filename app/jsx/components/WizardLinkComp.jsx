@@ -12,7 +12,7 @@ class WizardLinkComp extends React.Component {
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
-          UC Publication Management
+          [6] UC Publication Management
         </div>
         <div className="c-wizard__message">
           <p>Faculty use the UC Publication Management system for all eScholarship deposits– including to claim and deposit publications in compliance with the <a href="">UC Academic Senate faculty Open Acces Policy</a>.</p>

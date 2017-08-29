@@ -12,7 +12,7 @@ class WizardUnitComp extends React.Component {
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
-          What is your departmental affiliation?
+          [4] What is your departmental affiliation?
         </div>
         <ul className="c-wizard__list">
           <li>

@@ -12,7 +12,7 @@ class WizardCampusComp extends React.Component {
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
-          Which UC Campus are you affiliated with?
+          [2] Which UC Campus are you affiliated with?
         </div>
         <ul className="c-wizard__list">
           <li>

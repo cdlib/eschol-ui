@@ -11,7 +11,7 @@ class WizardRoleComp extends React.Component {
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
-          How are you affiliated with [campus]?
+          [1] How are you affiliated with [campus]?
         </div>
         <ul className="c-wizard__list">
           <li>

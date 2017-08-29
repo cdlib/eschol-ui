@@ -14,13 +14,13 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard__current {
   opacity: 1;
-  animation: current 2s;
+  animation: current 1s;
 }
 
 .c-wizard__next {
   left: 400px;
   opacity: 0;
-  animation: next 2s;
+  animation: next 1s;
 }
 
 @keyframes current {
