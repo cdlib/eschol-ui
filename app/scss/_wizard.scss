@@ -13,12 +13,10 @@ $wizard-nav-icon-size: 1.5em;
 }
 
 .c-wizard__current {
-  opacity: 1;
   animation: current 1s;
 }
 
 .c-wizard__next {
-  left: 400px;
   opacity: 0;
   animation: next 1s;
 }
@@ -26,7 +24,7 @@ $wizard-nav-icon-size: 1.5em;
 @keyframes current {
 
   0% {
-    left: -400px;
+    left: 400px;
     opacity: 0;
   }
 
@@ -45,7 +43,7 @@ $wizard-nav-icon-size: 1.5em;
   }
 
   100% {
-    left: 400px;
+    left: -400px;
     opacity: 0;
   }
 
