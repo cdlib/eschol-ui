@@ -30,27 +30,27 @@ class WizardComp extends React.Component {
 
         <div className="c-wizard">
 
-          <div className={this.state.wizardStep === 1 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 1 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardRoleComp />
           </div>
 
-          <div className={this.state.wizardStep === 2 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 2 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardCampusComp />
           </div>
 
-          <div className={this.state.wizardStep === 3 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 3 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardTypeComp />
           </div>
 
-          <div className={this.state.wizardStep === 4 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 4 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardUnitComp />
           </div>
 
-          <div className={this.state.wizardStep === 5 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 5 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardSeriesComp />
           </div>
 
-          <div className={this.state.wizardStep === 6 ? "c-wizard__current" : "c-wizard__next"}>
+          <div className={this.state.wizardStep === 6 ? "c-wizard__current" : "c-wizard__standby"}>
             <WizardLinkComp />
           </div>
 

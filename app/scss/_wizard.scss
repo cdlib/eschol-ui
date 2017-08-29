@@ -6,7 +6,7 @@ $wizard-nav-icon-size: 1.5em;
   position: relative;
 
   .c-wizard__current,
-  .c-wizard__next {
+  .c-wizard__standby {
     position: absolute;
   }
 
@@ -16,9 +16,9 @@ $wizard-nav-icon-size: 1.5em;
   animation: current 1s;
 }
 
-.c-wizard__next {
+.c-wizard__standby {
   opacity: 0;
-  animation: next 1s;
+  animation: standby 1s;
 }
 
 @keyframes current {
@@ -35,7 +35,7 @@ $wizard-nav-icon-size: 1.5em;
 
 }
 
-@keyframes next {
+@keyframes standby {
 
   0% {
     left: 0;
