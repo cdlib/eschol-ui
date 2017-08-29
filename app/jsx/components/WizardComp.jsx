@@ -12,7 +12,7 @@ class WizardComp extends React.Component {
 
   constructor(props){
     super(props)
-    this.state = {wizardStep: 1, stepActive: null}
+    this.state = {wizardStep: 1}
   }
 
   render() {
@@ -20,12 +20,12 @@ class WizardComp extends React.Component {
       <div>
 
       {/* Temporary buttons to test toggle */}
-        <button onClick = {()=> this.setState({wizardStep: 1, stepActive: true})}>Role</button>
-        <button onClick = {()=> this.setState({wizardStep: 2, stepActive: true})}>Campus</button>
-        <button onClick = {()=> this.setState({wizardStep: 3, stepActive: true})}>Type</button>
-        <button onClick = {()=> this.setState({wizardStep: 4, stepActive: true})}>Unit</button>
-        <button onClick = {()=> this.setState({wizardStep: 5, stepActive: true})}>Series</button>
-        <button onClick = {()=> this.setState({wizardStep: 6, stepActive: true})}>Link</button>
+        <button onClick = {()=> this.setState({wizardStep: 1})}>Role</button>
+        <button onClick = {()=> this.setState({wizardStep: 2})}>Campus</button>
+        <button onClick = {()=> this.setState({wizardStep: 3})}>Type</button>
+        <button onClick = {()=> this.setState({wizardStep: 4})}>Unit</button>
+        <button onClick = {()=> this.setState({wizardStep: 5})}>Series</button>
+        <button onClick = {()=> this.setState({wizardStep: 6})}>Link</button>
         <br/><br/>
 
         <div className="c-wizard">
