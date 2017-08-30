@@ -21,7 +21,7 @@ class WizardSeriesComp extends React.Component {
           <li>
             <a onClick = {(event)=>{
             event.preventDefault()
-            this.props.goForward()}
+            this.props.goForward(6)}
           } href="">Disability Law Society</a>
           </li>
           <li>

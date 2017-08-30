@@ -17,7 +17,7 @@ class WizardRoleComp extends React.Component {
           <li>
             <a onClick = {(event)=>{
             event.preventDefault()
-            this.props.goForward()}
+            this.props.goForward(2)}
           } href="">Academic Senate-represented faculy</a>
           </li>
           <li>

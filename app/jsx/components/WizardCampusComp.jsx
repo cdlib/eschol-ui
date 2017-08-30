@@ -21,7 +21,7 @@ class WizardCampusComp extends React.Component {
           <li>
             <a onClick = {(event)=>{
             event.preventDefault()
-            this.props.goForward()}
+            this.props.goForward(3)}
           } href="">UC Berkeley</a>
           </li>
           <li>

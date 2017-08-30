@@ -21,7 +21,7 @@ class WizardTypeComp extends React.Component {
           <li>
             <a onClick = {(event)=>{
             event.preventDefault()
-            this.props.goForward()}
+            this.props.goForward(4)}
           } href="">A published (or accepted) scholarly article</a>
           </li>
           <li>
