@@ -7,7 +7,7 @@ class WizardRoleComp extends React.Component {
     return (
       <div className="c-wizard__step" id="c-wizard__role">
         <header>
-          <h1>eScholarship Deposit</h1>
+          <h1 tabIndex="-1">eScholarship Deposit</h1>
           <button><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">

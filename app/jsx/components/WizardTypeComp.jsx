@@ -7,7 +7,7 @@ class WizardTypeComp extends React.Component {
     return (
       <div className="c-wizard__step" id="c-wizard__type">
         <header>
-          <h1>eScholarship Deposit</h1>
+          <h1 tabIndex="-1">eScholarship Deposit</h1>
           <a onClick = {(event)=>{
             event.preventDefault()
             this.props.goBackward()}
