@@ -20,14 +20,15 @@ $wizard-nav-icon-size: 1.5em;
 // Forward:
 
 .c-wizard__current-fwd {
-  animation: current-fwd 1s;
   z-index: 5;
+  animation: current-fwd 1s;
 }
 
 .c-wizard__standby-fwd {
+  left: -9999px;
   opacity: 0;
-  animation: standby-fwd 1s;
   z-index: 1;
+  animation: standby-fwd 1s;
 }
 
 @keyframes current-fwd {
@@ -61,14 +62,15 @@ $wizard-nav-icon-size: 1.5em;
 // Backward:
 
 .c-wizard__current-bkw {
-  animation: current-bkw 1s;
   z-index: 5;
+  animation: current-bkw 1s;
 }
 
 .c-wizard__standby-bkw {
+  left: -9999px;
   opacity: 0;
-  animation: standby-bkw 1s;
   z-index: 1;
+  animation: standby-bkw 1s;
 }
 
 @keyframes current-bkw {
