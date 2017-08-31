@@ -5,7 +5,7 @@ import React from 'react'
 class WizardTypeComp extends React.Component {
   render() {
     return (
-      <div className="c-wizard__step" id="c-wizard__type">
+      <div className="c-wizard__step">
         <header>
           <h1 tabIndex="-1">eScholarship Deposit</h1>
           <a onClick = {(event)=>{

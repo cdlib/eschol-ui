@@ -5,7 +5,7 @@ import React from 'react'
 class WizardRoleComp extends React.Component {
   render() {
     return (
-      <div className="c-wizard__step" id="c-wizard__role">
+      <div className="c-wizard__step">
         <header>
           <h1 tabIndex="-1">eScholarship Deposit</h1>
           <button onClick={this.props.closeModal}><span>Close</span></button>

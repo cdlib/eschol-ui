@@ -5,7 +5,7 @@ import React from 'react'
 class WizardLinkComp extends React.Component {
   render() {
     return (
-      <div className="c-wizard__step" id="c-wizard__link">
+      <div className="c-wizard__step">
         <header>
           <h1 tabIndex="-1">eScholarship Deposit</h1>
           <a onClick = {(event)=>{
