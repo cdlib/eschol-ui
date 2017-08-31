@@ -124,10 +124,10 @@ $wizard-nav-icon-size: 1.5em;
     h1 {
       order: 2;
       margin: 0;
+      outline: none; // remove focus outline
       color: $color-white;
       font-size: 1em;
       font-weight: normal;
-      outline: none; // remove focus outline
     }
 
     a {
@@ -184,8 +184,10 @@ $wizard-nav-icon-size: 1.5em;
     }
 
     a {
-      display: block;
-      padding: $spacing-sm 2.5em $spacing-sm $spacing-sm;
+      @extend %interactive-element-size;
+      display: flex;
+      align-items: center;
+      padding: $spacing-base 2.5em $spacing-base $spacing-sm;
       background: $color-teal inline('../images/icon_caret-right-white.svg') no-repeat center right #{$spacing-sm} / #{$wizard-nav-icon-size};
       color: $color-white;
       text-decoration: none;
