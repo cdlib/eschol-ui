@@ -13,8 +13,6 @@ $wizard-nav-icon-size: 1.5em;
   .c-wizard__current-fwd,
   .c-wizard__standby-fwd {
     position: absolute;
-    border-radius: $round-corner;
-    box-shadow: 5px 5px 15px $color-light-black;
   }
 
 }
@@ -107,9 +105,10 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard__step {
   width: 400px;
-  // margin-bottom: $spacing-md;
   padding: $spacing-md;
+  border-radius: $round-corner;
   background-color: $color-light-gray;
+  box-shadow: 5px 5px 15px $color-light-black;
 
   header {
     display: flex;
@@ -118,6 +117,8 @@ $wizard-nav-icon-size: 1.5em;
     margin: (-$spacing-md) (-$spacing-md) $spacing-md;
     padding-right: $spacing-sm;
     padding-left: $spacing-md;
+    border-top-left-radius: $round-corner;
+    border-top-right-radius: $round-corner;
     background-color: $color-light-black;
 
     @include headings() {
