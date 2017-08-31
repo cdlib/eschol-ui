@@ -12,7 +12,7 @@ class WizardLinkComp extends React.Component {
             event.preventDefault()
             this.props.goBackward()}
           } href=""><span>Go back</span></a>
-          <button><span>Close</span></button>
+          <button onClick={this.props.closeModal}><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
           [6] UC Publication Management

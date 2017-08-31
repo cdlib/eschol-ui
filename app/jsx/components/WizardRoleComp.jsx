@@ -8,7 +8,7 @@ class WizardRoleComp extends React.Component {
       <div className="c-wizard__step" id="c-wizard__role">
         <header>
           <h1 tabIndex="-1">eScholarship Deposit</h1>
-          <button><span>Close</span></button>
+          <button onClick={this.props.closeModal}><span>Close</span></button>
         </header>
         <div className="c-wizard__heading">
           [1] How are you affiliated with [campus]?
