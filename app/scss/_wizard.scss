@@ -121,12 +121,13 @@ $wizard-nav-icon-size: 1.5em;
     border-top-right-radius: $round-corner;
     background-color: $color-light-black;
 
-    @include headings() {
+    h1 {
       order: 2;
       margin: 0;
       color: $color-white;
       font-size: 1em;
       font-weight: normal;
+      outline: none; // remove focus outline
     }
 
     a {
@@ -220,6 +221,6 @@ $wizard-nav-icon-size: 1.5em;
   left: 0;
   justify-content: center;
   margin-top: $spacing-md;
-  outline: none !important;
+  outline: none !important; // remove default modal focus outline
   overflow: auto;
 }
