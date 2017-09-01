@@ -120,6 +120,7 @@ $wizard-nav-icon-size: 1.5em;
     border-top-left-radius: $round-corner;
     border-top-right-radius: $round-corner;
     background-color: $color-light-black;
+    overflow-x: hidden; // prevents <a> and <button> %hide horizontal scrolling
 
     h1 {
       order: 2;
