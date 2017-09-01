@@ -6,13 +6,14 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard {
   position: relative;
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
 
   .c-wizard__current-bkw,
   .c-wizard__standby-bkw,
   .c-wizard__current-fwd,
   .c-wizard__standby-fwd {
-    position: absolute;
+    position: absolute; // allow stacking
   }
 
 }
@@ -26,7 +27,7 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard__standby-fwd {
   left: -9999px;
-  opacity: 0;
+  width: 400px;
   z-index: 1;
   animation: standby-fwd 1s;
 }
@@ -34,12 +35,12 @@ $wizard-nav-icon-size: 1.5em;
 @keyframes current-fwd {
 
   0% {
-    left: 400px;
+    transform: translateX(100%);
     opacity: 0;
   }
 
   100% {
-    left: 0;
+    transform: translateX(0%);
     opacity: 1;
   }
 
@@ -68,7 +69,7 @@ $wizard-nav-icon-size: 1.5em;
 
 .c-wizard__standby-bkw {
   left: -9999px;
-  opacity: 0;
+  width: 400px;
   z-index: 1;
   animation: standby-bkw 1s;
 }
@@ -76,12 +77,12 @@ $wizard-nav-icon-size: 1.5em;
 @keyframes current-bkw {
 
   0% {
-    left: -400px;
+    transform: translateX(-100%);
     opacity: 0;
   }
 
   100% {
-    left: 0;
+    transform: translateX(0%);
     opacity: 1;
   }
 
@@ -104,7 +105,6 @@ $wizard-nav-icon-size: 1.5em;
 // ***** Styles ***** //
 
 .c-wizard__step {
-  width: 400px;
   padding: $spacing-md;
   border-radius: $round-corner;
   background-color: $color-light-gray;
@@ -216,14 +216,12 @@ $wizard-nav-icon-size: 1.5em;
 // ***** Modal ***** //
 
 .c-wizard__modal {
-  display: flex;
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
-  justify-content: center;
+  width: 100%;
   margin-top: $spacing-md;
   outline: none !important; // remove default modal focus outline
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
