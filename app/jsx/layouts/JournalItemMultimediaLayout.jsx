@@ -69,7 +69,7 @@ class JournalItemMultimediaLayout extends React.Component {
                       </select>
                     </div>
                     <div className="o-download">
-                      <button className="o-download__button">Download All Files</button>
+                      <a href="" className="o-download__button" download>Download All Files</a>
                       <details className="o-download__formats">
                         <summary aria-label="formats"></summary>
                         <ul className="o-download__single-menu">
