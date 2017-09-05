@@ -29,7 +29,7 @@ class MediaFileImageObj extends React.Component {
         </div>
         <button className="o-mediafile__view" onClick={this.handleOpenModal}><span>View Media</span></button>
         <a href="" className="o-mediafile__download" download>Download</a>
-        <MediaModalComp showModal={this.state.showModal} handleCloseModal={this.handleCloseModal} heading="New Horizons Full Trajectory - Side View">
+        <MediaModalComp showModal={this.state.showModal} handleCloseModal={this.handleCloseModal}>
           <MediaFeatureAudioObj />
         </MediaModalComp>
       </div>
