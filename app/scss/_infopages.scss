@@ -69,8 +69,8 @@
   overflow: hidden; // hide text beyond max-height
 }
 
-.c-infopages__all {
-  @extend %o-textlink__black;
+.c-infopages__show-all {
+  @extend %o-button__7;
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
 }

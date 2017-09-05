@@ -37,7 +37,7 @@ class InfoPagesComp extends React.Component {
             </div>
           </div>
         </div>
-        <a href="" className="c-infopages__all">Show all informational page results</a>
+        <button className="c-infopages__show-all">Show all informational page results</button>
       </div>
     )
   }
