@@ -20,9 +20,6 @@ class MediaModalComp extends React.Component {
           <div className="modal__content">
             {this.props.children}
           </div>
-          <div className="c-modal__footer">
-            <button className="c-modal__button-close" onClick={this.props.handleCloseModal}>Cancel</button>
-          </div>
         </ReactModal>
       </div>
     )
