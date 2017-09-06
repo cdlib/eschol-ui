@@ -4,12 +4,30 @@
   // no styles
 }
 
-.c-infopages__show-more {
+%c-infopages__show {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.c-infopages__show-less {
+  @extend %c-infopages__show;
 
   .c-pagination {
+
+    @include bp(screen2) {
+      margin-bottom: $spacing-base;
+    }
+
+  }
+
+}
+
+.c-infopages__show-more {
+  @extend %c-infopages__show;
+
+  .c-pagination {
+    margin-bottom: $spacing-base;
 
     @include bp(screen2) {
       margin-top: $spacing-sm;
@@ -17,10 +35,6 @@
 
   }
 
-}
-
-.c-infopages__show-less {
-  // no styles
 }
 
 .c-infopages__items {
@@ -76,8 +90,8 @@
   overflow: hidden; // hide text beyond max-height
 }
 
-.c-infopages__show {
+.c-infopages__toggle {
   @extend %o-button__7;
   display: flex;
-  margin: 0 $spacing-sm $spacing-sm auto;
+  margin: $spacing-sm $spacing-sm $spacing-sm auto;
 }

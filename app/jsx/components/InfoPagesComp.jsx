@@ -15,6 +15,7 @@ class InfoPagesComp extends React.Component {
     return (
       <div className="c-infopages">
         <div className="c-infopages__show-less">
+          <PaginationComp />
           <div className="c-infopages__items">
             <div className="c-infopages__item">
               <h2>
@@ -41,7 +42,7 @@ class InfoPagesComp extends React.Component {
               </div>
             </div>
           </div>
-          <button className="c-infopages__show" onClick={()=> this.setState({showMore: true})} hidden={this.state.showMore}>Show more results</button>
+          <button className="c-infopages__toggle" onClick={()=> this.setState({showMore: true})} hidden={this.state.showMore}>Show more results</button>
         </div>
         <div className="c-infopages__show-more" hidden={!this.state.showMore}>
           <div className="c-infopages__items">
@@ -119,7 +120,7 @@ class InfoPagesComp extends React.Component {
             </div>
           </div>
           <PaginationComp />
-          <button className="c-infopages__show" onClick={()=> this.setState({showMore: false})}>Show less results</button>
+          <button className="c-infopages__toggle" onClick={()=> this.setState({showMore: false})}>Show less results</button>
         </div>
       </div>
     )
