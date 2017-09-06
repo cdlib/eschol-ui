@@ -55,7 +55,7 @@
   }
 
   @include bp(screen2) {
-    flex: 1 1 30%; // 3 columns
+    flex: 1 1 25%; // 3 columns
     margin: $spacing-sm;
     padding: $spacing-sm;
     border: 1px solid $color-dark-gray;
@@ -93,5 +93,5 @@
 .c-infopages__toggle {
   @extend %o-button__7;
   display: flex;
-  margin: $spacing-sm $spacing-sm $spacing-sm auto;
+  margin: $spacing-sm $spacing-sm 0 auto;
 }
