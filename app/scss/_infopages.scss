@@ -9,7 +9,6 @@
   @include bp(screen2) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: $spacing-sm;
   }
 
 }
@@ -58,9 +57,8 @@
   overflow: hidden; // hide text beyond max-height
 }
 
-.c-infopages__show-all {
+.c-infopages__show {
   @extend %o-button__7;
   display: flex;
-  margin-right: $spacing-sm;
-  margin-left: auto;
+  margin: $spacing-sm $spacing-sm 0 auto;
 }
