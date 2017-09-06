@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
+import PaginationComp from '../components/PaginationComp.jsx'
 
 class InfoPagesComp extends React.Component {
   state={showMore: false}
@@ -117,6 +118,7 @@ class InfoPagesComp extends React.Component {
               </div>
             </div>
           </div>
+          <PaginationComp />
           <button className="c-infopages__show" onClick={()=> this.setState({showMore: false})}>Show less results</button>
         </div>
       </div>

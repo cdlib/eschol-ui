@@ -4,8 +4,22 @@
   // no styles
 }
 
-.c-infopages__show-less,
 .c-infopages__show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .c-pagination {
+
+    @include bp(screen2) {
+      margin-top: $spacing-sm;
+    }
+
+  }
+
+}
+
+.c-infopages__show-less {
   // no styles
 }
 
@@ -65,5 +79,5 @@
 .c-infopages__show {
   @extend %o-button__7;
   display: flex;
-  margin: $spacing-sm $spacing-sm 0 auto;
+  margin: 0 $spacing-sm $spacing-sm auto;
 }
