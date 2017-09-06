@@ -15,7 +15,7 @@ class InfoPagesComp extends React.Component {
     return (
       <div className="c-infopages">
         <div className="c-infopages__show-less">
-          <PaginationComp />
+          {this.state.showMore == true ? <PaginationComp /> : null}
           <div className="c-infopages__items">
             <div className="c-infopages__item">
               <h2>
