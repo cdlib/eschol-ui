@@ -34,8 +34,7 @@
 
   .c-pagination {
     justify-content: center;
-    margin-right: $spacing-sm;
-    margin-bottom: $spacing-base;
+    margin: 0 $spacing-sm $spacing-base;
 
     @include bp(screen2) {
       margin-top: $spacing-sm;
