@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 import PaginationComp from '../components/PaginationComp.jsx'
 
 class InfoPagesComp extends React.Component {
-  state={showMore: false}
+  state={showMore: true}
 
   componentDidMount() {
     $('.c-infopages__text').dotdotdot({watch:"window"});
@@ -19,6 +19,7 @@ class InfoPagesComp extends React.Component {
           <div className="c-infopages__items">
             <div className="c-infopages__item">
               <h2>
+                <b>UC Berkeley</b>
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h2>
@@ -27,6 +28,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Davis</b>
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h2>
@@ -48,6 +50,7 @@ class InfoPagesComp extends React.Component {
           <div className="c-infopages__items">
             <div className="c-infopages__item">
               <h2>
+                <b>UC Berkeley</b>
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h2>
@@ -56,6 +59,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Davis</b>
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h2>
@@ -72,6 +76,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Berkeley</b>
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h2>
@@ -80,6 +85,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Davis</b>
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h2>
@@ -96,6 +102,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Berkeley</b>
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h2>
@@ -104,6 +111,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
+                <b>UC Davis</b>
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h2>

@@ -78,6 +78,13 @@
     font-size: 1em;
     font-weight: normal;
 
+    b {
+      display: block;
+      margin-bottom: $spacing-sm;
+      color: $color-dark-gray;
+      font-weight: normal;
+    }
+
     a {
       @extend %o-textlink__secondary;
       display: block;
