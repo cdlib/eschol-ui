@@ -30,6 +30,8 @@
 
   @include bp(screen2) {
     display: grid;
+    padding-top: 0;
+    border-top: none;
     grid-template-columns: 2fr auto;
   }
 
