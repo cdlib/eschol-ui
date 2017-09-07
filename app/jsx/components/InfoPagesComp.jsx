@@ -6,7 +6,7 @@ import dotdotdot from 'jquery.dotdotdot'
 import PaginationComp from '../components/PaginationComp.jsx'
 
 class InfoPagesComp extends React.Component {
-  state={showMore: true}
+  state={showMore: false}
 
   componentDidMount() {
     $('.c-infopages__text').dotdotdot({watch:"window"});
