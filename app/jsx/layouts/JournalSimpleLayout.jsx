@@ -134,7 +134,6 @@ class JournalSimpleLayout extends React.Component {
               </div>
               <div className="c-pub">
                 <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures
-                <button onClick={this.removeDiv}>Test</button>
                 </div>
                 <div className="c-pub__abstract">
                   <p>Aut vitae, ipsa magnam, voluptates cum deleniti quaerat asperiores. Repudiandae reprehenderit tempora beatae cumque nulla, molestias rem atque dolore modi deserunt veniam quod numquam voluptatibus dolor ut illo. Dolorum natus autem aliquid commodi nesciunt ducimus quis libero enim dolorem reprehenderit amet iusto labore pariatur expedita nisi sed recusandae, ullam! Quos quae accusantium incidunt repudiandae maxime cupiditate! Sequi qui sapiente neque quasi exercitationem.
