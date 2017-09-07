@@ -17,6 +17,9 @@ if (!(typeof document === "undefined")) {
 }
 
 class JournalSimpleLayout extends React.Component {
+  // For element wrap/unwrap test:
+  state={wrap: true}
+
   componentDidMount() {
     $('.c-pub__heading, .c-pub__abstract').dotdotdot({watch: 'window'
     });
@@ -32,19 +35,22 @@ class JournalSimpleLayout extends React.Component {
     $(this.element).trigger('destroy')
     $(this.element).removeClass("o-columnbox__truncate1")
   }
+
   render() {
+    // For element wrap/unwrap test:
+    let breadcrumbs = [
+      <a href="">eScholarship</a>,
+      <a href="">Campus Name</a>,
+      <a href="">Journal Name</a>,
+      <a className="c-breadcrumb-link--active" href="">Volume ##, Issue ##</a>
+    ]
     return (
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
         <SubheaderComp />
         <NavBarComp />
-        <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a href="">Campus Name</a>
-          <a href="">Journal Name</a>
-          <a className="c-breadcrumb-link--active" href="">Volume ##, Issue ##</a>
-        </nav>
+        {this.state.wrap ? <nav className="c-breadcrumb">{breadcrumbs} </nav> : breadcrumbs}
         <div className="c-columns">
           <main id="maincontent">
             <section className="o-columnbox2">
@@ -127,7 +133,9 @@ class JournalSimpleLayout extends React.Component {
                 </details>
               </div>
               <div className="c-pub">
-                <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures</div>
+                <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures
+                <button onClick={this.removeDiv}>Test</button>
+                </div>
                 <div className="c-pub__abstract">
                   <p>Aut vitae, ipsa magnam, voluptates cum deleniti quaerat asperiores. Repudiandae reprehenderit tempora beatae cumque nulla, molestias rem atque dolore modi deserunt veniam quod numquam voluptatibus dolor ut illo. Dolorum natus autem aliquid commodi nesciunt ducimus quis libero enim dolorem reprehenderit amet iusto labore pariatur expedita nisi sed recusandae, ullam! Quos quae accusantium incidunt repudiandae maxime cupiditate! Sequi qui sapiente neque quasi exercitationem.
                   </p>
