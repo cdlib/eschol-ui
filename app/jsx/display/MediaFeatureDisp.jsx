@@ -2,8 +2,8 @@
 
 import React from 'react'
 import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
-import MediaFeatureFileObj from '../objects/MediaFeatureFileObj.jsx'
-import MediaFeaturePictureObj from '../objects/MediaFeaturePictureObj.jsx'
+import MediaFeatureDataObj from '../objects/MediaFeatureDataObj.jsx'
+import MediaFeatureImageObj from '../objects/MediaFeatureImageObj.jsx'
 import MediaFeatureVideoObj from '../objects/MediaFeatureVideoObj.jsx'
 
 class MediaFeatureDisp extends React.Component {
@@ -11,8 +11,8 @@ class MediaFeatureDisp extends React.Component {
     return (
       <div>
         <MediaFeatureAudioObj />
-        <MediaFeatureFileObj />
-        <MediaFeaturePictureObj />
+        <MediaFeatureDataObj />
+        <MediaFeatureImageObj />
         <MediaFeatureVideoObj />
       </div>
     )

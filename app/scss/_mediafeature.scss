@@ -42,7 +42,7 @@
 
 }
 
-.o-mediafeature--file {
+.o-mediafeature--data {
   @extend %o-mediafeature;
 
   .o-mediafeature__item {
@@ -64,7 +64,7 @@
 
 }
 
-.o-mediafeature--picture {
+.o-mediafeature--image {
   @extend %o-mediafeature;
 
   .o-mediafeature__item {

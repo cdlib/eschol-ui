@@ -3,7 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import MediaModalComp from '../components/MediaModalComp.jsx'
-import MediaFeatureAudioObj from '../objects/MediaFeatureVideoObj.jsx'
+import MediaFeatureVideoObj from '../objects/MediaFeatureVideoObj.jsx'
 
 class MediaFileVideoObj extends React.Component {
   state={showModal: false}
@@ -31,7 +31,7 @@ class MediaFileVideoObj extends React.Component {
         <button className="o-mediafile__view" onClick={this.handleOpenModal}><span>View Media</span></button>
         <a href="" className="o-mediafile__download" download>Download</a>
         <MediaModalComp showModal={this.state.showModal} handleCloseModal={this.handleCloseModal}>
-          <MediaFeatureAudioObj />
+          <MediaFeatureVideoObj />
         </MediaModalComp>
       </div>
     )
