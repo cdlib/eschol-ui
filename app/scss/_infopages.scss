@@ -12,15 +12,6 @@
 
 .c-infopages__show-less {
   @extend %c-infopages__show;
-
-  .c-pagination {
-
-    @include bp(screen2) {
-      margin-bottom: $spacing-base;
-    }
-
-  }
-
 }
 
 .c-infopages__show-more {
