@@ -36,7 +36,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
-                <a href="">UC Berkeley</a>
+                <b>UC Irvine</b>
                 <a href="" className="c-infopages__title">Consectetur Adipisicing Elit Delectus Veritatis Mollitia</a>
               </h2>
               <div className="c-infopages__text">eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide.
@@ -67,7 +67,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
-                <a href="">UC Berkeley</a>
+                <b>UC Irvine</b>
                 <a href="" className="c-infopages__title">Consectetur Adipisicing Elit Delectus Veritatis Mollitia</a>
               </h2>
               <div className="c-infopages__text">eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide.
@@ -93,7 +93,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
-                <a href="">UC Berkeley</a>
+                <b>UC Irvine</b>
                 <a href="" className="c-infopages__title">Consectetur Adipisicing Elit Delectus Veritatis Mollitia</a>
               </h2>
               <div className="c-infopages__text">eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide.
@@ -119,7 +119,7 @@ class InfoPagesComp extends React.Component {
             </div>
             <div className="c-infopages__item">
               <h2>
-                <a href="">UC Berkeley</a>
+                <b>UC Irvine</b>
                 <a href="" className="c-infopages__title">Consectetur Adipisicing Elit Delectus Veritatis Mollitia</a>
               </h2>
               <div className="c-infopages__text">eScholarship provides open access, scholarly publishing services to the University of California and delivers a dynamic research platform to scholars worldwide.
@@ -127,7 +127,7 @@ class InfoPagesComp extends React.Component {
             </div>
           </div>
           <PaginationComp />
-          <button className="c-infopages__toggle" onClick={()=> this.setState({showMore: false})}>Show less results</button>
+          <button className="c-infopages__toggle" onClick={()=> this.setState({showMore: false})}>Show fewer results</button>
         </div>
       </div>
     )
