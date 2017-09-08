@@ -1,7 +1,7 @@
 // ##### Text Link Objects ##### //
 
 %o-textlink__primary {
-  color: $color-dark-orange;
+  color: $color-dark-gray;
   text-decoration: none;
 
   &:hover {
@@ -15,7 +15,7 @@
 }
 
 %o-textlink__secondary {
-  color: $color-teal;
+  color: $color-dark-gray;
   text-decoration: none;
 
   &:hover {
