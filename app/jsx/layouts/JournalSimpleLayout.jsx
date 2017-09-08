@@ -51,19 +51,19 @@ class JournalSimpleLayout extends React.Component {
         <SubheaderComp />
         <NavBarComp />
         {this.state.wrap ? <nav className="c-breadcrumb">{breadcrumbs} </nav> : breadcrumbs}
+        <section className="o-columnbox2">
+          <header>
+            <h1>About</h1>
+          </header>
+          <div className="o-columnbox__truncate1" ref={element => this.element = element}>
+            <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
+            </p>
+            <p>A distinctio minus praesentium consectetur sit sequi dolor, quasi impedit omnis dolore eveniet nisi quas pariatur similique dignissimos alias corporis officia eaque quidem cumque. Dicta eaque iste numquam quia illum, doloremque nobis temporibus eius sed, sunt velit similique eos repellendus! Laudantium reprehenderit iure quo laboriosam, in autem ratione, cum veritatis. Ut itaque quidem tenetur nobis esse, tempora quo ab quasi fugiat eligendi consectetur sapiente rem architecto amet, dignissimos quisquam est? <button className="o-columnbox__truncate-more">More</button>
+            </p>
+          </div>
+        </section>
         <div className="c-columns">
           <main id="maincontent">
-            <section className="o-columnbox2">
-              <header>
-                <h1>About</h1>
-              </header>
-              <div className="o-columnbox__truncate1" ref={element => this.element = element}>
-                <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
-                </p>
-                <p>A distinctio minus praesentium consectetur sit sequi dolor, quasi impedit omnis dolore eveniet nisi quas pariatur similique dignissimos alias corporis officia eaque quidem cumque. Dicta eaque iste numquam quia illum, doloremque nobis temporibus eius sed, sunt velit similique eos repellendus! Laudantium reprehenderit iure quo laboriosam, in autem ratione, cum veritatis. Ut itaque quidem tenetur nobis esse, tempora quo ab quasi fugiat eligendi consectetur sapiente rem architecto amet, dignissimos quisquam est? <button className="o-columnbox__truncate-more">More</button>
-                </p>
-              </div>
-            </section>
             <section className="o-columnbox1">
               <div className="c-itemactions">
                 <a href="" className="c-itemactions__link-buy">Buy Issue</a>
