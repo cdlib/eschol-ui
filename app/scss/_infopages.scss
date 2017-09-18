@@ -4,18 +4,7 @@
   // no styles
 }
 
-%c-infopages__show {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.c-infopages__show-less {
-  @extend %c-infopages__show;
-}
-
 .c-infopages__show-more {
-  @extend %c-infopages__show;
   padding-top: $spacing-md;
   border-top: 1px solid $color-dark-gray;
 
