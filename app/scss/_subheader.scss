@@ -57,21 +57,12 @@
 
 .c-subheader__sidebar {
   display: flex;
-  flex-direction: row;
-
-  @include bp(screen3) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 
   button {
 
     &:not(:first-child) {
-      margin-left: 2px;
-
-      @include bp(screen3) {
-        margin: 2px 0 0;
-      }
-
+      margin-top: 2px;
     }
 
   }
