@@ -32,7 +32,7 @@ class SubheaderComp extends React.Component {
           </details>
         </div>
         <a className="c-subheader__banner" href="">
-          <img src="images/temp_journal-banner.png" alt=""/>
+          <img src="images/temp_journal-banner.png" alt="Western Journal of Emergency Medicine"/>
         </a>
         <div className="c-subheader__sidebar">
           <button className="o-button__3">Submit</button>
