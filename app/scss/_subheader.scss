@@ -23,10 +23,15 @@
   margin-right: $spacing-md;
 
   h1 {
-    @extend %o-heading4;
     order: 2;
     margin: 0;
+    font-size: 1em;
     text-align: right;
+
+    @include bp(screen3) {
+      font-size: 1.2em;
+    }
+
   }
 
   img {
