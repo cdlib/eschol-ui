@@ -1,7 +1,7 @@
 // ##### Publication Preview Component ##### //
 
 .c-pubpreview {
-  margin-bottom: $spacing-sm;
+  margin-bottom: $spacing-md;
 
   @include bp(screen1) {
     display: flex;
