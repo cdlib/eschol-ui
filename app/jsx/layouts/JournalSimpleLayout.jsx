@@ -75,7 +75,7 @@ class JournalSimpleLayout extends React.Component {
           </div>
           <a className="c-subheader__banner" href="">
             <h1>Room One Thousand</h1>
-            <img src="http://pub-jschol-dev.escholarship.org/assets/cc6500b061f865f6dd015fefc1100ea989a5442b2e65f11e48d83c7d69a98610" alt="logo for Room One Thousand"/>
+            <img src="http://pub-jschol-stg.escholarship.org/assets/cc6500b061f865f6dd015fefc1100ea989a5442b2e65f11e48d83c7d69a98610" alt="logo for Room One Thousand"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Submit</button>
@@ -89,9 +89,7 @@ class JournalSimpleLayout extends React.Component {
             <h1>About</h1>
           </header>
           <div className="o-columnbox__truncate1" ref={element => this.element = element}>
-            <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
-            </p>
-            <p>A distinctio minus praesentium consectetur sit sequi dolor, quasi impedit omnis dolore eveniet nisi quas pariatur similique dignissimos alias corporis officia eaque quidem cumque. Dicta eaque iste numquam quia illum, doloremque nobis temporibus eius sed, sunt velit similique eos repellendus! Laudantium reprehenderit iure quo laboriosam, in autem ratione, cum veritatis. Ut itaque quidem tenetur nobis esse, tempora quo ab quasi fugiat eligendi consectetur sapiente rem architecto amet, dignissimos quisquam est? <button className="o-columnbox__truncate-more">More</button>
+            <p>A Journal of Italian Studies Edited by the Graduate Students of the Department of Italian at UCLA  <button className="o-columnbox__truncate-more">More</button>
             </p>
           </div>
         </section>
