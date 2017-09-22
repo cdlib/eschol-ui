@@ -63,8 +63,8 @@
   @extend %interactive-element-size;
   display: inline-flex;
   align-items: center;
-  padding-left: 1.6em;
-  background: inline('../images/icon_external-link-teal.svg') no-repeat left center / 1.1em;
+  padding-right: 1.6em;
+  background: inline('../images/icon_external-link-teal.svg') no-repeat right center / 1.1em;
   font-weight: bold;
 }
 
