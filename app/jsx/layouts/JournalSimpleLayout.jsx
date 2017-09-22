@@ -73,7 +73,7 @@ class JournalSimpleLayout extends React.Component {
               </div>
             </details>
           </div>
-          <a className="c-subheader__banner" href="">
+          <a className="c-subheader__banner--narrow" href="">
             <h1>Room One Thousand</h1>
             <img src="http://pub-jschol-stg.escholarship.org/assets/cc6500b061f865f6dd015fefc1100ea989a5442b2e65f11e48d83c7d69a98610" alt="logo for Room One Thousand"/>
           </a>
