@@ -31,7 +31,8 @@ class SubheaderComp extends React.Component {
             </div>
           </details>
         </div>
-        <a className="c-subheader__banner" href="">
+        <a className="c-subheader__banner--wide" href="">
+          <h1>Western Journal of Emergency Medicine</h1>
           <img src="images/temp_journal-banner.png" alt="Western Journal of Emergency Medicine"/>
         </a>
         <div className="c-subheader__sidebar">

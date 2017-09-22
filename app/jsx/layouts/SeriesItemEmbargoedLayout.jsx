@@ -42,7 +42,10 @@ class SeriesItemEmbargoedLayout extends React.Component {
               </div>
             </details>
           </div>
-          <img className="c-subheader__banner" src="images/logo_ucla.svg" alt=""/>
+          <a className="c-subheader__banner--wide" href="">
+            <h1>UCLA</h1>
+            <img className="c-subheader__banner" src="images/logo_ucla.svg" alt="UCLA logo"/>
+          </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
           </div>

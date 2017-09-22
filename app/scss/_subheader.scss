@@ -73,7 +73,7 @@
     @include bp(screen3) {
       // hide offscreen:
       position: absolute;
-      left: -9999;
+      left: -9999px;
     }
 
   }

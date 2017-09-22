@@ -81,7 +81,10 @@ class UnitSimpleLayout extends React.Component {
               </div>
             </details>
           </div>
-          <img className="c-subheader__banner" src="images/logo_ucr.svg" alt="UC Riverside"/>
+          <a className="c-subheader__banner--wide" href="">
+            <h1>UC Riverside</h1>
+            <img src="images/logo_ucr.svg" alt="UC Riverside logo"/>
+          </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
             <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
