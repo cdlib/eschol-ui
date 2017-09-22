@@ -9,11 +9,10 @@ $modal-footer-height: 3.5em;
 
 .c-modal--open {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: $spacing-md;
+  top: 10vh;
+  right: 10vw;
+  bottom: 10vh;
+  left: 10vw;
   border: 1px solid $color-light-gray;
   border-radius: $round-corner;
   outline: none;
@@ -21,11 +20,17 @@ $modal-footer-height: 3.5em;
   box-shadow: 5px 5px 15px $color-light-black;
 
   @include bp(screen1) {
-    margin: 10%;
+    top: 15vh;
+    right: 15vw;
+    bottom: 15vh;
+    left: 15vw;
   }
 
   @include bp(screen3) {
-    margin: 15%;
+    top: 20vh;
+    right: 20vw;
+    bottom: 20vh;
+    left: 20vw;
   }
 
 }
