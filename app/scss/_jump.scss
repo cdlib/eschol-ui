@@ -17,11 +17,11 @@ $jump-list-spacing: 0.5em;
 
   li {
     margin-left: $spacing-sm;
-    padding: $jump-list-spacing 0 $jump-list-spacing 20px;
+    padding: $jump-list-spacing 0 $jump-list-spacing $spacing-md;
     background-image: inline('../images/icon_tree-node.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 24px;
+    background-size: 1.5em;
 
     &:last-child {
       background-image: inline('../images/icon_tree-end.svg');
