@@ -18,6 +18,7 @@ $modal-footer-height: 3.5em;
   outline: none;
   background-color: $color-white;
   box-shadow: 5px 5px 15px $color-light-black;
+  overflow: auto;
 
   @include bp(screen1) {
     top: 15vh;
@@ -53,13 +54,9 @@ $modal-footer-height: 3.5em;
 
 .modal__header {
   display: flex;
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
-  align-items: center;
-  height: $modal-header-height;
-  padding: 0 $spacing-md;
+  padding: $spacing-sm $spacing-md;
   background-color: $color-light-gray;
 
   @include headings() {
@@ -71,26 +68,17 @@ $modal-footer-height: 3.5em;
 }
 
 .modal__content {
-  position: absolute;
-  top: $modal-header-height;
-  right: 0;
-  bottom: $modal-footer-height;
-  left: 0;
   padding: $spacing-md;
-  overflow: auto;
 }
 
 .c-modal__footer {
   display: flex;
-  position: absolute;
-  right: 0;
+  position: sticky;
   bottom: 0;
-  left: 0;
-  align-items: center;
   justify-content: flex-end;
-  height: $modal-footer-height;
-  padding: 0 $spacing-md;
+  padding: $spacing-sm $spacing-md;
   border-top: 1px solid $color-light-gray;
+  background-color: $color-white;
 
   button {
     
