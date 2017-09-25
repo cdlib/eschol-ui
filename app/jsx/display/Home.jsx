@@ -94,6 +94,7 @@ class Home extends React.Component {
           <li><a href="#publocation">Published Location</a></li>
           <li><a href="#pubpreview">Publication Preview</a></li>
           <li><a href="#pubyear">Publication Year Facet</a></li>
+          <li><a href="#relateditems">Related Items</a></li>
           <li><a href="#scholworks">Scholarly Works Search Result</a></li>
           <li><a href="#search1">Search 1 - With Tagline</a></li>
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
