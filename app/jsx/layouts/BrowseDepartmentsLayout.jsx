@@ -53,7 +53,10 @@ class BrowseDepartmentsLayout extends React.Component {
               </div>
             </details>
           </div>
-          <img className="c-subheader__banner" src="images/temp_journal-banner.png" alt=""/>
+          <a className="c-subheader__banner--wide" href="">
+            <h1>Western Journal of Emergency Medicine</h1>
+            <img src="images/temp_journal-banner.png" alt="Western Journal of Emergency Medicine"/>
+          </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
             <div className="c-subheader__sidebar-text">University of California, Berkeley <br/>Publications in eScholarship</div>
