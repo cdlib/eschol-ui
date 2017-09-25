@@ -1,5 +1,21 @@
 // ##### Related Items Component ##### //
 
 .c-relateditems {
-  border: $bgreen;
+  @extend %no-bullet-ul;
+
+  li {
+
+    @include headings() {
+      margin: 0;
+      font-size: 1em;
+      font-weight: normal;
+      line-height: $line-height1;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-sm;
+    }
+
+  }
+
 }
