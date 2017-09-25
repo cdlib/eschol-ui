@@ -9,6 +9,7 @@ import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
 import PubComp from '../components/PubComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
+import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import $ from 'jquery'
 
@@ -127,12 +128,8 @@ class JournalSplashyLayout extends React.Component {
             <section className="o-columnbox1">
               <header>
                 <h1>Featured Articles</h1>
-                </header>
-                <p><a className="o-textlink__secondary" href="">Entre la ficción y el periodismo: Cambio social y la crónica mexicana contemporánea</a> <br/> Nadeau, Evelyn</p> 
-                <p><a className="o-textlink__secondary" href="">Journalism in Catalonia During Francoism</a> <br/> Reguant, Monserrat</p>
-                <p><a className="o-textlink__secondary" href="">En torno a un cuento olvidado de Clarín: "El oso mayor"</a> <br/> Gil, Angeles Ezama</p>
-                <p><a className="o-textlink__secondary" href="">Interview with Guillermo Cabrera Infante</a> <br/> Graham-Jones, Jean; Deosthale, Duleep</p>
-                <p><a className="o-textlink__secondary" href="">Lazlo Moussong. Castillos en la letra. Xalapa, México: Universidad Veracruzana, 1986.</a> <br/> Radchik, Laura</p>
+              </header>
+              <RelatedItemsComp />
             </section>
             <section className="o-columnbox1">
               <header>

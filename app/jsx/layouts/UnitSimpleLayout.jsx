@@ -14,6 +14,7 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import SocialIconsComp from '../components/SocialIconsComp.jsx'
 import LanguageComp from '../components/LanguageComp.jsx'
+import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 
 // Load dotdotdot in browser but not server:
 if (!(typeof document === "undefined")) {
@@ -350,9 +351,7 @@ class UnitSimpleLayout extends React.Component {
               <header>
                 <h1>Featured Articles</h1>
               </header>
-              <p><a className="o-textlink__secondary" href="">Collaborative Film Authorship: Writing Latinas Into the Picture</a><br/>CSW update</p>
-              <p><a className="o-textlink__secondary" href="">Sporting Bodies, Displaying History: Black Embodiment</a><br/>UCLA Electronic Theses and Dissertations</p>
-              <p><a className="o-textlink__secondary" href="">United States-Based Latina Producers of Feature Films</a><br/>UCLA Electronic Theses and Dissertations</p>
+              <RelatedItemsComp />
             </section>
           </aside>
         </div>
