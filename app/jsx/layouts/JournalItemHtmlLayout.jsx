@@ -30,13 +30,13 @@ class JournalItemHtmlLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Jump To</h1>
+                <h2>Jump To</h2>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>

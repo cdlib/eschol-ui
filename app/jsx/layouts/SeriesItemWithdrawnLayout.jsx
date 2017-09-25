@@ -17,9 +17,9 @@ class SeriesItemWithdrawnLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UC Office of the President</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -70,7 +70,7 @@ class SeriesItemWithdrawnLayout extends React.Component {
                   </div>
                   <ShareComp />
                 </div>
-                <h1 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <div className="o-itemunavailable__withdrawn">
                   <p className="o-itemunavailable__lede">This item has been withdrawn and is <strong>no longer available</strong>.</p>
@@ -81,13 +81,13 @@ class SeriesItemWithdrawnLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Jump To</h1>
+                <h2>Jump To</h2>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>

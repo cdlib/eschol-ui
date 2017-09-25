@@ -36,7 +36,7 @@ class JournalItemPdfLayout extends React.Component {
               </div>
               <div className="c-tabs__content">
                 <ItemActionsComp />
-                <h1 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <PubLocationComp />
                 <PubDataComp />
@@ -54,13 +54,13 @@ class JournalItemPdfLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Jump To</h1>
+                <h2>Jump To</h2>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>

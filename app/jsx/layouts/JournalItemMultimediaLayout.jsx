@@ -36,7 +36,7 @@ class JournalItemMultimediaLayout extends React.Component {
               </div>
               <div className="c-tabs__content">
                 <ItemActionsComp />
-                <h1 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <PubLocationComp />
                 <PubDataComp />
@@ -50,7 +50,7 @@ class JournalItemMultimediaLayout extends React.Component {
                 <details className="c-togglecontent" open>
                   <summary>Main Content</summary>
                   <div className="o-mediafeature--video">
-                    <h1>New Horizons Kuiper Belt Fly-Through</h1>
+                    <h3>New Horizons Kuiper Belt Fly-Through</h3>
                     <div className="o-mediafeature__item">
                       <video src="images/sample_video.mp4" controls poster="images/sample_video-poster.jpg"></video>
                     </div>
@@ -91,13 +91,13 @@ class JournalItemMultimediaLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Jump To</h1>
+                <h2>Jump To</h2>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>

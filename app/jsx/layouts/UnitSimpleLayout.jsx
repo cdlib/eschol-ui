@@ -58,9 +58,9 @@ class UnitSimpleLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UC Riverside</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -124,7 +124,7 @@ class UnitSimpleLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox2">
               <header>
-                <h1>About</h1>
+                <h2>About</h2>
               </header>
               <div className="o-columnbox__truncate1" ref={element => this.element = element}>
                 <p>Magnam reprehenderit ipsam eius similique ex aliquid repellendus possimus, sapiente assumenda beatae soluta culpa voluptatum perspiciatis. Veritatis necessitatibus, et expedita.
@@ -135,7 +135,7 @@ class UnitSimpleLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Works by the Center for Environmental Design</h1>
+                <h2>Works by the Center for Environmental Design</h2>
               </header>
               <div className="c-itemactions">
                 <ShareComp />
@@ -349,7 +349,7 @@ class UnitSimpleLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Featured Articles</h1>
+                <h2>Featured Articles</h2>
               </header>
               <RelatedItemsComp />
             </section>

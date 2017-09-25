@@ -72,7 +72,7 @@ class AboutLayout extends React.Component {
           <aside>
             <section className="o-columnbox1 c-sidebarnav">
               <header>
-                <h1>About eScholarship</h1>
+                <h2>About eScholarship</h2>
               </header>
               <SidebarNavComp />
             </section>
@@ -80,7 +80,7 @@ class AboutLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox1">
               <header>
-                <h1>About eScholarship</h1>
+                <h2>About eScholarship</h2>
               </header>
               <p>eScholarship provides a suite of open access, scholarly publishing services and research tools that enable departments, research units, publishing programs, and individual scholars associated with the University of California to have direct control over the creation and dissemination of the full range of their scholarship.</p>
               <p>With eScholarship, you can publish the following original scholarly works on a dynamic research platform available to scholars worldwide:

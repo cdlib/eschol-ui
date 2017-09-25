@@ -19,9 +19,9 @@ class SeriesItemUrlLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UC Riverside</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -72,7 +72,7 @@ class SeriesItemUrlLayout extends React.Component {
                   </div>
                   <ShareComp />
                 </div>
-                <h1 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <PubLocationComp />
                 <PubDataComp />
@@ -87,7 +87,7 @@ class SeriesItemUrlLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>

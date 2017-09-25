@@ -73,7 +73,7 @@ class BrowseCampusesLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox1">
               <header>
-                <h1>Campuses</h1>
+                <h2>Campuses</h2>
               </header>
               <WellComp />
               <DescriptionListComp />
@@ -82,7 +82,7 @@ class BrowseCampusesLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Featured Journals</h1>
+                <h2>Featured Journals</h2>
               </header>
               <a href="" className="o-journal1">
                 <figure>

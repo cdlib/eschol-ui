@@ -30,9 +30,9 @@ class JournalSplashyLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UC Office of the President</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -108,7 +108,7 @@ class JournalSplashyLayout extends React.Component {
                   <MediaListComp />
                 </div>
               </div>
-              <h1 className="o-heading1a">Table of Contents</h1>
+              <h2 className="o-heading1a">Table of Contents</h2>
               <div className="o-dividecontent2x--ruled">
                 <PubComp />
                 <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
@@ -121,19 +121,19 @@ class JournalSplashyLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Journal Information</h1>
+                <h2>Journal Information</h2>
               </header>
               <JournalInfoComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Featured Articles</h1>
+                <h2>Featured Articles</h2>
               </header>
               <RelatedItemsComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Follow us on Twitter</h1>
+                <h2>Follow us on Twitter</h2>
               </header>
               [content to go here]
             </section>

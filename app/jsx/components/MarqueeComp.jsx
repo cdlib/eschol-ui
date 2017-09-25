@@ -63,7 +63,7 @@ class CarouselComp extends React.Component {
         <aside className="c-marquee__sidebar">
           <section className="o-columnbox2">
             <header>
-              <h1>About</h1>
+              <h2>About</h2>
             </header>
             <div className="c-marquee__sidebar-truncate" ref={element => this.element = element}>
               <p>Doloribus reiciendis quasi neque necessitatibus fugiat natus pariatur impedit iure temporibus rerum totam aspernatur repudiandae dolor!

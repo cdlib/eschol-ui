@@ -29,9 +29,9 @@ class BrowseDepartmentsLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UC Office of the President</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -85,7 +85,7 @@ class BrowseDepartmentsLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox1">
               <header>
-                <h1>Academic Units</h1>
+                <h2>Academic Units</h2>
               </header>
               <WellComp />
               <ToggleListComp />
@@ -94,7 +94,7 @@ class BrowseDepartmentsLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Featured Journals</h1>
+                <h2>Featured Journals</h2>
               </header>
               <a href="" className="o-journal1">
                 <figure>

@@ -19,9 +19,9 @@ class SeriesItemEmbargoedLayout extends React.Component {
         <Header2Comp />
         <div className="c-subheader">
           <div className="o-customselector--campus">
-            <h1 className="o-customselector__heading">
+            <div className="o-customselector__heading">
               <a href="">UCLA</a>
-            </h1>
+            </div>
             <details className="o-customselector__selector">
               <summary aria-label="Select a different item"></summary>
               <div className="o-customselector__menu">
@@ -72,7 +72,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
                   </div>
                   <ShareComp />
                 </div>
-                <h1 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <PubLocationComp />
                 <PubDataComp />
@@ -83,7 +83,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 <details className="c-togglecontent" open>
                   <summary>Main Content</summary>
                   <div className="o-itemunavailable__embargoed">
-                    <h1 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h1>
+                    <h3 className="o-itemunavailable__lede">This item is under embargo until <strong>1 January 2017</strong>.</h3>
                     <p>You may have access to the publisher's version here:</p>
                     <a href="" className="o-textlink__secondary">http://www.ieee-security.org/TC/SPW2014/papers/5103a251.pdf</a>
                     <a href="" className="o-textlink__secondary">Notify me by email when this item becomes available</a>
@@ -95,13 +95,13 @@ class SeriesItemEmbargoedLayout extends React.Component {
           <aside>
             <section className="o-columnbox1">
               <header>
-                <h1>Jump To</h1>
+                <h2>Jump To</h2>
               </header>
               <JumpComp />
             </section>
             <section className="o-columnbox1">
               <header>
-                <h1>Related Items</h1>
+                <h2>Related Items</h2>
               </header>
               <RelatedItemsComp />
             </section>
