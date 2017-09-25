@@ -1,6 +1,6 @@
 // ##### Jump Component ##### //
 
-$jump-list-spacing: 6px;
+$jump-list-spacing: 0.5em;
 
 .c-jump {
 
@@ -13,7 +13,7 @@ $jump-list-spacing: 6px;
 
 .c-jump__tree {
   @extend %no-bullet-ul;
-  margin-top: $jump-list-spacing;
+  margin: $jump-list-spacing 0;
 
   li {
     margin-left: $spacing-sm;
@@ -35,7 +35,11 @@ $jump-list-spacing: 6px;
   @extend %no-bullet-ul;
 
   li {
-    padding: $jump-list-spacing 0;
+
+    &:not(:last-child) {
+      margin-bottom: $jump-list-spacing * 2;
+    }
+
   }
 
 }
