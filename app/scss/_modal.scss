@@ -1,8 +1,5 @@
 // ##### Modal Component ##### //
 
-$modal-header-height: 2.5em;
-$modal-footer-height: 3.5em;
-
 .c-modal {
   // no styles
 }
@@ -56,7 +53,9 @@ $modal-footer-height: 3.5em;
   display: flex;
   position: sticky;
   top: 0;
-  padding: $spacing-sm $spacing-md;
+  align-items: center;
+  min-height: 2.5em;
+  padding: 0 $spacing-md;
   background-color: $color-light-gray;
 
   @include headings() {
