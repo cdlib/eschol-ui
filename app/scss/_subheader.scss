@@ -16,6 +16,20 @@
 
 }
 
+// remove after integration of new narrow and wide styles:
+
+.c-subheader__banner + .c-subheader__sidebar {
+
+  &::before {
+    margin: 0 5px;
+    padding: 5px;
+    background-color: #f00;
+    color: #fff;
+    content: 'c-subheader__banner class no longer used)';
+  }
+
+}
+
 %c-subheader__banner {
   @extend %o-textlink__black;
   display: flex;
