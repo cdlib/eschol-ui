@@ -219,9 +219,9 @@ class SearchLayout extends React.Component {
                     <li className="c-scholworks__tag-peer">Peer Reviewed</li>
                   </ul>
                   <heading>
-                    <h2 className="c-scholworks__heading">
+                    <h3 className="c-scholworks__heading">
                       <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h2 >
+                    </h3 >
                   </heading>
                   <div className="c-authorlist">
                     {/* <time> element intentionally omitted */}
@@ -259,9 +259,9 @@ class SearchLayout extends React.Component {
                     <li className="c-scholworks__tag-peer">Peer Reviewed</li>
                   </ul>
                   <heading>
-                    <h2 className="c-scholworks__heading">
+                    <h3 className="c-scholworks__heading">
                       <a href="">A Fairly Short Title</a>
-                    </h2 >
+                    </h3 >
                   </heading>
                   <div className="c-authorlist">
                     {/* <time> element intentionally omitted */}
@@ -296,9 +296,9 @@ class SearchLayout extends React.Component {
                     <li className="c-scholworks__tag-peer">Peer Reviewed</li>
                   </ul>
                   <heading>
-                    <h2 className="c-scholworks__heading">
+                    <h3 className="c-scholworks__heading">
                       <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h2 >
+                    </h3 >
                   </heading>
                   <div className="c-authorlist">
                     {/* <time> element intentionally omitted */}
@@ -336,9 +336,9 @@ class SearchLayout extends React.Component {
                     <li className="c-scholworks__tag-peer">Peer Reviewed</li>
                   </ul>
                   <heading>
-                    <h2 className="c-scholworks__heading">
+                    <h3 className="c-scholworks__heading">
                       <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h2 >
+                    </h3 >
                   </heading>
                   <div className="c-authorlist">
                     {/* <time> element intentionally omitted */}
