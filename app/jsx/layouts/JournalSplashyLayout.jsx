@@ -6,6 +6,7 @@ import NavBarComp from '../components/NavBarComp.jsx'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
 import MarqueeComp from '../components/MarqueeComp.jsx'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
+import CustomSelectorObj from '../objects/CustomSelectorObj.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
 import PubComp from '../components/PubComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
@@ -70,6 +71,7 @@ class JournalSplashyLayout extends React.Component {
           <main id="maincontent">
             <section className="o-columnbox1">
               <ItemActionsComp />
+              <CustomSelectorObj />
               <div className="c-pubpreview">
                 <a className="c-pubpreview__img" href="">
                   <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
