@@ -77,9 +77,9 @@ class JournalSplashyLayout extends React.Component {
                   <img src="http://placehold.it/150x200?text=Image" alt="placeholder" />
                 </a>
                 <div className="c-pub">
-                  <h1 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h1>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                     {/* links can be left out of the list if no links are desired: */}
@@ -110,7 +110,7 @@ class JournalSplashyLayout extends React.Component {
                   <MediaListComp />
                 </div>
               </div>
-              <h2 className="o-heading1a">Table of Contents</h2>
+              <h3 className="o-heading1a">Table of Contents</h3>
               <div className="o-dividecontent2x--ruled">
                 <PubComp />
                 <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />

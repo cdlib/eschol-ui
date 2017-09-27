@@ -14,9 +14,9 @@ class PubComp extends React.Component {
   render() {
     return (
       <div className="c-pub">
-        <h2 className="c-pub__heading">
+        <h4 className="c-pub__heading">
           <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-        </h2>
+        </h4>
         <AuthorListComp />
         <div className="c-pub__abstract">
           <p>Quaerat impedit debitis vero officia ullam, nesciunt, culpa labore at praesentium, accusantium quibusdam est voluptate accusamus ab odit non ipsa, qui sed similique! Culpa vitae nesciunt ratione quos vel quasi, nemo neque! Id debitis consequatur saepe, rem, excepturi illum obcaecati commodi dolore eaque esse quod impedit assumenda voluptatem voluptate, ex deserunt suscipit.
