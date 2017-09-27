@@ -37,6 +37,7 @@ import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
 import Home from './display/Home.jsx'
+import HomeLayout from './layouts/HomeLayout.jsx'
 import FooterDisp from './display/FooterDisp.jsx'
 import Header1Disp from './display/Header1Disp.jsx'
 import Header2Disp from './display/Header2Disp.jsx'
@@ -160,6 +161,7 @@ ReactDOM.render((
       <Route path="/header2" component={Header2Disp} />
       <Route path="/heading" component={HeadingDisp} />
       <Route path="/heatmap" component={HeatMapDisp} />
+      <Route path="/home" component={HomeLayout} />
       <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />

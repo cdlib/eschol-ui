@@ -8,7 +8,7 @@ class Home extends React.Component {
       <div className="ui-library__list">
         <h2>Layouts</h2>
         <ul>
-          <li>Home
+          <li><a href="#home">Home</a>
             <ul>
               <li><a href="#browsecampuses">Browse Campuses</a></li>
               <li><a href="#browsejournals">Browse Journals</a></li>
