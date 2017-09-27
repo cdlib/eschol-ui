@@ -39,6 +39,31 @@
 
 }
 
+%ui-library__elements {
+  flex: 0 0 auto;
+
+  @include bp(screen1) {
+    font-size: 1.5em;
+  }
+
+  @include bp(screen2) {
+    font-size: 2em;
+  }
+
+  a {
+    color: $color-dark-blue;
+  }
+
+}
+
+.ui-library__title {
+  @extend %ui-library__elements;
+}
+
+.ui-library__component {
+  @extend %ui-library__elements;
+}
+
 .ui-library__list {
   line-height: $line-height1;
 
