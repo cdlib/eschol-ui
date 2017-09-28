@@ -64,6 +64,25 @@ class HomeLayout extends React.Component {
           </div>
         </div>
         <HeroComp />
+        <section className="c-togglesection">
+          <header>
+            <h2>Why Open Access?</h2>
+          </header>
+          <h3>Good for Authors</h3>
+          Open access research is read and cited more than access-restricted scholarship, increasing the academic impact of and public engagement with your ideas.
+          <h3>Good for Readers</h3>
+          The University of California’s Open Access policies extend the University’s public mission to share broadly -- throughout California, the nation, and the world -- the research and knowledge produced at our campuses.
+          <h3>Metrics of use</h3>
+          <div className="o-stat--item">
+            <a href="">24,844</a> Items
+          </div>
+          <div className="o-stat--units">
+            <a href="">119</a> Research Units
+          </div>
+          <div className="o-stat--passed">
+            <a href="">6,532</a> Items since UC <br/> OA Policy passed
+          </div>
+        </section>
         <FooterComp />
       </div>
     )
