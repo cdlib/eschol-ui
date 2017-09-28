@@ -4,6 +4,7 @@
   
   header {
     @extend %page-bleed;
+    margin-bottom: $spacing-sm;
     padding: $spacing-sm;
     background-color: $color-teal;
 
