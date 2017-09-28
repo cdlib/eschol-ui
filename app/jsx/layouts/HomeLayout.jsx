@@ -5,6 +5,7 @@ import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
+import HeroComp from '../components/HeroComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class HomeLayout extends React.Component {
@@ -62,7 +63,7 @@ class HomeLayout extends React.Component {
             </details>
           </div>
         </div>
-        <p id="maincontent">[home page components to go here]</p>
+        <HeroComp />
         <FooterComp />
       </div>
     )
