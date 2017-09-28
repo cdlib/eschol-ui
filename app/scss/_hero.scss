@@ -1,5 +1,19 @@
 // ##### Hero Component ##### //
 
 .c-hero {
-  border: $bgreen;
+  padding: $spacing-sm;
+  background-color: $color-teal;
+
+  @include headings() {
+    margin: 0;
+    color: $color-white;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+}
+
+.c-hero__campuses {
+  display: none;
 }
