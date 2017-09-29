@@ -73,7 +73,7 @@ class HomeLayout extends React.Component {
             <p>Open access research is read and cited more than access-restricted scholarship, increasing the academic impact of and public engagement with your ideas.</p>
             <h3 className="o-heading4a">Good for Readers</h3>
             <p>The University of California’s Open Access policies extend the University’s public mission to share broadly -- throughout California, the nation, and the world -- the research and knowledge produced at our campuses.</p>
-            <h3>Metrics of use</h3>
+            <h3>Metrics of Use</h3>
             <div className="o-stat">
               <div className="o-stat--item">
                 <a href="">24,844</a> Items
@@ -85,6 +85,31 @@ class HomeLayout extends React.Component {
                 <a href="">6,532</a> Items since UC <br/> OA Policy passed
               </div>
             </div>
+            <a href="" className="o-textlink__external-link">More about UC Open Access</a>
+          </div>
+        </section>
+        <section className="c-togglesection">
+          <header className={this.state.showSection2 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection2: !this.state.showSection2})} tabIndex="0">
+            <h2>eScholarship Repository</h2>
+          </header>
+          <div className="c-togglesection__content" hidden={!this.state.showSection2}>
+            <p className="o-heading4a">eScholarship is the institutional repository for the UC system</p>
+            <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
+            <p>eScholarship Repository content includes postprints (previously published articles), as well as working papers, electronic theses and dissertations (ETDs), student capstone projects, and seminar/ conference proceedings.</p>
+            <h3>Repository Holdings</h3>
+            <div className="o-stat">
+              <div className="o-stat--item">
+                <a href="">24,844</a> Items
+              </div>
+              <div className="o-stat--units">
+                <a href="">119</a> Research Units
+              </div>
+              <div className="o-stat--passed">
+                <a href="">6,532</a> Items since UC <br/> OA Policy passed
+              </div>
+            </div>
+            <a href="" className="o-textlink__external-link">Browse all eScholarship holdings</a>
+            <a href="" className="o-textlink__external-link">More about the eScholarship repository</a>
           </div>
         </section>
         <FooterComp />
