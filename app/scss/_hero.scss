@@ -3,6 +3,7 @@
 .c-hero {
   @extend %page-bleed;
   margin-top: (-$spacing-sm);
+  margin-bottom: $spacing-sm;
   padding: $spacing-sm;
   background-color: $color-teal;
 
