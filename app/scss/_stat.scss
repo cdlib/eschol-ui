@@ -17,7 +17,12 @@
   display: inline-block;
   padding: 2.2em $spacing-base 0;
   background: no-repeat top center / auto 1.5em;
+  font-size: 0.9em;
   text-align: center;
+
+  @include bp(screen3) {
+    font-size: 1em;
+  }
 
   a {
     @extend %o-stat__number;
