@@ -7,8 +7,8 @@
 %c-togglesection__header {
   @extend %page-bleed;
   margin-bottom: $spacing-sm;
-  padding: $spacing-sm;
-  background-color: $color-teal;
+  padding: $spacing-sm $spacing-sm $spacing-sm 2.3em;
+  background: $color-teal no-repeat left $spacing-sm center / 1em;
 
   @include headings() {
     margin: 0;
@@ -21,10 +21,12 @@
 
 .c-togglesection__header {
   @extend %c-togglesection__header;
+  background-image: inline('../images/icon_plus-white.svg');
 }
 
 .c-togglesection__header--open {
   @extend %c-togglesection__header;
+  background-image: inline('../images/icon_minus-white.svg');
 }
 
 .c-togglesection__content {
