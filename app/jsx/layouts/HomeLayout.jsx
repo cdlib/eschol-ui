@@ -11,7 +11,7 @@ import FooterComp from '../components/FooterComp.jsx'
 class HomeLayout extends React.Component {
   constructor(props){
     super(props)
-    this.state = {submenuActive: null}
+    this.state = {submenuActive: null, showSection1: true, showSection2: true, showSection3: true}
   }
   componentWillMount() {
     if (matchMedia) {
@@ -65,10 +65,10 @@ class HomeLayout extends React.Component {
         </div>
         <HeroComp />
         <section className="c-togglesection">
-          <header>
+          <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection1: !this.state.showSection1})} tabIndex="0">
             <h2>Why Open Access?</h2>
           </header>
-          <div className="c-togglesection__content">
+          <div className="c-togglesection__content" hidden={!this.state.showSection1}>
             <h3 className="o-heading4a">Good for Authors</h3>
             <p>Open access research is read and cited more than access-restricted scholarship, increasing the academic impact of and public engagement with your ideas.</p>
             <h3 className="o-heading4a">Good for Readers</h3>
