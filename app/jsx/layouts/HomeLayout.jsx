@@ -112,6 +112,19 @@ class HomeLayout extends React.Component {
             <a href="" className="o-textlink__external-link">More about the eScholarship repository</a>
           </div>
         </section>
+        <section className="c-togglesection">
+          <header className={this.state.showSection3 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection3: !this.state.showSection3})} tabIndex="0">
+            <h2>eScholarship Publishing Services</h2>
+          </header>
+          <div className="c-togglesection__content" hidden={!this.state.showSection3}>
+            <p className="o-heading4a">eScholarship is also an open access publishing platform</p>
+            <p>eScholarship Publishing is an open access publishing platform subsidized by the University of California, managed by the California Digital Library, and offered free of charge to UC-affiliated departments, research units, publishing programs and individual scholars.</p>
+            <p>We offer publishing and production tools, including a full editorial and peer review system, as well as professional support and consulting services.</p>
+            <a href="" className="o-textlink__external-link">How to start a journal</a>
+            <p>[journal grid to go here]</p>
+            <a href="" className="o-textlink__external-link">Browse all eScholarship journals</a>
+          </div>
+        </section>
         <FooterComp />
       </div>
     )
