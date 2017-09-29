@@ -8,7 +8,7 @@ class ToggleSectionComp extends React.Component {
   render() {
     return (
       <section className="c-togglesection">
-        <header tabIndex="0" onClick={()=> this.setState({showContent: !this.state.showContent})}>
+        <header className={this.state.showContent ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showContent: !this.state.showContent})} tabIndex="0">
           <h2>Toggle Section Heading</h2>
         </header>
         <div className="c-togglesection__content" hidden={!this.state.showContent}>
