@@ -74,14 +74,16 @@ class HomeLayout extends React.Component {
             <h3 className="o-heading4a">Good for Readers</h3>
             <p>The University of California’s Open Access policies extend the University’s public mission to share broadly -- throughout California, the nation, and the world -- the research and knowledge produced at our campuses.</p>
             <h3>Metrics of use</h3>
-            <div className="o-stat--item">
-              <a href="">24,844</a> Items
-            </div>
-            <div className="o-stat--units">
-              <a href="">119</a> Research Units
-            </div>
-            <div className="o-stat--passed">
-              <a href="">6,532</a> Items since UC <br/> OA Policy passed
+            <div className="o-stat">
+              <div className="o-stat--item">
+                <a href="">24,844</a> Items
+              </div>
+              <div className="o-stat--units">
+                <a href="">119</a> Research Units
+              </div>
+              <div className="o-stat--passed">
+                <a href="">6,532</a> Items since UC <br/> OA Policy passed
+              </div>
             </div>
           </div>
         </section>
