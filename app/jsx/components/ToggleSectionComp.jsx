@@ -9,7 +9,9 @@ class ToggleSectionComp extends React.Component {
         <header>
           <h2>Toggle Section Heading</h2>
         </header>
-        Toggle Section Content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus expedita laudantium fugiat, ipsam, repellat labore, adipisci itaque est id optio corrupti. Quas laudantium nobis magnam dignissimos, autem incidunt optio?
+        <div className="c-togglesection__content">
+          Toggle Section Content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus expedita laudantium fugiat, ipsam, repellat labore, adipisci itaque est id optio corrupti. Quas laudantium nobis magnam dignissimos, autem incidunt optio?
+        </div>
       </section>
     )
   }
