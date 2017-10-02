@@ -65,8 +65,10 @@ class HomeLayout extends React.Component {
         </div>
         <HeroComp />
         <section className="c-togglesection">
-          <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection1: !this.state.showSection1})} tabIndex="0">
-            <h2>Why Open Access?</h2>
+          <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+            <h2>
+              <button onClick={()=> this.setState({showSection1: !this.state.showSection1})}>Why Open Access?</button>
+            </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection1}>
             <h3 className="o-heading4a">Good for Authors</h3>
@@ -89,8 +91,10 @@ class HomeLayout extends React.Component {
           </div>
         </section>
         <section className="c-togglesection">
-          <header className={this.state.showSection2 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection2: !this.state.showSection2})} tabIndex="0">
-            <h2>eScholarship Repository</h2>
+          <header className={this.state.showSection2 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+            <h2>
+              <button onClick={()=> this.setState({showSection2: !this.state.showSection2})}>eScholarship Repository</button>
+            </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection2}>
             <p className="o-heading4a">eScholarship is the institutional repository for the UC system</p>
@@ -113,8 +117,10 @@ class HomeLayout extends React.Component {
           </div>
         </section>
         <section className="c-togglesection">
-          <header className={this.state.showSection3 ? 'c-togglesection__header--open' : 'c-togglesection__header'} onClick={()=> this.setState({showSection3: !this.state.showSection3})} tabIndex="0">
-            <h2>eScholarship Publishing Services</h2>
+          <header className={this.state.showSection3 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+            <h2>
+              <button onClick={()=> this.setState({showSection3: !this.state.showSection3})}>eScholarship Publishing Services</button>
+            </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection3}>
             <p className="o-heading4a">eScholarship is also an open access publishing platform</p>
