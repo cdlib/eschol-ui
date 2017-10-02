@@ -1,17 +1,27 @@
 // ##### Journal Grid Component ##### //
 
 .c-journalgrid {
-  display: grid;
-  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   padding: 1px;
   background-color: $color-light-gray;
   grid-gap: 1px;
   grid-template-columns: repeat(3, 1fr);
 
+  @supports (display: grid) {
+    display: grid;
+    align-items: stretch;
+  }
+
   img {
-    display: block;
-    width: 100%;
+    width: 33%;
     object-fit: cover;
+
+    @supports (display: grid) {
+      width: 100%;
+    }
+
   }
 
 }
@@ -20,11 +30,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 33%;
   background-color: $color-white;
+
+  @supports (display: grid) {
+    width: 100%;
+  }
 
   a {
     @extend %o-textlink__secondary;
-    margin: 0 $spacing-sm;
+    padding: $spacing-sm;
     text-align: center;
   }
 
