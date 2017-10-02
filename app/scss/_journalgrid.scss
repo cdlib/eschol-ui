@@ -1,5 +1,31 @@
 // ##### Journal Grid Component ##### //
 
 .c-journalgrid {
-  border: $bgreen;
+  display: grid;
+  align-items: stretch;
+  padding: 1px;
+  background-color: $color-light-gray;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.c-journalgrid__all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+
+  a {
+    @extend %o-textlink__secondary;
+    margin: 0 $spacing-sm;
+    text-align: center;
+  }
+
 }
