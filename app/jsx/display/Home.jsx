@@ -79,6 +79,7 @@ class Home extends React.Component {
           <li><a href="#infopages">Informational Pages</a></li>
           <li><a href="#itemactions">Item Actions</a></li>
           <li><a href="#journalcarousel">Journal Carousel</a></li>
+          <li><a href="#journalgrid">Journal Grid</a></li>
           <li><a href="#journalinfo">Journal Information</a></li>
           <li><a href="#jump">Jump</a></li>
           <li><a href="#language">language</a></li>
