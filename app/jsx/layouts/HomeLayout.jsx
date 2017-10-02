@@ -6,6 +6,7 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import HeroComp from '../components/HeroComp.jsx'
+import JournalGridComp from '../components/JournalGridComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class HomeLayout extends React.Component {
@@ -127,7 +128,7 @@ class HomeLayout extends React.Component {
             <p>eScholarship Publishing is an open access publishing platform subsidized by the University of California, managed by the California Digital Library, and offered free of charge to UC-affiliated departments, research units, publishing programs and individual scholars.</p>
             <p>We offer publishing and production tools, including a full editorial and peer review system, as well as professional support and consulting services.</p>
             <a href="" className="o-textlink__external-link">How to start a journal</a>
-            <p>[journal grid to go here]</p>
+            <JournalGridComp />
             <a href="" className="o-textlink__external-link">Browse all eScholarship journals</a>
           </div>
         </section>
