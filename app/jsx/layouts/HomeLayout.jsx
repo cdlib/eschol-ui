@@ -68,7 +68,7 @@ class HomeLayout extends React.Component {
         </div>
         <HeroComp />
         <section className="c-togglesection">
-          <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+          <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'} hidden={this.state.isOpen}>
             <h2>
               <button onClick={()=> this.setState({showSection1: !this.state.showSection1})}>Why Open Access?</button>
             </h2>
@@ -78,7 +78,7 @@ class HomeLayout extends React.Component {
           </div>
         </section>
         <section className="c-togglesection">
-          <header className={this.state.showSection2 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+          <header className={this.state.showSection2 ? 'c-togglesection__header--open' : 'c-togglesection__header'} hidden={this.state.isOpen}>
             <h2>
               <button onClick={()=> this.setState({showSection2: !this.state.showSection2})}>eScholarship Repository</button>
             </h2>
@@ -88,7 +88,7 @@ class HomeLayout extends React.Component {
           </div>
         </section>
         <section className="c-togglesection">
-          <header className={this.state.showSection3 ? 'c-togglesection__header--open' : 'c-togglesection__header'}>
+          <header className={this.state.showSection3 ? 'c-togglesection__header--open' : 'c-togglesection__header'} hidden={this.state.isOpen}>
             <h2>
               <button onClick={()=> this.setState({showSection3: !this.state.showSection3})}>eScholarship Publishing Services</button>
             </h2>
