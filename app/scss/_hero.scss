@@ -7,6 +7,10 @@
   padding: $spacing-sm;
   background-color: $color-teal;
 
+  @include bp(screen3) {
+    margin-bottom: $spacing-md;
+  }
+
   @include headings() {
     margin: 0;
     color: $color-white;
