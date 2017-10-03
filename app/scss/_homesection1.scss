@@ -3,3 +3,12 @@
 .c-homesection1 {
   // no styles
 }
+
+.c-homesection1__heading {
+  display: none;
+
+  @include bp(screen3) {
+    display: block;
+  }
+
+}
