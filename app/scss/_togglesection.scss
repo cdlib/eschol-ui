@@ -2,6 +2,11 @@
 
 .c-togglesection {
   margin-bottom: $spacing-sm;
+
+  @include bp(screen3) {
+    margin-bottom: $spacing-md;
+  }
+
 }
 
 %c-togglesection__header {
@@ -41,5 +46,10 @@
 }
 
 .c-togglesection__content {
-  // no styles yet
+  
+  @include bp(screen3) {
+    background-color: $color-white;
+    box-shadow: $box-shadow1;
+  }
+
 }
