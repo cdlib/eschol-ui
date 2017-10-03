@@ -6,6 +6,9 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import HeroComp from '../components/HeroComp.jsx'
+import HomeSection1Comp from '../components/HomeSection1Comp.jsx'
+import HomeSection2Comp from '../components/HomeSection2Comp.jsx'
+import HomeSection3Comp from '../components/HomeSection3Comp.jsx'
 import JournalGridComp from '../components/JournalGridComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -72,23 +75,7 @@ class HomeLayout extends React.Component {
             </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection1}>
-            <h3 className="o-heading4a">Good for Authors</h3>
-            <p>Open access research is read and cited more than access-restricted scholarship, increasing the academic impact of and public engagement with your ideas.</p>
-            <h3 className="o-heading4a">Good for Readers</h3>
-            <p>The University of California’s Open Access policies extend the University’s public mission to share broadly -- throughout California, the nation, and the world -- the research and knowledge produced at our campuses.</p>
-            <h3>Metrics of Use</h3>
-            <div className="o-stat">
-              <div className="o-stat--item">
-                <a href="">24,844</a> Items
-              </div>
-              <div className="o-stat--units">
-                <a href="">119</a> Research Units
-              </div>
-              <div className="o-stat--passed">
-                <a href="">6,532</a> Items since UC <br/> OA Policy passed
-              </div>
-            </div>
-            <a href="" className="o-textlink__external-link">More about UC Open Access</a>
+            <HomeSection1Comp />
           </div>
         </section>
         <section className="c-togglesection">
@@ -98,23 +85,7 @@ class HomeLayout extends React.Component {
             </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection2}>
-            <p className="o-heading4a">eScholarship is the institutional repository for the UC system</p>
-            <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
-            <p>eScholarship Repository content includes postprints (previously published articles), as well as working papers, electronic theses and dissertations (ETDs), student capstone projects, and seminar/ conference proceedings.</p>
-            <h3>Repository Holdings</h3>
-            <div className="o-stat">
-              <div className="o-stat--item">
-                <a href="">24,844</a> Items
-              </div>
-              <div className="o-stat--units">
-                <a href="">119</a> Research Units
-              </div>
-              <div className="o-stat--passed">
-                <a href="">6,532</a> Items since UC <br/> OA Policy passed
-              </div>
-            </div>
-            <a href="" className="o-textlink__external-link">Browse all eScholarship holdings</a>
-            <a href="" className="o-textlink__external-link">More about the eScholarship repository</a>
+            <HomeSection2Comp />
           </div>
         </section>
         <section className="c-togglesection">
@@ -124,12 +95,7 @@ class HomeLayout extends React.Component {
             </h2>
           </header>
           <div className="c-togglesection__content" hidden={!this.state.showSection3}>
-            <p className="o-heading4a">eScholarship is also an open access publishing platform</p>
-            <p>eScholarship Publishing is an open access publishing platform subsidized by the University of California, managed by the California Digital Library, and offered free of charge to UC-affiliated departments, research units, publishing programs and individual scholars.</p>
-            <p>We offer publishing and production tools, including a full editorial and peer review system, as well as professional support and consulting services.</p>
-            <a href="" className="o-textlink__external-link">How to start a journal</a>
-            <JournalGridComp />
-            <a href="" className="o-textlink__external-link">Browse all eScholarship journals</a>
+            <HomeSection3Comp />
           </div>
         </section>
         <FooterComp />
