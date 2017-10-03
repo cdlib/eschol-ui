@@ -4,11 +4,11 @@
   
   @include bp(screen3) {
     display: grid;
-    padding: $spacing-md;
-    background: url('../images/world-map-teal.svg') no-repeat center / contain;
+    padding: $spacing-lg;
+    background: inline('../images/world-map-teal.svg') no-repeat center / contain;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto 1fr auto;
-    grid-column-gap: $spacing-md;
+    grid-gap: $spacing-lg;
   }
 
   .o-stat {
@@ -39,27 +39,33 @@
   }
 
   @include headings() {
-    margin: 1em 0 0.2em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
     color: $color-teal;
     font-size: 1em;
     font-weight: bold;
 
+    &:not(:first-of-type) {
+      margin-top: 1em;
+    }
+
     @include bp(screen3) {
-      margin: 1em 0 0.4em;
+      margin-bottom: 0.4em;
       font-size: 1.3em;
       font-weight: normal;
     }
+
   }
 
 }
 
 .c-homesection1__stat-heading {
-  margin: 1em 0 0.2em;
+  margin: 1em 0;
   font-size: 1em;
   font-weight: bold;
 
   @include bp(screen3) {
-    margin: 1em 0 0.4em;
+    margin: 0;
     font-size: 1.3em;
     font-weight: normal;
     grid-column: 2;
