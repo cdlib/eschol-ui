@@ -9,7 +9,6 @@ import HeroComp from '../components/HeroComp.jsx'
 import HomeSection1Comp from '../components/HomeSection1Comp.jsx'
 import HomeSection2Comp from '../components/HomeSection2Comp.jsx'
 import HomeSection3Comp from '../components/HomeSection3Comp.jsx'
-import JournalGridComp from '../components/JournalGridComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
 class HomeLayout extends React.Component {
