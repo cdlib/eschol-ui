@@ -5,6 +5,7 @@
   @include bp(screen3) {
     display: grid;
     padding: $spacing-md;
+    background: url('../images/world-map-teal.svg') no-repeat center / contain;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto 1fr auto;
     grid-column-gap: $spacing-md;
