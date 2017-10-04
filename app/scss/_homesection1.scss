@@ -4,6 +4,7 @@
   display: grid;
   padding: $spacing-sm;
   grid-template-columns: 1fr;
+  grid-gap: $spacing-sm;
 
   @include bp(screen3) {
     padding: $spacing-lg;
@@ -14,8 +15,10 @@
   }
 
   .o-stat {
+    margin-bottom: $spacing-sm;
 
     @include bp(screen3) {
+      margin-bottom: 0;
       grid-column: 2;
       grid-row: 3 / 4;
     }
@@ -79,7 +82,7 @@
 }
 
 .c-homesection1__stat-heading {
-  margin: 1em 0;
+  margin: 0 0 $spacing-sm;
   font-size: 1em;
   font-weight: bold;
   justify-self: center;

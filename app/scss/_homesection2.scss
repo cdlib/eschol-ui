@@ -4,6 +4,7 @@
   display: grid;
   padding: $spacing-sm;
   grid-template-columns: 1fr 1fr;
+  grid-gap: $spacing-sm;
 
   @include bp(screen3) {
     padding: $spacing-lg;
@@ -12,9 +13,11 @@
   }
 
   .o-stat {
+    margin-bottom: $spacing-sm;
     grid-column: 1 / 3;
 
     @include bp(screen3) {
+      margin-bottom: 0;
       grid-column: 3 / 5;
     }
 
@@ -24,7 +27,7 @@
 
 .c-homesection2__heading {
   display: block;
-  margin: 0 0 1em;
+  margin: 0 0 $spacing-sm;
   color: $color-teal;
   font-size: 1.2em;
   font-weight: normal;
@@ -100,7 +103,7 @@
 }
 
 .c-homesection2__stat-heading {
-  margin: 1em 0;
+  margin: $spacing-sm 0;
   font-size: 1em;
   font-weight: bold;
   grid-column: 1 / 3;
