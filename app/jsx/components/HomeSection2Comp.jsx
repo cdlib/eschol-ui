@@ -6,10 +6,15 @@ class HomeSection2Comp extends React.Component {
   render() {
     return (
       <div className="c-homesection2">
-        <p className="o-heading4a">eScholarship is the institutional repository for the UC system</p>
-        <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
-        <p>eScholarship Repository content includes postprints (previously published articles), as well as working papers, electronic theses and dissertations (ETDs), student capstone projects, and seminar/ conference proceedings.</p>
-        <h3>Repository Holdings</h3>
+        <strong className="c-homesection2__heading">eScholarship is the institutional repository for the UC system</strong>
+        <div className="c-homesection2__description">
+          <h3>Institutional Repository</h3>
+          <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
+          <p>eScholarship Repository content includes postprints (previously published articles), as well as working papers, electronic theses and dissertations (ETDs), student capstone projects, and seminar/conference proceedings.</p>
+        </div>
+        <button className="c-homesection2__deposit">Deposit Work Now</button>
+        <a href="" className="c-homesection2__browse-campuses">Browse campuses</a>
+        <h3 className="c-homesection2__stat-heading">Repository Holdings</h3>
         <div className="o-stat">
           <div className="o-stat--item">
             <a href="">24,844</a> Items
@@ -21,8 +26,8 @@ class HomeSection2Comp extends React.Component {
             <a href="">6,532</a> Items since UC <br/> OA Policy passed
           </div>
         </div>
-        <a href="" className="o-textlink__external-link">Browse all eScholarship holdings</a>
-        <a href="" className="o-textlink__external-link">More about the eScholarship repository</a>
+        <a href="" className="c-homesection2__browse-all">Browse all eScholarship holdings</a>
+        <a href="" className="c-homesection2__more">More about the eScholarship repository</a>
       </div>
     )
   }
