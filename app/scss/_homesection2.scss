@@ -7,7 +7,7 @@
 
   @include bp(screen3) {
     padding: $spacing-lg;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: $spacing-lg;
   }
 
@@ -15,7 +15,7 @@
     grid-column: 1 / 3;
 
     @include bp(screen3) {
-      // no styles yet
+      grid-column: 3 / 5;
     }
 
   }
@@ -35,6 +35,7 @@
     color: $color-black;
     font-size: 2em;
     font-weight: normal;
+    grid-column: 1 / 5;
     justify-self: center;
 
     @supports (display: grid) {
@@ -49,7 +50,7 @@
   grid-column: 1 / 3;
 
   @include bp(screen3) {
-    // no styles yet
+    grid-column: 3 / 5;
   }
 
   @include headings() {
@@ -83,6 +84,7 @@
 
   @include bp(screen3) {
     font-size: 1.2em;
+    grid-column: 4 / 5;
   }
 
 }
@@ -90,6 +92,11 @@
 .c-homesection2__deposit {
   @extend %o-button__8;
   justify-self: center;
+
+  @include bp(screen3) {
+    grid-column: 3 / 4;
+  }
+
 }
 
 .c-homesection2__stat-heading {
@@ -103,6 +110,7 @@
     margin: $spacing-md 0;
     font-size: 1.4em;
     font-weight: normal;
+    grid-column: 3 / 5;
     justify-self: start;
 
     @supports (display: grid) {
@@ -121,6 +129,7 @@
 
   @include bp(screen3) {
     font-size: 1.2em;
+    grid-column: 1 / 5;
   }
 
 }
