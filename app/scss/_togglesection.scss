@@ -10,9 +10,6 @@
 }
 
 %c-togglesection__header {
-  @extend %page-bleed;
-  margin-bottom: $spacing-sm;
-  
   background: $color-light-gray no-repeat left $spacing-sm center / 1em;
 
   @include headings() {
