@@ -35,8 +35,8 @@
     margin: 0 0 $spacing-md;
     font-size: 2em;
     font-weight: normal;
+    text-align: center;
     grid-column: 1 / 3;
-    justify-self: center;
 
     @supports (display: grid) {
       margin: 0;
