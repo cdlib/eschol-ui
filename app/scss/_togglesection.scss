@@ -13,7 +13,7 @@
   @extend %page-bleed;
   margin-bottom: $spacing-sm;
   
-  background: $color-teal no-repeat left $spacing-sm center / 1em;
+  background: $color-light-gray no-repeat left $spacing-sm center / 1em;
 
   @include headings() {
     display: flex;
@@ -28,7 +28,6 @@
     padding: 0 $spacing-sm 0 2.3rem;
     border: none;
     background: none;
-    color: $color-white;
     text-align: left;
     user-select: none;
   }
@@ -37,12 +36,12 @@
 
 .c-togglesection__header {
   @extend %c-togglesection__header;
-  background-image: inline('../images/icon_plus-white.svg');
+  background-image: inline('../images/icon_plus-black.svg');
 }
 
 .c-togglesection__header--open {
   @extend %c-togglesection__header;
-  background-image: inline('../images/icon_minus-white.svg');
+  background-image: inline('../images/icon_minus-black.svg');
 }
 
 .c-togglesection__content {
