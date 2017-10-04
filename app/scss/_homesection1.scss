@@ -2,6 +2,7 @@
 
 .c-homesection1 {
   display: grid;
+  padding: $spacing-sm;
   grid-template-columns: repeat(2, 1fr);
 
   @include bp(screen3) {
