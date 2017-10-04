@@ -12,7 +12,7 @@ class HomeSection2Comp extends React.Component {
           <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
           <p>eScholarship Repository content includes postprints (previously published articles), as well as working papers, electronic theses and dissertations (ETDs), student capstone projects, and seminar/conference proceedings.</p>
         </div>
-        <button className="c-homesection2__deposit">Deposit Work Now</button>
+        <button className="c-homesection2__deposit">Deposit Work</button>
         <a href="" className="c-homesection2__browse-campuses">Browse campuses</a>
         <h3 className="c-homesection2__stat-heading">Repository Holdings</h3>
         <div className="o-stat">
