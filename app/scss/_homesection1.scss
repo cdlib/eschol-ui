@@ -105,9 +105,11 @@
 
 .c-homesection1__more {
   @extend %o-textlink__external-link;
+  margin-bottom: $spacing-sm;
   justify-self: center;
 
   @include bp(screen3) {
+    margin-bottom: 0;
     font-size: 1.2em;
     grid-column: 1 / 3;
   }
