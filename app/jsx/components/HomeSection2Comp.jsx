@@ -7,6 +7,7 @@ class HomeSection2Comp extends React.Component {
     return (
       <div className="c-homesection2">
         <strong className="c-homesection2__heading">eScholarship is the institutional repository for the UC system</strong>
+        <div className="c-homesection2__map"></div>
         <div className="c-homesection2__description">
           <h3>Institutional Repository</h3>
           <p>eScholarship serves as the institutional repository for the ten University of California campuses and affiliated research centers.</p>
