@@ -2,13 +2,19 @@
 
 .c-hero {
   @extend %page-bleed;
+  position: relative;
   margin-top: (-$spacing-sm);
   margin-bottom: $spacing-sm;
   padding: $spacing-sm;
   background-color: $color-teal;
 
   @include bp(screen3) {
+    display: flex;
+    align-items: center;
+    height: 30vw;
     margin-bottom: $spacing-md;
+    background: no-repeat center / cover;
+    // background-image property/value is set as an inline style after this class
   }
 
   @include headings() {
@@ -17,10 +23,39 @@
     font-size: 1.3em;
     font-weight: normal;
     text-align: center;
+
+    @include bp(screen3) {
+      width: 10em;
+      margin-left: $spacing-lg;
+      font-family: 'KievitWebLight';
+      font-size: 2.5em;
+      text-align: left;
+    }
+
   }
 
 }
 
 .c-hero__campuses {
   display: none;
+
+  @include bp(screen3) {
+    display: block;
+    position: absolute;
+    right: $spacing-lg;
+    bottom: $spacing-lg;
+  }
+
+  span {
+    display: block;
+    margin-bottom: $spacing-sm;
+    color: $color-white;
+    font-size: 1.5em;
+  }
+
+  a {
+    color: $color-white;
+    font-size: 1.1em;
+  }
+
 }
