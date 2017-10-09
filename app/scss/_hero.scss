@@ -12,15 +12,19 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
   // BG image overlay:
   &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $color-light-gray;
-    content: '';
-    opacity: .5;
-    z-index: -1;
+    
+    @include bp(screen3) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $color-light-gray;
+      content: '';
+      opacity: .5;
+      z-index: -1;
+    }
+
   }
 
   @include bp(screen3) {
@@ -42,7 +46,6 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
     font-size: 1.3em;
     font-weight: normal;
     text-align: center;
-    text-shadow: $hero-text-shadow;
 
     @include bp(screen3) {
       width: 10em;
@@ -50,6 +53,7 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
       font-family: 'KievitWebLight';
       font-size: 5vw;
       text-align: left;
+      text-shadow: $hero-text-shadow;
     }
 
     @include bp(screen4) {
