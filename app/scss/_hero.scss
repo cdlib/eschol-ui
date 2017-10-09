@@ -1,5 +1,7 @@
 // ##### Hero Component ##### //
 
+$hero-text-shadow: 1px 1px 1px $color-dark-gray;
+
 .c-hero {
   @extend %page-bleed;
   position: relative;
@@ -8,6 +10,19 @@
   padding: $spacing-sm;
   background-color: $color-teal;
 
+  // BG image overlay:
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-light-gray;
+    content: '';
+    opacity: .5;
+    z-index: -1;
+  }
+
   @include bp(screen3) {
     display: flex;
     align-items: center;
@@ -15,6 +30,7 @@
     margin-bottom: $spacing-md;
     background: no-repeat center / cover;
     // background-image property/value is set as an inline style after this class
+    z-index: 0;
   }
 
   @include bp(screen4) {
@@ -23,10 +39,10 @@
 
   @include headings() {
     margin: 0;
-    color: $color-white;
     font-size: 1.3em;
     font-weight: normal;
     text-align: center;
+    text-shadow: $hero-text-shadow;
 
     @include bp(screen3) {
       width: 10em;
@@ -52,18 +68,18 @@
     position: absolute;
     right: $spacing-lg;
     bottom: $spacing-lg;
+    text-shadow: $hero-text-shadow;
   }
 
   span {
     display: block;
     margin-bottom: $spacing-sm;
-    color: $color-white;
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   a {
-    color: $color-white;
-    font-size: 1.1em;
+    color: inherit;
+    font-size: 1.2em;
   }
 
 }
