@@ -2,7 +2,7 @@
 
 $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
-.c-hero {
+%c-hero {
   @extend %page-bleed;
   position: relative;
   margin-top: (-$spacing-sm);
@@ -60,6 +60,31 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
 }
 
+.c-hero--black-text {
+  @extend %c-hero;
+}
+
+.c-hero--white-text {
+  @extend %c-hero;
+
+  @include headings() {
+    
+    @include bp(screen3) {
+      color: $color-white;
+    }
+
+  }
+
+  .c-hero__campuses {
+    
+    @include bp(screen3) {
+      color: $color-white;
+    }
+
+  }
+
+}
+
 .c-hero__campuses {
   display: none;
 
@@ -74,6 +99,7 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
   span {
     display: block;
     margin-bottom: $spacing-sm;
+    color: inherit;
     font-size: 1.6em;
   }
 
