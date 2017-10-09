@@ -17,6 +17,10 @@
     // background-image property/value is set as an inline style after this class
   }
 
+  @include bp(screen4) {
+    height: 24em;
+  }
+
   @include headings() {
     margin: 0;
     color: $color-white;
@@ -30,6 +34,10 @@
       font-family: 'KievitWebLight';
       font-size: 5vw;
       text-align: left;
+    }
+
+    @include bp(screen4) {
+      font-size: 4em;
     }
 
   }
