@@ -59,6 +59,11 @@
 
     a {
       @extend %o-textlink__right-arrow;
+
+      @include bp(screen3) {
+        font-size: 1.2em;
+      }
+
     }
 
   }
