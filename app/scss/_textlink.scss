@@ -72,8 +72,12 @@
   @extend %o-textlink__right-icon;
 }
 
-.o-textlink__right-arrow {
+%o-textlink__right-arrow {
   @extend %o-textlink__right-icon;
   padding-right: 1.4em;
   background-image: inline('../images/icon_angle-right-teal.svg');
+}
+
+.o-textlink__right-arrow {
+  @extend %o-textlink__right-arrow;
 }
