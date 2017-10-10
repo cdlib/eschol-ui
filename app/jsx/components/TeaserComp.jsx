@@ -9,18 +9,18 @@ class TeaserComp extends React.Component {
         <section>
           <header>
             <h2>eScholarship Repository</h2>
-            <p>Illum officiis eos animi blanditiis dolores aliquam quia eum expedita beatae iste alias.
-            </p>
-            <a href="">Learn more</a>
           </header>
+          <p>Illum officiis eos animi blanditiis dolores aliquam quia eum expedita beatae iste alias.
+          </p>
+          <a href="">Learn more</a>
         </section>
         <section>
           <header>
             <h2>eScholarship Publishing</h2>
-            <p>Quod dolorem, nostrum ad quas quam doloribus labore quia a modi officiis unde natus.
-            </p>
-            <a href="">Learn more</a>
           </header>
+          <p>Quod dolorem, nostrum ad quas quam doloribus labore quia a modi officiis unde natus.
+          </p>
+          <a href="">Learn more</a>
         </section>
       </div>
     )
