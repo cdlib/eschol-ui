@@ -28,7 +28,7 @@ class HomeSection2Comp extends React.Component {
           </div>
         </div>
         <a href="" className="c-homesection2__browse-all">Browse all eScholarship holdings</a>
-        <a href="" className="c-homesection2__more">More about the eScholarship repository</a>
+        <a href="" className="c-homesection2__more">Learn more about the eScholarship repository</a>
       </div>
     )
   }
