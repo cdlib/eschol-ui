@@ -105,6 +105,8 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
   }
 
   a {
+    @extend %o-textlink__right-arrow;
+    background-image: inline('../images/icon_angle-right-black.svg');
     color: inherit;
     font-size: 1.2em;
   }
