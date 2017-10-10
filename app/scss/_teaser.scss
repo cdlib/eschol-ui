@@ -21,6 +21,7 @@
     @include bp(screen3) {
       flex: 1 1 50%;
       margin-top: $spacing-sm;
+      padding: $spacing-lg;
 
       &:first-child {
         margin-right: $spacing-sm / 2;
