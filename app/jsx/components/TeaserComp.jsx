@@ -12,7 +12,7 @@ class TeaserComp extends React.Component {
           </header>
           <p>Illum officiis eos animi blanditiis dolores aliquam quia eum expedita beatae iste alias.
           </p>
-          <a href="">Learn more</a>
+          <a href="#repository">Learn more</a>
         </section>
         <section>
           <header>
@@ -20,7 +20,7 @@ class TeaserComp extends React.Component {
           </header>
           <p>Quod dolorem, nostrum ad quas quam doloribus labore quia a modi officiis unde natus.
           </p>
-          <a href="">Learn more</a>
+          <a href="#publishing">Learn more</a>
         </section>
       </div>
     )

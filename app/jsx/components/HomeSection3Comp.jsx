@@ -6,7 +6,7 @@ import JournalGridComp from '../components/JournalGridComp.jsx'
 class HomeSection3Comp extends React.Component {
   render() {
     return (
-      <div className="c-homesection3">
+      <div id="publishing" className="c-homesection3">
         <strong className="c-homesection3__heading">eScholarship is also an open access publishing platform</strong>
         <div className="c-homesection3__description">
           <h3>eScholarship Publishing</h3>

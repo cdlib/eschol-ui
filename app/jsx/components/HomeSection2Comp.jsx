@@ -5,7 +5,7 @@ import React from 'react'
 class HomeSection2Comp extends React.Component {
   render() {
     return (
-      <div className="c-homesection2">
+      <div id="repository" className="c-homesection2">
         <strong className="c-homesection2__heading">eScholarship is the institutional repository for the UC system</strong>
         <div className="c-homesection2__map"></div>
         <div className="c-homesection2__description">
