@@ -6,6 +6,11 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
   position: relative;
   padding: $spacing-sm;
   background-color: $color-teal;
+  
+  // This prevents the inline background-image style referenced in the HTML from appearing up to the screen3 breakpoint size:
+  @media (max-width: $screen3 - 1) {
+    background-image: none !important;
+  }
 
   // BG image overlay:
   &::after {
