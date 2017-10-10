@@ -40,10 +40,6 @@
 
 .c-homesection3__description {
 
-  @include bp(screen3) {
-    // grid-row: 2 / 4;
-  }
-
   @include headings() {
     margin-top: 0;
     margin-bottom: 0.2em;
@@ -80,7 +76,7 @@
 }
 
 %c-homesection__links {
-  @extend %o-textlink__right-icon;
+  @extend %o-textlink__right-arrow;
   margin-bottom: $spacing-sm;
   justify-self: center;
 
