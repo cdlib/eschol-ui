@@ -6,6 +6,7 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import HeroComp from '../components/HeroComp.jsx'
+import TeaserComp from '../components/TeaserComp.jsx'
 import HomeSection1Comp from '../components/HomeSection1Comp.jsx'
 import HomeSection2Comp from '../components/HomeSection2Comp.jsx'
 import HomeSection3Comp from '../components/HomeSection3Comp.jsx'
@@ -67,6 +68,7 @@ class HomeLayout extends React.Component {
           </div>
         </div>
         <HeroComp />
+        <TeaserComp />
         <section className="c-togglesection">
           <header className={this.state.showSection1 ? 'c-togglesection__header--open' : 'c-togglesection__header'} hidden={this.state.isOpen}>
             <h2>
