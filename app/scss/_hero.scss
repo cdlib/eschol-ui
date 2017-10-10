@@ -34,7 +34,7 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
     align-items: center;
     height: 30vw;
     background: no-repeat center / cover;
-    // background-image property/value is set as an inline style after this class
+    // background-image property/URL is set as an inline HTML style on this element
     z-index: 0;
   }
 
@@ -44,6 +44,7 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
   @include headings() {
     margin: 0;
+    color: $color-white;
     font-size: 1.3em;
     font-weight: normal;
     text-align: center;
@@ -51,6 +52,7 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
     @include bp(screen3) {
       width: 10em;
       margin-left: $spacing-lg;
+      color: inherit;
       font-family: 'KievitWebLight';
       font-size: 5vw;
       text-align: left;
