@@ -11,6 +11,8 @@
   }
 
   section {
+    display: flex;
+    flex-direction: column;
     padding: $spacing-sm;
     background-color: $color-light-teal;
 
@@ -59,6 +61,7 @@
 
     a {
       @extend %o-textlink__right-arrow;
+      align-self: center;
 
       @include bp(screen3) {
         font-size: 1.2em;
