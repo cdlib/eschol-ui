@@ -92,7 +92,7 @@
 }
 
 .c-homesection2__browse-campuses {
-  @extend %o-textlink__external-link;
+  @extend %o-textlink__right-icon;
   justify-self: center;
 
   @include bp(screen3) {
@@ -136,7 +136,7 @@
 
 .c-homesection2__more,
 .c-homesection2__browse-all {
-  @extend %o-textlink__external-link;
+  @extend %o-textlink__right-icon;
   margin-bottom: $spacing-sm;
   grid-column: 1 / 3;
   justify-self: center;

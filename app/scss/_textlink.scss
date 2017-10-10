@@ -58,7 +58,7 @@
   background-image: inline('../images/icon_pdf-teal.svg');
 }
 
-%o-textlink__external-link {
+%o-textlink__right-icon {
   @extend %o-textlink__secondary;
   display: inline-flex;
   align-items: center;
@@ -69,5 +69,5 @@
 }
 
 .o-textlink__external-link {
-  @extend %o-textlink__external-link;
+  @extend %o-textlink__right-icon;
 }
