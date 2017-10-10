@@ -3,10 +3,8 @@
 $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
 %c-hero {
-  @extend %page-bleed;
   position: relative;
   margin-top: (-$spacing-sm);
-  margin-bottom: $spacing-sm;
   padding: $spacing-sm;
   background-color: $color-teal;
 
@@ -31,7 +29,6 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
     display: flex;
     align-items: center;
     height: 30vw;
-    margin-bottom: $spacing-md;
     background: no-repeat center / cover;
     // background-image property/value is set as an inline style after this class
     z-index: 0;
