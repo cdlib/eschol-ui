@@ -98,6 +98,7 @@ import TabMetricsDisp from './display/TabMetricsDisp.jsx'
 import TabAuthorDisp from './display/TabAuthorDisp.jsx'
 import TabCommentsDisp from './display/TabCommentsDisp.jsx'
 import TabsDisp from './display/TabsDisp.jsx'
+import TeaserDisp from './display/TeaserDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import TextListDisp from './display/TextListDisp.jsx'
 import TestMessageDisp from './display/TestMessageDisp.jsx'
@@ -225,6 +226,7 @@ ReactDOM.render((
       <Route path="/tabauthor" component={TabAuthorDisp} />
       <Route path="/tabcomments" component={TabCommentsDisp} />
       <Route path="/tabs" component={TabsDisp} />
+      <Route path="/teaser" component={TeaserDisp} />
       <Route path="/testmessage" component={TestMessageDisp} />
       <Route path="/textlist" component={TextListDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
