@@ -10,7 +10,7 @@ class TeaserComp extends React.Component {
           <header>
             <h2>eScholarship Repository</h2>
           </header>
-          <p>Illum officiis eos animi blanditiis dolores aliquam quia eum expedita beatae iste alias.
+          <p>OA repository services for UC researchers to share their scholarly output.
           </p>
           <a href="#repository">Learn more</a>
         </section>
@@ -18,7 +18,7 @@ class TeaserComp extends React.Component {
           <header>
             <h2>eScholarship Publishing</h2>
           </header>
-          <p>Quod dolorem, nostrum ad quas quam doloribus labore quia a modi officiis unde natus.
+          <p>OA publishing for journals, monographs, conference proceedings and more.
           </p>
           <a href="#publishing">Learn more</a>
         </section>
