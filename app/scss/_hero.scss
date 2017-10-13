@@ -35,9 +35,9 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
     text-align: center;
 
     @include bp(screen3) {
-      width: 12.2em;
-      padding: $spacing-md 2em $spacing-md $spacing-lg;
-      background: linear-gradient(to right, $hero-bg-color 80%, transparent);
+      width: 11em;
+      padding: $spacing-md $spacing-lg;
+      background: linear-gradient(to right, $hero-bg-color 85%, transparent);
       font-family: 'KievitWebLight';
       font-size: 4vw;
       text-align: left;
