@@ -66,7 +66,7 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
     right: 0;
     bottom: 0;
     padding: $spacing-md $spacing-md $spacing-md $spacing-lg;
-    background-color: $hero-bg-color;
+    background-image: linear-gradient(to left, $hero-bg-color 80%, transparent);
   }
 
   span {
