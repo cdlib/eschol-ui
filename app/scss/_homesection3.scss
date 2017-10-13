@@ -83,25 +83,15 @@
   @include bp(screen3) {
     margin-bottom: 0;
     font-size: 1.2em;
-  }
-
-}
-
-.c-homesection3__start {
-  @extend %c-homesection__links;
-
-  @include bp(screen3) {
-    align-self: start;
-    grid-column: 1;
+    grid-column: 1 / 3;
   }
 
 }
 
 .c-homesection3__browse-all {
   @extend %c-homesection__links;
+}
 
-  @include bp(screen3) {
-    grid-column: 1 / 3;
-  }
-
+.c-homesection3__start {
+  @extend %c-homesection__links;
 }
