@@ -78,7 +78,7 @@
 %c-homesection__links {
   @extend %o-textlink__right-arrow;
   margin-bottom: $spacing-sm;
-  justify-self: center;
+  justify-self: right;
 
   @include bp(screen3) {
     margin-bottom: 0;
@@ -92,7 +92,6 @@
 
   @include bp(screen3) {
     align-self: start;
-    justify-self: start;
     grid-column: 1;
   }
 
