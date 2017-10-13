@@ -65,7 +65,7 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: $spacing-md;
+    padding: $spacing-md $spacing-md $spacing-md $spacing-lg;
     background-color: $hero-bg-color;
   }
 
