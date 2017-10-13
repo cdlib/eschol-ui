@@ -52,7 +52,12 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
 
 }
 
-.c-hero__campuses {
+%c-hero__campus-text {
+  color: $color-white;
+  text-shadow: $hero-text-shadow;
+}
+
+.c-hero__campus {
   display: none;
 
   @include bp(screen3) {
@@ -65,19 +70,17 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
   }
 
   span {
+    @extend %c-hero__campus-text;
     display: block;
     margin-bottom: $spacing-sm;
-    color: $color-white;
     font-size: 1.6em;
-    text-shadow: $hero-text-shadow;
   }
 
   a {
+    @extend %c-hero__campus-text;
     @extend %o-textlink__right-arrow;
     background-image: inline('../images/icon_angle-right-white.svg');
-    color: $color-white;
     font-size: 1.2em;
-    text-shadow: $hero-text-shadow;
   }
 
 }
