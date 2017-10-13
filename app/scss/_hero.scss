@@ -2,7 +2,7 @@
 
 $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
-%c-hero {
+.c-hero {
   position: relative;
   padding: $spacing-sm;
   background-color: $color-teal;
@@ -10,23 +10,6 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
   // This prevents the inline background-image style referenced in the HTML from appearing up to the screen3 breakpoint size:
   @media (max-width: $screen3 - 1) {
     background-image: none !important;
-  }
-
-  // BG image overlay:
-  &::after {
-    
-    @include bp(screen3) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: $color-light-gray;
-      content: '';
-      opacity: .5;
-      z-index: -1;
-    }
-
   }
 
   @include bp(screen3) {
@@ -52,7 +35,6 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
     @include bp(screen3) {
       width: 10em;
       margin-left: $spacing-lg;
-      color: inherit;
       font-family: 'KievitWebLight';
       font-size: 5vw;
       text-align: left;
@@ -61,31 +43,6 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
 
     @include bp(screen4) {
       font-size: 4em;
-    }
-
-  }
-
-}
-
-.c-hero--black-text {
-  @extend %c-hero;
-}
-
-.c-hero--white-text {
-  @extend %c-hero;
-
-  @include headings() {
-    
-    @include bp(screen3) {
-      color: $color-white;
-    }
-
-  }
-
-  .c-hero__campuses {
-    
-    @include bp(screen3) {
-      color: $color-white;
     }
 
   }
@@ -106,14 +63,14 @@ $hero-text-shadow: 1px 1px 1px $color-dark-gray;
   span {
     display: block;
     margin-bottom: $spacing-sm;
-    color: inherit;
+    color: $color-white;
     font-size: 1.6em;
   }
 
   a {
     @extend %o-textlink__right-arrow;
     background-image: inline('../images/icon_angle-right-black.svg');
-    color: inherit;
+    color: $color-white;
     font-size: 1.2em;
   }
 
