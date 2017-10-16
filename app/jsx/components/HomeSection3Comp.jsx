@@ -7,7 +7,6 @@ class HomeSection3Comp extends React.Component {
   render() {
     return (
       <div id="publishing" className="c-homesection3">
-        <strong className="c-homesection3__heading">eScholarship is also an open access publishing platform</strong>
         <div className="c-homesection3__description">
           <h3>eScholarship Publishing</h3>
           <p>eScholarship Publishing is an open access publishing platform subsidized by the University of California, managed by the California Digital Library, and offered free of charge to UC-affiliated departments, research units, publishing programs and individual scholars.</p>

@@ -2,12 +2,10 @@
 
 .c-homesection1 {
   display: grid;
-  padding: $spacing-sm;
   grid-template-columns: 1fr;
   grid-gap: $spacing-sm;
 
   @include bp(screen3) {
-    padding: $spacing-lg;
     background: inline('../images/world-map-teal.svg') no-repeat center / contain;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr auto;

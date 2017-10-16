@@ -2,12 +2,10 @@
 
 .c-homesection2 {
   display: grid;
-  padding: $spacing-sm;
   grid-template-columns: 1fr 1fr;
   grid-gap: $spacing-sm;
 
   @include bp(screen3) {
-    padding: $spacing-lg;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: $spacing-lg;
   }

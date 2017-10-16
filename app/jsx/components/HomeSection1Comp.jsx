@@ -6,7 +6,6 @@ class HomeSection1Comp extends React.Component {
   render() {
     return (
       <div className="c-homesection1">
-        <h2 className="c-homesection1__heading">Why Open Access with eScholarship?</h2>
         <div className="c-homesection1__description">
           <h3>Good for Authors</h3>
           <p>Open access research is read and cited more than access-restricted scholarship, increasing the academic impact of and public engagement with your ideas.</p>
