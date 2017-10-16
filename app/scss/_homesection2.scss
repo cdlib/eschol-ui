@@ -23,36 +23,12 @@
 
 }
 
-.c-homesection2__heading {
-  display: block;
-  margin: 0 0 $spacing-sm;
-  color: $color-teal;
-  font-size: 1.2em;
-  font-weight: normal;
-  grid-column: 1 / 3;
-
-  @include bp(screen3) {
-    margin: 0 0 $spacing-md;
-    color: $color-black;
-    font-size: 2em;
-    font-weight: normal;
-    text-align: center;
-    grid-column: 1 / 5;
-
-    @supports (display: grid) {
-      margin: 0;
-    }
-
-  }
-
-}
-
 .c-homesection2__map {
 
   @include bp(screen3) {
     background: inline('../images/california-map.svg') no-repeat center / contain;
     grid-column: 1 / 3;
-    grid-row: 2 / 6;
+    grid-row: 1 / 5;
   }
 
 }

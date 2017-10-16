@@ -12,29 +12,6 @@
 
 }
 
-.c-homesection3__heading {
-  display: block;
-  margin: 0 0 $spacing-sm;
-  color: $color-teal;
-  font-size: 1.2em;
-  font-weight: normal;
-
-  @include bp(screen3) {
-    margin: 0 0 $spacing-md;
-    color: $color-black;
-    font-size: 2em;
-    font-weight: normal;
-    text-align: center;
-    grid-column: 1 / 4;
-
-    @supports (display: grid) {
-      margin: 0;
-    }
-
-  }
-
-}
-
 .c-homesection3__description {
 
   @include bp(screen3) {
