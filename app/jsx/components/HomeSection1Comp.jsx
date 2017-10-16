@@ -20,9 +20,6 @@ class HomeSection1Comp extends React.Component {
           <div className="o-stat--units">
             <a href="">119</a> Research Units
           </div>
-          <div className="o-stat--passed">
-            <a href="">6,532</a> Items since UC <br/> OA Policy passed
-          </div>
         </div>
         <a href="" className="c-homesection1__more">Learn more about UC Open Access</a>
       </div>
