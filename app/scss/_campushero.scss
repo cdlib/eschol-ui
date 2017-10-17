@@ -1,5 +1,51 @@
 // ##### Campus Hero Component ##### //
 
 .c-campushero {
-  border: $bgreen;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-sm;
+  background: $color-light-teal;
+
+  @include bp(screen3) {
+    background: none;
+  }
+
+  @include headings() {
+    margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
+    padding: $spacing-sm;
+    background: $color-teal;
+    color: $color-white;
+    font-size: 1.3em;
+    text-align: center;
+
+    @include bp(screen3) {
+      margin-bottom: 0.4em;
+      font-family: 'KievitWebLight';
+      font-size: 1.6em;
+      font-weight: normal;
+      text-align: left;
+    }
+
+  }
+
+}
+
+.c-campushero__text {
+  margin-bottom: $spacing-sm;
+  line-height: $line-height1;
+
+  @include bp(screen3) {
+    font-size: 1.1em;
+  }
+  
+}
+
+.c-campushero__link {
+  @extend %o-textlink__right-arrow;
+  align-self: flex-end;
+
+  @include bp(screen3) {
+    font-size: 1.2em;
+  }
+
 }
