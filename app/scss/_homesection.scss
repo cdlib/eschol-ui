@@ -105,7 +105,6 @@
   justify-self: center;
 
   @include bp(screen3) {
-    margin: $spacing-md 0;
     font-size: 1.6em;
     font-weight: normal;
     justify-self: start;
