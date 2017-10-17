@@ -274,6 +274,7 @@
   @extend %c-homesection-description;
 
   @include bp(screen3) {
+    align-self: center;
     grid-column: 1 / 3;
   }
 
