@@ -4,7 +4,7 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import CampusSearchComp from '../components/CampusSearchComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import HeroComp from '../components/HeroComp.jsx'
+import HeatMapComp from '../components/HeatMapComp.jsx'
 import StatCarouselComp from '../components/StatCarouselComp.jsx'
 import UnitCarouselComp from '../components/UnitCarouselComp.jsx'
 import JournalCarouselComp from '../components/JournalCarouselComp.jsx'
@@ -79,7 +79,7 @@ class CampusLayout extends React.Component {
             </details>
           </div>
         </div>
-        <HeroComp />
+        <HeatMapComp />
         <StatCarouselComp />
         <div className="c-columns">
           <main id="maincontent">
