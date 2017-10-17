@@ -62,6 +62,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
+          <li><a href="#campushero">Campus Hero</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#campusselector">Campus Selector</a> (replaced by Custom Selector object above)</li>
           <li><a href="#checkbox">Checkbox</a></li>
@@ -75,7 +76,7 @@ class Home extends React.Component {
           <li><a href="#header1">Header 1 - Home</a></li>
           <li><a href="#header2">Header 2 - Other Than Home</a></li>
           <li><a href="#heatmap">Heat Map</a></li>
-          <li><a href="#hero">Hero</a></li>
+          <li><a href="#homehero">Home Hero</a></li>
           <li><a href="#homesections">Home Sections 1, 2, and 3</a></li>
           <li><a href="#infopages">Informational Pages</a></li>
           <li><a href="#itemactions">Item Actions</a></li>

@@ -20,6 +20,7 @@ import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import BrowseJournalsLayout from './layouts/BrowseJournalsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusLayout from './layouts/CampusLayout.jsx'
+import CampusHeroDisp from './display/CampusHeroDisp.jsx'
 import CampusSearchDisp from './display/CampusSearchDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import MarqueeDisp from './display/MarqueeDisp.jsx'
@@ -148,6 +149,7 @@ ReactDOM.render((
       <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
       <Route path="/browsejournals" component={BrowseJournalsLayout} />
       <Route path="/campus" component={CampusLayout} />
+      <Route path="/campushero" component={CampusHeroDisp} />
       <Route path="/campussearch" component={CampusSearchDisp} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
       <Route path="/button" component={ButtonDisp} />
@@ -170,8 +172,8 @@ ReactDOM.render((
       <Route path="/header2" component={Header2Disp} />
       <Route path="/heading" component={HeadingDisp} />
       <Route path="/heatmap" component={HeatMapDisp} />
-      <Route path="/hero" component={HeroDisp} />
       <Route path="/home" component={HomeLayout} />
+      <Route path="/homehero" component={HeroDisp} />
       <Route path="/homesections" component={HomeSectionsDisp} />
       <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
