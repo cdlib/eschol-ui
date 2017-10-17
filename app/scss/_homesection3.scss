@@ -53,7 +53,7 @@
 
 }
 
-%c-homesection__links {
+%c-homesection3__links {
   @extend %o-textlink__right-arrow;
   margin-bottom: $spacing-sm;
   justify-self: right;
@@ -67,9 +67,9 @@
 }
 
 .c-homesection3__browse-all {
-  @extend %c-homesection__links;
+  @extend %c-homesection3__links;
 }
 
 .c-homesection3__start {
-  @extend %c-homesection__links;
+  @extend %c-homesection3__links;
 }
