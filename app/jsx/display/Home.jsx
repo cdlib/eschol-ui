@@ -77,7 +77,6 @@ class Home extends React.Component {
           <li><a href="#heatmap">Heat Map</a></li>
           <li><a href="#hero">Hero</a></li>
           <li><a href="#homesections">Home Sections 1, 2, and 3</a></li>
-          <li><a href="#homesectionheader">Home Section Header</a></li>
           <li><a href="#infopages">Informational Pages</a></li>
           <li><a href="#itemactions">Item Actions</a></li>
           <li><a href="#journalcarousel">Journal Carousel</a></li>

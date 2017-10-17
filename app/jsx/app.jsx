@@ -38,7 +38,6 @@ import FacetBoxDisp from './display/FacetBoxDisp.jsx'
 import FilterDisp from './display/FilterDisp.jsx'
 import Home from './display/Home.jsx'
 import HomeSectionsDisp from './display/HomeSectionsDisp.jsx'
-import HomeSectionHeaderDisp from './display/HomeSectionHeaderDisp.jsx'
 import HomeLayout from './layouts/HomeLayout.jsx'
 import FooterDisp from './display/FooterDisp.jsx'
 import Header1Disp from './display/Header1Disp.jsx'
@@ -174,7 +173,6 @@ ReactDOM.render((
       <Route path="/hero" component={HeroDisp} />
       <Route path="/home" component={HomeLayout} />
       <Route path="/homesections" component={HomeSectionsDisp} />
-      <Route path="/homesectionheader" component={HomeSectionHeaderDisp} />
       <Route path="/infopages" component={InfoPagesDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
