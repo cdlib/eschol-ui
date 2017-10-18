@@ -7,6 +7,7 @@ $campushero-text-shadow: 1px 1px 1px $color-light-black;
   flex-direction: column;
   padding: $spacing-sm;
   background: $color-light-teal;
+  border-bottom: 1px solid $color-light-gray;
 
   // This prevents the inline background-image style referenced in the HTML from appearing up to the screen3 breakpoint size:
   @media (max-width: $screen3 - 1) {
