@@ -1,31 +1,43 @@
 // ##### Campus Hero Component ##### //
 
+$campushero-text-shadow: 1px 1px 1px $color-light-black;
+
 .c-campushero {
   display: flex;
   flex-direction: column;
   padding: $spacing-sm;
   background: $color-light-teal;
 
-  @include bp(screen3) {
-    background: none;
+  // This prevents the inline background-image style referenced in the HTML from appearing up to the screen3 breakpoint size:
+  @media (max-width: $screen3 - 1) {
+    background-image: none !important;
   }
 
-  @include headings() {
-    margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
-    padding: $spacing-sm;
-    background: $color-teal;
-    color: $color-white;
-    font-size: 1.3em;
-    text-align: center;
+  @include bp(screen3) {
+    height: 30vw;
+    background: no-repeat center / cover;
+    // background-image property/URL is set as an inline HTML style on this element
+    z-index: 0;
+  }
 
-    @include bp(screen3) {
-      margin-bottom: 0.4em;
-      font-family: 'KievitWebLight';
-      font-size: 1.6em;
-      font-weight: normal;
-      text-align: left;
-    }
+}
 
+.c-campushero__lede {
+  margin: (-$spacing-sm) (-$spacing-sm) $spacing-sm;
+  padding: $spacing-sm;
+  background-color: $color-teal;
+  color: $color-white;
+  font-size: 1.3em;
+  text-align: center;
+
+  @include bp(screen3) {
+    margin-bottom: 0.4em;
+    background: none;
+    font-family: 'KievitWebLight';
+    font-size: 1.6em;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: $campushero-text-shadow;
   }
 
 }
@@ -35,7 +47,9 @@
   line-height: $line-height1;
 
   @include bp(screen3) {
+    color: $color-white;
     font-size: 1.1em;
+    text-shadow: $campushero-text-shadow;
   }
   
 }
@@ -45,7 +59,10 @@
   align-self: flex-end;
 
   @include bp(screen3) {
+    background-image: inline('../images/icon_angle-right-white.svg');
+    color: $color-white;
     font-size: 1.2em;
+    text-shadow: $campushero-text-shadow;
   }
 
 }
