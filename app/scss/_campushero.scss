@@ -33,6 +33,7 @@ $campushero-text-shadow: 1px 1px 1px $color-light-black;
     background-color: rgba($color-teal, .7);
 
     @supports (display: grid) {
+      background-color: transparent;
       background-image: linear-gradient(to right, rgba($color-teal, .7) 85%, transparent);
     }
 
@@ -62,6 +63,7 @@ $campushero-text-shadow: 1px 1px 1px $color-light-black;
     grid-column: 1;
 
     @supports (display: grid) {
+      background-color: transparent;
       background-image: linear-gradient(to right, rgba($color-teal, .7) 85%, transparent);
     }
 
