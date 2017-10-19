@@ -16,14 +16,14 @@ class HomeSection2Comp extends React.Component {
         <a href="" className="c-homesection__2-browse-campuses">Browse campuses</a>
         <h3 className="c-homesection__2-metrics-heading">Repository Holdings</h3>
         <div className="o-stat">
-          <div className="o-stat--item">
-            <a href="">24,844</a> Items
+          <div className="o-stat--articles">
+            <a href="">24,844</a> Articles
           </div>
-          <div className="o-stat--units">
-            <a href="">119</a> Research Units
+          <div className="o-stat--books">
+            <a href="">119</a> Books
           </div>
-          <div className="o-stat--passed">
-            <a href="">6,532</a> Items since UC <br/> OA Policy passed
+          <div className="o-stat--theses">
+            <a href="">6,532</a> Theses
           </div>
         </div>
         <a href="" className="c-homesection__2-browse-all">Browse all eScholarship holdings</a>
