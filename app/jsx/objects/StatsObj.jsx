@@ -28,7 +28,7 @@ class StatsObj extends React.Component {
           <a href="">1,491</a> Books
         </div>
         <div className="o-stat--theses">
-          <a href="">89</a> Thesis
+          <a href="">89</a> Theses
         </div>
       </div>
     )
