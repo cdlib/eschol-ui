@@ -17,8 +17,8 @@ class HomeSection1Comp extends React.Component {
           <div className="o-stat--item">
             <a href="">24,844</a> Items
           </div>
-          <div className="o-stat--units">
-            <a href="">119</a> Research Units
+          <div className="o-stat--view">
+            <a href="">119</a> Views
           </div>
         </div>
         <a href="" className="c-homesection__1-link">Learn more about UC Open Access</a>
