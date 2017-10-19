@@ -65,3 +65,18 @@
   @extend %o-stat__type;
   background-image: inline('../images/icon_university-light-black.svg');
 }
+
+.o-stat--articles {
+  @extend %o-stat__type;
+  background-image: inline('../images/icon_file-text-black.svg');
+}
+
+.o-stat--books {
+  @extend %o-stat__type;
+  background-image: inline('../images/icon_book.svg');
+}
+
+.o-stat--thesis {
+  @extend %o-stat__type;
+  background-image: inline('../images/icon_graduation-cap-black.svg');
+}
