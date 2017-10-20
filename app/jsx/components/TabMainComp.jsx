@@ -25,8 +25,8 @@ class TabMainComp extends React.Component {
           <summary>Main Content</summary>
           <p>Fugit dignissimos, laborum repudiandae consequuntur, sit iure nobis animi numquam laudantium error veniam incidunt in at, nihil doloremque labore, odio illo cumque debitis vel enim rerum possimus saepe blanditiis. Temporibus ducimus rerum quidem ipsa quas asperiores, sapiente in, delectus quae excepturi dolor officiis at quia fugit minus vitae libero. Voluptas quos nobis unde sequi laborum ipsam similique placeat, mollitia debitis provident, consequuntur, blanditiis ducimus! Blanditiis quibusdam ab aspernatur, repellendus recusandae, dolor quidem ipsa id laborum inventore illum eligendi laboriosam necessitatibus nam labore, pariatur delectus corporis suscipit amet asperiores soluta doloremque iste voluptate.</p>
           <div className="o-dividecontent2x">
-            <img className="o-imagecontent" src="http://placehold.it/250x150?text=Placeholder" alt="" />
-            <img className="o-imagecontent" src="http://placehold.it/250x150?text=Placeholder" alt=""/>
+            <img src="http://placehold.it/250x150?text=Placeholder" alt="" />
+            <img src="http://placehold.it/250x150?text=Placeholder" alt=""/>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ratione dolorum obcaecati impedit accusantium delectus quasi quis numquam consequuntur, aspernatur! Ut, consequuntur voluptates incidunt molestiae temporibus ullam laboriosam mollitia quidem. Alias, praesentium, deserunt. Architecto eos amet vero perferendis repellendus laboriosam, cum totam aspernatur, vel, iste maiores atque eligendi autem ipsam!
           </p>

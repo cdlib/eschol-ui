@@ -113,9 +113,9 @@ class JournalSplashyLayout extends React.Component {
               <h3 className="o-heading1a">Table of Contents</h3>
               <div className="o-dividecontent2x--ruled">
                 <PubComp />
-                <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
+                <img src="http://placehold.it/300x150?text=Image" alt="" />
                 <PubComp />
-                <img className="o-imagecontent" src="http://placehold.it/300x150?text=Image" alt="" />
+                <img src="http://placehold.it/300x150?text=Image" alt="" />
                 <PubComp />
               </div>
             </section>

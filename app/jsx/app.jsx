@@ -26,7 +26,6 @@ import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
-import ImageContentDisp from './display/ImageContentDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
@@ -163,7 +162,6 @@ ReactDOM.render((
       <Route path="/download" component={DownloadDisp} />
       <Route path="/error404" component={Error404Layout} />
       <Route path="/export" component={ExportDisp} />
-      <Route path="/imagecontent" component={ImageContentDisp} />
       <Route path="/input" component={InputDisp} />
       <Route path="/facetbox" component={FacetBoxDisp} />
       <Route path="/filter" component={FilterDisp} />

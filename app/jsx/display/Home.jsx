@@ -47,7 +47,6 @@ class Home extends React.Component {
           <li><a href="#dividecontent">Divide Content into Balanced Columms</a></li>
           <li><a href="#download">Download</a></li>
           <li><a href="#heading">Headings</a></li>
-          <li><a href="#imagecontent">Image Content</a></li>
           <li><a href="#input">Inputs</a></li>
           <li><a href="#itemunavailable">Item Unavailable</a></li>
           <li><a href="#journal">Journals</a></li>
