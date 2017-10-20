@@ -1,6 +1,7 @@
 // ##### Column Box Objects ##### //
 
 %o-columnbox {
+  @extend %responsive-images;
   margin-bottom: $spacing-sm;
   padding: $spacing-sm $spacing-sm 0;
 
@@ -32,13 +33,6 @@
 
   @include bp(screen2) {
     margin-bottom: $spacing-md;
-  }
-
-  // responsive image content:
-  img {
-    display: block;
-    max-width: 100%;
-    margin-bottom: $spacing-sm;
   }
 
 }
