@@ -34,6 +34,13 @@
     margin-bottom: $spacing-md;
   }
 
+  // responsive image content:
+  img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: $spacing-sm;
+  }
+
 }
 
 .o-columnbox1 {
