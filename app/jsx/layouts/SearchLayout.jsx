@@ -90,7 +90,7 @@ class SearchLayout extends React.Component {
             <FilterComp />
             <details className="c-facetbox">
               {/* Each facetbox needs a distinct <span id> and <fieldset aria-labelledby> matching value, like facetbox1, facetbox2, etc. */}
-              <summary className="c-facetbox__summary"><span id="c-facetbox1">Included Media</span></summary>
+              <summary className="c-facetbox__summary"><span id="c-facetbox1">Supplemental Material</span></summary>
               <fieldset aria-labelledby="c-facetbox1">
                 <ul className="c-checkbox--2column">
                   {/* 'id' and 'htmlFor' values must contain a unique number per each pair below for accessibility */}
