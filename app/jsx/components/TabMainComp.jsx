@@ -1,21 +1,12 @@
 // ##### Tab Main Content Component ##### //
 
 import React from 'react'
-import ItemActionsComp from '../components/ItemActionsComp.jsx'
-import AuthorListComp from '../components/AuthorListComp.jsx'
-import PubLocationComp from '../components/PubLocationComp.jsx'
-import PubDataComp from '../components/PubDataComp.jsx'
 import ToggleContentComp from '../components/ToggleContentComp.jsx'
 
 class TabMainComp extends React.Component {
   render() {
     return (
       <div className="c-tabcontent">
-        <ItemActionsComp />
-        <h1 className="c-tabcontent__main-heading" tabIndex="-1">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
-        <AuthorListComp />
-        <PubLocationComp />
-        <PubDataComp />
         <details className="c-togglecontent" open>
           <summary>Abstract</summary>
           <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>

@@ -4,6 +4,10 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
+import ItemActionsComp from '../components/ItemActionsComp.jsx'
+import AuthorListComp from '../components/AuthorListComp.jsx'
+import PubLocationComp from '../components/PubLocationComp.jsx'
+import PubDataComp from '../components/PubDataComp.jsx'
 import TabsComp from '../components/TabsComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
@@ -25,6 +29,11 @@ class JournalItemHtmlLayout extends React.Component {
         </nav>
         <div className="c-columns--sticky-sidebar">
           <main id="maincontent">
+            <ItemActionsComp />
+            <h1 className="o-heading1a">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+            <AuthorListComp />
+            <PubLocationComp />
+            <PubDataComp />
             <TabsComp />
           </main>
           <aside>
