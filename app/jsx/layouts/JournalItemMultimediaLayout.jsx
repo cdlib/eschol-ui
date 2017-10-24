@@ -4,7 +4,7 @@ import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
-import ItemActionsComp from '../components/ItemActionsComp.jsx'
+import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import PubLocationComp from '../components/PubLocationComp.jsx'
 import PubDataComp from '../components/PubDataComp.jsx'
@@ -30,16 +30,53 @@ class JournalItemMultimediaLayout extends React.Component {
         </nav>
         <div className="c-columns--sticky-sidebar">
           <main id="maincontent">
+            <div className="c-itemactions">
+              <div className="o-download">
+                <a href="" className="o-download__button" download>Download PDF</a>
+                <details className="o-download__formats">
+                  <summary aria-label="formats"></summary>
+                  <ul className="o-download__nested-menu">
+                    <li className="o-download__nested-list1">
+                      Main
+                      <ul>
+                        <li><a href="">PDF</a></li>
+                        <li><a href="">ePub</a></li>
+                        <li><a href="">HTML</a></li>
+                      </ul>
+                    </li>
+                    <li className="o-download__nested-list2">
+                      Citation
+                      <ul>
+                        <li><a href="">RIS</a></li>
+                        <li><a href="">BibText</a></li>
+                        <li><a href="">EndNote</a></li>
+                        <li><a href="">RefWorks</a></li>
+                      </ul>
+                    </li>
+                    <li className="o-download__nested-list3">
+                      Supplemental Material
+                      <ul>
+                        <li><a href="">Image</a></li>
+                        <li><a href="">Audio</a></li>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Zip</a></li>
+                        <li><a href="">File</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <ShareComp />
+            </div>
+            <h1 className="o-heading1a">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
+            <AuthorListComp />
+            <PubLocationComp />
+            <PubDataComp />
             <div className="c-tabs">
               <div className="c-tabs__tabs">
                 <button className="c-tabs__button--active">Main Content</button>
               </div>
               <div className="c-tabs__content">
-                <ItemActionsComp />
-                <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
-                <AuthorListComp />
-                <PubLocationComp />
-                <PubDataComp />
                 <details className="c-togglecontent" open>
                   <summary>Abstract</summary>
                   <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
