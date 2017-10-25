@@ -1,19 +1,73 @@
 // ##### Unit Series Component ##### //
 
 .c-unitseries {
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
+
+  &:last-of-type { // compensate for interactive-element-size
+    margin-bottom: $spacing-md;
+  }
+
+  &[open] {
+
+    .c-unitseries__heading {
+      margin-bottom: $spacing-sm;
+
+      &::after {
+        background-image: inline('../images/icon_minus-black.svg');
+      }
+
+    }
+
+  }
+
+  // c-pub comp customizations for unitseries comp:
 
   .c-pub {
-    padding-left: 4%;
+    margin-left: $pointer-size-fine;
+
+    @include interactive-element-pointer(coarse) {
+      margin-left: $pointer-size-coarse;
+    }
+
+  }
+
+  .c-pub__heading {
+    font-size: 1.1em;
   }
 
 }
 
 .c-unitseries__heading {
-  @extend %o-heading2a;
+  display: inline-block;
+  position: relative;
+  margin-left: $pointer-size-fine;
+
+  @include interactive-element-pointer(coarse) {
+    margin-left: $pointer-size-coarse;
+  }
+
+  &::after { // ::before can't be used; see resets.scss
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: (-$pointer-size-fine);
+    width: $pointer-size-fine;
+    background: inline('../images/icon_plus-black.svg') no-repeat center / 1.1em;
+    content: '';
+
+    @include interactive-element-pointer(coarse) {
+      left: (-$pointer-size-coarse);
+      width: $pointer-size-coarse;
+    }
+
+  }
 
   a {
     @extend %o-textlink__secondary;
+    @extend %interactive-element-size;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.3em;
   }
 
 }

@@ -141,13 +141,12 @@ class UnitSimpleLayout extends React.Component {
                 <ShareComp />
               </div>
               <div className="c-unitseries__publications">There are 99 publications in this collection, published between 1989 and 2010.</div>
-              <h3 className="o-heading1a">Series Category A</h3>
-              <div className="c-unitseries">
-                <h4 className="c-unitseries__heading"><a href="">Series 1 Title</a></h4>
+              <details className="c-unitseries">
+                <summary className="c-unitseries__heading"><a href="">Recent Works (33)</a></summary>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -163,9 +162,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -181,9 +180,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -199,13 +198,13 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
-              </div>
-              <div className="c-unitseries">
-                <h4 className="c-unitseries__heading"><a href="">Series 2 Title</a></h4>
+              </details>
+              <details className="c-unitseries">
+                <summary className="c-unitseries__heading"><a href="">Seminar and Conference Papers (33)</a></summary>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -221,9 +220,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -239,9 +238,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -257,13 +256,13 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
-              </div>
-              <div className="c-unitseries">
-                <h4 className="c-unitseries__heading"><a href="">Series 3 Title</a></h4>
+              </details>
+              <details className="c-unitseries">
+                <summary className="c-unitseries__heading"><a href="">Working Papers (33)</a></summary>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Kirschen, Bryan</a></li>
@@ -279,9 +278,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Dahle, Kevin W</a></li>
@@ -297,9 +296,9 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-pub">
-                  <h5 className="c-pub__heading">
+                  <h3 className="c-pub__heading">
                     <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </h5>
+                  </h3>
                   <div className="c-authorlist">
                     <ul className="c-authorlist__list">
                       <li><a href="">Pardo, Maria Gracia</a></li>
@@ -315,7 +314,7 @@ class UnitSimpleLayout extends React.Component {
                   </div>
                 </div>
                 <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
-              </div>
+              </details>
               <div className="c-unitlist">
                 <h3>Journals</h3>
                 <ul>
