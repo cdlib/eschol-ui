@@ -1,0 +1,28 @@
+// ##### Unit Series Component ##### //
+
+.c-unitseries {
+  margin-bottom: $spacing-md;
+
+  .c-pub {
+    padding-left: 4%;
+  }
+
+}
+
+.c-unitseries__heading {
+  @extend %o-heading2a;
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+}
+
+.c-unitseries__publications {
+  margin-bottom: $spacing-md;
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+}
