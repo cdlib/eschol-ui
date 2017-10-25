@@ -108,7 +108,7 @@ import ToggleSectionDisp from './display/ToggleSectionDisp.jsx'
 import UnitCarouselDisp from './display/UnitCarouselDisp.jsx'
 import UnitItemDisp from './display/UnitItemDisp.jsx'
 import UnitListDisp from './display/UnitListDisp.jsx'
-import UnitPubDisp from './display/UnitPubDisp.jsx'
+import UnitSeriesDisp from './display/UnitSeriesDisp.jsx'
 import UnitSimpleLayout from './layouts/UnitSimpleLayout.jsx'
 import ViewExternalDisp from './display/ViewExternalDisp.jsx'
 import WellDisp from './display/WellDisp.jsx'
@@ -236,7 +236,7 @@ ReactDOM.render((
       <Route path="/unitcarousel" component={UnitCarouselDisp} />
       <Route path="/unititem" component={UnitItemDisp} />
       <Route path="/unitlist" component={UnitListDisp} />
-      <Route path="/unitpub" component={UnitPubDisp} />
+      <Route path="/unitpub" component={UnitSeriesDisp} />
       <Route path="/unitsimple" component={UnitSimpleLayout} />
       <Route path="/viewexternal" component={ViewExternalDisp} />
       <Route path="/well" component={WellDisp} />
