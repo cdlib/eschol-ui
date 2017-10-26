@@ -140,9 +140,9 @@ class UnitSimpleLayout extends React.Component {
               <div className="c-itemactions">
                 <ShareComp />
               </div>
-              <div className="c-unitseries__publications">There are 99 publications in this collection, published between 1989 and 2010.</div>
-              <details className="c-unitseries">
-                <summary className="c-unitseries__heading"><a href="">Recent Works (33)</a></summary>
+              <div className="c-unitseries__publications1">There are 99 publications in this collection, published between 1989 and 2010.</div>
+              <details className="c-togglecontent c-unitseries">
+                <summary><a href="">Recent Works (33)</a></summary>
                 <div className="c-pub">
                   <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -197,10 +197,10 @@ class UnitSimpleLayout extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitseries__publications2">24 more works&mdash; <a href="">show all</a></div>
               </details>
-              <details className="c-unitseries">
-                <summary className="c-unitseries__heading"><a href="">Seminar and Conference Papers (33)</a></summary>
+              <details className="c-togglecontent c-unitseries">
+                <summary><a href="">Seminar and Conference Papers (33)</a></summary>
                 <div className="c-pub">
                   <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -255,10 +255,10 @@ class UnitSimpleLayout extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitseries__publications2">24 more works&mdash; <a href="">show all</a></div>
               </details>
-              <details className="c-unitseries">
-                <summary className="c-unitseries__heading"><a href="">Working Papers (33)</a></summary>
+              <details className="c-togglecontent c-unitseries">
+                <summary><a href="">Working Papers (33)</a></summary>
                 <div className="c-pub">
                   <h3 className="c-pub__heading">
                     <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -313,7 +313,7 @@ class UnitSimpleLayout extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
+                <div className="c-unitseries__publications2">24 more works&mdash; <a href="">show all</a></div>
               </details>
               <div className="c-unitlist">
                 <h3>Journals</h3>

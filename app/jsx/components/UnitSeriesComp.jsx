@@ -11,8 +11,8 @@ class UnitSeriesComp extends React.Component {
   }
   render() {
     return (
-      <details className="c-unitseries">
-        <summary className="c-unitseries__heading"><a href="">Recent Works (33)</a></summary>
+      <details className="c-togglecontent c-unitseries">
+        <summary><a href="">Recent Works (33)</a></summary>
         <div className="c-pub">
           <h5 className="c-pub__heading">
             <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
@@ -67,7 +67,7 @@ class UnitSeriesComp extends React.Component {
             </p>
           </div>
         </div>
-        <div className="c-unitseries__publications">24 more works&mdash; <a href="">show all</a></div>
+        <div className="c-unitseries__publications2">24 more works&mdash; <a href="">show all</a></div>
       </details>
     )
   }
