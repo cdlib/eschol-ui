@@ -6,9 +6,11 @@ class BreadcrumbComp extends React.Component {
   render() {
     return (
       <nav className="c-breadcrumb">
-        <a href="">eScholarship</a>
-        <a href="">About</a>
-        <a className="c-breadcrumb-link--active" href="">About eScholarship</a>
+        <ul>
+          <li><a href="">eScholarship</a></li>
+          <li><a href="">About</a></li>
+          <li><a className="c-breadcrumb-link--active" href="">About eScholarship</a></li>
+        </ul>
       </nav>
     )
   }
