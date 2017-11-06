@@ -17,8 +17,6 @@ if (!(typeof document === "undefined")) {
 }
 
 class JournalSimpleLayout extends React.Component {
-  // For element wrap/unwrap test:
-  state={wrap: true}
 
   componentDidMount() {
     $('.c-pub__heading, .c-pub__abstract').dotdotdot({watch: 'window'
@@ -37,13 +35,6 @@ class JournalSimpleLayout extends React.Component {
   }
 
   render() {
-    // For element wrap/unwrap test:
-    let breadcrumbs = [
-      <a href="">eScholarship</a>,
-      <a href="">Campus Name</a>,
-      <a href="">Journal Name</a>,
-      <a className="c-breadcrumb-link--active" href="">Volume ##, Issue ##</a>
-    ]
     return (
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
@@ -84,7 +75,14 @@ class JournalSimpleLayout extends React.Component {
           </div>
         </div>
         <NavBarComp />
-        {this.state.wrap ? <nav className="c-breadcrumb">{breadcrumbs} </nav> : breadcrumbs}
+        <nav className="c-breadcrumb">
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a href="">Campus Name</a></li>
+            <li><a href="">Journal Name</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">Volume ##, Issue ##</a></li>
+          </ul>
+        </nav>
         <section className="o-columnbox2">
           <header>
             <h2>About</h2>
