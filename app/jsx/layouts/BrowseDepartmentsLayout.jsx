@@ -77,9 +77,11 @@ class BrowseDepartmentsLayout extends React.Component {
           </div>
         </div>
         <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a href="">UC Berkeley</a>
-          <a className="c-breadcrumb-link--active" href="">Academic Units</a>
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a href="">UC Berkeley</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">Academic Units</a></li>
+          </ul>
         </nav>
         <div className="c-columns">
           <main id="maincontent">

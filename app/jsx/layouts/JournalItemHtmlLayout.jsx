@@ -22,10 +22,12 @@ class JournalItemHtmlLayout extends React.Component {
         <SubheaderComp />
         <NavBarComp />
         <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a href="">Campus Name</a>
-          <a href="">Journal Name</a>
-          <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a href="">Campus Name</a></li>
+            <li><a href="">Journal Name</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">From the New Heights</a></li>
+          </ul>
         </nav>
         <div className="c-columns--sticky-sidebar">
           <main id="maincontent">

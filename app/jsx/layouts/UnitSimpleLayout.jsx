@@ -116,9 +116,11 @@ class UnitSimpleLayout extends React.Component {
           <LanguageComp />
         </div>
         <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a href="">Campus Name</a>
-          <a className="c-breadcrumb-link--active" href="">Unit Name</a>
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a href="">Campus Name</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">Unit Name</a></li>
+          </ul>
         </nav>
         <div className="c-columns">
           <main id="maincontent">

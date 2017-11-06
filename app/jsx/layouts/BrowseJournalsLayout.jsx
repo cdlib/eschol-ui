@@ -65,8 +65,10 @@ class BrowseJournalsLayout extends React.Component {
           </div>
         </div>
         <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a className="c-breadcrumb-link--active" href="">Journals</a>
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">Journals</a></li>
+          </ul>
         </nav>
         <div className="c-columns">
           <main id="maincontent">

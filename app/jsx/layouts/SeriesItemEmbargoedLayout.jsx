@@ -53,11 +53,13 @@ class SeriesItemEmbargoedLayout extends React.Component {
         </div>
         <NavBarComp />
         <nav className="c-breadcrumb">
-          <a href="">eScholarship</a>
-          <a href="">Campus Name</a>
-          <a href="">Unit Name</a>
-          <a href="">Series Name</a>
-          <a className="c-breadcrumb-link--active" href="">From the New Heights</a>
+          <ul>
+            <li><a href="">eScholarship</a></li>
+            <li><a href="">Campus Name</a></li>
+            <li><a href="">Unit Name</a></li>
+            <li><a href="">Series Name</a></li>
+            <li><a className="c-breadcrumb-link--active" href="">From the New Heights</a></li>
+          </ul>
         </nav>
         <div className="c-columns">
           <main id="maincontent">
