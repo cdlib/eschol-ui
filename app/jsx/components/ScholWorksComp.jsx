@@ -47,7 +47,9 @@ class ScholWorksComp extends React.Component {
             <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
           </div>
         </div>
-        <img className="c-scholworks__article-preview" src="images/temp_article.png" alt="article"/>
+        <a className="c-scholworks__thumbnail" href="">
+          <img src="images/temp_article.png" alt="article"/>
+        </a>
       </section>
     )
   }
