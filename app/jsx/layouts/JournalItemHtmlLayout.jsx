@@ -39,12 +39,7 @@ class JournalItemHtmlLayout extends React.Component {
             <TabsComp />
           </main>
           <aside>
-            <section className="o-columnbox1">
-              <header>
-                <h2>Jump To</h2>
-              </header>
-              <JumpComp />
-            </section>
+            <JumpComp />
             <section className="o-columnbox1">
               <header>
                 <h2>Related Items</h2>
