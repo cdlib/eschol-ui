@@ -40,7 +40,7 @@
   border: 1px solid $color-light-gray;
 }
 
-.c-pagination__item--active {
+.c-pagination__item--current {
   @extend %c-pagination__items;
   border: 1px solid $color-dark-gray;
   background-color: $color-dark-gray;
