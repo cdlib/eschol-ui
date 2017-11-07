@@ -1,11 +1,24 @@
 // ##### Jump Component ##### //
 
 import React from 'react'
+import Breakpoints from '../../js/breakpoints.json'
 
 class JumpComp extends React.Component {
+
+  componentWillMount() {
+    if (matchMedia) {
+      this.mq = matchMedia("(max-width:"+Breakpoints.screen2+")")
+      this.mq.addListener(this.widthChange)
+      this.widthChange()
+    }
+  }
+  widthChange = ()=> {
+    this.setState({matchBreakpoint: this.mq.matches})
+  }
+
   render() {
     return (
-      <section className="o-columnbox1">
+      <section className="o-columnbox1" hidden={this.state.matchBreakpoint}>
         <header>
           <h2>Jump To</h2>
         </header>
