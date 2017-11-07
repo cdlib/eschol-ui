@@ -5,19 +5,22 @@ import React from 'react'
 class PaginationComp extends React.Component {
   render() {
     return (
-      <div className="c-pagination">
-        {/* If the result set is "1", then the "Previous" button should be disabled */}
-        <button disabled className="c-pagination__prevnext">Previous</button>
-        {/* Note the <span>, not <button> for the current result set, with the aria-label containing 'current' text */}
-        <span className="c-pagination__item--current" aria-label="2 current">1</span>
-        <button className="c-pagination__item">2</button>
-
-        <button className="c-pagination__item">3</button>
-        <span className="c-pagination__ellipses">&hellip;</span>
-        <button className="c-pagination__item">342</button>
-        {/* If the result set is the last in the recordset, then the "Next" button should be disabled */}
-        <button className="c-pagination__prevnext">Next</button>
-      </div>
+      <nav className="c-pagination">
+        <ul>
+          {/*
+          If the result set is first in the recordset, then change the "Previous" <a> tag to a <span>, as below:
+          
+          Note the aria-label text differences in each list item below:
+          */}
+          <li><span className="c-pagination__prevnext" aria-label="go to previous result set">Previous</span></li>
+          <li><a href="" className="c-pagination__item--current" aria-label="you are on result set 1">1</a></li>
+          <li><a href="" className="c-pagination__item" aria-label="go to result set 2">2</a></li>
+          <li><a href="" className="c-pagination__item" aria-label="go to result set 3">3</a></li>
+          <li><a href="" className="c-pagination__item" aria-label="go to result set 342">342</a></li>
+          {/* If the result set is last in the recordset, then change the "Next" <a> tag to a <span> below: */}
+          <li><a href="" className="c-pagination__prevnext" aria-label="go to next result set">Next</a></li>
+        </ul>
+      </nav>
     )
   }
 }
