@@ -13,19 +13,13 @@
   @extend %interactive-element-size;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: $spacing-base;
   padding: 0 $spacing-sm;
+  background-color: $color-white;
   color: $color-black;
-  text-decoration: none;
 
   &:not(:last-child) {
     margin-right: $spacing-base;
-  }
-
-  &:hover,
-  &:focus {
-    border: 1px solid $color-dark-orange;
   }
 
 }
@@ -33,11 +27,23 @@
 .c-pagination__prevnext {
   @extend %c-pagination__items;
   border: 1px solid $color-dark-gray;
+
+  &[disabled] {
+    border: 1px solid $color-light-gray;
+    color: lighten($color-dark-gray, 20%);
+  }
+
 }
 
 .c-pagination__item {
   @extend %c-pagination__items;
-  border: 1px solid $color-light-gray;
+  border: 1px solid $color-dark-gray;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-dark-orange;
+  }
+
 }
 
 .c-pagination__item--current {
