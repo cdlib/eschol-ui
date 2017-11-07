@@ -7,18 +7,19 @@ class JumpComp extends React.Component {
 
   componentWillMount() {
     if (matchMedia) {
-      this.mq = matchMedia("(max-width:"+Breakpoints.screen2+")")
+      this.mq = matchMedia("(min-width:"+Breakpoints.screen2+")")
       this.mq.addListener(this.widthChange)
       this.widthChange()
     }
   }
+
   widthChange = ()=> {
-    this.setState({matchBreakpoint: this.mq.matches})
+    this.setState({show: this.mq.matches})
   }
 
   render() {
     return (
-      <section className="o-columnbox1" hidden={this.state.matchBreakpoint}>
+      <section className="o-columnbox1" hidden={!this.state.show}>
         <header>
           <h2>Jump To</h2>
         </header>
