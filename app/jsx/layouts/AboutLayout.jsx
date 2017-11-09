@@ -78,7 +78,7 @@ class AboutLayout extends React.Component {
               <h2>Heading Level 2 Lorem Ipsum Dolor Sit Amet</h2>
               <h3>Heading Level 3 Lorem Ipsum Dolor Sit Amet</h3>
               <h4>Heading Level 4 Lorem Ipsum Dolor Sit Amet</h4>
-              <p>Paragraph. eScholarship provides a suite of open access, <a href="https://escholarship.org">scholarly publishing services and research tools</a> that enable departments, research units, publishing programs, and individual scholars associated with the <a href="http://www.ucop.edu">University of California</a> to have direct control over the creation and dissemination of the full range of their scholarship.</p>
+              <p>Paragraph containing links. eScholarship provides a suite of open access, <a href="https://escholarship.org">scholarly publishing services and research tools</a> that enable departments, research units, publishing programs, and individual scholars associated with the <a href="http://www.ucop.edu">University of California</a> to have direct control over the creation and dissemination of the full range of their scholarship.</p>
               <ul>
                 <li>Unordered list</li>
                 <li>Debitis voluptate, corporis velit fugiat nostrum culpa</li>
@@ -95,7 +95,7 @@ class AboutLayout extends React.Component {
                 <li>Iusto, sit repellat facilis obcaecati ipsa exercitationem id voluptatibus impedit blanditiis
                 </li>
               </ol>
-              <blockquote>Blockquote. Magni quo assumenda, voluptatum tempore itaque perspiciatis excepturi earum voluptatibus dolorum placeat nam fugiat inventore praesentium adipisci libero eos, fugit veritatis minima?
+              <blockquote>Blockquote. Magni quo assumenda, voluptatum tempore itaque perspiciatis excepturi earum voluptatibus dolorum placeat nam fugiat inventore praesentium adipisci libero eos, fugit veritatis minima.
               </blockquote>
               <p>Bold and italicized text. Cupiditate provident voluptas, <strong>commodi quos eius necessitatibus eveniet</strong> modi architecto quas <em>itaque culpa dolor possimus rem magni laboriosam!</em> Saepe beatae deserunt minus.
               </p>
