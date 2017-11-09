@@ -70,7 +70,7 @@ class AboutLayout extends React.Component {
         <BreadcrumbComp />
         <div className="c-columns">
           <main id="maincontent">
-            <section className="o-columnbox1">
+            <section className="o-columnbox1 c-clientmarkup">
               <header>
                 <h2>About eScholarship</h2>
               </header>
