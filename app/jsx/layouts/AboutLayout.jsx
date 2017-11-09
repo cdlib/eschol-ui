@@ -74,21 +74,31 @@ class AboutLayout extends React.Component {
               <header>
                 <h2>About eScholarship</h2>
               </header>
-              <p>eScholarship provides a suite of open access, scholarly publishing services and research tools that enable departments, research units, publishing programs, and individual scholars associated with the University of California to have direct control over the creation and dissemination of the full range of their scholarship.</p>
-              <p>With eScholarship, you can publish the following original scholarly works on a dynamic research platform available to scholars worldwide:
-              </p>
+              <h1>Heading Level 1 Lorem Ipsum Dolor Sit Amet</h1>
+              <h2>Heading Level 2 Lorem Ipsum Dolor Sit Amet</h2>
+              <h3>Heading Level 3 Lorem Ipsum Dolor Sit Amet</h3>
+              <h4>Heading Level 4 Lorem Ipsum Dolor Sit Amet</h4>
+              <p>Paragraph. eScholarship provides a suite of open access, <a href="https://escholarship.org">scholarly publishing services and research tools</a> that enable departments, research units, publishing programs, and individual scholars associated with the <a href="http://www.ucop.edu">University of California</a> to have direct control over the creation and dissemination of the full range of their scholarship.</p>
               <ul>
-                <li><a className="o-textlink__primary" href="">Books</a></li>
-                <li><a className="o-textlink__primary" href="">Journals</a></li>
-                <li><a className="o-textlink__primary" href="">Working Papers</a></li>
-                <li><a className="o-textlink__primary" href="">Previously Published Works</a></li>
-                <li><a className="o-textlink__primary" href="">Conferences</a></li>
+                <li>Unordered list</li>
+                <li>Debitis voluptate, corporis velit fugiat nostrum culpa</li>
+                <li>Aperiam natus vero, dolorum facere a consectetur odit eos eaque sit accusamus</li>
+                <li>Et fugiat dolorum dolores quo totam repellat</li>
               </ul>
-              <p>eScholarship also provides deposit and dissemination services for postprints, or previously published articles.</p>
-              <p>Publications benefit from manuscript and peer-review management systems, as well as a full range of persistent access and preservation services.</p>
-              <p>Learn more about what to expect from publishing with eScholarship.</p>
-              <p>eScholarship is a service of the Publishing Group of the California Digital Library.</p>
-              <p>Questions? <a className="o-textlink__primary" href="">Contact us</a>.</p>
+              <ol>
+                <li>Ordered list
+                </li>
+                <li>Vero reprehenderit eos quasi ut commodi deleniti incidunt alias suscipit quia iure repellendus
+                </li>
+                <li>Omnis iusto impedit unde autem, nostrum quos quaerat rerum voluptate quasi
+                </li>
+                <li>Iusto, sit repellat facilis obcaecati ipsa exercitationem id voluptatibus impedit blanditiis
+                </li>
+              </ol>
+              <blockquote>Blockquote. Magni quo assumenda, voluptatum tempore itaque perspiciatis excepturi earum voluptatibus dolorum placeat nam fugiat inventore praesentium adipisci libero eos, fugit veritatis minima?
+              </blockquote>
+              <p>Bold and italicized text. Cupiditate provident voluptas, <strong>commodi quos eius necessitatibus eveniet</strong> modi architecto quas <em>itaque culpa dolor possimus rem magni laboriosam!</em> Saepe beatae deserunt minus.
+              </p>
               <ModalComp />
             </section>
           </main>
