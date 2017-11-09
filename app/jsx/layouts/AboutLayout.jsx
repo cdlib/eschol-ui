@@ -7,6 +7,7 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
+import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import ModalComp from '../components/ModalComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -68,14 +69,6 @@ class AboutLayout extends React.Component {
         </div>
         <BreadcrumbComp />
         <div className="c-columns">
-          <aside>
-            <section className="o-columnbox1 c-sidebarnav">
-              <header>
-                <h2>About eScholarship</h2>
-              </header>
-              [empty]
-            </section>
-          </aside>
           <main id="maincontent">
             <section className="o-columnbox1">
               <header>
@@ -99,6 +92,28 @@ class AboutLayout extends React.Component {
               <ModalComp />
             </section>
           </main>
+          <aside>
+            <section className="o-columnbox1 c-sidebarnav">
+              <header>
+                <h2>Campus Contact</h2>
+              </header>
+              <p>Open Access support team:</p>
+              <p><a className="o-textlink__secondary" href="mailto:OAsupport@lib.ucdavis.edu">OAsupport@lib.ucdavis.edu</a></p>
+            </section>
+            <section className="o-columnbox1">
+              <header>
+                <h2>UC Davis Datasets</h2>
+              </header>
+                <p><img src="https://escholarship.org/assets/ae9113630087df93bf4da32614fddb8ca48bfbc40886118f043c278671849ece" alt="Dash logo"/></p>
+                <p>Publish the data that accompanies your research in <a className="o-textlink__secondary" href="https://dash.ucdavis.edu/stash">UC Davis Dash</a>.</p>
+            </section>
+            <section className="o-columnbox1 c-sidebarnav">
+              <header>
+                <h2>Recent Articles</h2>
+              </header>
+              <RelatedItemsComp />
+            </section>
+          </aside>
         </div>
         <FooterComp />
       </div>
