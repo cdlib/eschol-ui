@@ -85,6 +85,7 @@ class AboutLayout extends React.Component {
                 <li>Aperiam natus vero, dolorum facere a consectetur odit eos eaque sit accusamus</li>
                 <li>Et fugiat dolorum dolores quo totam repellat</li>
               </ul>
+              <img src="http://via.placeholder.com/400x100?text=Responsive+Image"/>
               <ol>
                 <li>Ordered list
                 </li>
