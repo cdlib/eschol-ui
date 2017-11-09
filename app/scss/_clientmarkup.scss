@@ -1,5 +1,63 @@
 // ##### CMS Client Markup ##### //
 
 .c-clientmarkup {
-  border: $bgreen;
+
+  // ***** Headings ***** //
+
+  > h1 {
+    @extend %o-heading1;
+  }
+
+  > h2 {
+    @extend %o-heading2;
+  }
+
+  > h3 {
+    @extend %o-heading3;
+  }
+
+  > h4 {
+    @extend %o-heading4;
+  }
+
+  // ***** Links ***** //
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+  // ***** Lists ***** //
+
+  ol,
+  ul {
+    margin-bottom: $spacing-sm;
+
+    li {
+
+      &:not(:last-child) {
+        margin-bottom: $spacing-sm;
+      }
+
+    }
+
+  }
+
+  // ***** Blockquotes ***** //
+
+  blockquote {
+    margin-bottom: $spacing-sm;
+    padding-left: $spacing-sm;
+    border-left: 5px solid $color-light-gray;
+    font-size: 1.1em;
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+
+  }
+
 }
