@@ -84,7 +84,6 @@ import SeriesItemUrlLayout from './layouts/SeriesItemUrlLayout.jsx'
 import SeriesItemWithdrawnLayout from './layouts/SeriesItemWithdrawnLayout.jsx'
 import ServerErrorDisp from './display/ServerErrorDisp.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
-import SidebarNavDisp from './display/SidebarNavDisp.jsx'
 import SkipNavDisp from './display/SkipNavDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
@@ -211,7 +210,6 @@ ReactDOM.render((
       <Route path="/seriesitemurl" component={SeriesItemUrlLayout} />
       <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
       <Route path="/servererror" component={ServerErrorDisp} />
-      <Route path="/sidebarnav" component={SidebarNavDisp} />
       <Route path="/skipnav" component={SkipNavDisp} />
       <Route path="/share" component={ShareDisp} />
       <Route path="/socialicons" component={SocialIconsDisp} />

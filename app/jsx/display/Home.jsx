@@ -103,7 +103,6 @@ class Home extends React.Component {
           <li><a href="#search2">Search 2 - With Search Controls</a></li>
           <li><a href="#servererror">Server Error</a></li>
           <li><a href="#share">Share</a></li>
-          <li><a href="#sidebarnav">Sidebar Navigation</a></li>
           <li><a href="#skipnav">Skip Navigation</a></li>
           <li><a href="#socialicons">Social Icons</a></li>
           <li><a href="#sort">Sort By</a></li>

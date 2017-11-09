@@ -7,7 +7,6 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
-import SidebarNavComp from '../components/SidebarNavComp.jsx'
 import ModalComp from '../components/ModalComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 
@@ -74,7 +73,7 @@ class AboutLayout extends React.Component {
               <header>
                 <h2>About eScholarship</h2>
               </header>
-              <SidebarNavComp />
+              [empty]
             </section>
           </aside>
           <main id="maincontent">
