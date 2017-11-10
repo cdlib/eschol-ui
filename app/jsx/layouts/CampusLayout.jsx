@@ -62,8 +62,7 @@ class CampusLayout extends React.Component {
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>
-            <div className="c-subheader__sidebar-text">University of California, Berkeley <br/>Publications in eScholarship</div>
-            <div className="c-subheader__sidebar-number">16,464</div>
+            <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
           </div>
         </div>
         <div className="c-navbar">
