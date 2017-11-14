@@ -1,7 +1,7 @@
 // ##### Navigation Component ##### //
 
 .c-nav {
-  flex: 1 0 auto; // to .c-subheader flexbox
+  flex: 1 0 auto; // to .c-navbar flexbox
   z-index: 1; // prevents stacking under marquee carousel in some browsers
 
   ul {
