@@ -66,17 +66,17 @@ class CampusLayout extends React.Component {
           </div>
         </div>
         <div className="c-navbar">
-          <div className="c-nav">
+          <nav className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
               <summary className="c-nav__main-button"><span>Menu</span>
               </summary>
-              <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
-                <a href="" className="c-nav__item--active">Open Access Policies</a>
-                <a href="">Journals</a>
-                <a href="">Academic Units</a>
-              </nav>
+              <ul className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
+                <li><a href="" className="c-nav__item--active">Open Access Policies</a></li>
+                <li><a href="">Journals</a></li>
+                <li><a href="">Academic Units</a></li>
+              </ul>
             </details>
-          </div>
+          </nav>
         </div>
         <CampusHeroComp />
         <StatCarouselComp />
