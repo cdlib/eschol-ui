@@ -231,7 +231,6 @@
 
   @include bp(screen3) {
     top: auto;
-    left: (-$spacing-sm);
     width: 12em;
     max-height: 23em;
     margin-top: $spacing-base;
