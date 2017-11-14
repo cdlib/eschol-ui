@@ -120,14 +120,6 @@
       background: none;
     }
 
-    > a {
-
-      @include bp(screen3) {
-        padding: 0;
-      }
-
-    }
-
     .c-nav__item--active {
       color: $color-black;
       font-weight: bold;
@@ -196,7 +188,7 @@
     align-items: center;
 
     @include bp(screen3) {
-      padding-right: 0.9em;
+      padding-right: 1.5em;
     }
 
   }
@@ -211,7 +203,6 @@
     content: '';
 
     @include bp(screen3) {
-      right: 0;
       width: 0.8em;
       background-image: inline('../images/icon_arrow-down.svg');
     }

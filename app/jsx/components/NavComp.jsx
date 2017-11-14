@@ -59,7 +59,6 @@ class NavComp extends React.Component {
             </li>
             <li><a href=""  className="c-nav__item--active">Policies</a></li>
             <li><a href="">Submission Guidelines</a></li>
-            <li><a href="">Contact</a></li>
           </ul>
         </details>
       </nav>
