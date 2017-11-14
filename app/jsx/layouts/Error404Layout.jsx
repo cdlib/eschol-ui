@@ -29,39 +29,51 @@ class Error404Layout extends React.Component {
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header1Comp />
         <div className="c-navbar">
-          <div className="c-nav">
+          <nav className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">
               <summary className="c-nav__main-button"><span>Menu</span>
               </summary>
-              <nav className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
-                <NavSubComp name="About" open={this.state.submenuActive == 1} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 1 : null})}>
-                  <a href="">About Us</a>
-                  <a href="">Aims &amp; Scope</a>
-                  <a href="">Editorial Board</a>
-                </NavSubComp>
-                <NavSubComp name="Campus Sites" open={this.state.submenuActive == 2} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 2 : null})}>
-                  <a href="">UC Berkeley</a>
-                  <a href="">UC Davis</a>
-                  <a href="">UC Irvine</a>
-                  <a href="">UCLA</a>
-                  <a href="">UC Merced</a>
-                  <a href="">UC Riverside</a>
-                  <a href="">UC San Diego</a>
-                  <a href="">UC San Francisco</a>
-                  <a href="">UC Santa Barbara</a>
-                  <a href="">UC Santa Cruz</a>
-                  <a href="">UC Office of the President</a>
-                  <a href="">UC Press</a>
-                </NavSubComp>
-                <NavSubComp name="UC Open Access" open={this.state.submenuActive == 3} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 3 : null})}>
-                  <a href="">To Be Determined 1</a>
-                  <a href="">To Be Determined 2</a>
-                  <a href="">To Be Determined 3</a>
-                </NavSubComp>
-                <a href="">eScholarship Publishing</a>
-              </nav>
+              <ul className={this.state.submenuActive ? "c-nav__main-items--submenu-active" : "c-nav__main-items"}>
+                <li>
+                  <NavSubComp name="About" open={this.state.submenuActive == 1} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 1 : null})}>
+                    <ul>
+                      <li><a href="">About Us</a></li>
+                      <li><a href="">Aims &amp; Scope</a></li>
+                      <li><a href="">Editorial Board</a></li>
+                    </ul>
+                  </NavSubComp>
+                </li>
+                <li>
+                  <NavSubComp name="Campus Sites" open={this.state.submenuActive == 2} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 2 : null})}>
+                    <ul>
+                      <li><a href="">UC Berkeley</a></li>
+                      <li><a href="">UC Davis</a></li>
+                      <li><a href="">UC Irvine</a></li>
+                      <li><a href="">UCLA</a></li>
+                      <li><a href="">UC Merced</a></li>
+                      <li><a href="">UC Riverside</a></li>
+                      <li><a href="">UC San Diego</a></li>
+                      <li><a href="">UC San Francisco</a></li>
+                      <li><a href="">UC Santa Barbara</a></li>
+                      <li><a href="">UC Santa Cruz</a></li>
+                      <li><a href="">UC Office of the President</a></li>
+                      <li><a href="">UC Press</a></li>
+                    </ul>
+                  </NavSubComp>
+                </li>
+                <li>
+                  <NavSubComp name="UC Open Access" open={this.state.submenuActive == 3} onSubmenuChanged={(flag)=> this.setState({submenuActive:flag ? 3 : null})}>
+                    <ul>
+                      <li><a href="">To Be Determined 1</a></li>
+                      <li><a href="">To Be Determined 2</a></li>
+                      <li><a href="">To Be Determined 3</a></li>
+                    </ul>
+                  </NavSubComp>
+                </li>
+                <li><a href="">eScholarship Publishing</a></li>
+              </ul>
             </details>
-          </div>
+          </nav>
         </div>
         <div className="c-columns">
           <main id="maincontent">
