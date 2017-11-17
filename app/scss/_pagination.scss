@@ -27,9 +27,9 @@
         color: lighten($color-dark-gray, 20%);
       }
 
-      // Ellipsis after the 2nd last pagination list item:
+      // Ellipsis before the 2nd last pagination list item only when it's also the 5th item:
 
-      &:nth-last-child(2) {
+      &:nth-last-child(2):nth-child(5) {
 
         &::before {
           margin-right: $spacing-base;
