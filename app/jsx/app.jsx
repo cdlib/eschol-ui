@@ -47,6 +47,7 @@ import HeatMapDisp from './display/HeatMapDisp.jsx'
 import HeroDisp from './display/HeroDisp.jsx'
 import InfoPagesDisp from './display/InfoPagesDisp.jsx'
 import InputDisp from './display/InputDisp.jsx'
+import IssueDisp from './display/IssueDisp.jsx'
 import ItemActionsDisp from './display/ItemActionsDisp.jsx'
 import ItemUnavailableDisp from './display/ItemUnavailableDisp.jsx'
 import JournalDisp from './display/JournalDisp.jsx'
@@ -173,6 +174,7 @@ ReactDOM.render((
       <Route path="/homehero" component={HeroDisp} />
       <Route path="/homesections" component={HomeSectionsDisp} />
       <Route path="/infopages" component={InfoPagesDisp} />
+      <Route path="/issue" component={IssueDisp} />
       <Route path="/itemactions" component={ItemActionsDisp} />
       <Route path="/itemunavailable" component={ItemUnavailableDisp} />
       <Route path="/journal" component={JournalDisp} />
