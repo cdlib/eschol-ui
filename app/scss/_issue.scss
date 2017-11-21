@@ -1,5 +1,9 @@
 // ##### Issue Component ##### //
 
 .c-issue {
-  border: $bgreen;
+
+  img {
+    @extend %u-thumbnail;
+  }
+
 }

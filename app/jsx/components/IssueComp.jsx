@@ -6,7 +6,10 @@ class IssueComp extends React.Component {
   render() {
     return (
       <div className="c-issue">
-        [Issue component to go here]
+        <figure>
+          <img src="images/temp_article.png" alt="article"/>
+          <figcaption>Caption goes here quasi ipsum beatae dolores veritatis cumque impedit optio ipsam.</figcaption>
+        </figure>
       </div>
     )
   }
