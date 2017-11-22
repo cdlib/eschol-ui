@@ -1,41 +1,67 @@
 // ##### Issue Component ##### //
 
 .c-issue {
-  display: flex;
-  position: relative;
+  
+  @include bp(screen2) {
+    display: flex;
+    position: relative;
+  }
 
   @include headings() {
     @extend %o-heading3a;
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    margin-bottom: $spacing-sm;
+
+    @include bp(screen2) {
+      position: absolute;
+      right: 0;
+      left: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
   }
 
 }
 
 .c-issue__thumbnail {
-  margin: $spacing-lg 0 0;
+  margin: 0 0 $spacing-sm;
+
+  @include bp(screen2) {
+    margin: $spacing-lg 0 0;
+  }
 
   img {
     @extend %u-thumbnail;
+    margin-bottom: $spacing-base;
+
+    @include bp(screen2) {
+      margin-bottom: 0;
+    }
+
   }
 
   figcaption {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: calc(8em + #{$spacing-md});
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    
+    @include bp(screen2) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: calc(8em + #{$spacing-md});
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
   }
 
 }
 
 .c-issue__description {
-  margin: $spacing-lg 0 0 $spacing-md;
-  padding-bottom: $spacing-md;
+
+  @include bp(screen2) {
+    margin: $spacing-lg 0 0 $spacing-md;
+    padding-bottom: $spacing-md;
+  }
+
 }
