@@ -1,9 +1,41 @@
 // ##### Issue Component ##### //
 
 .c-issue {
+  display: flex;
+  position: relative;
+
+  @include headings() {
+    @extend %o-heading3a;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+}
+
+.c-issue__thumbnail {
+  margin: $spacing-lg 0 0;
 
   img {
     @extend %u-thumbnail;
   }
 
+  figcaption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: calc(8em + #{$spacing-md});
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+}
+
+.c-issue__description {
+  margin: $spacing-lg 0 0 $spacing-md;
+  padding-bottom: $spacing-md;
 }
