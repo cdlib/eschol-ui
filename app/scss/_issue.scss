@@ -2,22 +2,38 @@
 
 .c-issue {
   
-  @include bp(screen2) {
+  @include bp(screen1) {
     display: flex;
     position: relative;
+
+    // Detecting 'display: contents' is causing a false positive in Safari, so detecting 'display: flow-root' instead:
+    @supports (display: flow-root) {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto 1fr auto;
+    }
+
   }
 
   @include headings() {
     @extend %o-heading3a;
     margin-bottom: $spacing-sm;
 
-    @include bp(screen2) {
+    @include bp(screen1) {
       position: absolute;
       right: 0;
       left: 0;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+      grid-column: 2;
+      grid-row: 1;
+
+      @supports (display: flow-root) {
+        position: static;
+        margin: 0 0 $spacing-sm $spacing-md;
+      }
+
     }
 
   }
@@ -27,7 +43,8 @@
 .c-issue__thumbnail {
   margin: 0 0 $spacing-sm;
 
-  @include bp(screen2) {
+  @include bp(screen1) {
+    display: contents;
     margin: $spacing-lg 0 0;
   }
 
@@ -35,22 +52,30 @@
     @extend %u-thumbnail;
     margin-bottom: $spacing-base;
 
-    @include bp(screen2) {
+    @include bp(screen1) {
       margin-bottom: 0;
+      grid-row: 1 / 4;
     }
 
   }
 
   figcaption {
     
-    @include bp(screen2) {
+    @include bp(screen1) {
       position: absolute;
       right: 0;
       bottom: 0;
-      left: calc(8em + #{$spacing-md});
+      left: 8em;
+      margin-left: $spacing-md;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+      grid-column: 2;
+
+      @supports (display: flow-root) {
+        position: static;
+      }
+
     }
 
   }
@@ -59,9 +84,17 @@
 
 .c-issue__description {
 
-  @include bp(screen2) {
+  @include bp(screen1) {
     margin: $spacing-lg 0 0 $spacing-md;
     padding-bottom: $spacing-md;
+    grid-column: 2;
+    grid-row: 2;
+
+    @supports (display: flow-root) {
+      margin: 0 0 0 $spacing-md;
+      padding: 0;
+    }
+
   }
 
 }
