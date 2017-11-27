@@ -8,7 +8,7 @@
     position: relative;
 
     // Detecting 'display: contents' alone is causing a false positive in Safari, so adding 'display: flow-root':
-    @supports (display: contents) and (display: flow-root) {
+    @supports (display: contentsX) and (display: flow-root) {
       display: grid;
       grid-template-columns: auto 1fr;
       grid-template-rows: auto 1fr auto;
@@ -30,7 +30,7 @@
       grid-column: 2;
       grid-row: 1;
 
-      @supports (display: contents) and (display: flow-root) {
+      @supports (display: contentsX) and (display: flow-root) {
         position: static;
         margin-bottom: $spacing-sm;
         white-space: normal;
@@ -47,7 +47,7 @@
   margin: 0 0 $spacing-sm;
 
   @include bp(screen1) {
-    display: contents;
+    display: contentsX;
     margin: $spacing-lg 0 0;
   }
 
@@ -68,7 +68,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      left: 8em;
+      left: 8rem;
       align-self: end;
       margin-left: $spacing-md;
       font-size: 0.9em;
@@ -78,7 +78,7 @@
       grid-column: 2;
       grid-row: 3;
 
-      @supports (display: contents) and (display: flow-root) {
+      @supports (display: contentsX) and (display: flow-root) {
         position: static;
         margin-left: 0;
       }
@@ -97,7 +97,7 @@
     grid-column: 2;
     grid-row: 2;
 
-    @supports (display: contents) and (display: flow-root) {
+    @supports (display: contentsX) and (display: flow-root) {
       margin: 0;
       padding: 0;
     }
