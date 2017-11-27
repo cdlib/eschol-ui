@@ -3,7 +3,7 @@
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
-import PubComp from '../components/PubComp.jsx'
+import IssueComp from '../components/IssueComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
 import PubPreviewComp from '../components/PubPreviewComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
@@ -162,14 +162,7 @@ class JournalSimpleLayout extends React.Component {
                   </div>
                 </details>
               </div>
-              <div className="c-pub">
-                <div className="c-pub__subheading">Focus: Caribbean Studies and Literatures
-                </div>
-                <div className="c-pub__abstract">
-                  <p>Aut vitae, ipsa magnam, voluptates cum deleniti quaerat asperiores. Repudiandae reprehenderit tempora beatae cumque nulla, molestias rem atque dolore modi deserunt veniam quod numquam voluptatibus dolor ut illo. Dolorum natus autem aliquid commodi nesciunt ducimus quis libero enim dolorem reprehenderit amet iusto labore pariatur expedita nisi sed recusandae, ullam! Quos quae accusantium incidunt repudiandae maxime cupiditate! Sequi qui sapiente neque quasi exercitationem.
-                  </p>
-                </div>
-              </div>
+              <IssueComp />
               <h3 className="o-heading3">Front Matter</h3>
               {/* PubReviewComp Example */}
               <div className="c-pubpreview">
