@@ -9,7 +9,7 @@
     // Detecting 'display: contents' alone is causing a false positive in Safari, so adding 'display: flow-root':
     @supports (display: contents) and (display: flow-root) {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto 1fr;
       grid-template-rows: auto 1fr auto;
     }
 
@@ -66,11 +66,13 @@
       right: 0;
       bottom: 0;
       left: 8em;
+      align-self: end;
       margin-left: $spacing-md;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
       grid-column: 2;
+      grid-row: 3;
 
       @supports (display: contents) and (display: flow-root) {
         position: static;
