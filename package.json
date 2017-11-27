@@ -44,6 +44,7 @@
     "gulp-useref": "^3.1.2",
     "gulp-util": "^3.0.7",
     "lodash": "^4.16.4",
+    "lozad": "^1.0.9",
     "path": "^0.12.7",
     "postcss-assets": "^4.1.0",
     "run-sequence": "^1.2.2",
