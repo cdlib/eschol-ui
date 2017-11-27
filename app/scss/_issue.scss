@@ -32,6 +32,8 @@
       @supports (display: contents) and (display: flow-root) {
         position: static;
         margin-bottom: $spacing-sm;
+        white-space: normal;
+        overflow: visible;
       }
 
     }
