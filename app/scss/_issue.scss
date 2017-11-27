@@ -1,7 +1,8 @@
 // ##### Issue Component ##### //
 
 .c-issue {
-  
+  margin-bottom: $spacing-md;
+
   @include bp(screen1) {
     display: flex;
     position: relative;
@@ -70,6 +71,7 @@
       left: 8em;
       align-self: end;
       margin-left: $spacing-md;
+      font-size: 0.9em;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
