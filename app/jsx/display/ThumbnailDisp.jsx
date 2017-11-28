@@ -7,7 +7,9 @@ class ThumbnailDisp extends React.Component {
   render() {
     return (
       <div>
-        <ThumbnailComp />
+        <ThumbnailComp
+          src="http://placehold.it/150x200?text=Thumbnail"
+          alt="journal cover" />
       </div>
     )
   }

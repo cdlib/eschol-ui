@@ -9,7 +9,9 @@ class IssueComp extends React.Component {
       <div className="c-issue">
         <h3>Focus: Caribbean Studies and Literatures Lorem Ipsum Dolor Sit Amet</h3>
         <figure className="c-issue__thumbnail">
-          <ThumbnailComp />
+          <ThumbnailComp
+            src="https://escholarship.org/images/homecover_fb.png"
+            alt="journal cover" />
           <figcaption><i>Cover Caption:</i> Quasi ipsum beatae dolores veritatis cumque impedit optio ipsam.</figcaption>
         </figure>
         <div className="c-issue__description">
