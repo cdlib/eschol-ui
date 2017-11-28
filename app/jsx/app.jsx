@@ -102,6 +102,7 @@ import TeaserDisp from './display/TeaserDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import TextListDisp from './display/TextListDisp.jsx'
 import TestMessageDisp from './display/TestMessageDisp.jsx'
+import ThumbnailDisp from './display/ThumbnailDisp.jsx'
 import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
 import ToggleSectionDisp from './display/ToggleSectionDisp.jsx'
@@ -230,6 +231,7 @@ ReactDOM.render((
       <Route path="/testmessage" component={TestMessageDisp} />
       <Route path="/textlist" component={TextListDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
+      <Route path="/thumbnail" component={ThumbnailDisp} />
       <Route path="/togglecontent" component={ToggleContentDisp} />
       <Route path="/togglelist" component={ToggleListDisp} />
       <Route path="/togglesection" component={ToggleSectionDisp} />
