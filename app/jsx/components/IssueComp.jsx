@@ -1,6 +1,7 @@
 // ##### Issue Component ##### //
 
 import React from 'react'
+import ThumbnailComp from '../components/ThumbnailComp.jsx'
 
 class IssueComp extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class IssueComp extends React.Component {
       <div className="c-issue">
         <h3>Focus: Caribbean Studies and Literatures Lorem Ipsum Dolor Sit Amet</h3>
         <figure className="c-issue__thumbnail">
-          <img src="images/temp_article.png" alt="article" />
+          <ThumbnailComp />
           <figcaption><i>Cover Caption:</i> Quasi ipsum beatae dolores veritatis cumque impedit optio ipsam.</figcaption>
         </figure>
         <div className="c-issue__description">
