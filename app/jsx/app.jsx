@@ -1,10 +1,11 @@
 
 // ##### eScholarship UI Library ##### //
 
-// ***** Libraries ***** //
+// ***** Libraries and Polyfills ***** //
 
 import 'babel-polyfill'
 import 'details-polyfill'
+import 'intersection-observer'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
