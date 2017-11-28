@@ -16,7 +16,7 @@ class ThumbnailComp extends React.Component {
   render() {
     return (
       <div className="c-thumbnail">
-        <img className="lozad" data-src="images/temp_article.png" alt="article" />
+        <img className="lozad" data-src="https://escholarship.org/images/homecover_fb.png" alt="article" />
       </div>
     )
   }
