@@ -6,7 +6,7 @@ import lozad from 'lozad'
 class ThumbnailComp extends React.Component {
   constructor() {
     super();
-    this.observer = lozad();
+    this.observer = lozad('.c-thumbnail');
   }
 
   componentDidMount() {
@@ -15,9 +15,7 @@ class ThumbnailComp extends React.Component {
 
   render() {
     return (
-      <div className="c-thumbnail">
-        <img className="lozad" data-src="https://escholarship.org/images/homecover_fb.png" alt="article" />
-      </div>
+      <img className="c-thumbnail" data-src="https://escholarship.org/images/homecover_fb.png" alt="article cover" />
     )
   }
 }

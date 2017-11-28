@@ -1,14 +1,7 @@
 // ##### Thumbnail Component ##### //
 
 .c-thumbnail {
-
-  img {
-    @extend %u-thumbnail;
-  }
-
-}
-
-.lozad { // lozad.js class
+  @extend %u-thumbnail;
   opacity: 0;
   transition: opacity, 1s;
 
