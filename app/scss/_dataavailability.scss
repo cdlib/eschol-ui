@@ -25,11 +25,20 @@
   @extend %o-textlink__secondary;
   display: block;
   margin-bottom: $spacing-sm;
+  // one-line truncation:
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 
   @include bp(screen1) {
+    margin-bottom: 0;
+    // undo one-line truncation:
+    white-space: normal;
+    // wrap long url string:
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
     grid-row: 2 / 3;
   }
   
