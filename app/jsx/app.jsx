@@ -29,6 +29,7 @@ import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
+import DataAvailabilityDisp from './display/DataAvailabilityDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
@@ -160,6 +161,7 @@ ReactDOM.render((
       <Route path="/columns" component={ColumnsDisp} />
       <Route path="/customselector" component={CustomSelectorDisp} />
       <Route path="/datatable" component={DataTableDisp} />
+      <Route path="/dataavailability" component={DataAvailabilityDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />
