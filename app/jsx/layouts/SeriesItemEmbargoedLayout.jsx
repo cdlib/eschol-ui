@@ -5,8 +5,7 @@ import Header2Comp from '../components/Header2Comp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
-import PubLocationComp from '../components/PubLocationComp.jsx'
-import PubDataComp from '../components/PubDataComp.jsx'
+import DataAvailabilityComp from '../components/DataAvailabilityComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -76,8 +75,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 </div>
                 <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
-                <PubLocationComp />
-                <PubDataComp />
+                <DataAvailabilityComp />
                 <details className="c-togglecontent" open>
                   <summary>Abstract</summary>
                   <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
