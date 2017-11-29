@@ -23,9 +23,11 @@
 
 .c-dataavailability__link {
   @extend %o-textlink__secondary;
-  @extend %overflow-wrap;
   display: block;
   margin-bottom: $spacing-sm;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
   @include bp(screen1) {
     grid-row: 2 / 3;
