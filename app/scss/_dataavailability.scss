@@ -1,5 +1,25 @@
 // ##### Data Availability Component ##### //
 
 .c-dataavailability {
-  border: $bgreen;
+  margin-bottom: $spacing-md;
+}
+
+.c-dataavailability__statement {
+  margin-bottom: $spacing-sm;
+}
+
+.c-dataavailability__link {
+  @extend %o-textlink__secondary;
+  @extend %overflow-wrap;
+  display: block;
+  margin-bottom: $spacing-sm;
+}
+
+.c-dataavailability__license {
+  display: inline-block;
+
+  img {
+    display: block;
+  }
+
 }
