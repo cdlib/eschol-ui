@@ -4,11 +4,16 @@
   margin-bottom: $spacing-md;
 }
 
-.c-refine {
+.c-refine--no-drawer {
   @extend %c-refine;
+
+  button { // open/close buttons
+    display: none;
+  }
+
 }
 
-.c-refine--active {
+.c-refine--has-drawer {
   @extend %c-refine;
   position: relative;
 
@@ -21,6 +26,7 @@
 %c-refine__button {
   @extend %o-button__8;
   margin-bottom: $spacing-sm;
+  width: 100%;
 }
 
 .c-refine__button--open {
@@ -33,7 +39,7 @@
 
 %c-refine__drawer {
   transition: transform 0.5s;
-  background-color: $color-white;
+  background-color: lighten($color-light-gray, 15%);
 }
 
 .c-refine__drawer--opened {

@@ -19,8 +19,7 @@ class RefineComp extends React.Component {
 
   render() {
     return (
-
-      <div className={this.state.refineActive ? "c-refine" : "c-refine--active"}>
+      <div className={this.state.refineActive ? "c-refine--no-drawer" : "c-refine--has-drawer"}>
         <button className="c-refine__button--open" onClick={()=> this.setState({drawerOpen: true})} hidden={this.state.drawerOpen}>Refine Results</button>
         <button className="c-refine__button--close" onClick={()=> this.setState({drawerOpen: false})} hidden={!this.state.drawerOpen}>Back to Results</button>
         <div className={this.state.drawerOpen ? "c-refine__drawer--opened" : "c-refine__drawer--closed"}>
