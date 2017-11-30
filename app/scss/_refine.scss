@@ -25,16 +25,23 @@
 
 %c-refine__button {
   @extend %o-button__8;
-  margin-bottom: $spacing-sm;
   width: 100%;
+  margin-bottom: $spacing-sm;
+  background-color: $color-teal;
+  background-repeat: no-repeat;
+  background-size: 1.2em;
 }
 
 .c-refine__button--open {
   @extend %c-refine__button;
+  background-image: inline('../images/icon_angle-double-right-white.svg');
+  background-position: right $spacing-sm center;
 }
 
 .c-refine__button--close {
   @extend %c-refine__button;
+  background-image: inline('../images/icon_angle-double-left-white.svg');
+  background-position: left $spacing-sm center;
 }
 
 %c-refine__drawer {
