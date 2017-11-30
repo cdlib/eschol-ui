@@ -1,8 +1,21 @@
 // ##### Refine Component ##### //
 
-.c-refine {
-  position: relative;
+%c-refine {
   margin-bottom: $spacing-md;
+}
+
+.c-refine {
+  @extend %c-refine;
+}
+
+.c-refine--active {
+  @extend %c-refine;
+  position: relative;
+
+  [class^='c-refine__drawer'] {
+    position: absolute;
+  }
+
 }
 
 %c-refine__button {
@@ -19,7 +32,6 @@
 }
 
 %c-refine__drawer {
-  position: absolute;
   transition: transform 0.5s;
   background-color: $color-white;
 }

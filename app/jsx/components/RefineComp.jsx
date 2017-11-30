@@ -4,7 +4,7 @@ import React from 'react'
 import Breakpoints from '../../js/breakpoints.json'
 
 class RefineComp extends React.Component {
-  state={drawerOpen: false}
+  state={refineActive: false, drawerOpen: false}
 
   componentWillMount() {
     if (matchMedia) {
@@ -14,12 +14,13 @@ class RefineComp extends React.Component {
     }
   }
   widthChange = ()=> {
-    this.setState({drawerOpen: this.mq.matches})
+    this.setState({refineActive: this.mq.matches, drawerOpen: this.mq.matches})
   }
 
   render() {
     return (
-      <div className="c-refine">
+
+      <div className={this.state.refineActive ? "c-refine" : "c-refine--active"}>
         <button className="c-refine__button--open" onClick={()=> this.setState({drawerOpen: true})} hidden={this.state.drawerOpen}>Refine Results</button>
         <button className="c-refine__button--close" onClick={()=> this.setState({drawerOpen: false})} hidden={!this.state.drawerOpen}>Back to Results</button>
         <div className={this.state.drawerOpen ? "c-refine__drawer--opened" : "c-refine__drawer--closed"}>
