@@ -1,11 +1,6 @@
 // ##### Refine Component ##### //
 
-%c-refine {
-  margin-bottom: $spacing-md;
-}
-
 .c-refine--no-drawer {
-  @extend %c-refine;
 
   button { // open/close buttons
     display: none;
@@ -14,7 +9,6 @@
 }
 
 .c-refine--has-drawer {
-  @extend %c-refine;
   position: relative;
 
   [class^='c-refine__drawer'] {
