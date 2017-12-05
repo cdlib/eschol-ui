@@ -23,12 +23,11 @@ class StatCarouselComp extends React.Component {
   render() {
     return (
       <div className="c-statcarousel">
-        <div className="c-statcarousel__section">
-          <h2 className="c-statcarousel__cell-heading">
-            UC Berkeley
-          </h2>
-          <div className="o-stat--item c-statcarousel__cell">
-            <a href="">24,844</a> Items
+          <div className="c-statcarousel__section-heading">
+            <h2>UC Berkeley</h2>
+            <div className="o-stat--item c-statcarousel__cell">
+              <a href="">24,844</a> Items
+            </div>
           </div>
           <div className="o-stat--view c-statcarousel__cell">
             <b>380,941</b> Views
@@ -42,13 +41,11 @@ class StatCarouselComp extends React.Component {
           <div className="o-stat--units c-statcarousel__cell">
             <a href="">119</a> Research Units
           </div>
-        </div>
-        <div className="c-statcarousel__section">
-          <h2 className="c-statcarousel__cell-heading">
-            All eScholarship
-          </h2>
-          <div className="o-stat--item c-statcarousel__cell">
-            <a href="">127,057</a> Items
+          <div className="c-statcarousel__section-heading">
+            <h2>All eScholarship</h2>
+            <div className="o-stat--item c-statcarousel__cell">
+              <a href="">127,057</a> Items
+            </div>
           </div>
           <div className="o-stat--view c-statcarousel__cell">
             <a href="">35,489,231</a> Views
@@ -62,7 +59,7 @@ class StatCarouselComp extends React.Component {
           <div className="o-stat--units c-statcarousel__cell">
             <a href="">500</a> Research Units
           </div>
-        </div>
+
       </div>
     )
   }
