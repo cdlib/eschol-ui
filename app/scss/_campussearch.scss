@@ -1,5 +1,10 @@
 // ##### Campus Search Component ##### //
 
+$min-fluid-type-width: $screen1;
+$max-fluid-type-width: $screen4;
+$min-fluid-type-font: 20px;
+$max-fluid-type-font: 29px;
+
 .c-campussearch {
   margin-bottom: $spacing-md;
   padding: $spacing-sm;
@@ -13,24 +18,11 @@
 }
 
 .c-campussearch__label {
+  @include fluid-type($min-fluid-type-width, $max-fluid-type-width, $min-fluid-type-font, $max-fluid-type-font);
   display: block;
   margin-right: 2.3rem;
   margin-bottom: $spacing-sm;
   color: $color-orange;
-  font-size: 1.3em;
-
-  @include bp(screen2) {
-    font-size: 2.5vw;
-  }
-
-  @include bp(screen3) {
-    font-size: 2.2vw;
-  }
-
-  @include bp(screen4) {
-    font-size: 1.8em;
-  }
-
 }
 
 .c-campussearch__search {
