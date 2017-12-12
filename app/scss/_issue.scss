@@ -53,8 +53,8 @@
   }
 
   img {
-    @include lazyload($thumbnail-width, auto);
-    display: block;
+    width: $thumbnail-width;
+    height: auto;
     margin-bottom: $spacing-base;
     border: 1px solid $color-light-gray;
     box-shadow: $box-shadow2;

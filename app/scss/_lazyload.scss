@@ -1,6 +1,11 @@
 // ##### Lazy Load Component ##### //
 
 .c-lazyload {
-  @include lazyload(300px, auto);
-  border: 3px solid $color-orange;
+  transition: opacity, 1s;
+  opacity: 0;
+
+  &[data-loaded='true'] {
+    opacity: 1;
+  }
+
 }

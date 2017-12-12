@@ -8,8 +8,8 @@ class LazyLoadDisp extends React.Component {
     return (
       <div>
         <LazyLoadComp
-          src="http://placehold.it/150x200?text=Thumbnail"
-          alt="journal cover" />
+          src="http://placehold.it/150x200?text=Lazy Load"
+          alt="a lazy loaded image" />
       </div>
     )
   }
