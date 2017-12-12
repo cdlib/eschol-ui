@@ -1,12 +1,12 @@
-// ##### Thumbnail Component ##### //
+// ##### Lazy Load Component ##### //
 
 import React from 'react'
 import lozad from 'lozad'
 
-class ThumbnailComp extends React.Component {
+class LazyLoadComp extends React.Component {
   constructor() {
     super();
-    this.observer = lozad('.c-thumbnail');
+    this.observer = lozad('.c-lazyload');
   }
 
   componentDidMount() {
@@ -17,9 +17,9 @@ class ThumbnailComp extends React.Component {
 
   render() {
     return (
-      <img className="c-thumbnail" data-src={this.props.src} alt={this.props.alt} />
+      <img className="c-lazyload" data-src={this.props.src} alt={this.props.alt} />
     )
   }
 }
 
-module.exports = ThumbnailComp;
+module.exports = LazyLoadComp;

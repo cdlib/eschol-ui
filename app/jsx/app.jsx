@@ -63,6 +63,7 @@ import JournalSimpleLayout from './layouts/JournalSimpleLayout.jsx'
 import JournalSplashyLayout from './layouts/JournalSplashyLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
+import LazyLoadDisp from './display/LazyLoadDisp.jsx'
 import MediaFeatureDisp from './display/MediaFeatureDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
 import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
@@ -105,7 +106,6 @@ import TeaserDisp from './display/TeaserDisp.jsx'
 import TextlinkDisp from './display/TextlinkDisp.jsx'
 import TextListDisp from './display/TextListDisp.jsx'
 import TestMessageDisp from './display/TestMessageDisp.jsx'
-import ThumbnailDisp from './display/ThumbnailDisp.jsx'
 import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
 import ToggleSectionDisp from './display/ToggleSectionDisp.jsx'
@@ -193,6 +193,7 @@ ReactDOM.render((
       <Route path="/journalitempdf" component={JournalItemPdfLayout} />
       <Route path="/jump" component={JumpDisp} />
       <Route path="/language" component={LanguageDisp} />
+      <Route path="/lazyload" component={LazyLoadDisp} />
       <Route path="/marquee" component={MarqueeDisp} />
       <Route path="/mediafeature" component={MediaFeatureDisp} />
       <Route path="/mediafile" component={MediaFileDisp} />
@@ -236,7 +237,6 @@ ReactDOM.render((
       <Route path="/testmessage" component={TestMessageDisp} />
       <Route path="/textlist" component={TextListDisp} />
       <Route path="/textlink" component={TextlinkDisp} />
-      <Route path="/thumbnail" component={ThumbnailDisp} />
       <Route path="/togglecontent" component={ToggleContentDisp} />
       <Route path="/togglelist" component={ToggleListDisp} />
       <Route path="/togglesection" component={ToggleSectionDisp} />
