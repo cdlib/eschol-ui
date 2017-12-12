@@ -1,7 +1,7 @@
 // ##### Issue Component ##### //
 
 import React from 'react'
-import ThumbnailComp from '../components/ThumbnailComp.jsx'
+import LazyLoadComp from '../components/LazyLoadComp.jsx'
 
 class IssueComp extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class IssueComp extends React.Component {
       <div className="c-issue">
         <h3>Focus: Caribbean Studies and Literatures Lorem Ipsum Dolor Sit Amet</h3>
         <figure className="c-issue__thumbnail">
-          <ThumbnailComp
+          <LazyLoadComp
             src="https://escholarship.org/images/homecover_fb.png"
             alt="journal cover" />
           <figcaption><i>Cover Caption:</i> The cover image is from Multimedia artist Saya Woolfalk’s 2012 project titled The Empathics. This performance piece is set in a fictional hybrid plant/human community that Woolfalk ethnographically analyzes, documents, and displays.</figcaption>
