@@ -2,8 +2,8 @@
 
 $min-fluid-type-width: $screen1;
 $max-fluid-type-width: $screen4;
-$min-fluid-type-font: 20px;
-$max-fluid-type-font: 29px;
+$min-fluid-type-font: 18px;
+$max-fluid-type-font: 26px;
 
 .c-campussearch {
   margin-bottom: $spacing-md;
@@ -23,6 +23,7 @@ $max-fluid-type-font: 29px;
   margin-right: 2.3rem;
   margin-bottom: $spacing-sm;
   color: $color-orange;
+  text-align: center;
 }
 
 .c-campussearch__search {
