@@ -66,7 +66,6 @@ class Home extends React.Component {
           <li><a href="#campusselector">Campus Selector</a> (replaced by Custom Selector object above)</li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#columns">Columns Layout</a></li>
-          <li><a href="#dataavailability">Data Availability</a></li>
           <li><a href="#datatable">Data Table</a></li>
           <li><a href="#descriptionlist">Description List</a></li>
           <li><a href="#export">Export/RSS</a></li>
@@ -97,6 +96,7 @@ class Home extends React.Component {
           <li><a href="#pdfview">PDF View</a></li>
           <li><a href="#pub">Publication</a></li>
           <li><a href="#pubdata">Published Data</a></li>
+          <li><a href="#pubinfo">Publication Information</a></li>
           <li><a href="#publocation">Published Location</a></li>
           <li><a href="#pubpreview">Publication Preview</a></li>
           <li><a href="#pubyear">Publication Year Facet</a></li>

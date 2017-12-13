@@ -6,7 +6,7 @@ import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
-import DataAvailabilityComp from '../components/DataAvailabilityComp.jsx'
+import PubInfoComp from '../components/PubInfoComp.jsx'
 import MediaFileGridComp from '../components/MediaFileGridComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
@@ -71,7 +71,7 @@ class JournalItemMultimediaLayout extends React.Component {
             </div>
             <h1 className="o-heading1a">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
             <AuthorListComp />
-            <DataAvailabilityComp />
+            <PubInfoComp />
             <div className="c-tabs">
               <div className="c-tabs__tabs">
                 <button className="c-tabs__button--active">Main Content</button>

@@ -1,6 +1,6 @@
-// ##### Data Availability Component ##### //
+// ##### Publication Information Component ##### //
 
-.c-dataavailability {
+.c-pubinfo {
   @extend %clearfix;
   margin-bottom: $spacing-md;
   
@@ -11,7 +11,7 @@
 
 }
 
-.c-dataavailability__statement {
+.c-pubinfo__statement {
   margin-bottom: $spacing-sm;
 
   @include bp(screen1) {
@@ -21,7 +21,7 @@
 
 }
 
-.c-dataavailability__link {
+.c-pubinfo__link {
   @extend %o-textlink__secondary;
   display: block;
   margin-bottom: $spacing-sm;
@@ -44,7 +44,7 @@
   
 }
 
-.c-dataavailability__license {
+.c-pubinfo__license {
   display: inline-block;
   margin-left: $spacing-md;
   float: right;

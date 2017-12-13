@@ -29,7 +29,6 @@ import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
-import DataAvailabilityDisp from './display/DataAvailabilityDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
@@ -73,6 +72,7 @@ import NavDisp from './display/NavDisp.jsx'
 import NavBarDisp from './display/NavBarDisp.jsx'
 import PaginationDisp from './display/PaginationDisp.jsx'
 import PdfViewDisp from './display/PdfViewDisp.jsx'
+import PubInfoDisp from './display/PubInfoDisp.jsx'
 import PubDataDisp from './display/PubDataDisp.jsx'
 import PubDisp from './display/PubDisp.jsx'
 import PubLocationDisp from './display/PubLocationDisp.jsx'
@@ -161,7 +161,6 @@ ReactDOM.render((
       <Route path="/columns" component={ColumnsDisp} />
       <Route path="/customselector" component={CustomSelectorDisp} />
       <Route path="/datatable" component={DataTableDisp} />
-      <Route path="/dataavailability" component={DataAvailabilityDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />
@@ -206,6 +205,7 @@ ReactDOM.render((
       <Route path="/pdfview" component={PdfViewDisp} />
       <Route path="/pub" component={PubDisp} />
       <Route path="/pubdata" component={PubDataDisp} />
+      <Route path="/pubinfo" component={PubInfoDisp} />
       <Route path="/publocation" component={PubLocationDisp} />
       <Route path="/pubpreview" component={PubPreviewDisp} />
       <Route path="/pubyear" component={PubYearDisp} />
