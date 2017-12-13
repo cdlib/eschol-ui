@@ -247,3 +247,20 @@ Background color with progressively-enhanced blur effect. Example:
     }
   }
 }
+
+// One-line truncation
+
+@mixin one-line-truncation($state) {
+
+  @if $state == inactive {
+    white-space: normal;
+  }
+
+  @else if $state == active {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+}
