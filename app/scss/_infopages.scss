@@ -23,7 +23,7 @@
 
   }
 
-  .c-pagination {
+  [class^='c-pagination'] {
     margin: 0 $spacing-sm $spacing-base;
 
     @include bp(screen2) {
@@ -101,4 +101,6 @@
   @extend %o-button__7;
   display: flex;
   margin: $spacing-sm $spacing-sm 0 auto;
+
+  border: $bred;
 }
