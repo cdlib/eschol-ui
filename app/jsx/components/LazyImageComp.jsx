@@ -1,12 +1,12 @@
-// ##### Lazy Load Component ##### //
+// ##### Lazy Image Component ##### //
 
 import React from 'react'
 import lozad from 'lozad'
 
-class LazyLoadComp extends React.Component {
+class LazyImageComp extends React.Component {
   constructor() {
     super();
-    this.observer = lozad('.c-lazyload');
+    this.observer = lozad('.c-lazyimage');
   }
 
   componentDidMount() {
@@ -17,9 +17,9 @@ class LazyLoadComp extends React.Component {
 
   render() {
     return (
-      <img className="c-lazyload" data-src={this.props.src} alt={this.props.alt} />
+      <img className="c-lazyimage" data-src={this.props.src} alt={this.props.alt} />
     )
   }
 }
 
-module.exports = LazyLoadComp;
+module.exports = LazyImageComp;
