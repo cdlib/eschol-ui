@@ -1,5 +1,7 @@
 // ##### Footer Component ##### //
 
+$footer-logo-width: 200px;
+
 .c-footer {
   @extend %page-bleed;
   display: flex;
@@ -50,21 +52,22 @@
   color: $color-white;
 
   img {
-    width: 200px;
+    width: $footer-logo-width;
   }
 
 }
 
 .c-footer__icons {
   display: flex;
-  justify-content: space-between;
-  width: 100px;
+  justify-content: space-evenly;
+  width: $footer-logo-width;
   height: auto;
   margin-bottom: $spacing-md;
 
   @include bp(screen2) {
+    width: auto;
+    justify-self: stretch;
     grid-column: 1;
-    justify-self: center;
   }
 
   a {
