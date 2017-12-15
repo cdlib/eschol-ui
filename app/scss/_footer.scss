@@ -8,11 +8,6 @@
   padding: $spacing-md;
   background-color: $color-light-black;
 
-  @supports (display: grid) {
-    display: grid;
-    justify-items: center;
-  }
-
   @include bp(screen2) {
     position: relative;
     align-items: flex-start;
@@ -77,20 +72,16 @@
 }
 
 .c-footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: auto;
   margin-bottom: $spacing-md;
-
-  @supports (display: grid) {
-    justify-self: center;
-  }
 
   a {
 
-    &:not(:first-child) {
-      margin-left: $spacing-lg;
-    }
-
     img {
-      height: $element-height;
+      @extend %interactive-element-size;
     }
 
   }
