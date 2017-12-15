@@ -7,16 +7,18 @@ class FooterComp extends React.Component {
     return (
       <footer className="c-footer">
         <nav className="c-footer__nav">
-          <a href="">Home</a>
-          <a href="">About eScholarship</a>
-          <a href="">Campus Sites</a>
-          <a href="">UC Open Access Policy</a>
-          <a href="">eScholarship Publishing</a>
-          <a href="">Deposit</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
-          <a href=""><strong>Help</strong></a>
-          <a href=""><strong>Admin Login</strong></a>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About eScholarship</a></li>
+            <li><a href="">Campus Sites</a></li>
+            <li><a href="">UC Open Access Policy</a></li>
+            <li><a href="">eScholarship Publishing</a></li>
+            <li><a href="">Privacy Statement</a></li>
+            <li><a href="">Policies</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href=""><strong>Admin Login</strong></a></li>
+            <li><a href=""><strong>Help</strong></a></li>
+          </ul>
         </nav>
         <div className="c-footer__logo">
           <a href="">
@@ -32,9 +34,8 @@ class FooterComp extends React.Component {
           </a>
         </div>
         <div className="c-footer__copyright">
-          Powered by the<br/>
-          <a href="http://www.cdlib.org">California Digital Library</a>.<br/>
-          Copyright &copy; 2017<br/>
+          Powered by the <a href="http://www.cdlib.org">California Digital Library</a>.<br/>
+          Copyright &copy; 2018<br/>
           The Regents of the University of California.
         </div>
       </footer>

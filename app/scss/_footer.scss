@@ -27,8 +27,26 @@
 }
 
 .c-footer__nav {
-  columns: 2;
-  column-gap: $spacing-lg;
+  margin-bottom: $spacing-sm;
+
+  ul {
+    @extend %no-bullet-ul;
+    columns: 2;
+    column-gap: $spacing-lg;
+
+    li {
+      margin-bottom: $spacing-md;
+      break-inside: avoid;
+
+      a {
+        display: block;
+        color: $color-white;
+        text-decoration: none;
+      }
+
+    }
+
+  }
 
   @include bp(screen2) {
     position: absolute;
@@ -46,17 +64,10 @@
 
   }
 
-  a {
-    display: block;
-    margin-bottom: 15px;
-    color: $color-white;
-    text-decoration: none;
-  }
-
 }
 
 .c-footer__logo {
-  margin: 0 0 $spacing-sm;
+  margin-bottom: $spacing-md;
   color: $color-white;
 
   img {
@@ -66,7 +77,7 @@
 }
 
 .c-footer__icons {
-  margin-bottom: $spacing-sm;
+  margin-bottom: $spacing-md;
 
   @supports (display: grid) {
     justify-self: center;
