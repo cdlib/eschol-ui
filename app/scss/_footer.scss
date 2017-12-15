@@ -65,9 +65,13 @@ $footer-logo-width: 200px;
   margin-bottom: $spacing-md;
 
   @include bp(screen2) {
-    width: auto;
     justify-self: stretch;
     grid-column: 1;
+
+    @supports (display: grid) {
+      width: auto;
+    }
+
   }
 
   a {
