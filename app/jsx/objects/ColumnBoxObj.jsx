@@ -43,7 +43,7 @@ class ColumnBoxObj extends React.Component {
         {/* For integration, replace simulation logic below with back-end logic tied to search results ajax request that toggles the class 'loading-data' */}
         <section className={this.state.loadingData ? "o-columnbox1 loading-data" : "o-columnbox1"}>
           <header>
-            <h2>About eScholarship Lorem ipsum dolor sit amet</h2>
+            <h2>About eScholarship</h2>
           </header>
           Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit. Alias sed sapiente nulla debitis nobis asperiores hic est, fuga illo? Accusamus molestias pariatur nihil, libero possimus optio iusto nobis sapiente ad.
         </section>
