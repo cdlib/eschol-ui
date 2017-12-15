@@ -49,6 +49,8 @@
     padding: $spacing-lg;
   }
 
+  // Columnbox1 overlay and spinner elements triggered by '--is-loading-data':
+
   &::before {
     position: absolute;
     top: 0;
@@ -60,14 +62,14 @@
     opacity: 0;
     pointer-events: none;
 
-    // only overlay pseudo class if pointer-events is supported to prevent blocked pointer/touch access to content links, buttons, text, etc:
+    // only render this element if pointer-events is supported to prevent blocked pointer/touch access to underlying links, buttons, text, etc:
     @supports (pointer-events: none) {
       content: '';
     }
 
   }
 
-  &.loading-data {
+  &.--is-loading-data {
     
     &::before {
       opacity: 0.8;
@@ -79,7 +81,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: url('../images/icon_spinner.gif') no-repeat center center / 3em;
+      background: url('../images/icon_spinner.gif') no-repeat center / 3em;
       content: '';
     }
 
