@@ -1,6 +1,7 @@
 // ##### Footer Component ##### //
 
 import React from 'react'
+import LazyImageComp from '../components/LazyImageComp.jsx'
 
 class FooterComp extends React.Component {
   render() {
@@ -22,15 +23,21 @@ class FooterComp extends React.Component {
         </nav>
         <div className="c-footer__logo">
           <a href="">
-            <img src="images/logo_footer-eschol.svg" alt="eScholarship, University of California"/>
+            <LazyImageComp
+              src="images/logo_footer-eschol.svg"
+              alt="eScholarship, University of California" />
           </a>
         </div>
         <div className="c-footer__icons">
           <a href="">
-            <img src="images/logo_facebook-circle-white.svg" alt="Facebook"/>
+            <LazyImageComp
+              src="images/logo_facebook-circle-white.svg"
+              alt="Facebook" />
           </a>
           <a href="">
-            <img src="images/logo_twitter-circle-white.svg" alt="Twitter"/>
+            <LazyImageComp
+              src="images/logo_twitter-circle-white.svg"
+              alt="Twitter" />
           </a>
         </div>
         <div className="c-footer__copyright">
