@@ -40,8 +40,10 @@ $itemcarousel-spacing: 2.5rem;
 }
 
 .o-itemcarousel__carousel {
+  height: 300px;
   margin-bottom: $spacing-md;
   padding: 0 $itemcarousel-spacing;
+  overflow: scroll;
 
   @include bp(screen1) {
     margin-bottom: 0;
