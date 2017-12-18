@@ -44,7 +44,7 @@ class ScholWorksComp extends React.Component {
           </div>
           <div className="c-scholworks__media">
             <MediaListComp />
-            <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+            <img src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
           </div>
         </div>
         <a className="c-scholworks__thumbnail" href="">
