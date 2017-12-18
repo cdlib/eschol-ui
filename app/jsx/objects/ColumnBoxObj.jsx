@@ -40,8 +40,8 @@ class ColumnBoxObj extends React.Component {
 
         <h3>Includes Overlay Class with Simulation for Loading Search Results: <button onClick={()=> this.setState({loadingData: true})}>Start Loading</button><button onClick={()=> this.setState({loadingData: false})}>End Loading</button></h3>
 
-        {/* For integration, replace simulation logic below with back-end logic that toggles the class '--is-loading-data' upon ajax request */}
-        <section className={this.state.loadingData ? "o-columnbox1 --is-loading-data" : "o-columnbox1"}>
+        {/* For integration, replace simulation logic below with back-end logic that toggles the class 'is-loading-data' upon ajax request */}
+        <section className={this.state.loadingData ? "o-columnbox1 is-loading-data" : "o-columnbox1"}>
           <header>
             <h2>About eScholarship</h2>
           </header>
