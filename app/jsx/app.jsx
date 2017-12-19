@@ -6,7 +6,7 @@
 import 'babel-polyfill'
 import 'details-polyfill'
 import 'intersection-observer'
-// require('smoothscroll-polyfill').polyfill();
+require('smoothscroll-polyfill').polyfill();
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
