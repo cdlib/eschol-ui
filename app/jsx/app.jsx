@@ -3,10 +3,13 @@
 
 // ***** Libraries and Polyfills ***** //
 
-import 'babel-polyfill'
-import 'details-polyfill'
-import 'intersection-observer'
-require('smoothscroll-polyfill').polyfill();
+if (!(typeof document === "undefined")) {
+  require('babel-polyfill')
+  require('details-polyfill')
+  require('intersection-observer')
+  require('smoothscroll-polyfill').polyfill();
+}
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
