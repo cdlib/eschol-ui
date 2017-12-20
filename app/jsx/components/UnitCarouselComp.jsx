@@ -15,8 +15,9 @@ class UnitCarouselComp extends React.Component {
   render() {
     return (
       <div className="o-itemcarousel">
-        <h2 className="o-itemcarousel__heading"><a href="">Center for Medieval and Renaissance Studies</a> <button onClick={this.scrollDown}>Scroll Down</button><button onClick={this.scrollUp}>Scroll Up</button></h2>
+        <h2 className="o-itemcarousel__heading"><a href="">Center for Medieval and Renaissance Studies</a></h2>
         <div className="c-unitcarousel o-itemcarousel__carousel">
+          <button onClick={this.scrollUp}>Scroll Up</button>
           <div className="c-unitcarousel__scrollbox" ref={el => this.scrollBox = el} tabIndex="-1">
             <p>[Proof of concept for scrolling unit items]</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati corporis laboriosam, illo suscipit consequuntur cum neque quasi magnam in, eos, fugit reiciendis nulla voluptate ab incidunt beatae dicta ullam maiores.
@@ -40,6 +41,7 @@ class UnitCarouselComp extends React.Component {
             <p>Laborum necessitatibus, dolor doloremque facilis, expedita eum eius sed quis hic nulla laboriosam distinctio dignissimos quo neque. Impedit, ea iusto modi, velit cum omnis tempora dicta accusamus, et odio dolorem!
             </p>
           </div>
+          <button onClick={this.scrollDown}>Scroll Down</button>
         </div>
         <div className="o-stat--item o-itemcarousel__stats-item">
           <a href="">1,000</a>Items

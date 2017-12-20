@@ -1,7 +1,9 @@
 // ##### Unit Carousel Component ##### //
 
 .c-unitcarousel {
-  // no styles
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .c-unitcarousel__scrollbox {
