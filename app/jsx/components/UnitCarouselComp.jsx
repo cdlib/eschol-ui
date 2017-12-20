@@ -6,15 +6,17 @@ import $ from 'jquery'
 class UnitCarouselComp extends React.Component {
   scrollDown = ()=> {
     this.scrollBox.scrollBy({ top: 100, behavior: 'smooth' });
+    this.scrollBox.focus()
   }
   scrollUp = ()=> {
     this.scrollBox.scrollBy({ top: -100, behavior: 'smooth' });
+    this.scrollBox.focus()
   }
   render() {
     return (
       <div className="o-itemcarousel">
         <h2 className="o-itemcarousel__heading"><a href="">Center for Medieval and Renaissance Studies</a> <button onClick={this.scrollDown}>Scroll Down</button><button onClick={this.scrollUp}>Scroll Up</button></h2>
-        <div className="c-unitcarousel o-itemcarousel__carousel" ref={el => this.scrollBox=el}>
+        <div className="c-unitcarousel o-itemcarousel__carousel" ref={el => this.scrollBox=el} tabIndex="-1">
           <p>[Proof of concept for scrolling unit items]</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati corporis laboriosam, illo suscipit consequuntur cum neque quasi magnam in, eos, fugit reiciendis nulla voluptate ab incidunt beatae dicta ullam maiores.
           </p>
