@@ -8,5 +8,19 @@
 
 .c-unitcarousel__scrollbox {
   height: 300px;
+  margin-bottom: $spacing-sm;
   overflow: scroll;
+}
+
+%c-unitcarousel__button {
+  border: $bgreen; // placeholder declaration
+}
+
+.c-unitcarousel__button-up {
+  @extend %c-unitcarousel__button;
+  margin-bottom: $spacing-sm;
+}
+
+.c-unitcarousel__button-down {
+  @extend %c-unitcarousel__button;
 }
