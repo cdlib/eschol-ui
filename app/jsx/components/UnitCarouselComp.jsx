@@ -19,27 +19,76 @@ class UnitCarouselComp extends React.Component {
         <div className="c-unitcarousel o-itemcarousel__carousel">
           <button className="c-unitcarousel__button-up" onClick={this.scrollUp}>Scroll Up</button>
           <div className="c-unitcarousel__scrollbox" ref={el => this.scrollBox = el} tabIndex="-1">
-            <p>[Proof of concept for scrolling unit items]</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati corporis laboriosam, illo suscipit consequuntur cum neque quasi magnam in, eos, fugit reiciendis nulla voluptate ab incidunt beatae dicta ullam maiores.
-            </p>
-            <p>Vitae laborum quia placeat asperiores numquam possimus cupiditate sapiente consequatur beatae, ea dolorum obcaecati sed at saepe perspiciatis nostrum laboriosam earum ipsa corrupti voluptatum cumque porro recusandae molestias! Iusto, quisquam.
-            </p>
-            <p>Fugit saepe quo provident adipisci amet repellat cumque suscipit impedit nihil sequi harum voluptas mollitia officiis praesentium dignissimos consectetur ducimus, itaque, tenetur repellendus tempora deserunt laudantium. Nulla cupiditate ea omnis.
-            </p>
-            <p>Delectus culpa eius labore repudiandae quibusdam quia? Fuga, quam. Ea, dolorum optio molestias magni recusandae, porro vel quidem sint ipsam consequatur quos rem nulla perferendis expedita minus officiis, officia neque.
-            </p>
-            <p>Aliquid ab dolorem officiis at alias soluta explicabo id, cumque, modi sunt sequi, corporis quidem doloribus similique. Voluptatem laboriosam voluptatibus dicta in, dolorem dolor ea voluptates, unde maiores, iure temporibus.
-            </p>
-            <p>Voluptas repellendus quidem, dignissimos consequatur maiores nulla nostrum voluptatibus laborum perferendis commodi similique amet placeat labore sequi, illum obcaecati dolores nobis necessitatibus ad numquam repudiandae corporis. Enim perspiciatis corporis consequuntur.
-            </p>
-            <p>Et soluta voluptatum est debitis incidunt sunt, laboriosam corrupti dolorem, error molestiae omnis harum veniam accusamus eius deleniti voluptatem distinctio. Maiores cum quidem omnis nostrum iusto deserunt accusamus, similique saepe.
-            </p>
-            <p>Deleniti adipisci dolorem rerum molestias fugiat aspernatur saepe molestiae. Neque, consequuntur magni illum quod, vero rem quibusdam consequatur nam numquam velit voluptas dicta hic aspernatur. Illum animi magnam itaque ipsam.
-            </p>
-            <p>Laudantium, omnis velit quibusdam, ad aliquam enim provident quas laborum, magni et nemo dolores vitae eos at accusantium natus quod nesciunt! Ex autem qui laudantium consequatur vel dolorem facilis voluptatum?
-            </p>
-            <p>Laborum necessitatibus, dolor doloremque facilis, expedita eum eius sed quis hic nulla laboriosam distinctio dignissimos quo neque. Impedit, ea iusto modi, velit cum omnis tempora dicta accusamus, et odio dolorem!
-            </p>
+            <div className="c-unitcarousel__item">
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Quia veritatis est, eum facilis expedita consequatur consequuntur suscipit obcaecati!
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Pariatur cupiditate rerum quidem, omnis et inventore repellendus velit autem.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Quidem blanditiis voluptatum pariatur earum doloremque similique ab cumque sit.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Ratione ipsa vero aperiam, error quis voluptatibus rerum laboriosam, doloremque.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Sunt eos praesentium, voluptates veritatis autem hic eligendi officia odit!
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Facere, quaerat, consequuntur.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Esse, quis fugit similique officiis earum molestias vitae dolores odit.
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Rerum ad itaque rem culpa maxime, animi facilis incidunt quidem!
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
+            <div className="c-unitcarousel__item">
+              <h3>Consectetur nostrum voluptatibus soluta, magnam velit nobis tenetur tempore ipsum!
+              </h3>
+              <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
+              </div>
+              <div className="c-unitcarousel__item-type">item type goes here</div>
+            </div>
           </div>
           <button className="c-unitcarousel__button-down" onClick={this.scrollDown}>Scroll Down</button>
         </div>

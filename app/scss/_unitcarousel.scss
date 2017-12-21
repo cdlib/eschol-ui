@@ -24,3 +24,19 @@
 .c-unitcarousel__button-down {
   @extend %c-unitcarousel__button;
 }
+
+.c-unitcarousel__item {
+  
+  &:nth-child(odd) {
+    background-color: $color-light-teal;
+  }
+
+}
+
+.c-unitcarousel__item-authorlist {
+  // no styles
+}
+
+.c-unitcarousel__item-type {
+  // no styles
+}
