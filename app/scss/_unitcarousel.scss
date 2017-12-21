@@ -13,16 +13,20 @@
 }
 
 %c-unitcarousel__button {
-  border: $bgreen; // placeholder declaration
+  @extend %interactive-element-size;
+  border: none;
+  background: no-repeat center / 3.4em;
 }
 
 .c-unitcarousel__button-up {
   @extend %c-unitcarousel__button;
   margin-bottom: $spacing-sm;
+  background-image: inline('../images/icon_angle-up-gray.svg');
 }
 
 .c-unitcarousel__button-down {
   @extend %c-unitcarousel__button;
+  background-image: inline('../images/icon_angle-down-gray.svg');
 }
 
 .c-unitcarousel__item {
