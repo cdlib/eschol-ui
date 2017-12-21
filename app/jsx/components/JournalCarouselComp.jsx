@@ -35,7 +35,7 @@ class UnitCarouselComp extends React.Component {
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
-                <img src="http://escholarship.org/issueCovers/jmie_sfews/15_01_cover.png" alt=""/>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
                 <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
               </figure>
             </a>
@@ -43,7 +43,7 @@ class UnitCarouselComp extends React.Component {
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
-                <img src="http://escholarship.org/issueCovers/ucdavislibrary_streetnotes/25_00_cover.png" alt=""/>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
                 <figcaption>streetnotes</figcaption>
               </figure>
             </a>
@@ -51,7 +51,7 @@ class UnitCarouselComp extends React.Component {
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
-                <img src="http://escholarship.org/issueCovers/ucbgse_bre/06_02_cover.png" alt=""/>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
                 <figcaption>Maiores Corporis Repellendus Maxime</figcaption>
               </figure>
             </a>
@@ -59,7 +59,7 @@ class UnitCarouselComp extends React.Component {
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
-                <img src="http://escholarship.org/issueCovers/regeneracion_tlacuilolli/02_01_cover.png" alt=""/>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
                 <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
               </figure>
             </a>
@@ -67,8 +67,24 @@ class UnitCarouselComp extends React.Component {
           <div className="o-itemcarousel__item">
             <a href="" className="o-journal2">
               <figure>
-                <img src="http://escholarship.org/issueCovers/jmie_sfews/15_01_cover.png" alt=""/>
-                <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+                <figcaption>Western State Budget Reports</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div className="o-itemcarousel__item">
+            <a href="" className="o-journal2">
+              <figure>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+                <figcaption>Race and Yoga</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div className="o-itemcarousel__item">
+            <a href="" className="o-journal2">
+              <figure>
+                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+                <figcaption>California Italian Studies</figcaption>
               </figure>
             </a>
           </div>
