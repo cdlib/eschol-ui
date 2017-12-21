@@ -26,9 +26,23 @@
 }
 
 .c-unitcarousel__item {
-  
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-sm;
+
   &:nth-child(odd) {
+    border-top: 1px solid $color-light-gray;
+    border-bottom: 1px solid $color-light-gray;
     background-color: $color-light-teal;
+  }
+
+  @include headings() {
+    @extend %o-heading3a;
+
+    a {
+      @extend %o-textlink__secondary;
+    }
+
   }
 
 }
@@ -37,6 +51,23 @@
   // no styles
 }
 
-.c-unitcarousel__item-type {
-  // no styles
+%c-unitcarousel__item-type {
+  margin-left: auto;
+  font-size: 0.9em;
+}
+
+.c-unitcarousel__item-type--article {
+  @extend %c-unitcarousel__item-type;
+}
+
+.c-unitcarousel__item-type--book {
+  @extend %c-unitcarousel__item-type;
+}
+
+.c-unitcarousel__item-type--thesis {
+  @extend %c-unitcarousel__item-type;
+}
+
+.c-unitcarousel__item-type--multimedia {
+  @extend %c-unitcarousel__item-type;
 }

@@ -20,74 +20,74 @@ class UnitCarouselComp extends React.Component {
           <button className="c-unitcarousel__button-up" onClick={this.scrollUp}>Scroll Up</button>
           <div className="c-unitcarousel__scrollbox" ref={el => this.scrollBox = el} tabIndex="-1">
             <div className="c-unitcarousel__item">
-              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--article">Article</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Quia veritatis est, eum facilis expedita consequatur consequuntur suscipit obcaecati!
+              <h3><a href="">Quia veritatis est, eum facilis expedita consequatur consequuntur suscipit obcaecati!</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--book">Book</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Pariatur cupiditate rerum quidem, omnis et inventore repellendus velit autem.
+              <h3><a href="">Pariatur cupiditate rerum quidem, omnis et inventore repellendus velit autem.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--thesis">Thesis</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Quidem blanditiis voluptatum pariatur earum doloremque similique ab cumque sit.
+              <h3><a href="">Quidem blanditiis voluptatum pariatur earum doloremque similique ab cumque sit.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--multimedia">Multimedia</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Ratione ipsa vero aperiam, error quis voluptatibus rerum laboriosam, doloremque.
+              <h3><a href="">Ratione ipsa vero aperiam, error quis voluptatibus rerum laboriosam, doloremque.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--article">Article</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Sunt eos praesentium, voluptates veritatis autem hic eligendi officia odit!
+              <h3><a href="">Sunt eos praesentium, voluptates veritatis autem hic eligendi officia odit!</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--book">Book</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Facere, quaerat, consequuntur.
+              <h3><a href="">Facere, quaerat, consequuntur.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--thesis">Thesis</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Esse, quis fugit similique officiis earum molestias vitae dolores odit.
+              <h3><a href="">Esse, quis fugit similique officiis earum molestias vitae dolores odit.</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--multimedia">Multimedia</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Rerum ad itaque rem culpa maxime, animi facilis incidunt quidem!
+              <h3><a href="">Rerum ad itaque rem culpa maxime, animi facilis incidunt quidem!</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--article">Article</div>
             </div>
             <div className="c-unitcarousel__item">
-              <h3>Consectetur nostrum voluptatibus soluta, magnam velit nobis tenetur tempore ipsum!
+              <h3><a href="">Consectetur nostrum voluptatibus soluta, magnam velit nobis tenetur tempore ipsum!</a>
               </h3>
               <div className="c-unitcarousel__item-authorlist">authorlist comp goes here
               </div>
-              <div className="c-unitcarousel__item-type">item type goes here</div>
+              <div className="c-unitcarousel__item-type--book">Book</div>
             </div>
           </div>
           <button className="c-unitcarousel__button-down" onClick={this.scrollDown}>Scroll Down</button>
