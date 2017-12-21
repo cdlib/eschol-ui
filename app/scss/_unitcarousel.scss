@@ -29,10 +29,13 @@
   display: flex;
   flex-direction: column;
   padding: $spacing-sm;
+  border-top: 1px solid $color-light-gray;
+
+  &:last-child {
+    border-bottom: 1px solid $color-light-gray;
+  }
 
   &:nth-child(odd) {
-    border-top: 1px solid $color-light-gray;
-    border-bottom: 1px solid $color-light-gray;
     background-color: $color-light-teal;
   }
 
