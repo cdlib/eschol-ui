@@ -69,7 +69,15 @@
   grid-column: 1;
 
   .c-authorlist {
-    margin-bottom: 0;
+
+    @include bp(screen1) {
+
+      @supports (display: grid) {
+        margin-bottom: 0;
+      }
+
+    }
+
   }
 
 }
