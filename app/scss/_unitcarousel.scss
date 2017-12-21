@@ -53,21 +53,27 @@
 
 %c-unitcarousel__item-type {
   margin-left: auto;
-  font-size: 0.9em;
+  padding-top: 2em;
+  background: no-repeat top center / 1.5em;
+  font-size: 0.8em;
 }
 
 .c-unitcarousel__item-type--article {
   @extend %c-unitcarousel__item-type;
+  background-image: inline('../images/icon_file-text-black.svg');
 }
 
 .c-unitcarousel__item-type--book {
   @extend %c-unitcarousel__item-type;
+  background-image: inline('../images/icon_book.svg');
 }
 
 .c-unitcarousel__item-type--thesis {
   @extend %c-unitcarousel__item-type;
+  background-image: inline('../images/icon_graduation-cap-black.svg');
 }
 
 .c-unitcarousel__item-type--multimedia {
   @extend %c-unitcarousel__item-type;
+  background-image: inline('../images/icon_play-circle-o-black.svg');
 }
