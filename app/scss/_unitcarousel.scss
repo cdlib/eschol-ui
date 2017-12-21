@@ -36,10 +36,14 @@
   padding: $spacing-sm;
   border-top: 1px solid $color-light-gray;
 
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: 1fr 4.5em;
-    grid-column-gap: $spacing-md;
+  @include bp(screen1) {
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr 4.5em;
+      grid-column-gap: $spacing-md;
+    }
+
   }
 
   &:last-child {
@@ -80,8 +84,12 @@
   grid-row: 1 / 3;
   justify-self: center;
 
-  @supports (display: grid) {
-    margin-left: 0;
+  @include bp(screen1) {
+
+    @supports (display: grid) {
+      margin-left: 0;
+    }
+
   }
 
 }
