@@ -14,8 +14,9 @@
 
 %c-unitcarousel__button {
   @extend %interactive-element-size;
+  width: 3em;
   border: none;
-  background: no-repeat center / 3.4em;
+  background: no-repeat center / 5em;
 }
 
 .c-unitcarousel__button-up {
