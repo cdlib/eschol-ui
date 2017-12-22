@@ -12,7 +12,7 @@ $footer-logo-width: 200px;
 
   @include bp(screen2) {
     display: grid;
-    grid-template-columns: auto 1fr 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
 }
@@ -41,7 +41,7 @@ $footer-logo-width: 200px;
 
   @include bp(screen2) {
     margin-bottom: 0;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1 / 4;
   }
 
@@ -72,11 +72,6 @@ $footer-logo-width: 200px;
   @include bp(screen2) {
     justify-self: stretch;
     grid-column: 1;
-
-    @supports (display: grid) {
-      width: auto;
-    }
-
   }
 
   a {
