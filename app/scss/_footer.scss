@@ -53,16 +53,21 @@ $footer-logo-width: 200px;
 
   img {
     width: $footer-logo-width;
+    height: 100%; // for IE 11
   }
 
 }
 
 .c-footer__icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: $footer-logo-width;
   height: auto;
   margin-bottom: $spacing-md;
+
+  @supports (display: grid) {
+    justify-content: space-evenly;
+  }
 
   @include bp(screen2) {
     justify-self: stretch;
