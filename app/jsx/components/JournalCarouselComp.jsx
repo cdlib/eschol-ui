@@ -29,71 +29,62 @@ class UnitCarouselComp extends React.Component {
   }
   render() {
     return (
-      <div className="o-itemcarousel">
-        <h2 className="o-itemcarousel__heading"><a href="">UC Berkeley Journals</a></h2>
-        <div className="c-journalcarousel o-itemcarousel__carousel">
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>streetnotes</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>Maiores Corporis Repellendus Maxime</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>Western State Budget Reports</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>Race and Yoga</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div className="o-itemcarousel__item">
-            <a href="" className="o-journal2">
-              <figure>
-                <img src="https://escholarship.org/images/temp_article.png" alt=""/>
-                <figcaption>California Italian Studies</figcaption>
-              </figure>
-            </a>
-          </div>
+      <div className="c-journalcarousel">
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
+            </figure>
+          </a>
         </div>
-        <div className="o-stat--item o-itemcarousel__stats-item">
-          <a href="">1,000</a>Items
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>streetnotes</figcaption>
+            </figure>
+          </a>
         </div>
-        <div className="o-stat--view o-itemcarousel__stats-view">
-          <b>100,000</b>Views
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>Maiores Corporis Repellendus Maxime</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>The Proceedings of the UCLA Department of Spanish and Portuguese Graduate Conference</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>Western State Budget Reports</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>Race and Yoga</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div className="o-itemcarousel__item">
+          <a href="" className="o-journal2">
+            <figure>
+              <img src="https://escholarship.org/images/temp_article.png" alt=""/>
+              <figcaption>California Italian Studies</figcaption>
+            </figure>
+          </a>
         </div>
       </div>
     )
