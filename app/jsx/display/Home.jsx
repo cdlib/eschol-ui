@@ -61,6 +61,7 @@ class Home extends React.Component {
         <ul>
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
+          <li><a href="#campuscarouselframe">Campus Carousel Frame</a></li>
           <li><a href="#campushero">Campus Hero</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#campusselector">Campus Selector</a> (replaced by Custom Selector object above)</li>

@@ -25,6 +25,7 @@ import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import BrowseJournalsLayout from './layouts/BrowseJournalsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
 import CampusLayout from './layouts/CampusLayout.jsx'
+import CampusCarouselFrameDisp from './display/CampusCarouselFrameDisp.jsx'
 import CampusHeroDisp from './display/CampusHeroDisp.jsx'
 import CampusSearchDisp from './display/CampusSearchDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
@@ -156,6 +157,7 @@ ReactDOM.render((
       <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
       <Route path="/browsejournals" component={BrowseJournalsLayout} />
       <Route path="/campus" component={CampusLayout} />
+      <Route path="/campuscarouselframe" component={CampusCarouselFrameDisp} />
       <Route path="/campushero" component={CampusHeroDisp} />
       <Route path="/campussearch" component={CampusSearchDisp} />
       <Route path="/campusselector" component={CampusSelectorDisp} />
