@@ -83,7 +83,20 @@ class CampusLayout extends React.Component {
         <div className="c-columns">
           <main id="maincontent">
             <CampusSearchComp />
-            <UnitCarouselComp />
+            <div className="c-campuscarouselframe">
+              <h2 className="c-campuscarouselframe__heading"><a href="">Center for Medieval and Renaissance Studies</a></h2>
+              <div className="c-campuscarouselframe__carousel">
+                <UnitCarouselComp />
+              </div>
+              <div className="c-campuscarouselframe__stats">
+                <div className="o-stat--item">
+                  <a href="">1,000</a>Items
+                </div>
+                <div className="o-stat--view">
+                  <b>100,000</b>Views
+                </div>
+              </div>
+            </div>
             <JournalCarouselComp />
           </main>
           <aside>
