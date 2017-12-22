@@ -1,7 +1,5 @@
 // ##### Campus Carousel Frame Component ##### //
 
-$campuscarouselframe-spacing: 2.5rem;
-
 .c-campuscarouselframe {
   margin-bottom: $spacing-md;
   padding: $spacing-md $spacing-sm;
@@ -34,7 +32,6 @@ $campuscarouselframe-spacing: 2.5rem;
   margin-bottom: $spacing-md;
 
   @include bp(screen1) {
-    padding: 0 $campuscarouselframe-spacing;
 
     @supports (display: grid) {
       margin-bottom: 0;

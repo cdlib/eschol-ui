@@ -10,6 +10,11 @@
   height: 300px;
   margin-bottom: $spacing-sm;
   overflow: scroll;
+
+  @include bp(screen2) {
+    padding: 0 $campuscarouselframe-spacing;
+  }
+
 }
 
 %c-unitcarousel__button {
