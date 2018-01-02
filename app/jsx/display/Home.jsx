@@ -88,8 +88,9 @@ class Home extends React.Component {
           <li><a href="#lazyimage">Lazy Image</a></li>
           <li><a href="#marquee">Marquee</a></li>
           <li><a href="#mediafilegrid">Media File Grid</a></li>
-          <li><a href="#modal">Modal</a></li>
           <li><a href="#medialist">Media List</a></li>
+          <li><a href="#mediaviewer">Media Viewer</a></li>
+          <li><a href="#modal">Modal</a></li>
           <li><a href="#nav">Navigation</a></li>
           <li><a href="#navbar">Nav Bar</a></li>
           <li><a href="#pagination">Pagination</a></li>

@@ -72,6 +72,7 @@ import MediaFeatureDisp from './display/MediaFeatureDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
 import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
 import MediaListDisp from './display/MediaListDisp.jsx'
+import MediaViewerDisp from './display/MediaViewerDisp.jsx'
 import ModalDisp from './display/ModalDisp.jsx'
 import NavDisp from './display/NavDisp.jsx'
 import NavBarDisp from './display/NavBarDisp.jsx'
@@ -203,6 +204,7 @@ ReactDOM.render((
       <Route path="/mediafile" component={MediaFileDisp} />
       <Route path="/mediafilegrid" component={MediaFileGridDisp} />
       <Route path="/medialist" component={MediaListDisp} />
+      <Route path="/mediaviewer" component={MediaViewerDisp} />
       <Route path="/modal" component={ModalDisp} />
       <Route path="/nav" component={NavDisp} />
       <Route path="/navbar" component={NavBarDisp} />
