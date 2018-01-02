@@ -37,6 +37,7 @@
 
 .o-journal2 {
   @extend %o-journal;
+  display: inline-block;
   position: relative;
   height: $itemcarousel-height;
   border: 1px solid $color-teal;
