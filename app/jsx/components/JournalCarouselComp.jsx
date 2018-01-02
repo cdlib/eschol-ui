@@ -30,7 +30,7 @@ class UnitCarouselComp extends React.Component {
   render() {
     return (
       <div className="c-journalcarousel">
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -38,7 +38,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -46,7 +46,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -54,7 +54,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -62,7 +62,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -70,7 +70,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>
@@ -78,7 +78,7 @@ class UnitCarouselComp extends React.Component {
             </figure>
           </a>
         </div>
-        <div className="o-itemcarousel__item">
+        <div className="c-journalcarousel__item">
           <a href="" className="o-journal2">
             <figure>
               <img src="https://escholarship.org/images/temp_article.png" alt=""/>

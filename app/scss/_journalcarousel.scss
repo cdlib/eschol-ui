@@ -31,5 +31,6 @@
 }
 
 .c-journalcarousel__item {
-  // to be migrated from o-itemcarousel__item
+  height: $itemcarousel-height;
+  margin-left: $spacing-md;
 }
