@@ -1,21 +1,22 @@
 // ##### Media Viewer Component ##### //
 
 import React from 'react'
+import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
+import MediaFeatureDataObj from '../objects/MediaFeatureDataObj.jsx'
+import MediaFeatureImageObj from '../objects/MediaFeatureImageObj.jsx'
+import MediaFeatureVideoObj from '../objects/MediaFeatureVideoObj.jsx'
 import MediaFileGridComp from '../components/MediaFileGridComp.jsx'
+import MediaViewerAudioObj from '../objects/MediaViewerAudioObj.jsx'
+import MediaViewerDataObj from '../objects/MediaViewerDataObj.jsx'
+import MediaViewerImageObj from '../objects/MediaViewerImageObj.jsx'
+import MediaViewerVideoObj from '../objects/MediaFileVideoObj.jsx'
 
 class MediaViewerComp extends React.Component {
   render() {
     return (
       <div className="c-mediaviewer">
-        <div className="o-mediafeature--video">
-          <h3>New Horizons Kuiper Belt Fly-Through</h3>
-          <div className="o-mediafeature__item">
-            <video src="images/sample_video.mp4" controls poster="images/sample_video-poster.jpg"></video>
-          </div>
-          <div className="o-mediafeature__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio numquam aut facere odio et accusantium eius quo harum, quis ab molestias illum totam earum nemo voluptatum eligendi nobis. Molestiae reprehenderit et neque nisi nam corporis totam exercitationem, numquam fuga. Sint minima quisquam, velit quod ratione. Vero, libero, accusantium. Rem.
-          </div>
-        </div>
+        <MediaFeatureVideoObj />
+        {/* ItemActions Component */}
         <div className="c-itemactions">
           <div className="o-input__droplist2">
             <label htmlFor="o-input__droplist-label2">Refine media type by:</label>
@@ -41,7 +42,13 @@ class MediaViewerComp extends React.Component {
             </details>
           </div>
         </div>
-        <MediaFileGridComp />
+      {/* MediaFileGrid Component */}
+        <div className="c-mediafilegrid">
+          <MediaViewerAudioObj />
+          <MediaViewerDataObj />
+          <MediaViewerImageObj />
+          <MediaViewerVideoObj />
+        </div>
       </div>
     )
   }
