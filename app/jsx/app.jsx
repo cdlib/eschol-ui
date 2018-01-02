@@ -115,7 +115,6 @@ import ToggleContentDisp from './display/ToggleContentDisp.jsx'
 import ToggleListDisp from './display/ToggleListDisp.jsx'
 import ToggleSectionDisp from './display/ToggleSectionDisp.jsx'
 import UnitCarouselDisp from './display/UnitCarouselDisp.jsx'
-import UnitItemDisp from './display/UnitItemDisp.jsx'
 import UnitListDisp from './display/UnitListDisp.jsx'
 import UnitSeriesDisp from './display/UnitSeriesDisp.jsx'
 import UnitSimpleLayout from './layouts/UnitSimpleLayout.jsx'
@@ -247,7 +246,6 @@ ReactDOM.render((
       <Route path="/togglelist" component={ToggleListDisp} />
       <Route path="/togglesection" component={ToggleSectionDisp} />
       <Route path="/unitcarousel" component={UnitCarouselDisp} />
-      <Route path="/unititem" component={UnitItemDisp} />
       <Route path="/unitlist" component={UnitListDisp} />
       <Route path="/unitpub" component={UnitSeriesDisp} />
       <Route path="/unitsimple" component={UnitSimpleLayout} />
