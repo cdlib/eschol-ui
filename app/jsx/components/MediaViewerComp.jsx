@@ -16,10 +16,10 @@ class MediaViewerComp extends React.Component {
   render() {
     return (
       <div className="c-mediaviewer">
-        {this.state.mediaFeature === 1 ? <MediaFeatureAudioObj /> : null}
-        {this.state.mediaFeature === 2 ? <MediaFeatureDataObj /> : null}
-        {this.state.mediaFeature === 3 ? <MediaFeatureImageObj /> : null}
-        {this.state.mediaFeature === 4 ? <MediaFeatureVideoObj /> : null}
+        {this.state.mediaFeature == 1 ? <MediaFeatureAudioObj /> : null}
+        {this.state.mediaFeature == 2 ? <MediaFeatureDataObj /> : null}
+        {this.state.mediaFeature == 3 ? <MediaFeatureImageObj /> : null}
+        {this.state.mediaFeature == 4 ? <MediaFeatureVideoObj /> : null}
         {/* ItemActions Component */}
         <div className="c-itemactions">
           <div className="o-input__droplist2">
@@ -48,10 +48,18 @@ class MediaViewerComp extends React.Component {
         </div>
         {/* MediaFileGrid Component */}
         <div className="c-mediafilegrid">
-          <MediaViewerAudioObj openViewer={()=> this.setState({mediaFeature: 1})} />
-          <MediaViewerDataObj openViewer={()=> this.setState({mediaFeature: 2})} />
-          <MediaViewerImageObj openViewer={()=> this.setState({mediaFeature: 3})} />
-          <MediaViewerVideoObj openViewer={()=> this.setState({mediaFeature: 4})} />
+          <MediaViewerAudioObj
+            isSelected={this.state.mediaFeature == 1}
+            openViewer={()=> this.setState({mediaFeature: 1})} />
+          <MediaViewerDataObj
+            isSelected={this.state.mediaFeature == 2}
+            openViewer={()=> this.setState({mediaFeature: 2})} />
+          <MediaViewerImageObj
+            isSelected={this.state.mediaFeature == 3}
+            openViewer={()=> this.setState({mediaFeature: 3})} />
+          <MediaViewerVideoObj
+            isSelected={this.state.mediaFeature == 4}
+            openViewer={()=> this.setState({mediaFeature: 4})} />
         </div>
       </div>
     )

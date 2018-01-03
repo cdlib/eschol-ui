@@ -9,7 +9,7 @@ class MediaViewerImageObj extends React.Component {
   }
   render() {
     return (
-      <div className="o-mediafile--image--selected">
+      <div className={this.props.isSelected ? "o-mediafile--image--selected" : "o-mediafile--image"}>
         <h2 className="o-mediafile__heading">
           New Horizons Full Trajectory - Side View
         </h2>

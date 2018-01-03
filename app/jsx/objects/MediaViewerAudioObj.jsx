@@ -9,7 +9,7 @@ class MediaViewerAudioObj extends React.Component {
   }
   render() {
     return (
-      <div className="o-mediafile--audio">
+      <div className={this.props.isSelected ? "o-mediafile--audio--selected" : "o-mediafile--audio"}>
         <h2 className="o-mediafile__heading">
           Outer Space Music
         </h2>

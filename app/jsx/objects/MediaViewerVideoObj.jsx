@@ -9,7 +9,7 @@ class MediaViewerVideoObj extends React.Component {
   }
   render() {
     return (
-      <div className="o-mediafile--video">
+      <div className={this.props.isSelected ? "o-mediafile--video--selected" : "o-mediafile--video"}>
         <h2 className="o-mediafile__heading">
           New Horizons Kuiper Belt Fly-through
         </h2>

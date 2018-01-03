@@ -9,7 +9,7 @@ class MediaViewerDataObj extends React.Component {
   }
   render() {
     return (
-      <div className="o-mediafile--data">
+      <div className={this.props.isSelected ? "o-mediafile--data--selected" : "o-mediafile--data"}>
         <h2 className="o-mediafile__heading">
           New Horizons File Archive
         </h2>
