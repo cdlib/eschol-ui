@@ -5,17 +5,21 @@ import MediaFeatureAudioObj from '../objects/MediaFeatureAudioObj.jsx'
 import MediaFeatureDataObj from '../objects/MediaFeatureDataObj.jsx'
 import MediaFeatureImageObj from '../objects/MediaFeatureImageObj.jsx'
 import MediaFeatureVideoObj from '../objects/MediaFeatureVideoObj.jsx'
-import MediaFileGridComp from '../components/MediaFileGridComp.jsx'
 import MediaViewerAudioObj from '../objects/MediaViewerAudioObj.jsx'
 import MediaViewerDataObj from '../objects/MediaViewerDataObj.jsx'
 import MediaViewerImageObj from '../objects/MediaViewerImageObj.jsx'
-import MediaViewerVideoObj from '../objects/MediaFileVideoObj.jsx'
+import MediaViewerVideoObj from '../objects/MediaViewerVideoObj.jsx'
 
 class MediaViewerComp extends React.Component {
+  state={mediaFeature: null}
+
   render() {
     return (
       <div className="c-mediaviewer">
-        <MediaFeatureVideoObj />
+        {this.state.mediaFeature === 1 ? <MediaFeatureAudioObj /> : null}
+        {this.state.mediaFeature === 2 ? <MediaFeatureDataObj /> : null}
+        {this.state.mediaFeature === 3 ? <MediaFeatureImageObj /> : null}
+        {this.state.mediaFeature === 4 ? <MediaFeatureVideoObj /> : null}
         {/* ItemActions Component */}
         <div className="c-itemactions">
           <div className="o-input__droplist2">
@@ -42,12 +46,12 @@ class MediaViewerComp extends React.Component {
             </details>
           </div>
         </div>
-      {/* MediaFileGrid Component */}
+        {/* MediaFileGrid Component */}
         <div className="c-mediafilegrid">
-          <MediaViewerAudioObj />
-          <MediaViewerDataObj />
-          <MediaViewerImageObj />
-          <MediaViewerVideoObj />
+          <MediaViewerAudioObj openViewer={()=> this.setState({mediaFeature: 1})} />
+          <MediaViewerDataObj openViewer={()=> this.setState({mediaFeature: 2})} />
+          <MediaViewerImageObj openViewer={()=> this.setState({mediaFeature: 3})} />
+          <MediaViewerVideoObj openViewer={()=> this.setState({mediaFeature: 4})} />
         </div>
       </div>
     )

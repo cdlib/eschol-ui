@@ -13,14 +13,14 @@ class MediaViewerAudioObj extends React.Component {
         <h2 className="o-mediafile__heading">
           Outer Space Music
         </h2>
-        <div className="o-mediafile__preview" href="images/sample_audio.mp3" onClick={this.openMediaViewer}>
+        <div className="o-mediafile__preview" href="images/sample_audio.mp3" onClick={this.props.openViewer}>
           {/* To add preview image, use:
           <img src="[image path]" alt="[alt text]" /> */}
         </div>
         <div className="o-mediafile__description">
           Architecto quo praesentium, suscipit, qui est maxime ut repellendus earum odio ab, consequuntur saepe voluptatem commodi dolorum eos adipisci, fugiat tempore ipsa. Reprehenderit corrupti quae ea, veritatis iste, perspiciatis. Ad, reiciendis praesentium!
         </div>
-        <button className="o-mediafile__view" onClick={this.openMediaViewer}><span>View Media</span></button>
+        <button className="o-mediafile__view" onClick={this.props.openViewer}><span>View Media</span></button>
         <a href="" className="o-mediafile__download" download>Download</a>
       </div>
     )
