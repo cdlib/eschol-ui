@@ -13,21 +13,21 @@ import MediaViewerVideoObj from '../objects/MediaViewerVideoObj.jsx'
 class MediaViewerComp extends React.Component {
   state={mediaFeature: null}
 
-  // To do: set focus to the mediaviewer somehow when mediaFeature state is not null
-  focusIt = ()=> {
-    document.querySelector('.c-mediaviewer').focus()
+  openViewer = (featureNumber)=> {
+    this.setState({mediaFeature: featureNumber})
+    this.mediaViewerFeature.focus()
+    this.mediaViewerFeature.scrollIntoView({ behavior: 'smooth' })
   }
 
   render() {
     return (
       <div className="c-mediaviewer">
-      {/* When focus logic is implemented, change line above to:
-      <div className="c-mediaviewer" tabIndex="-1">
-      */}
-        {this.state.mediaFeature == 1 ? <MediaFeatureAudioObj /> : null}
-        {this.state.mediaFeature == 2 ? <MediaFeatureDataObj /> : null}
-        {this.state.mediaFeature == 3 ? <MediaFeatureImageObj /> : null}
-        {this.state.mediaFeature == 4 ? <MediaFeatureVideoObj /> : null}
+        <div className="c-mediaviewer__feature" ref={el => this.mediaViewerFeature = el} tabIndex="-1">
+          {this.state.mediaFeature == 1 ? <MediaFeatureAudioObj /> : null}
+          {this.state.mediaFeature == 2 ? <MediaFeatureDataObj /> : null}
+          {this.state.mediaFeature == 3 ? <MediaFeatureImageObj /> : null}
+          {this.state.mediaFeature == 4 ? <MediaFeatureVideoObj /> : null}
+        </div>
         {/* ItemActions Component */}
         <div className="c-itemactions">
           <div className="o-input__droplist2">
@@ -58,16 +58,16 @@ class MediaViewerComp extends React.Component {
         <div className="c-mediafilegrid">
           <MediaViewerAudioObj
             isSelected={this.state.mediaFeature == 1}
-            openViewer={()=> this.setState({mediaFeature: 1})} />
+            openViewer={()=> this.openViewer(1)} />
           <MediaViewerDataObj
             isSelected={this.state.mediaFeature == 2}
-            openViewer={()=> this.setState({mediaFeature: 2})} />
+            openViewer={()=> this.openViewer(2)} />
           <MediaViewerImageObj
             isSelected={this.state.mediaFeature == 3}
-            openViewer={()=> this.setState({mediaFeature: 3})} />
+            openViewer={()=> this.openViewer(3)} />
           <MediaViewerVideoObj
             isSelected={this.state.mediaFeature == 4}
-            openViewer={()=> this.setState({mediaFeature: 4})} />
+            openViewer={()=> this.openViewer(4)} />
         </div>
       </div>
     )
