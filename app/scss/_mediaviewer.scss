@@ -4,8 +4,8 @@
 
   [class^='o-mediafeature--'] {
     padding-bottom: $spacing-md;
-    animation: reveal 1s;
     border-bottom: 1px solid $color-light-gray;
+    animation: reveal 1s;
   }
 
 }
