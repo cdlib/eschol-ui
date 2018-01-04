@@ -1,15 +1,24 @@
 // ##### Media File Object ##### //
 
-// The layout grid for Media File objects is set within _mediafilegrid.scss
+// The 2-column layout for Media File objects is set within _mediafilegrid.scss
 
 div[class^='o-mediafile--'] {
   display: grid;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing-sm;
+  }
 
   @include bp(screen1) {
     padding: $spacing-sm;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-column-gap: $spacing-sm;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
   }
 
 }
