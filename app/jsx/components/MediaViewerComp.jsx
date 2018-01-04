@@ -13,9 +13,17 @@ import MediaViewerVideoObj from '../objects/MediaViewerVideoObj.jsx'
 class MediaViewerComp extends React.Component {
   state={mediaFeature: null}
 
+  // To do: set focus to the mediaviewer somehow when mediaFeature state is not null
+  focusIt = ()=> {
+    document.querySelector('.c-mediaviewer').focus()
+  }
+
   render() {
     return (
       <div className="c-mediaviewer">
+      {/* When focus logic is implemented, change line above to:
+      <div className="c-mediaviewer" tabIndex="-1">
+      */}
         {this.state.mediaFeature == 1 ? <MediaFeatureAudioObj /> : null}
         {this.state.mediaFeature == 2 ? <MediaFeatureDataObj /> : null}
         {this.state.mediaFeature == 3 ? <MediaFeatureImageObj /> : null}
