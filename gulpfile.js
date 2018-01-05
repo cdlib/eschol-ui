@@ -105,7 +105,7 @@ gulp.task('default', function (callback) {
 // Run the build process 'build':
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'sass', 'useref', 'copy-images'],
+    ['scss-lint', 'sass', 'useref', 'copy-fonts', 'copy-images'],
     callback
   )
 })
@@ -183,6 +183,13 @@ gulp.task('useref', function(){
 gulp.task('clean', function() {
   return del('dist');
 })
+
+
+// Copy fonts to dist directory during the build process:
+gulp.task('copy-fonts', function(){
+  return gulp.src('app/fonts/**')
+  .pipe(gulp.dest('dist/fonts'))
+});
 
 
 // Copy images to dist directory during the build process:
