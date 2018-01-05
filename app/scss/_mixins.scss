@@ -1,5 +1,9 @@
 // ##### Global Mixins and Placeholders ##### //
 
+%kievitweblight-font-stack {
+  font-family: 'KievitWebLight', 'Arial', 'Helvetica', sans-serif;
+}
+
 // Create short media query blocks:
 
 @mixin bp($point) {

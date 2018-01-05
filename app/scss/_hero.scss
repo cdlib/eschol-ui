@@ -28,6 +28,7 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
   }
 
   @include headings() {
+    @extend %kievitweblight-font-stack;
     margin: 0;
     color: $color-white;
     font-size: 1.3em;
@@ -38,7 +39,6 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
       width: 11em;
       padding: $spacing-md $spacing-lg;
       background: linear-gradient(to right, $hero-bg-color 85%, transparent);
-      font-family: 'KievitWebLight';
       font-size: 4vw;
       text-align: left;
       text-shadow: $hero-text-shadow;

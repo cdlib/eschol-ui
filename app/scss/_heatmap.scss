@@ -51,8 +51,8 @@
 }
 
 .c-heatmap__heading {
+  @extend %kievitweblight-font-stack;
   margin: $spacing-md 0;
-  font-family: 'KievitWebLight';
   font-size: 7vw;
   font-weight: normal;
   text-align: center;
