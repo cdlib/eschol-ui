@@ -105,7 +105,7 @@ gulp.task('default', function (callback) {
 // Run the build process 'build':
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'sass', 'useref', 'copy-bower', 'copy-fonts', 'copy-images'],
+    ['scss-lint', 'sass', 'copy-bower', 'copy-fonts', 'copy-images', 'copy-css', 'copy-index', 'copy-js'],
     callback
   )
 })
@@ -169,16 +169,6 @@ gulp.task('browserSync', function() {
 })
 
 
-// Concatenate and minify CSS and JavaScript from paths within useref tags during build process; include files:
-gulp.task('useref', function(){
-  return gulp.src(['app/**/*.html', '!app/includes/*'])
-    .pipe(useref())
-    .pipe(gulpIf('*.css', minifyCSS()))
-    // .pipe(gulpIf('*.js', uglify())) // disabled for now
-    .pipe(gulp.dest('dist'))
-});
-
-
 // Delete 'dist' directory at start of build process:
 gulp.task('clean', function() {
   return del('dist');
@@ -203,6 +193,30 @@ gulp.task('copy-fonts', function(){
 gulp.task('copy-images', function(){
   return gulp.src('app/images/**')
   .pipe(gulp.dest('dist/images'))
+});
+
+
+// Minify and copy CSS to dist directory during the build process:
+gulp.task('copy-css', function(){
+  return gulp.src('app/css/main.css')
+  .pipe(gulpIf('*.css', minifyCSS()))
+  .pipe(gulp.dest('dist/css'))
+});
+
+
+
+// Copy index.html to dist directory during the build process:
+gulp.task('copy-index', function(){
+  return gulp.src('app/index.html')
+  .pipe(gulp.dest('dist/'))
+});
+
+
+// Minify and copy js to dist directory during the build process:
+gulp.task('copy-js', function(){
+  return gulp.src('app/js/**')
+  .pipe(gulpIf('*.js', uglify()))
+  .pipe(gulp.dest('dist/js'))
 });
 
 
