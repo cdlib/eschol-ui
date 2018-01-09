@@ -49,6 +49,7 @@
     "npm": "^5.5.1",
     "path": "^0.12.7",
     "postcss-assets": "^4.1.0",
+    "postcss-normalize": "^4.0.0",
     "run-sequence": "^1.2.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
@@ -64,5 +65,9 @@
     "react-responsive": "^1.1.4",
     "react-router": "^2.7.0",
     "smoothscroll-polyfill": "^0.4.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11"
+  ]
 }

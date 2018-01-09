@@ -141,9 +141,14 @@ gulp.task('sass', function() {
       flexbox: ['no-2009'],
       grid: false // don't prefix any properties from old grid spec since not all new grid properties correlate with old grid spec still used by IE
     }))
-    .pipe(postcss([assets({
-      loadPaths: ['fonts/', 'images/']
-    })]))
+    .pipe(postcss([
+      assets({
+        loadPaths: ['fonts/', 'images/']
+      }),
+      require('postcss-normalize')({
+        forceImport: true
+      })
+    ]))
     .pipe(sourcemaps.write('sourcemaps'))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
