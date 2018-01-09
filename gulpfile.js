@@ -95,6 +95,7 @@ function getNPMPackageIds() {
   return _.keys(packageManifest.dependencies) || [];
 }
 
+
 // Run the dev process 'gulp':
 gulp.task('default', function (callback) {
   runSequence(['bundle-libs', 'bundle-app', 'browserSync', 'sass', 'watch'],
@@ -102,10 +103,11 @@ gulp.task('default', function (callback) {
   )
 })
 
+
 // Run the build process 'build':
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'sass', 'copy-bower', 'copy-fonts', 'copy-images', 'copy-css', 'copy-index', 'copy-js'],
+    ['scss-lint', 'sass', 'useref', 'copy-bower', 'copy-fonts', 'copy-images', 'copy-css'],
     callback
   )
 })
@@ -169,6 +171,15 @@ gulp.task('browserSync', function() {
 })
 
 
+// Concatenate and minify JavaScript from paths within useref tags during build process:
+gulp.task('useref', function(){
+  return gulp.src(['app/**/*.html'])
+    .pipe(useref())
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'))
+});
+
+
 // Delete 'dist' directory at start of build process:
 gulp.task('clean', function() {
   return del('dist');
@@ -204,22 +215,6 @@ gulp.task('copy-css', function(){
 });
 
 
-
-// Copy index.html to dist directory during the build process:
-gulp.task('copy-index', function(){
-  return gulp.src('app/index.html')
-  .pipe(gulp.dest('dist/'))
-});
-
-
-// Minify and copy js to dist directory during the build process:
-gulp.task('copy-js', function(){
-  return gulp.src('app/js/**')
-  .pipe(gulpIf('*.js', uglify()))
-  .pipe(gulp.dest('dist/js'))
-});
-
-
 // Lint Sass:
 gulp.task('scss-lint', function() {
   return gulp.src(['app/scss/**/*.scss', '!app/scss/vendor/**/*.scss'])
@@ -229,6 +224,7 @@ gulp.task('scss-lint', function() {
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
 });
+
 
 // Convert media query breakpoints from SCSS variables to JSON key/value pairs:
 
@@ -240,6 +236,7 @@ gulp.task('sass-to-json', function () {
     .pipe(sassJson())
     .pipe(gulp.dest('app/js')); // breakpoints.json
 });
+
 
 // Deploy a build to GitHub Pages by running 'deploy':
 gulp.task('deploy', function() {
