@@ -5,6 +5,7 @@ $table-border-size: 1px;
 .c-datatable {
   margin-bottom: $spacing-md;
   border: $table-border-size solid $color-teal;
+  border-collapse: collapse;
 
   caption {
     @extend %o-heading3;
