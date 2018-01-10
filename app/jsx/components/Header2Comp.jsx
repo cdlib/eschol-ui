@@ -11,7 +11,7 @@ class HeaderComp2 extends React.Component {
   }
   render() {
     return (
-      <header className="c-header">
+      <header id="#top" className="c-header">
         <a className="c-header__logo2" href="">
           <picture>
             <source srcSet="images/logo_eschol-small.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
