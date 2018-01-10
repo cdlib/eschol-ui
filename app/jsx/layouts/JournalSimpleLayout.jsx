@@ -507,6 +507,9 @@ class JournalSimpleLayout extends React.Component {
             </section>
           </aside>
         </div>
+        <div className="c-toplink">
+          <a href="#top">Top</a>
+        </div>
         <FooterComp />
       </div>
     )

@@ -282,6 +282,9 @@ class SearchLayout extends React.Component {
             </section>
           </main>
         </div>
+        <div className="c-toplink">
+          <a href="#top">Top</a>
+        </div>
         <FooterComp />
 
         {/* Start Facet Modal */}
@@ -457,7 +460,6 @@ class SearchLayout extends React.Component {
           </ReactModal>
         </div>
         {/* End Facet Modal */}
-
       </div>
     )
   }

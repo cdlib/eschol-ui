@@ -99,6 +99,9 @@ class HomeLayout extends React.Component {
           </header>
           <HomeSection3Comp />
         </section>
+        <div className="c-toplink">
+          <a href="#top">Top</a>
+        </div>
         <FooterComp />
       </div>
     )

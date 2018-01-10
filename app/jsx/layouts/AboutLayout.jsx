@@ -141,6 +141,9 @@ class AboutLayout extends React.Component {
         <div className="c-toplink">
           <a href="#top">Top</a>
         </div>
+        <div className="c-toplink">
+          <a href="#top">Top</a>
+        </div>
         <FooterComp />
       </div>
     )
