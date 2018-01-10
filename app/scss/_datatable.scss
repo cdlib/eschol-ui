@@ -3,6 +3,9 @@
 $table-border-size: 1px;
 
 .c-datatable {
+  // max-width: 700px;
+  max-height: 80vh; // for testing
+  overflow: scroll;
 
   table {
     margin-bottom: $spacing-md;
@@ -28,9 +31,12 @@ $table-border-size: 1px;
     thead {
 
       th[scope='col'] {
+        position: sticky;
+        top: 0;
         background-color: $color-teal;
         color: $color-white;
         font-weight: normal;
+        z-index: 2;
 
         &:not(:first-child) {
           border-left: $table-border-size solid $color-white;
@@ -45,10 +51,20 @@ $table-border-size: 1px;
       tr {
         border-bottom: $table-border-size solid $color-teal;
 
+        th,
+        td {
+          background-color: $color-white;
+        }
+
         td {
           border-left: $table-border-size solid $color-teal;
         }
 
+      }
+
+      th[scope='row'] {
+        position: sticky;
+        left: 0;
       }
 
     }
