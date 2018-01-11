@@ -14,7 +14,13 @@ $table-border-size: 1px;
 
     caption {
       @extend %o-heading3;
+      position: sticky;
+      top: 0;
+      margin: 0;
+      padding: $spacing-sm;
+      background-color: $color-white;
       text-align: left;
+      z-index: 2;
     }
 
     th,
