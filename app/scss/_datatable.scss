@@ -27,7 +27,7 @@ $table-border-size: 1px;
       text-align: left;
     }
 
-    // ***** Table Borders ***** //
+    // ***** Table Borders, Background, and Sticky Behavior ***** //
 
     thead {
 
@@ -71,6 +71,15 @@ $table-border-size: 1px;
         td {
           border: $table-border-size solid $color-teal;
           background-color: $color-white;
+        }
+
+        &:nth-child(even) {
+
+          th,
+          td {
+            background-color: lighten($color-light-gray, 15%);
+          }
+
         }
 
       }
