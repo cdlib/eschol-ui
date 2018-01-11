@@ -3,13 +3,11 @@
 $table-border-size: 1px;
 
 .c-datatable {
-  // max-width: 700px;
   max-height: 80vh; // for testing
   overflow: scroll;
 
   table {
     margin-bottom: $spacing-md;
-    border: $table-border-size solid $color-teal;
     border-collapse: collapse;
 
     caption {
@@ -40,6 +38,11 @@ $table-border-size: 1px;
         color: $color-white;
         font-weight: normal;
         z-index: 2;
+
+        &:first-child {
+          left: -1px;
+          z-index: 3;
+        }
 
         &:not(:first-child) {
           border-left: $table-border-size solid $color-white;

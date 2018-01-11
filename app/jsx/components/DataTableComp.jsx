@@ -10,7 +10,7 @@ class DataTableComp extends React.Component {
           <caption>Delicious Fruit</caption>
           <thead>
             <tr>
-              <th scope="col">Quantity</th>
+              <th scope="col"></th>
               <th scope="col">Apples</th>
               <th scope="col">Oranges</th>
               <th scope="col">Bananas</th>
