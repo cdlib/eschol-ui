@@ -7,10 +7,10 @@ class DataTableComp extends React.Component {
     return (
       <div className="c-datatable">
         <table>
-          <caption>Delicious Fruit</caption>
+          <caption>Fruit Distribution by Country</caption>
           <thead>
             <tr>
-              <th scope="col"></th>
+              <th scope="col">Country</th>
               <th scope="col">Apples</th>
               <th scope="col">Oranges</th>
               <th scope="col">Bananas</th>
@@ -26,172 +26,172 @@ class DataTableComp extends React.Component {
           </thead>
           <tbody>
             <tr>
-              <th scope="row">One</th>
-              <td>Lorem</td>
-              <td>Animi</td>
-              <td>Ab</td>
-              <td>Nulla</td>
-              <td>Esse</td>
-              <td>Perspiciatis</td>
-              <td>Labore</td>
-              <td>Eligendi</td>
-              <td>Quas</td>
-              <td>Mollitia</td>
-              <td>Doloribus</td>
+              <th scope="row">Afghanistan</th>
+              <td>245,698</td>
+              <td>8,685</td>
+              <td>364</td>
+              <td>9,752</td>
+              <td>6,931</td>
+              <td>986,279</td>
+              <td>97,4236</td>
+              <td>371</td>
+              <td>94,378</td>
+              <td>846,057</td>
+              <td>64,580</td>
             </tr>
             <tr>
-              <th scope="row">Two</th>
-              <td>Lorem</td>
-              <td>Consequuntur</td>
-              <td>In</td>
-              <td>Laborum</td>
-              <td>Fugit</td>
-              <td>Reiciendis</td>
-              <td>Natus</td>
-              <td>Repudiandae</td>
-              <td>Fuga</td>
-              <td>Laudantium</td>
-              <td>Modi</td>
+              <th scope="row">Bangladesh</th>
+              <td>129,475</td>
+              <td>5,847</td>
+              <td>560,784</td>
+              <td>58,694</td>
+              <td>8760</td>
+              <td>84</td>
+              <td>3,604</td>
+              <td>976,204</td>
+              <td>9,035,304</td>
+              <td>86</td>
+              <td>9,713</td>
             </tr>
             <tr>
-              <th scope="row">Three</th>
-              <td>Lorem</td>
-              <td>Aspernatur</td>
-              <td>Quod</td>
-              <td>Quos</td>
-              <td>Ipsum</td>
-              <td>Id</td>
-              <td>Repudiandae</td>
-              <td>Nisi</td>
-              <td>Culpa</td>
-              <td>Illum</td>
-              <td>Asperiores</td>
+              <th scope="row">Costa Rica</th>
+              <td>95,435</td>
+              <td>45,856</td>
+              <td>420</td>
+              <td>7,860</td>
+              <td>86</td>
+              <td>4,680</td>
+              <td>50,486</td>
+              <td>3,791</td>
+              <td>1,585</td>
+              <td>402</td>
+              <td>4,864,049</td>
             </tr>
             <tr>
-              <th scope="row">Four</th>
-              <td>Lorem</td>
-              <td>Ab</td>
-              <td>Beatae</td>
-              <td>Ut</td>
-              <td>Aut</td>
-              <td>Ducimus</td>
-              <td>Eius</td>
-              <td>Velit</td>
-              <td>Velit</td>
-              <td>Inventore</td>
-              <td>Nihil</td>
+              <th scope="row">Denmark</th>
+              <td>48,420</td>
+              <td>58</td>
+              <td>94</td>
+              <td>94,504</td>
+              <td>13,057</td>
+              <td>893</td>
+              <td>7,092</td>
+              <td>106,784</td>
+              <td>20,354</td>
+              <td>49,520</td>
+              <td>503</td>
             </tr>
             <tr>
-              <th scope="row">Five</th>
-              <td>Lorem</td>
-              <td>Ipsa</td>
-              <td>Consectetur</td>
-              <td>Distinctio</td>
-              <td>Distinctio</td>
-              <td>Amet</td>
-              <td>Minima</td>
-              <td>Fugiat</td>
-              <td>Consequatur</td>
-              <td>Incidunt</td>
-              <td>Reiciendis</td>
+              <th scope="row">Estonia</th>
+              <td>156,210</td>
+              <td>6,934</td>
+              <td>4,585</td>
+              <td>86,046</td>
+              <td>587,156</td>
+              <td>4,658</td>
+              <td>15</td>
+              <td>9,675</td>
+              <td>5,568,470</td>
+              <td>75,057</td>
+              <td>755,058</td>
             </tr>
             <tr>
-              <th scope="row">Six</th>
-              <td>Lorem</td>
-              <td>Velit</td>
-              <td>Rerum</td>
-              <td>Hic</td>
-              <td>Itaque</td>
-              <td>Commodi</td>
-              <td>Dolorem</td>
-              <td>Fuga</td>
-              <td>Architecto</td>
-              <td>Beatae</td>
-              <td>Ut</td>
+              <th scope="row">Fiji</th>
+              <td>765,420</td>
+              <td>2,4705</td>
+              <td>45</td>
+              <td>5,796</td>
+              <td>985</td>
+              <td>485,610</td>
+              <td>7,884</td>
+              <td>58</td>
+              <td>68,6964</td>
+              <td>68</td>
+              <td>2,868,469</td>
             </tr>
             <tr>
-              <th scope="row">Seven</th>
-              <td>Lorem</td>
-              <td>Voluptatibus</td>
-              <td>Quaerat</td>
-              <td>Officia</td>
-              <td>Magni</td>
-              <td>Similique</td>
-              <td>Voluptates</td>
-              <td>Cum</td>
-              <td>Pariatur</td>
-              <td>Obcaecati</td>
-              <td>Officia</td>
+              <th scope="row">Ghana</th>
+              <td>9,586,280</td>
+              <td>674,875</td>
+              <td>5,200,436</td>
+              <td>5,456</td>
+              <td>450</td>
+              <td>687,905</td>
+              <td>56,985</td>
+              <td>56</td>
+              <td>59,068</td>
+              <td>1,068</td>
+              <td>9,725</td>
             </tr>
             <tr>
-              <th scope="row">Eight</th>
-              <td>Lorem</td>
-              <td>A</td>
-              <td>Repellat</td>
-              <td>Ab</td>
-              <td>Reprehenderit</td>
-              <td>Ipsum</td>
-              <td>Dolore</td>
-              <td>Facere</td>
-              <td>Ipsa</td>
-              <td>Unde</td>
-              <td>Eveniet</td>
+              <th scope="row">Honduras</th>
+              <td>64,207</td>
+              <td>968</td>
+              <td>64,079</td>
+              <td>9,321</td>
+              <td>47,250</td>
+              <td>905</td>
+              <td>6,780</td>
+              <td>658</td>
+              <td>49,856</td>
+              <td>4,587</td>
+              <td>2,874</td>
             </tr>
             <tr>
-              <th scope="row">Nine</th>
-              <td>Lorem</td>
-              <td>Et</td>
-              <td>Optio</td>
-              <td>Porro</td>
-              <td>Eveniet</td>
-              <td>Blanditiis</td>
-              <td>Magni</td>
-              <td>Numquam</td>
-              <td>Illum</td>
-              <td>Veniam</td>
-              <td>Quia</td>
+              <th scope="row">Indonesia</th>
+              <td>87,588</td>
+              <td>382</td>
+              <td>575</td>
+              <td>8,458</td>
+              <td>978</td>
+              <td>458,087</td>
+              <td>50,877</td>
+              <td>8845</td>
+              <td>4,056,869</td>
+              <td>70,674</td>
+              <td>755,689</td>
             </tr>
             <tr>
-              <th scope="row">Ten</th>
-              <td>Lorem</td>
-              <td>Accusantium</td>
-              <td>Delectus</td>
-              <td>Ex</td>
-              <td>Repudiandae</td>
-              <td>Voluptatem</td>
-              <td>Accusamus</td>
-              <td>Repudiandae</td>
-              <td>Rerum</td>
-              <td>Hic</td>
-              <td>Voluptate</td>
+              <th scope="row">Jamaica</th>
+              <td>54,778</td>
+              <td>480,877</td>
+              <td>7,530,788</td>
+              <td>7,068</td>
+              <td>642</td>
+              <td>7,634</td>
+              <td>4,989</td>
+              <td>8,898</td>
+              <td>48,510</td>
+              <td>708,651</td>
+              <td>6,806</td>
             </tr>
             <tr>
-              <th scope="row">Eleven</th>
-              <td>Lorem</td>
-              <td>Ut</td>
-              <td>Sit</td>
-              <td>Nihil</td>
-              <td>Totam</td>
-              <td>Porro</td>
-              <td>Autem</td>
-              <td>Aspernatur</td>
-              <td>Repellat</td>
-              <td>Rem</td>
-              <td>Nulla</td>
+              <th scope="row">Kenya</th>
+              <td>57,165</td>
+              <td>48</td>
+              <td>3,958</td>
+              <td>5,420</td>
+              <td>1,687,686</td>
+              <td>68,420</td>
+              <td>56,006</td>
+              <td>478</td>
+              <td>6,377</td>
+              <td>56,924</td>
+              <td>97,354</td>
             </tr>
             <tr>
-              <th scope="row">Twelve</th>
-              <td>Lorem</td>
-              <td>Iusto</td>
-              <td>Cupiditate</td>
-              <td>Voluptatibus</td>
-              <td>Excepturi</td>
-              <td>Mollitia</td>
-              <td>Quasi</td>
-              <td>Dolorem?</td>
-              <td>Voluptatum</td>
-              <td>Laudantium</td>
-              <td>Tempore</td>
+              <th scope="row">Liechtenstein</th>
+              <td>78,561</td>
+              <td>540,567</td>
+              <td>64,054</td>
+              <td>5,256</td>
+              <td>793,425</td>
+              <td>9,806</td>
+              <td>507,893</td>
+              <td>872,678</td>
+              <td>97,510</td>
+              <td>698</td>
+              <td>670</td>
             </tr>
           </tbody>
         </table>
