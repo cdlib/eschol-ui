@@ -42,6 +42,20 @@
   @extend %o-textlink__black;
 }
 
+%o-textlink__white {
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.o-textlink__white {
+  @extend %o-textlink__white;
+}
+
 %o-textlink__left-icon {
   @extend %interactive-element-size;
   display: inline-flex;
