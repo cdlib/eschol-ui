@@ -65,6 +65,12 @@ $table-border-size: 1px;
           left: 0;
           border-right: 1px solid $color-white;
           content: '';
+          pointer-events: none;
+        }
+
+        a {
+          @extend %o-textlink__white;
+          text-decoration: underline;
         }
 
       }
@@ -105,6 +111,12 @@ $table-border-size: 1px;
           left: 0;
           border: 1px solid $color-teal;
           content: '';
+          pointer-events: none;
+        }
+
+        a {
+          @extend %o-textlink__secondary;
+          text-decoration: underline;
         }
 
       }
