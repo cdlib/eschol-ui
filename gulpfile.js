@@ -3,7 +3,7 @@
 var _ = require('lodash');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
@@ -136,14 +136,12 @@ gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      flexbox: ['no-2009'],
-      grid: false // don't prefix any properties from old grid spec since not all new grid properties correlate with old grid spec still used by IE
-    }))
     .pipe(postcss([
       assets({
         loadPaths: ['fonts/', 'images/']
+      }),
+      autoprefixer({
+        flexbox: ['no-2009']
       }),
       require('postcss-normalize')({
         forceImport: true
