@@ -12,7 +12,6 @@ var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
-var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
 var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
@@ -118,16 +117,6 @@ gulp.task('minify-images', function(){
   return gulp.src('app/images/**')
   .pipe(imagemin())
   .pipe(gulp.dest('app/images'))
-});
-
-
-// Run 'gulp modernizr' to build a custom modernizr file based off of classes found in CSS:
-gulp.task('modernizr', function() {
-  gulp.src('app/css/main.css') // where modernizr will look for classes
-    .pipe(modernizr({
-      options: ['setClasses'],
-      dest: 'app/js/modernizr-custombuild.js'
-    }))
 });
 
 
