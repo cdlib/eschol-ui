@@ -19,7 +19,6 @@ var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var streamify = require('gulp-streamify');
-var eslintify = require('eslintify');
 var babelify = require('babelify');
 var historyApiFallback = require('connect-history-api-fallback');
 var gutil = require('gulp-util');
