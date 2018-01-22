@@ -2,9 +2,10 @@
 
 $tab-height: $element-height;
 
+/* in HTML but not styled:
 .c-tabs {
-  // not used
 }
+*/
 
 %c-tabs__buttons {
   @extend %interactive-element-size;
