@@ -1,7 +1,7 @@
 
 #The eScholarship UI Library
 
-This contains all UI elements for the eScholarship JSX redesign or ['jschol'](https://github.com/eScholarship/jschol) project. It uses a Gulp-based build toolkit for development, including a Sass plugin to compile SCSS to CSS.
+This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is developed and maintained using an included, customized Gulp toolkit.
 
 ## Using the Gulp Toolkit
 
@@ -15,22 +15,32 @@ This contains all UI elements for the eScholarship JSX redesign or ['jschol'](ht
 
 ### Toolkit Installation
 
-1. Clone this repo and cd to its root directory on your machine
+1. Clone this repo and cd to `eschol-ui`
 
-2. Run `$ npm install` to install Gulp plugins. Ignore the various "depreciated" warnings that appear.
+2. Run `$ npm install` to install Gulp plugins
 
 3. Run `$ bower install` to install Bower libraries
 
 ### Running the Toolkit
 
-* Cd to this repo's root directory
+* Cd to cd to `eschol-ui`
 
-* Run `$ gulp hello` to confirm that the Gulp toolkit is installed
+* While developing files in **/app**, run `$ gulp` to watch and process live changes to the code
 
-* While developing files in **/app**, run `$ gulp` to watch live changes
+* To create a finished build of the UI Library, run the `$ gulp build` task. Run `$ gulp deploy` to publish it to  to GitHub Pages at [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)
 
-* To minify images during development, run `$ gulp minify-images` after adding new, unoptimized images
+#### Other Tasks
 
-* To create a finished build of the UI Library, run `$ gulp build`
+* After adding new images to **/images**, run `$ gulp minify-images` to optimize them
 
-* To publish a finished build of the library to GitHub Pages, run `$ gulp deploy`. It will publish to [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)
+## Developing Components
+
+[to be written]
+
+### Component Organization
+
+[to be written]
+
+### Best Practices
+
+[to be written]
