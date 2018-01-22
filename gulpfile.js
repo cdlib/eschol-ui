@@ -131,14 +131,14 @@ gulp.task('modernizr', function() {
 });
 
 
-// Process Sass to CSS, add sourcemaps, autoprefix CSS selectors, optionally Base64 font and image files into CSS, and reload browser:
+// Process Sass to CSS, add sourcemaps, inject Base64 versions of SVG into CSS, autoprefix CSS, inject 'normalize' CSS, and reload browser:
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(postcss([
       assets({
-        loadPaths: ['fonts/', 'images/']
+        loadPaths: ['images/']
       }),
       autoprefixer({
         flexbox: ['no-2009']
