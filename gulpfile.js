@@ -107,7 +107,7 @@ gulp.task('default', function (callback) {
 // Run the build process 'build':
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'sass', 'copy-bower', 'copy-fonts', 'copy-images', 'copy-css', 'copy-index', 'copy-js'],
+    ['scss-lint', 'sass', 'copy-fonts', 'copy-images', 'copy-css', 'copy-index', 'copy-js'],
     callback
   )
 })
@@ -177,13 +177,6 @@ gulp.task('browserSync', function() {
 gulp.task('clean', function() {
   return del('dist');
 })
-
-
-// Copy bower components to dist directory during the build process:
-gulp.task('copy-bower', function(){
-  return gulp.src('app/bower_components/**')
-  .pipe(gulp.dest('dist/bower_components'))
-});
 
 
 // Copy fonts to dist directory during the build process:
