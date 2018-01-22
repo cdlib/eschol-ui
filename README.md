@@ -19,7 +19,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 ### Running the Toolkit
 
-* Cd to cd to `eschol-ui`
+* Cd to `eschol-ui`
 
 * While developing files in **/app**, run `$ gulp` to watch and process live changes to the code
 

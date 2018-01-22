@@ -143,10 +143,10 @@ gulp.task('sass', function() {
 })
 
 
-// Watch sass, html, and js and reload browser if any changes:
-gulp.task('watch', ['browserSync', 'sass', 'scss-lint'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/scss/**/*.scss', ['scss-lint']);
+// Watch Sass and HTML and reload browser if any changes:
+gulp.task('watch', ['browserSync', 'sass', 'scss-lint', 'sass-to-json'], function (){
+  gulp.watch('app/scss/**/*.scss', ['sass', 'scss-lint']);
+  gulp.watch('app/scss/_breakpoints.scss', ['sass-to-json']);
   gulp.watch('app/**/*.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload); 
 });
