@@ -9,7 +9,5 @@
   "homepage": "https://github.com/cdlib/eschol-ui",
   "moduleType": [],
   "private": true,
-  "devDependencies": {
-    "flickity": "^2.0.5"
-  }
+  "devDependencies": {}
 }
