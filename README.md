@@ -1,7 +1,7 @@
 
 # The eScholarship UI Library
 
-This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is developed and maintained using an included, customized Gulp toolkit.
+This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is built upon the React framework and developed using a customized Gulp toolkit.
 
 ## Using the Gulp Toolkit
 
@@ -29,7 +29,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 * After adding new images to **/images**, run `$ gulp minify-images` to optimize them
 
-## Developing Components
+## Developing UI Elements
 
 ### Library Assets
 
@@ -56,7 +56,27 @@ app
 
 #### Components ####
 
-Components are distinct pieces of the UI. They are not related to each other, except in a few cases where there is a parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
+Components are distinct pieces of the UI. They are not related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
+
+A simple component example:
+
+```javascript
+// ##### Content Well Component ##### //
+
+import React from 'react'
+
+class WellComp extends React.Component {
+  render() {
+    return (
+      <div className="c-well">
+        Here is the well component. <a href="">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit. Totam delectus adipisci quis dicta consectetur, nesciunt quam, amet soluta.
+      </div>
+    )
+  }
+}
+
+module.exports = WellComp;
+```
 
 #### Display ####
 
@@ -74,11 +94,11 @@ Objects are generally smaller pieces of the UI compared to components and are ty
 
 Sass files within the scss folder contain all component and object CSS. They include:
 
-* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object.
+* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files.
 
 * **\_mixins.scss** contain large chunks of styles that are included across many components and objects. They are typically written as Sass Placeholders and Mixins.
 
-* **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values -- like colors and spacing -- and not blocks of styles, as within mixins.scss.
+* **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within mixins.scss.
 
 * **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a very short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
 
