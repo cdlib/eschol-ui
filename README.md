@@ -56,6 +56,7 @@ app
         +-- [object.jsx]
 +-- scss
     +-- [_component.scss]
+
 ### Best Practices
 
 [to be written]
