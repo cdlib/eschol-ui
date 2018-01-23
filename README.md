@@ -58,7 +58,7 @@ app
 
 Components are distinct pieces of the UI. They are not related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
-A simple component example:
+A simple example using the Well component:
 
 ```javascript
 // ##### Content Well Component ##### //
@@ -80,27 +80,92 @@ module.exports = WellComp;
 
 #### Display ####
 
-The display folder contains files that each render a single component or object on a single page within the UI library for reference. Occasionally, sample content is included for highlighting the proof of concept. These files are not included in the build process.
+The display folder contains files that each import a single component or object for rendering on a single page within the UI library, for reference. Occasionally, sample content is included for highlighting the proof of concept. These files are not included in the build process.
+
+A simple display file using the Well component:
+
+```javascript
+// ##### Content Well Display ##### //
+
+import React from 'react'
+import WellComp from '../components/WellComp.jsx'
+
+class WellDisp extends React.Component {
+  render() {
+    return (
+      <div>
+         <WellComp />
+      </div>
+    )
+  }
+}
+
+module.exports = WellDisp;
+```
 
 #### Layouts ####
 
-Layout files each render a single page of included ojects, components, and sample content.
+Layout files each render a single page that include many ojects, components, and sample content.
 
 #### Objects ####
 
-Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
+Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components. Unlike component files, object files are not typically imported into components; only their styles as Sass Placeholders (see "Authoring Styles" below). Likewise, object files often contain a few iterations of the same element to highlight slightly different variations or styles, unlike components.
+
+An example using the Text Link Object:
+
+```javascript
+import React from 'react'
+
+class TextlinkObj extends React.Component {
+  render() {
+    return (
+      <div>
+        <div>
+          <a href="" className="o-textlink__primary">Primary Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__secondary">Secondary Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__black">Black Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__white">White Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__left-icon">Left Icon Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__external-link">External Link</a>
+        </div>
+        <div>
+          <a href="" className="o-textlink__right-arrow">Right Arrow</a>
+        </div>
+      </div>
+    )
+  }
+}
+
+module.exports = TextlinkObj;
+```
 
 #### Styles ####
 
 Sass files within the scss folder contain all component and object CSS. They include:
 
-* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files.
+* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files. Component CSS selectors are prepended with "c-", while object selectors use "o-".
 
-* **\_mixins.scss** contain large chunks of styles that are included across many components and objects. They are typically written as Sass Placeholders and Mixins.
+* **\_utilities.scss** contain large chunks of styles that are included across many components and objects. They are written as Sass Placeholders and Mixins and are prepended with "u-".
 
-* **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within mixins.scss.
+* **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within utilities.scss.
 
-* **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a very short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
+* **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
+
+See "Authoring Styles" below for more information.
+
+### Authoring Styles
+
+[to be written]
 
 ### Best Practices
 
