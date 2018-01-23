@@ -37,6 +37,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 Files directly related to components are contained in the folders below:
 
+```
 app
 +-- css
     +-- _[component].scss
@@ -56,6 +57,7 @@ app
         +-- [object.jsx]
 +-- scss
     +-- [_component.scss]
+```
 
 ### Best Practices
 
