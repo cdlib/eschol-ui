@@ -37,6 +37,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 Within this repository, the files and folders directly related to creating and maintaining UI elements are listed below. All other files and folders can be ignored:
 
+```
 app
 ├── images
 ├── jsx
@@ -53,6 +54,7 @@ app
     ├── _mixins.scss
     ├── _variables.scss
     └── main.scss
+```
 
 ### Best Practices
 
