@@ -35,27 +35,24 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 ### Organization of Assets
 
-Files directly related to components are contained in the folders below:
+Within this repository, the files and folders directly related to creating and maintaining UI elements are listed below. All other files and folders can be ignored:
 
 app
-+-- css
-    +-- _[component].scss
-    +-- _mixins.scss
-    +-- _resets.scss
-    +-- _variables.scss
-    +-- main.scss
-+-- images
-+-- jsx
-    +-- components
-        +-- [component.jsx]
-    +-- display
-        +-- [display.jsx]
-    +-- layouts
-        +-- [layout.jsx]
-    +-- objects
-        +-- [object.jsx]
-+-- scss
-    +-- [_component.scss]
+├── images
+├── jsx
+|   ├── components
+|   |   └── [component].jsx
+|   ├── display
+|   |   └── [display].jsx
+|   ├── layouts
+|   |   └── [layout].jsx
+|   └── objects
+|       └── [object].jsx
+└── scss
+    ├── _[component or object].scss
+    ├── _mixins.scss
+    ├── _variables.scss
+    └── main.scss
 
 ### Best Practices
 
