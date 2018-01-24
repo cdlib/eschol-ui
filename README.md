@@ -56,7 +56,7 @@ app
 
 #### Components ####
 
-Components are distinct pieces of the UI. They are not related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
+Components make up the largest gorup of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
 A simple example using the Well component:
 
@@ -153,11 +153,11 @@ module.exports = TextlinkObj;
 
 #### Styles ####
 
-Sass files within the scss folder contain all component and object CSS. They include:
+Sass files within the scss folder contain all project CSS. They include:
 
-* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files. Component CSS selectors are prepended with "c-", while object selectors use "o-".
+* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files. Component CSS selectors are prepended with `-c` while object CSS selectors use `-o`.
 
-* **\_utilities.scss** contain large chunks of styles that are included across many components and objects. They are written as Sass Placeholders and Mixins and are prepended with "u-".
+* **\_utilities.scss** contain large chunks of styles that are included across many components and objects. They are written as Sass Placeholders and Mixins and are prepended with `-u`.
 
 * **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within utilities.scss.
 
@@ -165,15 +165,82 @@ Sass files within the scss folder contain all component and object CSS. They inc
 
 See below for more information about authoring styles.
 
-### Authoring Styles
+### Naming Styles
 
-Component CSS is constructed using a modified form of the [BEM method](https://css-tricks.com/bem-101). While BEM typically recommends the naming of all elements, those within the UI library are sometimes not named. Instead, for brevity, they are selected with a matching "type" selector, as long as they are simple child HTML elements within the component (see simple example below).
+For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
 
-Parent selectors are named as classes; never as IDs.
+CSS selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. Components and objects always have a block, while elements and modifiers may be optional.
 
-Child selectors are often nested within parent selectors using Sass nesting.
+The block name is also prepended with either a `-c`, `-o`, or `-u` to designate it as a component, object, or utility.
 
-CSS declarations are often written "mobile first", where they get repeated and overridden at a breakpoint.
+Here is a plain example of a component named with BEM:
+
+```scss
+
+.c-block {
+  [property: value;]
+}
+
+.c-block__element {
+  [property: value;]
+}
+
+.c-block__element--modifier {
+  [property: value;]
+}
+```
+
+### Nested Styles ###
+
+Selectors in this UI library often contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3) (not CSS).
+
+The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as Sass mixins and specified by Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
+
+Media query rules are organized in a "mobile-first" fashion, in that each one in the CSS declaration adds to or overrides the CSS written above it.
+
+For example, with this component named "flower", the background is initially rendered as green on a small screen, then changes color to yellow, then red as the screen size gets wider:
+
+```scss
+
+.c-flower {
+  background: green;
+
+  @include bp(screen1) {
+    background: yellow;
+  }
+
+  @include bp(screen2) {
+    background: red;
+  }
+
+}
+```
+
+The other common set of nested parts are [CSS combinators](https://www.w3schools.com/css/css_combinators.asp). These selectors typically target specific HTML elements within the component/object.
+
+For example, the nested `a` in the flower component will render all links within the component as blue:
+
+```scss
+
+.c-flower {
+  background: green;
+
+  @include bp(screen1) {
+    background: yellow;
+  }
+
+  @include bp(screen2) {
+    background: red;
+  }
+
+  a {
+    color: blue;
+  }
+
+}
+```
+
+Other, less-common nested parts in the UI library include [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
 
 A simple example using the Well component, including a `screen2` breakpoint and a nested `a` type selector that selects all anchors within the component:
 
