@@ -109,7 +109,9 @@ Layout files each render a single page that include many ojects, components, and
 
 #### Objects ####
 
-Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components. Unlike component files, object files are not typically imported into components; only their styles as Sass Placeholders (see "Authoring Styles" below). Likewise, object files often contain a few iterations of the same element to highlight slightly different variations or styles, unlike components.
+Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
+
+Object files are not typically imported into components directly; only their styles as Sass Placeholders (see [Authoring Styles](https://github.com/cdlib/eschol-ui#authoring-styles) below). This allows object files to contain a few iterations of the same element to highlight slightly different variations or styles, unlike components.
 
 An example using the Text Link Object:
 
@@ -161,12 +163,40 @@ Sass files within the scss folder contain all component and object CSS. They inc
 
 * **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
 
-See "Authoring Styles" below for more information.
+See below for more information about authoring styles.
 
 ### Authoring Styles
 
-[to be written]
+Component CSS is constructed by nesting selectors
+CSS selectors are constructed as CSS classes using a modified form of the [BEM method](https://css-tricks.com/bem-101). While BEM typically recommends the naming of all elements, elements within the UI library are sometimes not named. Instead, they are selected with a matching "type" selector, as long as they are child HTML elements within the component (see simple example below).
+
+Child selectors are often nested within parent selectors using Sass nesting.
+
+CSS declarations are often written "mobile first", where they get repeated and overridden at a breakpoint.
+
+A simple example using the Well component, including a `screen2` breakpoint and a nested `a` type selector that selects all anchors within the component:
+
+```scss
+// ##### Content Well Component ##### //
+
+.c-well {
+  margin-bottom: $spacing-md;
+  padding: $spacing-sm;
+  background-color: $color-light-teal;
+
+  @include bp(screen2) {
+    padding: $spacing-md;
+  }
+
+  a {
+    @extend %o-textlink__secondary;
+  }
+
+}
+```
 
 ### Best Practices
 
-[to be written]
+* Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
+
+* Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass.
