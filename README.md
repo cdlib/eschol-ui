@@ -167,7 +167,7 @@ See below for more information about authoring styles.
 
 ### Authoring Styles
 
-Component CSS is constructed using a modified form of the [BEM method](https://css-tricks.com/bem-101). While BEM typically recommends the naming of all elements, elements within the UI library are sometimes not named. Instead, they are selected with a matching "type" selector, as long as they are child HTML elements within the component (see simple example below).
+Component CSS is constructed using a modified form of the [BEM method](https://css-tricks.com/bem-101). While BEM typically recommends the naming of all elements, those within the UI library are sometimes not named. Instead, for brevity, they are selected with a matching "type" selector, as long as they are simple child HTML elements within the component (see simple example below).
 
 Parent selectors are named as classes; never as IDs.
 
