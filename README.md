@@ -56,106 +56,33 @@ app
 
 Components make up the largest gorup of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
-A simple example using the Well component:
-
-```javascript
-// ##### Content Well Component ##### //
-
-import React from 'react'
-
-class WellComp extends React.Component {
-  render() {
-    return (
-      <div className="c-well">
-        Here is the well component. <a href="">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit. Totam delectus adipisci quis dicta consectetur, nesciunt quam, amet soluta.
-      </div>
-    )
-  }
-}
-
-module.exports = WellComp;
-```
+Component files are named in Pascal case, starting with the component name, and ending with "Comp". For example, see the [Well Component](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/components/WellComp.jsx).
 
 ### Display
 
 The display folder contains files that each import a single component or object for rendering on a single page within the UI library, for reference. Occasionally, sample content is included for highlighting the proof of concept. These files are not included in the build process.
 
-A simple display file using the Well component:
-
-```javascript
-// ##### Content Well Display ##### //
-
-import React from 'react'
-import WellComp from '../components/WellComp.jsx'
-
-class WellDisp extends React.Component {
-  render() {
-    return (
-      <div>
-         <WellComp />
-      </div>
-    )
-  }
-}
-
-module.exports = WellDisp;
-```
+Display files are named in Pascal case, starting with the display name, and ending with "Disp". For example, see the [Checkbox Display](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/display/CheckboxDisp.jsx).
 
 ### Layouts
 
 Layout files each render a single page that include many ojects, components, and sample content.
 
+Object files are named in Pascal case, starting with the layout name, and ending with "Layout". For example, see the [Home Layout](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/layouts/HomeLayout.jsx).
+
 ### Objects
 
 Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
 
-Object files are not typically imported into components directly; only their styles as Sass Placeholders (see [Sass Placeholders](https://github.com/cdlib/eschol-ui#sass-placeholders) below).
-
-An example using the Text Link Object:
-
-```javascript
-import React from 'react'
-
-class TextlinkObj extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <a href="" className="o-textlink__primary">Primary Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__secondary">Secondary Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__black">Black Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__white">White Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__left-icon">Left Icon Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__external-link">External Link</a>
-        </div>
-        <div>
-          <a href="" className="o-textlink__right-arrow">Right Arrow</a>
-        </div>
-      </div>
-    )
-  }
-}
-
-module.exports = TextlinkObj;
-```
+Object files are named in Pascal case, starting with the object name, and ending with "Obj". For example, see the [Text Link Object](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/objects/TextlinkObj.jsx).
 
 ### Styles
 
 Sass files within the scss folder contain all project CSS. They include:
 
-* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files. Component CSS selectors are prepended with `-c` while object CSS selectors use `-o`.
+* **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files.
 
-* **\_utilities.scss** contain large chunks of styles that are included across many components and objects. They are written as Sass Placeholders and Mixins and are prepended with `-u`.
+* **\_utilities.scss** contain large chunks of styles that are included across many components and objects. They are written as Sass Placeholders and Mixins.
 
 * **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within utilities.scss.
 
@@ -169,9 +96,9 @@ For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3scho
 
 ### Naming Styles
 
-CSS selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. Components and objects always have a block, while elements and modifiers may be optional.
+CSS selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. In the UI library, components and objects always feature a BEM block, while BEM elements and modifiers may be optional.
 
-In this UI library, the block is named after the object, component, or utility and is prepended with either a `-c`, `-o`, or `-u` to designate it as such.
+In the UI library, the block is named after the object, component, or utility and is prepended with either a `-c`, `-o`, or `-u` to designate it as such.
 
 Here is a plain example of a component named "flower" with BEM:
 
@@ -196,7 +123,7 @@ Selectors in this UI library often contain nested parts - [a feature of Sass](ht
 
 #### Media Query Rules
 
-The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as Sass mixins and specified by Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
+The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as [Sass mixins](https://github.com/cdlib/eschol-ui#sass-mixins) and include Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
 
 Media query rules are organized in a "mobile-first" fashion, in that each one in the CSS declaration adds to or overrides the CSS written above it.
 
@@ -296,7 +223,7 @@ This would produce two placeholder classes - `%o-object__number-1` and `%o-objec
 
 If we wanted to apply the object styles of `%o-object__number-2` within a component, that could look like this:
 
-```
+```scss
 .c-flower__element {
   @extend: %o-object__number-2;
   font-weight: bold;
@@ -323,7 +250,18 @@ Sass mixins are similar as placeholders - they contain one or more CSS declarati
 
 The most common application of mixins in the UI library are [media query rules](https://github.com/cdlib/eschol-ui#media-query-rules).
 
-In the UI library, mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
+Mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
+
+## Updating an Elements's HTML or Styles
+
+The component, `c-subheader` will be used as an example.
+
+1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
+2. Browse to the eScholarship page containing the subheader element.
+3. From your browser, open your Developer Tools.
+4. Using the inspector tool, highlight the element's code block and confirm you are highlighting the subheader. Note the HTML class attribute name, `c-subheader`.
+5. In the UI library, open the **jsx** and **scss** pages that make up the subheader component - **SubHeaderComp.jsx** and **\_subheader.scss**
+6. [more to come]
 
 ## Best Practices
 
