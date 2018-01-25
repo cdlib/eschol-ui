@@ -163,7 +163,7 @@ Sass files within the scss folder contain all project CSS. They include:
 
 See below for more information about authoring styles.
 
-## How Element Styles are Constructed
+## How Styles are Constructed
 
 For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
 
@@ -190,9 +190,11 @@ Here is a plain example of a component named "flower" with BEM:
 }
 ```
 
-### Nested Styles ###
+### Nesting Styles
 
 Selectors in this UI library often contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3).
+
+#### Media Query Rules
 
 The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as Sass mixins and specified by Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
 
@@ -215,6 +217,8 @@ For example, with the "flower" component, the background is initially rendered a
 
 }
 ```
+
+#### CSS Combinators
 
 The other common set of nested parts are [CSS combinators](https://www.w3schools.com/css/css_combinators.asp). These selectors typically target specific HTML elements within the component/object.
 
@@ -242,11 +246,15 @@ For example, the nested `a` in the flower component will render all links within
 
 Other, less-common nested parts in the UI library include [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp).
 
-### Chunks of Styles with Sass Placeholders and Mixins
+### Chunks of Common Styles
 
 Components and objects frequently have chunks of common styles used within them. This is made possible by Sass placeholders and mixins.
 
-A Sass placeholder is written as a selector starting with a percent sign, then "extended" into another selector. For example, `%c-flower` is the placeholder and its styles get added to `.c-flower__pedals`:
+#### Sass Placeholders
+
+A Sass placeholder looks like a normal CSS class, except that it starts with a percent sign instead of a period, like this: `%c-block`. After the placeholder class, a regular class-based selector will follow, containing the Sass directive `@extend` with the name of the placeholder class.
+
+For example, `%c-flower` is the placeholder and its styles get applied to `.c-flower__pedals`:
 
 ```scss
 %c-flower {
@@ -258,15 +266,64 @@ A Sass placeholder is written as a selector starting with a percent sign, then "
 }
 ```
 
-This gets compiled to the following CSS:
+Placeholders are especially common in UI library object CSS. Within a single object, multiple placeholders are often defined, so that their various styles can be extended out to other components. Sometimes, a placeholder will extend another set of placeholders. For example:
 
-```css
-.c-flower__pedals {
+```scss
+%o-objects {
+  margin: 15px;
+}
+
+%o-object__number-1 {
+  @extend: %o-objects;
   background: red;
+}
+
+.o-object__number-1 {
+  @extend: %o-object__number-1;
+}
+
+%o-object__number-2 {
+  @extend: %o-objects;
+  background: blue;
+}
+
+.o-object__number-2 {
+  @extend: %o-object__number-2;
 }
 ```
 
-[more to come]
+This would produce two placeholder classes - `%o-object__number-1` and `%o-object__number-2` - that both contain 15 pixels of margin and either a red or blue background, depending on the placeholder.
+
+If we wanted to apply the styles of `%o-object__number-2` within a component, that could look like this:
+
+```
+.c-flower__element {
+  @extend: %o-object__number-2;
+  font-weight: bold;
+}
+```
+
+This would produce a class `.c-flower__element` with 15 pixels of margin, a blue background, and a bold font.
+
+For a real-world example of this pattern, see the [Text Link object Sass](https://github.com/cdlib/eschol-ui/blob/master/app/scss/_textlink.scss).
+
+#### Sass Mixins
+
+Sass mixins are similar as placeholders - they contain one or more CSS declarations that can get applied in many places in the UI. However, mixins are written a bit differently, like this:
+
+```scss
+@mixin: flower() {
+  background: red;
+}
+
+.c-flower__pedals {
+  @include: flower();
+}
+```
+
+The most common application of mixins in the UI library are media query rules.
+
+In the UI library, mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in **\_utilities.scss**.
 
 ## Best Practices
 
