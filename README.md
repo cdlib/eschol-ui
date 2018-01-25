@@ -165,7 +165,7 @@ See below for more information about authoring styles.
 
 ## How Element Styles are Constructed
 
-For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
+For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
 
 ### Naming Styles
 
@@ -192,7 +192,7 @@ Here is a plain example of a component named "flower" with BEM:
 
 ### Nested Styles ###
 
-Selectors in this UI library often contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3) (not CSS).
+Selectors in this UI library often contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3).
 
 The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as Sass mixins and specified by Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
 
@@ -244,7 +244,29 @@ Other, less-common nested parts in the UI library include [pseudo-classes](https
 
 ### Chunks of Styles with Sass Placeholders and Mixins
 
-[to go here]
+Components and objects frequently have chunks of common styles used within them. This is made possible by Sass placeholders and mixins.
+
+A Sass placeholder is written as a selector starting with a percent sign, then "extended" into another selector. For example, `%c-flower` is the placeholder and its styles get added to `.c-flower__pedals`:
+
+```scss
+%c-flower {
+  background: red;
+}
+
+.c-flower__pedals {
+  @extend: %c-flower;
+}
+```
+
+This gets compiled to the following CSS:
+
+```css
+.c-flower__pedals {
+  background: red;
+}
+```
+
+[more to come]
 
 ## Best Practices
 
