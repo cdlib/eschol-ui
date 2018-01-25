@@ -257,11 +257,34 @@ Mixins typically contain complex CSS declarations, sass variables, and logic for
 The component, `c-subheader` will be used as an example.
 
 1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
-2. Browse to the eScholarship page containing the subheader element.
-3. From your browser, open your Developer Tools.
-4. Using the inspector tool, highlight the element's code block and confirm you are highlighting the subheader. Note the HTML class attribute name, `c-subheader`.
-5. In the UI library, open the **jsx** and **scss** pages that make up the subheader component - **SubHeaderComp.jsx** and **\_subheader.scss**
-6. [more to come]
+2. Browse to the eScholarship display page containing the subheader element.
+3. In the UI library, open the **jsx** and **scss** files related to the subheader component. By understanding the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets), these two files will be **SubHeaderComp.jsx** and **\_subheader.scss**
+4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
+5. Save your changes and review them on the display page as they are automatically applied.
+6. If everything looks good, commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
+7. Pull the commited UI library changes and reintegrate the UI library changes within jSchol.
+
+## Integrating UI Library Updates into jSchol Project
+
+[this needs review by the jSchol team]
+
+1. Pull any updated UI library CSS from the eschol-ui repo.
+2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
+3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the four browsers officially supported by the project:
+...* Chrome (latest version)
+...* Firefox (latest version)
+...* Internet Explorer 11 (via CrossBrowserTesting.com)
+...* Safari (latest version)
+
+## Troubleshooting Elements in Layouts
+
+When elements are not rendering properly in layouts, begin troubleshooting by following these steps:
+
+1. Browse to the eScholarship layout page containing the rendering issues.
+2. Open your browser's developer tools.
+3. Using the inspector tool, highlight the element's problematic HTML.
+
+[more to come]
 
 ## Best Practices
 
