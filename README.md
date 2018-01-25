@@ -271,11 +271,10 @@ The component, `c-subheader` will be used as an example.
 1. Pull any updated UI library CSS from the eschol-ui repo.
 2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
 3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the four browsers officially supported by the project:
-
-..* Chrome (latest version)
-..* Firefox (latest version)
-..* Internet Explorer 11 (via CrossBrowserTesting.com)
-..* Safari (latest version)
+   * Chrome (latest version)
+   * Firefox (latest version)
+   * Internet Explorer 11 (via CrossBrowserTesting.com)
+   * Safari (latest version)
 
 ## Troubleshooting Elements in Layouts
 
