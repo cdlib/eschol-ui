@@ -29,9 +29,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 * After adding new images to **/images**, run `$ gulp minify-images` to optimize them
 
-## Developing UI Elements
-
-### Library Assets
+## Getting Familiar with the Library's Assets
 
 Within this repository, the files and folders directly related to creating and maintaining UI elements are listed below. All other files and folders can be ignored:
 
@@ -54,7 +52,7 @@ app
     └── main.scss
 ```
 
-#### Components ####
+### Components
 
 Components make up the largest gorup of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
@@ -78,7 +76,7 @@ class WellComp extends React.Component {
 module.exports = WellComp;
 ```
 
-#### Display ####
+### Display
 
 The display folder contains files that each import a single component or object for rendering on a single page within the UI library, for reference. Occasionally, sample content is included for highlighting the proof of concept. These files are not included in the build process.
 
@@ -103,11 +101,11 @@ class WellDisp extends React.Component {
 module.exports = WellDisp;
 ```
 
-#### Layouts ####
+### Layouts
 
 Layout files each render a single page that include many ojects, components, and sample content.
 
-#### Objects ####
+### Objects
 
 Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
 
@@ -151,7 +149,7 @@ class TextlinkObj extends React.Component {
 module.exports = TextlinkObj;
 ```
 
-#### Styles ####
+### Styles
 
 Sass files within the scss folder contain all project CSS. They include:
 
@@ -165,28 +163,30 @@ Sass files within the scss folder contain all project CSS. They include:
 
 See below for more information about authoring styles.
 
-### Naming Styles
+## How Element Styles are Constructed
 
 For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
 
+### Naming Styles
+
 CSS selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. Components and objects always have a block, while elements and modifiers may be optional.
 
-The block name is also prepended with either a `-c`, `-o`, or `-u` to designate it as a component, object, or utility.
+In this UI library, the block is named after the object, component, or utility and is prepended with either a `-c`, `-o`, or `-u` to designate it as such.
 
-Here is a plain example of a component named with BEM:
+Here is a plain example of a component named "flower" with BEM:
 
 ```scss
 
-.c-block {
-  [property: value;]
+.c-flower {
+  property: value;
 }
 
-.c-block__element {
-  [property: value;]
+.c-flower__element {
+  property: value;
 }
 
-.c-block__element--modifier {
-  [property: value;]
+.c-flower__element--modifier {
+  property: value;
 }
 ```
 
@@ -198,7 +198,7 @@ The most common nested parts are media query rules, which allow changes to compo
 
 Media query rules are organized in a "mobile-first" fashion, in that each one in the CSS declaration adds to or overrides the CSS written above it.
 
-For example, with this component named "flower", the background is initially rendered as green on a small screen, then changes color to yellow, then red as the screen size gets wider:
+For example, with the "flower" component, the background is initially rendered as green on a small screen, then changes color to yellow, then red as the screen size gets wider:
 
 ```scss
 
@@ -240,30 +240,13 @@ For example, the nested `a` in the flower component will render all links within
 }
 ```
 
-Other, less-common nested parts in the UI library include [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
+Other, less-common nested parts in the UI library include [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp).
 
-A simple example using the Well component, including a `screen2` breakpoint and a nested `a` type selector that selects all anchors within the component:
+### Chunks of Styles with Sass Placeholders and Mixins
 
-```scss
-// ##### Content Well Component ##### //
+[to go here]
 
-.c-well {
-  margin-bottom: $spacing-md;
-  padding: $spacing-sm;
-  background-color: $color-light-teal;
-
-  @include bp(screen2) {
-    padding: $spacing-md;
-  }
-
-  a {
-    @extend %o-textlink__secondary;
-  }
-
-}
-```
-
-### Best Practices
+## Best Practices
 
 * Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
 
