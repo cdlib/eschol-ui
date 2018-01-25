@@ -109,7 +109,7 @@ Layout files each render a single page that include many ojects, components, and
 
 Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
 
-Object files are not typically imported into components directly; only their styles as Sass Placeholders (see [Authoring Styles](https://github.com/cdlib/eschol-ui#authoring-styles) below). This allows object files to contain a few iterations of the same element to highlight slightly different variations or styles, unlike components.
+Object files are not typically imported into components directly; only their styles as Sass Placeholders (see [Sass Placeholders](https://github.com/cdlib/eschol-ui#sass-placeholders) below).
 
 An example using the Text Link Object:
 
@@ -252,9 +252,9 @@ Components and objects frequently have chunks of common styles used within them.
 
 #### Sass Placeholders
 
-A Sass placeholder looks like a normal CSS class, except that it starts with a percent sign instead of a period, like this: `%c-block`. After the placeholder class, a regular class-based selector will follow, containing the Sass directive `@extend` with the name of the placeholder class.
+A Sass placeholder looks like a normal CSS class, except that it starts with a percent sign instead of a period, like this: `%c-block`. It gets applied to regular, class-based selectors by using the Sass directive `@extend` with the name of the placeholder class.
 
-For example, `%c-flower` is the placeholder and its styles get applied to `.c-flower__pedals`:
+For example, `%c-flower` is the placeholder and its background style gets applied to `.c-flower__pedals`:
 
 ```scss
 %c-flower {
@@ -266,7 +266,7 @@ For example, `%c-flower` is the placeholder and its styles get applied to `.c-fl
 }
 ```
 
-Placeholders are especially common in UI library object CSS. Within a single object, multiple placeholders are often defined, so that their various styles can be extended out to other components. Sometimes, a placeholder will extend another set of placeholders. For example:
+Placeholders are especially common in UI library object CSS. Within a single object, multiple placeholders are often defined, so that their various styles can be extended out to other component CSS. Sometimes, a placeholder will extend another set of placeholders. For example:
 
 ```scss
 %o-objects {
@@ -294,7 +294,7 @@ Placeholders are especially common in UI library object CSS. Within a single obj
 
 This would produce two placeholder classes - `%o-object__number-1` and `%o-object__number-2` - that both contain 15 pixels of margin and either a red or blue background, depending on the placeholder.
 
-If we wanted to apply the styles of `%o-object__number-2` within a component, that could look like this:
+If we wanted to apply the object styles of `%o-object__number-2` within a component, that could look like this:
 
 ```
 .c-flower__element {
@@ -312,18 +312,18 @@ For a real-world example of this pattern, see the [Text Link object Sass](https:
 Sass mixins are similar as placeholders - they contain one or more CSS declarations that can get applied in many places in the UI. However, mixins are written a bit differently, like this:
 
 ```scss
-@mixin: flower() {
+@mixin flower() {
   background: red;
 }
 
 .c-flower__pedals {
-  @include: flower();
+  @include flower();
 }
 ```
 
-The most common application of mixins in the UI library are media query rules.
+The most common application of mixins in the UI library are [media query rules](https://github.com/cdlib/eschol-ui#media-query-rules).
 
-In the UI library, mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in **\_utilities.scss**.
+In the UI library, mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
 
 ## Best Practices
 
