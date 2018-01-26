@@ -268,8 +268,8 @@ UI elements [do not need to look exactly the same](http://dowebsitesneedtolookex
 ## Creating a New Element
 
 Create the following 3 files:
-1. Object file `[name]Obj` or component file `[nameComp]`
-2. Display file `[name]Disp`
+1. Object JSX file `[name]Obj.jsx` or component file `[name]Comp.jsx`
+2. Display JSX file `[name]Disp.jsx`
 3. SCSS file using object or component name: `\_[name].scss`
 
 Update the following 4 files with these changes:
