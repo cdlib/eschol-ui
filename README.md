@@ -267,15 +267,79 @@ UI elements [do not need to look exactly the same](http://dowebsitesneedtolookex
 
 ## Creating a New Element
 
+Throughout these steps, replace the word, "new" with your component name.
+
 Create the following 3 files:
-1. Object JSX file `[name]Obj.jsx` or component file `[name]Comp.jsx`
-2. Display JSX file `[name]Disp.jsx`
-3. SCSS file using object or component name: `\_[name].scss`
 
-Update the following 4 files with these changes:
-[1, 2, 3, 4]
+1. For a new component, create a blank JSX file within the **components/** folder and rename it to `NewComp.jsx`. For a new object, do the same procedure, except from within the **object/** folder.
+2. Create a blank JSX file within the **display/** folder and rename it with the new component or object name `NewDisp.jsx`
+3. Create a blank SCSS file within **scss/** folder and rename it to the object or component name, beginning with an underscore: `\_new.scss`
+4. Open `NewComp.jsx` and copy/paste the following code:
+```javascript
+// ##### New Component ##### //
 
-Continue to Step 3 in [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-elementss-html-or-styles).
+import React from 'react'
+
+class NewComp extends React.Component {
+  render() {
+    return (
+      <div className="c-new">
+        New component content to go here
+      </div>
+    )
+  }
+}
+
+module.exports = NewComp;
+```
+5. Open `NewDisp.jsx` and copy/paste the following code:
+```javascript
+// ##### New Display ##### //
+
+import React from 'react'
+import NewComp from '../components/NewComp.jsx'
+
+class NewDisp extends React.Component {
+  render() {
+    return (
+      <div>
+        <NewComp />
+      </div>
+    )
+  }
+}
+
+module.exports = NewDisp;
+```
+6. Open `\_new.scss` and copy/paste the following code:
+```scss
+// ##### New Component ##### //
+
+.c-new {
+  border: $bgreen;
+}
+```
+
+Update the following 3 files with these changes:
+
+1. Open `main.scss` within the **scss** folder and add a new import rule referring to `\_new.scss`:
+```scss
+@import 'new';
+```
+2. Open `Home.jsx` and add a UI library link to the component:
+```html
+<li><a href="#new">New</a></li>
+```
+3. Open `app.jsx`, import the display, and and add a new route:
+```javascript
+import AlertDisp from './display/NewDisp.jsx'
+...
+<Route path="/new" component={NewDisp} />
+```
+Upon saving `app.jsx`, the UI library should automatically rebundle via Gulp without errors. If you get errors, then double-check your filenames and JSX component names.
+4. From the UI library home page, click the "new" link to browse to the new component.
+
+You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component into the UI library with a stylesheet.
 
 ## Updating an Existing Elements's HTML or Styles
 
