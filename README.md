@@ -3,6 +3,18 @@
 
 This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is built upon the React framework and developed using a customized Gulp toolkit.
 
+**Content below is currently being edited and may be incomplete or innacurate.**
+
+* [Using the Gulp Toolkit](https://github.com/cdlib/eschol-ui#using-the-gulp-toolkit)
+* [Getting Familiar with the Library's Assets](https://github.com/cdlib/eschol-ui#getting-familiar-with-the librarys-assets)
+* [Supported Browsers](https://github.com/cdlib/eschol-ui#supported-browsers)
+* [Creating a New Element](https://github.com/cdlib/eschol-ui#creating-a-new-element)
+* [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-existing-element)
+* [Integrating UI Library into jSchol Project](https://github.com/cdlib/eschol-ui#integrating ui-library-into-jschol-project)
+* [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations)
+* [Authoring Styles](https://github.com/cdlib/eschol-ui#authoring-styles)
+* [Best Practices](https://github.com/cdlib/eschol-ui#best-practices)
+
 ## Using the Gulp Toolkit
 
 ### Software Requirements
@@ -88,9 +100,130 @@ Sass files within the scss folder contain all project CSS. They include:
 
 * **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
 
-See below for more information about authoring styles.
+See below for more information about [authoring styles](https://github.com/cdlib/eschol-ui#authoring-styles).
 
-## How Styles are Constructed
+## Supported Browsers
+
+The following browsers are officially supported in the UI library:
+
+* Chrome (last 2 versions)
+* Firefox (last 2 versions)
+* Internet Explorer 11 (test via CrossBrowserTesting.com)
+* Safari (last 2 versions)
+
+These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Gulp development and build processes.
+
+UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
+
+## Creating a New Element
+
+Throughout these steps, replace the word, "new" in the filenames and code with your component name.
+
+Create the following 3 files:
+
+1. For a new component, create a blank JSX file within the **components/** folder and rename it to **NewComp.jsx**. For a new object, do the same procedure, except from within the **object/** folder.
+2. Create a blank JSX file within the **display/** folder and rename it with the new component or object name **NewDisp.jsx**
+3. Create a blank SCSS file within **scss/** folder and rename it to the object or component name, beginning with an underscore: **\_new.scss**
+4. Open **NewComp.jsx** and copy/paste the following code:
+```javascript
+// ##### New Component ##### //
+
+import React from 'react'
+
+class NewComp extends React.Component {
+  render() {
+    return (
+      <div className="c-new">
+        New component content to go here
+      </div>
+    )
+  }
+}
+
+module.exports = NewComp;
+```
+5. Open `NewDisp.jsx` and copy/paste the following code:
+```javascript
+// ##### New Display ##### //
+
+import React from 'react'
+import NewComp from '../components/NewComp.jsx'
+
+class NewDisp extends React.Component {
+  render() {
+    return (
+      <div>
+        <NewComp />
+      </div>
+    )
+  }
+}
+
+module.exports = NewDisp;
+```
+6. Open **\_new.scss** and copy/paste the following code:
+```scss
+// ##### New Component ##### //
+
+.c-new {
+  border: $bgreen;
+}
+```
+
+Update the following 3 files with these changes:
+
+1. Open **main.scss** within the **scss** folder and add a new import rule referring to **\_new.scss**:
+```scss
+@import 'new';
+```
+2. Open **Home.jsx** and add a UI library link to the component:
+```html
+<li><a href="#new">New</a></li>
+```
+3. Open **app.jsx**, import the display, and and add a new route:
+```javascript
+import AlertDisp from './display/NewDisp.jsx'
+...
+<Route path="/new" component={NewDisp} />
+```
+Upon saving **app.jsx** after adding these changes, the UI library should automatically rebuild without errors. If you get errors, then double-check your filenames and JSX component names.
+
+4. From the UI library home page, click the "new" link to browse to the new component.
+
+You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component and connected stylesheet into the UI library.
+
+## Updating an Existing Element
+
+The component, `c-subheader` will be used as an example.
+
+1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
+2. From the UI library home page, browse to the subheader element.
+3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
+4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
+5. Save your changes and review them on the display page as they are automatically applied.
+6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
+7. Pull the commited UI library changes and reintegrate them into jSchol.
+
+## Integrating UI Library into jSchol Project
+
+[the jSchol details below need clarification by the jSchol team]
+
+1. Pull any updated UI library CSS from the eschol-ui repo.
+2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
+3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
+
+Any problems? Continue to [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations).
+
+## Troubleshooting jSchol Integrations
+
+When something doesn't look right in the UI from the jSchol project or eScholarship website, follow these steps:
+
+1. Visually compare the UI between the UI library and jSchol from the same browser. Is the problem appearing in both projects?
+   * If it's in both projects, then the problem is within the UI library. Fix the problem there, then reintegrate into jSchol.
+   * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 3:
+2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
+
+## Authoring Styles
 
 For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
 
@@ -251,127 +384,6 @@ Sass mixins are similar as placeholders - they contain one or more CSS declarati
 The most common application of mixins in the UI library are [media query rules](https://github.com/cdlib/eschol-ui#media-query-rules).
 
 Mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
-
-## Supported Browsers
-
-The following browsers are officially supported in the UI library:
-
-* Chrome (last 2 versions)
-* Firefox (last 2 versions)
-* Internet Explorer 11 (test via CrossBrowserTesting.com)
-* Safari (last 2 versions)
-
-These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Gulp development and build processes.
-
-UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
-
-## Creating a New Element
-
-Throughout these steps, replace the word, "new" in the filenames and code with your component name.
-
-Create the following 3 files:
-
-1. For a new component, create a blank JSX file within the **components/** folder and rename it to **NewComp.jsx**. For a new object, do the same procedure, except from within the **object/** folder.
-2. Create a blank JSX file within the **display/** folder and rename it with the new component or object name **NewDisp.jsx**
-3. Create a blank SCSS file within **scss/** folder and rename it to the object or component name, beginning with an underscore: **\_new.scss**
-4. Open **NewComp.jsx** and copy/paste the following code:
-```javascript
-// ##### New Component ##### //
-
-import React from 'react'
-
-class NewComp extends React.Component {
-  render() {
-    return (
-      <div className="c-new">
-        New component content to go here
-      </div>
-    )
-  }
-}
-
-module.exports = NewComp;
-```
-5. Open `NewDisp.jsx` and copy/paste the following code:
-```javascript
-// ##### New Display ##### //
-
-import React from 'react'
-import NewComp from '../components/NewComp.jsx'
-
-class NewDisp extends React.Component {
-  render() {
-    return (
-      <div>
-        <NewComp />
-      </div>
-    )
-  }
-}
-
-module.exports = NewDisp;
-```
-6. Open **\_new.scss** and copy/paste the following code:
-```scss
-// ##### New Component ##### //
-
-.c-new {
-  border: $bgreen;
-}
-```
-
-Update the following 3 files with these changes:
-
-1. Open **main.scss** within the **scss** folder and add a new import rule referring to **\_new.scss**:
-```scss
-@import 'new';
-```
-2. Open **Home.jsx** and add a UI library link to the component:
-```html
-<li><a href="#new">New</a></li>
-```
-3. Open **app.jsx**, import the display, and and add a new route:
-```javascript
-import AlertDisp from './display/NewDisp.jsx'
-...
-<Route path="/new" component={NewDisp} />
-```
-Upon saving **app.jsx** after adding these changes, the UI library should automatically rebuild without errors. If you get errors, then double-check your filenames and JSX component names.
-
-4. From the UI library home page, click the "new" link to browse to the new component.
-
-You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component and connected stylesheet into the UI library.
-
-## Updating an Existing Elements's HTML or Styles
-
-The component, `c-subheader` will be used as an example.
-
-1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
-2. From the UI library home page, browse to the subheader element.
-3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
-4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
-5. Save your changes and review them on the display page as they are automatically applied.
-6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
-7. Pull the commited UI library changes and reintegrate them into jSchol.
-
-## Integrating UI Library Updates into jSchol Project
-
-[the jSchol details below need clarification by the jSchol team]
-
-1. Pull any updated UI library CSS from the eschol-ui repo.
-2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
-3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
-
-Any problems? Continue to [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations).
-
-## Troubleshooting jSchol Integrations
-
-When something doesn't look right in the UI from the jSchol project or eScholarship website, follow these steps:
-
-1. Visually compare the UI between the UI library and jSchol from the same browser. Is the problem appearing in both projects?
-   * If it's in both projects, then the problem is within the UI library. Fix the problem there, then reintegrate into jSchol.
-   * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 3:
-2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
 
 ## Best Practices
 
