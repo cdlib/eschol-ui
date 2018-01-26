@@ -252,39 +252,49 @@ The most common application of mixins in the UI library are [media query rules](
 
 Mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
 
+## Supported Browsers
+
+The following browsers are officially supported in the UI library:
+
+* Chrome (last 2 versions)
+* Firefox (last 2 versions)
+* Internet Explorer 11 (test via CrossBrowserTesting.com)
+* Safari (last 2 versions)
+
+These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63)
+
+UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
+
 ## Updating an Elements's HTML or Styles
 
 The component, `c-subheader` will be used as an example.
 
 1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
-2. Browse to the eScholarship display page containing the subheader element.
-3. In the UI library, open the **jsx** and **scss** files related to the subheader component. By understanding the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets), these two files will be **SubHeaderComp.jsx** and **\_subheader.scss**
+2. From the UI library home page, browse to the subheader element.
+3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
 4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
 5. Save your changes and review them on the display page as they are automatically applied.
-6. If everything looks good, commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
-7. Pull the commited UI library changes and reintegrate the UI library changes within jSchol.
+6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
+7. Pull the commited UI library changes and reintegrate them into jSchol.
 
 ## Integrating UI Library Updates into jSchol Project
 
-[this needs review by the jSchol team]
+[the jSchol details need review by the jSchol team]
 
 1. Pull any updated UI library CSS from the eschol-ui repo.
 2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
-3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the four browsers officially supported by the project:
-   * Chrome (latest version)
-   * Firefox (latest version)
-   * Internet Explorer 11 (via CrossBrowserTesting.com)
-   * Safari (latest version)
+3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
 
-## Troubleshooting Elements in Layouts
+Any problems? Continue to Troubleshooting jSchol Integrations below:
 
-When elements are not rendering properly in layouts, begin troubleshooting by following these steps:
+## Troubleshooting jSchol Integrations
 
-1. Browse to the eScholarship layout page containing the rendering issues.
-2. Open your browser's developer tools.
-3. Using the inspector tool, highlight the element's problematic HTML.
+When something doesn't look right in the UI from the jSchol project or eScholarship website, follow these steps:
 
-[more to come]
+1. Visually compare the UI between the UI library and jSchol from the same browser. Is the problem appearing in both projects?
+   * If it's in both projects, then the problem is within the UI library. Fix the problem there, then reintegrate into jSchol.
+   * If it's only appearing on jSchol, then there is a mismatch of the **HTML** between jSchol and the UI library. Continue to Step 3:
+2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
 
 ## Best Practices
 
