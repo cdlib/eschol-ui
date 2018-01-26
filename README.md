@@ -6,11 +6,11 @@ This repository contains all UI elements for the eScholarship website. It serves
 **Content below is currently being edited and may be incomplete or innacurate.**
 
 * [Using the Gulp Toolkit](https://github.com/cdlib/eschol-ui#using-the-gulp-toolkit)
-* [Getting Familiar with the Library's Assets](https://github.com/cdlib/eschol-ui#getting-familiar-with-the librarys-assets)
+* [Getting Familiar with the Library's Assets](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets)
 * [Supported Browsers](https://github.com/cdlib/eschol-ui#supported-browsers)
 * [Creating a New Element](https://github.com/cdlib/eschol-ui#creating-a-new-element)
 * [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-existing-element)
-* [Integrating UI Library into jSchol Project](https://github.com/cdlib/eschol-ui#integrating ui-library-into-jschol-project)
+* [Integrating UI Library into jSchol Project](https://github.com/cdlib/eschol-ui#integrating-ui-library-into-jschol-project)
 * [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations)
 * [Authoring Styles](https://github.com/cdlib/eschol-ui#authoring-styles)
 * [Best Practices](https://github.com/cdlib/eschol-ui#best-practices)
