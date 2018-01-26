@@ -261,11 +261,23 @@ The following browsers are officially supported in the UI library:
 * Internet Explorer 11 (test via CrossBrowserTesting.com)
 * Safari (last 2 versions)
 
-These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63)
+These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Gulp development and build processes.
 
 UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
 
-## Updating an Elements's HTML or Styles
+## Creating a New Element
+
+Create the following 3 files:
+1. Object file `[name]Obj` or component file `[nameComp]`
+2. Display file `[name]Disp`
+3. SCSS file using object or component name: `\_[name].scss`
+
+Update the following 4 files with these changes:
+[1, 2, 3, 4]
+
+Continue to Step 3 in [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-elementss-html-or-styles).
+
+## Updating an Existing Elements's HTML or Styles
 
 The component, `c-subheader` will be used as an example.
 
@@ -279,13 +291,13 @@ The component, `c-subheader` will be used as an example.
 
 ## Integrating UI Library Updates into jSchol Project
 
-[the jSchol details need review by the jSchol team]
+[the jSchol details below need clarification by the jSchol team]
 
 1. Pull any updated UI library CSS from the eschol-ui repo.
 2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
 3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
 
-Any problems? Continue to Troubleshooting jSchol Integrations below:
+Any problems? Continue to [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations).
 
 ## Troubleshooting jSchol Integrations
 
@@ -293,7 +305,7 @@ When something doesn't look right in the UI from the jSchol project or eScholars
 
 1. Visually compare the UI between the UI library and jSchol from the same browser. Is the problem appearing in both projects?
    * If it's in both projects, then the problem is within the UI library. Fix the problem there, then reintegrate into jSchol.
-   * If it's only appearing on jSchol, then there is a mismatch of the **HTML** between jSchol and the UI library. Continue to Step 3:
+   * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 3:
 2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
 
 ## Best Practices
