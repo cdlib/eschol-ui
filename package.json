@@ -50,6 +50,7 @@
     "postcss-assets": "^4.1.0",
     "postcss-normalize": "^4.0.0",
     "run-sequence": "^1.2.2",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "webpack": "^3.10.0",
