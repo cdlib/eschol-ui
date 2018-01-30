@@ -13,6 +13,7 @@ if (!(typeof document === "undefined")) {
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+import '../scss/main.scss'
 
 // ***** Components ***** //
 
