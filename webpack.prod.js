@@ -2,10 +2,10 @@ const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const common = require('./webpack.common.js');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const extractSass = new ExtractTextPlugin({
   filename: "../css/webpack-test.css"
 });
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
   module: {
@@ -53,6 +53,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     extractSass,
     new UglifyJSPlugin()
   ]

@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'dist/webpack-template.html'),
+      template: './app/template.html',
       filename: path.resolve(__dirname, 'dist/webpack-index.html'), // output
       css: 'path-to-css.css'
     })
