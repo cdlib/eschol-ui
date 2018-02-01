@@ -3,8 +3,9 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractSass = new ExtractTextPlugin({
   filename: "../css/webpack-test.css"
 });
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = {
   entry: './app/jsx/app.jsx',
@@ -68,6 +69,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './app/template.html',
       filename: path.resolve(__dirname, 'dist/index.html'), // output
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'async'
     })
   ],
   output: {
