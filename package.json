@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "watch": "npm run build -- --watch"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "watch": "webpack --config webpack.dev.js --watch"
   },
   "author": "Joel Hagedorn",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "babel-preset-stage-2": "^6.13.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.14.0",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "browserify": "^13.1.0",
     "clean-webpack-plugin": "^0.1.18",
     "connect-history-api-fallback": "^1.3.0",
@@ -62,6 +64,7 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
