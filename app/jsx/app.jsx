@@ -14,6 +14,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import '../scss/main.scss'
+import '../../node_modules/flickity/dist/flickity.min.css'
 
 // ***** Components ***** //
 

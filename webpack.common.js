@@ -1,7 +1,10 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractSass = new ExtractTextPlugin({
-  filename: "../css/webpack-test.css"
+  filename: "../css/main.css"
+});
+const extractCSS = new ExtractTextPlugin({
+  filename: "../css/vendor.css"
 });
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -37,6 +40,16 @@ module.exports = {
           ],
         })
       },
+      { // for vendor CSS:
+        test: /\.css$/,
+        use: extractCSS.extract({
+          use: [
+            {
+              loader: "css-loader"
+            }
+          ],
+        })
+      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -65,7 +78,8 @@ module.exports = {
   },
   plugins: [
     extractSass,
-    // new CleanWebpackPlugin(['dist']),
+    extractCSS,
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: './app/template.html',
       filename: path.resolve(__dirname, 'dist/index.html'), // output
