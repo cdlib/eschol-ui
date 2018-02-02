@@ -2,6 +2,9 @@
 
 import React from 'react'
 import LazyImageComp from '../components/LazyImageComp.jsx'
+import '../../images/logo_footer-eschol.svg'
+import '../../images/logo_facebook-circle-white.svg'
+import '../../images/logo_twitter-circle-white.svg'
 
 class FooterComp extends React.Component {
   render() {

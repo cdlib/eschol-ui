@@ -2,6 +2,7 @@
 
 import React from 'react'
 import LazyImageComp from '../components/LazyImageComp.jsx'
+import '../../images/cc-by-nc-large.svg'
 
 class PubInfoComp extends React.Component {
   render() {

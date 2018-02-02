@@ -1,6 +1,7 @@
 // ##### Tab Metrics Component ##### //
 
 import React from 'react'
+import '../../images/sample_data.png'
 
 class TabMetricsComp extends React.Component {
   render() {

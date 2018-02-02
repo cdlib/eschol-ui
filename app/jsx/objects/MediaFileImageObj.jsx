@@ -4,6 +4,7 @@ import React from 'react'
 import $ from 'jquery'
 import MediaModalComp from '../components/MediaModalComp.jsx'
 import MediaFeatureImageObj from '../objects/MediaFeatureImageObj.jsx'
+import '../../images/temp_new-horizons-data.png'
 
 class MediaFileImageObj extends React.Component {
   state={showModal: false}

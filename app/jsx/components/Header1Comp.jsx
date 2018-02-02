@@ -3,6 +3,8 @@
 import React from 'react'
 import Search1Comp from '../components/Search1Comp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
+import '../../images/logo_escholarship.svg'
+import '../../images/logo_eschol-mobile.svg'
 
 class HeaderComp1 extends React.Component {
   constructor(props){

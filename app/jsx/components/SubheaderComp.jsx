@@ -1,6 +1,7 @@
 // ##### Subheader Component ##### //
 
 import React from 'react'
+import '../../images/temp_journal-banner.png'
 
 class SubheaderComp extends React.Component {
   render() {

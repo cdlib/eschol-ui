@@ -1,6 +1,9 @@
 // ##### Hero Component ##### //
 
 import React from 'react'
+import '../../images/hero-ucd.jpg'
+import '../../images/hero-ucb.jpg'
+// ... and other hero images can be added
 
 class HeroComp extends React.Component {
   render() {

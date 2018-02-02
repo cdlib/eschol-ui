@@ -1,6 +1,8 @@
 // ##### Journal Information Component ##### //
 
 import React from 'react'
+import '../../images/temp_journalinfo.png'
+import '../../images/cc-by-large.svg'
 
 class JournalInfoComp extends React.Component {
   render() {

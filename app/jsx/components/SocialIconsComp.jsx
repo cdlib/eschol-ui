@@ -1,6 +1,9 @@
 // ##### Social Icons Component ##### //
 
 import React from 'react'
+import '../../images/logo_facebook-circle-black.svg'
+import '../../images/logo_twitter-circle-black.svg'
+import '../../images/logo_rss-circle-black.svg'
 
 class SocialIconsComp extends React.Component {
   render() {

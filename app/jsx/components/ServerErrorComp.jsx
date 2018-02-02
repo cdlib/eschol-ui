@@ -1,6 +1,7 @@
 // ##### Server Error Component ##### //
 
 import React from 'react'
+import '../../images/squirrel.jpg'
 
 class ServerErrorComp extends React.Component {
   render() {

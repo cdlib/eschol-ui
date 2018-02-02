@@ -1,6 +1,7 @@
 // ##### Media Feature Video Object ##### //
 
 import React from 'react'
+import '../../images/sample_video-poster.jpg'
 
 class MediaFeatureVideoObj extends React.Component {
   render() {

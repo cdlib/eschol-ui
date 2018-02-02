@@ -4,6 +4,8 @@ import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
 import MediaListComp from '../components/MediaListComp.jsx'
+import '../../images/cc-by-small.svg'
+import '../../images/temp_article.png'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
