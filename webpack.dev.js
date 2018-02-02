@@ -4,7 +4,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 // const webpack = require('webpack'); // for webpack.HotModuleReplacementPlugin()
 
 module.exports = merge(common, {
-  devtool: 'inline-source-map',
   // devServer: {
   //   publicPath: '/dist/js',
   //   hot: true
