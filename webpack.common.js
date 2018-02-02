@@ -1,8 +1,5 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractSass = new ExtractTextPlugin({
-  filename: "../css/main.css"
-});
 const extractCSS = new ExtractTextPlugin({
   filename: "../css/vendor.css"
 });
@@ -23,22 +20,6 @@ module.exports = {
             presets: ['babel-preset-env', 'babel-preset-react', 'babel-preset-stage-2']
           }
         }
-      },
-      {
-        test: /\.scss$/,
-        use: extractSass.extract({
-          use: [
-            {
-              loader: "css-loader"
-            },
-            {
-              loader: "postcss-loader"
-            },
-            {
-              loader: "sass-loader"
-            }
-          ],
-        })
       },
       { // for vendor CSS:
         test: /\.css$/,
@@ -77,7 +58,6 @@ module.exports = {
     ]
   },
   plugins: [
-    extractSass,
     extractCSS,
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
