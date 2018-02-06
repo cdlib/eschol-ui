@@ -1,8 +1,4 @@
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractCSS = new ExtractTextPlugin({
-  filename: "../css/vendor.css"
-});
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
@@ -21,15 +17,17 @@ module.exports = {
           }
         }
       },
-      { // for vendor CSS:
+      { // for Flickity CSS:
         test: /\.css$/,
-        use: extractCSS.extract({
-          use: [
-            {
-              loader: "css-loader"
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'flickity.css',
+              outputPath: '../css/'
             }
-          ],
-        })
+          }
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -58,7 +56,6 @@ module.exports = {
     ]
   },
   plugins: [
-    extractCSS,
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: './app/template.html',
