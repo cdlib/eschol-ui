@@ -15,6 +15,9 @@ module.exports = merge(common, {
           use: [
             {
               loader: "css-loader"
+              options: {
+                minimize: true
+              }
             },
             {
               loader: "postcss-loader"
