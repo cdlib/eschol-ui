@@ -6,6 +6,7 @@ const extractCSS = new ExtractTextPlugin({
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const PreloadCssPlugin = require('preload-css-webpack-plugin');
 
 module.exports = {
   entry: './app/jsx/app.jsx',
@@ -58,11 +59,14 @@ module.exports = {
     ]
   },
   plugins: [
-    extractCSS,
     new CleanWebpackPlugin(['dist']),
+    extractCSS,
     new HtmlWebpackPlugin({
       template: './app/template.html',
       filename: path.resolve(__dirname, 'dist/index.html'), // output
+    }),
+    new PreloadCssPlugin({
+      noscript: false,
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
