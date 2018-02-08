@@ -14,7 +14,7 @@ module.exports = merge(common, {
         use: extractSass.extract({
           use: [
             {
-              loader: "css-loader"
+              loader: "css-loader",
               options: {
                 minimize: true
               }
