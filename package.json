@@ -63,6 +63,7 @@
     "preload-css-webpack-plugin": "^0.2.0",
     "run-sequence": "^1.2.2",
     "sass-loader": "^6.0.6",
+    "sasslint-webpack-plugin": "^1.0.4",
     "script-ext-html-webpack-plugin": "^1.8.8",
     "style-loader": "^0.20.1",
     "uglifyjs-webpack-plugin": "^1.1.8",

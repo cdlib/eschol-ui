@@ -7,6 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const PreloadCssPlugin = require('preload-css-webpack-plugin');
+const SassLintPlugin = require('sasslint-webpack-plugin');
 
 module.exports = {
   entry: './app/jsx/app.jsx',
@@ -70,6 +71,11 @@ module.exports = {
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
+    }),
+    new SassLintPlugin({
+      configFile: 'sass-lint-config.yml',
+      context: 'app/scss/',
+      ignorePlugins: ['html-webpack-plugin', 'extract-text-webpack-plugin'],
     })
   ],
   output: {
