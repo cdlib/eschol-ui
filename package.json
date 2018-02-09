@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "watch": "webpack --config webpack.dev.js --watch"
+    "watch": "webpack --config webpack.dev.js --watch",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Joel Hagedorn",
   "license": "MIT",
@@ -32,6 +33,7 @@
     "file-loader": "^1.1.6",
     "flickity": "^2.0.5",
     "flickity-imagesloaded": "^2.0.0",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.2",
     "gulp-concat": "^2.6.0",
