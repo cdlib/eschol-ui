@@ -42,6 +42,9 @@ module.exports = {
               name: '[name].[ext]',
               outputPath: '../images/'
             }
+          },
+          {
+            loader: 'img-loader'
           }
         ],
       },
