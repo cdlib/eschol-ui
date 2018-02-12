@@ -1,7 +1,7 @@
 
 // ##### eScholarship UI Library ##### //
 
-// ***** Libraries and Polyfills ***** //
+// ***** Polyfills ***** //
 
 if (!(typeof document === "undefined")) {
   require('babel-polyfill')
@@ -10,9 +10,14 @@ if (!(typeof document === "undefined")) {
   require('smoothscroll-polyfill').polyfill();
 }
 
+// ***** React ***** //
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+
+// ***** Stylesheets ***** //
+
 import '../scss/main.scss'
 import '../../node_modules/flickity/dist/flickity.min.css'
 
