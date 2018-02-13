@@ -15,6 +15,7 @@ import InfoPagesComp from '../components/InfoPagesComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
 import ReactModal from 'react-modal'
 import FooterComp from '../components/FooterComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class SearchLayout extends React.Component {
   constructor(props){
@@ -148,11 +149,11 @@ class SearchLayout extends React.Component {
                   </div>
                   <div className="c-scholworks__media">
                     <MediaListComp />
-                    <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
                   </div>
                 </div>
                 <a className="c-scholworks__thumbnail" href="">
-                  <img src="images/temp_article.png" alt="article"/>
+                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
                 </a>
               </section>
 
@@ -187,11 +188,11 @@ class SearchLayout extends React.Component {
                     <ul className="c-medialist">
                       <li className="c-medialist__image">Contains 2 supplemental images</li>
                     </ul>
-                    <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
                   </div>
                 </div>
                 <a className="c-scholworks__thumbnail" href="">
-                  <img src="images/temp_article.png" alt="article"/>
+                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
                 </a>
               </section>
 
@@ -229,11 +230,11 @@ class SearchLayout extends React.Component {
                   </div>
                   <div className="c-scholworks__media">
                     <MediaListComp />
-                    <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
                   </div>
                 </div>
                 <a className="c-scholworks__thumbnail" href="">
-                  <img src="images/temp_article.png" alt="article"/>
+                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
                 </a>
               </section>
 
@@ -271,11 +272,11 @@ class SearchLayout extends React.Component {
                   </div>
                   <div className="c-scholworks__media">
                     <MediaListComp />
-                    <img className="c-scholworks__license" src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
                   </div>
                 </div>
                 <a className="c-scholworks__thumbnail" href="">
-                  <img src="images/temp_article.png" alt="article"/>
+                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
                 </a>
               </section>
 

@@ -9,6 +9,7 @@ import PubInfoComp from '../components/PubInfoComp.jsx'
 import ViewExternalComp from '../components/ViewExternalComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class SeriesItemUrlLayout extends React.Component {
   render() {
@@ -44,7 +45,7 @@ class SeriesItemUrlLayout extends React.Component {
           </div>
           <a className="c-subheader__banner--wide" href="">
             <h1>UC Riverside</h1>
-            <img src="images/logo_ucr.svg" alt="UC Riverside logo"/>
+            <img src={MEDIA_PATH + 'logo_ucr.svg'} alt="UC Riverside logo"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>

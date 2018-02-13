@@ -6,6 +6,7 @@ import Breakpoints from '../../js/breakpoints.json'
 import WellComp from '../components/WellComp.jsx'
 import ToggleListComp from '../components/ToggleListComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class BrowseDepartmentsLayout extends React.Component {
   constructor(props){
@@ -55,7 +56,7 @@ class BrowseDepartmentsLayout extends React.Component {
           </div>
           <a className="c-subheader__banner--wide" href="">
             <h1>Western Journal of Emergency Medicine</h1>
-            <img src="images/temp_journal-banner.png" alt="Western Journal of Emergency Medicine"/>
+            <img src={MEDIA_PATH + 'temp_journal-banner.png'}alt="Western Journal of Emergency Medicine"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>

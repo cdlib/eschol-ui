@@ -13,6 +13,7 @@ import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import $ from 'jquery'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 // Load dotdotdot in browser but not server:
 if (!(typeof document === "undefined")) {
@@ -57,7 +58,7 @@ class JournalSplashyLayout extends React.Component {
           </div>
           <a className="c-subheader__banner--wide" href="">
             <h1>Western Journal of Emergency Medicine</h1>
-            <img src="images/temp_journal-banner.png" alt="Western Journal of Emergency Medicine"/>
+            <img src={MEDIA_PATH + 'temp_journal-banner.png'} alt="Western Journal of Emergency Medicine"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Submit</button>

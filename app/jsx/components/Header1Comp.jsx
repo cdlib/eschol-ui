@@ -3,8 +3,7 @@
 import React from 'react'
 import Search1Comp from '../components/Search1Comp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import '../../images/logo_escholarship.svg'
-import '../../images/logo_eschol-mobile.svg'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class HeaderComp1 extends React.Component {
   constructor(props){
@@ -16,8 +15,8 @@ class HeaderComp1 extends React.Component {
       <header id="#top" className="c-header">
         <a className="c-header__logo1" href="">
           <picture>
-            <source srcSet="images/logo_escholarship.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
-            <img src="images/logo_eschol-mobile.svg" alt="escholarship"/>
+            <source srcSet={MEDIA_PATH + 'logo_escholarship.svg'} media={"(min-width: "+Breakpoints.screen3+")"}/>
+            <img src={MEDIA_PATH + 'logo_eschol-mobile.svg'} alt="escholarship"/>
           </picture>
         </a>
         <div className={this.state.searchActive ? "c-header__search--active" : "c-header__search"}>

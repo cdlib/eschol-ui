@@ -1,7 +1,7 @@
 // ##### Tab Metrics Component ##### //
 
 import React from 'react'
-import '../../images/sample_data.png'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class TabMetricsComp extends React.Component {
   render() {
@@ -79,7 +79,7 @@ class TabMetricsComp extends React.Component {
             </table>
           </div>
           <div className="c-tabcontent__divide2x-child">
-            <img src="images/sample_data.png" alt="sample data"/>
+            <img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/>
           </div>
         </div>
       </div>

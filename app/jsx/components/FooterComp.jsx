@@ -2,9 +2,7 @@
 
 import React from 'react'
 import LazyImageComp from '../components/LazyImageComp.jsx'
-import '../../images/logo_footer-eschol.svg'
-import '../../images/logo_facebook-circle-white.svg'
-import '../../images/logo_twitter-circle-white.svg'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class FooterComp extends React.Component {
   render() {
@@ -27,19 +25,19 @@ class FooterComp extends React.Component {
         <div className="c-footer__logo">
           <a href="">
             <LazyImageComp
-              src="images/logo_footer-eschol.svg"
+              src={MEDIA_PATH + 'logo_footer-eschol.svg'}
               alt="eScholarship, University of California" />
           </a>
         </div>
         <div className="c-footer__icons">
           <a href="">
             <LazyImageComp
-              src="images/logo_facebook-circle-white.svg"
+              src={MEDIA_PATH + 'logo_facebook-circle-white.svg'}
               alt="Facebook" />
           </a>
           <a href="">
             <LazyImageComp
-              src="images/logo_twitter-circle-white.svg"
+              src={MEDIA_PATH + 'logo_twitter-circle-white.svg'}
               alt="Twitter" />
           </a>
         </div>

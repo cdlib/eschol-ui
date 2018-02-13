@@ -1,14 +1,12 @@
 // ##### Hero Component ##### //
 
 import React from 'react'
-import '../../images/hero-ucd.jpg'
-import '../../images/hero-ucb.jpg'
-// ... and other hero images can be added
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class HeroComp extends React.Component {
   render() {
     return (
-      <div className="c-hero" style={{backgroundImage: "url('images/hero-ucd.jpg')"}}>
+      <div className="c-hero" style={{backgroundImage: "url('"+ MEDIA_PATH + 'hero-ucd.jpg'+"')"}}>
         <h1>Open Access Publications from the University of California</h1>
         <div className="c-hero__campus">
           <span>UC Davis</span>

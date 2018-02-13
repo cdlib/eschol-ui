@@ -9,6 +9,7 @@ import PubInfoComp from '../components/PubInfoComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class SeriesItemEmbargoedLayout extends React.Component {
   render() {
@@ -44,7 +45,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
           </div>
           <a className="c-subheader__banner--wide" href="">
             <h1>UCLA</h1>
-            <img className="c-subheader__banner" src="images/logo_ucla.svg" alt="UCLA logo"/>
+            <img className="c-subheader__banner" src={MEDIA_PATH + 'logo_ucla.svg'} alt="UCLA logo"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>

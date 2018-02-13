@@ -3,8 +3,7 @@
 import React from 'react'
 import Search2Comp from '../components/Search2Comp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import '../../images/logo_eschol-small.svg'
-import '../../images/logo_eschol-mobile.svg'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class HeaderComp2 extends React.Component {
   constructor(props){
@@ -16,8 +15,8 @@ class HeaderComp2 extends React.Component {
       <header id="#top" className="c-header">
         <a className="c-header__logo2" href="">
           <picture>
-            <source srcSet="images/logo_eschol-small.svg" media={"(min-width: "+Breakpoints.screen3+")"}/>
-            <img src="images/logo_eschol-mobile.svg" alt="escholarship"/>
+            <source srcSet={MEDIA_PATH + 'logo_eschol-small.svg'} media={"(min-width: "+Breakpoints.screen3+")"}/>
+            <img src={MEDIA_PATH + 'logo_eschol-mobile.svg'} alt="escholarship"/>
           </picture>
           <div className="c-header__logo2-tagline">
             Open Access Publications from the University of California

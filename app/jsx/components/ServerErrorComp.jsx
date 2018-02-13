@@ -1,7 +1,7 @@
 // ##### Server Error Component ##### //
 
 import React from 'react'
-import '../../images/squirrel.jpg'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class ServerErrorComp extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class ServerErrorComp extends React.Component {
         <h1 className="c-servererror__message">
           I couldn't find what you were looking for.
         </h1>
-        <img className="c-servererror__image" src="images/squirrel.jpg" alt="squirrel"/>
+        <img className="c-servererror__image" src={MEDIA_PATH + 'squirrel.jpg'} alt="squirrel"/>
         <div className="c-servererror__search">
           <label htmlFor="c-servererror__input" className="c-servererror__label">Search for it!</label>
           <input type="search" className="c-servererror__input" id="c-servererror__input" placeholder="Search for it!" />

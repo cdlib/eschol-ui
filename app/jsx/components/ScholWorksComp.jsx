@@ -4,8 +4,7 @@ import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
 import MediaListComp from '../components/MediaListComp.jsx'
-import '../../images/cc-by-small.svg'
-import '../../images/temp_article.png'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
@@ -46,11 +45,11 @@ class ScholWorksComp extends React.Component {
           </div>
           <div className="c-scholworks__media">
             <MediaListComp />
-            <img src="images/cc-by-small.svg" alt="creative commons attribution 4.0 international public license"/>
+            <img src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
           </div>
         </div>
         <a className="c-scholworks__thumbnail" href="">
-          <img src="images/temp_article.png" alt="article"/>
+          <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
         </a>
       </section>
     )

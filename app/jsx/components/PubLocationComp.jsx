@@ -1,6 +1,7 @@
 // ##### Published Location Component ##### //
 
 import React from 'react'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class PubLocationComp extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class PubLocationComp extends React.Component {
         </div>
         <a className="c-publocation__link" href="">http://www.ieee-security.org/gdgfhnhlgkbdfvsasdfhkmhfxzfbcvxbdjbkgbgcbnbvnvbdvzfsgfdbdsgdvfshfbsdghnbdvsfhbdvfbdv.PDF</a>
         <a href="" className="c-publocation__license">
-          <img src="images/cc-by-nc-large.svg" alt="creative commons attribution-noncommercial 4.0 international public license"/>
+          <img src={MEDIA_PATH + 'cc-by-nc-large.svg'} alt="creative commons attribution-noncommercial 4.0 international public license"/>
         </a>
       </div>
     )

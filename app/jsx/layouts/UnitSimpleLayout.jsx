@@ -15,6 +15,7 @@ import Breakpoints from '../../js/breakpoints.json'
 import SocialIconsComp from '../components/SocialIconsComp.jsx'
 import LanguageComp from '../components/LanguageComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 // Load dotdotdot in browser but not server:
 if (!(typeof document === "undefined")) {
@@ -84,7 +85,7 @@ class UnitSimpleLayout extends React.Component {
           </div>
           <a className="c-subheader__banner--wide" href="">
             <h1>UC Riverside</h1>
-            <img src="images/logo_ucr.svg" alt="UC Riverside logo"/>
+            <img src={MEDIA_PATH + 'logo_ucr.svg'} alt="UC Riverside logo"/>
           </a>
           <div className="c-subheader__sidebar">
             <button className="o-button__3">Deposit</button>

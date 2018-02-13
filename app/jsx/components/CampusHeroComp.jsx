@@ -1,11 +1,12 @@
 // ##### Campus Hero Component ##### //
 
 import React from 'react'
+import MEDIA_PATH from '../../js/MediaPath.js'
 
 class CampusHeroComp extends React.Component {
   render() {
     return (
-      <div className="c-campushero" style={{backgroundImage: "url('images/hero-ucb.jpg')"}}>
+      <div className="c-campushero" style={{backgroundImage: "url('"+ MEDIA_PATH + 'hero-ucb.jpg'+"')"}}>
         <div className="c-campushero__lede">
           Share your research <span>with a global audience</span>
         </div>
