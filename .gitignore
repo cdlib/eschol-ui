@@ -1,8 +1,4 @@
 node_modules
 dist
 .publish
-app/bower_components
 .DS_Store
-app/css/main.css
-*.css.map
-app/js/*-bundle.js
