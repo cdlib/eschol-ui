@@ -81,10 +81,10 @@
 
 .c-share__facebook {
   @extend %c-share__link;
-  background-image: inline('../images/logo_facebook-white.svg');
+  background-image: inline('../images/icon_facebook-white.svg');
 }
 
 .c-share__twitter {
   @extend %c-share__link;
-  background-image: inline('../images/logo_twitter-white.svg');
+  background-image: inline('../images/icon_twitter-white.svg');
 }
