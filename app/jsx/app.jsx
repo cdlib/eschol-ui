@@ -23,8 +23,6 @@ import '../../node_modules/flickity/dist/flickity.min.css'
 
 // ***** Components ***** //
 
-// import MediaPath from './components/MediaPathComp.jsx'
-
 import AboutLayout from './layouts/AboutLayout.jsx'
 import AlertDisp from './display/AlertDisp.jsx'
 import AuthorListDisp from './display/AuthorListDisp.jsx'
