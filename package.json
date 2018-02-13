@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js --watch",
     "deploy": "gh-pages -d dist"
   },
@@ -70,7 +69,6 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
