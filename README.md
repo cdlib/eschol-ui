@@ -1,45 +1,41 @@
 
 # The eScholarship UI Library
 
-This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is built upon the React framework and developed using a customized Gulp toolkit.
+This repository contains all UI elements for the eScholarship website. It serves as a proof of concept for demonstrating the UI apart from its integration into the [main eScholarship project](https://github.com/eScholarship/jschol). It is built upon the React framework and developed using the Webpack bundler.
 
 **Content below is currently being edited and may be incomplete or innacurate.**
 
-* [Using the Gulp Toolkit](https://github.com/cdlib/eschol-ui#using-the-gulp-toolkit)
+* [Installing the UI Library](https://github.com/cdlib/eschol-ui#installing-the-ui-library)
 * [Getting Familiar with the Library's Assets](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets)
 * [Supported Browsers](https://github.com/cdlib/eschol-ui#supported-browsers)
 * [Creating a New Element](https://github.com/cdlib/eschol-ui#creating-a-new-element)
 * [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-existing-element)
 * [Integrating UI Library into jSchol Project](https://github.com/cdlib/eschol-ui#integrating-ui-library-into-jschol-project)
 * [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations)
-* [Authoring Styles](https://github.com/cdlib/eschol-ui#authoring-styles)
+* [Working With Styles](https://github.com/cdlib/eschol-ui#working-with-styles)
 * [Best Practices](https://github.com/cdlib/eschol-ui#best-practices)
 
-## Using the Gulp Toolkit
+## Installing the UI Library
 
 ### Software Requirements
 
 * [Node and npm](https://nodejs.org/en)
 
-* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+### Package Installation
 
-### Toolkit Installation
+1. Cd to `eschol-ui`
 
-1. Clone this repo and cd to `eschol-ui`
+2. Run `$ npm install` to install Node packages
 
-2. Run `$ npm install` to install Gulp plugins
-
-### Running the Toolkit
+### Developing Files
 
 * Cd to `eschol-ui`
 
-* While developing files in **/app**, run `$ gulp` to watch and process live changes to the code
+* While developing files in **/app**, run `$ npm run watch` to process live changes to the code
 
-* To create a finished build of the UI Library, run the `$ gulp build` task. Run `$ gulp deploy` to publish it to GitHub Pages at [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)
+* To create a finished build of the UI Library, run `$ npm run build`.
 
-#### Other Tasks
-
-* After adding new images to **/images**, run `$ gulp minify-images` to optimize them
+* To publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)), run `$ npm run deploy`. This feature requires that GitHub Pages is configured on your GitHub account.
 
 ## Getting Familiar with the Library's Assets
 
@@ -64,9 +60,18 @@ app
     └── main.scss
 ```
 
+### Images
+
+There are two types of images in the UI library: those for icons and those for 
+content.
+
+Icons are SVG images that originate in the images folder and injected into the main stylesheet during the development or build processes - they are not outputted as separate images. These image filenames are prepended by **icon_**.
+
+Content images include logos, banners, and sample images. They are not stored in the repo but referenced via a remote URL to a static assets location hosted by eScholarship.
+
 ### Components
 
-Components make up the largest gorup of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
+Components make up the largest group of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
 Component files are named in Pascal case, starting with the component name, and ending with "Comp". For example, see the [Well Component](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/components/WellComp.jsx).
 
@@ -80,7 +85,7 @@ Display files are named in Pascal case, starting with the display name, and endi
 
 Layout files each render a single page that include many ojects, components, and sample content.
 
-Object files are named in Pascal case, starting with the layout name, and ending with "Layout". For example, see the [Home Layout](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/layouts/HomeLayout.jsx).
+Layout files are named in Pascal case, starting with the layout name, and ending with "Layout". For example, see the [Home Layout](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/layouts/HomeLayout.jsx).
 
 ### Objects
 
@@ -98,24 +103,27 @@ Sass files within the scss folder contain all project CSS. They include:
 
 * **\_variables.scss** contain global Sass variables used throughout components and objects. These variables generally represent small values - like colors and spacing - and not blocks of styles, as within utilities.scss.
 
-* **main.scss** is where all Sass files get imported and compiled via Gulp. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
+* **main.scss** is where all Sass files get imported and compiled via Webpack. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
 
-See below for more information about [authoring styles](https://github.com/cdlib/eschol-ui#authoring-styles).
+See below for more information about [working with styles](https://github.com/cdlib/eschol-ui#working-with-styles).
 
-## Supported Browsers
+## Developing UI Library Assets
 
-The following browsers are officially supported in the UI library:
+Whether you are updating an element's style or structure, it's often best to have the element's **jsx** file and related **scss** file open together at the same time. For example, this allows you verify that any class name changes made in the HTML are also made in the accompanying CSS, and vice-versa.
 
-* Chrome (last 2 versions)
-* Firefox (last 2 versions)
-* Internet Explorer 11 (test via CrossBrowserTesting.com)
-* Safari (last 2 versions)
+### Updating an Existing Element
 
-These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Gulp development and build processes.
+The component, `c-subheader` will be used as an example.
 
-UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
+1. Run the [watch process](https://github.com/cdlib/eschol-ui#developing-files) the UI library toolkit.
+2. From the UI library home page, browse to the subheader element.
+3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
+4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
+5. Save your changes and review them on the display page as they are automatically applied.
+6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#developing-files).
+7. Pull the commited UI library changes and reintegrate them into jSchol.
 
-## Creating a New Element
+### Creating a New Element
 
 Throughout these steps, replace the word, "new" in the filenames and code with your component name.
 
@@ -186,27 +194,15 @@ import AlertDisp from './display/NewDisp.jsx'
 ...
 <Route path="/new" component={NewDisp} />
 ```
-Upon saving **app.jsx** after adding these changes, the UI library should automatically rebuild without errors. If you get errors, then double-check your filenames and JSX component names.
+Upon saving **app.jsx** after adding these changes, the UI library should automatically rebundle without errors. If you get errors, then double-check your filenames and JSX component names.
 
 4. From the UI library home page, click the "new" link to browse to the new component.
 
 You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component and connected stylesheet into the UI library.
 
-## Updating an Existing Element
+### Integrating UI Library into jSchol Project
 
-The component, `c-subheader` will be used as an example.
-
-1. [Run](https://github.com/cdlib/eschol-ui#running-the-toolkit) the UI library toolkit.
-2. From the UI library home page, browse to the subheader element.
-3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
-4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
-5. Save your changes and review them on the display page as they are automatically applied.
-6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#running-the-toolkit).
-7. Pull the commited UI library changes and reintegrate them into jSchol.
-
-## Integrating UI Library into jSchol Project
-
-[the jSchol details below need clarification by the jSchol team]
+[these details below need clarification by the jSchol team]
 
 1. Pull any updated UI library CSS from the eschol-ui repo.
 2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
@@ -214,7 +210,7 @@ The component, `c-subheader` will be used as an example.
 
 Any problems? Continue to [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations).
 
-## Troubleshooting jSchol Integrations
+### Troubleshooting jSchol Integrations
 
 When something doesn't look right in the UI from the jSchol project or eScholarship website, follow these steps:
 
@@ -223,17 +219,41 @@ When something doesn't look right in the UI from the jSchol project or eScholars
    * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 3:
 2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
 
-## Authoring Styles
+## Working With Styles
 
 For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
 
+### The Inspector Tool
+
+A browser's Inspector tool is probably the most useful tool to verify and debug styles as you're building. Here's a common development practice:
+
+1. Browse to the UI library component or layout.
+2. Open your browser's dev tools and pick the Inspector.
+3. Click on the UI element with your pointer and to highlight it.
+
+From there, you can verify the component's name, style attributes, and parent/child HTML nodes. You can also change a style property or create a new one right in the browser to see its effect before you try it within the component's **scss** file in development.
+
+### Using Test Borders
+
+Another useful tool is to apply a border within any part of your styles in order highlight an element on the screen. For example, if you're styling a component and you're not sure your styles are getting applied in the right place, you can temporarily paste any of these three border style properties with Sass variables within your styles:
+
+* `border: $bred;` (produces a red border)
+* `border: $bblue;` (produces a blue border)
+* `border: $bgreen` (produces a green border)
+
+These should only be used for testing and not committed into the repo.
+
+### Nesting Selectors
+
+Selectors in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following code examples below use nested Sass.
+
 ### Naming Styles
 
-CSS selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. In the UI library, components and objects always feature a BEM block, while BEM elements and modifiers may be optional.
+Selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. In the UI library, components and objects always feature a BEM block, while BEM elements and modifiers may be optional.
 
 In the UI library, the block is named after the object, component, or utility and is prepended with either a `-c`, `-o`, or `-u` to designate it as such.
 
-Here is a plain example of a component named "flower" with BEM:
+Here is a simple example of a component named "flower" with BEM:
 
 ```scss
 
@@ -250,15 +270,11 @@ Here is a plain example of a component named "flower" with BEM:
 }
 ```
 
-### Nesting Styles
+### Using Media Query Rules for Responsive Design
 
-Selectors in this UI library often contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3).
+Media query rules allow changes to component/object styles at certain screen widths for responsive design. In the UI library, These "breakpoints" are written as [Sass mixins](https://github.com/cdlib/eschol-ui#sass-mixins) and include Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
 
-#### Media Query Rules
-
-The most common nested parts are media query rules, which allow changes to component/object styles at certain screen widths for responsive design. These "breakpoints" are written as [Sass mixins](https://github.com/cdlib/eschol-ui#sass-mixins) and include Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
-
-Media query rules are organized in a "mobile-first" fashion, in that each one in the CSS declaration adds to or overrides the CSS written above it.
+Media queries in the UI library are usually nested in a "mobile-first" fashion, in that each one in the CSS declaration adds to or overrides the CSS written above it.
 
 For example, with the "flower" component, the background is initially rendered as green on a small screen, then changes color to yellow, then red as the screen size gets wider:
 
@@ -278,9 +294,9 @@ For example, with the "flower" component, the background is initially rendered a
 }
 ```
 
-#### CSS Combinators
+### CSS Combinators
 
-The other common set of nested parts are [CSS combinators](https://www.w3schools.com/css/css_combinators.asp). These selectors typically target specific HTML elements within the component/object.
+[CSS combinators](https://www.w3schools.com/css/css_combinators.asp) are frequently applied within selectors in order to easily target specific HTML elements within the component/object without having to write additional selectors.
 
 For example, the nested `a` in the flower component will render all links within the component as blue:
 
@@ -304,15 +320,11 @@ For example, the nested `a` in the flower component will render all links within
 }
 ```
 
-Other, less-common nested parts in the UI library include [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp).
+Similar to CSS combinators are [pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) and [pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp). These are less-common in the UI library.
 
-### Chunks of Common Styles
+### Sass Placeholders
 
-Components and objects frequently have chunks of common styles used within them. This is made possible by Sass placeholders and mixins.
-
-#### Sass Placeholders
-
-A Sass placeholder looks like a normal CSS class, except that it starts with a percent sign instead of a period, like this: `%c-block`. It gets applied to regular, class-based selectors by using the Sass directive `@extend` with the name of the placeholder class.
+Sass placeholders allow the chunking of common styles. They look like a normal CSS class, except that they start with a percent sign instead of a period, like this: `%c-block`. They get applied to regular, class-based selectors by using the Sass directive `@extend` and named according to the placeholder class.
 
 For example, `%c-flower` is the placeholder and its background style gets applied to `.c-flower__pedals`:
 
@@ -326,7 +338,7 @@ For example, `%c-flower` is the placeholder and its background style gets applie
 }
 ```
 
-Placeholders are especially common in UI library object CSS. Within a single object, multiple placeholders are often defined, so that their various styles can be extended out to other component CSS. Sometimes, a placeholder will extend another set of placeholders. For example:
+Placeholders are especially common in UI library Object CSS. Within a single object, multiple placeholders are often defined, so that their various styles can be extended out to other component CSS. Sometimes, a placeholder will extend another set of placeholders. For example:
 
 ```scss
 %o-objects {
@@ -352,24 +364,11 @@ Placeholders are especially common in UI library object CSS. Within a single obj
 }
 ```
 
-This would produce two placeholder classes - `%o-object__number-1` and `%o-object__number-2` - that both contain 15 pixels of margin and either a red or blue background, depending on the placeholder.
-
-If we wanted to apply the object styles of `%o-object__number-2` within a component, that could look like this:
-
-```scss
-.c-flower__element {
-  @extend: %o-object__number-2;
-  font-weight: bold;
-}
-```
-
-This would produce a class `.c-flower__element` with 15 pixels of margin, a blue background, and a bold font.
-
 For a real-world example of this pattern, see the [Text Link object Sass](https://github.com/cdlib/eschol-ui/blob/master/app/scss/_textlink.scss).
 
-#### Sass Mixins
+### Sass Mixins
 
-Sass mixins are similar as placeholders - they contain one or more CSS declarations that can get applied in many places in the UI. However, mixins are written a bit differently, like this:
+Sass mixins are similar as placeholders - they contain one or more CSS declarations that get applied in many places in the UI. However, mixins are written a bit differently, like this:
 
 ```scss
 @mixin flower() {
@@ -381,12 +380,36 @@ Sass mixins are similar as placeholders - they contain one or more CSS declarati
 }
 ```
 
-The most common application of mixins in the UI library are [media query rules](https://github.com/cdlib/eschol-ui#media-query-rules).
-
 Mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
+
+### Background Images
+
+Icons are SVG images applied as background images. They tyically arrows and glyphs. Since they are part of the UI and not considered "content", They are not applied in the HTML as `img src`.
+
+Images considered content are not contained in the UI library, but live on the eScholarship static server.
+
+Background images will typically appear in the **SCSS** files in two ways:
+
+1. `background-image: inline('../images/icon_image.svg')` which gets injected into the stylesheet during the developent or build process.
+2. `background-image: url('#{$media-path}image.svg')` which references the image from the eScholarship static server via the `media-path` variable.
+
+## Supported Browsers
+
+The following browsers are officially supported in the UI library:
+
+* Chrome (last 2 versions)
+* Firefox (last 2 versions)
+* Internet Explorer 11 (test via CrossBrowserTesting.com)
+* Safari (last 2 versions)
+
+These browsers are specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Webpack style generation.
+
+UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
 
 ## Best Practices
 
 * Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
 
-* Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass.
+* Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter is included in the development and build process and will warn you if the Sass is out-of-order.
+
+* Before adding any new icon or content-based images, be sure to compress them using a minifier.
