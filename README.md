@@ -5,16 +5,6 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 **Content below is currently being edited and may be incomplete or innacurate.**
 
-* [Installing the UI Library](https://github.com/cdlib/eschol-ui#installing-the-ui-library)
-* [Getting Familiar with the Library's Assets](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets)
-* [Supported Browsers](https://github.com/cdlib/eschol-ui#supported-browsers)
-* [Creating a New Element](https://github.com/cdlib/eschol-ui#creating-a-new-element)
-* [Updating an Existing Element](https://github.com/cdlib/eschol-ui#updating-an-existing-element)
-* [Integrating UI Library into jSchol Project](https://github.com/cdlib/eschol-ui#integrating-ui-library-into-jschol-project)
-* [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations)
-* [Working With Styles](https://github.com/cdlib/eschol-ui#working-with-styles)
-* [Best Practices](https://github.com/cdlib/eschol-ui#best-practices)
-
 ## Installing the UI Library
 
 ### Software Requirements
@@ -27,22 +17,23 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 2. Run `$ npm install` to install Node packages
 
-### Developing Files
+### Running Development Tasks
 
 * Cd to `eschol-ui`
 
-* While developing files in **/app**, run `$ npm run watch` to process live changes to the code
+* While developing UI Library files in **/app**, run `$ npm run watch` to process live changes to the code. After an initial delay, the UI Library will load at a "localhost" URL in a browser and will automatically reload during code changes. This URL can also be used on "mobile" devices simultaneously to verify the UI on small screens.
 
-* To create a finished build of the UI Library, run `$ npm run build`.
+* To create a finished build of the UI Library, run `$ npm run build`. This creates a **/dist** directory with all files optimized for deployment and integration.
 
-* To publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)), run `$ npm run deploy`. This feature requires that GitHub Pages is configured on your GitHub account.
+* To publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)), run `$ npm run deploy`. This feature may require that GitHub Pages is [configured](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) on your GitHub account.
 
 ## Getting Familiar with the Library's Assets
 
-Within this repository, the files and folders directly related to creating and maintaining UI elements are listed below. All other files and folders can be ignored:
+Within this repository, the files and folders directly related to creating and maintaining UI elements are listed below. All other files and folders in the repo can be ignored:
 
 ```
 app
+├── dist (created during the build process)
 ├── images
 ├── jsx
 |   ├── components
@@ -62,12 +53,11 @@ app
 
 ### Images
 
-There are two types of images in the UI library: those for icons and those for 
-content.
+There are two types of images in the UI library: those for icons and those for content.
 
-Icons are SVG images that originate in the images folder and injected into the main stylesheet during the development or build processes - they are not outputted as separate images. These image filenames are prepended by **icon_**.
+Icons are small SVG images that are part of the UI design. They originate in the images folder and are injected into the main stylesheet during the development or build processes - they are not outputted as separate images. These image filenames are prepended by **icon_**.
 
-Content images include logos, banners, and sample images. They are not stored in the repo but referenced via a remote URL to a static assets location hosted by eScholarship.
+Content images are mostly placeholder images that highlight where images from the live eScholarship website will reside. These include logos, banners, and sample images, such as journal covers. They are not stored in the repo but on a static assets directory hosted by eScholarship. Content images refer to this eScholarship directory path via a JavaScript or Sass variable.
 
 ### Components
 
@@ -110,6 +100,36 @@ See below for more information about [working with styles](https://github.com/cd
 ## Developing UI Library Assets
 
 Whether you are updating an element's style or structure, it's often best to have the element's **jsx** file and related **scss** file open together at the same time. For example, this allows you verify that any class name changes made in the HTML are also made in the accompanying CSS, and vice-versa.
+
+### Using Debugging Tools
+
+Regularly testing the UI helps make sure you're creating or changing what you want without making larger mistakes that are harder to fix later on.
+
+#### The Inspector Tool
+
+A browser's Inspector tool is probably the most useful tool to verify and debug styles as you're building. Here's a common development practice:
+
+1. Browse to the UI library component or layout.
+2. Open your browser's dev tools and pick the Inspector.
+3. Click on the UI element with your pointer and to highlight it.
+
+From there, you can verify the component's name, style attributes, and parent/child HTML nodes. You can also change a style property or create a new one right in the browser to see its effect before you try it within the component's **scss** file in development.
+
+#### Test Borders
+
+Another useful tool is to apply a border within any part of your styles in order highlight an element on the screen. For example, if you're styling a component and you're not sure your styles are getting applied in the right place, you can temporarily paste any of these three border style properties with Sass variables within your styles:
+
+* `border: $bred;` (produces a red border)
+* `border: $bblue;` (produces a blue border)
+* `border: $bgreen` (produces a green border)
+
+These should only be used for testing and not committed into the repo.
+
+#### Your Smartphone
+
+The UI Library uses a responsive design throughout, so it's important to verify the UI on a small screen instead of simply your desktop screen.
+
+The URL that's generated in your desktop browser during the Watch process can also be used on your smartphone browser at the same time.
 
 ### Updating an Existing Element
 
@@ -223,26 +243,6 @@ When something doesn't look right in the UI from the jSchol project or eScholars
 
 For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
 
-### The Inspector Tool
-
-A browser's Inspector tool is probably the most useful tool to verify and debug styles as you're building. Here's a common development practice:
-
-1. Browse to the UI library component or layout.
-2. Open your browser's dev tools and pick the Inspector.
-3. Click on the UI element with your pointer and to highlight it.
-
-From there, you can verify the component's name, style attributes, and parent/child HTML nodes. You can also change a style property or create a new one right in the browser to see its effect before you try it within the component's **scss** file in development.
-
-### Using Test Borders
-
-Another useful tool is to apply a border within any part of your styles in order highlight an element on the screen. For example, if you're styling a component and you're not sure your styles are getting applied in the right place, you can temporarily paste any of these three border style properties with Sass variables within your styles:
-
-* `border: $bred;` (produces a red border)
-* `border: $bblue;` (produces a blue border)
-* `border: $bgreen` (produces a green border)
-
-These should only be used for testing and not committed into the repo.
-
 ### Nesting Selectors
 
 Selectors in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following code examples below use nested Sass.
@@ -270,7 +270,7 @@ Here is a simple example of a component named "flower" with BEM:
 }
 ```
 
-### Using Media Query Rules for Responsive Design
+### Media Query Rules
 
 Media query rules allow changes to component/object styles at certain screen widths for responsive design. In the UI library, These "breakpoints" are written as [Sass mixins](https://github.com/cdlib/eschol-ui#sass-mixins) and include Sass variables, such as `screen1`, `screen2`, `screen3`, which define the screen size.
 
@@ -384,14 +384,14 @@ Mixins typically contain complex CSS declarations, sass variables, and logic for
 
 ### Background Images
 
-Icons are SVG images applied as background images. They tyically arrows and glyphs. Since they are part of the UI and not considered "content", They are not applied in the HTML as `img src`.
+Icons are SVG images applied as background images. Since they are part of the UI and not considered "content", They are not applied in the HTML as `img src`.
 
 Images considered content are not contained in the UI library, but live on the eScholarship static server.
 
 Background images will typically appear in the **SCSS** files in two ways:
 
-1. `background-image: inline('../images/icon_image.svg')` which gets injected into the stylesheet during the developent or build process.
-2. `background-image: url('#{$media-path}image.svg')` which references the image from the eScholarship static server via the `media-path` variable.
+1. `background-image: inline('../images/icon_image.svg')` as an icon, which gets injected into the stylesheet during the developent or build process.
+2. `background-image: url('#{$media-path}image.svg')` as a content-based image, which references the image from the eScholarship static server via the `media-path` variable.
 
 ## Supported Browsers
 
@@ -404,12 +404,20 @@ The following browsers are officially supported in the UI library:
 
 These browsers are specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Webpack style generation.
 
-UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but they should render as close as possible to the eScholarship design and UX specifications.
-
 ## Best Practices
 
-* Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
+1. Aim to make components and objects as isolated chunks of the UI. The HTML and CSS of one component/object should not affect another.
 
-* Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter is included in the development and build process and will warn you if the Sass is out-of-order.
+2. [Verify and debug](https://github.com/cdlib/eschol-ui#using-debugging-tools) the UI frequently during development.
 
-* Before adding any new icon or content-based images, be sure to compress them using a minifier.
+3. Test any UI changes and/or additions on small screens, not just at the large screen desktop sizes. At a minimum, load a layout within a desktop browser's "responsive design mode" and preferrably, load it in your phone's browser at the same URL used during the Watch process.
+
+4. Avoid inline styles via the `<style>` tag in the HTML. They are an antipattern to the UI Library and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser with HTML's Content Security Policy.
+
+5. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
+
+6. Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
+
+7. Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter during the Watch and Build processes will warn you if the Sass isn't following these conventions.
+
+8. UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), but they should render as close as possible to the eScholarship design and UX specifications.
