@@ -63,6 +63,8 @@ Content images are mostly placeholder images that highlight where images from th
 
 Components make up the largest group of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
+Component files are usually imported directy into layouts or a component's entire content is copied into them.
+
 Component files are named in Pascal case, starting with the component name, and ending with "Comp". For example, see the [Well Component](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/components/WellComp.jsx).
 
 ### Display
@@ -79,7 +81,7 @@ Layout files are named in Pascal case, starting with the layout name, and ending
 
 ### Objects
 
-Objects are generally smaller pieces of the UI compared to components and are typically used in multiple places within components.
+Objects are generally smaller pieces of the UI compared to components. Unlike components, they usually have more than one version within them. Because of this, object files are usually not imported directly into layouts; only the specific versions within the object file are used by copying the HTML and extending the styles using [Sass Placeholders](https://github.com/cdlib/eschol-ui#sass-placeholders).
 
 Object files are named in Pascal case, starting with the object name, and ending with "Obj". For example, see the [Text Link Object](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/objects/TextlinkObj.jsx).
 
@@ -139,7 +141,7 @@ The component, `c-subheader` will be used as an example.
 2. From the UI library home page, browse to the subheader element.
 3. In the UI library, open the **jsx** and **scss** files related to the subheader component. These two files will be **SubHeaderComp.jsx** and **\_subheader.scss** based on the file naming conventions [listed here](https://github.com/cdlib/eschol-ui#getting-familiar-with-the-librarys-assets).
 4. Update the HTML within **SubHeaderComp.jsx** and/or update the styles within **\_subheader.scss**
-5. Save your changes and review them on the display page as they are automatically applied.
+5. Save your changes and review them on the display page as they are automatically applied. [Debug the UI](https://github.com/cdlib/eschol-ui#using-debugging-tools) if you're not sure.
 6. If everything looks good across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), commit your changes to the repo and create a [finished build](https://github.com/cdlib/eschol-ui#developing-files).
 7. Pull the commited UI library changes and reintegrate them into jSchol.
 
@@ -200,11 +202,11 @@ module.exports = NewDisp;
 
 Update the following 3 files with these changes:
 
-1. Open **main.scss** within the **scss** folder and add a new import rule referring to **\_new.scss**:
+1. Open **main.scss** and add a new import rule referring to **\_new.scss**:
 ```scss
 @import 'new';
 ```
-2. Open **Home.jsx** and add a UI library link to the component:
+2. Open **Home.jsx** and add a link to the component:
 ```html
 <li><a href="#new">New</a></li>
 ```
@@ -214,21 +216,21 @@ import AlertDisp from './display/NewDisp.jsx'
 ...
 <Route path="/new" component={NewDisp} />
 ```
-Upon saving **app.jsx** after adding these changes, the UI library should automatically rebundle without errors. If you get errors, then double-check your filenames and JSX component names.
+4. Start the [Watch process](https://github.com/cdlib/eschol-ui#running-development-tasks).
+5. Upon saving **app.jsx** after adding these changes, the UI library should automatically rebundle without errors. If you get errors, then double-check your filenames and JSX component names.
+6. From the UI library home page, click the "new" link to browse to the new component.
 
-4. From the UI library home page, click the "new" link to browse to the new component.
-
-You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component and connected stylesheet into the UI library.
+You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component with required files into the UI library.
 
 ### Integrating UI Library into jSchol Project
 
-[these details below need clarification by the jSchol team]
+**[these details below need clarification by the jSchol team]**
 
 1. Pull any updated UI library CSS from the eschol-ui repo.
 2. Copy and paste UI library element HTML into jSchol templates and view changes in local server [or via jSchol dev server?]
 3. Verify that there are no integration errors by visualy diffing the layout between the UI library and jSchol dev server in the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
 
-Any problems? Continue to [Troubleshooting jSchol Integrations](https://github.com/cdlib/eschol-ui#troubleshooting-jschol-integrations).
+Any problems? Continue below.
 
 ### Troubleshooting jSchol Integrations
 
@@ -236,16 +238,16 @@ When something doesn't look right in the UI from the jSchol project or eScholars
 
 1. Visually compare the UI between the UI library and jSchol from the same browser. Is the problem appearing in both projects?
    * If it's in both projects, then the problem is within the UI library. Fix the problem there, then reintegrate into jSchol.
-   * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 3:
-2. Open your browser's developer tools and visually diff the HTML between the UI library and jSchol. If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
+   * If it's only appearing on jSchol, then there is a mismatch of the HTML between jSchol and the UI library. Continue to Step 2:
+2. Visually diff the HTML between the UI library and jSchol with [the Inspector tool](https://github.com/cdlib/eschol-ui#the-inspector-tool). If you can't visually see any differences between the two projects, copy both sources of code into a file comparison tool to highlight the differences.
 
 ## Working With Styles
 
-For basic CSS concepts, please see [CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp).
+For basic CSS concepts, please see [CSS Ruleset Terminology](https://css-tricks.com/css-ruleset-terminology/.
 
 ### Nesting Selectors
 
-Selectors in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following code examples below use nested Sass.
+CSS rulesets in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following code examples below use nested Sass.
 
 ### Naming Styles
 
@@ -296,7 +298,7 @@ For example, with the "flower" component, the background is initially rendered a
 
 ### CSS Combinators
 
-[CSS combinators](https://www.w3schools.com/css/css_combinators.asp) are frequently applied within selectors in order to easily target specific HTML elements within the component/object without having to write additional selectors.
+[CSS combinators](https://www.w3schools.com/css/css_combinators.asp) are frequently applied within rulesets in order to easily target specific HTML elements within the component/object without having to write additional rulesets.
 
 For example, the nested `a` in the flower component will render all links within the component as blue:
 
@@ -380,7 +382,7 @@ Sass mixins are similar as placeholders - they contain one or more CSS declarati
 }
 ```
 
-Mixins typically contain complex CSS declarations, sass variables, and logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
+Mixins typically contain complex CSS declarations and Sass logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
 
 ### Background Images
 
@@ -412,12 +414,14 @@ These browsers are specified within the [browserslist definition within the UI l
 
 3. Test any UI changes and/or additions on small screens, not just at the large screen desktop sizes. At a minimum, load a layout within a desktop browser's "responsive design mode" and preferrably, load it in your phone's browser at the same URL used during the Watch process.
 
-4. Avoid inline styles via the `<style>` tag in the HTML. They are an antipattern to the UI Library and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser with HTML's Content Security Policy.
+4. Use Sass variables and utilities in component/object styles as much as possible, instead of recreating new values. For example, if you need to add margin to an element, use a Sass spacing variable, like `$spacing-md` instead of an arbitrary value, like "12px". In some cases, the sass linter will remind you if sass variables are not used, such as with setting colors.
 
-5. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
+5. Avoid inlining styles in the HTML using the style attribute - `<div style="...">`. This is a CSS antipattern and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser due to HTML's Content Security Policy.
 
-6. Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
+6. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
 
-7. Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter during the Watch and Build processes will warn you if the Sass isn't following these conventions.
+7. Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
 
-8. UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), but they should render as close as possible to the eScholarship design and UX specifications.
+8. Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter during the Watch and Build processes will warn you if the Sass isn't following these conventions.
+
+9. UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), but they should render as close as possible to the eScholarship design and UX specifications.
