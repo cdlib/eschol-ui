@@ -36,12 +36,12 @@ import CampusCarouselFrameDisp from './display/CampusCarouselFrameDisp.jsx'
 import CampusHeroDisp from './display/CampusHeroDisp.jsx'
 import CampusSearchDisp from './display/CampusSearchDisp.jsx'
 import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
-import MarqueeDisp from './display/MarqueeDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
+import DateRangeDisp from './display/DateRangeDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
@@ -75,6 +75,7 @@ import JournalSplashyLayout from './layouts/JournalSplashyLayout.jsx'
 import JumpDisp from './display/JumpDisp.jsx'
 import LanguageDisp from './display/LanguageDisp.jsx'
 import LazyImageDisp from './display/LazyImageDisp.jsx'
+import MarqueeDisp from './display/MarqueeDisp.jsx'
 import MediaFeatureDisp from './display/MediaFeatureDisp.jsx'
 import MediaFileDisp from './display/MediaFileDisp.jsx'
 import MediaFileGridDisp from './display/MediaFileGridDisp.jsx'
@@ -174,6 +175,7 @@ ReactDOM.render((
       <Route path="/columns" component={ColumnsDisp} />
       <Route path="/customselector" component={CustomSelectorDisp} />
       <Route path="/datatable" component={DataTableDisp} />
+      <Route path="/daterange" component={DateRangeDisp} />
       <Route path="/descriptionlist" component={DescriptionListDisp} />
       <Route path="/dividecontent" component={DivideContentDisp} />
       <Route path="/download" component={DownloadDisp} />

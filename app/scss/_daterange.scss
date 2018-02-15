@@ -1,0 +1,30 @@
+// ##### Date Range picker ##### //
+
+.c-daterange {
+  display: flex;
+
+  button {
+    @extend %o-button__8;
+    height: 2em;
+  }
+
+}
+
+.c-daterange-input__inline {
+  display: inline-flex; // this is the difference between this and o-input__inline
+  flex-wrap: wrap;
+  margin-bottom: $spacing-md;
+  &:not(:last-child) {
+    margin-right: $spacing-md;
+  }
+
+  // Any input object:
+  [class^='o-input__'] {
+
+    &:not(:last-child) {
+      margin-right: $spacing-md;
+      margin-bottom: $spacing-sm;
+    }
+
+  }
+}
