@@ -21,7 +21,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 * Cd to `eschol-ui`
 
-* While developing UI Library files in **/app**, run `$ npm run watch` to process live changes to the code. After an initial delay, the UI Library will load at a "localhost" URL in a browser and will automatically reload during code changes. This URL can also be used on "mobile" devices simultaneously to verify the UI on small screens.
+* While developing UI Library files in **/app**, run `$ npm run watch` to process live changes to the code. After an initial delay, the UI Library will load at a localhost URL in a browser and will automatically reload during code changes. This URL can also be used on "mobile" devices simultaneously to verify the UI on small screens.
 
 * To create a finished build of the UI Library, run `$ npm run build`. This creates a **/dist** directory with all files optimized for deployment and integration.
 
@@ -55,39 +55,49 @@ app
 
 There are two types of images in the UI library: those for icons and those for content.
 
-Icons are small SVG images that are part of the UI design. They originate in the images folder and are injected into the main stylesheet during the development or build processes - they are not outputted as separate images. These image filenames are prepended by **icon_**.
+Icons are small SVG background images that are part of the UI design. They originate in the images folder and are injected into the main stylesheet during the development or build processes - they are not outputted as separate images. These image filenames are prepended by **icon_**.
 
-Content images are mostly placeholder images that highlight where images from the live eScholarship website will reside. These include logos, banners, and sample images, such as journal covers. They are not stored in the repo but on a static assets directory hosted by eScholarship. Content images refer to this eScholarship directory path via a JavaScript or Sass variable.
+Content images are mostly placeholder images that highlight where images from the live eScholarship website will exist. These include logos, banners, and sample images, including journal covers. They are not stored in the repo but on a static assets directory hosted by eScholarship. The remote path to these images is set via a JavaScript and Sass variable.
 
 ### Components
 
-Components make up the largest group of UI pieces in the library. Each component is  distinct. They are not usually related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
+Components make up the largest group of UI pieces in the library. Each component is  distinct. They are not related to each other, except in a few cases where there is a React parent/child relationship. Changes to one component should not affect another. Except in rare cases, they are not mixed together.
 
-Component files are usually imported directy into layouts or a component's entire content is copied into them.
+Component files are usually imported directy into layouts or a component's entire HTML is copied into them with sample content.
 
-Component files are named in Pascal case, starting with the component name, and ending with "Comp". For example, see the [Well Component](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/components/WellComp.jsx).
+Component files are named in Pascal case, starting with the component name, and ending with "Comp", as in: **SubHeaderComp.jsx**
+
+For example, see the [Well Component](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/components/WellComp.jsx).
 
 ### Display
 
 The display folder contains files that each import a single component or object for rendering on a single page within the UI library, for reference. Occasionally, sample content is included for highlighting the proof of concept. These files are not included in the build process.
 
-Display files are named in Pascal case, starting with the display name, and ending with "Disp". For example, see the [Checkbox Display](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/display/CheckboxDisp.jsx).
+Display files are named in Pascal case, starting with the display name, and ending with "Disp", as in **SubHeaderDisp.jsx**
+
+For example, see the [Checkbox Display](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/display/CheckboxDisp.jsx).
 
 ### Layouts
 
 Layout files each render a single page that include many ojects, components, and sample content.
 
-Layout files are named in Pascal case, starting with the layout name, and ending with "Layout". For example, see the [Home Layout](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/layouts/HomeLayout.jsx).
+Unlike components and objects, they do not have a corresponding **scss** file.
+
+Layout files are named in Pascal case, starting with the layout name, and ending with "Layout", as in **CampusLayout.jsx**.
+
+For example, see the [Home Layout](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/layouts/HomeLayout.jsx).
 
 ### Objects
 
 Objects are generally smaller pieces of the UI compared to components. Unlike components, they usually have more than one version within them. Because of this, object files are usually not imported directly into layouts; only the specific versions within the object file are used by copying the HTML and extending the styles using [Sass Placeholders](https://github.com/cdlib/eschol-ui#sass-placeholders).
 
-Object files are named in Pascal case, starting with the object name, and ending with "Obj". For example, see the [Text Link Object](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/objects/TextlinkObj.jsx).
+Object files are named in Pascal case, starting with the object name, and ending with "Obj", as in **ButtonObj.jsx**.
+
+For example, see the [Text Link Object](https://github.com/cdlib/eschol-ui/blob/master/app/jsx/objects/TextlinkObj.jsx).
 
 ### Styles
 
-Sass files within the scss folder contain all project CSS. They include:
+Sass files within the **scss/** folder contain all project CSS. They include:
 
 * **\_component.scss** or **\_object.scss** where the filename is named according to the component or object. There is only one component/object Sass file for each component/object. Note that there are no Sass files for layout files.
 
@@ -105,7 +115,7 @@ Whether you are updating an element's style or structure, it's often best to hav
 
 ### Using Debugging Tools
 
-Regularly testing the UI helps make sure you're creating or changing what you want without making larger mistakes that are harder to fix later on.
+Regularly testing the UI helps make sure you're creating or changing what you want without making larger mistakes that become harder to fix later on.
 
 #### The Inspector Tool
 
@@ -218,9 +228,8 @@ import AlertDisp from './display/NewDisp.jsx'
 ```
 4. Start the [Watch process](https://github.com/cdlib/eschol-ui#running-development-tasks).
 5. Upon saving **app.jsx** after adding these changes, the UI library should automatically rebundle without errors. If you get errors, then double-check your filenames and JSX component names.
-6. From the UI library home page, click the "new" link to browse to the new component.
-
-You should see the text, "New component content to go here" on the page, with a green border around it. This confirms that you have successfully added a new component with required files into the UI library.
+6. From the UI library home page, click the "new" link to browse to the new component. If successful, you should see the text, "New component content to go here" on the page, with a green border around it.
+7. Double-check your work across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers).
 
 ### Integrating UI Library into jSchol Project
 
@@ -247,9 +256,9 @@ For basic CSS concepts, please see [CSS Ruleset Terminology](https://css-tricks.
 
 ### Nesting Selectors
 
-CSS rulesets in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following code examples below use nested Sass.
+CSS rulesets in this UI library usually contain nested parts - [a feature of Sass](http://sass-lang.com/guide#topic-3). The following CSS topics use code examples with nested Sass.
 
-### Naming Styles
+### Naming Conventions
 
 Selectors in this UI library are named using the [BEM method](https://css-tricks.com/bem-101). With BEM, CSS selectors are written as classes and named as blocks, elements, and modifiers. In the UI library, components and objects always feature a BEM block, while BEM elements and modifiers may be optional.
 
@@ -298,7 +307,7 @@ For example, with the "flower" component, the background is initially rendered a
 
 ### CSS Combinators
 
-[CSS combinators](https://www.w3schools.com/css/css_combinators.asp) are frequently applied within rulesets in order to easily target specific HTML elements within the component/object without having to write additional rulesets.
+[CSS combinators](https://www.w3schools.com/css/css_combinators.asp) are frequently applied within declaration blocks in order to easily target specific HTML elements within the component/object without having to write additional rulesets.
 
 For example, the nested `a` in the flower component will render all links within the component as blue:
 
@@ -326,7 +335,7 @@ Similar to CSS combinators are [pseudo-classes](https://www.w3schools.com/css/cs
 
 ### Sass Placeholders
 
-Sass placeholders allow the chunking of common styles. They look like a normal CSS class, except that they start with a percent sign instead of a period, like this: `%c-block`. They get applied to regular, class-based selectors by using the Sass directive `@extend` and named according to the placeholder class.
+Sass placeholders allow the chunking of common styles. They look like a normal CSS class, except that they start with a percent sign instead of a period, as in: `%c-block`. They get applied to regular, class-based rulesets by using the Sass directive `@extend` and named according to the placeholder class.
 
 For example, `%c-flower` is the placeholder and its background style gets applied to `.c-flower__pedals`:
 
@@ -370,7 +379,7 @@ For a real-world example of this pattern, see the [Text Link object Sass](https:
 
 ### Sass Mixins
 
-Sass mixins are similar as placeholders - they contain one or more CSS declarations that get applied in many places in the UI. However, mixins are written a bit differently, like this:
+Sass mixins are similar as placeholders - they contain one or more CSS rulesets that get applied in many places in the UI. However, mixins are written a bit differently:
 
 ```scss
 @mixin flower() {
@@ -382,7 +391,7 @@ Sass mixins are similar as placeholders - they contain one or more CSS declarati
 }
 ```
 
-Mixins typically contain complex CSS declarations and Sass logic for compilation. They are used sparingly and mostly appear in [**\_utilities.scss**].
+Mixins typically contain complex CSS declarations and Sass logic for compilation to CSS. They are used sparingly and mostly appear in [**\_utilities.scss**].
 
 ### Background Images
 
@@ -404,7 +413,9 @@ The following browsers are officially supported in the UI library:
 * Internet Explorer 11 (test via CrossBrowserTesting.com)
 * Safari (last 2 versions)
 
-These browsers are specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Webpack style generation.
+UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across these browsers, but should render as close as possible to the eScholarship design and UX specifications.
+
+These browsers are also specified within the [browserslist definition within the UI library's package.json file](https://github.com/cdlib/eschol-ui/blob/master/package.json#L63), which configures Webpack style generation.
 
 ## Best Practices
 
@@ -414,14 +425,10 @@ These browsers are specified within the [browserslist definition within the UI l
 
 3. Test any UI changes and/or additions on small screens, not just at the large screen desktop sizes. At a minimum, load a layout within a desktop browser's "responsive design mode" and preferrably, load it in your phone's browser at the same URL used during the Watch process.
 
-4. Use Sass variables and utilities in component/object styles as much as possible, instead of recreating new values. For example, if you need to add margin to an element, use a Sass spacing variable, like `$spacing-md` instead of an arbitrary value, like "12px". In some cases, the sass linter will remind you if sass variables are not used, such as with setting colors.
+4. Create styles using the same conventions highlighted in [Working With Styles](https://github.com/cdlib/eschol-ui#working-with-styles). Refer to [this Sass style guide](https://css-tricks.com/sass-style-guide) for more examples of Sass conventions used in the UI Library. The Sass linter will remind you if you deviate from these patterns.
 
-5. Avoid inlining styles in the HTML using the style attribute - `<div style="...">`. This is a CSS antipattern and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser due to HTML's Content Security Policy.
+5. Use Sass variables and utilities when writing component/object styles as much as possible. For example, if you need to add margin to an element, use a Sass spacing variable, like `$spacing-md` instead of an arbitrary value, like "12px". In some cases, the sass linter will remind you to set values with sass variables, such as with setting colors.
 
-6. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
+6. Avoid inlining styles in the HTML using the style attribute - `<div style="...">`. This is a CSS antipattern and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser due to HTML's Content Security Policy.
 
-7. Write CSS selectors in the [BEM method](https://css-tricks.com/bem-101) to help keep styles scoped to each component and CSS specificity flat.
-
-8. Follow [this Sass style guide](https://css-tricks.com/sass-style-guide) when writing Sass. A Sass linter during the Watch and Build processes will warn you if the Sass isn't following these conventions.
-
-9. UI elements [do not need to look exactly the same](http://dowebsitesneedtolookexactlythesameineverybrowser.com) across the [supported browsers](https://github.com/cdlib/eschol-ui#supported-browsers), but they should render as close as possible to the eScholarship design and UX specifications.
+7. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
