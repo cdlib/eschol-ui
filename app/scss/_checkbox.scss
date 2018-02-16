@@ -6,7 +6,7 @@
   ul {
     padding-left: 2em;
 
-    @include interactive-element-pointer(coarse) {
+    @include u-interactive-element-pointer(coarse) {
       padding-left: 2.4em;
     }
 
@@ -37,7 +37,7 @@
 %c-checkbox__icon {
   background: no-repeat left top 0.3em / 1.3em;
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     background: no-repeat left top 0.5em / 1.8em; 
   }
 
@@ -66,7 +66,7 @@
     background-image: inline('../images/icon_checkbox-unchecked-orange.svg');
   }
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     padding: 0.8em 0 0.8em 2.4em;
   }
 
@@ -77,14 +77,14 @@
 %c-checkbox__attrib {
   background: no-repeat left 2em top 0.3em / 6.4em;
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     background: no-repeat left 2.4em top 0.5em / 9em;
   }
 
   .c-checkbox__label {
     padding-top: 1.7em;
 
-    @include interactive-element-pointer(coarse) {
+    @include u-interactive-element-pointer(coarse) {
       padding-top: 2.3em;
     }
 

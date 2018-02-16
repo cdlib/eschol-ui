@@ -138,7 +138,7 @@
   @extend %c-search2__refine;
   margin-top: (-$pointer-size-fine);
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     margin-top: (-$pointer-size-coarse);
   }
 

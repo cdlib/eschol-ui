@@ -9,7 +9,7 @@
   margin-bottom: $spacing-sm;
   margin-left: $pointer-size-fine;
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     margin-left: $pointer-size-coarse;
   }
 
@@ -27,7 +27,7 @@
   @extend %no-bullet-ul;
   margin-left: $pointer-size-fine;
 
-  @include interactive-element-pointer(coarse) {
+  @include u-interactive-element-pointer(coarse) {
     margin-left: $pointer-size-coarse;
   }
 
@@ -61,7 +61,7 @@
       background: inline('../images/icon_plus-black.svg') no-repeat center / 1.1em;
       content: '';
 
-      @include interactive-element-pointer(coarse) {
+      @include u-interactive-element-pointer(coarse) {
         left: (-$pointer-size-coarse);
       }
 
@@ -85,7 +85,7 @@
     @extend %no-bullet-ul;
     margin-left: $pointer-size-fine;
 
-    @include interactive-element-pointer(coarse) {
+    @include u-interactive-element-pointer(coarse) {
       margin-left: $pointer-size-coarse;
     }
 
