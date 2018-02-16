@@ -59,7 +59,7 @@
     background-color: $color-light-teal;
   }
 
-  @include headings() {
+  @include u-heading() {
     @extend %o-heading3a;
 
     a {

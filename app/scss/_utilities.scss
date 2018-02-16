@@ -156,7 +156,7 @@ Set an interactive element's styles if there's a touchscreen (coarse) or mouse-o
 
 // Headings generator
 
-@mixin headings($from: 1, $to: 6) {
+@mixin u-heading($from: 1, $to: 6) {
   @for $i from $from through $to {
     h#{$i} {
       @content

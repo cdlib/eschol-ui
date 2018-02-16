@@ -6,7 +6,7 @@
   li {
     line-height: $line-height1;
 
-    @include headings() {
+    @include u-heading() {
       margin: 0;
       font-size: 1em;
       font-weight: normal;

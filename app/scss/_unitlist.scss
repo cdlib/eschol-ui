@@ -2,7 +2,7 @@
 
 .c-unitlist {
 
-  @include headings() {
+  @include u-heading() {
     @extend %o-heading1a;
   }
 

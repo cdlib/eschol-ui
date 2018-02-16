@@ -64,7 +64,7 @@
     padding: $spacing-md;
   }
 
-  @include headings() {
+  @include u-heading() {
     margin: 0;
     font-size: 1em;
     font-weight: normal;

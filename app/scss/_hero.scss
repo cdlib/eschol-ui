@@ -27,7 +27,7 @@ $hero-text-shadow: 1px 1px 1px $color-light-black;
     height: 24em;
   }
 
-  @include headings() {
+  @include u-heading() {
     @extend %u-kievitweblight-font-stack;
     margin: 0;
     color: $color-white;
