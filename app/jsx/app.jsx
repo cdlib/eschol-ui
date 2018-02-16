@@ -35,7 +35,6 @@ import CampusLayout from './layouts/CampusLayout.jsx'
 import CampusCarouselFrameDisp from './display/CampusCarouselFrameDisp.jsx'
 import CampusHeroDisp from './display/CampusHeroDisp.jsx'
 import CampusSearchDisp from './display/CampusSearchDisp.jsx'
-import CampusSelectorDisp from './display/CampusSelectorDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
@@ -168,7 +167,6 @@ ReactDOM.render((
       <Route path="/campuscarouselframe" component={CampusCarouselFrameDisp} />
       <Route path="/campushero" component={CampusHeroDisp} />
       <Route path="/campussearch" component={CampusSearchDisp} />
-      <Route path="/campusselector" component={CampusSelectorDisp} />
       <Route path="/button" component={ButtonDisp} />
       <Route path="/checkbox" component={CheckboxDisp} />
       <Route path="/columnbox" component={ColumnBoxDisp} />
