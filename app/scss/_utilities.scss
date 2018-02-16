@@ -75,7 +75,7 @@ Selector pattern using above media query mixin:
 
 // Enlarge a <summary> element's height if there's a touch screen. Height should match element height of %u-interactive-element-size utility above:
 
-%interactive-summary-size { 
+%u-interactive-summary-size { 
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 
