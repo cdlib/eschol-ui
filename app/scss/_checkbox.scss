@@ -44,7 +44,7 @@
 }
 
 .c-checkbox__input {
-  @extend %hide;
+  @extend %u-hide;
 
   &:checked + .c-checkbox__label {
     @extend %c-checkbox__icon;

@@ -18,7 +18,7 @@
     @extend %clear-fieldset-styles;
 
     legend {
-      @extend %hide;
+      @extend %u-hide;
     }
 
   }
@@ -40,7 +40,7 @@
 }
 
 .c-search2__label {
-  @extend %hide;
+  @extend %u-hide;
 }
 
 .c-search2__field {
@@ -58,7 +58,7 @@
 }
 
 .c-search2__submit-button {
-  @extend %hide;
+  @extend %u-hide;
   @extend %o-button__9;
   background-image: inline('../images/icon_magnify.svg');
 
@@ -104,7 +104,7 @@
 
   [type='radio'] {
     // hide default radio button:
-    @extend %hide;
+    @extend %u-hide;
 
     // unchecked style:
     + label:before {

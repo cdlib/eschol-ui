@@ -16,7 +16,7 @@
 }
 
 .c-search1__label {
-  @extend %hide;
+  @extend %u-hide;
 }
 
 .c-search1__field {
@@ -35,7 +35,7 @@
 }
 
 .c-search1__submit-button {
-  @extend %hide;
+  @extend %u-hide;
   @extend %o-button__9;
   background-image: inline('../images/icon_magnify.svg');
 
