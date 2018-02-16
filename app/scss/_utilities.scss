@@ -62,7 +62,7 @@ Selector pattern using above media query mixin:
 
 // Enlarge an interactive element's minimum width and height if there's a touch screen:
 
-%interactive-element-size { 
+%u-interactive-element-size { 
   min-width: $pointer-size-fine;
   min-height: $pointer-size-fine;
 
@@ -73,7 +73,7 @@ Selector pattern using above media query mixin:
 
 }
 
-// Enlarge a <summary> element's height if there's a touch screen. Height should match element height of %interactive-element-size utility above:
+// Enlarge a <summary> element's height if there's a touch screen. Height should match element height of %u-interactive-element-size utility above:
 
 %interactive-summary-size { 
   padding-top: 0.5em;
@@ -143,7 +143,7 @@ Set an interactive element's styles if there's a touchscreen (coarse) or mouse-o
 // Navigation item styles
 
 %nav-item {
-  @extend %interactive-element-size;
+  @extend %u-interactive-element-size;
   display: flex;
   align-items: center;
   padding: $spacing-base $spacing-sm;

@@ -8,7 +8,7 @@ $tab-height: $element-height;
 */
 
 %c-tabs__buttons {
-  @extend %interactive-element-size;
+  @extend %u-interactive-element-size;
   padding: 5px $spacing-sm;
   border: none;
   background-color: $color-light-gray;

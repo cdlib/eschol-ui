@@ -44,7 +44,7 @@
 }
 
 .c-search2__field {
-  @extend %interactive-element-size;
+  @extend %u-interactive-element-size;
   flex: 1 0 auto;
   padding: 0 0 0 30px;
   border: none;
@@ -81,7 +81,7 @@
 }
 
 %c-search2__refine {
-  @extend %interactive-element-size;
+  @extend %u-interactive-element-size;
   display: flex;
   align-items: center;
   padding: 0 8px;

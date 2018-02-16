@@ -27,7 +27,7 @@
 .o-download__formats {
 
   summary {
-    @extend %interactive-element-size; // sets the height for .o-download
+    @extend %u-interactive-element-size; // sets the height for .o-download
     position: relative;
     border-radius: 0 $round-corner $round-corner 0;
     background-color: $color-teal;
