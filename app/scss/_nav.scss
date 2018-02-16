@@ -5,7 +5,7 @@
   z-index: 1; // prevents stacking under marquee carousel in some browsers
 
   ul {
-    @extend %no-bullet-ul;
+    @extend %u-reset-list-styles;
   }
 
 }

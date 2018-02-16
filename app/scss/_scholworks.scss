@@ -27,7 +27,7 @@ $scholworks-tag-height: 1.4em;
 }
 
 .c-scholworks__tag-list {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
 }
 
 %c-scholworks__tag {

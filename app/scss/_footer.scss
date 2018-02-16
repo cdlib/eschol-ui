@@ -21,7 +21,7 @@ $footer-logo-width: 200px;
   margin-bottom: $spacing-sm;
 
   ul {
-    @extend %no-bullet-ul;
+    @extend %u-reset-list-styles;
     columns: 2;
     column-gap: $spacing-lg;
 

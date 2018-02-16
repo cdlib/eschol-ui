@@ -1,7 +1,7 @@
 // ##### Related Items Component ##### //
 
 .c-relateditems {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
 
   li {
     line-height: $line-height1;

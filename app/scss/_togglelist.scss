@@ -24,7 +24,7 @@
 }
 
 .c-togglelist__mainlist {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
   margin-left: $pointer-size-fine;
 
   @include u-interactive-element-pointer(coarse) {
@@ -82,7 +82,7 @@
   }
 
   ul {
-    @extend %no-bullet-ul;
+    @extend %u-reset-list-styles;
     margin-left: $pointer-size-fine;
 
     @include u-interactive-element-pointer(coarse) {

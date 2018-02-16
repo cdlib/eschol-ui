@@ -1,7 +1,7 @@
 // ##### Checkbox Component ##### //
 
 %c-checkbox {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
 
   ul {
     padding-left: 2em;

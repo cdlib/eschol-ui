@@ -87,7 +87,7 @@
 }
 
 .c-filter__active-list {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
   clear: left;
 
   button {

@@ -117,7 +117,7 @@
 }
 
 .o-customselector__items {
-  @extend %no-bullet-ul;
+  @extend %u-reset-list-styles;
 
   li {
 
