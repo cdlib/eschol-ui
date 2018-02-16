@@ -43,7 +43,7 @@
   border: 1px solid $color-teal;
 
   figcaption {
-    @include background-filter($color-black);
+    @include u-background-filter($color-black);
     position: absolute;
     right: 0;
     bottom: 0;

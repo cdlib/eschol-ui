@@ -189,11 +189,11 @@ Set an interactive element's styles if there's a touchscreen (coarse) or mouse-o
 
 Background color with progressively-enhanced blur effect. Example:
 
-@include background-filter($color-black);
+@include u-background-filter($color-black);
 
 */
 
-@mixin background-filter($bgcolor) {
+@mixin u-background-filter($bgcolor) {
   background-color: rgba($bgcolor, 0.7);
 
   @supports (backdrop-filter: blur()) {
