@@ -79,8 +79,8 @@ export default class DateRangeComp extends React.Component {
                  <option value="02">February</option>
               </select>
             </div>
-           <button type="submit">Update</button>
           </div>
+          <button type="submit">Update</button>
         </form>
       </div>
       )

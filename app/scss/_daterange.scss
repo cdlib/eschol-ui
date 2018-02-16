@@ -5,7 +5,6 @@
 
   button {
     @extend %o-button__8;
-    height: 2em;
   }
 
 }
@@ -14,6 +13,7 @@
   display: inline-flex; // this is the difference between this and o-input__inline
   flex-wrap: wrap;
   margin-bottom: $spacing-md;
+
   &:not(:last-child) {
     margin-right: $spacing-md;
   }
@@ -27,4 +27,5 @@
     }
 
   }
+
 }
