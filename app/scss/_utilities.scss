@@ -128,16 +128,11 @@ Set an interactive element's styles if there's a touchscreen (coarse) or mouse-o
 
 }
 
-// Hide/show something visually but not for screen readers
+// Hide something visually but not for screen readers
 
 %u-hide {
   position: absolute;
   left: -9999px;
-}
-
-%show {
-  position: static;
-  left: auto;
 }
 
 // Navigation item styles
