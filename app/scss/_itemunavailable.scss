@@ -6,7 +6,7 @@
   background: no-repeat top left / 20px;
 
   .o-textlink__secondary {
-    @extend %overflow-wrap;
+    @extend %u-overflow-wrap;
     display: block;
     margin-bottom: $spacing-md;
   }
