@@ -24,7 +24,7 @@ div[class^='o-mediafile--'] {
 }
 
 %o-mediafile__heading {
-  @extend %u-overflow-wrap;
+  @include u-overflow-wrap();
   margin: 0 0 $spacing-sm;
   padding-left: 25px;
   background: no-repeat top left / 0.9em;

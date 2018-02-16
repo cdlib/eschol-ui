@@ -37,12 +37,7 @@
 
   @include bp(screen1) {
     @include u-one-line-truncation(inactive);
-    // wrap long url string:
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-all;
-    hyphens: auto;
-    grid-column: 1;
+    @include u-overflow-wrap();
   }
 
 }

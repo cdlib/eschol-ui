@@ -27,7 +27,7 @@
 
 .c-publocation__link {
   @extend %o-textlink__secondary;
-  @extend %u-overflow-wrap;
+  @include u-overflow-wrap();
   display: block;
   margin-bottom: $spacing-sm;
 
