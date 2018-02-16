@@ -5,9 +5,9 @@ import React from 'react'
 export default class DateRangeComp extends React.Component {
   render() {
     return (
-      <div className="c-daterange">
-        <form method="GET" action="/uc/root/stats/history_by_unit">
-          <div className="c-daterange-input__inline">
+      <form method="GET" action="/uc/root/stats/history_by_unit">
+        <div className="c-daterange">
+          <div className="o-input__inline">
             <div className="o-input__droplist1">
               <label htmlFor="range">Date range</label>
               <select name="range" id="range">
@@ -20,7 +20,7 @@ export default class DateRangeComp extends React.Component {
               </select>
             </div>
           </div>
-          <div className="c-daterange-input__inline">
+          <div className="o-input__inline">
             <div className="o-input__droplist1">
               <label htmlFor="st_yr">Start year</label>
               <select name="st_yr" id="st_yr">
@@ -81,8 +81,8 @@ export default class DateRangeComp extends React.Component {
             </div>
           </div>
           <button type="submit">Update</button>
-        </form>
-      </div>
-      )
+        </div>
+      </form>
+    )
   }
 }

@@ -2,30 +2,14 @@
 
 .c-daterange {
   display: flex;
+  flex-wrap: wrap;
 
   button {
     @extend %o-button__8;
   }
 
-}
-
-.c-daterange-input__inline {
-  display: inline-flex; // this is the difference between this and o-input__inline
-  flex-wrap: wrap;
-  margin-bottom: $spacing-md;
-
-  &:not(:last-child) {
+  .o-input__inline {
     margin-right: $spacing-md;
-  }
-
-  // Any input object:
-  [class^='o-input__'] {
-
-    &:not(:last-child) {
-      margin-right: $spacing-md;
-      margin-bottom: $spacing-sm;
-    }
-
   }
 
 }
