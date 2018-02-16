@@ -3,6 +3,7 @@
 .c-daterange {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 
   button {
     @extend %o-button__8;
