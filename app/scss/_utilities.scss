@@ -51,7 +51,7 @@ Selector pattern using above media query mixin:
 
 // Bleed component to left/right of viewport by equalling <body> left/right padding:
 
-%page-bleed {
+%u-page-bleed {
   margin: 0 (-$spacing-sm);
 
   @include bp(screen2) {
