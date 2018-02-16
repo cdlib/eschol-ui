@@ -33,7 +33,6 @@ Within this repository, the files and folders directly related to creating and m
 
 ```
 app
-├── dist (created during the build process)
 ├── images
 ├── jsx
 |   ├── components
@@ -44,11 +43,13 @@ app
 |   |   └── [layout].jsx
 |   └── objects
 |       └── [object].jsx
-└── scss
-    ├── _[component or object].scss
-    ├── _mixins.scss
-    ├── _variables.scss
-    └── main.scss
+├── scss
+|   ├── _[component or object].scss
+|   ├── _mixins.scss
+|   ├── _variables.scss
+|   └── main.scss
+└── template.html
+dist (created during the build process)
 ```
 
 ### Images
@@ -108,6 +109,14 @@ Sass files within the **scss/** folder contain all project CSS. They include:
 * **main.scss** is where all Sass files get imported and compiled via Webpack. It also contains a short section of "global" styles. This is the only Sass file that is not prepended by an underscore.
 
 See below for more information about [working with styles](https://github.com/cdlib/eschol-ui#working-with-styles).
+
+### Template
+
+Template.html contains static HTML used for the UI Library's single page React application. During the Watch and Build processes, Webpack automatically transforms it to **index.html** within the **dist/** directory and adds external script and stylesheet links.
+
+### Dist
+
+The **dist/** directory with production-ready files is automatically erased and re-created during the Watch and Build processes.
 
 ## Developing UI Library Assets
 
