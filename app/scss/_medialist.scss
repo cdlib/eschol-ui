@@ -4,7 +4,7 @@ $medialist-item-length: 11em;
 
 .c-medialist {
   @extend %u-reset-list-styles;
-  @extend %clearfix;
+  @extend %u-clearfix;
   flex: 1 0 auto; // to c-scholworks__media flexbox
   margin-right: $spacing-md;
 
