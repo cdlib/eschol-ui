@@ -15,7 +15,7 @@
 
   // Reset default fieldset styles; hide legend:
   fieldset {
-    @extend %clear-fieldset-styles;
+    @extend %u-reset-fieldset-styles;
 
     legend {
       @extend %u-hide;
