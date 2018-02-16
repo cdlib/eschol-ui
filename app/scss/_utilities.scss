@@ -247,9 +247,15 @@ Background color with progressively-enhanced blur effect. Example:
   }
 }
 
-// One-line truncation
+/*
 
-@mixin one-line-truncation($state) {
+One-line truncation. Use like:
+
+@include u-one-line-truncation(active);
+
+*/
+
+@mixin u-one-line-truncation($state) {
 
   @if $state == inactive {
     white-space: normal;

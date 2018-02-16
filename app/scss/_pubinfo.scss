@@ -33,10 +33,10 @@
 
 .c-pubinfo__link {
   @extend %o-textlink__secondary;
-  @include one-line-truncation(active);
+  @include u-one-line-truncation(active);
 
   @include bp(screen1) {
-    @include one-line-truncation(inactive);
+    @include u-one-line-truncation(inactive);
     // wrap long url string:
     overflow-wrap: break-word;
     word-wrap: break-word;
