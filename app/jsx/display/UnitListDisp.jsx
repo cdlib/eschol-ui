@@ -7,7 +7,7 @@ class UnitListDisp extends React.Component {
   render() {
     return (
       <div>
-        <UnitListComp />
+        <UnitListComp heading="Journal" />
       </div>
     )
   }

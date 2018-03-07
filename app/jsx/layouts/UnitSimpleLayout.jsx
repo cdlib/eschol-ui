@@ -17,6 +17,7 @@ import SocialIconsComp from '../components/SocialIconsComp.jsx'
 import LanguageComp from '../components/LanguageComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
+import UnitListComp from '../components/UnitListComp.jsx'
 
 // Load dotdotdot in browser but not server:
 if (!(typeof document === "undefined")) {
@@ -152,34 +153,8 @@ class UnitSimpleLayout extends React.Component {
               <UnitSeriesComp heading="Recent Works" />
               <UnitSeriesComp heading="Seminar and Conference Papers" />
               <UnitSeriesComp heading="Working Papers" />
-              <div className="c-unitlist">
-                <h3>Journals</h3>
-                <ul>
-                  <li>
-                    <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </li>
-                  <li>
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </li>
-                  <li>
-                    <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="c-unitlist">
-                <h3>Related Research Centers and Groups</h3>
-                <ul>
-                  <li>
-                    <a href="">Language Ideologies and Hegemonic Factors Imposed upon Judeo-Spanish Speaking Communities</a>
-                  </li>
-                  <li>
-                    <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
-                  </li>
-                  <li>
-                    <a href="">Coupled Cardiac Electrophysiology and Contraction using Finite Element</a>
-                  </li>
-                </ul>
-              </div>
+              <UnitListComp heading="Journals" />
+              <UnitListComp heading="Related Research Centers and Groups" />
             </section>
           </main>
           <aside>
