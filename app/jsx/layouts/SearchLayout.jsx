@@ -9,10 +9,10 @@ import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import ExportComp from '../components/ExportComp.jsx'
 import FilterComp from '../components/FilterComp.jsx'
+import InfoPagesComp from '../components/InfoPagesComp.jsx'
 import RefineComp from '../components/RefineComp.jsx'
 import SortPaginationComp from '../components/SortPaginationComp.jsx'
-import InfoPagesComp from '../components/InfoPagesComp.jsx'
-import MediaListComp from '../components/MediaListComp.jsx'
+import ScholWorksComp from '../components/ScholWorksComp.jsx'
 import ReactModal from 'react-modal'
 import FooterComp from '../components/FooterComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
@@ -114,172 +114,10 @@ class SearchLayout extends React.Component {
                 <h2>Scholarly Works (12,023 results)</h2>
               </header>
               <SortPaginationComp />
-
-              {/* ScholWorksComp article example below */}
-              <section className="c-scholworks">
-                <div className="c-scholworks__main-column">
-                  <ul className="c-scholworks__tag-list">
-                    <li className="c-scholworks__tag-article">Article</li>
-                    <li className="c-scholworks__tag-peer">Peer Reviewed</li>
-                  </ul>
-                  <heading>
-                    <h3 className="c-scholworks__heading">
-                      <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h3 >
-                  </heading>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally omitted */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                      <li><a href="">Smith, Sheryl T</a></li>
-                      <li><a href="">Barshop, William</a></li>
-                      <li><a href="">Dirkes, William</a></li>
-                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
-                    </ul>
-                  </div>
-                  <div className="c-scholworks__publication">
-                    <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
-                  </div>
-                  <div className="c-scholworks__abstract">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor obcaecati magni quas quos ab dignissimos neque beatae, provident unde architecto ut corrupti! Ratione aperiam, recusandae quidem nisi inventore asperiores nam sed eaque totam, quam minima reprehenderit, quisquam cupiditate reiciendis. Vero earum magni asperiores quisquam impedit voluptates eveniet aspernatur assumenda.
-                    </p>
-                  </div>
-                  <div className="c-scholworks__media">
-                    <MediaListComp />
-                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
-                  </div>
-                </div>
-                <a className="c-scholworks__thumbnail" href="">
-                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
-                </a>
-              </section>
-
-              {/* ScholWorksComp book example below */}
-              <section className="c-scholworks">
-                <div className="c-scholworks__main-column">
-                  <ul className="c-scholworks__tag-list">
-                    <li className="c-scholworks__tag-book">Book</li>
-                    <li className="c-scholworks__tag-peer">Peer Reviewed</li>
-                  </ul>
-                  <heading>
-                    <h3 className="c-scholworks__heading">
-                      <a href="">A Fairly Short Title</a>
-                    </h3 >
-                  </heading>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally omitted */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Baker, James</a></li>
-                      <li><a href="">Smith, William B</a></li>
-                    </ul>
-                  </div>
-                  <div className="c-scholworks__publication">
-                    <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
-                  </div>
-                  <div className="c-scholworks__abstract">
-                    <p>Just a little bit of copy here; not too much, though.
-                    </p>
-                  </div>
-                  <div className="c-scholworks__media">
-                    <ul className="c-medialist">
-                      <li className="c-medialist__image">Contains 2 supplemental images</li>
-                    </ul>
-                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
-                  </div>
-                </div>
-                <a className="c-scholworks__thumbnail" href="">
-                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
-                </a>
-              </section>
-
-              {/* ScholWorksComp thesis example below */}
-              <section className="c-scholworks">
-                <div className="c-scholworks__main-column">
-                  <ul className="c-scholworks__tag-list">
-                    <li className="c-scholworks__tag-thesis">Thesis</li>
-                    <li className="c-scholworks__tag-peer">Peer Reviewed</li>
-                  </ul>
-                  <heading>
-                    <h3 className="c-scholworks__heading">
-                      <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h3 >
-                  </heading>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally omitted */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                      <li><a href="">Smith, Sheryl T</a></li>
-                      <li><a href="">Barshop, William</a></li>
-                      <li><a href="">Dirkes, William</a></li>
-                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
-                    </ul>
-                  </div>
-                  <div className="c-scholworks__publication">
-                    <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
-                  </div>
-                  <div className="c-scholworks__abstract">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor obcaecati magni quas quos ab dignissimos neque beatae, provident unde architecto ut corrupti! Ratione aperiam, recusandae quidem nisi inventore asperiores nam sed eaque totam, quam minima reprehenderit, quisquam cupiditate reiciendis. Vero earum magni asperiores quisquam impedit voluptates eveniet aspernatur assumenda.
-                    </p>
-                  </div>
-                  <div className="c-scholworks__media">
-                    <MediaListComp />
-                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
-                  </div>
-                </div>
-                <a className="c-scholworks__thumbnail" href="">
-                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
-                </a>
-              </section>
-
-              {/* ScholWorksComp multimedia example below */}
-              <section className="c-scholworks">
-                <div className="c-scholworks__main-column">
-                  <ul className="c-scholworks__tag-list">
-                    <li className="c-scholworks__tag-multimedia">Multimedia</li>
-                    <li className="c-scholworks__tag-peer">Peer Reviewed</li>
-                  </ul>
-                  <heading>
-                    <h3 className="c-scholworks__heading">
-                      <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
-                    </h3 >
-                  </heading>
-                  <div className="c-authorlist">
-                    {/* <time> element intentionally omitted */}
-                    <ul className="c-authorlist__list">
-                    {/* links can be left out of the list if no links are desired: */}
-                      <li><a href="">Leung, Wilson</a></li>
-                      <li><a href="">Shaffer, Christopher D</a></li>
-                      <li><a href="">Reed, Laura K</a></li>
-                      <li><a href="">Smith, Sheryl T</a></li>
-                      <li><a href="">Barshop, William</a></li>
-                      <li><a href="">Dirkes, William</a></li>
-                      <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
-                    </ul>
-                  </div>
-                  <div className="c-scholworks__publication">
-                    <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
-                  </div>
-                  <div className="c-scholworks__abstract">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor obcaecati magni quas quos ab dignissimos neque beatae, provident unde architecto ut corrupti! Ratione aperiam, recusandae quidem nisi inventore asperiores nam sed eaque totam, quam minima reprehenderit, quisquam cupiditate reiciendis. Vero earum magni asperiores quisquam impedit voluptates eveniet aspernatur assumenda.
-                    </p>
-                  </div>
-                  <div className="c-scholworks__media">
-                    <MediaListComp />
-                    <img className="c-scholworks__license" src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
-                  </div>
-                </div>
-                <a className="c-scholworks__thumbnail" href="">
-                  <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
-                </a>
-              </section>
-
+              <ScholWorksComp type="article" />
+              <ScholWorksComp type="book" />
+              <ScholWorksComp type="thesis" />
+              <ScholWorksComp type="multimedia" />
             </section>
           </main>
         </div>

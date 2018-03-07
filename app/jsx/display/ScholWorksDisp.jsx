@@ -7,7 +7,8 @@ class ScholWorksDisp extends React.Component {
   render() {
     return (
       <div>
-         <ScholWorksComp />
+        {/* Possible type values: "article", "book", "thesis", "multimedia" */}
+        <ScholWorksComp type="article" />
       </div>
     )
   }

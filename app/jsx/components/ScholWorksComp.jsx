@@ -5,6 +5,7 @@ import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
 import MediaListComp from '../components/MediaListComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
+import faker from 'faker/locale/en'
 
 class ScholWorksComp extends React.Component {
   componentDidMount() {
@@ -15,7 +16,7 @@ class ScholWorksComp extends React.Component {
       <section className="c-scholworks">
         <div className="c-scholworks__main-column">
           <ul className="c-scholworks__tag-list">
-            <li className="c-scholworks__tag-article">Article</li>
+            <li className={'c-scholworks__tag-' + this.props.type}>{this.props.type}</li>
             <li className="c-scholworks__tag-peer">Peer Reviewed</li>
           </ul>
           <heading>
@@ -40,8 +41,7 @@ class ScholWorksComp extends React.Component {
             <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
           </div>
           <div className="c-scholworks__abstract">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor obcaecati magni quas quos ab dignissimos neque beatae, provident unde architecto ut corrupti! Ratione aperiam, recusandae quidem nisi inventore asperiores nam sed eaque totam, quam minima reprehenderit, quisquam cupiditate reiciendis. Vero earum magni asperiores quisquam impedit voluptates eveniet aspernatur assumenda.
-            </p>
+            <p>{faker.fake("{{lorem.paragraphs}}")}</p>
           </div>
           <div className="c-scholworks__media">
             <MediaListComp />

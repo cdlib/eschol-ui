@@ -38,6 +38,7 @@ $scholworks-tag-height: 1.4em;
   padding: 0 $spacing-sm 0 $spacing-lg;
   border-radius: $round-corner;
   background: $color-light-gray no-repeat left $spacing-sm center / 1em;
+  text-transform: capitalize;
 }
 
 .c-scholworks__tag-article {
