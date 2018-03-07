@@ -2,6 +2,7 @@
 
 import React from 'react'
 import LazyImageComp from '../components/LazyImageComp.jsx'
+import faker from 'faker'
 
 class IssueComp extends React.Component {
   render() {
@@ -12,10 +13,10 @@ class IssueComp extends React.Component {
           <LazyImageComp
             src="https://escholarship.org/images/homecover_fb.png"
             alt="journal cover" />
-          <figcaption><i>Cover Caption:</i> The cover image is from Multimedia artist Saya Woolfalk’s 2012 project titled The Empathics. This performance piece is set in a fictional hybrid plant/human community that Woolfalk ethnographically analyzes, documents, and displays.</figcaption>
+          <figcaption><i>Cover Caption:</i> The cover image is from {faker.fake("{{lorem.paragraph}}")}.</figcaption>
         </figure>
         <div className="c-issue__description">
-          <p>Aut vitae, ipsa magnam, voluptates cum deleniti quaerat asperiores. Repudiandae reprehenderit tempora beatae cumque nulla, molestias rem atque dolore modi deserunt veniam quod numquam voluptatibus dolor ut illo. Dolorum natus autem aliquid commodi nesciunt ducimus quis libero enim dolorem reprehenderit amet iusto labore pariatur expedita nisi sed recusandae, ullam! Quos quae accusantium incidunt repudiandae maxime cupiditate! Sequi qui sapiente neque quasi exercitationem.
+          <p>{faker.fake("{{lorem.paragraph}}")}
           </p>
         </div>
       </div>
