@@ -7,7 +7,7 @@ class ToggleContentDisp extends React.Component {
   render() {
     return (
       <div>
-         <ToggleContentComp />
+        <ToggleContentComp heading="Main Content" />
       </div>
     )
   }

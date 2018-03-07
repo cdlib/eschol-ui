@@ -10,6 +10,7 @@ import ViewExternalComp from '../components/ViewExternalComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
+import faker from 'faker/locale/en'
 
 class SeriesItemUrlLayout extends React.Component {
   render() {
@@ -79,7 +80,7 @@ class SeriesItemUrlLayout extends React.Component {
                 <PubInfoComp />
                 <details className="c-togglecontent" open>
                   <summary>Abstract</summary>
-                  <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
+                  <p>{faker.fake("{{lorem.paragraph}}")}</p>
                   <ViewExternalComp />
                 </details>
               </div>

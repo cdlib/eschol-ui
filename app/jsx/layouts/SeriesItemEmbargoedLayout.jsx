@@ -6,6 +6,7 @@ import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import PubInfoComp from '../components/PubInfoComp.jsx'
+import ToggleContentComp from '../components/ToggleContentComp.jsx'
 import JumpComp from '../components/JumpComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -77,10 +78,7 @@ class SeriesItemEmbargoedLayout extends React.Component {
                 <h2 className="c-tabcontent__main-heading">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h2>
                 <AuthorListComp />
                 <PubInfoComp />
-                <details className="c-togglecontent" open>
-                  <summary>Abstract</summary>
-                  <p>Eum nihil quidem nisi sapiente vel obcaecati esse vero placeat! Dicta fugiat quam, nemo accusamus cum, non voluptas sit eveniet. Voluptates odio consectetur eum dicta vel at rerum accusamus inventore officiis, voluptate deleniti et reiciendis aliquam illo eaque laborum neque excepturi pariatur unde obcaecati molestiae dolores voluptas non earum minima.</p>
-                </details>
+                <ToggleContentComp heading="Abstract" />
                 <details className="c-togglecontent" open>
                   <summary>Main Content</summary>
                   <div className="o-itemunavailable__embargoed">

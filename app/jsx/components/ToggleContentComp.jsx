@@ -7,7 +7,7 @@ class ToggleContentComp extends React.Component {
   render() {
     return (
       <details className="c-togglecontent" open>
-        <summary>Main Content</summary>
+        <summary>{this.props.heading}</summary>
         <p>{faker.fake("{{lorem.paragraphs}}")}</p>
       </details>
     )
