@@ -5,7 +5,7 @@ import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
-import faker from 'faker'
+import faker from 'faker/locale/en'
 
 class PubComp extends React.Component {
   componentDidMount() {

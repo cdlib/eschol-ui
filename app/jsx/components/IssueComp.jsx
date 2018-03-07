@@ -2,7 +2,7 @@
 
 import React from 'react'
 import LazyImageComp from '../components/LazyImageComp.jsx'
-import faker from 'faker'
+import faker from 'faker/locale/en'
 
 class IssueComp extends React.Component {
   render() {
