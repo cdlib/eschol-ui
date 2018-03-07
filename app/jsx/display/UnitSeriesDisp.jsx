@@ -7,7 +7,7 @@ class UnitSeriesDisp extends React.Component {
   render() {
     return (
       <div>
-        <UnitSeriesComp />
+        <UnitSeriesComp heading="Recent Works" />
       </div>
     )
   }
