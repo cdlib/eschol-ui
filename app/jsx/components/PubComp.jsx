@@ -5,6 +5,7 @@ import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
 import AuthorListComp from '../components/AuthorListComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
+import faker from 'faker'
 
 class PubComp extends React.Component {
   componentDidMount() {
@@ -19,10 +20,8 @@ class PubComp extends React.Component {
         </h4>
         <AuthorListComp />
         <div className="c-pub__abstract">
-          <p>Quaerat impedit debitis vero officia ullam, nesciunt, culpa labore at praesentium, accusantium quibusdam est voluptate accusamus ab odit non ipsa, qui sed similique! Culpa vitae nesciunt ratione quos vel quasi, nemo neque! Id debitis consequatur saepe, rem, excepturi illum obcaecati commodi dolore eaque esse quod impedit assumenda voluptatem voluptate, ex deserunt suscipit.
-          </p>
-          <p>In similique deleniti nemo atque cumque mollitia sint quam beatae. Culpa sunt modi, deleniti dolore praesentium aspernatur eum dolor architecto illum, assumenda mollitia quos reiciendis, similique facilis laborum qui placeat vel a. Porro illo tenetur voluptates libero error sed iure fuga aperiam, facere natus reiciendis voluptatibus, vitae ipsam earum repellendus eos, officia provident soluta sapiente numquam quo molestiae illum quasi!
-          </p>
+          <p>{faker.fake("{{lorem.paragraph}}")}</p>
+          <p>{faker.fake("{{lorem.paragraph}}")}</p>
         </div>
         <MediaListComp />
       </div>
