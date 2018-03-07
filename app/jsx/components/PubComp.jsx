@@ -15,6 +15,7 @@ class PubComp extends React.Component {
   render() {
     return (
       <div className="c-pub">
+        {/* To do: replace h4 tag with 'headingLevel' prop */}
         <h4 className="c-pub__heading">
           <a href="">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</a>
         </h4>
