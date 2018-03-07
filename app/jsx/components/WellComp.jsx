@@ -1,12 +1,15 @@
 // ##### Content Well Component ##### //
 
 import React from 'react'
+import faker from 'faker/locale/en'
 
 class WellComp extends React.Component {
   render() {
     return (
       <div className="c-well">
-        Here is the well component. <a href="">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit. Totam delectus adipisci quis dicta consectetur, nesciunt quam, amet soluta, pariatur, eum eligendi libero exercitationem dolore. Optio tempore assumenda eligendi architecto, veritatis?
+        {faker.fake("{{lorem.paragraph}}") + ' '}
+        <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+        {faker.fake("{{lorem.paragraph}}")}
       </div>
     )
   }
