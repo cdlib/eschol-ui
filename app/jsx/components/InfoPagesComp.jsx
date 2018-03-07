@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import dotdotdot from 'jquery.dotdotdot'
+import faker from 'faker/locale/en'
 
 class InfoPagesComp extends React.Component {
   state={showMore: false}
@@ -20,7 +21,8 @@ class InfoPagesComp extends React.Component {
               <a href="">The Center </a>
               <a href="" className="c-infopages__title">In the Press</a>
             </h3>
-            <div className="c-infopages__text">The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
+            <div className="c-infopages__text">
+              {faker.fake("{{lorem.paragraph}}")}
             </div>
           </div>
           <div className="c-infopages__item">
@@ -29,7 +31,8 @@ class InfoPagesComp extends React.Component {
               <a href="">eScholarship</a>
               <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
             </h3>
-            <div className="c-infopages__text">Debitis incidunt aliquam nemo iure alias, amet rerum velit quidem. Quia, provident voluptatum earum mollitia aliquam at nulla quam, sunt! Laboriosam est perspiciatis molestias excepturi ad repellendus.
+            <div className="c-infopages__text">
+              {faker.fake("{{lorem.paragraph}}")}
             </div>
           </div>
           <div className="c-infopages__item">
@@ -48,7 +51,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h3>
-              <div className="c-infopages__text">The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
@@ -57,7 +61,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h3>
-              <div className="c-infopages__text">Debitis incidunt aliquam nemo iure alias, amet rerum velit quidem. Quia, provident voluptatum earum mollitia aliquam at nulla quam, sunt! Laboriosam est perspiciatis molestias excepturi ad repellendus.
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
@@ -72,7 +77,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h3>
-              <div className="c-infopages__text">The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
@@ -81,7 +87,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h3>
-              <div className="c-infopages__text">Debitis incidunt aliquam nemo iure alias, amet rerum velit quidem. Quia, provident voluptatum earum mollitia aliquam at nulla quam, sunt! Laboriosam est perspiciatis molestias excepturi ad repellendus.
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
@@ -96,7 +103,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">The Center for Environmental Design Research</a>
                 <a href="" className="c-infopages__title">In the Press</a>
               </h3>
-              <div className="c-infopages__text">The University of California awards contract to Symplectic for the implementation of a publication harvesting system to support UC’s Open Access Policy" March, 2014
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
@@ -105,7 +113,8 @@ class InfoPagesComp extends React.Component {
                 <a href="">eScholarship</a>
                 <a href="" className="c-infopages__title">Lorem Ipsum Dolor Sit Amet</a>
               </h3>
-              <div className="c-infopages__text">Debitis incidunt aliquam nemo iure alias, amet rerum velit quidem. Quia, provident voluptatum earum mollitia aliquam at nulla quam, sunt! Laboriosam est perspiciatis molestias excepturi ad repellendus.
+              <div className="c-infopages__text">
+                {faker.fake("{{lorem.paragraph}}")}
               </div>
             </div>
             <div className="c-infopages__item">
