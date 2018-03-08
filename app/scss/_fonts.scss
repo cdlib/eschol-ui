@@ -2,12 +2,16 @@
 
 @font-face {
   font-family: 'KievitWeb';
-  src: url('../fonts/KievitWeb.woff') format('woff');
+  src:
+    url('../fonts/KievitWeb.woff2') format('woff2'),
+    url('../fonts/KievitWeb.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'KievitWebLight';
-  src: url('../fonts/KievitWeb-Light.woff') format('woff');
+  src:
+    url('../fonts/KievitWeb-Light.woff2') format('woff2'),
+    url('../fonts/KievitWeb-Light.woff') format('woff');
   font-display: swap;
 }
