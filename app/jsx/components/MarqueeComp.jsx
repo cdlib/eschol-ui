@@ -68,7 +68,7 @@ class CarouselComp extends React.Component {
             </header>
             <div className="c-marquee__sidebar-truncate" ref={element => this.element = element}>
               <p>{faker.fake("{{lorem.paragraph}}")}</p>
-              <p>Commodi, excepturi, nam? Perferendis qui amet, dolore voluptas tempora sequi ipsum animi vero asperiores doloribus beatae repudiandae porro. Perferendis, provident quasi. Repellat amet odio aliquam, voluptates quo, minima veritatis. Repellendus quod blanditiis, aliquid molestiae aperiam, modi fugiat esse tempore. <button className="c-marquee__sidebar-more">More</button>
+              <p>{faker.fake("{{lorem.paragraph}}")} <button className="c-marquee__sidebar-more">More</button>
               </p>
             </div>
           </section>
