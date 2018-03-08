@@ -48,15 +48,15 @@ class CarouselComp extends React.Component {
     return (
       <div className="c-marquee">
         <div className="c-marquee__carousel">
-          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://flowerwallpaper.us/wp-content/uploads/Purple-Crocus-Flowers.jpg')"}}>
+          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://lorempixel.com/500/500/nature')"}}>
             <h1>Carousel Cell Title 1</h1>
             <p>{faker.fake("{{lorem.paragraphs}}")}</p>
           </div>
-          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('https://static.pexels.com/photos/40797/wild-flowers-flowers-plant-macro-40797.jpeg')"}}>
+          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://lorempixel.com/500/500/abstract')"}}>
             <h1>Carousel Cell Title 2</h1>
             <p>{faker.fake("{{lorem.paragraph}}")}</p>
           </div>
-          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://www.almanac.com/sites/default/files/birth_month_flowers-primary-1920x1280px_pixabay.jpg')"}}>
+          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://lorempixel.com/500/500/technics')"}}>
             <h1>Carousel Cell Title 3</h1>
             <p>{faker.fake("{{lorem.paragraphs}}")}</p>
           </div>
