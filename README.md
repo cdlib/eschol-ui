@@ -438,6 +438,6 @@ These browsers are also specified within the [browserslist definition within the
 
 5. Use Sass variables and utilities when writing component/object styles as much as possible. For example, if you need to add margin to an element, use a Sass spacing variable, like `$spacing-md` instead of an arbitrary value, like "12px". In some cases, the sass linter will remind you to set values with sass variables, such as with setting colors.
 
-6. Avoid inlining styles in the HTML using the style attribute - `<div style="...">`. This is a CSS antipattern and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) and get blocked in the browser due to HTML's Content Security Policy.
+6. Avoid inlining styles in the HTML using the style attribute - `<div style="...">`. This is a CSS antipattern and may be [considered a security risk](https://developers.google.com/web/fundamentals/security/csp/#inline_code_is_considered_harmful) depending on Content Security Policy configurations.
 
 7. Minify any new images before adding to the UI Library (for icons) or the eScholarship static server (for content-based images). There are many free [online image optimization services](https://enviragallery.com/9-best-free-image-optimization-tools-for-image-compression/) to choose from.
