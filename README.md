@@ -21,11 +21,11 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 * Cd to `eschol-ui`
 
-* While developing UI Library files in **/app**, run `$ npm run watch` to process live changes to the code. After an initial delay, the UI Library will load at a localhost URL in a browser and will automatically reload during code changes. This URL can also be used on "mobile" devices simultaneously to verify the UI on small screens.
+* Run `$ npm run watch` to process live changes to the code in **/app**. After an initial delay, the UI Library will load at a localhost URL in a browser and will automatically reload during code changes. This URL can also be used on "mobile" devices simultaneously to verify the UI on small screens.
 
-* To create a finished build of the UI Library, run `$ npm run build`. This creates a **/dist** directory with all files optimized for deployment and integration.
+* Run `$ npm run build` to create a finished build of the UI Library. This creates a **/dist** directory with all files optimized for deployment and integration.
 
-* To publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)), run `$ npm run deploy`. This feature may require that GitHub Pages is [configured](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) on your GitHub account.
+* Run `$ npm run deploy` to publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)). This feature may require that GitHub Pages is [configured](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) on your GitHub account.
 
 ## Getting Familiar with the Library's Assets
 
