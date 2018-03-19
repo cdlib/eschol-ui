@@ -4,7 +4,7 @@
 // ***** Polyfills ***** //
 
 if (!(typeof document === "undefined")) {
-  require('babel-polyfill')
+  require('babel-polyfill') // required for IE11
   require('details-polyfill')
   require('intersection-observer')
   require('smoothscroll-polyfill').polyfill();
